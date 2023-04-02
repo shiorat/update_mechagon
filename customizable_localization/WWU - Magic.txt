@@ -1,0 +1,633 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+defined_text = {
+    name = GetMagicMenuDescription
+	
+    text = {
+        localisation_key = MAGIC_MENU_DESCRIPTION
+    }
+}
+
+defined_text = {
+    name = GetAptitudeRank
+	
+    text = {
+        localisation_key = SKILL_RANK_UNTRAINED
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_aptitude
+                    value = 1
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_POOR
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_aptitude
+                    value = 2
+                }
+            }
+			check_variable = {
+                which = ruler_magic_aptitude
+                value = 1
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_COMMON
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_aptitude
+                    value = 3
+                }
+            }
+			check_variable = {
+                which = ruler_magic_aptitude
+                value = 2
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_RARE
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_aptitude
+                    value = 4
+                }
+            }
+			check_variable = {
+                which = ruler_magic_aptitude
+                value = 3
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_EPIC
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_aptitude
+                    value = 5
+                }
+            }
+			check_variable = {
+                which = ruler_magic_aptitude
+                value = 4
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_LEGENDARY
+        trigger = {
+			check_variable = {
+                which = ruler_magic_aptitude
+                value = 5
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = GetFinesseRank
+	
+    text = {
+        localisation_key = SKILL_RANK_UNTRAINED
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_finesse
+                    value = 1
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_POOR
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_finesse
+                    value = 2
+                }
+            }
+			check_variable = {
+                which = ruler_magic_finesse
+                value = 1
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_COMMON
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_finesse
+                    value = 3
+                }
+            }
+			check_variable = {
+                which = ruler_magic_finesse
+                value = 2
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_RARE
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_finesse
+                    value = 4
+                }
+            }
+			check_variable = {
+                which = ruler_magic_finesse
+                value = 3
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_EPIC
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_finesse
+                    value = 5
+                }
+            }
+			check_variable = {
+                which = ruler_magic_finesse
+                value = 4
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_LEGENDARY
+        trigger = {
+			check_variable = {
+                which = ruler_magic_finesse
+                value = 5
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = GetConcentrationRank
+	
+    text = {
+        localisation_key = SKILL_RANK_UNTRAINED
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_concentration
+                    value = 1
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_POOR
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_concentration
+                    value = 2
+                }
+            }
+			check_variable = {
+                which = ruler_magic_concentration
+                value = 1
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_COMMON
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_concentration
+                    value = 3
+                }
+            }
+			check_variable = {
+                which = ruler_magic_concentration
+                value = 2
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_RARE
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_concentration
+                    value = 4
+                }
+            }
+			check_variable = {
+                which = ruler_magic_concentration
+                value = 3
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_EPIC
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_concentration
+                    value = 5
+                }
+            }
+			check_variable = {
+                which = ruler_magic_concentration
+                value = 4
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_RANK_LEGENDARY
+        trigger = {
+			check_variable = {
+                which = ruler_magic_concentration
+                value = 5
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = GetCurrentMana
+	
+    text = {
+        localisation_key = SKILL_MANA_0
+        trigger = {
+            is_variable_equal = {
+                which = ruler_magic_mana
+                value = 0
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_MANA_1
+        trigger = {
+            is_variable_equal = {
+                which = ruler_magic_mana
+                value = 1
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_MANA_2
+        trigger = {
+            is_variable_equal = {
+                which = ruler_magic_mana
+                value = 2
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_MANA_3
+        trigger = {
+            is_variable_equal = {
+                which = ruler_magic_mana
+                value = 3
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_MANA_4
+        trigger = {
+            is_variable_equal = {
+                which = ruler_magic_mana
+                value = 4
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_MANA_5
+        trigger = {
+            is_variable_equal = {
+                which = ruler_magic_mana
+                value = 5
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_MANA_6
+        trigger = {
+            is_variable_equal = {
+                which = ruler_magic_mana
+                value = 6
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_MANA_7
+        trigger = {
+            is_variable_equal = {
+                which = ruler_magic_mana
+                value = 7
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_MANA_8
+        trigger = {
+            is_variable_equal = {
+                which = ruler_magic_mana
+                value = 8
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_MANA_9
+        trigger = {
+            is_variable_equal = {
+                which = ruler_magic_mana
+                value = 9
+            }
+        }
+    }
+    text = {
+        localisation_key = SKILL_MANA_10
+        trigger = {
+			check_variable = {
+                which = ruler_magic_mana
+                value = 10
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = GetEvocationCooldown
+	
+    text = {
+        localisation_key = EVOCATION_5_TT
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_concentration
+                    value = 1
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = EVOCATION_5_TT
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_concentration
+                    value = 2
+                }
+            }
+			check_variable = {
+                which = ruler_magic_concentration
+                value = 1
+            }
+        }
+    }
+    text = {
+        localisation_key = EVOCATION_4_TT
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_concentration
+                    value = 3
+                }
+            }
+			check_variable = {
+                which = ruler_magic_concentration
+                value = 2
+            }
+        }
+    }
+    text = {
+        localisation_key = EVOCATION_3_TT
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_concentration
+                    value = 4
+                }
+            }
+			check_variable = {
+                which = ruler_magic_concentration
+                value = 3
+            }
+        }
+    }
+    text = {
+        localisation_key = EVOCATION_2_TT
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ruler_magic_concentration
+                    value = 5
+                }
+            }
+			check_variable = {
+                which = ruler_magic_concentration
+                value = 4
+            }
+        }
+    }
+    text = {
+        localisation_key = EVOCATION_1_TT
+        trigger = {
+			check_variable = {
+                which = ruler_magic_concentration
+                value = 5
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = GetMagicSchool
+	
+    text = {
+        localisation_key = MAGIC_SCHOOL_NONE
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 0
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_ARCANE
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 1
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_HOLY
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 2
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_CHI
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 3
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_VOODOO
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 4
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_NATURE
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 5
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_UNDEAD
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 6
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_SHAMANISM
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 7
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_FEL
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 8
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_DRACONIC
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 9
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_CORRUPTION
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 10
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_SHADOW
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 11
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_TITAN
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 12
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_RUNIC
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 13
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_NIGHTMARE
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 14
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_EARTH
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 15
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_FIRE
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 16
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_WATER
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 17
+            }
+        }
+    }
+    text = {
+        localisation_key = MAGIC_SCHOOL_WIND
+        trigger = {
+            is_variable_equal = {
+                which = magic_school
+                value = 18
+            }
+        }
+    }
+}
+

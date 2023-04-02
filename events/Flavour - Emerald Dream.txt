@@ -2,11 +2,13 @@ namespace = wwu_emerald_dream
 
 # Piety = Purity
 # General Events 
+
+# Spirit of your Ancestor
 country_event = {
 	id = wwu_emerald_dream.1
 	title = wwu_emerald_dream.1.title 
 	desc = wwu_emerald_dream.1.desc 
-	picture = DREAM_eventPicture
+	picture = EMERALD_DREAM_eventPicture
 	
     is_triggered_only = yes
     
@@ -34,11 +36,13 @@ country_event = {
 		change_mil = 1
     }  
 }
+
+# Excess Magical Energy
 country_event = {
 	id = wwu_emerald_dream.2
 	title = wwu_emerald_dream.2.title 
 	desc = wwu_emerald_dream.2.desc 
-	picture = DREAM_eventPicture
+	picture = EXCESS_MANA_eventPicture
 	
     is_triggered_only = yes
     
@@ -58,7 +62,20 @@ country_event = {
     option = {
 		name = wwu_emerald_dream.2.opt2
 		
+        trigger = {
+            any_owned_province = {
+                NOT = { base_tax = 12 }
+                NOT = { base_production = 12 }
+                NOT = { base_manpower = 12 }
+            }
+        }
+        
 		random_owned_province = {
+            limit = {
+                NOT = { base_tax = 12 }
+                NOT = { base_production = 12 }
+                NOT = { base_manpower = 12 }
+            }
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
@@ -74,11 +91,13 @@ country_event = {
 }
 
 #Mid Events (Purity between -25 and 25)
+
+# Tendrils of Nightmare
 country_event = {
 	id = wwu_emerald_dream.3
 	title = wwu_emerald_dream.3.title 
 	desc = wwu_emerald_dream.3.desc 
-	picture = DREAM_eventPicture
+	picture = EMERALD_NIGHTMARE_eventPicture
 	
     is_triggered_only = yes
     
@@ -95,7 +114,7 @@ country_event = {
     option = {
 		name = wwu_emerald_dream.3.opt1
 		
-		add_yearly_manpower = -0.5
+		add_manpower = -5
 		add_piety = 0.1
     }  
     option = {
@@ -110,11 +129,13 @@ country_event = {
 		add_piety = -0.1
     }  
 }
+
+# A Traitor Inside
 country_event = {
 	id = wwu_emerald_dream.4
 	title = wwu_emerald_dream.4.title 
 	desc = wwu_emerald_dream.4.desc 
-	picture = DREAM_eventPicture
+	picture = HEALING_TOUCH_eventPicture
 	
     is_triggered_only = yes
     
@@ -179,12 +200,15 @@ country_event = {
 		}
     }  
 }
+
 #Purified Event ( Piety >25 )
+
+# Layers of Dream
 country_event = {
 	id = wwu_emerald_dream.5
 	title = wwu_emerald_dream.5.title
 	desc = wwu_emerald_dream.5.desc
-	picture = DREAM_eventPicture
+	picture = EMERALD_DREAM_eventPicture
 	
     is_triggered_only = yes
     
@@ -203,11 +227,8 @@ country_event = {
 		random_list = {
 			2 = {
 				custom_tooltip = wwu_emerald_dream.5.failure # 
-				add_yearly_manpower = -1
-				random = { 
-					chance = 50
-					kill_ruler = yes
-				}
+				add_manpower = -10
+				kill_ruler = yes
 			}
 			8 = {
 				custom_tooltip = wwu_emerald_dream.5.success #
@@ -223,11 +244,8 @@ country_event = {
 		random_list = {
 			4 = {
 				custom_tooltip = wwu_emerald_dream.5.failure # 
-				add_yearly_manpower = -1
-				random = { 
-					chance = 50
-					kill_ruler = yes
-				}
+				add_manpower = -10
+				kill_ruler = yes
 			}
 			6 = {
 				custom_tooltip = wwu_emerald_dream.5.success #
@@ -243,11 +261,8 @@ country_event = {
 		random_list = {
 			6 = {
 				custom_tooltip = wwu_emerald_dream.5.failure # 
-				add_yearly_manpower = -1
-				random = { 
-					chance = 50
-					kill_ruler = yes
-				}
+				add_manpower = -10
+				kill_ruler = yes
 			}
 			4 = {
 				custom_tooltip = wwu_emerald_dream.5.success #
@@ -263,11 +278,8 @@ country_event = {
 		random_list = {
 			8 = {
 				custom_tooltip = wwu_emerald_dream.5.failure # 
-				add_yearly_manpower = -1
-				random = { 
-					chance = 50
-					kill_ruler = yes
-				}
+				add_manpower = -10
+				kill_ruler = yes
 			}
 			2 = {
 				custom_tooltip = wwu_emerald_dream.5.success #
@@ -282,11 +294,13 @@ country_event = {
 		
     }  
 }
+
+# Friendly Spirits
 country_event = {
 	id = wwu_emerald_dream.6
 	title = wwu_emerald_dream.6.title
 	desc = wwu_emerald_dream.6.desc
-	picture = DREAM_eventPicture
+	picture = WINDFURY_eventPicture
 	
     is_triggered_only = yes
     
@@ -302,14 +316,14 @@ country_event = {
     option = {
 		name = wwu_emerald_dream.6.opt1
 		
-		add_yearly_manpower = 1
+		add_manpower = 10
 		add_army_professionalism = -0.05
 		add_piety = -0.05
     }  
     option = {
 		name = wwu_emerald_dream.6.opt2
 		
-		add_yearly_manpower = 0.5
+		add_manpower = 5
 		add_army_professionalism = -0.05
     }  
     option = {
@@ -318,11 +332,13 @@ country_event = {
     }
 }
 #Corrupted (Piety <-0.25)
+
+# Burst of Corruption
 country_event = {
 	id = wwu_emerald_dream.7
 	title = wwu_emerald_dream.7.title
 	desc = wwu_emerald_dream.7.desc
-	picture = DREAM_eventPicture
+	picture = WISPS_OF_THE_OLD_GODS_eventPicture
 	
 	is_triggered_only = yes
     
@@ -338,7 +354,7 @@ country_event = {
     option = {
 		name = wwu_emerald_dream.7.opt1
 		
-		add_yearly_manpower = -1
+		add_manpower = -5
 		add_mil_power = -50
 		add_piety = -0.05
     }  
@@ -358,7 +374,7 @@ country_event = {
 			OR = {
 				ruler_has_personality = well_connected_personality
 				any_country = {
-					religion = religion_druidic
+					religion = druidism
 					has_opinion = {
 						who = ROOT
 						value = 10
@@ -370,11 +386,13 @@ country_event = {
 		add_piety = 0.1
     }
 }
+
+# Corruption of Heir
 country_event = {
 	id = wwu_emerald_dream.8
 	title = wwu_emerald_dream.8.title 
 	desc = wwu_emerald_dream.8.desc 
-	picture = DREAM_eventPicture
+	picture = MANY_WISPS_eventPicture
 	
     is_triggered_only = yes
      

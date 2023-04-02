@@ -12,37 +12,31 @@ defined_text = {
 	text = {
 		localisation_key = estate_clergy_light
 		trigger = {
-            religion_group = religion_group_the_light
+            religion_group = light_group
 		}
 	}
     text = {
 		localisation_key = estate_clergy_void
 		trigger = {
-            religion_group = religion_group_the_void
+            religion_group = shadow_group
 		}
 	}
     text = {
 		localisation_key = estate_clergy_disorder
 		trigger = {
-            religion_group = religion_group_disorder
+            religion_group = disorder_group
 		}
 	}
     text = {
 		localisation_key = estate_clergy_order
 		trigger = {
-            religion_group = religion_group_order
-		}
-	}
-    text = {
-		localisation_key = estate_clergy_druidic
-		trigger = {
-            religion_group = religion_druidic
+            religion_group = order_group
 		}
 	}
     text = {
 		localisation_key = estate_clergy_elemental
 		trigger = {
-            religion_group = religion_group_elemental
+            religion_group = elemental_group
 		}
 	}
     
@@ -67,37 +61,37 @@ defined_text = {
 	text = {
 		localisation_key = estate_clergy_light
 		trigger = {
-            religion_group = religion_group_the_light
+            religion_group = light_group
+		}
+	}
+	text = {
+		localisation_key = estate_clergy_death
+		trigger = {
+            religion_group = death_group
 		}
 	}
     text = {
 		localisation_key = estate_clergy_void
 		trigger = {
-            religion_group = religion_group_the_void
+            religion_group = shadow_group
 		}
 	}
     text = {
 		localisation_key = estate_clergy_disorder
 		trigger = {
-            religion_group = religion_group_disorder
+            religion_group = disorder_group
 		}
 	}
     text = {
 		localisation_key = estate_clergy_order
 		trigger = {
-            religion_group = religion_group_order
-		}
-	}
-    text = {
-		localisation_key = estate_clergy_druidic
-		trigger = {
-            religion_group = religion_druidic
+            religion_group = order_group
 		}
 	}
     text = {
 		localisation_key = estate_clergy_elemental
 		trigger = {
-            religion_group = religion_group_elemental
+            religion_group = elemental_group
 		}
 	}
     
@@ -129,7 +123,7 @@ defined_text = {
     text = {
 		localisation_key = estate_traders_plebs
 		trigger = {
-            is_lesser = yes
+            is_uncivilized = yes
 		}
 	}
     text = {
@@ -167,7 +161,7 @@ defined_text = {
     text = {
 		localisation_key = estate_traders_plebs
 		trigger = {
-            is_lesser = yes
+            is_uncivilized = yes
 		}
 	}
     text = {
@@ -193,13 +187,13 @@ defined_text = {
 	text = {
 		localisation_key = estate_nobility_old_gods
 		trigger = {
-            religion = religion_old_gods
+			is_old_god_religion = yes
 		}
 	}
     text = {
 		localisation_key = estate_nobility_fel
 		trigger = {
-            religion = religion_fel
+            religion = fel
 		}
 	}
 	text = {
@@ -243,13 +237,13 @@ defined_text = {
 	text = {
 		localisation_key = estate_nobility_old_gods
 		trigger = {
-            religion = religion_old_gods
+            is_old_god_religion = yes
 		}
 	}
     text = {
 		localisation_key = estate_nobility_fel
 		trigger = {
-            religion = religion_fel
+            religion = fel
 		}
 	}
 	text = {
@@ -307,6 +301,32 @@ defined_text = {
 		localisation_key = estate_peasants
 		trigger = {
 			has_estate = estate_peasants
+		}
+	}
+}
+
+defined_text = {
+	name = GetSlavesName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_slaves
+		trigger = {
+			has_estate = estate_slaves
+		}
+	}
+}
+
+defined_text = {
+	name = GetSlavesOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_slaves
+		trigger = {
+			has_estate = estate_slaves
 		}
 	}
 }
@@ -373,6 +393,9 @@ defined_text = {
 	
 	text = {
 		localisation_key = estate_adventuring_guild
+        trigger = {
+			has_estate = estate_adventuring_guild
+		}
 	}
 }
 defined_text = {
@@ -382,6 +405,9 @@ defined_text = {
 	
 	text = {
 		localisation_key = estate_adventuring_guild
+        trigger = {
+			has_estate = estate_adventuring_guild
+		}
 	}
 }
 defined_text = {
@@ -391,6 +417,9 @@ defined_text = {
 	
 	text = {
 		localisation_key = estate_mercantile_guild
+        trigger = {
+			has_estate = estate_mercantile_guild
+		}
 	}
 }
 defined_text = {
@@ -400,6 +429,9 @@ defined_text = {
 	
 	text = {
 		localisation_key = estate_mercantile_guild
+        trigger = {
+			has_estate = estate_mercantile_guild
+		}
 	}
 }
 defined_text = {
@@ -409,6 +441,9 @@ defined_text = {
 	
     text = {
 		localisation_key = estate_warriors_guild
+        trigger = {
+			has_estate = estate_warriors_guild
+		}
 	}
 }
 defined_text = {
@@ -418,6 +453,9 @@ defined_text = {
 	
     text = {
 		localisation_key = estate_warriors_guild
+        trigger = {
+			has_estate = estate_warriors_guild
+		}
 	}
 }
 defined_text = {
@@ -427,6 +465,9 @@ defined_text = {
 	
     text = {
 		localisation_key = estate_religious_order
+        trigger = {
+			has_estate = estate_religious_order
+		}
 	}
 }
 defined_text = {
@@ -436,6 +477,9 @@ defined_text = {
 	
     text = {
 		localisation_key = estate_religious_order
+        trigger = {
+			has_estate = estate_religious_order
+		}
 	}
 }
 defined_text = {
@@ -445,6 +489,9 @@ defined_text = {
 	
     text = {
 		localisation_key = estate_criminal_syndicate
+        trigger = {
+			has_estate = estate_criminal_syndicate
+		}
 	}
 }
 defined_text = {
@@ -454,6 +501,282 @@ defined_text = {
 	
     text = {
 		localisation_key = estate_criminal_syndicate
+        trigger = {
+			has_estate = estate_criminal_syndicate
+		}
+	}
+}
+defined_text = {
+	name = GetReliquaryName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_reliquary
+        trigger = {
+			has_estate = estate_reliquary
+		}
+	}
+}
+defined_text = {
+	name = GetReliquaryOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_reliquary
+        trigger = {
+			has_estate = estate_reliquary
+		}
+	}
+}
+defined_text = {
+	name = GetExplorersLeagueName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_explorers_league
+        trigger = {
+			has_estate = estate_explorers_league
+		}
+	}
+}
+defined_text = {
+	name = GetExplorersLeagueOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_explorers_league
+        trigger = {
+			has_estate = estate_explorers_league
+		}
+	}
+}
+
+defined_text = {
+	name = GetInventionName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_invention
+        trigger = {
+			has_estate = estate_invention
+		}
+	}
+}
+defined_text = {
+	name = GetInventionOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_invention
+        trigger = {
+			has_estate = estate_invention
+		}
+	}
+}
+
+defined_text = {
+	name = GetLegionName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_legion
+        trigger = {
+			has_estate = estate_legion
+		}
+	}
+}
+defined_text = {
+	name = GetLegionOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_legion
+        trigger = {
+			has_estate = estate_legion
+		}
+	}
+}
+
+defined_text = {
+	name = GetAbyssalMawName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_abyssal_maw
+        trigger = {
+			has_estate = estate_abyssal_maw
+		}
+	}
+}
+defined_text = {
+	name = GetAbyssalMawOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_abyssal_maw
+        trigger = {
+			has_estate = estate_abyssal_maw
+		}
+	}
+}
+
+defined_text = {
+	name = GetFirelandsName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_firelands
+        trigger = {
+			has_estate = estate_firelands
+		}
+	}
+}
+defined_text = {
+	name = GetFirelandsOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_firelands
+        trigger = {
+			has_estate = estate_firelands
+		}
+	}
+}
+
+defined_text = {
+	name = GetDeepholmName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_deepholm
+        trigger = {
+			has_estate = estate_deepholm
+		}
+	}
+}
+defined_text = {
+	name = GetDeepholmOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_deepholm
+        trigger = {
+			has_estate = estate_deepholm
+		}
+	}
+}
+
+defined_text = {
+	name = GetSkywallName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_skywall
+        trigger = {
+			has_estate = estate_skywall
+		}
+	}
+}
+defined_text = {
+	name = GetSkywallOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_skywall
+        trigger = {
+			has_estate = estate_skywall
+		}
+	}
+}
+
+defined_text = {
+	name = GetLoaName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_loa
+        trigger = {
+			has_estate = estate_loa
+		}
+	}
+}
+defined_text = {
+	name = GetLoaOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_loa
+        trigger = {
+			has_estate = estate_loa
+		}
+	}
+}
+
+defined_text = {
+	name = GetDragonflightName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_dragonflight
+        trigger = {
+			has_estate = estate_dragonflight
+		}
+	}
+}
+defined_text = {
+	name = GetDragonflightOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_dragonflight
+        trigger = {
+			has_estate = estate_dragonflight
+		}
+	}
+}
+
+defined_text = {
+	name = GetUnderlingName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_underling
+        trigger = {
+			has_estate = estate_underling
+		}
+	}
+}
+defined_text = {
+	name = GetUnderlingOrFallbackName
+    
+	random = no
+	
+    text = {
+		localisation_key = estate_underling
+        trigger = {
+			has_estate = estate_underling
+		}
 	}
 }
 
@@ -492,6 +815,145 @@ defined_text = {
 		localisation_key = fallback_string_nobility
 		trigger = {
 			always = yes
+		}
+	}
+}
+
+defined_text = {
+	name = GetTargetEstate
+    
+	random = no
+	
+    text = {
+		localisation_key = clergy_target
+        trigger = {
+			has_country_flag = estate_target_clergy
+		}
+	}
+    text = {
+		localisation_key = traders_target
+        trigger = {
+			has_country_flag = estate_target_traders
+		}
+	}
+    text = {
+		localisation_key = nobility_target
+        trigger = {
+			has_country_flag = estate_target_nobility
+		}
+	}
+    text = {
+		localisation_key = peasants_target
+        trigger = {
+			has_country_flag = estate_target_peasants
+		}
+	}
+    text = {
+		localisation_key = slaves_target
+        trigger = {
+			has_country_flag = estate_target_slaves
+		}
+	}
+    text = {
+		localisation_key = tribals_target
+        trigger = {
+			has_country_flag = estate_target_tribals
+		}
+	}
+    text = {
+		localisation_key = adventuring_guild_target
+        trigger = {
+			has_country_flag = estate_target_adventuring_guild
+		}
+	}
+    text = {
+		localisation_key = mercantile_guild_target
+        trigger = {
+			has_country_flag = estate_target_mercantile_guild
+		}
+	}
+    text = {
+		localisation_key = warriors_guild_target
+        trigger = {
+			has_country_flag = estate_target_warriors_guild
+		}
+	}
+    text = {
+		localisation_key = religious_order_target
+        trigger = {
+			has_country_flag = estate_target_religious_order
+		}
+	}
+    text = {
+		localisation_key = criminal_syndicate_target
+        trigger = {
+			has_country_flag = estate_target_criminal_syndicate
+		}
+	}
+    text = {
+		localisation_key = reliquary_target
+        trigger = {
+			has_country_flag = estate_target_reliquary
+		}
+	}
+    text = {
+		localisation_key = explorers_league_target
+        trigger = {
+			has_country_flag = estate_target_explorers_league
+		}
+	}
+    text = {
+		localisation_key = invention_target
+        trigger = {
+			has_country_flag = estate_target_invention
+		}
+	}
+    text = {
+		localisation_key = legion_target
+        trigger = {
+			has_country_flag = estate_target_legion
+		}
+	}
+    text = {
+		localisation_key = abyssal_maw_target
+        trigger = {
+			has_country_flag = estate_target_abyssal_maw
+		}
+	}
+    text = {
+		localisation_key = firelands_target
+        trigger = {
+			has_country_flag = estate_target_firelands
+		}
+	}
+    text = {
+		localisation_key = deepholm_target
+        trigger = {
+			has_country_flag = estate_target_deepholm
+		}
+	}
+    text = {
+		localisation_key = skywall_target
+        trigger = {
+			has_country_flag = estate_target_skywall
+		}
+	}
+    text = {
+		localisation_key = loa_target
+        trigger = {
+			has_country_flag = estate_target_loa
+		}
+	}
+    text = {
+		localisation_key = dragonflight_target
+        trigger = {
+			has_country_flag = estate_target_dragonflight
+		}
+	}
+    text = {
+		localisation_key = underling_target
+        trigger = {
+			has_country_flag = estate_target_underling
 		}
 	}
 }

@@ -30,20 +30,35 @@ region_ghostlands = {
         area_tranquillien
         area_amani_catacombs
         area_thalassian_pass
+        area_sanctum_of_the_moon
+    }
+}
+
+region_zulaman = {
+    areas = {
         area_zul_aman
-        area_zul_aman_interior
+        area_maisara_hills
+        area_tuskcross
+        area_ula_tek
+        area_zultila
     }
 }
 
 region_eastern_plaguelands = {
     areas = {
         area_stratholme
-        area_northpass_tower
+        area_royal_approach
+        area_quellithien_lodge
         area_eastwall_tower
         area_northdale
         area_new_avalon
         area_corins_crossing
         area_the_marris_stead
+        area_kings_wood
+        area_lights_hope
+        area_noxious_glade
+        area_zul_mashar
+        area_darrowshire
     }
 }
 
@@ -52,8 +67,10 @@ region_western_plaguelands = {
         area_scholomance
         area_lower_andorhal
         area_andorhal
-        area_the_menders_stead
         area_heartglen
+        area_andorhal_fields
+        area_northridge
+        area_eastwatch
     }
 }
 
@@ -65,6 +82,9 @@ region_tirisfal_glades = {
         area_brill
         area_agamand
         area_vandermar
+        area_webbed_coast
+        area_scarlet_coast
+        area_fenris_isle
     }
 }
 
@@ -74,6 +94,7 @@ region_silverpine_forest = {
         area_silverpine_crossing
         area_ambermill
         area_shadowfang_keep
+        area_pyrewood
     }
 }
 
@@ -84,10 +105,9 @@ region_gilneas = {
         area_tempests_reach
         area_the_blackwald
         area_duskhaven
-        area_keel_harbor
-        area_gilnean_islands
         area_purgation_isle
-        area_tempest_isles
+        area_havenswood
+        area_drisburg
     }
 }
 
@@ -116,19 +136,32 @@ region_tol_barad = {
         area_farson_hold
         area_the_restless_front
         area_baradin_hold
-    }
-}
-
-region_zul_dare = {
-    areas = {
-        area_zul_dare
+		area_zul_dare
     }
 }
 
 region_kul_tiras = {
     areas = {
-        area_kul_tiras_capital
-        area_kul_tiras_exterior
+        area_boralus
+        area_freehold
+        area_vigil_hill
+        area_norwington_estate
+        area_anglepoint_wharf
+        area_fallhaven
+        area_aroms_stand
+        area_waycrest_manor
+        area_brennadam
+        area_sagehold
+        area_tol_dagor
+        area_isle_of_pirates
+    }
+}
+
+region_mechagon = {
+    areas = {
+		area_western_spray
+        area_rustbolt
+        area_junkwatt_depot
     }
 }
 
@@ -152,6 +185,9 @@ region_the_hinterlands = {
         area_the_hinterlands
         area_troll_highlands
         area_seradane
+        area_revantusk
+        area_lonesome_den
+        area_zebjiri
     }   
 }
 
@@ -159,7 +195,7 @@ region_wetlands = {
     areas = {
         area_menethil
         area_wetland_marsh
-        area_angerfang_hills
+        area_whelgars_retreat
         area_dun_modr
         area_lower_wetlands
         area_upper_wetlands
@@ -177,6 +213,7 @@ region_twilight_highlands = {
         area_obsidian_scar
         area_twilight_shore
         area_bastion_of_twilight
+        area_dragonmaw_port
     }
 }
 
@@ -184,8 +221,8 @@ region_loch_modan = {
     areas = {
         area_loch_modan_wildlands
         area_loch_modan
-        area_thrallmar
         area_valley_of_kings
+        area_thelsamar
     }
 }
 
@@ -198,6 +235,11 @@ region_dun_morogh = {
         area_gnomeregan_exterior
         area_gnomeregan
         area_ironforge
+        area_icewind_passage
+        area_brewstall
+        area_new_tinkertown
+        area_frozen_shore
+        area_frostsabre
     }
 }
 
@@ -225,6 +267,8 @@ region_burning_steppes = {
         area_blackrock_valley
         area_dreadmaul_rock
         area_valley_of_ashes
+        area_chiselgrip
+        area_ashen_shore
     }
 }
 
@@ -236,6 +280,7 @@ region_redridge_mountains = {
         area_lakeshire_highway
         area_stonewatch
         area_shalewind_bluffs
+        area_redridge_heights
     }
 }
 
@@ -314,6 +359,7 @@ region_stranglethorn_vale = {
         area_jaguero_isle
 		area_kalai
 		area_kurzen_encampment
+        area_zulakman
     }
 }
 
@@ -322,20 +368,24 @@ region_stranglethorn_vale = {
 #-------------------
 region_teldrassil = {
     areas = {
-        area_teldrassil
+        area_north_teldrassil
+        area_south_teldrassil
+        area_shadowglen
+        area_dolanaar
         area_darnassus
+        area_ruttheran
     }
 }
 
 region_bloodmyst_isle = {
     areas = {
         area_kessels_crossing
+        area_wrathscale
         area_nazzivian
         area_blood_watch
         area_cryo_core
         area_axxarien
-        area_wyrmscar_island
-        area_bloodcurse_isle
+        area_loretharan
     }
 }
 
@@ -357,9 +407,13 @@ region_moonglade = {
 
 region_darkshore = {
     areas = {
+	    area_mathystra
         area_shatterspear_vale
+		area_lor_danel
         area_auberdinei
         area_twilight_vale
+		area_ameth_aran
+		area_naj_vel
         area_grove_of_the_ancients
         area_blackfathom_deep
     }
@@ -371,6 +425,8 @@ region_winterspring = {
         area_everlook
         area_starfall_village
         area_timbermaw_heartland
+        area_frostsaber_grounds
+        area_dread_chain
     }
 }
 
@@ -378,7 +434,13 @@ region_felwood = {
     areas = {
         area_felpaw_village
         area_irontree_woods
+		area_jadefire_run
+		area_whisperwind
         area_bloodvenom_post
+		area_jaedenar
+		area_shadow_hold
+		area_constellas
+		area_deadwood_village
         area_emerald_sanctuary
     }
 }
@@ -397,10 +459,18 @@ region_mount_hyjal = {
 
 region_ashenvale = {
     areas = {
+	    area_zoram_gar
+		area_ordil_aran
+		area_thistlefur
         area_maestras_post
+		area_aessina
+		area_stardust
         area_astranaar
+		area_greenpaw_woods
         area_raynewood_retreat
+		area_silverwing
         area_splintertree_post
+		area_satyrnaar
         area_forest_heart
         area_felfire_hill
     }
@@ -409,11 +479,11 @@ region_ashenvale = {
 region_azshara = {
     areas = {
         area_the_shattered_strand
-        area_isle_of_arkkoran
         area_northern_azshara_forests
         area_eldarath
         area_forlorn_ridge
         area_the_ruined_reaches
+        area_shattered_isles
     }
 }
 
@@ -424,19 +494,34 @@ region_durotar = {
         area_razor_hill
         area_echo_isles
         area_valley_of_trials
+        area_southfury_river
+        area_thunder_ridge
+        area_tiragarde_shore
     }
 }
 
-region_the_barrens = {
+region_north_barrens = {
     areas = {
         area_the_sludge_fen
-        area_thorn_hill
         area_the_dry_hills
         area_the_crossroads
         area_ratchet
         area_the_wailing_caverns
+        area_forgotten_pools
+        area_raptor_grounds
+        area_fray_island
+        area_farwatch
+        area_dreadmist
+    }
+}
+
+region_south_barrens = {
+    areas = {
         area_northwatch_hold
+        area_honor_stand
+        area_overgrowth
         area_taurajo
+        area_desolation
         area_blackthorn_ridge
         area_the_great_lift
     }
@@ -455,15 +540,21 @@ region_stonetalon_mountains = {
 
 region_desolace = {
     areas = {
-        area_nijels_point
+        area_kolkar_village
         area_shok_thokar
-        area_thunder_axe_fortress
+        area_ethel_rethor
         area_ranazjar_ruins
         area_ranazjar_isle
         area_valley_of_spears
-        area_mannoroc_wastes
-        area_maraudon
+        area_sargeron
+        area_outer_maraudon
+        area_inner_maraudon
         area_gelkis_village
+        area_tethris_aran
+        area_thunderaxe_plains
+        area_thundering_coast
+        area_kolkar_outpost
+        area_mannoroc_dens
     }
 }
 
@@ -475,16 +566,22 @@ region_mulgore = {
         area_thunderhorn_water_well
         area_winterhoof_waterwell
         area_camp_narache
+        area_thornsnarl
     }
 }
 
 region_dustwallow_marsh = {
     areas = {
         area_the_wrymbog
+        area_lost_point
+        area_onyxia_lair
         area_tidefury_cove
         area_theramore_isle
         area_dreadmurk_coast
+        area_blackhoof_marshes
         area_alcaz_isle
+        area_wrymbog_coast
+        area_mudsprocket
     }
 }
 
@@ -505,11 +602,14 @@ region_feralas = {
         area_camp_mojache
         area_isildien
         area_diremaul
+		area_diremaul_interior
         area_forgotten_coast
         area_sarnor_isle
-        area_twin_colossals
+        area_camp_ataya
         area_dream_bough
         area_writhing_deep
+        area_high_wilderness
+        area_isle_of_dread
     }
 }
 
@@ -523,6 +623,7 @@ region_silithus = {
         area_outer_ahn_qiraj
         area_inner_sanctum
         area_skittering_sands
+        area_seething_shore
     }
 }
 
@@ -543,21 +644,32 @@ region_tanaris = {
         area_the_gaping_chasm
         area_gadgetzan
         area_zulfarrak
+		area_sandsorrow
         area_steamwheedle_port
+        area_lands_end
+        area_dunemaul_grounds
+        area_dunemaul_grounds_two
     }
 }
 
 region_uldum = {
     areas = {
         area_halls_of_origination
+		area_cursed_landing
+		area_sunstone_halls
         area_obelisk_of_the_stars
+		area_khartuts_tomb
         area_ramkahen
         area_obelisk_of_the_sun
+		area_uldum_deserts
         area_obelisk_of_the_moon
         area_neferset
         area_lost_city_of_the_tolvir
-        area_vortex_pinnacle
-        area_throne_of_the_four_winds
+        area_ruins_of_ammon
+        area_skittering_dunes
+        area_akhenet
+        area_pygmy_grounds
+        area_sahket
     }
 }
 
@@ -578,12 +690,14 @@ region_borean_tundra = {
         area_ruins_of_eldra_nath
         area_the_geyser_fields
         area_naxxanar
+        area_jorundall
     }
 }
 
 region_wintergrasp = {
     areas = {
         area_wintergrasp
+        area_vault_of_archavon
     }
 }
 
@@ -605,14 +719,25 @@ region_dragonblight = {
         area_moonrest_gardens
         area_moakai_harbor
         area_wyrmrest_temple
-        area_hearthglen
+        area_south_dragon_nests
+        area_north_dragon_nests
+        area_south_hearthglen
+        area_north_hearthglen
         area_galakronds_rest
-        area_the_wrath_gate
+        area_icecrown_approach
         area_scarlet_point
         area_wintergarde_keep
         area_naxxramas
         area_dawns_reach
         area_jintha_kalar
+        area_strand_of_the_ancients
+    }
+}
+
+region_azjol_nerub = {
+    areas = {
+        area_upper_kingdom
+        area_lower_kingdom
     }
 }
 
@@ -628,9 +753,12 @@ region_icecrown = {
         area_the_shadow_vault
         area_accursed_cove
         area_argent_tournament
-        area_valley_of_lost_hope
+        area_north_valley_of_lost_hope
+        area_south_valley_of_lost_hope
         area_argent_vanguard
         area_the_broken_front
+        area_isle_of_conquest
+        area_corprethar
     }
 }
 
@@ -652,6 +780,7 @@ region_storm_peak = {
 region_zuldrak = {
     areas = {
         area_gundrak
+        area_gundrak_raid
         area_heb_drakkar
         area_rhunok
         area_zim_torga
@@ -679,6 +808,7 @@ region_grizzly_hills = {
         area_camp_oneqwah
         area_dun_argol
         area_bloodmoon_isle
+        area_broken_bluffs
     }
 }
 
@@ -686,6 +816,7 @@ region_crystalsong = {
     areas = {
         area_forlorn_woods
         area_unbound_thicket
+        area_sunreaver_and_windrunner_overlooks
         area_dalaran_cs
     }
 }
@@ -702,6 +833,7 @@ region_howling_fjord = {
         area_nifflevar
         area_vengeance_landing
         area_the_glades
+        area_jorundal
     }
 }
 
@@ -724,6 +856,13 @@ region_isle_of_thunder = {
 region_isle_of_giants = {
     areas = {
         area_isle_of_giants
+        area_isle_of_bones
+    }
+}
+
+region_timeless_isle = {
+    areas = {
+        area_timeless_isle
     }
 }
 
@@ -741,6 +880,11 @@ region_jade_forest = {
         area_dawns_blossom
         area_tian_monastery
         area_honeydew_village
+        area_jadebreeze_vale
+        area_pearlfin_village
+        area_arboretum
+        area_greenstone
+        area_srila
     }
 }
 
@@ -761,6 +905,8 @@ region_krasarang_wilds = {
         area_ruins_of_dojan
         area_temple_of_the_red_crane
         area_domination_point
+        area_dawnchaser_retreat
+        area_nayeli_lagoon
     }
 }
 
@@ -808,6 +954,8 @@ region_kun_lai_summit = {
         area_shado_pan_garrison
         area_binan_village
         area_yaungol_advance
+        area_snowblossom_isle
+        area_shado_pan_passage
     }
 }
 
@@ -818,11 +966,16 @@ region_hellfire_peninsula = {
     areas = {
         area_the_dark_portal
         area_throne_of_kil_jaeden
+        area_cenarion_post
         area_contested_lands
+        area_forge_camps_ridge
         area_warp_fields
         area_hellfire_citadel
+        area_honor_hold
         area_maghar_post
         area_falcon_watch
+        area_spinebreaker_mountains
+        area_thrallmar
     }
 }
 
@@ -899,12 +1052,110 @@ region_netherstorm = {
 }
 
 #-------------------
+# Draenor
+#-------------------
+region_frostfire_ridge = {
+    areas = {
+        area_bladespire_citadel
+        area_worgol
+        area_frostwall
+        area_daggermaw
+        area_gromgar
+        area_magnarok
+        area_crackling_plains
+    }
+}
+
+region_gorgrond = {
+    areas = {
+        area_blackrock_foundry
+        area_everbloom_wilds
+        area_highpass
+        area_gronn_canyon
+        area_stonemaul_arena
+        area_tangleheart
+        area_bastion_rise
+    }
+}
+
+region_talador = {
+    areas = {
+        area_orunai
+        area_shattrath_draenor
+        area_auchindoun_draenor
+        area_telmor
+        area_arunna
+        area_tuurem_draenor
+        area_zangarra
+        area_gordal_fortress
+    }
+}
+
+region_tanaan_jungle = {
+    areas = {
+        area_dark_portal_draenor
+        area_fangrila
+        area_hellfire_citadel_draenor
+        area_throne_of_kiljaeden
+        area_temple_of_shanaar
+        area_zethgol
+    }
+}
+
+region_ashran = {
+    areas = {
+        area_ashran
+    }
+}
+
+region_farahlon = {
+    areas = {
+        area_blightstone
+        area_crystalwood
+    }
+}
+
+region_nagrand_draenor = {
+    areas = {
+        area_highmaul
+        area_oshugun
+        area_mokgol_outpost
+        area_ring_of_blood
+        area_throne_of_elements
+        area_telaar_draenor
+        area_hallvalor
+    }
+}
+
+region_spires_of_arak = {
+    areas = {
+        area_skettis_draenor
+        area_skyreach
+        area_bladefist_hold
+        area_bloodmane_valley
+        area_howling_crag
+    }
+}
+
+region_shadowmoon_valley_draenor = {
+    areas = {
+        area_lunarfall
+        area_anguish_fortress
+        area_embaari_village
+        area_elodor
+        area_karabor_draenor
+        area_shimmermoor
+        area_shazgul
+        area_darktide_roost
+    }
+}
+
+#-------------------
 # Broken Isles
 #-------------------
 region_highmountain = { 
 	areas = { 
-		area_neltharions_home 
-		area_eastern_highmountain 
+		area_neltharions_home  
 		area_bloodtotem_highland 
 		area_skyhorn_grounds 
 		area_central_highmountain 
@@ -928,26 +1179,36 @@ region_azsuna = {
 		area_oceanus_cove 
 		area_azuregos_sanctum
 		area_zarkhenar
+        area_wardens_isle
 	} 
 }
 region_suramar = { 
 	areas = { 
-		area_suramar_city 
-		area_broken_shore 
-		area_arcandor_ruins 
-		area_jondvik 
-		area_moonguard
+		area_central_suramar 
+		area_east_suramar 
+		area_west_suramar 
+		area_jandvik 
+		area_nightborne_ruins
+        area_moonguard_stronghold
 	} 
 }
 region_stormheim = { 
 	areas = { 
-		area_valkyrian_lands 
+		area_hrydashal 
+		area_haustvald 
 		area_halls_of_valor 
-		area_tideskorn_coast 
-		area_eastern_stormheim 
-		area_helheim_entrance
-		area_storm_drake_hills
+		area_talons_rest
+		area_storms_reach
+        area_shields_rest
 	} 
+}
+region_broken_shore = {
+    areas = {
+        area_deliverance_point
+        area_soul_ruin
+        area_tomb_of_sargeras
+        area_lost_temple
+    }
 }
 
 #-------------------
@@ -957,27 +1218,49 @@ region_stormheim = {
 region_zuldazar = {
     areas = {
         area_dazar_alor
+        area_covescale_rise
         area_xibala
+        area_mugambala
+        area_atal_dazar
         area_atal_gral
+        area_blood_gate
+        area_tusk_isle
+        area_beastwatcher_glade
+        area_talgurub
+        area_zebahari
+        area_crescent_shore
+		area_thumpknuckle_grove
+		area_dakani_grove
     }
 }
+
 region_nazmir = {
     areas = {
         area_heart_of_darkness
         area_the_necropolis
-        area_nazmir_islands
-    }
-}
-region_voldun = {
-    areas = {
-        area_shatterstone_harbor
-        area_atul_aman
-        area_slithering_gulch
+        area_primal_wetlands
+        area_terrace_of_sorrows
+        area_zalamak
+        area_torgas_rest
+        area_nazwatha
+        area_kragwas_burrow
     }
 }
 
-# Kezan
-region_kezan = {
+region_voldun = {
+    areas = {
+        area_atul_aman
+        area_slithering_gulch
+        area_port_zemlan
+        area_whispering_crag
+        area_voldun_dunes
+        area_temple_of_akunda
+        area_terrace_of_the_devoted
+    }
+}
+
+# Lost Isles
+region_lost_isles = {
     areas = {
         area_the_erupted_mountain
         area_vashj_elan
@@ -985,17 +1268,99 @@ region_kezan = {
     }
 }
 
+# Kezan
+region_kezan = {
+    areas = {
+        area_bilgewater_port
+        area_drudgetown
+        area_mt_kajaro
+        area_port_kajaro
+        area_glimmering_isle
+    }
+}
+
 # Plunder Isle
 region_plunder_isle = {
     areas = {
-        area_plunder_isle
+        area_plunder_bay
+        area_bloodbush
+        area_mount_hiji
+        area_limespoil
+        area_bloodsail_hold
+        area_northpoint
+        area_rustpoint
+        area_isles_of_plunder
+        area_kunza_kunza
+    }
+}
+
+# Skywall
+region_skywall = {
+    areas = {
+        area_vortex_pinnacle
+        area_throne_of_the_four_winds
     }
 }
 
 # Deepholm
 region_deepholm = {
     areas = {
-        area_deepholm
+        area_temple_of_earth
+        area_needlerock
+        area_stonehearth
+        area_crimson_expanse
+    }
+}
+
+# Abyssal Maw
+region_abyssal_maw = {
+    areas = {
+        area_throne_of_neptulon
+        area_neptulons_ridge
+        area_trove_of_neptulon
+        area_neptulons_peak
+        area_shimmer_tide_trench
+        area_abyssal_gorge
+    }
+}
+
+# Firelands
+region_firelands = {
+    areas = {
+        area_molten_front
+        area_molten_ridge
+        area_molten_gap
+        area_ridge_of_ancient_flame
+        area_molten_fields
+        area_sulfuron_keep
+        area_sulfuron_mountains
+    }
+}
+
+# Argus
+region_krokuul = {
+    areas = {
+        area_deceivers_scar
+        area_krokul_hovel
+        area_xenedar
+    }
+}
+
+region_eredath = {
+    areas = {
+        area_triumvirates_end
+        area_shadowguard
+        area_seat_of_the_triumvirate
+        area_conservatory_of_the_arcane
+        area_azurelight
+    }
+}
+
+region_antoran_wastes = {
+    areas = {
+        area_antorus
+        area_terminus
+        area_spirit_crucible
     }
 }
 
@@ -1005,60 +1370,243 @@ region_vashjir = {
         area_kelpthar_forest
 		area_shimmering_grotto
 		area_abyssal_depths
+        area_balor
+    }
+}
+
+# Nazjatar
+region_nazjatar = {
+    areas = {
+        area_mezzamere
+		area_zinazshari
+    }
+}
+
+# South Sea Islands
+region_south_sea_islands = {
+    areas = {
+        area_tel_abim
+        area_molten_cay
+        area_verdant_wilds
+        area_isle_of_skulls
+    }
+}
+
+# Paradise Isles
+region_paradise_isles = {
+    areas = {
+        area_north_darkspear_isles
+        area_south_darkspear_isles
+        area_tajin_isle
+        area_zalzun_isle
+        area_shendo_isles
+        area_zasole_isles
+        area_vorshka
+        area_gashakk
+        area_ralkara_isles
+        area_ashbimo
+        area_igchairo_isles
+        area_stinking_isles
+        area_glave_isles
+        area_rotting_mire
+    }
+}
+
+#-------------------
+# Dragon Isles
+#-------------------
+region_azure_span = {
+    areas = {
+        area_azure_span_1
+        area_azure_span_2
+        area_azure_span_3
+        area_azure_span_4
+        area_azure_span_5
+        area_azure_span_6
+        area_azure_span_7
+        area_azure_span_8
+        area_azure_span_9
+    }
+} 
+region_forbidden_reach = {
+    areas = {
+        area_forbidden_reach_1
+        area_forbidden_reach_2
+    }
+} 
+region_ohnahran_plains = {
+    areas = {
+        area_ohn_plains_1
+        area_ohn_plains_2
+        area_ohn_plains_3
+        area_ohn_plains_4
+        area_ohn_plains_5
+        area_ohn_plains_6
+        area_ohn_plains_7
+    }
+} 
+region_thaldrasszus = {
+    areas = {
+        area_thaldrasszus_1
+        area_thaldrasszus_2
+        area_thaldrasszus_3
+        area_thaldrasszus_4
+		area_thaldrasszus_5
+    }
+} 
+region_waking_shores = {
+    areas = {
+        area_waking_shores_1
+        area_waking_shores_2
+        area_waking_shores_3
+        area_waking_shores_4
+        area_waking_shores_5
+        area_waking_shores_6
+        area_waking_shores_7
+    }
+} 
+
+#-------------------
+# Shadowlands
+#-------------------
+region_oribos = {
+    areas = {
+        area_oribos
+        area_tazavesh
+        area_broker_concourses
+    }
+}
+region_maldraxxus = {
+    areas = {
+        area_north_maldraxxus
+        area_west_maldraxxus
+        area_east_maldraxxus
+        area_central_maldraxxus
+        area_south_maldraxxus
+    }
+}
+region_bastion = {
+    areas = {
+        area_north_bastion
+        area_west_bastion
+        area_east_bastion
+        area_south_bastion
+        area_central_bastion
+    }
+}
+region_ardenweald = {
+    areas = {
+        area_north_ardenweald
+        area_east_ardenweald
+        area_west_ardenweald
+        area_south_ardenweald
+        area_central_ardenweald
+    }
+}
+region_revendreth = {
+    areas = {
+        area_castle_nathria
+        area_west_revendreth
+        area_south_revendreth
+        area_east_revendreth
+    }
+}
+region_maw = {
+    areas = {
+        area_torghast
+        area_sanctum_of_domination
+        area_beastwarrens
+        area_peridition_hold
+        area_zovaal_cauldron
+        area_tremaculum
+        area_crucible_of_the_damned
     }
 }
 
 #-------------------
 # Sea
 #-------------------
-eastern_ocean = {
+region_eastern_kingdom_seas = {
 	areas = {
-		area_ek_east
+		area_eastern_kingdom_seas
 	}
 }
 
-western_ocean = {
+region_kalimdor_seas = {
 	areas = {
-		area_kalimdor_west
+		area_kalimdor_seas
 	}
 }
 
-eastern_seas = {
+region_kul_tiras_seas = {
 	areas = {
-		area_ek_south_coast
-		area_ek_central_coast
-		area_ek_north_coast
+		area_kul_tiras_seas
 	}
 }
 
-western_seas = {
+region_broken_isles_seas = {
 	areas = {
-		area_kalimdor_south_coast
-		area_kalimdor_north_coast
+		area_broken_isles_seas
 	}
 }
 
-northern_seas = {
+region_zandalar_seas = {
 	areas = {
-		area_northrend_coast
-		area_kalimdor_north_east
-		area_ek_north_west
+		area_zandalar_seas
 	}
 }
 
-central_seas = {
+region_paradise_seas = {
 	areas = {
-		area_maelstrom_seas
+		area_paradise_seas
 	}
 }
 
-southern_seas = {
+region_nazjatar_seas = {
 	areas = {
-		area_pandaria_coast
-		area_kalimdor_south_east
-		area_ek_south_west
+		area_nazjatar_seas
 	}
 }
+
+region_volcanic_seas = {
+	areas = {
+		area_volcanic_seas
+	}
+}
+
+region_south_seas = {
+	areas = {
+		area_south_seas
+	}
+}
+
+region_pandaria_seas = {
+	areas = {
+		area_pandaria_seas
+        area_southern_passage
+	}
+}
+
+region_northrend_seas = {
+	areas = {
+		area_northrend_seas
+        area_northern_passage
+	}
+}
+
+region_draenor_seas = {
+	areas = {
+		area_draenor_seas
+	}
+}
+
+
+region_draconic_seas = {
+	areas = {
+		area_draconic_seas
+	}
+}
+
 
 #-------------------
 # Other

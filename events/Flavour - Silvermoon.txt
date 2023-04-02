@@ -1,0 +1,174 @@
+namespace = wwu_silvermoon
+
+# Leadership of Silvermoon
+country_event = {
+	id = wwu_silvermoon.1
+	title = wwu_silvermoon.1.title
+	desc = wwu_silvermoon.1.desc
+	picture = KAELTHAS_eventPicture
+	
+	major = yes
+    
+	trigger = {
+        tag = A91
+        current_age = age_burning_legion
+        NOT = { has_global_flag = government_of_silvermoon }
+    }
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+    immediate = {
+        hidden_effect = {
+            set_global_flag = government_of_silvermoon 
+        }
+    }
+    
+	option = {
+		name = wwu_silvermoon.1.option.a
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				ai = yes
+			}
+		}
+		
+        change_government = monarchy
+        add_government_reform = kingdom_of_magic_reform
+		change_religion = fel
+
+        define_ruler = {
+            name = "Kael'thas"
+            dynasty = "Sunstrider"
+            age = 75
+            adm = 6
+            dip = 6
+            mil = 6
+            religion = fel
+        }
+		white_peace = B92
+		white_peace = A93
+		white_peace = G18
+		A93 = {
+			kill_ruler = yes
+		}
+		add_prestige = 150
+		add_opinion = {
+			who = A93
+			modifier = opinion_united_dynasties
+		}
+		remove_opinion = {
+			who = A93
+			modifier = had_war_with_us
+		}
+		add_opinion = {
+			who = G18
+			modifier = opinion_united_dynasties
+		}
+		remove_opinion = {
+			who = G18
+			modifier = had_war_with_us
+		}
+		G18 = {
+			remove_opinion = {
+				who = A91
+				modifier = had_war_with_us
+			}
+		}
+		A93 = {
+			remove_opinion = {
+				who = A91
+				modifier = had_war_with_us
+			}
+		}
+		
+        # PU Sunfury if it exists and this option is picked
+        if = {
+            limit = {
+                exists = A93
+            }
+            create_union = A93
+        }
+		create_alliance = B92
+		join_all_defensive_wars_of = B92
+		hidden_effect = {
+			1597 = {
+				remove_core = A93
+				remove_claim = A93
+			}
+		}
+	}
+	option = {
+		name = wwu_silvermoon.1.option.b
+		
+        change_government = monarchy
+        add_government_reform = convocation_of_silvermoon_reform
+        add_stability = 3
+		add_prestige = 100
+	}
+}
+
+# Blood Knights Arise!
+country_event = {
+	id = wwu_silvermoon.2
+	title = wwu_silvermoon.2.title
+	desc = wwu_silvermoon.2.desc
+	picture = BLOOD_KNIGHT_eventPicture
+	
+	fire_only_once = yes
+    
+	trigger = {
+        tag = A91
+        2991 = {
+            NOT = { has_province_modifier = power_of_the_sunwell }
+        }
+    }
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = wwu_silvermoon.2.option.a
+		
+        add_faction = faction_blood_knights
+	}
+}
+
+# Sunwell Restored
+country_event = {
+	id = wwu_silvermoon.3
+	title = wwu_silvermoon.3.title
+	desc = wwu_silvermoon.3.desc
+	picture = SURAMAR_eventPicture
+	
+	fire_only_once = yes
+    
+	trigger = {
+        has_faction = faction_blood_knights
+        2991 = {
+            has_province_modifier = power_of_the_sunwell
+        }
+    }
+	
+    mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = wwu_silvermoon.3.option.a
+		
+        add_stability_or_adm_power = yes
+	}
+    option = {
+		name = wwu_silvermoon.3.option.b
+		
+        remove_faction = faction_blood_knights
+	}
+}
+
+
+

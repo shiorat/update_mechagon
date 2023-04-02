@@ -5,9 +5,13 @@ country_event = {
 	id = wwu_random_events.1
 	title = wwu_random_events.1.title
 	desc = wwu_random_events.1.desc
-	picture = ECONOMY_eventPicture
+	picture = SACK_OF_COINS_eventPicture
 
 	is_triggered_only = yes
+
+    trigger = {
+        is_high_cultured = yes
+    }
 
 	mean_time_to_happen = {
 		days = 1
@@ -49,7 +53,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = well_connected_personality
 		}
-		required_personality = well_connected_personality
+        
 		ai_chance = {
 			factor = 100
 		}
@@ -63,7 +67,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = embezzler_personality
 		}
-		required_personality = embezzler_personality
+        
 		ai_chance = {
 			factor = 100
 		}
@@ -79,8 +83,7 @@ country_event = {
 				ruler_has_personality = kind_hearted_personality
 			}
 		}
-		required_personality = righteous_personality
-		required_personality = kind_hearted_personality
+        
 		ai_chance = {
 			factor = 100
 		}
@@ -93,7 +96,7 @@ country_event = {
 	id = wwu_random_events.2
 	title = wwu_random_events.2.title
 	desc = wwu_random_events.2.desc
-	picture = COURT_eventPicture
+	picture = MENTAL_COLLAPSE_eventPicture
 	
 	is_triggered_only = yes
     
@@ -102,6 +105,7 @@ country_event = {
 		NOT = { adm = 2 }
 		NOT = { luck = yes }
 		has_regency = no
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -141,7 +145,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = well_advised_personality
 		}
-		required_personality = well_advised_personality
+        
 		ai_chance = { factor = 100 }
 		add_adm_power = 25
 	}
@@ -152,9 +156,10 @@ country_event = {
 	id = wwu_random_events.3
 	title = wwu_random_events.3.title
 	desc = wwu_random_events.3.desc
-	picture = ADVISOR_eventPicture
+	picture = ELISE_STARSEEKER_eventPicture
 	
 	is_triggered_only = yes
+    
 	trigger = {
 		government = monarchy
 		prestige = 2
@@ -170,6 +175,7 @@ country_event = {
 				category = MIL
 			}
 		}
+        is_high_cultured = yes
 	}
 
 	immediate = {
@@ -231,7 +237,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = well_advised_personality
 		}
-		required_personality = well_advised_personality
+        
 		ai_chance = { factor = 100 }
 		add_adm_power = 100
 		add_mil_power = 100
@@ -255,11 +261,12 @@ country_event = {
 	id = wwu_random_events.4
 	title = wwu_random_events.4.title
 	desc = wwu_random_events.4.desc
-	picture = COURT_eventPicture
+	picture = DARING_REPORTER_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
 		num_of_royal_marriages = 2
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -303,10 +310,7 @@ country_event = {
 		if = {
 			limit = { stability = -2 }
 			
-			random = {
-				chance = 50
-				add_stability = -1
-			}
+			add_stability = -1
 		}
 	}
 	option = {
@@ -332,7 +336,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = calm_personality
 		}
-		required_personality = calm_personality
+        
 		add_prestige = -10
 	}
 	option = {
@@ -343,7 +347,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = silver_tongue_personality
 		}
-		required_personality = silver_tongue_personality
+        
 		add_dip_power = -25
 	}
 	option = {
@@ -354,7 +358,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = babbling_buffoon_personality
 		}
-		required_personality = babbling_buffoon_personality
+        
 		add_prestige = -5
 	}
 }
@@ -364,7 +368,7 @@ country_event = {
 	id = wwu_random_events.5
 	title = wwu_random_events.5.title
 	desc = wwu_random_events.5.desc
-	picture = TRADEGOODS_eventPicture
+	picture = TREASURE_VAULT_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
@@ -380,6 +384,7 @@ country_event = {
 		is_year = 546
 		NOT = { is_year = 600 }
 		NOT = { has_country_modifier = exceptional_year }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -445,9 +450,7 @@ country_event = {
 				ruler_has_personality = midas_touched_personality
 			}
 		}
-		required_personality = entrepreneur_personality
-		required_personality = industrious_personality
-		required_personality = midas_touched_personality
+        
 		if = { #if you have more than one of these you get more than one reward
 			limit = {
 				ruler_has_personality = entrepreneur_personality
@@ -489,7 +492,7 @@ country_event = {
 	id = wwu_random_events.6
 	title = wwu_random_events.6.title
 	desc = wwu_random_events.6.desc
-	picture = ECONOMY_eventPicture
+	picture = TREASURE_VAULT_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
@@ -505,6 +508,7 @@ country_event = {
 		is_year = 1550
 		NOT = { is_year = 1650 }
 		NOT = { has_country_modifier = exceptional_year }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -546,7 +550,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = embezzler_personality
 		}
-		required_personality = embezzler_personality
+        
 		add_years_of_income = 0.15
 	}
 	option = {
@@ -560,9 +564,7 @@ country_event = {
 				ruler_has_personality = midas_touched_personality
 			}
 		}
-		required_personality = entrepreneur_personality
-		required_personality = industrious_personality
-		required_personality = midas_touched_personality
+        
 		if = { #if you have more than one of these you get more than one reward
 			limit = {
 				ruler_has_personality = entrepreneur_personality
@@ -604,7 +606,7 @@ country_event = {
 	id = wwu_random_events.7
 	title = wwu_random_events.7.title
 	desc = wwu_random_events.7.desc
-	picture = ECONOMY_eventPicture
+	picture = TREASURE_VAULT_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
@@ -619,6 +621,7 @@ country_event = {
 		}
 		is_year = 1650
 		NOT = { has_country_modifier = exceptional_year }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -672,7 +675,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = embezzler_personality
 		}
-		required_personality = embezzler_personality
+        
 		add_years_of_income = 0.10
 	}
 	option = {
@@ -686,9 +689,7 @@ country_event = {
 				ruler_has_personality = midas_touched_personality
 			}
 		}
-		required_personality = entrepreneur_personality
-		required_personality = industrious_personality
-		required_personality = midas_touched_personality
+        
 		if = { #if you have more than one of these you get more than one reward
 			limit = {
 				ruler_has_personality = entrepreneur_personality
@@ -730,13 +731,14 @@ country_event = {
 	id = wwu_random_events.8
 	title = wwu_random_events.8.title
 	desc = wwu_random_events.8.desc
-	picture = COLONIZATION_eventPicture
+	picture = PANDARIA_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
 		num_of_ports = 1
 		NOT =  { has_country_modifier = monetary_benefits }
 		colony = 1
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -782,7 +784,7 @@ country_event = {
 			ruler_has_personality = expansionist_personality
 			NOT = { has_country_modifier = colonial_enthusiasm }
 		}
-		required_personality = expansionist_personality
+        
 		ai_chance = { factor = 100 }
 		add_country_modifier = {
 			name = "colonial_enthusiasm"
@@ -796,7 +798,7 @@ country_event = {
 	id = wwu_random_events.9
 	title = wwu_random_events.9.title
 	desc = wwu_random_events.9.desc
-	picture = MERCHANTS_TALKING_eventPicture
+	picture = SMUGGLERS_CRATE_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
@@ -807,6 +809,7 @@ country_event = {
 		NOT = {
 			has_country_modifier = monetary_benefits
 		}
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -853,7 +856,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = charismatic_negotiator_personality
 		}
-		required_personality = charismatic_negotiator_personality
+        
 		add_country_modifier = {
 			name = "monetary_benefits"
 			duration = 3650
@@ -867,7 +870,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = navigator_personality
 		}
-		required_personality = navigator_personality
+        
 		add_country_modifier = {
 			name = rush_of_merchants
 			duration = 3650
@@ -880,11 +883,12 @@ country_event = {
 	id = wwu_random_events.10
 	title = wwu_random_events.10.title
 	desc = wwu_random_events.10.desc
-	picture = DIPLOMACY_eventPicture
+	picture = FIGHT_PROMOTER_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
 		dip = 4
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -928,7 +932,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = charismatic_negotiator_personality
 		}
-		required_personality = charismatic_negotiator_personality
+        
 		ai_chance = { factor = 100 }
 		add_dip_power = 50
 	}
@@ -942,7 +946,7 @@ country_event = {
 				is_neighbor_of = ROOT
 			}
 		}
-		required_personality = charismatic_negotiator_personality
+        
 		ai_chance = { factor = 100 }
 		add_dip_power = 25
 		every_country = {
@@ -957,12 +961,13 @@ country_event = {
 	id = wwu_random_events.11
 	title = wwu_random_events.11.title
 	desc = wwu_random_events.11.desc
-	picture = DIPLOMACY_eventPicture
+	picture = DARK_CULTIST_eventPicture
 	
 	is_triggered_only = yes
     
 	trigger = {
 		diplomat = 2
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -1009,8 +1014,7 @@ country_event = {
 			}
 			NOT = { has_country_modifier = excellent_diplomacy_modifier }
 		}
-		required_personality = charismatic_negotiator_personality
-		required_personality = silver_tongue_personality
+        
 		ai_chance = {
 			factor = 100
 		}
@@ -1026,11 +1030,12 @@ country_event = {
 	id = wwu_random_events.12
 	title = wwu_random_events.12.title
 	desc = wwu_random_events.12.desc
-	picture = REFORM_eventPicture
+	picture = AVENGE_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
 		army_reformer = 2
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -1081,7 +1086,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = martial_educator_personality
 		}
-		required_personality = martial_educator_personality
+        
 		add_army_tradition = 35
 	}
 	option = {
@@ -1095,8 +1100,7 @@ country_event = {
 				ruler_has_personality = inspiring_leader_personality
 			}
 		}
-		required_personality = tactical_genius_personality
-		required_personality = inspiring_leader_personality
+        
 		add_mil_power = 75
 	}
 }
@@ -1106,13 +1110,14 @@ country_event = {
 	id = wwu_random_events.13
 	title = wwu_random_events.13.title
 	desc = wwu_random_events.13.desc
-	picture = REFORM_eventPicture
+	picture = KUL_TIRAN_SHIP_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
 		naval_reformer = 2
 		num_of_ports = 1
 		primitives = no
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -1159,7 +1164,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = navigator_personality
 		}
-		required_personality = navigator_personality
+        
 		add_navy_tradition = 30
 		add_yearly_sailors = 1.5
 	}
@@ -1171,7 +1176,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = expansionist_personality
 		}
-		required_personality = expansionist_personality
+        
 		add_dip_power = 75
 	}
 }
@@ -1181,11 +1186,12 @@ country_event = {
 	id = wwu_random_events.14
 	title = wwu_random_events.14.title
 	desc = wwu_random_events.14.desc
-	picture = REFORM_eventPicture
+	picture = HIDDEN_WISDOM_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
 		adm = 5
+        is_high_cultured = yes
 	}
 	
 	mean_time_to_happen = {
@@ -1253,7 +1259,7 @@ country_event = {
 			ruler_has_personality = incorruptible_personality
 			corruption = 1
 		}
-		required_personality = incorruptible_personality
+        
 		add_corruption = -1
 	}
 	option = {
@@ -1263,7 +1269,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = martial_educator_personality
 		}
-		required_personality = martial_educator_personality
+        
 		add_army_tradition = 10
 		
 	}
@@ -1277,7 +1283,7 @@ country_event = {
 				NOT = { war_with = ROOT }
 			}
 		}
-		required_personality = drunkard_personality
+
 		random_neighbor_country = {
 			limit = { NOT = { war_with = ROOT } }
 			add_opinion = {
@@ -1303,7 +1309,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = embezzler_personality
 		}
-		required_personality = embezzler_personality
+        
 		add_years_of_income = -0.25
 	}
 	option = {
@@ -1311,7 +1317,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = obsessive_perfectionist_personality }
-		required_personality = obsessive_perfectionist_personality
+        
 		add_prestige = 10
 	}
 }
@@ -1321,11 +1327,12 @@ country_event = {
 	id = wwu_random_events.15
 	title = wwu_random_events.15.title
 	desc = wwu_random_events.15.desc
-	picture = REFORM_eventPicture
+	picture = ENTRENCHMENT_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		NOT = { adm = 5 }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -1358,10 +1365,7 @@ country_event = {
 		if = {
 			limit = { stability = -2 }
 			
-			random = {
-				chance = 50
-				add_stability = -1
-			}
+			add_stability = -1
 		}
 	}
 	option = {
@@ -1392,7 +1396,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = naive_personality }
-		required_personality = naive_personality
+        
 		add_prestige = -10
 	}
 }
@@ -1402,11 +1406,12 @@ country_event = {
 	id = wwu_random_events.16
 	title = wwu_random_events.16.title
 	desc = wwu_random_events.16.desc
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = DRAIN_LIFE_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
-		always = yes
+		has_estate = estate_clergy
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -1467,15 +1472,18 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = zealot_personality }
-		required_personality = zealot_personality
+        
 		add_estate_clergy_loyalty_effect = yes
 	}
 	option = {
 		name = wwu_random_events.16.option.d
         
 		highlight = yes
-		trigger = { ruler_has_personality = pious_personality }
-		required_personality = pious_personality
+		trigger = { 
+            ruler_has_personality = pious_personality 
+            has_dlc = "Common Sense"
+        }
+        
 		add_devotion = -5
 	}
 }
@@ -1485,9 +1493,14 @@ country_event = {
 	id = wwu_random_events.17
 	title = wwu_random_events.17.title
 	desc = wwu_random_events.17.desc
-	picture = ANGRY_MOB_eventPicture
+	picture = KNIFE_JUGGLER_eventPicture
 
 	is_triggered_only = yes
+    
+    trigger = {
+        has_estate = estate_traders
+        is_high_cultured = yes
+    }
 
 	mean_time_to_happen = {
 		days = 1
@@ -1527,18 +1540,7 @@ country_event = {
 			}
 		}
 		reduce_estate_traders_loyalty_effect = yes
-		if = {
-			limit = { NOT = { stability = -2 } }
-			add_adm_power = -100
-		}		
-		if = {
-			limit = { stability = -2 }
-			
-			random = {
-				chance = 50
-				add_stability = -1
-			}
-		}
+		add_adm_power = -100
 	}
 	option = {
 		name = wwu_random_events.17.option.b
@@ -1562,7 +1564,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = cruel_personality }
-		required_personality = cruel_personality
+        
 		add_years_of_income = 0.1
 		capital_scope = {
 			spawn_rebels = {
@@ -1576,7 +1578,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = entrepreneur_personality }
-		required_personality = entrepreneur_personality
+        
 		add_prestige = -10
 		reduce_estate_traders_loyalty_effect = yes
 	}
@@ -1585,7 +1587,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = obsessive_perfectionist_personality }
-		required_personality = obsessive_perfectionist_personality
+        
 		add_prestige = -5
 		reduce_estate_traders_loyalty_effect = yes
 	}
@@ -1596,9 +1598,14 @@ country_event = {
 	id = wwu_random_events.18
 	title = wwu_random_events.18.title
 	desc = wwu_random_events.18.desc
-	picture = ANGRY_MOB_eventPicture
+	picture = GANG_UP_eventPicture
 
 	is_triggered_only = yes
+
+    trigger = {
+        has_estate = estate_peasants
+        is_high_cultured = yes
+    }
 
 	mean_time_to_happen = {
 		days = 1
@@ -1629,18 +1636,7 @@ country_event = {
 			}
 		}
 		add_prestige = 10
-		if = {
-			limit = { NOT = { stability = -2 } }
-			add_adm_power = -100
-		}		
-		if = {
-			limit = { stability = -2 }
-			
-			random = {
-				chance = 50
-				add_stability = -1
-			}
-		}
+		add_adm_power = -100
 	}
 	option = {
 		name = wwu_random_events.18.option.b
@@ -1659,7 +1655,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = cruel_personality }
-		required_personality = cruel_personality
+        
 		capital_scope = {
 			spawn_rebels = {
 				type = anti_tax_rebels
@@ -1674,11 +1670,13 @@ country_event = {
 	id = wwu_random_events.19
 	title = wwu_random_events.19.title
 	desc = wwu_random_events.19.desc
-	picture = MERCHANTS_TALKING_eventPicture
+	picture = SHADY_DEALER_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
+        has_estate = estate_traders
 		NOT = { mercantilism = 30 }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -1728,7 +1726,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = entrepreneur_personality }
-		required_personality = entrepreneur_personality
+        
 		add_dip_power = -25
 		reduce_estate_traders_loyalty_effect = yes
 	}
@@ -1739,7 +1737,7 @@ country_event = {
 	id = wwu_random_events.20
 	title = wwu_random_events.20.title
 	desc = wwu_random_events.20.desc
-	picture = BURNING_CASTLE_eventPicture
+	picture = MASTER_OF_DISGUISE_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
@@ -1749,6 +1747,7 @@ country_event = {
 			government = dictatorship
 		}
 		is_lesser_in_union = no
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -1785,10 +1784,7 @@ country_event = {
 		if = {
 			limit = { stability = -2 }
 			
-			random = {
-				chance = 50
-				add_stability = -1
-			}
+			add_stability = -1
 		}
 	}
 	option = {
@@ -1817,7 +1813,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = righteous_personality }
-		required_personality = righteous_personality
+        
 		add_legitimacy = -10
 		add_republican_tradition = -5
 		add_horde_unity = -10
@@ -1828,7 +1824,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = just_personality }
-		required_personality = just_personality
+        
 		random_list = {
 			50 = {
 				add_prestige = 5
@@ -1848,10 +1844,15 @@ country_event = {
 	id = wwu_random_events.21
 	title = wwu_random_events.21.title
 	desc = wwu_random_events.21.desc
-	picture = ELECTION_REPUBLICAN_eventPicture
+	picture = PSYCHIC_CONJURER_eventPicture
 
 	is_triggered_only = yes
 	
+    trigger = {
+        NOT = { stability = 0 }
+        is_high_cultured = yes
+    }
+    
 	mean_time_to_happen = {
 		days = 1
 		
@@ -1922,7 +1923,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = embezzler_personality
 		}
-		required_personality = embezzler_personality
+        
 		add_prestige = 5
 	}
 	option = {
@@ -1930,7 +1931,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = incorruptible_personality }
-		required_personality = incorruptible_personality
+        
 		add_adm_power = -25
 	}
 }
@@ -1940,9 +1941,10 @@ country_event = {
 	id = wwu_random_events.22
 	title = wwu_random_events.22.title
 	desc = wwu_random_events.22.desc
-	picture = DIPLOMACY_eventPicture
+	picture = QUESTING_ADVENTURER_eventPicture
 
 	is_triggered_only = yes
+    
 	trigger = {
 		OR = {
 			has_regency = no
@@ -1953,6 +1955,7 @@ country_event = {
 			is_lesser_in_union = no
 			same_continent = root
 		}
+        is_high_cultured = yes
 	}
 
 	immediate = {
@@ -2001,7 +2004,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = silver_tongue_personality }
-		required_personality = silver_tongue_personality
+        
 		add_estate_traders_loyalty_effect = yes
 		add_prestige = 5
 		every_neighbor_country = {
@@ -2016,11 +2019,13 @@ country_event = {
 	id = wwu_random_events.23
 	title = wwu_random_events.23.title
 	desc = wwu_random_events.23.desc
-	picture = COURT_eventPicture
+	picture = RADIANCE_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
+        has_estate = estate_nobility
 		NOT = { has_country_modifier = disorder }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -2048,10 +2053,6 @@ country_event = {
         
 		ai_chance = {
 			factor = 55
-			modifier = {
-				factor = 1.5
-				prestige = 0.2
-			}
 		}
 		add_prestige = -10
 	}
@@ -2086,7 +2087,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = cruel_personality }
-		required_personality = cruel_personality
+        
 		add_prestige = 10
 		capital_scope = {
 			spawn_rebels = {
@@ -2100,7 +2101,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = lawgiver_personality }
-		required_personality = lawgiver_personality
+        
 		add_prestige = -5
 		add_legitimacy = 5
 	}
@@ -2111,11 +2112,11 @@ country_event = {
 	id = wwu_random_events.24
 	title = wwu_random_events.24.title
 	desc = wwu_random_events.24.desc
-	picture = MERCHANTS_TALKING_eventPicture
+	picture = MENTAL_COLLAPSE_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
-		is_year = 1700
+        always = no
 		NOT = { has_country_modifier = trade_disaster }
 	}
 
@@ -2176,7 +2177,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = entrepreneur_personality }
-		required_personality = entrepreneur_personality
+        
 		add_estate_traders_loyalty_effect = yes
 		add_years_of_income = -0.05
 	}
@@ -2189,11 +2190,18 @@ country_event = {
 	id = wwu_random_events.25
 	title = wwu_random_events.25.title
 	desc = wwu_random_events.25.desc
-	picture = DIPLOMACY_eventPicture
+	picture = ALARM_O_BOT_eventPicture
 
 	is_triggered_only = yes
-	trigger = {
+    
+	trigger = { 
+        has_estate = estate_nobility
 		NOT = { dip = 4 }
+        is_high_cultured = yes
+        any_neighbor_country = {
+            NOT = { is_subject_of = root }
+            NOT = { alliance_with = root }
+        }
 	}
 
 	mean_time_to_happen = {
@@ -2274,7 +2282,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = malevolent_personality }
-		required_personality = malevolent_personality
+        
 		add_prestige = -5
 		add_estate_nobility_loyalty_effect = yes
 	}
@@ -2285,13 +2293,14 @@ country_event = {
 	id = wwu_random_events.26
 	title = wwu_random_events.26.title
 	desc = wwu_random_events.26.desc
-	picture = WOW_ASSASSINATION_eventPicture
+	picture = BACKSTAB_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		government = monarchy
 		NOT = { dip = 3 }
 		is_free_or_tributary_trigger = yes
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -2350,7 +2359,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = cruel_personality }
-		required_personality = cruel_personality
+        
 		add_legitimacy = 5
 		add_horde_unity = 5
 		add_mandate_effect = yes
@@ -2361,7 +2370,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = just_personality }
-		required_personality = just_personality
+        
 		add_adm_power = -25
 		add_estate_nobility_loyalty_effect = yes
 	}
@@ -2372,7 +2381,7 @@ country_event = {
 	id = wwu_random_events.27
 	title = wwu_random_events.27.title
 	desc = wwu_random_events.27.desc
-	picture = ECONOMY_eventPicture
+	picture = SACK_OF_COINS_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
@@ -2381,6 +2390,7 @@ country_event = {
 			is_bankrupt = yes
 		}
 		NOT = { has_country_modifier = reduced_taxes_off }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -2438,7 +2448,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = embezzler_personality
 		}
-		required_personality = embezzler_personality
+        
 		add_years_of_income = 1
 	}
 }
@@ -2448,12 +2458,13 @@ country_event = {
 	id = wwu_random_events.28
 	title = wwu_random_events.28.title
 	desc = wwu_random_events.28.desc
-	picture = MERCHANTS_TALKING_eventPicture
+	picture = BESTIARY_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
-		NOT = {mercantilism = 50 }
+		NOT = { mercantilism = 50 }
 		NOT = { has_country_modifier = trade_income_increase }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -2496,7 +2507,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = embezzler_personality
 		}
-		required_personality = embezzler_personality
+        
 		add_years_of_income = 1.5
 	}
 }
@@ -2506,10 +2517,12 @@ country_event = {
 	id = wwu_random_events.29
 	title = wwu_random_events.29.title
 	desc = wwu_random_events.29.desc
-	picture = ECONOMY_eventPicture
+	picture = UNRELENTING_WARRIOR_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
+        has_estate = estate_nobility
+        
 		OR = {
 			government = monarchy
 			has_reform = noble_republic_reform
@@ -2517,6 +2530,7 @@ country_event = {
 		NOT = {
 			has_country_modifier = tax_income_loss
 		}
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -2573,10 +2587,7 @@ country_event = {
 		if = {
 			limit = { stability = -2 }
 			
-			random = {
-				chance = 50
-				add_stability = -1
-			}
+			add_stability = -1
 		}
 		reduce_estate_nobility_loyalty_effect = yes
 	}
@@ -2585,7 +2596,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = charismatic_negotiator_personality }
-		required_personality = charismatic_negotiator_personality
+        
 		add_country_modifier = {
 			name = "tax_income_loss"
 			duration = 5475
@@ -2599,12 +2610,15 @@ country_event = {
 	id = wwu_random_events.30
 	title = wwu_random_events.30.title
 	desc = wwu_random_events.30.desc
-	picture = ECONOMY_eventPicture
+	picture = GATHER_YOUR_PARTY_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
+        has_estate = estate_traders
+        
 		is_lesser_in_union = no
 		NOT = { has_country_modifier = tax_income_boost }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -2635,7 +2649,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				has_reform = warband_reform
+				has_reform = orc_clan_reform
 				NOT = { legitimacy_or_horde_unity = 50 }
 			}
 			modifier = {
@@ -2712,11 +2726,11 @@ country_event = {
 	id = wwu_random_events.31
 	title = wwu_random_events.31.title
 	desc = wwu_random_events.31.desc
-	picture = LAND_MILITARY_eventPicture
+	picture = GATHER_YOUR_PARTY_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
-		is_year = 1600
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -2770,13 +2784,15 @@ country_event = {
 	id = wwu_random_events.32
 	title = wwu_random_events.32.title
 	desc = wwu_random_events.32.desc
-	picture = COURT_eventPicture
+	picture = ABUSIVE_SERGEANT_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
+        has_estate = estate_nobility
 		government = monarchy
 		num_of_cities = 2
 		NOT = { has_country_modifier = old_rights_granted_to_nobility }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -2857,7 +2873,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = lawgiver_personality }
-		required_personality = lawgiver_personality
+        
 		add_adm_power = -25
 	}
 }
@@ -2867,16 +2883,18 @@ country_event = {
 	id = wwu_random_events.33
 	title = wwu_random_events.33.title
 	desc = wwu_random_events.33.desc
-	picture = COURT_eventPicture
+	picture = ARGENT_COMMANDER_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
+        has_estate = estate_traders
 		OR = {
 			government = monarchy
 			government = republic
 			government = theocracy
 		}
 		is_lesser_in_union = no
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -2974,7 +2992,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = lawgiver_personality }
-		required_personality = lawgiver_personality
+		
 		add_adm_power = -25
 	}
 }
@@ -2984,7 +3002,7 @@ country_event = {
 	id = wwu_random_events.34
 	title = wwu_random_events.34.title
 	desc = wwu_random_events.34.desc
-	picture = REFORM_eventPicture
+	picture = ARMORSMITH_eventPicture
 	goto = troublesome_province
     
 	is_triggered_only = yes
@@ -2997,6 +3015,7 @@ country_event = {
 			is_state_core = root
 			is_in_capital_area = no
 		}
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -3066,7 +3085,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = lawgiver_personality }
-		required_personality = lawgiver_personality
+		
 		add_adm_power = -25
 	}
 }
@@ -3076,10 +3095,14 @@ country_event = {
 	id = wwu_random_events.35
 	title = wwu_random_events.35.title
 	desc = wwu_random_events.35.desc
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = AUCTIONMASTER_eventPicture
 
 	is_triggered_only = yes
-	trigger = {	}
+	trigger = {	
+        has_estate = estate_nobility
+        has_estate = estate_traders
+        is_high_cultured = yes
+    }
 
 	mean_time_to_happen = {
 		days = 1
@@ -3148,8 +3171,8 @@ country_event = {
 				ruler_has_personality = silver_tongue_personality
 			}
 		}
-		required_personality = charismatic_negotiator_personality
-		required_personality = silver_tongue_personality
+		
+		
 		add_adm_power = -20
 		add_dip_power = -20
 		reduce_estate_traders_loyalty_effect = yes
@@ -3162,7 +3185,7 @@ country_event = {
 	id = wwu_random_events.36
 	title = wwu_random_events.36.title
 	desc = wwu_random_events.36.desc
-	picture = FORT_eventPicture
+	picture = GATE_OF_THE_SETTING_SUN_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
@@ -3230,7 +3253,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = obsessive_perfectionist_personality
 		}
-		required_personality = obsessive_perfectionist_personality
+		
 		add_prestige = 15
 		add_legitimacy = 25
 		add_horde_unity = 25
@@ -3244,7 +3267,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = architectural_visionary_personality
 		}
-		required_personality = architectural_visionary_personality
+		
 		add_prestige = 10
 		add_legitimacy = 20
 		add_horde_unity = 20
@@ -3258,7 +3281,7 @@ country_event = {
 	id = wwu_random_events.37
 	title = wwu_random_events.37.title
 	desc = wwu_random_events.37.desc
-	picture = ADVISOR_eventPicture
+	picture = ELISE_STARSEEKER_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
@@ -3312,10 +3335,6 @@ country_event = {
 		ai_chance = {
 			factor = 40
 			modifier = {
-				factor = 0.5
-				NOT = { prestige = 0.5 }
-			}
-			modifier = {
 				factor = 0
 				has_estate = estate_clergy
 				NOT = {
@@ -3334,7 +3353,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = free_thinker_personality }
-		required_personality = free_thinker_personality
+		
 		add_adm_power = 25
 		add_prestige = -10
 		reduce_estate_clergy_loyalty_effect = yes
@@ -3348,16 +3367,18 @@ country_event = {
 	id = wwu_random_events.38
 	title = wwu_random_events.38.title
 	desc = wwu_random_events.38.desc
-	picture = MERCHANTS_TALKING_eventPicture
+	picture = MUSEUM_CURATOR_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
+        has_estate = estate_traders
 		num_of_merchants = 2
 		overextension_percentage = 0.25
 		any_country = {
 			is_neighbor_of = ROOT
 			NOT = { has_opinion = { who = ROOT value = 50 } }
 		}
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -3422,7 +3443,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = charismatic_negotiator_personality }
-		required_personality = charismatic_negotiator_personality
+		
 		every_country = {
 			limit = {
 				is_neighbor_of = ROOT
@@ -3439,7 +3460,7 @@ country_event = {
 	id = wwu_random_events.39
 	title = wwu_random_events.39.title
 	desc = wwu_random_events.39.desc
-	picture = COURT_eventPicture
+	picture = THRONE_APPROACH_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
@@ -3450,6 +3471,7 @@ country_event = {
 			is_capital = no
 			is_state_core = root
 		}
+        is_high_cultured = yes
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -3527,11 +3549,13 @@ country_event = {
 	id = wwu_random_events.40
 	title = wwu_random_events.40.title
 	desc = wwu_random_events.40.desc
-	picture = COURT_eventPicture
+	picture = THRONE_APPROACH_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		government = monarchy
+        has_estate = estate_nobility
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -3586,7 +3610,7 @@ country_event = {
 	id = wwu_random_events.41
 	title = wwu_random_events.41.title
 	desc = wwu_random_events.41.desc
-	picture = ANGRY_MOB_eventPicture
+	picture = GANG_UP_eventPicture
 
 	is_triggered_only = yes
 
@@ -3651,11 +3675,13 @@ country_event = {
 	id = wwu_random_events.42
 	title = wwu_random_events.42.title
 	desc = wwu_random_events.42.desc
-	picture = MERCHANTS_TALKING_eventPicture
+	picture = SHADY_DEALER_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
+        has_estate = estate_traders
 		num_of_merchants = 3
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -3706,7 +3732,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = entrepreneur_personality }
-		required_personality = entrepreneur_personality
+		
 		add_mercantilism = 4
 		add_estate_traders_loyalty_effect = yes
 	}
@@ -3717,12 +3743,13 @@ country_event = {
 	id = wwu_random_events.43
 	title = wwu_random_events.43.title
 	desc = wwu_random_events.43.desc
-	picture = ADVISOR_eventPicture
+	picture = WANTED_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		has_parliament = yes
 		advisor = statesman
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -3763,15 +3790,15 @@ country_event = {
 	id = wwu_random_events.44
 	title = wwu_random_events.44.title
 	desc = wwu_random_events.44.desc
-	picture = ADVISOR_eventPicture
+	picture = SOUL_TAP_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		government = theocracy
-		has_estate = estate_church
 		employed_advisor = {
 			religion = heretic
 		}
+        is_high_cultured = yes
 	}
 
 	immediate = {
@@ -3864,11 +3891,12 @@ country_event = {
 	id = wwu_random_events.45
 	title = wwu_random_events.45.title
 	desc = wwu_random_events.45.desc
-	picture = ADVISOR_eventPicture
+	picture = SPELLSLINGER_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		statesman = 2
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -3908,12 +3936,13 @@ country_event = {
 	id = wwu_random_events.46
 	title = wwu_random_events.46.title
 	desc = wwu_random_events.46.desc
-	picture = ELECTION_REPUBLICAN_eventPicture
+	picture = DEFIAS_BANDIT_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		is_elector = yes
 		is_emperor = no
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -3957,12 +3986,14 @@ country_event = {
 	id = wwu_random_events.47
 	title = wwu_random_events.47.title
 	desc = wwu_random_events.47.desc
-	picture = ANGRY_MOB_eventPicture
+	picture = GANG_UP_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		government = monarchy
 		is_lesser_in_union = no
+        is_high_cultured = yes
+        has_estate = estate_nobility
 	}
 
 	mean_time_to_happen = {
@@ -4026,7 +4057,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = charismatic_negotiator_personality }
-		required_personality = charismatic_negotiator_personality
+		
 		add_dip_power = -15
 	}
 }
@@ -4036,11 +4067,12 @@ country_event = {
 	id = wwu_random_events.48
 	title = wwu_random_events.48.title
 	desc = wwu_random_events.48.desc
-	picture = MERCHANTS_TALKING_eventPicture
+	picture = SHADY_DEALER_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		num_of_merchants = 3
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4092,13 +4124,15 @@ country_event = {
 	id = wwu_random_events.49
 	title = wwu_random_events.49.title
 	desc = wwu_random_events.49.desc
-	picture = NAVAL_MILITARY_eventPicture
+	picture = KUL_TIRAN_SHIP_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		navy_tradition = 10
 		NOT = { navy_tradition = 40 }
 		army_tradition = 40
+        is_high_cultured = yes
+        num_of_ports = 6
 	}
 
 	mean_time_to_happen = {
@@ -4132,7 +4166,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = navigator_personality }
-		required_personality = navigator_personality
+		
 		add_navy_tradition = 5
 	}
 }
@@ -4142,7 +4176,7 @@ country_event = {
 	id = wwu_random_events.50
 	title = wwu_random_events.50.title
 	desc = wwu_random_events.50.desc
-	picture = MILITARY_CAMP_eventPicture
+	picture = HORDE_MARCH_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
@@ -4151,6 +4185,7 @@ country_event = {
 		NOT = { army_tradition = 40 }
 		navy_tradition = 40
 		primitives = no
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4180,7 +4215,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = strict_personality }
-		required_personality = strict_personality
+		
 		add_army_tradition = 5
 	}
 }
@@ -4190,12 +4225,13 @@ country_event = {
 	id = wwu_random_events.51
 	title = wwu_random_events.51.title
 	desc = wwu_random_events.51.desc
-	picture = UNIVERSITY_eventPicture
+	picture = HALLS_OF_LIGHTNING_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		government = monarchy
 		has_parliament = no
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4247,12 +4283,13 @@ country_event = {
 	id = wwu_random_events.52
 	title = wwu_random_events.52.title
 	desc = wwu_random_events.52.desc
-	picture = PAINTER_ARTIST_eventPicture
+	picture = HIDDEN_WISDOM_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		NOT = { overextension_percentage = 0.01 }
 		is_at_war = no
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4297,7 +4334,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = fierce_negotiator_personality }
-		required_personality = fierce_negotiator_personality
+		
 		add_years_of_income = -0.15
 		add_prestige = 10
 		add_stability_or_adm_power = yes
@@ -4309,11 +4346,12 @@ country_event = {
 	id = wwu_random_events.53
 	title = wwu_random_events.53.title
 	desc = wwu_random_events.53.desc
-	picture = COURT_eventPicture
+	picture = MOGUSHANS_PALACE_eventPicture
 
 	is_triggered_only = yes
 	trigger = {
 		is_at_war = no
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4347,7 +4385,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = well_connected_personality }
-		required_personality = well_connected_personality
+		
 		add_prestige = 15
 		add_years_of_income = -0.10
 	}
@@ -4358,7 +4396,7 @@ country_event = {
 	id = wwu_random_events.54
 	title = wwu_random_events.54.title
 	desc = wwu_random_events.54.desc
-	picture = COURT_eventPicture
+	picture = GRAND_FINALE_eventPicture
 
 	is_triggered_only = yes
 
@@ -4369,6 +4407,7 @@ country_event = {
 		NOT = { num_of_rebel_armies = 1 }
 		adm = 3
 		has_regency = no
+        is_high_cultured = yes
 	}
 
 	immediate = {
@@ -4424,7 +4463,7 @@ country_event = {
 		name = wwu_random_events.54.option.c
 		highlight = yes
 		trigger = { ruler_has_personality = drunkard_personality }
-		required_personality = drunkard_personality
+		
 		add_stability_or_adm_power = yes
 		random_neighbor_country = {
 			limit = {
@@ -4452,20 +4491,20 @@ country_event = {
 	id = wwu_random_events.55
 	title = wwu_random_events.55.title
 	desc = wwu_random_events.55.desc
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = CAULDRON_eventPicture
 
 	is_triggered_only = yes
 	
 	trigger = {
 		stability = 0
 		NOT = { government = tribal }
-		NOT = { government = native }
 		any_owned_province = {
 			is_state = yes
 			is_core = ROOT
 			is_in_capital_area = yes
 			is_capital = no
 		}
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4520,25 +4559,15 @@ country_event = {
 				stability = 2
 			}
 		}
-		if = {
-			limit = { NOT = { stability = -2 } }
-			add_adm_power = -100
-		}		
-		if = {
-			limit = { stability = -2 }
-			
-			random = {
-				chance = 50
-				add_stability = -1
-			}
-		}
+        
+		add_dip_power = -100
 	}
 	option = {
 		name = wwu_random_events.55.option.c
         
 		highlight = yes
 		trigger = { ruler_has_personality = cruel_personality }
-		required_personality = cruel_personality
+		
 		event_target:bailiff_province = {
 			spawn_small_scaled_rebels = {
 				type = anti_tax_rebels
@@ -4553,7 +4582,7 @@ country_event = {
 	id = wwu_random_events.56
 	title = wwu_random_events.56.title
 	desc = wwu_random_events.56.desc
-	picture = POPE_PREACHING_eventPicture
+	picture = CURSE_OF_RAFAAM_eventPicture
 
 	is_triggered_only = yes
 	
@@ -4564,6 +4593,8 @@ country_event = {
         any_owned_province = {
 			is_state_core = root
 		}
+        has_estate = estate_clergy
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4643,7 +4674,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = tolerant_personality }
-		required_personality = tolerant_personality
+		
 		add_prestige = 5
 		reduce_estate_clergy_loyalty_effect = yes
 		event_target:heresy_province = {
@@ -4679,13 +4710,14 @@ country_event = {
 	id = wwu_random_events.57
 	title = wwu_random_events.57.title
 	desc = wwu_random_events.57.desc
-	picture = ECONOMY_eventPicture
+	picture = BLINGTRON_3000_eventPicture
 
 	is_triggered_only = yes
 	
 	trigger = {
 		stability = 0
 		inflation = 5
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4731,7 +4763,7 @@ country_event = {
 	id = wwu_random_events.58
 	title = wwu_random_events.58.title
 	desc = wwu_random_events.58.desc
-	picture = COURT_eventPicture
+	picture = TREASURE_VAULT_eventPicture
 
 	is_triggered_only = yes
 	
@@ -4740,6 +4772,7 @@ country_event = {
 		is_at_war = no
 		NOT = { war_exhaustion = 0.1 }
 		NOT = { had_recent_war = 10 }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4765,13 +4798,14 @@ country_event = {
 	id = wwu_random_events.59
 	title = wwu_random_events.59.title
 	desc = wwu_random_events.59.desc
-	picture = LAND_MILITARY_eventPicture
+	picture = PITCHED_BATTLE_eventPicture
 
 	is_triggered_only = yes
 	
 	trigger = {
 		NOT = { has_country_modifier = defensive_modifier }
 		NOT = { has_country_modifier = offensive_modifier }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4801,7 +4835,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = martial_educator_personality
 		}
-		required_personality = martial_educator_personality
+		
 		add_country_modifier = {
 			name = offensive_modifier
 			duration = 1825
@@ -4818,7 +4852,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = bold_fighter_personality
 		}
-		required_personality = bold_fighter_personality
+		
 		add_country_modifier = {
 			name = offensive_modifier
 			duration = 5475
@@ -4831,7 +4865,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = tactical_genius_personality
 		}
-		required_personality = tactical_genius_personality
+		
 		add_country_modifier = {
 			name = defensive_modifier
 			duration = 5475
@@ -4844,7 +4878,7 @@ country_event = {
 	id = wwu_random_events.60
 	title = wwu_random_events.60.title
 	desc = wwu_random_events.60.desc
-	picture = COURT_eventPicture
+	picture = MOROES_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -4854,6 +4888,7 @@ country_event = {
 		has_regency = no
 		is_lesser_in_union = no
 		NOT = { DIP = 4 }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4872,7 +4907,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = charismatic_negotiator_personality
 		}
-		required_personality = charismatic_negotiator_personality
+		
 		add_prestige = -10
 	}
 }
@@ -4882,12 +4917,14 @@ country_event = {
 	id = wwu_random_events.61
 	title = wwu_random_events.61.title
 	desc = wwu_random_events.61.desc
-	picture = COURT_eventPicture
+	picture = NIGHTBANE_TEMPLAR_eventPicture
 
 	is_triggered_only = yes
 	
 	trigger = {
 		stability = 1
+        has_estate = estate_nobility
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4941,12 +4978,14 @@ country_event = {
 	id = wwu_random_events.62
 	title = wwu_random_events.62.title
 	desc = wwu_random_events.62.desc
-	picture = REFORM_eventPicture
+	picture = SACK_OF_COINS_eventPicture
 	
 	is_triggered_only = yes
 	
 	trigger = {
 		stability = 0
+        is_emperor_of_china = yes
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -4984,7 +5023,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = midas_touched_personality }
-		required_personality = midas_touched_personality
+		
 		add_inflation = -1
 		add_mandate_effect = yes
 	}
@@ -4995,13 +5034,14 @@ country_event = {
 	id = wwu_random_events.63
 	title = wwu_random_events.63.title
 	desc = wwu_random_events.63.desc
-	picture = REFORM_eventPicture
+	picture = TREASURE_VAULT_eventPicture
 
 	is_triggered_only = yes
 	
 	trigger = {
 		war_exhaustion = 5
 		is_at_war = no
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -5034,7 +5074,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = kind_hearted_personality }
-		required_personality = kind_hearted_personality
+		
 		ai_chance = {
 			factor = 100
 		}
@@ -5047,13 +5087,15 @@ country_event = {
 	id = wwu_random_events.64
 	title = wwu_random_events.64.title
 	desc = wwu_random_events.64.desc
-	picture = MILITARY_CAMP_eventPicture
+	picture = HORDE_BATTLE_CRY_eventPicture
 
 	is_triggered_only = yes
 	
 	trigger = {
 		stability = 0
 		army_tradition = 50
+        has_estate = estate_nobility
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -5106,7 +5148,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = martial_educator_personality }
-		required_personality = martial_educator_personality
+		
 		ai_chance = {
 			factor = 100
 		}
@@ -5119,13 +5161,15 @@ country_event = {
 	id = wwu_random_events.65
 	title = wwu_random_events.65.title
 	desc = wwu_random_events.65.desc
-	picture = NAVAL_MILITARY_eventPicture
+	picture = ADMIRAL_eventPicture
 
 	is_triggered_only = yes
 	
 	trigger = {
 		stability = 0
 		navy_tradition = 50
+        is_high_cultured = yes
+        has_estate = estate_nobility
 	}
 
 	mean_time_to_happen = {
@@ -5174,7 +5218,7 @@ country_event = {
         
 		highlight = yes
 		trigger = { ruler_has_personality = navigator_personality }
-		required_personality = navigator_personality
+		
 		ai_chance = {
 			factor = 50
 		}
@@ -5187,7 +5231,7 @@ country_event = {
 	id = wwu_random_events.66
 	title = wwu_random_events.66.title
 	desc = wwu_random_events.66.desc
-	picture = COURT_eventPicture
+	picture = PLAGUE_eventPicture
 
 	is_triggered_only = yes
 	
@@ -5197,6 +5241,7 @@ country_event = {
 		government = monarchy
 		NOT = {	has_ruler_modifier = power_to_nobles }
 		NOT = {	has_ruler_modifier = power_to_provinces	}
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -5258,7 +5303,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = well_advised_personality
 		}
-		required_personality = well_advised_personality
+		
 		ai_chance = {
 			factor = 100
 		}
@@ -5274,7 +5319,7 @@ country_event = {
 	id = wwu_random_events.67
 	title = wwu_random_events.67.title
 	desc = wwu_random_events.67.desc
-	picture = ANGRY_MOB_eventPicture
+	picture = ARGENT_HORSERIDER_eventPicture
 
 	is_triggered_only = yes
 	
@@ -5284,6 +5329,7 @@ country_event = {
 			has_owner_culture = no
 			NOT = { local_autonomy = 0.5 }
 		}
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -5371,7 +5417,7 @@ country_event = {
 	id = wwu_random_events.68
 	title = "EVTNAME1072"
 	desc = "EVTDESC1072"
-	picture = DIPLOMACY_eventPicture
+	picture = ANCESTRAL_KNOWLEDGE_eventPicture
 	
 	trigger = {
 		num_of_cities = 25
@@ -5379,6 +5425,7 @@ country_event = {
 		is_at_war = yes
 		NOT = { mil = 3 }
 		num_of_loans = 20
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -5431,12 +5478,13 @@ country_event = {
 	id = wwu_random_events.69
 	title = "EVTNAME1073"
 	desc = "EVTDESC1073"
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = CUTPURSE_eventPicture
 	
 	trigger = {
 		num_of_cities = 25
 		NOT = { adm = 3 }
 		NOT = { stability = 0 }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -5487,12 +5535,13 @@ country_event = {
 	id = wwu_random_events.70
 	title = "EVTNAME1074"
 	desc = "EVTDESC1074"
-	picture = ECONOMY_eventPicture
+	picture = BESTIARY_eventPicture
 	
 	trigger = {
 		num_of_cities = 25
 		advisor = treasurer
 		num_of_loans = 20
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -5534,7 +5583,7 @@ country_event = {
 	id = wwu_random_events.71
 	title = "EVTNAME1075"
 	desc = "EVTDESC1075"
-	picture = ECONOMY_eventPicture
+	picture = HOLY_CHAMPION_eventPicture
 	
 	trigger = {
 		num_of_cities = 25
@@ -5545,6 +5594,7 @@ country_event = {
 		}
 		stability = 1
 		NOT = { has_country_flag = prosper_time_event }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -5606,13 +5656,14 @@ country_event = {
 	id = wwu_random_events.72
 	title = "EVTNAME1076"
 	desc = "EVTDESC1076"
-	picture = COLONIZATION_eventPicture
+	picture = BROKEN_ISLES_eventPicture
 	
 	trigger = {
 		num_of_cities = 25
 		has_idea_group = wwu_exploration_ideas
 		NOT = { has_country_modifier = naval_improvements }
 		NOT = { has_country_modifier = naval_disarmament }
+        is_high_cultured = yes
 	}
 
 	mean_time_to_happen = {
@@ -5625,10 +5676,6 @@ country_event = {
 		modifier = {
 			factor = 0.9
 			num_of_explorers = 1
-		}
-		modifier = {
-			factor = 0.9
-			has_idea = colonial_ventures
 		}
 		modifier = {
 			factor = 0.9

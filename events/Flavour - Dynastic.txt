@@ -1,65 +1,65 @@
 namespace = wwu_dynastic
 
-# A beloved heir dies
-country_event = {
-	id = wwu_dynastic.1
-	title = wwu_dynastic.1.title
-	desc = wwu_dynastic.1.desc
-	picture = DEATH_OF_HEIR_eventPicture
-	
-	trigger = {
-        is_civilized = yes
-		has_heir = yes
-		heir_claim = 90
-		is_female = no
-		is_lesser_in_union = no
-		has_regency = no
-		government = monarchy
-        
-		any_owned_province = {
-			num_free_building_slots = 1
-			NOT = { has_building = wow_temple }
-		}
-		has_government_attribute = heir
-	}
-	
-	mean_time_to_happen = {
-		months = 3600
-	}
-	
-	option = {
-		name = wwu_dynastic.1.option.a
-		kill_heir = yes
-		random_owned_province = {
-			limit = {
-				NOT = {
-					has_building = wow_temple
-				}
-				num_free_building_slots = 1
-			}
-			add_building = wow_temple
-		}
-	}
-	
-	option = {
-		name = wwu_dynastic.1.option.b
-		kill_heir = yes
-		define_heir = {
-			dynasty = ROOT
-			claim = 30
-		}
-	}
-}
+## A beloved heir dies
+#country_event = {
+#	id = wwu_dynastic.1
+#	title = wwu_dynastic.1.title
+#	desc = wwu_dynastic.1.desc
+#	picture = DEATH_OF_HEIR_eventPicture
+#	
+#	trigger = {
+#        is_high_cultured = yes
+#		has_heir = yes
+#		heir_claim = 90
+#		is_female = no
+#		is_lesser_in_union = no
+#		has_regency = no
+#		government = monarchy
+#        
+#		any_owned_province = {
+#			num_free_building_slots = 1
+#			NOT = { has_building = wow_temple_1 }
+#		}
+#		has_government_attribute = heir
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 3600
+#	}
+#	
+#	option = {
+#		name = wwu_dynastic.1.option.a
+#		kill_heir = { }
+#		random_owned_province = {
+#			limit = {
+#				NOT = {
+#					has_building = wow_temple_1
+#				}
+#				num_free_building_slots = 1
+#			}
+#			add_building = wow_temple_1
+#		}
+#	}
+#	
+#	option = {
+#		name = wwu_dynastic.1.option.b
+#		kill_heir = { }
+#		define_heir = {
+#			dynasty = ROOT
+#			claim = 30
+#		}
+#	}
+#}
 
 # Palace Coup
 country_event = {
 	id = wwu_dynastic.2
 	title = wwu_dynastic.2.title
 	desc = wwu_dynastic.2.desc
-	picture = ASSASSINATION_eventPicture
+	picture = ASSASSINATE_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		has_heir = yes
 		heir_age = 15
 		heir_claim = 90
@@ -92,7 +92,7 @@ country_event = {
 	option = {
 		name = wwu_dynastic.2.option.b
         
-		kill_heir = yes
+		kill_heir = { }
 	}
 }
 
@@ -101,10 +101,10 @@ country_event = {
 	id = wwu_dynastic.3
 	title = wwu_dynastic.3.title
 	desc = wwu_dynastic.3.desc
-	picture = COURT_eventPicture
+	picture = ANCIENT_TEACHINGS_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		has_heir = yes
 		has_wartaxes = yes
 		is_lesser_in_union = no
@@ -142,10 +142,10 @@ country_event = {
 	id = wwu_dynastic.4
 	title = wwu_dynastic.4.title
 	desc = wwu_dynastic.4.desc
-	picture = COURT_eventPicture
+	picture = NOURISH_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		government = monarchy
 		is_month = 3
 		NOT = { is_month = 6 }
@@ -228,10 +228,10 @@ country_event = {
 	id = wwu_dynastic.5
 	title = wwu_dynastic.5.title
 	desc = wwu_dynastic.5.desc
-	picture = COURT_eventPicture
+	picture = ROYAL_DATE_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		has_heir = no
 		is_lesser_in_union = no
 		government = monarchy
@@ -334,7 +334,7 @@ country_event = {
 		name = wwu_dynastic.6.option.a
 		add_years_of_income = -0.2
 		random_list = {
-			50 = { kill_heir = yes }
+			50 = { kill_heir = { } }
 			50 = {
 				add_legitimacy = 5
                 add_republican_tradition = 5
@@ -348,7 +348,7 @@ country_event = {
 	option = {
 		name = wwu_dynastic.6.option.b
 		random_list = {
-			75 = { kill_heir = yes}
+			75 = { kill_heir = { }}
 			25 = {
 				add_legitimacy = 30
                 add_republican_tradition = 30
@@ -365,10 +365,10 @@ country_event = {
 	id = wwu_dynastic.7
 	title = wwu_dynastic.7.title
 	desc = wwu_dynastic.7.desc
-	picture = NEW_HEIR_eventPicture
+	picture = BESTIARY_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		has_heir = no
 		is_lesser_in_union = no
 		government = monarchy
@@ -412,10 +412,10 @@ country_event = {
 	id = wwu_dynastic.8
 	title = wwu_dynastic.8.title
 	desc = wwu_dynastic.8.desc
-	picture = TOURNAMENT_eventPicture
+	picture = CROWD_FAVOURITE_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		has_heir = yes
 		heir_age = 15
 		is_lesser_in_union = no
@@ -435,7 +435,7 @@ country_event = {
 		random_list = {
 			50 = { add_years_of_income = 0.05 }
 			45 = { add_legitimacy = 20}
-			5 = { kill_heir = yes}
+			5 = { kill_heir = { }}
 		}
 	}
 	
@@ -456,7 +456,7 @@ country_event = {
 	id = wwu_dynastic.9
 	title = wwu_dynastic.9.title
 	desc = wwu_dynastic.9.desc
-	picture = DEATH_OF_HEIR_eventPicture
+	picture = BEAR_TRAP_eventPicture
 	
 	trigger = {
 		has_heir = yes
@@ -468,12 +468,12 @@ country_event = {
 	}
 	option = {
 		name = wwu_dynastic.9.option.a
-		kill_heir = yes
+		kill_heir = { }
 		add_stability = -1
 	}
 	option = {
 		name = wwu_dynastic.9.option.b
-		kill_heir = yes
+		kill_heir = { }
 		add_prestige = -10
 	}
 }
@@ -483,10 +483,10 @@ country_event = {
 	id = wwu_dynastic.10
 	title = wwu_dynastic.10.title
 	desc = wwu_dynastic.10.desc
-	picture = COURT_eventPicture
+	picture = CONFUSE_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		has_heir = yes
 		heir_age = 15
 		is_lesser_in_union = no
@@ -513,10 +513,10 @@ country_event = {
 	id = wwu_dynastic.11
 	title = wwu_dynastic.11.title
 	desc = wwu_dynastic.11.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = EVIL_HECKLER_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		stability = 3
 		treasury = 100
 		government = monarchy
@@ -571,10 +571,10 @@ country_event = {
 	id = wwu_dynastic.12
 	title = wwu_dynastic.12.title
 	desc = wwu_dynastic.12.desc
-	picture = DEATH_OF_HEIR_eventPicture
+	picture = GARRISON_COMMANDER_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		NOT = { stability = -1 }
 		is_lesser_in_union = no
 		government = monarchy
@@ -590,7 +590,7 @@ country_event = {
 	
 	option = {
 		name = wwu_dynastic.12.option.a
-		kill_heir = yes
+		kill_heir = { }
 		define_ruler = {
 		}
 		if = {
@@ -613,7 +613,7 @@ country_event = {
 	id = wwu_dynastic.13
 	title = wwu_dynastic.13.title
 	desc = wwu_dynastic.13.desc
-	picture = NEW_HEIR_eventPicture
+	picture = STARLORD_eventPicture
 	
 	trigger = {
         culture_group = culture_group_human
@@ -668,7 +668,7 @@ country_event = {
 	id = wwu_dynastic.14
 	title = wwu_dynastic.14.title
 	desc = wwu_dynastic.14.desc
-	picture = DIPLOMACY_eventPicture
+	picture = MAIDEN_OF_THE_LAKE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -706,7 +706,7 @@ country_event = {
 	id = wwu_dynastic.15
 	title = wwu_dynastic.15.title
 	desc = wwu_dynastic.15.desc
-	picture = DIPLOMACY_eventPicture
+	picture = SPELLSLINGER_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -731,12 +731,12 @@ province_event = {
 	id = wwu_dynastic.16
 	title = wwu_dynastic.16.title
 	desc = wwu_dynastic.16.desc
-	picture = ASSASSINATION_eventPicture
+	picture = ASSASSINATE_eventPicture
 	
 	trigger = {
 		is_capital = yes
 		owner = {
-            is_civilized = yes
+            is_high_cultured = yes
 			has_regency = no
 			has_heir = yes
 			is_lesser_in_union = no
@@ -758,7 +758,7 @@ province_event = {
 		name = wwu_dynastic.16.option.a
         
 		owner = {
-			kill_heir = yes
+			kill_heir = { }
 			set_country_flag = murdering_bastard
 		}
 	}
@@ -777,7 +777,7 @@ country_event = {
 	id = wwu_dynastic.17
 	title = wwu_dynastic.17.title
 	desc = wwu_dynastic.17.desc
-	picture = DEATH_OF_HEIR_eventPicture
+	picture = BACKSTAB_eventPicture
 	
 	trigger = {
 		has_country_flag = murdering_bastard
@@ -809,7 +809,7 @@ country_event = {
 	id = wwu_dynastic.18
 	title = wwu_dynastic.18.title
 	desc = wwu_dynastic.18.desc
-	picture = DEATH_OF_HEIR_eventPicture
+	picture = MENTAL_COLLAPSE_eventPicture
 
 	trigger = {
 		has_country_flag = contained_insanity
@@ -844,7 +844,7 @@ country_event = {
 	id = wwu_dynastic.19
 	title = wwu_dynastic.19.title
 	desc = wwu_dynastic.19.desc
-	picture = DEATH_OF_HEIR_eventPicture
+	picture = DIVINE_STRENGTH_eventPicture
 	
 	trigger = {
 		OR = {
@@ -872,10 +872,10 @@ country_event = {
 	id = wwu_dynastic.20
 	title = wwu_dynastic.20.title
 	desc = wwu_dynastic.20.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = ROYAL_DATE_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		prestige = 30
 		government = monarchy
 		is_lesser_in_union = no
@@ -937,10 +937,10 @@ country_event = {
 	id = wwu_dynastic.21
 	title = wwu_dynastic.21.title
 	desc = wwu_dynastic.21.desc
-	picture = DIPLOMACY_eventPicture
+	picture = BRAVE_ARCHER_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		any_known_country = {
 			has_country_modifier = sought_after_bachelor
 			is_lesser_in_union = no
@@ -974,7 +974,7 @@ country_event = {
 	}
 	
 	option = {
-		name = wwu_dynastic.21.opton.b
+		name = wwu_dynastic.21.option.b
 		add_treasury = 10
 		add_adm_power = 10
 	}
@@ -985,7 +985,7 @@ country_event = {
 	id = wwu_dynastic.22
 	title = wwu_dynastic.22.title
 	desc = wwu_dynastic.22.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = HOLY_BOOK_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -1017,7 +1017,7 @@ country_event = {
 	id = wwu_dynastic.23
 	title = wwu_dynastic.23.title
 	desc = wwu_dynastic.23.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = KING_ANDUIN_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -1049,7 +1049,7 @@ country_event = {
 	id = wwu_dynastic.24
 	title = wwu_dynastic.24.title
 	desc = wwu_dynastic.24.desc
-	picture = MILITARY_CAMP_eventPicture
+	picture = HORDE_MARCH_eventPicture
 	
 	trigger = {
 		government = monarchy
@@ -1077,7 +1077,7 @@ country_event = {
 	
 	option = {
 		name = wwu_dynastic.24.option.b
-		kill_heir = yes
+		kill_heir = { }
 		add_war_exhaustion = -2
 	}
 }
@@ -1087,10 +1087,10 @@ country_event = {
 	id = wwu_dynastic.25
 	title = wwu_dynastic.25.title
 	desc = wwu_dynastic.25.desc
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = MOON_PRIESTESS_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		war_exhaustion = 4
 		adm = 3
 	}
@@ -1115,10 +1115,10 @@ country_event = {
 	id = wwu_dynastic.26
 	title = wwu_dynastic.26.title
 	desc = wwu_dynastic.26.desc
-	picture = NEW_HEIR_eventPicture
+	picture = ROMULO_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		is_lesser_in_union = no
 		government = monarchy
 		has_heir = no
@@ -1163,10 +1163,10 @@ country_event = {
 	id = wwu_dynastic.27
 	title = wwu_dynastic.27.title
 	desc = wwu_dynastic.27.desc
-	picture = NEW_HEIR_eventPicture
+	picture = STELLAR_DRIFT_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		has_heir = no
 		ruler_age = 40
 		government = monarchy
@@ -1254,10 +1254,10 @@ country_event = {
 	id = wwu_dynastic.28
 	title = wwu_dynastic.28.title
 	desc = wwu_dynastic.28.desc
-	picture = NEW_HEIR_eventPicture
+	picture = HIDDEN_WISDOM_eventPicture
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		has_heir = no
 		ruler_age = 20
 		government = monarchy
@@ -1299,10 +1299,10 @@ country_event = {
 	id = wwu_dynastic.29
 	title = wwu_dynastic.29.title
 	desc = wwu_dynastic.29.desc
-	picture = NEW_HEIR_eventPicture
+	picture = QUEST_FOR_EPIC_LOOT_eventPicture
 	
 	trigger = { 
-        is_civilized = yes
+        is_high_cultured = yes
 		has_heir = no
 		ruler_age = 40
 		government = monarchy
@@ -1378,12 +1378,12 @@ country_event = {
 	id = wwu_dynastic.30
 	title = wwu_dynastic.30.title
 	desc = wwu_dynastic.30.desc
-	picture = NEW_HEIR_eventPicture
+	picture = BLESSING_OF_WISDOM_eventPicture
 	
 	is_triggered_only = yes
 	
 	trigger = {
-        is_civilized = yes
+        is_high_cultured = yes
 		has_heir = no
 		num_of_cities = 2
 		has_regency = yes
@@ -1391,7 +1391,7 @@ country_event = {
 		government = monarchy
 
 		any_known_country = {
-            is_civilized = yes
+            is_high_cultured = yes
 			government = monarchy
 			has_regency = no
 			is_free_or_tributary_trigger = yes
@@ -1412,7 +1412,7 @@ country_event = {
 		hidden_effect = {
 			random_known_country = {
 				limit = {
-                    is_civilized = yes
+                    is_high_cultured = yes
 					government = monarchy
 					has_regency = no
 					is_free_or_tributary_trigger = yes

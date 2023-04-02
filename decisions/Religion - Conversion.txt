@@ -1,0 +1,83 @@
+country_decisions = {
+    time_for_religious_monarch = {
+        potential = {
+            NOT = { ruler_religion = ROOT }
+        }
+        allow = {
+            NOT = { ruler_religion = ROOT }
+            stability = 0
+        }
+        effect = {
+            add_stability = -1
+            set_ruler_religion = ROOT
+        }		
+        ai_will_do = {
+            factor = 1
+            
+            modifier = {
+                factor = 0
+                
+                ruler_religion = fel
+            }
+            
+            modifier = {
+                factor = 0
+                
+                NOT = { stability = 3 }
+            }
+        }
+    }
+    
+    enforce_religious_hegemony = {
+        potential = {
+            has_government_attribute = enables_forced_conversion
+        }
+        allow = {
+            has_government_attribute = enables_forced_conversion
+            adm_power = 50
+            any_owned_province = {
+                NOT = { religion = ROOT }
+            }
+        }
+        effect = {
+            add_adm_power = -50
+            random_owned_province = {
+                limit = {
+                    NOT = { religion = ROOT }
+                    NOT = { has_province_modifier = religious_zeal_at_conv }
+                }
+                change_religion = ROOT
+                add_province_modifier = {
+                    name = religious_zeal_at_conv
+                    duration = 3650
+                }
+            }
+        }		
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    submission_to_arcane = {
+        potential = {
+            primary_culture = culture_high_elf
+            religion = holy_light
+        }
+        allow = {
+            primary_culture = culture_high_elf
+            religion = holy_light
+            adm_power = 100
+        }
+        effect = {
+            add_adm_power = -100
+            
+            change_religion = arcane
+            capital_scope = {
+                change_religion = arcane
+            }
+        }		
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

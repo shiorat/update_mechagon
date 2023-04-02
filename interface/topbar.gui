@@ -49,6 +49,10 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
+
+
+
+
 		iconType =
 		{
 			name ="topbar_upper_left_bg"
@@ -128,6 +132,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_great_power_button"
 			buttonFont = "Main_14_black"
 			clicksound = macro_build
+			shortcut = "Shift+G"		   
 		}
 
 
@@ -147,7 +152,6 @@ guiTypes = {
 			clicksound = macro_build
 		}
 
-        
 	######### top bar portraits ###########
 
 

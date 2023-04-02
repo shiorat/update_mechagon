@@ -4,13 +4,18 @@ country_event = {
 	id = wwu_pretender.1
 	title = wwu_pretender.1.title
 	desc = wwu_pretender.1.desc
-	picture = MILITARY_CAMP_eventPicture
+	picture = ENTRENCHMENT_eventPicture
 	
 	is_triggered_only = yes
 	
 	trigger = { 
 		num_of_cities = 3 
 		government = monarchy
+        
+        NOT = { has_reform = scourge_domain_reform }
+        NOT = { has_reform = scourge_reform }
+        NOT = { has_reform = zandalari_empire_reform }
+        
 		NOT = { legitimacy = 75 }
 	}
 	

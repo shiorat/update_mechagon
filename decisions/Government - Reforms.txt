@@ -1,0 +1,361 @@
+country_decisions = {
+    #-----------------------------
+    # Universal
+    #-----------------------------
+    raise_militia = {
+        potential = {
+            has_government_attribute = enables_raise_militia_decision
+        }
+        allow = {
+            has_government_attribute = enables_raise_militia_decision
+            is_at_war = yes
+            
+            mil_power = 25
+            
+            any_owned_province = {
+                units_in_province = 1
+            }
+            NOT = { has_country_modifier = raise_militia_cooldown }
+        }
+        effect = {
+            add_mil_power = -25
+            
+            random_owned_province = {
+                limit = {
+                    units_in_province = 1
+                }
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+            }
+            hidden_effect = {
+                add_country_modifier = {
+                    name = raise_militia_cooldown
+                    duration = 3650
+                }
+            }
+        }		
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    desperate_push = {
+        potential = {
+            has_government_attribute = enables_desperate_push_decision
+        }
+        allow = {
+            has_government_attribute = enables_desperate_push_decision
+            is_at_war = yes
+            NOT = { war_score = -50 }
+        }
+        effect = {
+            add_prestige = -100
+            add_country_modifier = {
+                name = desperate_push_buff
+                duration = 9125
+            }
+            add_country_modifier = {
+                name = military_exhaustion
+                duration = 9125
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    scrapping_the_barrel = {
+        potential = {
+            has_government_attribute = enables_scrapping_the_barrel_decision
+        }
+        allow = {
+            has_government_attribute = enables_scrapping_the_barrel_decision
+            is_at_war = yes
+            NOT = { war_score = -50 }
+        }
+        effect = {
+            add_prestige = -100
+            
+            add_yearly_manpower = 10.0
+            
+            add_country_modifier = {
+                name = depleted_population
+                duration = 9125
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    #-----------------------------
+    # Tribal
+    #-----------------------------
+    perform_ritual = {
+        potential = {
+            has_government_attribute = enables_perform_ritual_decision
+            NOT = { has_country_modifier = blessing_of_peace }
+        }
+        allow = {
+            has_government_attribute = enables_perform_ritual_decision
+            dip_power = 25
+        }
+        effect = {
+            add_dip_power = -25
+            
+            add_country_modifier = {
+                name = blessing_of_peace
+                duration = 10950
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    perform_sacrifice = {
+        potential = {
+            has_government_attribute = enables_perform_sacrifice_decision
+            NOT = { has_country_modifier = ritual_sacrifice }
+        }
+        allow = {
+            has_government_attribute = enables_perform_sacrifice_decision
+            mil_power = 50
+        }
+        effect = {
+            add_mil_power = -50
+            
+            random_owned_province = {
+                add_devastation = 50
+            }
+            
+            add_country_modifier = {
+                name = ritual_sacrifice
+                duration = 10950
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    consult_the_elders = {
+        potential = {
+            has_government_attribute = enables_consult_the_elders_decision
+            NOT = { has_country_modifier = elder_consultation }
+        }
+        allow = {
+            has_government_attribute = enables_consult_the_elders_decision
+            adm_power = 100
+        }
+        effect = {
+            add_adm_power = -100
+            
+            add_country_modifier = {
+                name = elder_consultation
+                duration = 10950
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    adopt_tribal_religion = {
+        potential = {
+            has_government_attribute = enables_adopt_tribal_religion_decision
+            NOT = { has_country_modifier = tribal_religion_cooldown }
+        }
+        allow = {
+            has_government_attribute = enables_adopt_tribal_religion_decision
+            adm_power = 100
+            dip_power = 100
+            mil_power = 100
+        }
+        effect = {
+            add_adm_power = -100
+            add_dip_power = -100
+            add_mil_power = -100
+            
+            country_event = { id = wwu_religion.1 days = 7 }
+            
+            add_country_modifier = {
+                name = tribal_religion_cooldown
+                duration = 3650
+            }
+        }		
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    unite_heathens = {
+        potential = {
+            has_government_attribute = enables_unite_heathens_decision
+            NOT = { has_country_modifier = unite_heathens_cooldown }
+            any_owned_province = {
+                NOT = { has_owner_religion = yes }
+            }
+        }
+        allow = {
+            has_government_attribute = enables_unite_heathens_decision
+            adm_power = 50
+        }
+        effect = {
+            add_adm_power = -50
+            
+            every_owned_province = {
+                limit = {
+                    NOT = { has_owner_religion = yes }
+                }
+                owner = { add_horde_unity = 1 }
+            }
+            
+            add_country_modifier = {
+                name = unite_heathens_cooldown
+                duration = 3650
+                hidden = yes
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    craft_fetish = {
+        potential = {
+            has_government_attribute = enables_craft_fetish_decision
+            NOT = { has_country_modifier = national_fetish }
+        }
+        allow = {
+            has_government_attribute = enables_craft_fetish_decision
+            scaled_treasury_check = yes
+        }
+        effect = {
+            scaled_treasury_effect = yes
+            
+            custom_tooltip = national_fetish_tt
+            
+            add_country_modifier = {
+                name = national_fetish
+                duration = 10950
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    bless_tomb = {
+        potential = {
+            has_government_attribute = enables_bless_tomb_decision
+            NOT = { has_country_modifier = ancestral_blessing }
+        }
+        allow = {
+            has_government_attribute = enables_bless_tomb_decision
+            scaled_treasury_check = yes
+            any_owned_province = {
+                NOT = { has_province_modifier = sacred_tomb }
+                religion = ROOT
+            }
+        }
+        effect = {
+            scaled_treasury_effect = yes
+            
+            add_country_modifier = {
+                name = ancestral_blessing
+                duration = 10950
+            }
+            
+            random_owned_province = {
+                limit = {
+                    NOT = { has_province_modifier = sacred_tomb }
+                    religion = ROOT
+                }
+                add_province_modifier = {
+                    name = sacred_tomb
+                    duration = -1
+                }
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    construct_totem = {
+        potential = {
+            has_government_attribute = enables_construct_totem_decision
+            NOT = { has_country_modifier = totemic_power }
+        }
+        allow = {
+            has_government_attribute = enables_construct_totem_decision
+            scaled_treasury_check = yes
+        }
+        effect = {
+            scaled_treasury_effect = yes
+            
+            add_country_modifier = {
+                name = totemic_power
+                duration = 10950
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    produce_constructs = {
+        potential = {
+            has_government_attribute = enables_produce_constructs_decision
+            NOT = { has_country_modifier = unwavering_guardians }
+        }
+        allow = {
+            has_government_attribute = enables_produce_constructs_decision
+            scaled_treasury_check = yes
+        }
+        effect = {
+            scaled_treasury_effect = yes
+            
+            add_country_modifier = {
+                name = unwavering_guardians
+                duration = 10950
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    expel_wild_magic = {
+        potential = {
+            has_government_attribute = enables_expel_wild_magic_decision
+            NOT = { has_country_modifier = wild_magic }
+        }
+        allow = {
+            has_government_attribute = enables_expel_wild_magic_decision
+            adm_power = 50
+            dip_power = 50
+            mil_power = 50
+        }
+        effect = {
+            add_adm_power = -50
+            add_dip_power = -50
+            add_mil_power = -50
+            
+            add_country_modifier = {
+                name = wild_magic
+                duration = 10950
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    
+}

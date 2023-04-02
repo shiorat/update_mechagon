@@ -5,9 +5,15 @@ country_event = {
 	id = wwu_integration.1
 	title = wwu_integration.1.title
 	desc = wwu_integration.1.desc
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = BESTIARY_eventPicture
 	
 	is_triggered_only = yes
+    
+    trigger = {
+        NOT = {
+            has_estate_privilege = estate_nobility_nobility_integration_policy
+        }
+    }
 	
 	option = {
 		name = wwu_integration.1.option.a

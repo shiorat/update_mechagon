@@ -34,7 +34,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_fire
-                religion = religion_fire
+                religion = fire
             }
         }
     }
@@ -43,8 +43,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_earth
-                religion = religion_earth
-                religion = religion_geomancy
+                religion = earth
             }
         }
     }
@@ -53,7 +52,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_water
-                religion = religion_water
+                religion = water
             }
         }
     }
@@ -62,8 +61,21 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_air
-                religion = religion_air
+                religion = wind
             }
+        }
+    }
+    text = {
+        localisation_key = string_elements
+        trigger = {
+            NOT = { culture_group = culture_group_fire }
+            NOT = { religion = fire }
+            NOT = { culture_group = culture_group_earth }
+            NOT = { religion = earth }
+            NOT = { culture_group = culture_group_water }
+            NOT = { religion = water }
+            NOT = { culture_group = culture_group_air }
+            NOT = { religion = wind }
         }
     }
 }
@@ -76,7 +88,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_fire
-                religion = religion_fire
+                religion = fire
             }
         }
     }
@@ -85,8 +97,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_earth
-                religion = religion_earth
-                religion = religion_geomancy
+                religion = earth
             }
         }
     }
@@ -95,7 +106,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_water
-                religion = religion_water
+                religion = water
             }
         }
     }
@@ -104,8 +115,21 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_air
-                religion = religion_air
+                religion = wind
             }
+        }
+    }
+    text = {
+        localisation_key = string_elements_cap
+        trigger = {
+            NOT = { culture_group = culture_group_fire }
+            NOT = { religion = fire }
+            NOT = { culture_group = culture_group_earth }
+            NOT = { religion = earth }
+            NOT = { culture_group = culture_group_water }
+            NOT = { religion = water }
+            NOT = { culture_group = culture_group_air }
+            NOT = { religion = wind }
         }
     }
 }
@@ -118,7 +142,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_fire
-                religion = religion_fire
+                religion = fire
             }
         }
     }
@@ -127,8 +151,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_earth
-                religion = religion_earth
-                religion = religion_geomancy
+                religion = earth
             }
         }
     }
@@ -137,17 +160,30 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_water
-                religion = religion_water
+                religion = water
             }
         }
     }
     text = {
-        localisation_key = string_atomspheric
+        localisation_key = string_atmospheric
         trigger = {
             OR = {
                 culture_group = culture_group_air
-                religion = religion_air
+                religion = wind
             }
+        }
+    }
+    text = {
+        localisation_key = string_elemental
+        trigger = {
+            NOT = { culture_group = culture_group_fire }
+            NOT = { religion = fire }
+            NOT = { culture_group = culture_group_earth }
+            NOT = { religion = earth }
+            NOT = { culture_group = culture_group_water }
+            NOT = { religion = water }
+            NOT = { culture_group = culture_group_air }
+            NOT = { religion = wind }
         }
     }
 }
@@ -160,7 +196,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_fire
-                religion = religion_fire
+                religion = fire
             }
         }
     }
@@ -169,8 +205,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_earth
-                religion = religion_earth
-                religion = religion_geomancy
+                religion = earth
             }
         }
     }
@@ -179,17 +214,30 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_water
-                religion = religion_water
+                religion = water
             }
         }
     }
     text = {
-        localisation_key = string_atomspheric_cap
+        localisation_key = string_atmospheric_cap
         trigger = {
             OR = {
                 culture_group = culture_group_air
-                religion = religion_air
+                religion = wind
             }
+        }
+    }
+    text = {
+        localisation_key = string_elemental_cap
+        trigger = {
+            NOT = { culture_group = culture_group_fire }
+            NOT = { religion = fire }
+            NOT = { culture_group = culture_group_earth }
+            NOT = { religion = earth }
+            NOT = { culture_group = culture_group_water }
+            NOT = { religion = water }
+            NOT = { culture_group = culture_group_air }
+            NOT = { religion = wind }
         }
     }
 }
@@ -202,7 +250,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_fire
-                religion = religion_fire
+                religion = fire
             }
         }
     }
@@ -211,8 +259,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_earth
-                religion = religion_earth
-                religion = religion_geomancy
+                religion = earth
             }
         }
     }
@@ -221,7 +268,7 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_water
-                religion = religion_water
+                religion = water
             }
         }
     }
@@ -230,8 +277,21 @@ defined_text = {
         trigger = {
             OR = {
                 culture_group = culture_group_air
-                religion = religion_air
+                religion = wind
             }
+        }
+    }
+    text = {
+        localisation_key = string_elements
+        trigger = {
+            NOT = { culture_group = culture_group_fire }
+            NOT = { religion = fire }
+            NOT = { culture_group = culture_group_earth }
+            NOT = { religion = earth }
+            NOT = { culture_group = culture_group_water }
+            NOT = { religion = water }
+            NOT = { culture_group = culture_group_air }
+            NOT = { religion = wind }
         }
     }
 }
@@ -272,7 +332,6 @@ defined_text = {
 
 defined_text = {
     name = RandomGuildName
-	random = yes
 
     text = {
         localisation_key = guild_1

@@ -1,33 +1,11 @@
 namespace = wwu_ideagroups
 
-country_event = {
-	id = wwu_ideagroups.100
-	title = wwu_ideagroups.100.title
-	desc = wwu_ideagroups.100.desc
-	picture = ADVISOR_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = wwu_ideagroups.100.option.a
-        
-		ai_chance = { factor = 1 }
-		trigger = { has_custom_ideas = no }
-		swap_free_idea_group = yes
-	}
-	option = {
-		name = wwu_ideagroups.100.option.b
-        
-		ai_chance = { factor = 0 }
-	}
-}
-
 # Loyal Administration in X
 province_event = {
 	id = wwu_ideagroups.1
 	title = wwu_ideagroups.1.title
 	desc = wwu_ideagroups.1.desc
-	picture = CULTURE_eventPicture
+	picture = ARGENT_SQUIRE_eventPicture
 	
 	trigger = {
 		owner = { has_idea = wwu_administrative_ideas_6 }
@@ -52,7 +30,7 @@ province_event = {
 	id = wwu_ideagroups.2
 	title = wwu_ideagroups.2.title
 	desc = wwu_ideagroups.2.desc
-	picture = CULTURE_eventPicture
+	picture = BLESSING_OF_MIGHT_eventPicture
 	
 	trigger = {
         owner = { has_dlc = "Mandate of Heaven" }
@@ -77,7 +55,7 @@ province_event = {
 	id = wwu_ideagroups.3
 	title = wwu_ideagroups.3.title
 	desc = wwu_ideagroups.3.desc
-	picture = CULTURE_eventPicture
+	picture = BLESSED_CHAMPION_eventPicture
 	
 	trigger = {
 		owner = { has_idea = wwu_harmony_ideas_3 }
@@ -102,7 +80,7 @@ province_event = {
 	id = wwu_ideagroups.4
 	title = wwu_ideagroups.4.title
 	desc = wwu_ideagroups.4.desc
-	picture = BATTLE_eventPicture
+	picture = CRUEL_TASKMASTER_eventPicture
 	
 	trigger = {
 		owner = { has_idea = wwu_law_ideas_1 }
@@ -130,7 +108,7 @@ province_event = {
 	id = wwu_ideagroups.5
 	title = wwu_ideagroups.5.title
 	desc = wwu_ideagroups.5.desc
-	picture = FEAST_eventPicture
+	picture = HEALING_TOTEM_eventPicture
 	
 	trigger = {
 		owner = { has_idea = wwu_development_ideas_1 }
@@ -154,7 +132,7 @@ province_event = {
 	id = wwu_ideagroups.6
 	title = wwu_ideagroups.6.title
 	desc = wwu_ideagroups.6.desc
-	picture = FEAST_eventPicture
+	picture = BLACKROCK_FOUNDRY_eventPicture
 	
 	trigger = {
 		owner = { has_idea = wwu_development_ideas_1 }
@@ -178,7 +156,7 @@ province_event = {
 	id = wwu_ideagroups.7
 	title = wwu_ideagroups.7.title
 	desc = wwu_ideagroups.7.desc
-	picture = FEAST_eventPicture
+	picture = FIERY_WAR_AXE_eventPicture
 	
 	trigger = {
 		owner = { has_idea = wwu_development_ideas_1 }
@@ -202,7 +180,7 @@ province_event = {
 	id = wwu_ideagroups.8
 	title = wwu_ideagroups.8.title
 	desc = wwu_ideagroups.8.desc
-	picture = FEAST_eventPicture
+	picture = BESTIARY_eventPicture
 	
 	trigger = {
 		owner = { has_idea = wwu_absolutism_ideas_1 }
@@ -227,12 +205,14 @@ country_event = {
 	id = wwu_ideagroups.9
 	title = wwu_ideagroups.9.title
 	desc = wwu_ideagroups.9.desc
-	picture = CULTURE_eventPicture
+	picture = THRONE_APPROACH_eventPicture
 	
 	trigger = {
         has_idea = wwu_influence_ideas_3
+        NOT = { culture_group = culture_group_scourge }
 		any_subject_country = {
             junior_union_with = ROOT
+            NOT = { culture_group = culture_group_scourge }
         }
 	}
 	
@@ -240,18 +220,50 @@ country_event = {
 		months = 1200
 	}
 	
-	option = {
-		name = wwu_ideagroups.9.option.a
-		
+    immediate = {
         hidden_effect = {
             random_subject_country = {
-                limit = { junior_union_with = ROOT }
+                limit = { 
+                    junior_union_with = ROOT 
+                }
                 
                 save_event_target_as = chosen_subject
             }
         }
-        
-        inherit = event_target:chosen_subject
+    }
+    
+	option = {
+		name = wwu_ideagroups.9.option.a
+		
+        if = {
+            limit = {
+                has_saved_event_target = chosen_subject
+                any_subject_country = {
+                    tag = event_target:chosen_subject
+                    NOT = { total_development = 250 }
+                }
+            }
+            
+            inherit = event_target:chosen_subject
+        }
+        else = {
+            add_country_modifier = {
+                name = integration_of_royalty
+                duration = 9125
+            }
+        }
+	}
+    option = {
+		name = wwu_ideagroups.9.option.b
+		
+        if = {
+            limit = {
+                has_saved_event_target = chosen_subject
+            }
+            event_target:chosen_subject = {
+                add_liberty_desire = -50
+            }
+        }
 	}
 }
 
@@ -260,12 +272,18 @@ country_event = {
 	id = wwu_ideagroups.10
 	title = wwu_ideagroups.10.title
 	desc = wwu_ideagroups.10.desc
-	picture = CULTURE_eventPicture
+	picture = THRONE_APPROACH_eventPicture
 	
 	trigger = {
         has_idea = wwu_influence_ideas_3
+        NOT = { culture_group = culture_group_scourge }
 		any_subject_country = {
-            vassal_of = ROOT
+            NOT = { culture_group = culture_group_scourge }
+            is_subject_of = ROOT
+            OR = {
+                is_subject_of_type = vassal
+                is_subject_of_type = client_vassal
+            }
         }
 	}
 	
@@ -273,18 +291,54 @@ country_event = {
 		months = 1200
 	}
 	
-	option = {
-		name = wwu_ideagroups.10.option.a
-		
+    immediate = {
         hidden_effect = {
             random_subject_country = {
-                limit = { vassal_of = ROOT }
+                limit = { 
+                    is_subject_of = ROOT
+                    OR = {
+                        is_subject_of_type = vassal
+                        is_subject_of_type = client_vassal
+                    }
+                }
                 
                 save_event_target_as = chosen_subject
             }
         }
-        
-        inherit = event_target:chosen_subject
+    }
+    
+	option = {
+		name = wwu_ideagroups.10.option.a
+		
+        if = {
+            limit = {
+                has_saved_event_target = chosen_subject
+                any_subject_country = {
+                    tag = event_target:chosen_subject
+                    NOT = { total_development = 250 }
+                }
+            }
+            
+            inherit = event_target:chosen_subject
+        }
+        else = {
+            add_country_modifier = {
+                name = integration_of_vassal
+                duration = 9125
+            }
+        }
+	}
+    option = {
+		name = wwu_ideagroups.10.option.b
+		
+        if = {
+            limit = {
+                has_saved_event_target = chosen_subject
+            }
+            event_target:chosen_subject = {
+                add_liberty_desire = -50
+            }
+        }
 	}
 }
 
@@ -293,7 +347,7 @@ province_event = {
 	id = wwu_ideagroups.11
 	title = wwu_ideagroups.11.title
 	desc = wwu_ideagroups.11.desc
-	picture = CULTURE_eventPicture
+	picture = HUNTER_STATUE_eventPicture
 	
 	trigger = {
 		owner = { has_idea = wwu_assimilation_ideas_1 }
@@ -318,7 +372,7 @@ country_event = {
 	id = wwu_ideagroups.12
 	title = wwu_ideagroups.12.title
 	desc = wwu_ideagroups.12.desc
-	picture = BATTLE_eventPicture
+	picture = HORDE_BATTLE_CRY_eventPicture
 	
 	trigger = {
         has_idea = wwu_society_ideas_1
@@ -341,7 +395,7 @@ country_event = {
 	id = wwu_ideagroups.13
 	title = wwu_ideagroups.13.title
 	desc = wwu_ideagroups.13.desc
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = KING_ANDUIN_eventPicture
 	
 	trigger = {
         has_dlc = "The Cossacks"
@@ -368,6 +422,48 @@ country_event = {
                 value = 25
                 mutual = yes
             }
+        }
+	}
+}
+
+# Trial by Combat
+country_event = {
+	id = wwu_ideagroups.14
+	title = wwu_ideagroups.14.title
+	desc = wwu_ideagroups.14.desc
+	picture = VARIAN_WRYNN_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = wwu_ideagroups.14.option.a
+		
+        custom_tooltip = ENEMY_GENERAL_DIES_TT
+	}
+}
+
+# Trial by Combat
+country_event = {
+	id = wwu_ideagroups.15
+	title = wwu_ideagroups.15.title
+	desc = wwu_ideagroups.15.desc
+	picture = POWERSHOT_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = wwu_ideagroups.15.option.a
+		
+        kill_leader = {
+            type = general
         }
 	}
 }

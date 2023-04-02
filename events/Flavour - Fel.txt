@@ -5,20 +5,20 @@ province_event = {
 	id = wwu_fel.1
 	title = wwu_fel.1.title
 	desc = wwu_fel.1.desc
-	picture = LEGION_eventPicture
+	picture = DREAD_INFERNAL_eventPicture
 	
     is_triggered_only = yes
 
 	option = {
 		name = wwu_fel.1.option.a
         
-        change_religion = religion_fel
+        change_religion = fel
         FROM = { add_reform_desire = 0.02 }
 	}
     option = {
 		name = wwu_fel.1.option.b
         
-        add_mil_power = -100
+        owner = { add_mil_power = -100 }
 	}
 }
 
@@ -27,42 +27,35 @@ country_event = {
 	id = wwu_fel.2
 	title = wwu_fel.2.title
 	desc = wwu_fel.2.desc
-	picture = LEGION_eventPicture
+	picture = DEMONFIRE_eventPicture
 	
     is_triggered_only = yes
 
 	option = {
 		name = wwu_fel.2.option.a
         
-        set_ruler_religion = religion_fel
+        set_ruler_religion = fel
         FROM = { add_reform_desire = 0.05 }
+        
+        if = {
+            limit = {
+                ai = yes
+            }
+            change_religion = fel
+        }
+        
+        ai_chance = {
+            factor = 75
+        }
 	}
     option = {
 		name = wwu_fel.2.option.b
         
         add_stability = -1
-	}
-}
-
-# Corruption of [Root.Heir.GetName]
-country_event = {
-	id = wwu_fel.3
-	title = wwu_fel.3.title
-	desc = wwu_fel.3.desc
-	picture = LEGION_eventPicture
-	
-    is_triggered_only = yes
-
-	option = {
-		name = wwu_fel.3.option.a
         
-        set_heir_religion = religion_fel
-        FROM = { add_reform_desire = 0.05 }
-	}
-    option = {
-		name = wwu_fel.3.option.b
-        
-        add_stability = -1
+        ai_chance = {
+            factor = 25
+        }
 	}
 }
 
@@ -71,13 +64,13 @@ country_event = {
 	id = wwu_fel.10
 	title = wwu_fel.10.title
 	desc = wwu_fel.10.desc
-	picture = LEGION_eventPicture
+	picture = INFERNAL_eventPicture
 	
     is_triggered_only = yes
     
 	trigger = {
         is_papal_controller = yes
-		religion = religion_fel
+		religion = fel
 	}
     
 	option = {
@@ -98,12 +91,12 @@ country_event = {
 	id = wwu_fel.11
 	title = wwu_fel.11.title
 	desc = wwu_fel.11.desc
-	picture = LEGION_eventPicture
+	picture = BLADE_DANCE_eventPicture
 	
     is_triggered_only = yes
     
 	trigger = {
-		religion = religion_fel
+		religion = fel
 	}
     
 	option = {
@@ -115,7 +108,7 @@ country_event = {
 	option = {
 		name = wwu_fel.11.option.b
         
-        add_stability = 1
+        add_stability_or_adm_power = yes
 	}
 }
 
@@ -124,12 +117,12 @@ country_event = {
 	id = wwu_fel.12
 	title = wwu_fel.12.title
 	desc = wwu_fel.12.desc
-	picture = LEGION_eventPicture
+	picture = RECYCLE_eventPicture
 	
     is_triggered_only = yes
     
 	trigger = {
-		religion = religion_fel
+		religion = fel
 	}
     
 	option = {
@@ -154,16 +147,16 @@ country_event = {
 	id = wwu_fel.13
 	title = wwu_fel.13.title
 	desc = wwu_fel.13.desc
-	picture = GULDAN_eventPicture
+	picture = ANCIENT_SECRETS_eventPicture
 	
     is_triggered_only = yes
     
 	trigger = {
-		religion = religion_fel
+		religion = fel
         NOT = { total_number_of_cardinals = 49 }
         
         any_owned_province = {
-            religion = religion_fel
+            religion = fel
             has_cardinal = no
         }
 	}
@@ -178,7 +171,7 @@ country_event = {
         
         random_owned_province = {
             limit = { 
-                religion = religion_fel
+                religion = fel
                 has_cardinal = no
             }
             add_cardinal = yes
@@ -191,12 +184,12 @@ country_event = {
 	id = wwu_fel.20
 	title = wwu_fel.20.title
 	desc = wwu_fel.20.desc
-	picture = LEGION_eventPicture
+	picture = BLOOD_IMP_eventPicture
 	
     is_triggered_only = yes
     
 	trigger = {
-		religion = religion_fel
+		religion = fel
         reform_desire = 1.0
 	}
     
@@ -227,13 +220,13 @@ country_event = {
 	id = wwu_fel.21
 	title = wwu_fel.21.title
 	desc = wwu_fel.21.desc
-	picture = LEGION_eventPicture
+	picture = CHAOS_NOVA_eventPicture
 	
     is_triggered_only = yes
     
 	trigger = {
         NOT = { is_papal_controller = yes }
-		religion = religion_fel
+		religion = fel
         reform_desire = 1.0
 	}
     

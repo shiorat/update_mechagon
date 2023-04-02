@@ -14,14 +14,14 @@ country_event = {
 	   desc = defias_events.1.desc.2
 	}
     
-	picture = BUILDING_DEVELOPMENT_HUMAN_eventPicture
+	picture = DEFIAS_BANDIT_eventPicture
 	
 	fire_only_once = yes
 	
 	trigger = {
 		tag = STW
 		NOT = { exists = A07 }
-		the_frozen_throne_or_later = yes
+		current_age = age_scourge
 		owns = 1022 # Stormwind
 	}
 	
@@ -51,9 +51,9 @@ country_event = {
 # "Construction of Stormwind"
 country_event = {
 	id = defias_events.2
-	title = defias_events.title
-	desc = defias_events.desc
-	picture = BUILDING_DEVELOPMENT_HUMAN_eventPicture
+	title = defias_events.2.title
+	desc = defias_events.2.desc
+	picture = BESTIARY_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -61,15 +61,16 @@ country_event = {
 	}
 	
 	option = {
-		name = defias_events.option.a
+		name = defias_events.2.option.a
         
 		ai_chance = { factor = 100 }
 		
 		1022 = {
-			add_base_tax = 4
-			add_base_production = 4
-			add_base_manpower = 4
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
 		}
+        
 		country_event = { 
 			id = defias_events.3
 			days = 100
@@ -79,14 +80,14 @@ country_event = {
 	}
 	
 	option = {
-		name = defias_events.option.b
+		name = defias_events.2.option.b
         
 		ai_chance = { factor = 0 }
 		
 		1022 = {
-			add_base_tax = 4
-			add_base_production = 4
-			add_base_manpower = 4
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
 		}
 		country_event = { 
 			id = defias_events.5
@@ -102,7 +103,7 @@ country_event = {
 	id = defias_events.3
 	title = defias_events.3.title
 	desc = defias_events.3.desc
-	picture = LIBERUM_VETO_eventPicture
+	picture = DEFIAS_RINGLEADER_eventPicture
 	
 	is_triggered_only = yes
 
@@ -136,7 +137,7 @@ country_event = {
 	id = defias_events.4
 	title = defias_events.4.title
 	desc = defias_events.4.desc
-	picture = REVOLUTION_eventPicture
+	picture = EDWIN_VANCLEEF_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -157,7 +158,7 @@ country_event = {
 				add_core = A07
 				spawn_rebels = {
 					type = nationalist_rebels
-					size = 5
+					size = 3
 					friend = A07
 				}
 			}
@@ -167,7 +168,7 @@ country_event = {
 				add_core = A07
 				spawn_rebels = {
 					type = nationalist_rebels
-					size = 5
+					size = 3
 					friend = A07
 				}
 			}
@@ -177,7 +178,7 @@ country_event = {
 				add_core = A07
 				spawn_rebels = {
 					type = nationalist_rebels
-					size = 5
+					size = 3
 					friend = A07
 				}
 			}
@@ -190,7 +191,7 @@ country_event = {
 	id = defias_events.5
 	title = defias_events.5.title
 	desc = defias_events.5.desc
-	picture = REVOLUTION_eventPicture
+	picture = DEFIAS_RINGLEADER_eventPicture
 	
 	is_triggered_only = yes
 	

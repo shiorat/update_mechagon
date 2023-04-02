@@ -1,208 +1,409 @@
 country_decisions = {
+    #--------------------------------
+    # General
+    #--------------------------------
+    summon_avatar_of_corruption = {
+        potential = {
+            OR = {
+                has_country_modifier = seat_of_cthun
+                has_country_modifier = seat_of_yogg_saron
+                has_country_modifier = seat_of_nzoth
+                has_country_modifier = seat_of_yshaarj
+            }
+            NOT = { has_country_modifier = avatar_of_corruption }
+        }
+        allow = {
+            OR = {
+                has_country_modifier = seat_of_cthun
+                has_country_modifier = seat_of_yogg_saron
+                has_country_modifier = seat_of_nzoth
+                has_country_modifier = seat_of_yshaarj
+            }
+            is_at_war = yes
+        }
+        effect = {
+            custom_tooltip = AVATAR_OF_CORRUPTION
+            
+            add_country_modifier = {
+                name = avatar_of_corruption
+                duration = 9125
+            }
+            
+            hidden_effect = {
+                define_general = {
+                    name = "Avatar of Corruption"
+                    fire = 4
+                    shock = 4
+                    manuever = 4
+                    siege = 4
+                }
+                
+                country_event = { id = wwu_old_gods.5 days = 1825 }
+            }
+        }		
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    
+    #--------------------------------
+    # C'Thun
+    #--------------------------------
+    # Awaken C'Thun
 	awaken_cthun = {
-		major = yes
 		
 		potential = {
-			tag = U02
-			culture_group = culture_group_aqir
-			is_colonial_nation = no
-			NOT = { has_country_flag = awakening_cthun }
-			NOT = { has_global_flag = cthun_alive }
+            NOT = { has_country_modifier = awakening_cthun }
+			NOT = { has_country_flag = awakening_cthun_timer }
+            NOT = { has_country_modifier = seat_of_cthun }
+            NOT = { has_global_flag = cthun_active }
+			owns = 1520
 		}
 		
 		allow = {
-            stability = 3
-            adm_power = 400
-            dip_power = 400
-            mil_power = 400
+			owns = 1520
+            
+            stability = 0
+            adm_power = 250
+            dip_power = 250
+            mil_power = 250
+            
+            OR = {
+                religion = cthun
+                dominant_religion = cthun
+            }
 		}
 		
 		effect = {
-			set_country_flag = awakening_cthun
-			add_stability = -3
-            add_adm_power = -400
-            add_dip_power = -400
-            add_mil_power = -400
-			
-			every_country = { 
-				limit = {
-					government_rank = 3
-					NOT = {
-						religion_group = religion_group_the_void
-						has_country_modifier = is_evil
-					}
-				}
-				add_casus_belli = {
-					target = ROOT
-					type = cb_conquest
-					months = 24
-				}
-			}
-			custom_tooltip = awaken_yoggsaron_tt
-			custom_tooltip = EVIL_ACTION_TOOLTIP
+            # Gain Evil Intent, causing non-Evil nations to gain the Against Evil CB
+            add_country_modifier = {
+                name = is_evil
+                duration = -1
+            }
+            
+			add_stability = -6
+            add_adm_power = -250
+            add_dip_power = -250
+            add_mil_power = -250
+            
+			add_country_modifier = {
+                name = awakening_cthun
+                duration = 3650
+            }
+            
+            hidden_effect = {  
+                set_country_flag = awakening_cthun_timer
+            }
+            
+			custom_tooltip = AWAKEN_OLD_GOD_TT
+            
+            tooltip = {
+                add_country_modifier = {
+                    name = seat_of_cthun
+                    duration = -1
+                }
+            }
 		}
 		
 		ai_will_do = {
 			factor = 1
+            
+            modifier = {
+                factor = 0
+                
+                NOT = { is_year = 580 }
+            }
+            
+            modifier = {
+                factor = 0
+                
+                NOT = { religion = cthun }
+            }
 		}
 	}
-	kill_cthun = {
-		major = yes
+    
+    #--------------------------------
+    # Yogg-Saron
+    #--------------------------------
+	# Awaken Yogg-Saron
+	awaken_yogg_saron = {
 		
 		potential = {
-			
-			NOT = { religion_group = religion_group_the_void }
-			has_global_flag = cthun_alive
+            NOT = { has_country_modifier = awakening_yogg_saron }
+			NOT = { has_country_flag = awakening_yogg_saron_timer }
+            NOT = { has_country_modifier = seat_of_yogg_saron }
+            NOT = { has_global_flag = yogg_saron_active }
+			owns = 2495
 		}
 		
 		allow = {
-			mil_power = 250
-			owns_core_province = 1520
+			owns = 2495
+            
+            stability = 0
+            adm_power = 250
+            dip_power = 250
+            mil_power = 250
+            
+            OR = {
+                religion = yogg_saron
+                dominant_religion = yogg_saron
+            }
 		}
 		
 		effect = {
-			add_mil_power = -250
-			U02 = {
-				remove_country_modifier = summoned_oldgod
-				add_stability = -1
-			}
-			clr_global_flag = cthun_alive
-			
+            # Gain Evil Intent, causing non-Evil nations to gain the Against Evil CB
+            add_country_modifier = {
+                name = is_evil
+                duration = -1
+            }
+            
+            if = {
+                limit = {
+                    NOT = { has_country_flag = guided_by_whispers }
+                }
+                add_stability = -6
+            }
+            
+            add_adm_power = -250
+            add_dip_power = -250
+            add_mil_power = -250
+            
+			add_country_modifier = {
+                name = awakening_yogg_saron
+                duration = 3650
+            }
+            
+            hidden_effect = {
+                set_country_flag = awakening_yogg_saron_timer
+            }
+            
+            custom_tooltip = AWAKEN_OLD_GOD_TT
+            
+            tooltip = {
+                add_country_modifier = {
+                    name = seat_of_yogg_saron
+                    duration = -1
+                }
+            }
 		}
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_country_modifier = summoned_oldgod
-			}
+            
+            modifier = {
+                factor = 0
+                
+                NOT = { is_year = 650 }
+            }
+            
+            modifier = {
+                factor = 0
+                
+                NOT = { religion = yogg_saron }
+            }
 		}
 	}
-	awaken_yoggsaron = {
-		major = yes
+    
+    #--------------------------------
+    # N'Zoth
+    #--------------------------------
+    # Awaken N'Zoth
+	awaken_nzoth = {
 		
 		potential = {
-			
-			is_colonial_nation = no
-			has_country_flag = guided_by_whispers
-			NOT = { has_country_flag = awakening_yoggsaron }
-			NOT = { has_global_flag = yoggsaron_alive }
+            NOT = { has_country_modifier = awakening_nzoth }
+			NOT = { has_country_flag = awakening_nzoth_timer }
+            NOT = { has_country_modifier = seat_of_nzoth }
+            NOT = { has_global_flag = nzoth_active }
+			owns = 616
 		}
 		
 		allow = {
-            stability = 3
-            adm_power = 500
-            dip_power = 500
-            mil_power = 500
-			owns_core_province = 2495
-			full_idea_group = wwu_religious_ideas
+			owns = 616
+            
+            stability = 0
+            adm_power = 250
+            dip_power = 250
+            mil_power = 250
+            
+            OR = {
+                religion = nzoth
+                dominant_religion = nzoth
+            }
 		}
 		
 		effect = {
-			set_country_flag = awakening_yoggsaron
-			add_stability = -3
-            add_adm_power = -500
-            add_dip_power = -500
-            add_mil_power = -500
-			
-			hidden_effect = {
-			every_country = { 
-				limit = {
-					government_rank = 2
-					NOT = {
-						religion_group = religion_group_the_void
-						has_country_modifier = is_evil
-					}
-				}
-				add_casus_belli = {
-					target = ROOT
-					type = cb_conquest
-					months = 24
-				}
-				country_event = { id = old_gods.6 }
-			}
-			}
-			custom_tooltip = awaken_yoggsaron_tt
-			custom_tooltip = EVIL_ACTION_TOOLTIP
+            # Gain Evil Intent, causing non-Evil nations to gain the Against Evil CB
+            add_country_modifier = {
+                name = is_evil
+                duration = -1
+            }
+            
+			add_stability = -6
+            add_adm_power = -250
+            add_dip_power = -250
+            add_mil_power = -250
+            
+			add_country_modifier = {
+                name = awakening_nzoth
+                duration = 3650
+            }
+            
+            hidden_effect = {
+                set_country_flag = awakening_nzoth_timer
+            }
+            
+            custom_tooltip = AWAKEN_OLD_GOD_TT
+            
+            tooltip = {
+                add_country_modifier = {
+                    name = seat_of_nzoth
+                    duration = -1
+                }
+            }
 		}
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					religion_group = religion_group_the_light
-					religion_group = religion_group_order
-				}
-			}
+            
+            modifier = {
+                factor = 0
+                
+                NOT = { is_year = 620 }
+            }
+            
+            modifier = {
+                factor = 0
+                
+                NOT = { religion = nzoth }
+            }
 		}
-		
 	}
-	kill_yoggsaron = {
-		major = yes
-		
+    
+    #--------------------------------
+    # Y'Shaarj
+    #--------------------------------
+    # Awaken Y'Shaarj
+	awaken_yshaarj = {
 		potential = {
-			
-			NOT = { religion_group = religion_group_the_void }
-			has_global_flag = yoggsaron_alive
+            NOT = { has_country_modifier = awakening_yshaarj }
+			NOT = { has_country_flag = awakening_yshaarj_timer }
+            NOT = { has_country_modifier = seat_of_yshaarj }
+            NOT = { has_global_flag = yshaarj_active }
+			owns = 1839
 		}
 		
 		allow = {
-			mil_power = 250
-			owns_core_province = 2495
+			owns = 1839
+            
+            stability = 0
+            adm_power = 250
+            dip_power = 250
+            mil_power = 250
+            
+            OR = {
+                religion = yshaarj
+                dominant_religion = yshaarj
+            }
 		}
 		
 		effect = {
-			add_mil_power = -250
-				random_country = {
-					limit = {
-						has_country_modifier = summoned_oldgod
-					}
-					remove_country_modifier = summoned_oldgod
-					add_stability = -1
-				}
-				clr_global_flag = yoggsaron_alive
+            # Gain Evil Intent, causing non-Evil nations to gain the Against Evil CB
+            add_country_modifier = {
+                name = is_evil
+                duration = -1
+            }
+            
+			add_stability = -6
+            add_adm_power = -250
+            add_dip_power = -250
+            add_mil_power = -250
+            
+			add_country_modifier = {
+                name = awakening_yshaarj
+                duration = 3650
+            }
+            
+            hidden_effect = {
+                set_country_flag = awakening_yshaarj_timer
+            }
+            
+            custom_tooltip = AWAKEN_OLD_GOD_TT
+            
+            tooltip = {
+                add_country_modifier = {
+                    name = seat_of_yshaarj
+                    duration = -1
+                }
+            }
 		}
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_country_modifier = summoned_oldgod
-			}
+            
+            modifier = {
+                factor = 0
+                
+                NOT = { is_year = 630 }
+            }
+            
+            modifier = {
+                factor = 0
+                
+                NOT = { religion = yshaarj }
+            }
 		}
 	}
+    
+    #--------------------------------
+    # Tidemother
+    #--------------------------------
 	commune_with_tidemother = {
-		major = yes
-		
 		potential = {
-			
-			religion = religion_water
+			OR = {
+                religion = tidemother
+                dominant_religion = tidemother
+            }
+            
+			NOT = { has_country_flag = tidemother_commune_event }
+			NOT = { has_country_modifier = communed_tidemother }
 		}
 		
 		allow = {
-			adm_power = 100
 			NOT = { has_country_modifier = communed_tidemother }
-			NOT = { has_country_flag = nzoth_probability_set }
+			adm_power = 100
 		}
 		
 		effect = {
 			add_adm_power = -100
-			set_country_flag = nzoth_probability_set
+            
+            tooltip = {
+                country_event = { id = wwu_old_gods.12 }
+            }
+            
+			hidden_effect = { set_country_flag = tidemother_commune_event }
 		}
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
+            
+            # AI will only use this if it has a big surplus of ADM
+            modifier = {
 				factor = 0
-				NOT = { adm = 4 }
+				
+                NOT = { adm_power = 800 }
 			}
+            
+            # AI will only use this if N'Zoth is present in their lands
 			modifier = {
 				factor = 0
-				NOT = { adm_power = 200 }
+				
+                NOT = {
+                    any_owned_province = {
+                        religion = nzoth
+                    }
+                }
 			}
 		}
-		
-		ai_importance = 300
 	}
 }

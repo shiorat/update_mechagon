@@ -1,13 +1,12 @@
-namespace = murloc
+namespace = wwu_murloc
 
+# The Mating Call
 country_event = {
-	id = murloc.1
-	title = murloc_mating_call.title
-	desc = murloc_mating_call.desc
-	picture = OGRE_MAGE_eventPicture
+	id = wwu_murloc.1
+	title = wwu_murloc.1.title
+	desc = wwu_murloc.1.desc
+	picture = BLUEGILL_WARRIOR_eventPicture
     
-	fire_only_once = no
-	
 	trigger = {
 		culture_group = culture_group_murloc
 		is_female = no
@@ -18,7 +17,7 @@ country_event = {
 	}
 	
 	option = {
-		name = murloc_mating_call.opt1
+		name = wwu_murloc.1.option.a
 		
 		random_list = {
 			20 = {
@@ -28,39 +27,35 @@ country_event = {
 				add_country_modifier = { 
 					name = mating_call
 					duration = 180  
-					desc = mating_call_desc
-					hidden = no
 				}
 			}
 		}
 	}
 	
 	option = {
-		name = murloc_mating_call.opt2
+		name = wwu_murloc.1.option.b
 		
 		add_treasury = -200
 		add_country_modifier = { 
 			name = mating_call
 			duration = 180
-			hidden = no
 		 }
 	}
 	
 	option = {
-		name = murloc_mating_call.opt3
+		name = wwu_murloc.1.option.c
 		
 		add_prestige = -5
 	}
 }
 
+# Better Nets For our Netters
 country_event = {
-	id = murloc.2
-	title = murloc_net.title
-	desc = murloc_net.desc
-	picture = OGRE_MAGE_eventPicture
+	id = wwu_murloc.2
+	title = wwu_murloc.2.title
+	desc = wwu_murloc.2.desc
+	picture = GIANTFIN_eventPicture
     
-	fire_only_once = no
-	
 	trigger = {
 		culture_group = culture_group_murloc
 		any_owned_province = {
@@ -74,7 +69,7 @@ country_event = {
 	}
 	
 	option = {
-		name = murloc_net.opt1
+		name = wwu_murloc.2.option.a
 		
 		every_owned_province = {
 			limit = {
@@ -87,7 +82,7 @@ country_event = {
 	}
 	
 	option = {
-		name = murloc_net.opt2
+		name = wwu_murloc.2.option.b
 		
 		random_owned_province = {
 			limit = {
@@ -100,20 +95,17 @@ country_event = {
 	}
 	
 	option = {
-		name = murloc_net.opt3
-		
-		
+		name = wwu_murloc.2.option.c
 	}
 }
 
+# King Mrgl-Mrgl!
 country_event = {
-	id = murloc.3
-	title = murloc_king_mrgl.title
-	desc = murloc_king_mrgl.desc
-	picture = OGRE_MAGE_eventPicture
+	id = wwu_murloc.3
+	title = wwu_murloc.3.title
+	desc = wwu_murloc.3.desc
+	picture = COLDLIGHT_SEER_eventPicture
     
-	fire_only_once = no
-	
 	trigger = {
 		culture_group = culture_group_murloc
 		NOT = { natural_scientist = 3 }
@@ -124,25 +116,19 @@ country_event = {
 	}
 	
 	option = {
-		name = murloc_king_mrgl.opt1
+		name = wwu_murloc.3.option.a
 		
 		define_advisor = {
 			type = natural_scientist
 			name = "King Mrgl-Mrgl"
 			skill = 3
-			culture = culture_nerglish
+			culture = culture_murloc
 			discount = yes
-		}
-		random = { 
-			chance = 50
-			random_owned_province = {
-				change_religion = religion_elune
-			}
 		}
 	}
 	
 	option = {
-		name = murloc_king_mrgl.opt2
+		name = wwu_murloc.3.option.b
 		
 		add_adm_power = 50
 	}

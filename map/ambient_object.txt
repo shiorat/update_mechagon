@@ -1,24 +1,4022 @@
 type={
+	type="abyssalmaw"
+	use_animation=no
+	scale=0.045000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="abyssalmaw"
+		hidden_on_start=no
+		position={
+			368.000 0.000 729.000 
+		}
+		rotation={
+			3.000 620.000 3.000 
+		}
+	}
+}
+type={
+	type="anemone"
+	use_animation=no
+	scale=0.120000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="anemone5"
+		hidden_on_start=no
+		position={
+			195.000 0.000 493.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="anemone4"
+		hidden_on_start=no
+		position={
+			181.000 0.000 548.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="anemone6"
+		hidden_on_start=no
+		position={
+			342.000 0.000 531.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="anemone7"
+		hidden_on_start=no
+		position={
+			437.000 0.000 650.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="anemone9"
+		hidden_on_start=no
+		position={
+			202.000 0.000 630.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="anemone10"
+		hidden_on_start=no
+		position={
+			315.000 0.000 714.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="anemone3"
+		hidden_on_start=no
+		position={
+			4059.000 0.000 683.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="anemone3"
+		hidden_on_start=no
+		position={
+			4059.000 0.000 683.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="anemone2"
+		hidden_on_start=no
+		position={
+			2798.000 0.000 1079.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="anemone1"
+		hidden_on_start=no
+		position={
+			2824.000 0.000 1129.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+}
+type={
+	type="whalebone"
+	use_animation=no
+	scale=0.200000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="whalebone4"
+		hidden_on_start=no
+		position={
+			340.000 0.000 505.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="whalebone3"
+		hidden_on_start=no
+		position={
+			370.000 0.000 540.000 
+		}
+		rotation={
+			3.000 40.000 3.000 
+		}
+	}
+	object={
+		name="whalebone2"
+		hidden_on_start=no
+		position={
+			4101.000 0.000 709.000 
+		}
+		rotation={
+			3.000 40.000 3.000 
+		}
+	}
+	object={
+		name="whalebone1"
+		hidden_on_start=no
+		position={
+			2849.000 0.000 1103.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+}
+type={
+	type="giantcoral"
+	use_animation=no
+	scale=0.100000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="giantcoral6"
+		hidden_on_start=no
+		position={
+			218.000 0.000 506.000 
+		}
+		rotation={
+			3.000 90.000 3.000 
+		}
+	}
+	object={
+		name="giantcoral4"
+		hidden_on_start=no
+		position={
+			278.000 0.000 651.000 
+		}
+		rotation={
+			3.000 40.000 3.000 
+		}
+	}
+	object={
+		name="giantcoral5"
+		hidden_on_start=no
+		position={
+			342.000 0.000 571.000 
+		}
+		rotation={
+			3.000 90.000 3.000 
+		}
+	}
+	object={
+		name="giantcoral7"
+		hidden_on_start=no
+		position={
+			450.000 0.000 608.000 
+		}
+		rotation={
+			3.000 276.000 3.000 
+		}
+	}
+	object={
+		name="giantcoral3"
+		hidden_on_start=no
+		position={
+			4081.000 0.000 719.000 
+		}
+		rotation={
+			3.000 40.000 3.000 
+		}
+	}
+	object={
+		name="giantcoral2"
+		hidden_on_start=no
+		position={
+			2822.000 0.000 1046.000 
+		}
+		rotation={
+			3.000 40.000 3.000 
+		}
+	}
+	object={
+		name="giantcoral1"
+		hidden_on_start=no
+		position={
+			2843.000 0.000 1109.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+}
+type={
+	type="goldcoral"
+	use_animation=no
+	scale=0.150000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="goldcoral5"
+		hidden_on_start=no
+		position={
+			170.000 0.000 487.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral6"
+		hidden_on_start=no
+		position={
+			251.000 0.000 482.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral8"
+		hidden_on_start=no
+		position={
+			353.000 0.000 487.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral9"
+		hidden_on_start=no
+		position={
+			282.000 0.000 527.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral10"
+		hidden_on_start=no
+		position={
+			188.000 0.000 538.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral11"
+		hidden_on_start=no
+		position={
+			192.000 0.000 592.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral12"
+		hidden_on_start=no
+		position={
+			251.000 0.000 629.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral13"
+		hidden_on_start=no
+		position={
+			322.000 0.000 600.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral14"
+		hidden_on_start=no
+		position={
+			404.000 0.000 613.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral115"
+		hidden_on_start=no
+		position={
+			443.000 0.000 581.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral117"
+		hidden_on_start=no
+		position={
+			481.000 0.000 648.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral118"
+		hidden_on_start=no
+		position={
+			295.000 0.000 689.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral119"
+		hidden_on_start=no
+		position={
+			360.000 0.000 699.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral120"
+		hidden_on_start=no
+		position={
+			246.000 0.000 689.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral4"
+		hidden_on_start=no
+		position={
+			4118.000 0.000 670.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral2"
+		hidden_on_start=no
+		position={
+			2791.000 0.000 1137.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral3"
+		hidden_on_start=no
+		position={
+			2894.000 0.000 1082.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="goldcoral1"
+		hidden_on_start=no
+		position={
+			2824.000 0.000 1087.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+}
+type={
+	type="spongecoral"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="spongecoral6"
+		hidden_on_start=no
+		position={
+			323.000 0.000 495.000 
+		}
+		rotation={
+			3.000 100.000 3.000 
+		}
+	}
+	object={
+		name="spongecoral9"
+		hidden_on_start=no
+		position={
+			433.000 0.000 499.000 
+		}
+		rotation={
+			3.000 100.000 3.000 
+		}
+	}
+	object={
+		name="spongecoral4"
+		hidden_on_start=no
+		position={
+			204.000 0.000 521.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="spongecoral5"
+		hidden_on_start=no
+		position={
+			220.000 0.000 547.000 
+		}
+		rotation={
+			3.000 10.000 3.000 
+		}
+	}
+	object={
+		name="spongecoral7"
+		hidden_on_start=no
+		position={
+			352.000 0.000 609.000 
+		}
+		rotation={
+			3.000 100.000 3.000 
+		}
+	}
+	object={
+		name="spongecoral8"
+		hidden_on_start=no
+		position={
+			454.000 0.000 546.000 
+		}
+		rotation={
+			3.000 100.000 3.000 
+		}
+	}
+	object={
+		name="spongecoral10"
+		hidden_on_start=no
+		position={
+			205.000 0.000 618.000 
+		}
+		rotation={
+			3.000 100.000 3.000 
+		}
+	}
+	object={
+		name="spongecoral10"
+		hidden_on_start=no
+		position={
+			205.000 0.000 618.000 
+		}
+		rotation={
+			3.000 100.000 3.000 
+		}
+	}
+	object={
+		name="spongecoral3"
+		hidden_on_start=no
+		position={
+			4073.000 0.000 697.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="spongecoral2"
+		hidden_on_start=no
+		position={
+			2865.000 0.000 1128.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+}
+type={
+	type="thickcoral"
+	use_animation=no
+	scale=0.150000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="thickcoral8"
+		hidden_on_start=no
+		position={
+			236.000 0.000 507.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral15"
+		hidden_on_start=no
+		position={
+			285.270 0.000 474.810 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral7"
+		hidden_on_start=no
+		position={
+			207.000 0.000 545.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral10"
+		hidden_on_start=no
+		position={
+			164.000 0.000 658.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral11"
+		hidden_on_start=no
+		position={
+			289.000 0.000 734.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral12"
+		hidden_on_start=no
+		position={
+			319.000 0.000 633.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral13"
+		hidden_on_start=no
+		position={
+			407.000 0.000 556.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral14"
+		hidden_on_start=no
+		position={
+			481.000 0.000 588.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral5"
+		hidden_on_start=no
+		position={
+			4118.000 0.000 705.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral6"
+		hidden_on_start=no
+		position={
+			4041.000 0.000 689.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral3"
+		hidden_on_start=no
+		position={
+			2791.000 0.000 1040.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral1"
+		hidden_on_start=no
+		position={
+			2771.000 0.000 1123.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral2"
+		hidden_on_start=no
+		position={
+			2821.000 0.000 1112.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="thickcoral4"
+		hidden_on_start=no
+		position={
+			2895.000 0.000 1096.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+}
+type={
+	type="elf1"
+	use_animation=no
+	scale=0.100000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="elf1"
+		hidden_on_start=no
+		position={
+			2899.000 0.000 1118.000 
+		}
+		rotation={
+			3.000 620.000 3.000 
+		}
+	}
+}
+type={
+	type="elf2"
+	use_animation=no
+	scale=0.120000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="elf2"
+		hidden_on_start=no
+		position={
+			4089.000 0.000 680.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+}
+type={
+	type="underrocks"
+	use_animation=no
+	scale=0.050000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="underrocks7"
+		hidden_on_start=no
+		position={
+			481.000 0.000 482.000 
+		}
+		rotation={
+			3.000 100.000 3.000 
+		}
+	}
+	object={
+		name="underrocks8"
+		hidden_on_start=no
+		position={
+			305.000 0.000 449.000 
+		}
+		rotation={
+			3.000 60.000 3.000 
+		}
+	}
+	object={
+		name="underrocks6"
+		hidden_on_start=no
+		position={
+			485.000 0.000 669.000 
+		}
+		rotation={
+			3.000 80.000 3.000 
+		}
+	}
+	object={
+		name="underrocks9"
+		hidden_on_start=no
+		position={
+			150.000 0.000 563.000 
+		}
+		rotation={
+			3.000 20.000 3.000 
+		}
+	}
+	object={
+		name="underrocks10"
+		hidden_on_start=no
+		position={
+			235.000 0.000 720.000 
+		}
+		rotation={
+			3.000 68.000 3.000 
+		}
+	}
+	object={
+		name="underrocks11"
+		hidden_on_start=no
+		position={
+			289.000 0.000 544.000 
+		}
+		rotation={
+			3.000 68.000 3.000 
+		}
+	}
+	object={
+		name="underrocks4"
+		hidden_on_start=no
+		position={
+			4049.000 0.000 711.000 
+		}
+		rotation={
+			3.000 90.000 3.000 
+		}
+	}
+	object={
+		name="underrocks5"
+		hidden_on_start=no
+		position={
+			4125.000 0.000 683.000 
+		}
+		rotation={
+			3.000 50.000 3.000 
+		}
+	}
+	object={
+		name="underrocks2"
+		hidden_on_start=no
+		position={
+			2774.000 0.000 1065.000 
+		}
+		rotation={
+			3.000 130.000 3.000 
+		}
+	}
+	object={
+		name="underrocks3"
+		hidden_on_start=no
+		position={
+			2817.000 0.000 1152.000 
+		}
+		rotation={
+			3.000 90.000 3.000 
+		}
+	}
+	object={
+		name="underrocks1"
+		hidden_on_start=no
+		position={
+			2861.000 0.000 1070.000 
+		}
+		rotation={
+			3.000 45.000 3.000 
+		}
+	}
+}
+type={
+	type="shipwreck"
+	use_animation=no
+	scale=0.150000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="shipwreck2"
+		hidden_on_start=no
+		position={
+			4112.000 0.000 736.000 
+		}
+		rotation={
+			3.000 10.000 3.000 
+		}
+	}
+	object={
+		name="shipwreck1"
+		hidden_on_start=no
+		position={
+			2798.000 0.000 1109.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+}
+type={
+	type="chapel"
+	use_animation=no
+	scale=0.150000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="chapel"
+		hidden_on_start=no
+		position={
+			4609.000 0.000 1255.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+}
+type={
+	type="windrunnerspire"
+	use_animation=no
+	scale=0.065000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="windrunnerspire"
+		hidden_on_start=no
+		position={
+			4452.000 4.000 1416.000 
+		}
+		rotation={
+			3.000 90.000 3.000 
+		}
+	}
+}
+type={
+	type="tirionfordring_statue_plaguelands"
+	use_animation=no
+	scale=1.750000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="tirionfordring_statue_plaguelands2"
+		hidden_on_start=no
+		position={
+			4600.000 0.000 1258.000 
+		}
+		rotation={
+			3.000 180.000 3.000 
+		}
+	}
+	object={
+		name="tirionfordring_statue_plaguelands"
+		hidden_on_start=no
+		position={
+			4364.000 0.000 1309.000 
+		}
+		rotation={
+			3.000 320.000 3.000 
+		}
+	}
+}
+type={
+	type="hearthglen_stable"
+	use_animation=no
+	scale=0.100000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="hearthglen_stable2"
+		hidden_on_start=no
+		position={
+			4357.000 0.500 1308.000 
+		}
+		rotation={
+			3.000 60.000 3.000 
+		}
+	}
+	object={
+		name="hearthglen_stable1"
+		hidden_on_start=no
+		position={
+			4360.000 0.500 1319.000 
+		}
+		rotation={
+			3.000 320.000 3.000 
+		}
+	}
+}
+type={
+	type="hearthglen_magetower"
+	use_animation=no
+	scale=0.070000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="hearthglen_magetower"
+		hidden_on_start=no
+		position={
+			4367.000 0.500 1316.000 
+		}
+		rotation={
+			3.000 280.000 3.000 
+		}
+	}
+}
+type={
+	type="hearthglen_barracks"
+	use_animation=no
+	scale=0.070000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="hearthglen_barracks"
+		hidden_on_start=no
+		position={
+			4354.000 0.500 1313.000 
+		}
+		rotation={
+			3.000 320.000 3.000 
+		}
+	}
+}
+type={
+	type="guardtower"
+	use_animation=no
+	scale=0.080000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="guardtowera2"
+		hidden_on_start=no
+		position={
+			4534.000 0.500 1321.000 
+		}
+		rotation={
+			3.000 220.000 3.000 
+		}
+	}
+	object={
+		name="guardtowera1"
+		hidden_on_start=no
+		position={
+			4465.000 0.500 1311.000 
+		}
+		rotation={
+			3.000 50.000 3.000 
+		}
+	}
+	object={
+		name="guardtowera3"
+		hidden_on_start=no
+		position={
+			4575.000 0.500 1292.000 
+		}
+		rotation={
+			3.000 220.000 3.000 
+		}
+	}
+	object={
+		name="guardtowera4"
+		hidden_on_start=no
+		position={
+			4547.000 0.500 1267.000 
+		}
+		rotation={
+			3.000 320.000 3.000 
+		}
+	}
+	object={
+		name="guardtowera5"
+		hidden_on_start=no
+		position={
+			4495.000 0.500 1249.000 
+		}
+		rotation={
+			3.000 220.000 3.000 
+		}
+	}
+	object={
+		name="guardtowerb1"
+		hidden_on_start=no
+		position={
+			4384.000 0.500 1302.000 
+		}
+		rotation={
+			3.000 220.000 3.000 
+		}
+	}
+}
+type={
+	type="stratholme_house"
+	use_animation=no
+	scale=0.060000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="stratholme_housea2"
+		hidden_on_start=no
+		position={
+			4472.000 0.500 1356.000 
+		}
+		rotation={
+			3.000 120.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_housea3"
+		hidden_on_start=no
+		position={
+			4474.000 0.500 1357.000 
+		}
+		rotation={
+			3.000 240.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_housea4"
+		hidden_on_start=no
+		position={
+			4476.000 0.500 1356.000 
+		}
+		rotation={
+			3.000 1750.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_housea1"
+		hidden_on_start=no
+		position={
+			4468.000 0.500 1357.000 
+		}
+		rotation={
+			3.000 180.000 3.000 
+		}
+	}
+}
+type={
+	type="stratholme_wall"
+	use_animation=no
+	scale=0.080000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="chapel_wall_1"
+		hidden_on_start=no
+		position={
+			4603.000 0.200 1249.000 
+		}
+		rotation={
+			3.000 215.000 3.000 
+		}
+	}
+	object={
+		name="chapel_wall_2"
+		hidden_on_start=no
+		position={
+			4611.000 0.200 1262.000 
+		}
+		rotation={
+			3.000 280.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_wallb1"
+		hidden_on_start=no
+		position={
+			4372.850 0.800 1310.400 
+		}
+		rotation={
+			3.000 190.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_wallb2"
+		hidden_on_start=no
+		position={
+			4371.000 1.000 1308.000 
+		}
+		rotation={
+			3.000 150.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_wallb2"
+		hidden_on_start=no
+		position={
+			4365.000 1.000 1301.000 
+		}
+		rotation={
+			3.000 140.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_wallb3"
+		hidden_on_start=no
+		position={
+			4365.000 1.000 1301.000 
+		}
+		rotation={
+			3.000 140.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_wallb4"
+		hidden_on_start=no
+		position={
+			4362.000 1.100 1302.500 
+		}
+		rotation={
+			3.000 70.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla2"
+		hidden_on_start=no
+		position={
+			4480.700 1.000 1345.000 
+		}
+		rotation={
+			3.000 120.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla3"
+		hidden_on_start=no
+		position={
+			4483.500 1.000 1346.600 
+		}
+		rotation={
+			3.000 120.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla3"
+		hidden_on_start=no
+		position={
+			4483.500 1.000 1346.600 
+		}
+		rotation={
+			3.000 120.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla4"
+		hidden_on_start=no
+		position={
+			4486.300 1.000 1348.000 
+		}
+		rotation={
+			3.000 150.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla5"
+		hidden_on_start=no
+		position={
+			4488.100 1.000 1350.600 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla6"
+		hidden_on_start=no
+		position={
+			4487.000 1.000 1353.500 
+		}
+		rotation={
+			3.000 215.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla7"
+		hidden_on_start=no
+		position={
+			4471.000 1.000 1342.000 
+		}
+		rotation={
+			3.000 180.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla8"
+		hidden_on_start=no
+		position={
+			4471.300 1.000 1345.200 
+		}
+		rotation={
+			3.000 240.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla9"
+		hidden_on_start=no
+		position={
+			4468.650 1.100 1346.700 
+		}
+		rotation={
+			3.000 240.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla10"
+		hidden_on_start=no
+		position={
+			4466.000 1.000 1348.000 
+		}
+		rotation={
+			3.000 210.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla11"
+		hidden_on_start=no
+		position={
+			4464.200 1.000 1350.500 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla12"
+		hidden_on_start=no
+		position={
+			4464.800 1.100 1353.600 
+		}
+		rotation={
+			3.000 160.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla13"
+		hidden_on_start=no
+		position={
+			4465.900 1.000 1356.500 
+		}
+		rotation={
+			3.000 160.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla14"
+		hidden_on_start=no
+		position={
+			4467.000 1.100 1359.300 
+		}
+		rotation={
+			3.000 160.000 3.000 
+		}
+	}
+	object={
+		name="stratholme_walla1"
+		hidden_on_start=no
+		position={
+			4481.000 1.000 1342.000 
+		}
+		rotation={
+			3.000 180.000 3.000 
+		}
+	}
+}
+type={
+	type="stratholme"
+	use_animation=no
+	scale=0.035000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="stratholme"
+		hidden_on_start=no
+		position={
+			4476.000 1.000 1344.000 
+		}
+		rotation={
+			3.000 270.000 3.000 
+		}
+	}
+}
+type={
+	type="sunwell"
+	use_animation=no
+	scale=0.035000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="sunwell"
+		hidden_on_start=no
+		position={
+			4530.000 1.000 1694.000 
+		}
+		rotation={
+			3.000 180.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamanhut"
+	use_animation=no
+	scale=0.130000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zulamanhut15"
+		hidden_on_start=no
+		position={
+			4684.000 0.000 1395.000 
+		}
+		rotation={
+			3.000 8870.000 3.000 
+		}
+	}
+	object={
+		name="zulamanhut14"
+		hidden_on_start=no
+		position={
+			4697.000 0.000 1421.000 
+		}
+		rotation={
+			3.000 140.000 3.000 
+		}
+	}
+}
+type={
+	type="entrance2"
+	use_animation=no
+	scale=0.100000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="entranceb2"
+		hidden_on_start=no
+		position={
+			4341.000 -0.200 1195.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="entranceb1"
+		hidden_on_start=no
+		position={
+			4309.000 -0.200 1211.000 
+		}
+		rotation={
+			3.000 310.000 3.000 
+		}
+	}
+	object={
+		name="entranceb3"
+		hidden_on_start=no
+		position={
+			2718.000 -0.200 1800.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="entranceb4"
+		hidden_on_start=no
+		position={
+			2731.000 -0.200 1797.000 
+		}
+		rotation={
+			3.000 340.000 3.000 
+		}
+	}
+	object={
+		name="entranceb5"
+		hidden_on_start=no
+		position={
+			2736.000 -0.200 1779.000 
+		}
+		rotation={
+			3.000 265.000 3.000 
+		}
+	}
+	object={
+		name="entranceb6"
+		hidden_on_start=no
+		position={
+			2740.000 -0.300 1791.000 
+		}
+		rotation={
+			3.000 90.000 3.000 
+		}
+	}
+}
+type={
+	type="entrance1"
+	use_animation=no
+	scale=0.100000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="entrancea4"
+		hidden_on_start=no
+		position={
+			4627.000 -0.200 1295.000 
+		}
+		rotation={
+			3.000 120.000 3.000 
+		}
+	}
+	object={
+		name="entrancea6"
+		hidden_on_start=no
+		position={
+			4333.000 -0.200 1304.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="entrancea3"
+		hidden_on_start=no
+		position={
+			4637.000 -0.200 1281.000 
+		}
+		rotation={
+			3.000 300.000 3.000 
+		}
+	}
+	object={
+		name="entrancea5"
+		hidden_on_start=no
+		position={
+			4347.000 -0.200 1308.000 
+		}
+		rotation={
+			3.000 30.000 3.000 
+		}
+	}
+	object={
+		name="entrancea2"
+		hidden_on_start=no
+		position={
+			4354.000 -0.200 1183.000 
+		}
+		rotation={
+			3.000 280.000 3.000 
+		}
+	}
+	object={
+		name="entrancea1"
+		hidden_on_start=no
+		position={
+			4288.000 -1.000 1220.000 
+		}
+		rotation={
+			3.000 150.000 3.000 
+		}
+	}
+}
+type={
+	type="amaniwall5"
+	use_animation=no
+	scale=0.070000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="amaniwalle1"
+		hidden_on_start=no
+		position={
+			4659.000 0.000 1458.000 
+		}
+		rotation={
+			3.000 330.000 3.000 
+		}
+	}
+}
+type={
+	type="amaniwall4"
+	use_animation=no
+	scale=0.050000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="amaniwalld4"
+		hidden_on_start=no
+		position={
+			4697.600 0.500 1366.700 
+		}
+		rotation={
+			3.000 60.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalld2"
+		hidden_on_start=no
+		position={
+			4668.000 0.000 1387.000 
+		}
+		rotation={
+			3.000 60.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalld1"
+		hidden_on_start=no
+		position={
+			4643.000 0.000 1394.000 
+		}
+		rotation={
+			3.000 80.000 3.000 
+		}
+	}
+}
+type={
+	type="amaniwall3"
+	use_animation=no
+	scale=0.050000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="amaniwallc3"
+		hidden_on_start=no
+		position={
+			4652.000 0.000 1458.600 
+		}
+		rotation={
+			3.000 70.000 3.000 
+		}
+	}
+	object={
+		name="amaniwallc4"
+		hidden_on_start=no
+		position={
+			4687.500 0.000 1470.000 
+		}
+		rotation={
+			3.000 120.000 3.000 
+		}
+	}
+	object={
+		name="amaniwallc5"
+		hidden_on_start=no
+		position={
+			4693.000 0.000 1473.100 
+		}
+		rotation={
+			3.000 120.000 3.000 
+		}
+	}
+	object={
+		name="amaniwallc2"
+		hidden_on_start=no
+		position={
+			4622.000 0.000 1423.000 
+		}
+		rotation={
+			3.000 150.000 3.000 
+		}
+	}
+	object={
+		name="amaniwallc1"
+		hidden_on_start=no
+		position={
+			4618.000 0.000 1418.000 
+		}
+		rotation={
+			3.000 140.000 3.000 
+		}
+	}
+}
+type={
+	type="amaniwall2"
+	use_animation=no
+	scale=0.080000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="amaniwallb3"
+		hidden_on_start=no
+		position={
+			4642.000 0.200 1463.500 
+		}
+		rotation={
+			3.000 70.000 3.000 
+		}
+	}
+	object={
+		name="amaniwallb4"
+		hidden_on_start=no
+		position={
+			4719.000 0.300 1481.000 
+		}
+		rotation={
+			3.000 30.000 3.000 
+		}
+	}
+	object={
+		name="amaniwallb2"
+		hidden_on_start=no
+		position={
+			4626.000 0.000 1431.000 
+		}
+		rotation={
+			3.000 70.000 3.000 
+		}
+	}
+	object={
+		name="amaniwallb1"
+		hidden_on_start=no
+		position={
+			4606.000 0.300 1408.000 
+		}
+		rotation={
+			3.000 280.000 3.000 
+		}
+	}
+}
+type={
+	type="amaniwall1"
+	use_animation=no
+	scale=0.090000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="amaniwalla4"
+		hidden_on_start=no
+		position={
+			4661.000 0.500 1400.000 
+		}
+		rotation={
+			3.000 390.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla5"
+		hidden_on_start=no
+		position={
+			4664.000 0.500 1403.000 
+		}
+		rotation={
+			3.000 390.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla6"
+		hidden_on_start=no
+		position={
+			4636.000 0.500 1427.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla7"
+		hidden_on_start=no
+		position={
+			4642.000 0.500 1427.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla8"
+		hidden_on_start=no
+		position={
+			4628.000 0.500 1435.000 
+		}
+		rotation={
+			3.000 50.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla9"
+		hidden_on_start=no
+		position={
+			4633.000 0.500 1444.000 
+		}
+		rotation={
+			3.000 55.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla10"
+		hidden_on_start=no
+		position={
+			4638.000 0.700 1453.500 
+		}
+		rotation={
+			3.000 55.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla11"
+		hidden_on_start=no
+		position={
+			4671.000 0.500 1465.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla12"
+		hidden_on_start=no
+		position={
+			4680.000 0.500 1468.000 
+		}
+		rotation={
+			3.000 180.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla14"
+		hidden_on_start=no
+		position={
+			4677.000 0.500 1375.000 
+		}
+		rotation={
+			3.000 310.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla15"
+		hidden_on_start=no
+		position={
+			4684.000 0.500 1369.000 
+		}
+		rotation={
+			3.000 310.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla16"
+		hidden_on_start=no
+		position={
+			4702.000 0.500 1474.800 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla17"
+		hidden_on_start=no
+		position={
+			4712.000 0.500 1477.000 
+		}
+		rotation={
+			3.000 20.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla18"
+		hidden_on_start=no
+		position={
+			4663.500 0.800 1449.000 
+		}
+		rotation={
+			3.000 110.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla19"
+		hidden_on_start=no
+		position={
+			4678.000 0.500 1463.000 
+		}
+		rotation={
+			3.000 130.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla2"
+		hidden_on_start=no
+		position={
+			4599.000 0.500 1395.000 
+		}
+		rotation={
+			3.000 340.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla3"
+		hidden_on_start=no
+		position={
+			4609.000 0.500 1394.000 
+		}
+		rotation={
+			3.000 350.000 3.000 
+		}
+	}
+	object={
+		name="amaniwalla1"
+		hidden_on_start=no
+		position={
+			4613.000 0.800 1413.000 
+		}
+		rotation={
+			3.000 390.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamantree"
+	use_animation=no
+	scale=0.120000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="easternplague_tree_a_1"
+		hidden_on_start=no
+		position={
+			4496.000 0.000 1330.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="easternplague_tree_a_2"
+		hidden_on_start=no
+		position={
+			4521.000 0.000 1298.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="easternplague_tree_a_3"
+		hidden_on_start=no
+		position={
+			4577.000 0.000 1259.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="easternplague_tree_a_4"
+		hidden_on_start=no
+		position={
+			4522.000 0.000 1228.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="easternplague_tree_a_5"
+		hidden_on_start=no
+		position={
+			4429.000 0.000 1257.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="easternplague_tree_a_6"
+		hidden_on_start=no
+		position={
+			4587.000 0.000 1317.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="easternplague_tree_a_7"
+		hidden_on_start=no
+		position={
+			4473.000 0.000 1252.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree2"
+		hidden_on_start=no
+		position={
+			4651.000 0.000 1396.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree3"
+		hidden_on_start=no
+		position={
+			4671.000 0.000 1402.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree4"
+		hidden_on_start=no
+		position={
+			4689.000 0.000 1372.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree5"
+		hidden_on_start=no
+		position={
+			4717.000 0.000 1403.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree6"
+		hidden_on_start=no
+		position={
+			4708.000 0.000 1437.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree7"
+		hidden_on_start=no
+		position={
+			4695.000 0.000 1442.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree8"
+		hidden_on_start=no
+		position={
+			4692.000 0.000 1465.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree9"
+		hidden_on_start=no
+		position={
+			4669.000 0.000 1450.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree10"
+		hidden_on_start=no
+		position={
+			4641.000 0.000 1447.000 
+		}
+		rotation={
+			3.000 320.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree14"
+		hidden_on_start=no
+		position={
+			4671.000 0.000 1484.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree16"
+		hidden_on_start=no
+		position={
+			4692.000 0.000 1496.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree19"
+		hidden_on_start=no
+		position={
+			4659.000 0.000 1511.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree21"
+		hidden_on_start=no
+		position={
+			4694.000 0.000 1355.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree23"
+		hidden_on_start=no
+		position={
+			4657.000 0.000 1302.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree24"
+		hidden_on_start=no
+		position={
+			4640.000 0.000 1267.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree25"
+		hidden_on_start=no
+		position={
+			4652.000 0.000 1250.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamantree1"
+		hidden_on_start=no
+		position={
+			4630.000 0.000 1423.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamantiki"
+	use_animation=no
+	scale=0.200000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zulamantiki3"
+		hidden_on_start=no
+		position={
+			4644.000 0.000 1421.000 
+		}
+		rotation={
+			3.000 280.000 3.000 
+		}
+	}
+	object={
+		name="zulamantiki1"
+		hidden_on_start=no
+		position={
+			4702.000 0.000 1454.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamanface"
+	use_animation=no
+	scale=0.200000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zulamanface5"
+		hidden_on_start=no
+		position={
+			4579.000 0.000 1405.000 
+		}
+		rotation={
+			3.000 270.000 3.000 
+		}
+	}
+	object={
+		name="zulamanface2"
+		hidden_on_start=no
+		position={
+			4697.000 0.000 1399.000 
+		}
+		rotation={
+			3.000 270.000 3.000 
+		}
+	}
+	object={
+		name="zulamanface4"
+		hidden_on_start=no
+		position={
+			4643.000 0.000 1458.000 
+		}
+		rotation={
+			3.000 270.000 3.000 
+		}
+	}
+	object={
+		name="zulamanface1"
+		hidden_on_start=no
+		position={
+			4713.000 0.000 1466.000 
+		}
+		rotation={
+			3.000 270.000 3.000 
+		}
+	}
+}
+type={
+	type="bloodtree1"
+	use_animation=no
+	scale=0.070000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="bloodtreea15"
+		hidden_on_start=no
+		position={
+			4467.000 1.000 1521.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreea12"
+		hidden_on_start=no
+		position={
+			4507.000 0.500 1527.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreea22"
+		hidden_on_start=no
+		position={
+			4548.000 1.000 1671.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreea24"
+		hidden_on_start=no
+		position={
+			4520.000 1.000 1700.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreea8"
+		hidden_on_start=no
+		position={
+			4579.000 1.000 1608.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreea10"
+		hidden_on_start=no
+		position={
+			4589.000 1.000 1547.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamangod"
+	use_animation=no
+	scale=0.090000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zulamangod"
+		hidden_on_start=no
+		position={
+			4648.000 0.500 1408.000 
+		}
+		rotation={
+			3.000 220.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamanlynxgod"
+	use_animation=no
+	scale=0.050000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zulamanlynxgod"
+		hidden_on_start=no
+		position={
+			4637.000 1.000 1415.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamandragonhawkgod"
+	use_animation=no
+	scale=0.070000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zulamandragonhawkgod"
+		hidden_on_start=no
+		position={
+			4622.000 1.000 1395.500 
+		}
+		rotation={
+			3.000 100.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamaneaglegod"
+	use_animation=no
+	scale=0.050000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zulamaneaglegod"
+		hidden_on_start=no
+		position={
+			4646.000 0.000 1404.000 
+		}
+		rotation={
+			3.000 300.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamanbeargod"
+	use_animation=no
+	scale=0.050000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zulamanbeargod"
+		hidden_on_start=no
+		position={
+			4621.000 0.000 1412.000 
+		}
+		rotation={
+			3.000 290.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamancube"
+	use_animation=no
+	scale=0.300000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zulamancube2"
+		hidden_on_start=no
+		position={
+			4686.000 0.000 1447.000 
+		}
+		rotation={
+			3.000 270.000 3.000 
+		}
+	}
+	object={
+		name="zulamancube4"
+		hidden_on_start=no
+		position={
+			4716.000 0.000 1421.000 
+		}
+		rotation={
+			3.000 280.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamanfountain"
+	use_animation=no
+	scale=0.130000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zulamanfountain2"
+		hidden_on_start=no
+		position={
+			4672.000 1.000 1392.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamanfountain3"
+		hidden_on_start=no
+		position={
+			4703.000 1.000 1386.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="zulamanfountain1"
+		hidden_on_start=no
+		position={
+			4654.000 1.000 1437.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+}
+type={
+	type="zulamanentrance"
+	use_animation=no
+	scale=0.040000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zulamanentrance"
+		hidden_on_start=no
+		position={
+			4593.000 1.500 1405.000 
+		}
+		rotation={
+			3.000 85.000 3.000 
+		}
+	}
+}
+type={
+	type="scourgewall"
+	use_animation=no
+	scale=0.043000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="scourgewall"
+		hidden_on_start=yes
+		position={
+			4499.000 0.000 1379.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+}
+type={
+	type="bloodroad1"
+	use_animation=no
+	scale=0.050000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="bloodroada5"
+		hidden_on_start=no
+		position={
+			4548.000 0.000 1528.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada7"
+		hidden_on_start=no
+		position={
+			4542.000 0.000 1505.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada8"
+		hidden_on_start=no
+		position={
+			4531.000 0.000 1504.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada10"
+		hidden_on_start=no
+		position={
+			4526.000 0.000 1477.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada9"
+		hidden_on_start=no
+		position={
+			4521.000 0.000 1466.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada11"
+		hidden_on_start=no
+		position={
+			4521.000 0.000 1466.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada12"
+		hidden_on_start=no
+		position={
+			4518.000 0.000 1453.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada13"
+		hidden_on_start=no
+		position={
+			4511.000 0.000 1437.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada16"
+		hidden_on_start=no
+		position={
+			4506.000 0.000 1421.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada17"
+		hidden_on_start=no
+		position={
+			4500.000 0.000 1398.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada2"
+		hidden_on_start=no
+		position={
+			4543.000 0.000 1568.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada4"
+		hidden_on_start=no
+		position={
+			4547.000 0.000 1540.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroada1"
+		hidden_on_start=no
+		position={
+			4543.000 0.000 1584.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+}
+type={
+	type="bloodroad2"
+	use_animation=no
+	scale=0.050000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="bloodroadb6"
+		hidden_on_start=no
+		position={
+			4542.000 0.000 1523.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroadb10"
+		hidden_on_start=no
+		position={
+			4531.000 0.000 1470.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroadb12"
+		hidden_on_start=no
+		position={
+			4528.000 0.000 1491.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroadb12"
+		hidden_on_start=no
+		position={
+			4528.000 0.000 1491.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroadb11"
+		hidden_on_start=no
+		position={
+			4524.000 0.000 1460.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroadb13"
+		hidden_on_start=no
+		position={
+			4512.000 0.000 1447.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroadb15"
+		hidden_on_start=no
+		position={
+			4505.000 0.000 1432.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroadb16"
+		hidden_on_start=no
+		position={
+			4501.000 0.000 1412.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroadb4"
+		hidden_on_start=no
+		position={
+			4543.000 0.000 1562.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroadb8"
+		hidden_on_start=no
+		position={
+			4539.000 0.000 1546.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodroadb1"
+		hidden_on_start=no
+		position={
+			4540.000 0.000 1579.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+}
+type={
+	type="ghoststatue"
+	use_animation=no
+	scale=0.065000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="ghoststatue"
+		hidden_on_start=no
+		position={
+			4532.000 0.000 1448.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+}
+type={
+	type="bloodwagon"
+	use_animation=no
+	scale=0.300000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="bloodwagon2"
+		hidden_on_start=no
+		position={
+			4557.000 0.000 1545.000 
+		}
+		rotation={
+			3.000 230.000 3.000 
+		}
+	}
+	object={
+		name="bloodwagon3"
+		hidden_on_start=no
+		position={
+			4512.000 0.000 1579.000 
+		}
+		rotation={
+			3.000 230.000 3.000 
+		}
+	}
+	object={
+		name="bloodwagon1"
+		hidden_on_start=no
+		position={
+			4557.000 0.000 1594.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+}
+type={
+	type="bloodtree4"
+	use_animation=no
+	scale=0.060000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="bloodtreed3"
+		hidden_on_start=no
+		position={
+			4486.000 1.000 1467.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreed6"
+		hidden_on_start=no
+		position={
+			4473.000 1.000 1417.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreed7"
+		hidden_on_start=no
+		position={
+			4522.000 1.000 1402.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreed8"
+		hidden_on_start=no
+		position={
+			4550.000 1.000 1424.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreed9"
+		hidden_on_start=no
+		position={
+			4589.000 1.000 1431.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreed1"
+		hidden_on_start=no
+		position={
+			4572.000 1.000 1479.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+}
+type={
+	type="bloodtree3"
+	use_animation=no
+	scale=0.050000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="bloodtreec2"
+		hidden_on_start=no
+		position={
+			4464.000 1.000 1393.000 
+		}
+		rotation={
+			3.000 70.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreec5"
+		hidden_on_start=no
+		position={
+			4573.000 1.000 1456.000 
+		}
+		rotation={
+			3.000 70.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreec1"
+		hidden_on_start=no
+		position={
+			4490.000 1.000 1434.000 
+		}
+		rotation={
+			3.000 70.000 3.000 
+		}
+	}
+}
+type={
+	type="bloodtree2"
+	use_animation=no
+	scale=0.070000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="bloodtreeb7"
+		hidden_on_start=no
+		position={
+			4555.000 1.000 1505.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreeb8"
+		hidden_on_start=no
+		position={
+			4497.000 1.000 1509.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreeb4"
+		hidden_on_start=no
+		position={
+			4579.000 1.000 1572.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreeb5"
+		hidden_on_start=no
+		position={
+			4529.000 1.000 1544.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodtreeb2"
+		hidden_on_start=no
+		position={
+			4530.000 1.000 1585.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+}
+type={
+	type="arcanebridgea1"
+	use_animation=no
+	scale=0.070000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+}
+type={
+	type="bloodcrystal2"
+	use_animation=no
+	scale=0.500000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="bloodcrystalb2"
+		hidden_on_start=yes
+		position={
+			4504.000 1.000 1631.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodcrystalb3"
+		hidden_on_start=yes
+		position={
+			4511.000 1.000 1589.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodcrystalb4"
+		hidden_on_start=yes
+		position={
+			4567.000 1.000 1561.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="bloodcrystalb1"
+		hidden_on_start=yes
+		position={
+			4553.000 1.000 1592.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+}
+type={
+	type="bloodcrystal1"
+	use_animation=no
+	scale=0.400000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="bloodcrystala1"
+		hidden_on_start=yes
+		position={
+			4496.000 1.000 1641.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+}
+type={
+	type="arcanesanctum"
+	use_animation=no
+	scale=0.100000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="arcanesanctum3"
+		hidden_on_start=no
+		position={
+			4557.000 1.000 1532.000 
+		}
+		rotation={
+			3.000 240.000 3.000 
+		}
+	}
+	object={
+		name="arcanesanctum1"
+		hidden_on_start=no
+		position={
+			4525.000 1.000 1576.000 
+		}
+		rotation={
+			3.000 290.000 3.000 
+		}
+	}
+	object={
+		name="arcanesanctum3"
+		hidden_on_start=no
+		position={
+			4493.000 1.000 1557.000 
+		}
+		rotation={
+			3.000 340.000 3.000 
+		}
+	}
+}
+type={
+	type="arcanelibrary"
+	use_animation=no
+	scale=0.055000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="arcanelibrary"
+		hidden_on_start=no
+		position={
+			4473.000 4.000 1624.000 
+		}
+		rotation={
+			3.000 120.000 3.000 
+		}
+	}
+}
+type={
+	type="arcanebridge2"
+	use_animation=no
+	scale=0.130000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="arcanebridgeb3"
+		hidden_on_start=no
+		position={
+			4486.000 0.500 1473.000 
+		}
+		rotation={
+			3.000 320.000 3.000 
+		}
+	}
+	object={
+		name="arcanebridgeb1"
+		hidden_on_start=no
+		position={
+			4529.000 0.500 1485.000 
+		}
+		rotation={
+			3.000 270.000 3.000 
+		}
+	}
+	object={
+		name="arcanebridgeb2"
+		hidden_on_start=no
+		position={
+			4470.000 0.500 1452.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="arcanebridgeb4"
+		hidden_on_start=no
+		position={
+			4467.000 0.500 1499.000 
+		}
+		rotation={
+			3.000 270.000 3.000 
+		}
+	}
+}
+type={
+	type="arcanebridge1"
+	use_animation=no
+	scale=0.070000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="arcanebridgea4"
+		hidden_on_start=no
+		position={
+			4496.000 0.200 1567.000 
+		}
+		rotation={
+			3.000 170.000 3.000 
+		}
+	}
+	object={
+		name="arcanebridgea3"
+		hidden_on_start=no
+		position={
+			4530.000 0.200 1563.000 
+		}
+		rotation={
+			3.000 180.000 3.000 
+		}
+	}
+	object={
+		name="arcanebridgea1"
+		hidden_on_start=no
+		position={
+			4505.000 0.200 1618.000 
+		}
+		rotation={
+			3.000 210.000 3.000 
+		}
+	}
+	object={
+		name="arcanebridgea2"
+		hidden_on_start=no
+		position={
+			4557.000 0.200 1551.000 
+		}
+		rotation={
+			3.000 140.000 3.000 
+		}
+	}
+	object={
+		name="arcanebridgea5"
+		hidden_on_start=no
+		position={
+			4495.000 0.200 1547.000 
+		}
+		rotation={
+			3.000 210.000 3.000 
+		}
+	}
+}
+type={
+	type="jinthaalor1"
+	use_animation=no
+	scale=0.200000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="jinthaalor2"
+		hidden_on_start=no
+		position={
+			4508.000 2.300 1122.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="jinthaalor2"
+		hidden_on_start=no
+		position={
+			4504.000 0.500 1112.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="jinthaalor3"
+		hidden_on_start=no
+		position={
+			4506.000 0.500 1117.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="jinthaalor1"
+		hidden_on_start=no
+		position={
+			4510.000 1.000 1125.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+}
+type={
+	type="jinthaalor2"
+	use_animation=no
+	scale=0.380000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="jinthaalor2"
+		hidden_on_start=no
+		position={
+			4496.000 0.000 1096.000 
+		}
+		rotation={
+			90.000 12.000 3.000 
+		}
+	}
+}
+type={
+	type="grimbatol"
+	use_animation=no
+	scale=0.380000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="grimbatol"
+		hidden_on_start=no
+		position={
+			4488.000 0.000 899.000 
+		}
+		rotation={
+			3.000 290.000 3.000 
+		}
+	}
+}
+type={
+	type="uthertomb"
+	use_animation=no
+	scale=0.700000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="uthertomb"
+		hidden_on_start=no
+		position={
+			4381.000 0.000 1203.000 
+		}
+		rotation={
+			0.000 130.000 0.000 
+		}
+	}
+}
+type={
+	type="thandol"
+	use_animation=no
+	scale=0.200000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="thandol"
+		hidden_on_start=no
+		position={
+			4420.000 2.000 996.000 
+		}
+		rotation={
+			0.000 180.000 0.000 
+		}
+	}
+}
+type={
+	type="serenade"
+	use_animation=no
+	scale=0.200000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="serenade"
+		hidden_on_start=no
+		position={
+			4511.000 1.000 1178.000 
+		}
+		rotation={
+			0.000 270.000 0.000 
+		}
+	}
+}
+type={
+	type="giantbattle"
+	use_animation=no
+	scale=0.800000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="giantbattle"
+		hidden_on_start=no
+		position={
+			3127.000 -1.000 1900.000 
+		}
+		rotation={
+			0.000 270.000 0.000 
+		}
+	}
+}
+type={
+	type="dwarvendam"
+	use_animation=no
+	scale=0.250000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="dwarvendam"
+		hidden_on_start=no
+		position={
+			4472.000 2.000 860.000 
+		}
+		rotation={
+			0.000 270.000 0.000 
+		}
+	}
+}
+type={
+	type="altarofzul"
+	use_animation=no
+	scale=0.320000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="altarofzul3"
+		hidden_on_start=no
+		position={
+			4580.000 0.200 1337.000 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+	object={
+		name="altarofzul1"
+		hidden_on_start=no
+		position={
+			4467.000 0.050 1125.000 
+		}
+		rotation={
+			0.000 90.000 0.000 
+		}
+	}
+	object={
+		name="altarofzul2"
+		hidden_on_start=no
+		position={
+			4678.000 0.050 1437.000 
+		}
+		rotation={
+			0.000 90.000 0.000 
+		}
+	}
+}
+type={
+	type="yogg"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="yogg"
+		hidden_on_start=yes
+		position={
+			3010.000 1.000 1976.000 
+		}
+		rotation={
+			0.000 270.000 0.000 
+		}
+	}
+}
+type={
+	type="sha"
+	use_animation=no
+	scale=2.000000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="sha"
+		hidden_on_start=yes
+		position={
+			2695.000 0.000 220.000 
+		}
+		rotation={
+			0.000 180.000 0.000 
+		}
+	}
+}
+type={
+	type="nzoth"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="nzoth"
+		hidden_on_start=yes
+		position={
+			2898.000 0.000 1118.000 
+		}
+		rotation={
+			0.000 270.000 0.000 
+		}
+	}
+}
+type={
+	type="cthun"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="cthun"
+		hidden_on_start=yes
+		position={
+			1257.000 3.000 214.000 
+		}
+		rotation={
+			0.000 270.000 0.000 
+		}
+	}
+}
+type={
+	type="silvermoon"
+	use_animation=no
+	scale=1.100000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="silvermoon1"
+		hidden_on_start=no
+		position={
+			4537.000 0.000 1617.000 
+		}
+		rotation={
+			0.000 360.000 0.000 
+		}
+	}
+}
+type={
+	type="outlandtree1"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="outlandtree1b"
+		hidden_on_start=no
+		position={
+			5401.000 0.000 1006.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandtree1d"
+		hidden_on_start=no
+		position={
+			5470.000 0.000 1003.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandtree1h"
+		hidden_on_start=no
+		position={
+			5221.000 0.000 1022.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandtree1i"
+		hidden_on_start=no
+		position={
+			5271.000 0.000 990.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandtree1j"
+		hidden_on_start=no
+		position={
+			5308.000 0.000 982.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandtree1k"
+		hidden_on_start=no
+		position={
+			5436.000 0.000 1005.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandtree1e"
+		hidden_on_start=no
+		position={
+			5343.000 0.000 1058.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandtree1g"
+		hidden_on_start=no
+		position={
+			5294.000 0.000 1036.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandtree1f"
+		hidden_on_start=no
+		position={
+			5229.000 0.000 1053.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandtree1l"
+		hidden_on_start=no
+		position={
+			5413.000 0.000 1053.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandtree1a"
+		hidden_on_start=no
+		position={
+			5438.000 0.000 1042.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandtree1c"
+		hidden_on_start=no
+		position={
+			5407.000 0.000 1071.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+}
+type={
+	type="outlandthorn1"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="outlandthorn1a"
+		hidden_on_start=no
+		position={
+			5289.000 0.000 953.000 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+	object={
+		name="outlandthorn1b"
+		hidden_on_start=no
+		position={
+			5304.000 0.000 963.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="outlandthorn1c"
+		hidden_on_start=no
+		position={
+			5311.000 0.000 966.000 
+		}
+		rotation={
+			0.000 170.000 0.000 
+		}
+	}
+	object={
+		name="outlandthorn1d"
+		hidden_on_start=no
+		position={
+			5305.000 0.000 954.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+}
+type={
+	type="outlandthorn2"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="outlandthorn2a"
+		hidden_on_start=no
+		position={
+			5295.000 0.000 953.000 
+		}
+		rotation={
+			0.000 260.000 0.000 
+		}
+	}
+	object={
+		name="outlandthorn2b"
+		hidden_on_start=no
+		position={
+			5298.000 0.000 959.000 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+	object={
+		name="outlandthorn2c"
+		hidden_on_start=no
+		position={
+			5314.000 0.000 959.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+}
+type={
+	type="zethgor"
+	use_animation=no
+	scale=1.200000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="zethgor1"
+		hidden_on_start=no
+		position={
+			5392.000 0.000 984.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="zethgor2"
+		hidden_on_start=no
+		position={
+			5284.000 0.000 1056.000 
+		}
+		rotation={
+			0.000 100.000 0.000 
+		}
+	}
+}
+type={
+	type="thrallmar"
+	use_animation=no
+	scale=1.400000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="thrallmar1"
+		hidden_on_start=no
+		position={
+			5358.000 0.000 1025.000 
+		}
+		rotation={
+			0.000 170.000 0.000 
+		}
+	}
+}
+type={
+	type="ruined_tower"
+	use_animation=no
+	scale=1.300000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="ruined_tower2"
+		hidden_on_start=no
+		position={
+			5355.000 0.000 985.000 
+		}
+		rotation={
+			0.000 170.000 0.000 
+		}
+	}
+	object={
+		name="ruined_tower1"
+		hidden_on_start=no
+		position={
+			5351.000 0.000 994.000 
+		}
+		rotation={
+			0.000 350.000 0.000 
+		}
+	}
+	object={
+		name="ruined_tower3"
+		hidden_on_start=no
+		position={
+			5367.000 0.000 1005.000 
+		}
+		rotation={
+			0.000 200.000 0.000 
+		}
+	}
+	object={
+		name="ruined_tower4"
+		hidden_on_start=no
+		position={
+			5361.000 0.000 1009.000 
+		}
+		rotation={
+			0.000 250.000 0.000 
+		}
+	}
+	object={
+		name="ruined_tower5"
+		hidden_on_start=no
+		position={
+			5347.000 0.000 966.000 
+		}
+		rotation={
+			0.000 450.000 0.000 
+		}
+	}
+}
+type={
+	type="outlanddemon"
+	use_animation=no
+	scale=1.200000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="outlanddemon1"
+		hidden_on_start=no
+		position={
+			5317.000 0.000 1051.000 
+		}
+		rotation={
+			0.000 250.000 0.000 
+		}
+	}
+}
+type={
+	type="kiljaden_throne"
+	use_animation=no
+	scale=1.100000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="kiljaden_throne1"
+		hidden_on_start=no
+		position={
+			5326.000 1.000 1056.000 
+		}
+		rotation={
+			0.000 200.000 0.000 
+		}
+	}
+	object={
+		name="kiljaden_throne2"
+		hidden_on_start=no
+		position={
+			5376.000 0.300 1082.000 
+		}
+		rotation={
+			0.000 270.000 0.000 
+		}
+	}
+}
+type={
+	type="felreaver_fall"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="felreaver_fall1"
+		hidden_on_start=no
+		position={
+			5388.000 0.000 1026.000 
+		}
+		rotation={
+			0.000 170.000 0.000 
+		}
+	}
+}
+type={
+	type="hellfire_citadel_tower2"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="hellfire_citadel_tower2a"
+		hidden_on_start=no
+		position={
+			5332.000 0.000 991.000 
+		}
+		rotation={
+			0.000 170.000 0.000 
+		}
+	}
+	object={
+		name="hellfire_citadel_tower2b"
+		hidden_on_start=no
+		position={
+			5322.000 0.000 963.000 
+		}
+		rotation={
+			0.000 15.000 0.000 
+		}
+	}
+}
+type={
+	type="hellfire_citadel_tower1"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="hellfire_citadel_tower1a"
+		hidden_on_start=no
+		position={
+			5329.000 0.000 986.000 
+		}
+		rotation={
+			0.000 170.000 0.000 
+		}
+	}
+	object={
+		name="hellfire_citadel_tower1b"
+		hidden_on_start=no
+		position={
+			5334.000 0.000 1021.000 
+		}
+		rotation={
+			0.000 170.000 0.000 
+		}
+	}
+}
+type={
+	type="hellfire_rampart"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="hellfire_rampart2"
+		hidden_on_start=no
+		position={
+			5325.000 0.000 977.000 
+		}
+		rotation={
+			0.000 170.000 0.000 
+		}
+	}
+	object={
+		name="hellfire_rampart1"
+		hidden_on_start=no
+		position={
+			5331.000 0.000 1033.000 
+		}
+		rotation={
+			0.000 190.000 0.000 
+		}
+	}
+}
+type={
+	type="hellfire_citadel"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="hellfire_citadel1"
+		hidden_on_start=no
+		position={
+			5340.000 0.000 1008.000 
+		}
+		rotation={
+			0.000 170.000 0.000 
+		}
+	}
+}
+type={
+	type="hellfire_honorkeep"
+	use_animation=no
+	scale=1.200000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="hellfire_honorkeep1"
+		hidden_on_start=no
+		position={
+			5358.000 0.000 1002.000 
+		}
+		rotation={
+			0.000 250.000 0.000 
+		}
+	}
+}
+type={
 	type="big_orange_mushroom"
 	use_animation=no
 	time_duration=300.000000
 	always_visible=yes
 	visible_in_all_map_modes=yes
 	object={
-		name="big_orange_mushroom_02"
-		hidden_on_start=no
+		name="big_orange_mushroom_06"
+		hidden_on_start=yes
 		position={
-			4213.000 0.000 1406.000 
+			4499.000 0.000 1330.000 
+		}
+		rotation={
+			0.000 180.000 0.000 
+		}
+	}
+	object={
+		name="big_orange_mushroom_02"
+		hidden_on_start=yes
+		position={
+			4433.000 0.000 1322.000 
 		}
 		rotation={
 			0.000 100.000 0.000 
 		}
 	}
 	object={
-		name="big_orange_mushroom_03"
-		hidden_on_start=no
+		name="big_orange_mushroom_04"
+		hidden_on_start=yes
 		position={
-			4214.000 0.000 1409.000 
+			4454.000 0.000 1315.000 
 		}
 		rotation={
 			0.000 0.000 0.000 
@@ -26,19 +4024,19 @@ type={
 	}
 	object={
 		name="big_orange_mushroom_01"
-		hidden_on_start=no
+		hidden_on_start=yes
 		position={
-			4216.000 0.000 1407.000 
+			4452.000 0.000 1292.000 
 		}
 		rotation={
 			0.000 180.000 0.000 
 		}
 	}
 	object={
-		name="big_orange_mushroom_04"
-		hidden_on_start=no
+		name="big_orange_mushroom_03"
+		hidden_on_start=yes
 		position={
-			4227.000 0.000 1399.000 
+			4438.000 0.000 1322.000 
 		}
 		rotation={
 			0.000 0.000 0.000 
@@ -46,22 +4044,12 @@ type={
 	}
 	object={
 		name="big_orange_mushroom_05"
-		hidden_on_start=no
+		hidden_on_start=yes
 		position={
-			4230.000 0.000 1397.000 
+			4477.000 0.000 1317.000 
 		}
 		rotation={
 			0.000 90.000 0.000 
-		}
-	}
-	object={
-		name="big_orange_mushroom_06"
-		hidden_on_start=no
-		position={
-			4247.000 0.000 1416.000 
-		}
-		rotation={
-			0.000 180.000 0.000 
 		}
 	}
 }
@@ -72,63 +4060,63 @@ type={
 	always_visible=yes
 	visible_in_all_map_modes=yes
 	object={
-		name="big_purple_mushroom_02"
-		hidden_on_start=no
+		name="big_purple_mushroom_01"
+		hidden_on_start=yes
 		position={
-			4224.000 0.000 1408.000 
+			4459.000 0.000 1313.000 
 		}
 		rotation={
-			0.000 90.000 0.000 
+			0.000 180.000 0.000 
+		}
+	}
+	object={
+		name="big_purple_mushroom_05"
+		hidden_on_start=yes
+		position={
+			4487.000 0.000 1316.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
 		}
 	}
 	object={
 		name="big_purple_mushroom_03"
-		hidden_on_start=no
+		hidden_on_start=yes
 		position={
-			4222.000 0.000 1393.000 
+			4450.000 0.000 1312.000 
 		}
 		rotation={
 			0.000 270.000 0.000 
 		}
 	}
 	object={
-		name="big_purple_mushroom_04"
-		hidden_on_start=no
+		name="big_purple_mushroom_02"
+		hidden_on_start=yes
 		position={
-			4198.000 0.000 1405.000 
+			4443.000 0.000 1321.000 
+		}
+		rotation={
+			0.000 90.000 0.000 
+		}
+	}
+	object={
+		name="big_purple_mushroom_05"
+		hidden_on_start=yes
+		position={
+			4491.000 0.000 1327.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="big_purple_mushroom_04"
+		hidden_on_start=yes
+		position={
+			4405.000 0.000 1320.000 
 		}
 		rotation={
 			0.000 45.000 0.000 
-		}
-	}
-	object={
-		name="big_purple_mushroom_05"
-		hidden_on_start=no
-		position={
-			4242.000 0.000 1395.000 
-		}
-		rotation={
-			0.000 230.000 0.000 
-		}
-	}
-	object={
-		name="big_purple_mushroom_05"
-		hidden_on_start=no
-		position={
-			4245.000 0.000 1413.000 
-		}
-		rotation={
-			0.000 230.000 0.000 
-		}
-	}
-	object={
-		name="big_purple_mushroom_01"
-		hidden_on_start=no
-		position={
-			4230.000 0.000 1400.000 
-		}
-		rotation={
-			0.000 180.000 0.000 
 		}
 	}
 }
@@ -150,38 +4138,40 @@ type={
 type={
 	type="outland_dark_portal"
 	use_animation=no
-	scale=0.500000
+	scale=0.250000
 	time_duration=300.000000
 	always_visible=yes
 	visible_in_all_map_modes=yes
 	object={
-		name="outland_dark_portal_ek"
-		hidden_on_start=yes
+		name="dark_portal_ek"
+		hidden_on_start=no
 		position={
-			4204.000 0.000 269.000 
+			4461.000 -1.500 433.000 
 		}
 		rotation={
 			0.000 10.000 0.000 
 		}
 	}
 	object={
-		name="outland_dark_portal_outland"
-		hidden_on_start=yes
+		name="dark_portal_outland"
+		hidden_on_start=no
 		position={
-			5478.000 0.000 349.000 
+			5442.000 -1.200 1025.000 
 		}
 		rotation={
 			0.000 90.000 0.000 
 		}
 	}
-}
-type={
-	type="outland_dark_portal"
-	use_animation=no
-	scale=0.500000
-	time_duration=300.000000
-	always_visible=yes
-	visible_in_all_map_modes=yes
+	object={
+		name="dark_portal_outland"
+		hidden_on_start=no
+		position={
+			5446.000 -1.200 1739.000 
+		}
+		rotation={
+			0.000 130.000 0.000 
+		}
+	}
 }
 type={
 	type="dalaran_dome_barrier"
@@ -194,7 +4184,7 @@ type={
 		name="dalaran_dome_barrier_ingame"
 		hidden_on_start=no
 		position={
-			3930.000 0.000 1193.000 
+			4246.000 0.000 1152.000 
 		}
 		rotation={
 			0.000 180.000 0.000 
@@ -212,7 +4202,7 @@ type={
 		name="booty_bay_statue_ingame"
 		hidden_on_start=no
 		position={
-			3911.000 0.000 98.000 
+			4229.000 0.000 300.000 
 		}
 		rotation={
 			0.000 80.000 0.000 
@@ -222,7 +4212,7 @@ type={
 type={
 	type="nordrassil"
 	use_animation=no
-	scale=0.200000
+	scale=0.250000
 	time_duration=300.000000
 	always_visible=yes
 	visible_in_all_map_modes=yes
@@ -230,7 +4220,7 @@ type={
 		name="nordrassil_01"
 		hidden_on_start=no
 		position={
-			1653.000 0.000 1504.000 
+			1590.000 0.000 1223.000 
 		}
 		rotation={
 			0.000 200.000 0.000 
@@ -282,20 +4272,20 @@ type={
 		}
 	}
 	object={
-		name="frame_top_left_entity99"
+		name="frame_top_left_entity07"
 		hidden_on_start=no
 		position={
-			5532.000 18.000 2046.000 
+			4508.000 18.000 2046.000 
 		}
 		rotation={
 			0.000 0.000 0.000 
 		}
 	}
 	object={
-		name="frame_top_left_entity07"
+		name="frame_top_left_entity99"
 		hidden_on_start=no
 		position={
-			4508.000 18.000 2046.000 
+			5532.000 18.000 2046.000 
 		}
 		rotation={
 			0.000 0.000 0.000 
@@ -472,6 +4462,544 @@ type={
 		}
 		rotation={
 			0.000 115.000 0.000 
+		}
+	}
+}
+type={
+	type="eggspider"
+	use_animation=no
+	scale=1.100000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="eggspider2"
+		hidden_on_start=no
+		position={
+			2701.000 0.000 1819.000 
+		}
+		rotation={
+			3.000 160.000 3.000 
+		}
+	}
+	object={
+		name="eggspider3"
+		hidden_on_start=no
+		position={
+			2700.000 0.000 1810.000 
+		}
+		rotation={
+			3.000 200.000 3.000 
+		}
+	}
+	object={
+		name="eggspider4"
+		hidden_on_start=no
+		position={
+			2694.000 0.000 1813.000 
+		}
+		rotation={
+			3.000 10.000 3.000 
+		}
+	}
+	object={
+		name="eggspider5"
+		hidden_on_start=no
+		position={
+			2676.000 0.000 1845.000 
+		}
+		rotation={
+			3.000 10.000 3.000 
+		}
+	}
+	object={
+		name="eggspider6"
+		hidden_on_start=no
+		position={
+			2715.000 0.000 1807.000 
+		}
+		rotation={
+			3.000 50.000 3.000 
+		}
+	}
+	object={
+		name="eggspider7"
+		hidden_on_start=no
+		position={
+			2651.000 0.000 1753.000 
+		}
+		rotation={
+			3.000 50.000 3.000 
+		}
+	}
+	object={
+		name="eggspider8"
+		hidden_on_start=no
+		position={
+			2654.000 0.000 1749.000 
+		}
+		rotation={
+			3.000 120.000 3.000 
+		}
+	}
+	object={
+		name="eggspider1"
+		hidden_on_start=no
+		position={
+			2693.000 0.000 1823.000 
+		}
+		rotation={
+			3.000 90.000 3.000 
+		}
+	}
+}
+type={
+	type="nerubgate"
+	use_animation=no
+	scale=0.050000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="nerubgate2"
+		hidden_on_start=no
+		position={
+			2664.000 0.000 1740.000 
+		}
+		rotation={
+			3.000 70.000 3.000 
+		}
+	}
+	object={
+		name="nerubgate3"
+		hidden_on_start=no
+		position={
+			2684.000 -0.750 1774.000 
+		}
+		rotation={
+			3.000 240.000 3.000 
+		}
+	}
+	object={
+		name="nerubgate4"
+		hidden_on_start=no
+		position={
+			2699.000 -1.000 1794.000 
+		}
+		rotation={
+			3.000 50.000 3.000 
+		}
+	}
+	object={
+		name="nerubgate5"
+		hidden_on_start=no
+		position={
+			2718.000 -1.000 1816.000 
+		}
+		rotation={
+			3.000 225.000 3.000 
+		}
+	}
+	object={
+		name="nerubgate6"
+		hidden_on_start=no
+		position={
+			2733.000 -1.000 1820.000 
+		}
+		rotation={
+			3.000 40.000 3.000 
+		}
+	}
+	object={
+		name="nerubgate7"
+		hidden_on_start=no
+		position={
+			2685.000 0.000 1865.000 
+		}
+		rotation={
+			3.000 275.000 3.000 
+		}
+	}
+	object={
+		name="nerubgate8"
+		hidden_on_start=no
+		position={
+			2675.000 0.000 1891.000 
+		}
+		rotation={
+			3.000 105.000 3.000 
+		}
+	}
+	object={
+		name="nerubgate1"
+		hidden_on_start=no
+		position={
+			2665.000 -3.000 1729.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+}
+type={
+	type="nerubtemple1"
+	use_animation=no
+	scale=0.065000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="nerubtemple1"
+		hidden_on_start=no
+		position={
+			2677.000 0.000 1762.000 
+		}
+		rotation={
+			3.000 60.000 3.000 
+		}
+	}
+}
+type={
+	type="nerubtemple2"
+	use_animation=no
+	scale=0.060000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="nerubtemple2"
+		hidden_on_start=no
+		position={
+			2699.000 0.000 1833.000 
+		}
+		rotation={
+			3.000 220.000 3.000 
+		}
+	}
+}
+type={
+	type="nerubtemple3"
+	use_animation=no
+	scale=0.065000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="nerubtemple3"
+		hidden_on_start=no
+		position={
+			2688.000 0.000 1835.000 
+		}
+		rotation={
+			3.000 290.000 3.000 
+		}
+	}
+}
+type={
+	type="nerubtower"
+	use_animation=no
+	scale=0.080000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="nerubtower2"
+		hidden_on_start=no
+		position={
+			2671.000 0.000 1750.000 
+		}
+		rotation={
+			3.000 60.000 3.000 
+		}
+	}
+	object={
+		name="nerubtower5"
+		hidden_on_start=no
+		position={
+			2679.000 0.000 1853.000 
+		}
+		rotation={
+			3.000 60.000 3.000 
+		}
+	}
+	object={
+		name="nerubtower4"
+		hidden_on_start=no
+		position={
+			2685.000 0.000 1766.000 
+		}
+		rotation={
+			3.000 50.000 3.000 
+		}
+	}
+	object={
+		name="nerubtower6"
+		hidden_on_start=no
+		position={
+			2692.000 0.000 1848.000 
+		}
+		rotation={
+			3.000 10.000 3.000 
+		}
+	}
+	object={
+		name="nerubtower7"
+		hidden_on_start=no
+		position={
+			2677.000 0.000 1834.000 
+		}
+		rotation={
+			3.000 10.000 3.000 
+		}
+	}
+	object={
+		name="nerubtower8"
+		hidden_on_start=no
+		position={
+			2709.000 0.000 1826.000 
+		}
+		rotation={
+			3.000 30.000 3.000 
+		}
+	}
+	object={
+		name="nerubtower9"
+		hidden_on_start=no
+		position={
+			2695.000 0.000 1806.000 
+		}
+		rotation={
+			3.000 30.000 3.000 
+		}
+	}
+	object={
+		name="nerubtower10"
+		hidden_on_start=no
+		position={
+			2719.000 0.000 1806.000 
+		}
+		rotation={
+			3.000 0.000 3.000 
+		}
+	}
+	object={
+		name="nerubtower1"
+		hidden_on_start=no
+		position={
+			2657.000 0.000 1756.000 
+		}
+		rotation={
+			3.000 40.000 3.000 
+		}
+	}
+}
+type={
+	type="spiderground"
+	use_animation=no
+	scale=0.500000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="spiderground2"
+		hidden_on_start=no
+		position={
+			2704.000 0.000 1824.000 
+		}
+		rotation={
+			3.000 100.000 3.000 
+		}
+	}
+	object={
+		name="spiderground3"
+		hidden_on_start=no
+		position={
+			2693.000 0.000 1840.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="spiderground4"
+		hidden_on_start=no
+		position={
+			2667.000 0.000 1755.000 
+		}
+		rotation={
+			3.000 250.000 3.000 
+		}
+	}
+	object={
+		name="spiderground5"
+		hidden_on_start=no
+		position={
+			2709.000 0.000 1804.000 
+		}
+		rotation={
+			3.000 260.000 3.000 
+		}
+	}
+	object={
+		name="spiderground1"
+		hidden_on_start=no
+		position={
+			2692.000 0.000 1819.000 
+		}
+		rotation={
+			3.000 40.000 3.000 
+		}
+	}
+}
+type={
+	type="spiderwall"
+	use_animation=no
+	scale=0.500000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="spiderwall2"
+		hidden_on_start=no
+		position={
+			2698.000 0.500 1848.000 
+		}
+		rotation={
+			3.000 30.000 3.000 
+		}
+	}
+	object={
+		name="spiderwall3"
+		hidden_on_start=no
+		position={
+			2676.000 0.300 1752.000 
+		}
+		rotation={
+			3.000 10.000 3.000 
+		}
+	}
+	object={
+		name="spiderwall1"
+		hidden_on_start=no
+		position={
+			2715.000 0.500 1822.000 
+		}
+		rotation={
+			3.000 30.000 3.000 
+		}
+	}
+}
+type={
+	type="nerubgate1"
+	use_animation=no
+	scale=0.045000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+}
+type={
+	type="webground2"
+	use_animation=no
+	scale=0.800000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="webground2a"
+		hidden_on_start=no
+		position={
+			2708.000 0.000 1810.000 
+		}
+		rotation={
+			3.000 235.000 3.000 
+		}
+	}
+	object={
+		name="webground2d"
+		hidden_on_start=no
+		position={
+			2657.000 0.000 1753.000 
+		}
+		rotation={
+			3.000 235.000 3.000 
+		}
+	}
+	object={
+		name="webground2b"
+		hidden_on_start=no
+		position={
+			2688.000 0.000 1829.000 
+		}
+		rotation={
+			3.000 235.000 3.000 
+		}
+	}
+	object={
+		name="webground2c"
+		hidden_on_start=no
+		position={
+			2688.000 0.000 1851.000 
+		}
+		rotation={
+			3.000 235.000 3.000 
+		}
+	}
+}
+type={
+	type="webwall"
+	use_animation=no
+	scale=0.500000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="webwall2"
+		hidden_on_start=no
+		position={
+			2715.000 -1.000 1822.000 
+		}
+		rotation={
+			3.000 30.000 3.000 
+		}
+	}
+	object={
+		name="webwall3"
+		hidden_on_start=no
+		position={
+			2678.000 -1.200 1829.000 
+		}
+		rotation={
+			3.000 230.000 3.000 
+		}
+	}
+	object={
+		name="webwall5"
+		hidden_on_start=no
+		position={
+			2676.000 -1.200 1752.000 
+		}
+		rotation={
+			3.000 0.000 3.000 
+		}
+	}
+	object={
+		name="webwall4"
+		hidden_on_start=no
+		position={
+			2692.000 -1.200 1809.000 
+		}
+		rotation={
+			3.000 210.000 3.000 
+		}
+	}
+	object={
+		name="webwall1"
+		hidden_on_start=no
+		position={
+			2698.000 -1.000 1848.000 
+		}
+		rotation={
+			3.000 40.000 3.000 
 		}
 	}
 }

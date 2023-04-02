@@ -1,0 +1,505 @@
+namespace = wwu_estate_coup
+
+# Estate Coup - Clergy
+country_event = {
+	id = wwu_estate_coup.1
+	title = wwu_estate_coup.1.title
+	desc = wwu_estate_coup.1.desc
+	picture = ACOLYTE_OF_PAIN_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+        hidden_effect = {
+            capital_scope = {
+                spawn_rebels = {
+                    type = noble_rebels
+                    religion = ROOT
+                    size = 3
+                }
+                add_local_autonomy = 25
+            }
+            
+            set_country_flag = estate_coup_clergy
+        }
+	}
+	
+	
+	option = {
+		name = wwu_estate_coup.1.option.a
+		
+		add_stability = -1
+        
+        give_estate_land_share_large = {
+            estate = estate_clergy
+        }
+	}
+}
+
+# Estate Coup - Traders
+country_event = {
+	id = wwu_estate_coup.2
+	title = wwu_estate_coup.2.title
+	desc = wwu_estate_coup.2.desc
+	picture = ACOLYTE_OF_PAIN_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+        hidden_effect = {
+            capital_scope = {
+                spawn_rebels = {
+                    type = noble_rebels
+                    religion = ROOT
+                    size = 3
+                }
+                add_local_autonomy = 25
+            }
+            
+            set_country_flag = estate_coup_traders
+        }
+	}
+	
+	
+	option = {
+		name = wwu_estate_coup.2.option.a
+		
+		add_stability = -1
+        
+        give_estate_land_share_large = {
+            estate = estate_traders
+        }
+	}
+}
+
+# Estate Coup - Nobility
+country_event = {
+	id = wwu_estate_coup.3
+	title = wwu_estate_coup.3.title
+	desc = wwu_estate_coup.3.desc
+	picture = ACOLYTE_OF_PAIN_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+        hidden_effect = {
+            capital_scope = {
+                spawn_rebels = {
+                    type = noble_rebels
+                    religion = ROOT
+                    size = 3
+                }
+                add_local_autonomy = 25
+            }
+            
+            set_country_flag = estate_coup_nobility
+        }
+	}
+	
+	
+	option = {
+		name = wwu_estate_coup.3.option.a
+		
+		add_stability = -1
+        
+        give_estate_land_share_large = {
+            estate = estate_nobility
+        }
+	}
+}
+
+# Estate Coup - Peasants
+country_event = {
+	id = wwu_estate_coup.4
+	title = wwu_estate_coup.4.title
+	desc = wwu_estate_coup.4.desc
+	picture = ACOLYTE_OF_PAIN_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+        hidden_effect = {
+            capital_scope = {
+                spawn_rebels = {
+                    type = noble_rebels
+                    religion = ROOT
+                    size = 3
+                }
+                add_local_autonomy = 25
+            }
+            
+            set_country_flag = estate_coup_peasants
+        }
+	}
+	
+	
+	option = {
+		name = wwu_estate_coup.4.option.a
+		
+		add_stability = -1
+        
+        give_estate_land_share_large = {
+            estate = estate_peasants
+        }
+	}
+}
+
+# Estate Coup - Tribals
+country_event = {
+	id = wwu_estate_coup.5
+	title = wwu_estate_coup.5.title
+	desc = wwu_estate_coup.5.desc
+	picture = ACOLYTE_OF_PAIN_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+        hidden_effect = {
+            capital_scope = {
+                spawn_rebels = {
+                    type = noble_rebels
+                    religion = ROOT
+                    size = 3
+                }
+                add_local_autonomy = 25
+            }
+            
+            set_country_flag = estate_coup_tribals
+        }
+	}
+	
+	
+	option = {
+		name = wwu_estate_coup.5.option.a
+		
+		add_stability = -1
+        
+        give_estate_land_share_large = {
+            estate = estate_tribals
+        }
+	}
+}
+
+# Estate Coup - Slaves
+country_event = {
+	id = wwu_estate_coup.6
+	title = wwu_estate_coup.6.title
+	desc = wwu_estate_coup.6.desc
+	picture = ACOLYTE_OF_PAIN_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+        hidden_effect = {
+            capital_scope = {
+                spawn_rebels = {
+                    type = noble_rebels
+                    religion = ROOT
+                    size = 3
+                }
+                add_local_autonomy = 25
+            }
+            
+            set_country_flag = estate_coup_slaves
+        }
+	}
+	
+	
+	option = {
+		name = wwu_estate_coup.6.option.a
+		
+		add_stability = -1
+        
+        give_estate_land_share_large = {
+            estate = estate_slaves
+        }
+	}
+}
+
+# End of the Coup - Clergy
+country_event = {
+	id = wwu_estate_coup.100
+	title = wwu_estate_coup.100.title
+	desc = wwu_estate_coup.100.desc
+	picture = AVENGING_WRATH_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = wwu_estate_coup.100.option.a
+		
+        hidden_effect = {
+            clr_country_flag = estate_coup_clergy
+        }
+        
+		add_stability_or_adm_power = yes
+        
+        take_estate_land_share_massive = {
+            estate = estate_clergy
+        }
+        
+        add_estate_influence_modifier = {
+            estate = estate_clergy
+            desc = EST_VAL_CRUSHED_COUP
+            influence = -20
+            duration = 7300
+        }
+	}
+}
+
+# End of the Coup - Traders
+country_event = {
+	id = wwu_estate_coup.101
+	title = wwu_estate_coup.101.title
+	desc = wwu_estate_coup.101.desc
+	picture = AVENGING_WRATH_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = wwu_estate_coup.101.option.a
+		
+        hidden_effect = {
+            clr_country_flag = estate_coup_traders
+        }
+        
+		add_stability_or_adm_power = yes
+        
+        take_estate_land_share_massive = {
+            estate = estate_traders
+        }
+        
+        add_estate_influence_modifier = {
+            estate = estate_traders
+            desc = EST_VAL_CRUSHED_COUP
+            influence = -20
+            duration = 7300
+        }
+	}
+}
+
+# End of the Coup - Nobility
+country_event = {
+	id = wwu_estate_coup.102
+	title = wwu_estate_coup.102.title
+	desc = wwu_estate_coup.102.desc
+	picture = AVENGING_WRATH_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = wwu_estate_coup.102.option.a
+		
+        hidden_effect = {
+            clr_country_flag = estate_coup_nobility
+        }
+        
+		add_stability_or_adm_power = yes
+        
+        take_estate_land_share_massive = {
+            estate = estate_nobility
+        }
+        
+        add_estate_influence_modifier = {
+            estate = estate_nobility
+            desc = EST_VAL_CRUSHED_COUP
+            influence = -20
+            duration = 7300
+        }
+	}
+}
+
+# End of the Coup - Peasants
+country_event = {
+	id = wwu_estate_coup.103
+	title = wwu_estate_coup.103.title
+	desc = wwu_estate_coup.103.desc
+	picture = AVENGING_WRATH_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = wwu_estate_coup.103.option.a
+		
+        hidden_effect = {
+            clr_country_flag = estate_coup_peasants
+        }
+        
+		add_stability_or_adm_power = yes
+        
+        take_estate_land_share_massive = {
+            estate = estate_peasants
+        }
+        
+        add_estate_influence_modifier = {
+            estate = estate_peasants
+            desc = EST_VAL_CRUSHED_COUP
+            influence = -20
+            duration = 7300
+        }
+	}
+}
+
+# End of the Coup - Tribals
+country_event = {
+	id = wwu_estate_coup.104
+	title = wwu_estate_coup.104.title
+	desc = wwu_estate_coup.104.desc
+	picture = AVENGING_WRATH_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = wwu_estate_coup.104.option.a
+		
+        hidden_effect = {
+            clr_country_flag = estate_coup_tribals
+        }
+        
+		add_stability_or_adm_power = yes
+        
+        take_estate_land_share_massive = {
+            estate = estate_tribals
+        }
+        
+        add_estate_influence_modifier = {
+            estate = estate_tribals
+            desc = EST_VAL_CRUSHED_COUP
+            influence = -20
+            duration = 7300
+        }
+	}
+}
+
+# End of the Coup - Slaves
+country_event = {
+	id = wwu_estate_coup.105
+	title = wwu_estate_coup.105.title
+	desc = wwu_estate_coup.105.desc
+	picture = AVENGING_WRATH_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = wwu_estate_coup.105.option.a
+		
+        hidden_effect = {
+            clr_country_flag = estate_coup_slaves
+        }
+        
+		add_stability_or_adm_power = yes
+        
+        take_estate_land_share_massive = {
+            estate = estate_slaves
+        }
+        
+        add_estate_influence_modifier = {
+            estate = estate_slaves
+            desc = EST_VAL_CRUSHED_COUP
+            influence = -20
+            duration = 7300
+        }
+	}
+}
+
+# Small Uprising
+country_event = {
+	id = wwu_estate_coup.50
+	title = wwu_estate_coup.50.title
+	desc = wwu_estate_coup.50.desc
+	picture = THROW_ROCKS_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = wwu_estate_coup.50.option.a
+		
+        random_owned_province = {
+            spawn_rebels = {
+                type = noble_rebels
+                religion = ROOT
+                size = 1
+            }
+            add_local_autonomy = 25
+        }
+	}
+}
+
+# Large Uprising
+country_event = {
+	id = wwu_estate_coup.51
+	title = wwu_estate_coup.51.title
+	desc = wwu_estate_coup.51.desc
+	picture = THROW_ROCKS_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = wwu_estate_coup.51.option.a
+		
+        random_owned_province = {
+            spawn_rebels = {
+                type = noble_rebels
+                religion = ROOT
+                size = 3
+            }
+            add_local_autonomy = 25
+        }
+	}
+}

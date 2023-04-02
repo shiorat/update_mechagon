@@ -1,0 +1,92 @@
+country_decisions = {
+    # Allow Alliance members to jump into Outland
+    establish_foothold_in_outland = {
+		potential = {   
+            NOT = { current_age = age_rise_of_the_horde }
+            has_country_modifier = member_of_alliance
+		}
+		allow =  {
+			has_country_modifier = member_of_alliance
+            
+            # Dark Portal: Azeroth
+            1035 = { owned_by = ROOT }
+            
+            mil_power = 200
+		}
+		effect = {
+			add_mil_power = -200
+            
+			add_country_modifier = {
+				name = motivated_for_assault
+				duration = 3650
+			}
+            
+            if = {
+                limit = {
+                    has_global_flag = setup_outland
+                }
+                1586 = {
+                    cede_province = ROOT
+                    add_core = ROOT
+                    change_culture = ROOT
+                    change_religion = ROOT
+                }
+            }
+            else = {
+                3792 = {
+                    cede_province = ROOT
+                    add_core = ROOT
+                    change_culture = ROOT
+                    change_religion = ROOT
+                }
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    # Open Dimensional Portals
+    open_dimensional_portals = {
+		potential = {   
+            NOT = { has_global_flag = opened_dimensional_portals }
+            NOT = { current_age = age_rise_of_the_horde }
+
+		    culture_group = culture_group_orc
+            religion = fel
+			capital_scope = {
+				continent = continent_draenor
+			}
+		}
+		allow =  {
+            # Allow if the owner is not Orc and not Fel
+            3792 = {
+                controller = {
+                    NOT = { culture_group = culture_group_orc }
+                    NOT = { religion = fel }
+                }
+            }
+            
+            mil_power = 250
+		}
+		effect = {
+			add_mil_power = -250
+            
+            custom_tooltip = WILL_SUNDER_DRAENOR
+            
+            hidden_effect = {
+                set_global_flag = opened_dimensional_portals
+            }
+		}
+		ai_will_do = {
+			factor = 1
+            
+            # Only Shadowmoon should use this
+            modifier = {
+                factor = 0
+                
+                NOT = { tag = A34 }
+            }
+		}
+	}
+}

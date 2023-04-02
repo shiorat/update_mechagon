@@ -1,0 +1,637 @@
+namespace = wwu_old_gods
+
+# C'thun Rises!
+country_event = {
+	id = wwu_old_gods.1
+	title = wwu_old_gods.1.title
+	desc = wwu_old_gods.1.desc
+	picture = CTHUN_eventPicture
+    
+	major = yes
+    
+	trigger = {
+        NOT = { has_country_modifier = awakening_cthun }
+		has_country_flag = awakening_cthun_timer
+        NOT = {
+            any_country = {
+                has_country_modifier = seat_of_cthun
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    
+    immediate = {
+        hidden_effect = {
+            clr_country_flag = awakening_cthun_timer
+        }
+    }
+	
+	option = {
+		name = wwu_old_gods.1.option.a
+		
+        hidden_effect = {
+            show_ambient_object = cthun
+            set_global_flag = cthun_active
+        }
+		
+        add_country_modifier = {
+            name = seat_of_cthun
+            duration = -1
+        }
+        
+        add_country_modifier = {
+            name = corruptive_fervor
+            duration = 3650
+        }
+        
+        if = {
+            limit = {
+                NOT = { religion = cthun }
+            }
+            
+            change_religion = cthun
+            
+            capital_scope = {
+                change_religion = cthun
+            }
+        }
+        
+        country_event = { id = wwu_old_gods.20 days = 30 }
+	}
+}
+
+# Yogg-Saron Rises!
+country_event = {
+	id = wwu_old_gods.2
+	title = wwu_old_gods.2.title
+	desc = wwu_old_gods.2.desc
+	picture = YOGG_SARON_eventPicture
+    
+	major = yes
+    
+	trigger = {
+        NOT = { has_country_modifier = awakening_yogg_saron }
+		has_country_flag = awakening_yogg_saron_timer
+        NOT = {
+            any_country = {
+                has_country_modifier = seat_of_yogg_saron
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    
+    immediate = {
+        hidden_effect = {
+            clr_country_flag = awakening_yogg_saron_timer
+        }
+    }
+	
+	option = {
+		name = wwu_old_gods.2.option.a
+		
+        hidden_effect = {
+            show_ambient_object = yogg
+            set_global_flag = yogg_saron_active
+        }
+		
+        add_country_modifier = {
+            name = seat_of_yogg_saron
+            duration = -1
+        }
+        
+        add_country_modifier = {
+            name = corruptive_fervor
+            duration = 3650
+        }
+        
+        if = {
+            limit = {
+                NOT = { religion = yogg_saron }
+            }
+            
+            change_religion = yogg_saron
+            
+            capital_scope = {
+                change_religion = yogg_saron
+            }
+        }
+        
+        country_event = { id = wwu_old_gods.21 days = 30 }
+	}
+}
+
+# N'Zoth Rises!
+country_event = {
+	id = wwu_old_gods.3
+	title = wwu_old_gods.3.title
+	desc = wwu_old_gods.3.desc
+	picture = NZOTH_eventPicture
+    
+	major = yes
+    
+	trigger = {
+        NOT = { has_country_modifier = awakening_nzoth }
+		has_country_flag = awakening_nzoth_timer
+        NOT = {
+            any_country = {
+                has_country_modifier = seat_of_nzoth
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    
+    immediate = {
+        hidden_effect = {
+            clr_country_flag = awakening_nzoth_timer
+        }
+    }
+	
+	option = {
+		name = wwu_old_gods.3.option.a
+		
+        hidden_effect = {
+            show_ambient_object = nzoth
+            set_global_flag = nzoth_active
+        }
+		
+        add_country_modifier = {
+            name = seat_of_nzoth
+            duration = -1
+        }
+        
+        add_country_modifier = {
+            name = corruptive_fervor
+            duration = 3650
+        }
+        
+        if = {
+            limit = {
+                NOT = { religion = nzoth }
+            }
+            
+            change_religion = nzoth
+            
+            capital_scope = {
+                change_religion = nzoth
+            }
+        }
+        
+        country_event = { id = wwu_old_gods.22 days = 30 }
+	}
+}
+
+# Y'Shaarj Rises!
+country_event = {
+	id = wwu_old_gods.4
+	title = wwu_old_gods.4.title
+	desc = wwu_old_gods.4.desc
+	picture = YSHAARJ_eventPicture
+    
+	major = yes
+    
+	trigger = {
+        NOT = { has_country_modifier = awakening_yshaarj }
+		has_country_flag = awakening_yshaarj_timer
+        NOT = {
+            any_country = {
+                has_country_modifier = seat_of_yshaarj
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    
+    immediate = {
+        hidden_effect = {
+            clr_country_flag = awakening_yshaarj_timer
+        }
+    }
+	
+	option = {
+		name = wwu_old_gods.4.option.a
+		
+        hidden_effect = {
+            show_ambient_object = sha
+            set_global_flag = yshaarj_active
+        }
+		
+        add_country_modifier = {
+            name = seat_of_yshaarj
+            duration = -1
+        }
+        
+        add_country_modifier = {
+            name = corruptive_fervor
+            duration = 3650
+        }
+        
+        if = {
+            limit = {
+                NOT = { religion = yshaarj }
+            }
+            
+            change_religion = yshaarj
+            
+            capital_scope = {
+                change_religion = yshaarj
+            }
+        }
+        
+        country_event = { id = wwu_old_gods.23 days = 30 }
+	}
+}
+
+# Cleanup Avatar of Corruption
+country_event = {
+	id = wwu_old_gods.5
+	title = "wwu_old_gods.5.title"
+	desc = "wwu_old_gods.5.desc"
+	picture = MAGIC_TOME_eventPicture	
+
+	is_triggered_only = yes	
+    hidden = yes
+	
+	mean_time_to_happen = {
+		days = 1		
+	}
+
+	option = {
+		name = "wwu_old_gods.5.option.a"
+		
+        kill_leader = {
+            type = "Avatar of Corruption"
+        }
+	}
+}
+
+# Whispers from Ulduar
+country_event = {
+	id = wwu_old_gods.10
+	title = wwu_old_gods.10.title
+	desc = wwu_old_gods.10.desc
+	picture = DOOM_eventPicture
+    
+	trigger = {
+		owns_core_province = 2495
+		NOT = { has_country_flag = guided_by_whispers }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = wwu_old_gods.10.option.a
+		
+		set_country_flag = guided_by_whispers
+        custom_tooltip = AWAKENING_REMOVED_STABILITY_HIT
+        
+		add_corruption = 2
+	}
+	option = {
+		name = wwu_old_gods.10.option.b
+		
+		add_corruption = -1
+	}
+}
+
+# Whispers from the Deep
+country_event = {
+	id = wwu_old_gods.11
+	title = wwu_old_gods.11.title
+	desc = wwu_old_gods.11.desc
+	picture = FORBIDDEN_RITUAL_eventPicture
+    
+	trigger = {
+		has_country_flag = influenced_by_nzoth
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+    
+    immediate = {
+        hidden_effect = {
+            clr_country_flag = influenced_by_nzoth
+        }
+    }
+	
+	option = {
+		name = wwu_old_gods.11.option.a
+		
+		change_religion = nzoth
+        
+        capital_scope = {
+            change_religion = nzoth
+        }
+        
+        add_country_modifier = {
+            name = corruptive_fervor
+            duration = 3650
+        }
+	}
+	option = {
+		name = wwu_old_gods.11.option.b
+		
+		random_list = {
+			50 = {
+				add_stability = -1
+			}
+			50 = {
+				random_owned_province = {
+                    limit = {
+                        NOT = { religion = nzoth }
+                    }
+                    change_religion = nzoth
+                }
+			}
+		}
+	}
+}
+
+# Tidemother answers
+country_event = {
+	id = wwu_old_gods.12
+	title = wwu_old_gods.12.title
+	desc = wwu_old_gods.12.desc
+	picture = HOODED_ACOLYTE_eventPicture
+	
+	trigger = {
+		has_country_flag = tidemother_commune_event
+	}
+    
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+            clr_country_flag = tidemother_commune_event
+            clr_country_flag = tidemother_response
+            clr_country_flag = nzoth_response
+            
+            random_list = {
+                50 = { set_country_flag = tidemother_response }
+                50 = { set_country_flag = nzoth_response }
+            }
+        }
+	}
+	
+	option = {
+		name = wwu_old_gods.12.option.a
+        
+        trigger = {
+            has_country_flag = tidemother_response
+        }
+		
+		add_country_modifier = { 
+            name = communed_tidemother 
+            duration = 3650 
+        }
+	}
+    option = {
+		name = wwu_old_gods.12.option.b
+        
+        trigger = {
+            has_country_flag = nzoth_response
+        }
+		
+		hidden_effect = { set_country_flag = influenced_by_nzoth }
+        
+        country_event = { id = wwu_old_gods.13 }
+	}
+}
+
+# Tidemother - N'zoth answers
+country_event = {
+	id = wwu_old_gods.13
+	title = wwu_old_gods.13.title
+	desc = wwu_old_gods.13.desc
+	picture = NZOTH_eventPicture
+    	
+	is_triggered_only = yes
+	
+	option = {
+		name = wwu_old_gods.13.option.a
+		
+        random_owned_province = {
+            limit = {
+                NOT = { religion = nzoth }
+            }
+            
+            change_religion = nzoth
+        }
+	}
+}
+
+# Submission to C'Thun
+country_event = {
+	id = wwu_old_gods.20
+	title = wwu_old_gods.20.title
+	desc = wwu_old_gods.20.desc
+	picture = CTHUN_eventPicture
+    
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = wwu_old_gods.20.option.a
+		
+        ai_chance = {
+            factor = 100
+        }
+        
+        define_ruler = {
+            name = "C'Thun"
+            dynasty = "the Old God"
+			min_age = 250
+			adm = 7
+			dip = 7
+			mil = 7
+			claim = 100
+            religion = cthun
+        }
+        
+        set_ruler_flag = is_immortal
+        
+        setup_spellcaster_history = {
+            APTITUDE = 5
+            FINESSE = 5
+            CONCENTRATION = 5
+            MANA = 5
+            corruption = yes
+        }
+	}
+    option = {
+		name = wwu_old_gods.20.option.b
+		
+        ai_chance = {
+            factor = 0
+        }
+	}
+}
+
+# Submission to Yogg-Saron
+country_event = {
+	id = wwu_old_gods.21
+	title = wwu_old_gods.21.title
+	desc = wwu_old_gods.21.desc
+	picture = YOGG_SARON_eventPicture
+    
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = wwu_old_gods.21.option.a
+		
+        ai_chance = {
+            factor = 100
+        }
+        
+        define_ruler = {
+            name = "Yogg-Saron"
+            dynasty = "the Old God"
+			min_age = 250
+			adm = 7
+			dip = 7
+			mil = 7
+			claim = 100
+            religion = yogg_saron
+        }
+        
+        set_ruler_flag = is_immortal
+        
+        setup_spellcaster_history = {
+            APTITUDE = 5
+            FINESSE = 5
+            CONCENTRATION = 5
+            MANA = 5
+            corruption = yes
+        }
+	}
+    option = {
+		name = wwu_old_gods.21.option.b
+		
+        ai_chance = {
+            factor = 0
+        }
+	}
+}
+
+# Submission to N'Zoth
+country_event = {
+	id = wwu_old_gods.22
+	title = wwu_old_gods.22.title
+	desc = wwu_old_gods.22.desc
+	picture = NZOTH_eventPicture
+    
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = wwu_old_gods.22.option.a
+		
+        ai_chance = {
+            factor = 100
+        }
+        
+        define_ruler = {
+            name = "N'Zoth"
+            dynasty = "the Old God"
+			min_age = 250
+			adm = 7
+			dip = 7
+			mil = 7
+			claim = 100
+            religion = nzoth
+        }
+        
+        set_ruler_flag = is_immortal
+        
+        setup_spellcaster_history = {
+            APTITUDE = 5
+            FINESSE = 5
+            CONCENTRATION = 5
+            MANA = 5
+            corruption = yes
+        }
+	}
+    option = {
+		name = wwu_old_gods.22.option.b
+		
+        ai_chance = {
+            factor = 0
+        }
+	}
+}
+
+# Submission to Y'Shaarj
+country_event = {
+	id = wwu_old_gods.23
+	title = wwu_old_gods.23.title
+	desc = wwu_old_gods.23.desc
+	picture = YSHAARJ_eventPicture
+    
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    
+	option = {
+		name = wwu_old_gods.23.option.a
+		
+        ai_chance = {
+            factor = 100
+        }
+        
+        define_ruler = {
+            name = "Corrupted Avatar"
+            dynasty = ", Harbinger of Y'Shaarj"
+			min_age = 250
+			adm = 7
+			dip = 7
+			mil = 7
+			claim = 100
+            religion = yshaarj
+        }
+        
+        set_ruler_flag = is_immortal
+        
+        setup_spellcaster_history = {
+            APTITUDE = 5
+            FINESSE = 5
+            CONCENTRATION = 5
+            MANA = 5
+            corruption = yes
+        }
+	}
+    option = {
+		name = wwu_old_gods.23.option.b
+		
+        ai_chance = {
+            factor = 0
+        }
+	}
+}
+

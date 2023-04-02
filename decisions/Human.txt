@@ -1,19 +1,18 @@
 country_decisions = {
 	inspire_righteousness = {
 		potential = {
-			
 			culture_group = culture_group_human
             NOT = { has_country_modifier = inspire_righteousness_modifier }
 		}
 		allow =  {
 			culture_group = culture_group_human
-            adm_power = 100
+            adm_power = 25
 		}
 	  	effect = {
-			add_adm_power = -100
+			add_adm_power = -25
             add_country_modifier = {
                 name = inspire_righteousness_modifier
-                duration = -1
+                duration = 10950
             }
 		}
 		ai_will_do = {
@@ -32,20 +31,19 @@ country_decisions = {
     
     enact_civil_code = {
         potential = {
-			
 			culture_group = culture_group_human
             NOT = { has_country_modifier = civil_code }
 		}
 		allow =  {
 			culture_group = culture_group_human
-            adm_power = 100
+            adm_power = 25
             stability = 1
 		}
 	  	effect = {
-			add_adm_power = -100
+			add_adm_power = -25
             add_country_modifier = {
                 name = civil_code
-                duration = -1
+                duration = 10950
             }
 		}
 		ai_will_do = {
@@ -56,5 +54,57 @@ country_decisions = {
                 NOT = { adm_power = 400 }
             }
 		}
-	}
+    }
+    
+    mobilize_workforces = {
+        potential = {
+			culture_group = culture_group_human
+            NOT = { has_country_modifier = mobilized_workforces }
+		}
+		allow =  {
+			culture_group = culture_group_human
+            mil = 4
+            mil_power = 25
+		}
+	  	effect = {
+			add_mil_power = -25
+            add_country_modifier = {
+                name = mobilized_workforces
+                duration = 10950
+            }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    
+    encourage_research = {
+        potential = {
+			culture_group = culture_group_human
+            NOT = { has_country_modifier = illusion_of_grandeur }
+            NOT = { has_country_modifier = enchanted_spyglass }
+            NOT = { has_country_modifier = scrying_orb }
+            NOT = { has_country_modifier = arcane_familiars }
+            NOT = { has_country_modifier = conjured_feasts }
+            NOT = { has_country_modifier = enchanted_broom }
+            NOT = { has_country_modifier = embued_tome }
+            NOT = { has_country_modifier = mana_shields }
+            NOT = { has_country_modifier = invisibility_cloaks }
+            NOT = { has_country_modifier = arcane_crystal }
+		}
+		allow =  {
+			culture_group = culture_group_human
+            scaled_treasury_check = yes
+		}
+	  	effect = {
+			scaled_treasury_effect = yes
+            
+            custom_tooltip = HUMAN_MAGI_DISCOVERY_TT
+            hidden_effect = { set_country_flag = human_magi_discovery }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
 }
+

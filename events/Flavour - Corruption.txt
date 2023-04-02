@@ -5,11 +5,12 @@ country_event = {
 	id = wwu_corruption.1
 	title = "wwu_corruption.1.title"
 	desc = "wwu_corruption.1.desc"
-	picture = MERCHANTS_TALKING_eventPicture
+	picture = AUCTIONMASTER_eventPicture
 	
 	is_triggered_only = yes
 	
-	trigger = {
+	trigger = { 
+        is_high_cultured = yes
 		NOT = { corruption = 1 }
 		NOT = { yearly_corruption_increase = 0.001 }
 		NOT = { has_country_modifier = trusted_merchants }
@@ -30,11 +31,12 @@ country_event = {
 	id = wwu_corruption.2
 	title = "wwu_corruption.2.title"
 	desc = "wwu_corruption.2.desc"
-	picture = DIPLOMACY_eventPicture
+	picture = SPELLSLINGER_eventPicture
 	
 	is_triggered_only = yes
 	
 	trigger = {
+        is_high_cultured = yes
 		NOT = { corruption = 1 }
 		NOT = { yearly_corruption_increase = 0.001 }
 		NOT = { has_country_modifier = honest_administrators }
@@ -55,7 +57,7 @@ country_event = {
 	id = wwu_corruption.3
 	title = "wwu_corruption.3.title"
 	desc = "wwu_corruption.3.desc"
-	picture = INVENTION_eventPicture
+	picture = HIDDEN_WISDOM_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -78,11 +80,12 @@ country_event = {
 	id = wwu_corruption.4
 	title = "wwu_corruption.4.title"
 	desc = "wwu_corruption.4.desc"
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = KING_ANDUIN_eventPicture
 	
 	is_triggered_only = yes
 	
 	trigger = {
+        is_high_cultured = yes
 		NOT = { corruption = 1 }
 		NOT = { yearly_corruption_increase = 0.001 }
 		stability = 3
@@ -99,11 +102,12 @@ country_event = {
 	id = wwu_corruption.5
 	title = "wwu_corruption.5.title"
 	desc = "wwu_corruption.5.desc"
-	picture = ADVISOR_eventPicture
+	picture = DECK_OF_WONDERS_eventPicture
 	
 	is_triggered_only = yes
 	
-	trigger = {
+	trigger = { 
+        is_high_cultured = yes
 		NOT = { corruption = 1 }
 		NOT = { yearly_corruption_increase = 0.001 }
 		stability = 3
@@ -141,11 +145,12 @@ country_event = {
 	id = wwu_corruption.6
 	title = "wwu_corruption.6.title"
 	desc = "wwu_corruption.6.desc"
-	picture = wwu_corruptionPicture
+	picture = SACK_OF_COINS_eventPicture
 	
 	is_triggered_only = yes
 	
 	trigger = {
+        is_high_cultured = yes
 		corruption = 2
 		NOT = { corruption = 10 }
 	}
@@ -168,7 +173,7 @@ country_event = {
 	id = wwu_corruption.7
 	title = "wwu_corruption.7.title"
 	desc = "wwu_corruption.7.desc"
-	picture = wwu_corruptionPicture
+	picture = WANTED_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -275,7 +280,7 @@ country_event = {
 	id = wwu_corruption.8
 	title = "wwu_corruption.8.title"
 	desc = "wwu_corruption.8.desc"
-	picture = SHIP_SAILING_eventPicture
+	picture = SMUGGLERS_CRATE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -317,7 +322,7 @@ country_event = {
 	id = wwu_corruption.9
 	title = "wwu_corruption.9.title"
 	desc = "wwu_corruption.9.desc"
-	picture = ACCUSATION_eventPicture
+	picture = DARING_REPORTER_eventPicture
 	goto = culture_province
 	
 	is_triggered_only = yes
@@ -334,6 +339,7 @@ country_event = {
 	}
 	
 	trigger = {
+        is_high_cultured = yes
 		corruption = 10
 		any_known_country = {
 			primary_culture = ROOT
@@ -367,7 +373,7 @@ country_event = {
 	id = wwu_corruption.10
 	title = "wwu_corruption.10.title"
 	desc = "wwu_corruption.10.desc"
-	picture = ACCUSATION_eventPicture
+	picture = WANTED_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -401,7 +407,7 @@ country_event = {
 	id = wwu_corruption.11
 	title = "wwu_corruption.11.title"
 	desc = "wwu_corruption.11.desc"
-	picture = HARBOUR_eventPicture
+	picture = HIDDEN_CACHE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -435,7 +441,7 @@ country_event = {
 	id = wwu_corruption.12
 	title = "wwu_corruption.12.title"
 	desc = "wwu_corruption.12.desc"
-	picture = wwu_corruptionPicture
+	picture = WANTED_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -454,7 +460,7 @@ country_event = {
 	id = wwu_corruption.13
 	title = "wwu_corruption.13.title"
 	desc = "wwu_corruption.13.desc"
-	picture = wwu_corruptionPicture
+	picture = WANTED_eventPicture
 
 	is_triggered_only = yes
 	
@@ -475,11 +481,12 @@ country_event = {
 	id = wwu_corruption.14
 	title = "wwu_corruption.14.title"
 	desc = "wwu_corruption.14.desc"
-	picture = wwu_corruptionPicture
+	picture = WANTED_eventPicture
 	
 	is_triggered_only = yes
 	
 	trigger = {
+        is_high_cultured = yes
 		corruption = 10
 		NOT = { has_country_modifier = distrusted_merchants }
 	}
@@ -498,7 +505,7 @@ country_event = {
 	id = wwu_corruption.15
 	title = "wwu_corruption.15.title"
 	desc = "wwu_corruption.15.desc"
-	picture = BANKRUPCY_eventPicture
+	picture = MENTAL_COLLAPSE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -519,12 +526,13 @@ country_event = {
 	id = wwu_corruption.16
 	title = "wwu_corruption.16.title"
 	desc = "wwu_corruption.16.desc"
-	picture = BORDER_TENSION_eventPicture
+	picture = ENTRENCHMENT_eventPicture
 	goto = hired_mercs_victim_area
 	
 	is_triggered_only = yes
 	
 	trigger = {
+        is_high_cultured = yes
 		any_hired_mercenary_company = {
 			has_company_manpower = 0.2
 			location = {
@@ -578,7 +586,7 @@ country_event = {
 	id = wwu_corruption.17
 	title = "wwu_corruption.17.title"
 	desc = "wwu_corruption.17.desc"
-	picture = BAD_WITH_MONARCH_eventPicture
+	picture = SACK_OF_COINS_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -597,7 +605,7 @@ country_event = {
 	id = wwu_corruption.18
 	title = "wwu_corruption.18.title"
 	desc = "wwu_corruption.18.desc"
-	picture = OVEREXTENSION_eventPicture
+	picture = BIG_TIME_RACKETEER_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -616,7 +624,7 @@ country_event = {
 	id = wwu_corruption.19
 	title = "wwu_corruption.19.title"
 	desc = "wwu_corruption.19.desc"
-	picture = BAD_WITH_MONARCH_eventPicture
+	picture = BLUBBER_BARON_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -646,10 +654,14 @@ country_event = {
 	id = wwu_corruption.20
 	title = "wwu_corruption.20.title"
 	desc = "wwu_corruption.20.desc"
-	picture = wwu_corruptionPicture
+	picture = WANTED_eventPicture
 	
 	is_triggered_only = yes
 	
+    trigger = {
+        is_high_cultured = yes
+    }
+    
 	option = {
 		name = "wwu_corruption.20.option.a"
 		add_corruption = 0.5

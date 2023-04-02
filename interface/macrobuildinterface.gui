@@ -138,7 +138,7 @@ guiTypes = {
 			maxWidth = 200
 			maxHeight = 32
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 			fixedsize = yes
 			truncate = yes
 		}
@@ -152,7 +152,7 @@ guiTypes = {
 			maxWidth = 164
 			maxHeight = 32
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		
 		instantTextBoxType = {
@@ -164,7 +164,7 @@ guiTypes = {
 			maxWidth = 164
 			maxHeight = 32
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		
 		
@@ -184,7 +184,7 @@ guiTypes = {
 			maxWidth = 164
 			maxHeight = 32
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 			
 				
@@ -195,7 +195,7 @@ guiTypes = {
 			spriteType = "GFX_dots_offensive_no_transp"
 			position = { x= 201 y = 5 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		iconType =
 		{
@@ -203,7 +203,7 @@ guiTypes = {
 			spriteType = "GFX_dots_defensive_no_transp"
 			position = { x= 201 y = 19 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		
 
@@ -213,7 +213,7 @@ guiTypes = {
 			spriteType = "GFX_dots_offensive_no_transp"
 			position = { x= 245 y = 5}
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		iconType =
 		{
@@ -221,7 +221,7 @@ guiTypes = {
 			spriteType = "GFX_dots_defensive_no_transp"
 			position = { x= 245 y = 19}
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		
 
@@ -231,7 +231,7 @@ guiTypes = {
 			spriteType = "GFX_dots_offensive_no_transp"
 			position = { x= 290 y = 5 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		iconType =
 		{
@@ -239,7 +239,7 @@ guiTypes = {
 			spriteType = "GFX_dots_defensive_no_transp"
 			position = { x= 290 y = 19 }
 			Orientation = "UPPER_LEFT"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 	}
 	
@@ -268,7 +268,7 @@ guiTypes = {
 			position = { x= -33 y = 2 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.8
-		#	allwaystransparent = yes
+		#	alwaystransparent = yes
 		}
 		
 		instantTextBoxType = {
@@ -280,7 +280,7 @@ guiTypes = {
 			maxWidth = 200
 			maxHeight = 32
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 			fixedsize = yes
 			truncate = yes
 		}
@@ -294,7 +294,7 @@ guiTypes = {
 			maxWidth = 164
 			maxHeight = 32
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
@@ -306,7 +306,7 @@ guiTypes = {
 			maxWidth = 164
 			maxHeight = 32
 			format = left
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		
 		instantTextBoxType = {
@@ -318,7 +318,7 @@ guiTypes = {
 			maxWidth = 36
 			maxHeight = 20	
 			format = center
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 				
 	
@@ -331,7 +331,7 @@ guiTypes = {
 			maxWidth = 36
 			maxHeight = 20	
 			format = center
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		
 		instantTextBoxType =
@@ -344,7 +344,7 @@ guiTypes = {
 			maxWidth = 36
 			maxHeight = 20	
 			format = center
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}		
 
 		instantTextBoxType =
@@ -357,7 +357,7 @@ guiTypes = {
 			maxWidth = 36
 			maxHeight = 20	
 			format = center
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		
 		instantTextBoxType =
@@ -367,10 +367,10 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = ""	
-			maxWidth = 36
+			maxWidth = 50
 			maxHeight = 20	
 			format = center
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 	}
 	
@@ -410,7 +410,7 @@ guiTypes = {
 			maxWidth = 190
 			maxHeight = 32
 			format = left
-			#allwaystransparent = yes
+			#alwaystransparent = yes
 			#fixedsize = yes
 			#truncate = yes
 		}
@@ -426,7 +426,7 @@ guiTypes = {
 			format = center
 			fixedsize = yes
 			truncate = yes
-			#allwaystransparent = yes
+			#alwaystransparent = yes
 		}
 	
 		instantTextBoxType = {
@@ -440,7 +440,7 @@ guiTypes = {
 			format = center
 			fixedsize = yes
 			truncate = yes
-			#allwaystransparent = yes
+			#alwaystransparent = yes
 		}
 		
 		instantTextBoxType =
@@ -455,7 +455,7 @@ guiTypes = {
 			format = center
 			fixedsize = yes
 			truncate = yes
-			#allwaystransparent = yes
+			#alwaystransparent = yes
 		}		
 	}
 
@@ -466,7 +466,7 @@ guiTypes = {
 		name = "new_buildings_entry"
 		backGround=""
 		position = { x=0 y =0}	
-		size = { x=420 y = 1000}
+		size = { x=420 y = 500}
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -479,11 +479,11 @@ guiTypes = {
 		iconType = {
 			name = "administration_banner"
 			position = { x = 4 y = 0 }
-			spriteType = "GFX_banner_left_6"
+			spriteType = "GFX_building_banner_right"
 		}
 		
 		instantTextBoxType={
-			name = "administration_trade"
+			name = "title_administration"
 			position = {x = 44 y = 9 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -495,36 +495,27 @@ guiTypes = {
 		iconType ={
 			name ="administration_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 15 y = 3}
-			frame = 2
+			position = { x = 15 y = 3 }
+			frame = 6
+            scale = 0.75
 		}			
 		
-        # Town Hall
+        # Row 1
 		checkboxType = {
-			name = "build_wow_temple"
-			position = { x = 9 y = 32 }
+			name = "build_wow_temple_1"
+			position = { 
+                x = 20
+                y = 40
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_temple_cost"
-			position = {x = 9 y = 82 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-		
-		checkboxType = {
-			name = "build_wow_marketplace"
-			position = { x = 61 y = 32 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" 
-		}
-		
-		instantTextBoxType={
-			name = "wow_marketplace_cost"
-			position = {x = 61 y = 82 }
+			name = "wow_temple_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -533,14 +524,20 @@ guiTypes = {
 		}
         
         checkboxType = {
-			name = "build_wow_mine"
-			position = { x = 113 y = 32 }
+			name = "build_wow_market_1"
+			position = { 
+                x = 60
+                y = 40 
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_mine_cost"
-			position = {x = 113 y = 82 }
+			name = "wow_market_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -549,14 +546,20 @@ guiTypes = {
 		}
         
         checkboxType = {
-			name = "build_wow_farm"
-			position = { x = 165 y = 32 }
+			name = "build_wow_mine_1"
+			position = { 
+                x = 100
+                y = 40 
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_farm_cost"
-			position = {x = 165 y = 82 }
+			name = "wow_mine_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -565,14 +568,42 @@ guiTypes = {
 		}
         
         checkboxType = {
-			name = "build_wow_internment_camp"
-			position = { x = 217 y = 32 }
+			name = "build_wow_farm_1"
+			position = { 
+                x = 140
+                y = 40 
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_internment_camp_cost"
-			position = {x = 217 y = 82 }
+			name = "wow_farm_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_wow_internment_camp_1"
+			position = { 
+                x = 180
+                y = 40 
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_internment_camp_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -581,14 +612,492 @@ guiTypes = {
 		}
 
         checkboxType = {
-			name = "build_wow_tavern"
-			position = { x = 269 y = 32 }
+			name = "build_wow_tavern_1"
+			position = { 
+                x = 220
+                y = 40 
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_tavern_cost"
-			position = {x = 269 y = 82 }
+			name = "wow_tavern_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_wow_town_hall_1"
+			position = { 
+                x = 260
+                y = 40 
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_town_hall_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        # ---------- Row 2
+        iconType = {
+			name = "upgrade_wow_temple_1"
+			position = { 
+                x = 30
+                y = 75
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_temple_2"
+			position = { 
+                x = 20
+                y = 90
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_temple_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+        iconType = {
+			name = "upgrade_wow_market_2"
+			position = { 
+                x = 70
+                y = 75
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+		checkboxType = {
+			name = "build_wow_market_2"
+			position = { 
+                x = 60
+                y = 90
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_market_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_mine_2"
+			position = { 
+                x = 110
+                y = 75
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_mine_2"
+			position = { 
+                x = 100
+                y = 90
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_mine_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_farm_2"
+			position = { 
+                x = 150
+                y = 75
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_farm_2"
+			position = { 
+                x = 140
+                y = 90
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_farm_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_internment_camp_2"
+			position = { 
+                x = 190
+                y = 75
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_internment_camp_2"
+			position = { 
+                x = 180
+                y = 90
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_internment_camp_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        iconType = {
+			name = "upgrade_wow_tavern_2"
+			position = { 
+                x = 230
+                y = 75
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_tavern_2"
+			position = { 
+                x = 220
+                y = 90
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_tavern_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_town_hall_2"
+			position = { 
+                x = 270
+                y = 75
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_town_hall_2"
+			position = { 
+                x = 260
+                y = 90
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_town_hall_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        # ---------- Row 3
+        iconType = {
+			name = "upgrade_wow_temple_3"
+			position = { 
+                x = 30
+                y = 125
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_temple_3"
+			position = { 
+                x = 20
+                y = 140
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_temple_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+        iconType = {
+			name = "upgrade_wow_market_3"
+			position = { 
+                x = 70
+                y = 125
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+		checkboxType = {
+			name = "build_wow_market_3"
+			position = { 
+                x = 60
+                y = 140
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_market_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_mine_3"
+			position = { 
+                x = 110
+                y = 125
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_mine_3"
+			position = { 
+                x = 100
+                y = 140
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_mine_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_farm_3"
+			position = { 
+                x = 150
+                y = 125
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_farm_3"
+			position = { 
+                x = 140
+                y = 140
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_farm_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_internment_camp_3"
+			position = { 
+                x = 190
+                y = 125
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_internment_camp_3"
+			position = { 
+                x = 180
+                y = 140
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_internment_camp_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+        iconType = {
+			name = "upgrade_wow_tavern_3"
+			position = { 
+                x = 230
+                y = 125
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_tavern_3"
+			position = { 
+                x = 220
+                y = 140
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_tavern_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_town_hall_3"
+			position = { 
+                x = 270
+                y = 125
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_town_hall_3"
+			position = { 
+                x = 260
+                y = 140
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_town_hall_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -601,13 +1110,13 @@ guiTypes = {
         #---------------------------------
 		iconType = {
 			name = "military_banner"
-			position = { x = 4 y = 97 }
-			spriteType = "GFX_banner_left_6"
+			position = { x = 4 y = 180 }
+			spriteType = "GFX_building_banner_right"
 		}
 		
 		instantTextBoxType={
 			name = "title_military"
-			position = {x = 44 y = 106 }
+			position = {x = 44 y = 188 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 160
@@ -618,19 +1127,27 @@ guiTypes = {
 		iconType ={
 			name ="military_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 15 y = 100}
-			frame = 5
+			position = { x = 15 y = 184 }
+			frame = 2
+            scale = 0.75
 		}			
 		
+        # ----------------- Row 1
 		checkboxType = {
-			name = "build_wow_barracks"
-			position = { x = 9 y = 129 }
+			name = "build_wow_barracks_1"
+			position = { 
+                x = 20
+                y = 220
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_barracks_cost"
-			position = {x = 9 y = 179 }
+			name = "wow_barracks_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -639,14 +1156,20 @@ guiTypes = {
 		}
 		
 		checkboxType = {
-			name = "build_wow_arsenal"
-			position = { x = 61 y = 129 }
+			name = "build_wow_arsenal_1"
+			position = { 
+                x = 60
+                y = 220
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_arsenal_cost"
-			position = {x = 61 y = 179 }
+			name = "wow_arsenal_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -655,14 +1178,20 @@ guiTypes = {
 		}
 		
 		checkboxType = {
-			name = "build_wow_shipyard"
-			position = { x = 113 y = 129 }
+			name = "build_wow_shipyard_1"
+			position = { 
+                x = 100
+                y = 220
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_shipyard_cost"
-			position = {x = 113 y = 179 }
+			name = "wow_shipyard_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -671,14 +1200,20 @@ guiTypes = {
 		}
 		
 		checkboxType = {
-			name = "build_wow_dockyard"
-			position = { x = 165 y = 129 }
+			name = "build_wow_dockyard_1"
+			position = { 
+                x = 140
+                y = 220 
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_dockyard_cost"
-			position = {x = 165 y = 179 }
+			name = "wow_dockyard_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -686,58 +1221,21 @@ guiTypes = {
 			text = "2000¤"	
 		}	
         
-        #---------------------------------
-        # Army
-        #---------------------------------
-		iconType = {
-			name = "fortification_banner"
-			position = { x = 4 y = 194 }
-			spriteType = "GFX_banner_left_6"
-		}
-		
-		instantTextBoxType={
-			name = "title_fortification"
-			position = {x = 44 y = 203 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 160
-			maxHeight = 18
-			text = "Fortification"	
-		}
-		
-		iconType ={
-			name ="fortification_icon"
-			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 15 y = 197}
-			frame = 7
-		}			
-		
-        # Barracks
-		checkboxType = {
-			name = "build_wow_fort_1"
-			position = { x = 9 y = 226 }
+        checkboxType = {
+			name = "build_wow_tower_1"
+			position = { 
+                x = 180
+                y = 220 
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_fort_1_cost"
-			position = {x = 9 y = 276 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-		
-		checkboxType = {
-			name = "build_wow_fort_2"
-			position = { x = 61 y = 226 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" 
-		}
-		
-		instantTextBoxType={
-			name = "wow_fort_2_cost"
-			position = {x = 61 y = 276 }
+			name = "wow_tower_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -745,15 +1243,21 @@ guiTypes = {
 			text = "2000¤"	
 		}
 
-		checkboxType = {
-			name = "build_wow_fort_3"
-			position = { x = 113 y = 226 }
+        checkboxType = {
+			name = "build_wow_training_ground_1"
+			position = { 
+                x = 220
+                y = 220 
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_fort_3_cost"
-			position = {x = 113 y = 276 }
+			name = "wow_training_ground_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -761,34 +1265,584 @@ guiTypes = {
 			text = "2000¤"	
 		}
         
-		checkboxType = {
-			name = "build_wow_fort_4"
-			position = { x = 165 y = 226 }
+        checkboxType = {
+			name = "build_wow_road_1"
+			position = { 
+                x = 260
+                y = 220 
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_fort_4_cost"
-			position = {x = 165 y = 276 }
+			name = "wow_road_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
-		}		
+		}
+        
+        # ----------------- Row 2
+        iconType = {
+			name = "upgrade_wow_barracks_2"
+			position = { 
+                x = 30
+                y = 255
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_barracks_2"
+			position = { 
+                x = 20
+                y = 270
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
 		
+		instantTextBoxType={
+			name = "wow_barracks_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+        iconType = {
+			name = "upgrade_wow_arsenal_2"
+			position = { 
+                x = 70
+                y = 255
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+		checkboxType = {
+			name = "build_wow_arsenal_2"
+			position = { 
+                x = 60
+                y = 270
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_arsenal_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+        iconType = {
+			name = "upgrade_wow_shipyard_2"
+			position = { 
+                x = 110
+                y = 255
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+		checkboxType = {
+			name = "build_wow_shipyard_2"
+			position = { 
+                x = 100
+                y = 270
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_shipyard_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+        iconType = {
+			name = "upgrade_wow_dockyard_2"
+			position = { 
+                x = 150
+                y = 255
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+		checkboxType = {
+			name = "build_wow_dockyard_2"
+			position = { 
+                x = 140
+                y = 270
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_dockyard_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}	
+        
+        iconType = {
+			name = "upgrade_wow_tower_2"
+			position = { 
+                x = 190
+                y = 255
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_tower_2"
+			position = { 
+                x = 180
+                y = 270
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_tower_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_training_ground_2"
+			position = { 
+                x = 230
+                y = 255
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_training_ground_2"
+			position = { 
+                x = 220
+                y = 270
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_training_ground_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_road_1"
+			position = { 
+                x = 270
+                y = 255
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_road_2"
+			position = { 
+                x = 260
+                y = 270
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_road_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        # ----------------- Row 3
+        iconType = {
+			name = "upgrade_wow_barracks_3"
+			position = { 
+                x = 30
+                y = 305
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_barracks_3"
+			position = { 
+                x = 20
+                y = 320
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_barracks_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+        iconType = {
+			name = "upgrade_wow_arsenal_3"
+			position = { 
+                x = 70
+                y = 305
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+		checkboxType = {
+			name = "build_wow_arsenal_3"
+			position = { 
+                x = 60
+                y = 320
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_arsenal_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+        iconType = {
+			name = "upgrade_wow_shipyard_3"
+			position = { 
+                x = 110
+                y = 305
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+		checkboxType = {
+			name = "build_wow_shipyard_3"
+			position = { 
+                x = 100
+                y = 320
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_shipyard_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+        iconType = {
+			name = "upgrade_wow_dockyard_3"
+			position = { 
+                x = 150
+                y = 305
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+		checkboxType = {
+			name = "build_wow_dockyard_3"
+			position = { 
+                x = 140
+                y = 320
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_dockyard_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}	
+        
+        iconType = {
+			name = "upgrade_wow_tower_3"
+			position = { 
+                x = 190
+                y = 305
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_tower_3"
+			position = { 
+                x = 180
+                y = 320
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_tower_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_training_ground_3"
+			position = { 
+                x = 230
+                y = 305
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_training_ground_3"
+			position = { 
+                x = 220
+                y = 320
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_training_ground_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        iconType = {
+			name = "upgrade_wow_road_2"
+			position = { 
+                x = 270
+                y = 305
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+        checkboxType = {
+			name = "build_wow_road_3"
+			position = { 
+                x = 260
+                y = 320
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_road_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        #---------------------------------
+        # Provincal Efforts
+        #---------------------------------
+        iconType = {
+			name = "provincal_effort_buildings_banner"
+			position = { x = 300 y = 0 }
+			spriteType = "GFX_building_banner_right_small"
+		}
+		
+		instantTextBoxType={
+			name = "title_provincal_effort"
+			position = {x = 340 y = 9 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 120
+			maxHeight = 18
+			text = "Utility"	
+		}
+		
+		iconType ={
+			name ="provincal_effort_buildings_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 310 y = 4 }
+			frame = 3
+            scale = 0.75
+		}
+        
+        # Row 1
+        checkboxType = {
+			name = "build_province_action_interaction"
+			position = { 
+                x = 340
+                y = 40
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "province_action_interaction_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_province_action_trade_center"
+			position = { 
+                x = 340
+                y = 90
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "province_action_trade_center_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_wow_portal"
+			position = { 
+                x = 340
+                y = 140
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_portal_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
         #---------------------------------
         # Manufactories
         #---------------------------------
 		iconType = {
 			name = "manufactories_banner"
-			position = { x = 4 y = 291 }
-			spriteType = "GFX_banner_left_6"
+			position = { x = 4 y = 360 }
+			spriteType = "GFX_building_banner_right"
 		}
 		
 		instantTextBoxType={
 			name = "title_manufactories"
-			position = {x = 44 y = 300 }
+			position = {x = 44 y = 368 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 160
@@ -799,19 +1853,26 @@ guiTypes = {
 		iconType ={
 			name ="manufactories_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 15 y = 294}
-			frame = 8
+			position = { x = 15 y = 364 }
+			frame = 5
+            scale = 0.75
 		}			
 		
 		checkboxType = {
 			name = "build_manufactory"
-			position = { x = 9 y = 323 }
+			position = { 
+                x = 20
+                y = 400
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
 			name = "manufactory_cost"
-			position = {x = 9 y = 373 }
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -819,48 +1880,66 @@ guiTypes = {
 			text = "2000¤"	
 		}
 		
-		checkboxType = {
-			name = "build_wow_citadel"
-			position = { x = 61 y = 323 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" 
-		}
-		
-		instantTextBoxType={
-			name = "wow_citadel_cost"
-			position = {x = 61 y = 373 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-		
-        # Dock
 		checkboxType = {
 			name = "build_wow_city_barracks"
-			position = { x = 113 y = 323 }
+			position = { 
+                x = 60
+                y = 400
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
 			name = "wow_city_barracks_cost"
-			position = {x = 113 y = 373 }
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
+        
+		checkboxType = {
+			name = "build_wow_naval_barracks"
+			position = { 
+                x = 100
+                y = 400
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_naval_barracks_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
 
 		checkboxType = {
 			name = "build_wow_garrison"
-			position = { x = 165 y = 323 }
+			position = { 
+                x = 140
+                y = 400
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
 			name = "wow_garrison_cost"
-			position = {x = 165 y = 373 }
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -869,14 +1948,109 @@ guiTypes = {
 		}
 
         checkboxType = {
+			name = "build_wow_artillery_battery"
+			position = { 
+                x = 180
+                y = 400
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_artillery_battery_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_wow_headquarters"
+			position = { 
+                x = 220
+                y = 400
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_headquarters_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        # --- Row 2 ---
+        checkboxType = {
 			name = "build_wow_arcane_tower"
-			position = { x = 217 y = 323 }
+			position = { 
+                x = 20
+                y = 450
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
 			name = "wow_arcane_tower_cost"
-			position = {x = 217 y = 373 }
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+        
+        checkboxType = {
+			name = "build_wow_stables"
+			position = { 
+                x = 60
+                y = 450
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_stables_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}	
+        
+        checkboxType = {
+			name = "build_wow_mana_conduit"
+			position = { 
+                x = 100
+                y = 450
+            }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" 
+		}
+		
+		instantTextBoxType={
+			name = "wow_mana_conduit_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -885,40 +2059,47 @@ guiTypes = {
 		}
         
         #---------------------------------
-        # Portals
+        # Fortifications
         #---------------------------------
 		iconType = {
-			name = "portals_banner"
-			position = { x = 4 y = 388 }
-			spriteType = "GFX_banner_left_6"
+			name = "fortification_banner"
+			position = { x = 300 y = 180 }
+			spriteType = "GFX_building_banner_right_small"
 		}
 		
 		instantTextBoxType={
-			name = "title_portals"
-			position = {x = 44 y = 397 }
+			name = "title_fortification"
+			position = {x = 340 y = 189 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 200
+			maxWidth = 160
 			maxHeight = 18
-			text = "Portals"	
+			text = "Defence"	
 		}
 		
 		iconType ={
-			name ="portals_icon"
+			name ="fortification_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 15 y = 391 }
-			frame = 4
+			position = { x = 310 y = 188 }
+			frame = 0
+            scale = 0.75
 		}			
 		
 		checkboxType = {
-			name = "build_wow_portal_red"
-			position = { x = 9 y = 420 }
+			name = "build_wow_fort_1"
+			position = { 
+                x = 340
+                y = 220
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_portal_red_cost"
-			position = {x = 9 y = 470 }
+			name = "wow_fort_1_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -926,89 +2107,31 @@ guiTypes = {
 			text = "2000¤"	
 		}
         
-		checkboxType = {
-			name = "build_wow_portal_yellow"
-			position = { x = 61 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" 
-		}
-		
-		instantTextBoxType={
-			name = "wow_portal_yellow_cost"
-			position = {x = 61 y = 470 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-		
-		checkboxType = {
-			name = "build_wow_portal_green"
-			position = { x = 113 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" 
-		}
-		
-		instantTextBoxType={
-			name = "wow_portal_green_cost"
-			position = {x = 113 y = 470 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-		
-		checkboxType = {
-			name = "build_wow_portal_blue"
-			position = { x = 165 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" 
-		}
-		
-		instantTextBoxType={
-			name = "wow_portal_blue_cost"
-			position = {x = 165 y = 470 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-        
-        #---------------------------------
-        # Unique Buildings
-        #---------------------------------
         iconType = {
-			name = "unique_buildings_banner"
-			position = { x = 4 y = 485 }
-			spriteType = "GFX_banner_left_6"
-		}
-		
-		instantTextBoxType={
-			name = "title_uniques"
-			position = {x = 44 y = 494 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 120
-			maxHeight = 18
-			text = "Unique"	
-		}
-		
-		iconType ={
-			name ="unique_buildings_icon"
-			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 15 y = 488 }
-			frame = 6
+			name = "upgrade_fort_1"
+			position = { 
+                x = 350
+                y = 255
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
 		}
         
-        checkboxType = {
-			name = "build_wow_palace"
-			position = { x = 9 y = 517 }
+		checkboxType = {
+			name = "build_wow_fort_2"
+			position = { 
+                x = 340
+                y = 270
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_palace_cost"
-			position = {x = 9 y = 567 }
+			name = "wow_fort_2_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -1016,15 +2139,31 @@ guiTypes = {
 			text = "2000¤"	
 		}
         
-        checkboxType = {
-			name = "build_wow_fortress"
-			position = { x = 61 y = 517 }
+        iconType = {
+			name = "upgrade_fort_2"
+			position = { 
+                x = 350
+                y = 305
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
+		}
+        
+		checkboxType = {
+			name = "build_wow_fort_3"
+			position = { 
+                x = 340
+                y = 320
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_fortress_cost"
-			position = {x = 61 y = 567 }
+			name = "wow_fort_3_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -1032,118 +2171,69 @@ guiTypes = {
 			text = "2000¤"	
 		}
         
-        checkboxType = {
-			name = "build_wow_magic_tower"
-			position = { x = 113 y = 517 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" 
-		}
-		
-		instantTextBoxType={
-			name = "wow_magic_tower_cost"
-			position = {x = 113 y = 567 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
+        iconType = {
+			name = "upgrade_fort_3"
+			position = { 
+                x = 350
+                y = 355
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
 		}
         
-        checkboxType = {
-			name = "build_wow_grand_forge"
-			position = { x = 165 y = 517 }
+		checkboxType = {
+			name = "build_wow_fort_4"
+			position = { 
+                x = 340
+                y = 370
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_grand_forge_cost"
-			position = {x = 165 y = 567 }
+			name = "wow_fort_4_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
+		}	
+        
+        iconType = {
+			name = "upgrade_fort_4"
+			position = { 
+                x = 350
+                y = 405
+            }
+			spriteType = "GFX_building_upgrade_down"
+            scale = 0.5
 		}
         
-        checkboxType = {
-			name = "build_wow_altar_of_power"
-			position = { x = 217 y = 517 }
+		checkboxType = {
+			name = "build_wow_fort_5"
+			position = { 
+                x = 340
+                y = 420
+            }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" 
 		}
 		
 		instantTextBoxType={
-			name = "wow_altar_of_power_cost"
-			position = {x = 217 y = 567 }
+			name = "wow_fort_5_cost"
+			position = { 
+                x = 9999
+                y = 9999 
+            }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
-		}
-        
-        checkboxType = {
-			name = "build_wow_tomb_of_riches"
-			position = { x = 269 y = 517 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" 
-		}
-		
-		instantTextBoxType={
-			name = "wow_tomb_of_riches_cost"
-			position = {x = 269 y = 567 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-        
-        # Second Row
-        checkboxType = {
-			name = "build_wow_grand_monument"
-			position = { x = 9 y = 594 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" 
-		}
-		
-		instantTextBoxType={
-			name = "wow_grand_monument_cost"
-			position = {x = 9 y = 644 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-        
-        checkboxType = {
-			name = "build_wow_naval_academy"
-			position = { x = 61 y = 594 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" 
-		}
-		
-		instantTextBoxType={
-			name = "wow_naval_academy_cost"
-			position = {x = 61 y = 644 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-        
-        checkboxType = {
-			name = "build_wow_military_academy"
-			position = { x = 113 y = 594 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" 
-		}
-		
-		instantTextBoxType={
-			name = "wow_military_academy_cost"
-			position = {x = 113 y = 644 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
+		}	
         
         #---------------------------------
 		iconType = {
@@ -1165,7 +2255,7 @@ guiTypes = {
 			name = "province_button"
 			position = { x = 14 y = 0 }
 			quadTextureSprite ="GFX_building_list_button"
-#			buttonFont = "vic_18"
+			buttonFont = "vic_18"
 		}
 		
 		instantTextBoxType = {
@@ -1178,7 +2268,7 @@ guiTypes = {
 			maxHeight = 18
 			format = left
 			fixedsize = yes
-			#allwaystransparent = yes
+			#alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
@@ -1191,7 +2281,7 @@ guiTypes = {
 			maxHeight = 18
 			format = center
 			fixedsize = yes
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
@@ -1204,7 +2294,7 @@ guiTypes = {
 			maxHeight = 18
 			format = center
 			fixedsize = yes
-			#allwaystransparent = yes
+			#alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
@@ -1217,7 +2307,7 @@ guiTypes = {
 			maxHeight = 18
 			format = right
 			fixedsize = yes
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		iconType = {
@@ -1226,7 +2316,7 @@ guiTypes = {
 			position = { x = 178 y = 3 }
 			scale = 0.75
 			Orientation = "UPPER_LEFT"
-			#allwaystransparent = yes
+			#alwaystransparent = yes
 		}
 	}
 	
@@ -1521,7 +2611,7 @@ guiTypes = {
 			maxHeight = 20	
 			format = left
 			fixedsize = yes
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
@@ -1534,13 +2624,13 @@ guiTypes = {
 			maxHeight = 20	
 			format = right
 			fixedsize = yes
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 		iconType = {
 			name = "list_item_cost_icon"
 			position = { x = 241 y = 4 }
 			spriteType = "GFX_nation_designer_points_icon"
-			allwaystransparent = yes
+			alwaystransparent = yes
 		}
 	}
 }

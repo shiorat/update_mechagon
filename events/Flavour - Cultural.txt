@@ -4,7 +4,7 @@ country_event = {
 	id = wwu_cultural.1
 	title = wwu_cultural.1.title
 	desc = wwu_cultural.1.desc
-	picture = THEATRE_eventPicture
+	picture = ETHEREAL_PEDDLER_eventPicture
 
 	trigger = {
 		NOT = {
@@ -12,6 +12,9 @@ country_event = {
 		}
 		years_of_income = 0.1
 		adm_power = 10
+        capital_scope = {
+            continent = continent_outland
+        }
 	}
 	
 	mean_time_to_happen = {
@@ -29,7 +32,7 @@ country_event = {
 			name = ethereal_traders
 			duration = 1460
 		}
-		add_adm_power = -10
+		add_adm_power = -25
 		add_years_of_income = -0.1
 	}
 	option = {
@@ -39,27 +42,31 @@ country_event = {
 	}
 }
 
-# Libert�, Egalit�, Fraternit�
+# Pandaren Lorewalkers
 country_event = {
 	id = wwu_cultural.2
 	title = wwu_cultural.2.title
 	desc = wwu_cultural.2.desc
-	picture = REFORM_eventPicture
+	picture = ANCIENT_BREWMASTER_eventPicture
 
 	trigger = {
 		adm_power = 10
 		adm = 3
 		prestige = 40
-		NOT = {
-			has_country_modifier = followers_of_black_ox
-			has_country_modifier = followers_of_jade_serpent
-			has_country_modifier = followers_of_red_crane
-			has_country_modifier = followers_of_white_tiger
-			accepted_culture = culture_black_ox
-			accepted_culture = culture_jade_serpent
-			accepted_culture = culture_red_crane
-			accepted_culture = culture_white_tiger
-		}
+		NOT = { has_country_modifier = followers_of_black_ox }
+		NOT = { has_country_modifier = followers_of_jade_serpent }
+		NOT = { has_country_modifier = followers_of_red_crane }
+		NOT = { has_country_modifier = followers_of_white_tiger }
+		NOT = { accepted_culture = culture_pandaren }
+		
+        NOT = {
+            capital_scope = {
+                OR = {
+                    continent = continent_outland
+                    continent = continent_draenor
+                }
+            }
+        }
 	}
 	
 	mean_time_to_happen = {
@@ -69,8 +76,14 @@ country_event = {
 	option = {
 		name = wwu_cultural.2.opt1
 		
+		add_dip_power = -50
+        
+        # Only change culture in Pandaria
 		random_owned_province = {
-			change_culture = culture_black_ox
+            limit = {
+                continent = continent_pandaria
+            }
+			change_culture = culture_pandaren
 		}
 		add_country_modifier = {
 			name = followers_of_black_ox
@@ -80,8 +93,14 @@ country_event = {
 	option = {
 		name = wwu_cultural.2.opt2
 		
+		add_dip_power = -50
+        
+		# Only change culture in Pandaria
 		random_owned_province = {
-			change_culture = culture_jade_serpent
+            limit = {
+                continent = continent_pandaria
+            }
+			change_culture = culture_pandaren
 		}
 		add_country_modifier = {
 			name = followers_of_jade_serpent
@@ -91,8 +110,14 @@ country_event = {
 	option = {
 		name = wwu_cultural.2.opt3
 		
+		add_dip_power = -50
+        
+		# Only change culture in Pandaria
 		random_owned_province = {
-			change_culture = culture_red_crane
+            limit = {
+                continent = continent_pandaria
+            }
+			change_culture = culture_pandaren
 		}
 		add_country_modifier = {
 			name = followers_of_red_crane
@@ -102,8 +127,14 @@ country_event = {
 	option = {
 		name = wwu_cultural.2.opt4
 		
+		add_dip_power = -50
+        
+		# Only change culture in Pandaria
 		random_owned_province = {
-			change_culture = culture_white_tiger
+            limit = {
+                continent = continent_pandaria
+            }
+			change_culture = culture_pandaren
 		}
 		add_country_modifier = {
 			name = followers_of_white_tiger
@@ -113,20 +144,30 @@ country_event = {
 	option = {
 		name = wwu_cultural.2.opt5
 		
+		add_dip_power = 100
 	}
 }
 
+# The Darkmoon Faire
 country_event = {
 	id = wwu_cultural.3
 	title = wwu_cultural.3.title
 	desc = wwu_cultural.3.desc
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = GRAND_FINALE_eventPicture
 
 	trigger = {
 		prestige = 25
 		adm_power = 30
 		dip_power = 10
 		years_of_income = 0.4
+        NOT = {
+            capital_scope = {
+                OR = {
+                    continent = continent_outland
+                    continent = continent_draenor
+                }
+            }
+        }
 	}
 	
 	mean_time_to_happen = {
@@ -136,6 +177,8 @@ country_event = {
 	option = {
 		name = wwu_cultural.3.opt1
 		
+        add_adm_power = -100
+        
 		add_country_modifier = {
 			name = darkmoon_faire_event
 			duration = 365
@@ -148,11 +191,12 @@ country_event = {
 	}
 }
 
+# Arena Tournament
 country_event = {
 	id = wwu_cultural.4
 	title = wwu_cultural.4.title
 	desc = wwu_cultural.4.desc
-	picture = TOURNAMENT_eventPicture
+	picture = ARGENT_HORSERIDER_eventPicture
 
 	trigger = {
 		army_tradition = 30
@@ -171,7 +215,7 @@ country_event = {
 		}
 		random_list = {
 			1 = {
-				kill_heir = yes
+				kill_heir = { }
 			}
 			2 = {
 				add_prestige = 30
@@ -190,17 +234,18 @@ country_event = {
 		add_prestige = 10
 	}
 	option = {
-		name = wwu_cultural.4.opt2
+		name = wwu_cultural.4.opt3
 		
 		add_prestige = -5
 	}
 }
 
+# Exotic Mounts
 country_event = {
 	id = wwu_cultural.5
 	title = wwu_cultural.5.title
 	desc = wwu_cultural.5.desc
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = ARMORED_WARHORSE_eventPicture
 
 	trigger = {
 		treasury = 1000
@@ -211,6 +256,14 @@ country_event = {
 			has_country_modifier = bloodfang_spider
 			has_country_modifier = caravan_brutosaur
 		}
+        NOT = {
+            capital_scope = {
+                OR = {
+                    continent = continent_outland
+                    continent = continent_draenor
+                }
+            }
+        }
 	}
 	
 	mean_time_to_happen = {
@@ -260,15 +313,16 @@ country_event = {
 	option = {
 		name = wwu_cultural.5.opt5
 		
-		add_prestige = -2
+		add_prestige = -10
 	}
 }
 
+# Runic Tables
 country_event = {
 	id = wwu_cultural.6
 	title = "wwu_cultural.6.title"
 	desc = "wwu_cultural.6.desc"
-	picture = COURT_eventPicture
+	picture = BESTIARY_eventPicture
 	
 	trigger = {
 		NOT = {
@@ -287,15 +341,24 @@ country_event = {
 	}
 }
 
+# The Gifted Child
 country_event = {
 	id = wwu_cultural.7
 	title = wwu_cultural.7.title
 	desc = wwu_cultural.7.desc
-	picture = INVENTION_eventPicture
+	picture = HIDDEN_WISDOM_eventPicture
 
 	trigger = {
 		government = monarchy
 		adm_power = 30
+        NOT = {
+            capital_scope = {
+                OR = {
+                    continent = continent_outland
+                    continent = continent_draenor
+                }
+            }
+        }
 	}
 	
 	mean_time_to_happen = {
@@ -303,32 +366,40 @@ country_event = {
 	}
 	
 	option = {
-		name = wwu_cultural.7.opt1
+		name = wwu_cultural.7.option.a
 		
 		add_country_modifier = {
-			name = researching_runic_tables
-			duration = 365
+			name = gifted_child
+			duration = 3650
 		}
-		add_adm_power = -30
 	}
 	option = {
-		name = wwu_cultural.7.opt2
+		name = wwu_cultural.7.option.b
 		
+		add_prestige = 20
 	}
 }
 
-# Endorse Renaissance Philosophy
+# Mining Plan
 country_event = {
 	id = wwu_cultural.8
 	title = wwu_cultural.8.title
 	desc = wwu_cultural.8.desc
-	picture = ADVISOR_eventPicture
+	picture = FORGOTTEN_TORCH_eventPicture
 
 	trigger = {
 		advisor = natural_scientist
 		any_owned_province = {
 			trade_goods = gold
 		}
+        NOT = {
+            capital_scope = {
+                OR = {
+                    continent = continent_outland
+                    continent = continent_draenor
+                }
+            }
+        }
 	}
 	
 	mean_time_to_happen = {
@@ -338,24 +409,37 @@ country_event = {
 	option = {
 		name = wwu_cultural.8.opt1
 		
-		random_province = {
+		random_owned_province = {
 			limit = { trade_goods = gold }
-			add_base_production = 3
-			add_base_tax = 2
-			change_culture = culture_tunnel_rat
+            
+            if = {
+                limit = {
+                    NOT = { base_production = 12 }
+                }
+                add_base_production = 3
+            }
+            
+            if = {
+                limit = {
+                    NOT = { base_tax = 12 }
+                }
+                add_base_tax = 1
+            }
+            
+			change_culture = culture_kobold
 		}
 	}
 	option = {
 		name = wwu_cultural.8.opt2
-		
 	}
 }
 
+# Supporting Bards
 country_event = {
 	id = wwu_cultural.9
 	title = wwu_cultural.9.title
 	desc = wwu_cultural.9.desc
-	picture = CULTURE_eventPicture
+	picture = BARNES_eventPicture
 
 	trigger = {
 		NOT = {
@@ -363,6 +447,11 @@ country_event = {
 		}
 		adm_power = 10
 		years_of_income = 0.1
+        NOT = {
+            capital_scope = {
+                continent = continent_outland
+            }
+        }
 	}
 	
 	mean_time_to_happen = {

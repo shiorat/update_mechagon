@@ -1,0 +1,101 @@
+country_decisions = {
+    traverse_portal = {
+        potential = {
+            # Has atleast 2 portals
+            calc_true_if = {
+                amount = 2
+                
+                all_owned_province = {
+                    has_building = wow_portal
+                }
+            }
+        }
+        allow = {
+			any_owned_province = {
+				has_building = wow_portal
+				controlled_by = ROOT
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 1
+				}
+			}
+            custom_trigger_tooltip = {
+                tooltip = RECENTLY_USED_TELEPORT
+                
+                NOT = { has_country_modifier = portal_fatigue }
+            }
+        }
+        effect = {
+            country_event = { id = wwu_teleport_system.1 }
+            
+            if = {
+                limit = {
+                    NOT = { has_estate_privilege = estate_invention_dimensional_ripper }
+                }
+                add_country_modifier = {
+                    name = portal_fatigue
+                    duration = 365
+                    hidden = yes
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    traverse_network = {
+        potential = {
+            tag = P74 # Azjol-Nerub
+            calc_true_if = {
+                amount = 2
+                
+                all_owned_province = {
+                    continent = continent_northrend
+                }
+            }
+        }
+        allow = {
+			any_owned_province = {
+				continent = continent_northrend
+				controlled_by = ROOT
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 1
+				}
+			}
+            custom_trigger_tooltip = {
+                tooltip = RECENTLY_USED_TUNNELS
+                
+                NOT = { has_country_modifier = tunnel_chaos }
+            }
+        }
+        effect = {
+            if = {
+                limit = {
+                    is_at_war = yes
+                }
+                
+                custom_tooltip = TUNNEL_COOLDOWN_DURING_WAR_TT
+                
+                hidden_effect = {
+                    add_country_modifier = {
+                        name = tunnel_chaos
+                        duration = 365
+                        hidden = yes
+                    }
+                }
+            }
+            
+            custom_tooltip = FAKE_AZJ_EVENT_TT
+            
+            hidden_effect = {
+                set_country_flag = teleport_type_tunnel
+                country_event = { id = wwu_teleport_system.1 }
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

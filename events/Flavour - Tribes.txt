@@ -5,12 +5,12 @@ country_event = {
 	id = wwu_tribes.1
 	title = "wwu_tribes.1.title"
 	desc = "wwu_tribes.1.desc"
-	picture = MONGOL_BANNERS_eventPicture	
+	picture = GARROSH_eventPicture	
 
 	is_triggered_only = yes	
 	
 	trigger = {
-		has_reform = warband_reform
+		has_reform = orc_clan_reform
 		is_at_war = no
 		NOT = { had_recent_war = 2 }
 	}
@@ -48,12 +48,12 @@ country_event = {
 	id = wwu_tribes.2
 	title = "wwu_tribes.2.title"
 	desc = "wwu_tribes.2.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = FROTHING_BERSERKER_eventPicture	
 
 	is_triggered_only = yes
 	
 	trigger = {
-		has_reform = warband_reform
+		has_reform = orc_clan_reform
 		war_exhaustion = 2
 	}
 
@@ -81,12 +81,12 @@ country_event = {
 	id = wwu_tribes.3
 	title = "wwu_tribes.3.title"
 	desc = "wwu_tribes.3.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = MAD_BOMBER_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
-		has_reform = warband_reform
+		has_reform = orc_clan_reform
 		is_at_war = yes
 		NOT = { manpower_percentage = 0.9 }
 	}
@@ -115,13 +115,13 @@ country_event = {
 	id = wwu_tribes.4
 	title = "wwu_tribes.4.title"
 	desc = "wwu_tribes.4.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = BROKEN_ISLES_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
 		OR = {
-			has_reform = warband_reform
+			has_reform = orc_clan_reform
 			has_reform = tribal_federation_reform
             has_reform = tribal_despotism_reform
 		}
@@ -176,13 +176,13 @@ country_event = {
 	id = wwu_tribes.5
 	title = "wwu_tribes.5.title"
 	desc = "wwu_tribes.5.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = MAGNTAUR_ALPHA_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
 		OR = {
-			has_reform = warband_reform
+			has_reform = orc_clan_reform
 			has_reform = tribal_federation_reform
             has_reform = tribal_despotism_reform
 		}
@@ -191,7 +191,7 @@ country_event = {
 					NOT = { owned_by = ROOT }
 					owner = {
 						OR = {
-							has_reform = warband_reform
+							has_reform = orc_clan_reform
 							has_reform = tribal_federation_reform
                             has_reform = tribal_despotism_reform
 						}
@@ -215,7 +215,7 @@ country_event = {
 						NOT = { owned_by = ROOT }
 						owner = {
 							OR = {
-								has_reform = warband_reform
+								has_reform = orc_clan_reform
 								has_reform = tribal_federation_reform
                                 has_reform = tribal_despotism_reform
 							}
@@ -228,7 +228,7 @@ country_event = {
 					limit = {
 						owner = {
 							OR = {
-								has_reform = warband_reform
+								has_reform = orc_clan_reform
 								has_reform = tribal_federation_reform
                                 has_reform = tribal_despotism_reform
 							}
@@ -265,20 +265,20 @@ country_event = {
 	id = wwu_tribes.6
 	title = "wwu_tribes.6.title"
 	desc = "wwu_tribes.6.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = THUNDERBLUFF_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
 		OR = {
-            has_reform = warband_reform
+            has_reform = orc_clan_reform
             has_reform = tribal_federation_reform
             has_reform = tribal_despotism_reform
         }
 		any_neighbor_country = {  
 			has_opinion = { who = ROOT value = 0 }
 			OR = {
-                has_reform = warband_reform
+                has_reform = orc_clan_reform
                 has_reform = tribal_federation_reform
                 has_reform = tribal_despotism_reform
             }
@@ -332,20 +332,20 @@ country_event = {
 	id = wwu_tribes.7
 	title = "wwu_tribes.7.title"
 	desc = "wwu_tribes.7.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = EXPLORE_UNGORO_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
 		OR = {
-            has_reform = warband_reform
+            has_reform = orc_clan_reform
             has_reform = tribal_federation_reform
             has_reform = tribal_despotism_reform
         }
 		any_neighbor_country = {  
 			has_opinion = { who = ROOT value = 50 }
 			OR = {
-                has_reform = warband_reform
+                has_reform = orc_clan_reform
                 has_reform = tribal_federation_reform
                 has_reform = tribal_despotism_reform
             }
@@ -401,12 +401,12 @@ country_event = {
 	id = wwu_tribes.8
 	title = "wwu_tribes.8.title"
 	desc = "wwu_tribes.8.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = HORDE_BATTLE_CRY_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
-		has_reform = warband_reform
+		has_reform = orc_clan_reform
 		is_at_war = no
 		has_regency = no
 	}
@@ -447,7 +447,7 @@ country_event = {
 	id = wwu_tribes.9
 	title = "wwu_tribes.9.title"
 	desc = "wwu_tribes.9.desc"
-	picture = MONGOL_BANNERS_eventPicture	
+	picture = HORDE_TRIAL_eventPicture	
 	
 	is_triggered_only = yes	
 
@@ -491,7 +491,7 @@ country_event = {
 	id = wwu_tribes.10
 	title = "wwu_tribes.10.title"
 	desc = "wwu_tribes.10.desc"
-	picture = MONGOL_BANNERS_eventPicture	
+	picture = HORDE_MARCH_eventPicture	
 	
 	is_triggered_only = yes	
 
@@ -522,7 +522,7 @@ country_event = {
 	id = wwu_tribes.11
 	title = "wwu_tribes.11.title"
 	desc = "wwu_tribes.11.desc"
-	picture = MONGOL_BANNERS_eventPicture	
+	picture = RISE_OF_THE_HORDE_eventPicture	
 	
 	is_triggered_only = yes	
 
@@ -553,7 +553,7 @@ country_event = {
 	id = wwu_tribes.12
 	title = "wwu_tribes.12.title"
 	desc = "wwu_tribes.12.desc"
-	picture = MONGOL_BANNERS_eventPicture	
+	picture = GROMMASH_ASSAULT_eventPicture	
 	
 	is_triggered_only = yes	
 
@@ -584,13 +584,13 @@ country_event = {
 	id = wwu_tribes.13
 	title = "wwu_tribes.13.title"
 	desc = "wwu_tribes.13.desc"
-	picture = MONGOL_BANNERS_eventPicture	
+	picture = BLACKWING_CORRUPTOR_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
 		OR = {
-            has_reform = warband_reform
+            has_reform = orc_clan_reform
             has_reform = tribal_federation_reform
             has_reform = tribal_despotism_reform
         }
@@ -623,12 +623,12 @@ country_event = {
 	id = wwu_tribes.14
 	title = "wwu_tribes.14.title"
 	desc = "wwu_tribes.14.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = OLD_HORDE_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
-		has_reform = warband_reform
+		has_reform = orc_clan_reform
 		NOT = { manpower_percentage = 0.5 }
 		is_at_war = no
 	}
@@ -661,7 +661,7 @@ country_event = {
 	id = wwu_tribes.15
 	title = "wwu_tribes.15.title"
 	desc = "wwu_tribes.15.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = REND_BLACKHAND_eventPicture	
 	
 	is_triggered_only = yes	
 
@@ -729,7 +729,7 @@ country_event = {
 	id = wwu_tribes.16
 	title = "wwu_tribes.16.title"
 	desc = "wwu_tribes.16.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = THE_TRUE_WARRIOR_eventPicture	
 	
 	is_triggered_only = yes	
 
@@ -807,13 +807,13 @@ country_event = {
 	id = wwu_tribes.17
 	title = "wwu_tribes.17.title"
 	desc = "wwu_tribes.17.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = BRAWL_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
 		OR = {
-            has_reform = warband_reform
+            has_reform = orc_clan_reform
             has_reform = tribal_federation_reform
             has_reform = tribal_despotism_reform
         }
@@ -830,7 +830,7 @@ country_event = {
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
-				has_reform = warband_reform
+				has_reform = orc_clan_reform
 			}
 			add_horde_unity = -10
 		}
@@ -852,13 +852,13 @@ country_event = {
 	id = wwu_tribes.19
 	title = "wwu_tribes.19.title"
 	desc = "wwu_tribes.19.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = ASSASSINS_BLADE_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
 		OR = {
-            has_reform = warband_reform
+            has_reform = orc_clan_reform
             has_reform = tribal_federation_reform
             has_reform = tribal_despotism_reform
         }
@@ -882,7 +882,7 @@ country_event = {
 		name = "wwu_tribes.19.option.a"
 		ai_chance = { factor = 100 }	
 		add_prestige = -10
-		kill_heir = yes
+		kill_heir = { }
 	}
 }
 
@@ -891,13 +891,13 @@ country_event = {
 	id = wwu_tribes.20
 	title = "wwu_tribes.20.title"
 	desc = "wwu_tribes.20.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = BACKSTAB_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
 		OR = {
-            has_reform = warband_reform
+            has_reform = orc_clan_reform
             has_reform = tribal_federation_reform
             has_reform = tribal_despotism_reform
         }
@@ -928,12 +928,12 @@ country_event = {
 	id = wwu_tribes.21
 	title = "wwu_tribes.21.title"
 	desc = "wwu_tribes.21.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = BARRENS_STABLEHAND_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
-		has_reform = warband_reform
+		has_reform = orc_clan_reform
 		NOT = { army_size_percentage = 0.5 }
 	}
 
@@ -962,12 +962,12 @@ country_event = {
 	id = wwu_tribes.22
 	title = "wwu_tribes.22.title"
 	desc = "wwu_tribes.22.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = COMMANDING_SHOUT_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
-		has_reform = warband_reform
+		has_reform = orc_clan_reform
 		NOT = { army_size_percentage = 0.5 }
 	}
 
@@ -999,12 +999,12 @@ country_event = {
 	id = wwu_tribes.23
 	title = "wwu_tribes.23.title"
 	desc = "wwu_tribes.23.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = COMMANDING_SHOUT_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
-		has_reform = warband_reform
+		has_reform = orc_clan_reform
 		NOT = { army_size_percentage = 0.5 }
 	}
 
@@ -1037,12 +1037,12 @@ country_event = {
 	id = wwu_tribes.24
 	title = "wwu_tribes.24.title"
 	desc = "wwu_tribes.24.desc"
-	picture = HORDE_ON_HORSEBACK_eventPicture	
+	picture = CRUEL_TASKMASTER_eventPicture	
 	
 	is_triggered_only = yes	
 
 	trigger = {
-		has_reform = warband_reform
+		has_reform = orc_clan_reform
 		OR = {
 			legitimacy = 99
 			horde_unity = 99

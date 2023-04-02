@@ -1,0 +1,537 @@
+country_decisions = {
+    # End the Great Zandalar War
+	great_zandalar_war_end = {
+        major = yes
+        
+        potential = {
+			A78 = {
+			has_country_flag = zandalar_great_war}
+			tag = ZUZ
+        }
+        
+		allow = {
+            stability = 0
+            OR = {
+                war_score_against = {
+                    who = A78
+                    value = 75
+                }
+            }
+		}
+        
+		effect = {
+            white_peace = A78
+			A78 = {
+			clr_country_flag = zandalar_great_war
+			set_country_flag = zandalar_great_war_end
+			set_country_flag = zandalar_great_war_loose
+			}
+
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    # Council of Zanchul
+	call_council_of_zanchul = {
+        major = yes
+        
+        potential = {
+			NOT = {has_country_flag = zandalar_great_war_start}
+			has_country_flag = council_of_zanchul_already
+			NOT = { has_country_flag = council_of_zanchul_already_open }
+        }
+        
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = zandalari_decision_council_of_zanchul_a
+				has_country_flag = council_of_zanchul_already
+                
+                NOT = {	
+                    check_variable = {
+                        which = zul_influence
+                        value = 80
+                    }
+                }
+			}
+		}
+        
+		effect = {
+            country_event = { id = wwu_zandalar.16 } # Council of Zanchul
+            
+			custom_tooltip = zandalari_decision_council_of_zanchul_b
+			clr_country_flag = zandalar_great_war
+			set_country_flag = council_of_zanchul_already_open
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    # Reclaim the Amani Empire
+	zandalar_reclaim_amani = {
+        major = yes
+        
+        potential = {
+            tag = A78 # Zandalar
+            
+            # Amani
+			A58 = {
+                has_country_modifier = amani_refugees
+                is_subject_of = A78 # Zandalar
+			}
+        }
+        
+		allow = {
+            # Amani
+			A58 = {
+                is_subject_of = A78 # Zandalar
+                has_country_modifier = amani_refugees
+			}
+			area_zul_aman = {
+			    type = all
+				owned_by = A58 # Amani
+			}
+		}
+        
+		effect = {
+            country_event = { id = wwu_zandalar.34 }
+            
+			add_prestige = 25
+			
+            # Amani
+            A58 = {
+                restore_country_name = yes 
+                remove_country_modifier = amani_refugees
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    # Reclaim the Gurubashi Empire
+	zandalar_reclaim_gurubashi = {
+        major = yes
+        
+        potential = {
+            tag = A78 # Zandalar
+            
+            # Gurubashi
+			A66 = {
+                is_subject_of = A78 # Zandalar
+                has_country_modifier = gurubashi_refugees
+			}
+        }
+        
+		allow = {
+            # Gurubashi
+			A66 = {
+                is_subject_of = A78 # Zandalar
+                has_country_modifier = gurubashi_refugees
+			}
+			area_zul_gurub = {
+			    type = all
+				owned_by = A66 # Gurubashi
+			}
+		}
+        
+		effect = {
+            country_event = { id = wwu_zandalar.35 }
+            
+			add_prestige = 25
+			
+            # Gurubashi
+            A66 = {
+                restore_country_name = yes 
+                remove_country_modifier = gurubashi_refugees
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    # Reclaim the Drakkari Empire
+	zandalar_reclaim_drakkari = {
+        major = yes
+        
+        potential = {
+            # Drakkari
+			A74 = {
+                is_subject_of = A78 # Zandalar
+                has_country_modifier = drakkari_refugees
+			}
+			
+        }
+        
+		allow = {
+            # Drakkari
+			A74 = {
+                is_subject_of = A78 # Zandalar
+                has_country_modifier = drakkari_refugees
+			}
+			area_gundrak_raid = {
+			    type = all
+				owned_by = A74 # Drakkari
+			}
+		}
+        
+		effect = {
+            country_event = { id = wwu_zandalar.36 }
+            
+			add_prestige = 25
+			
+            # Drakkari
+            A74 = {
+                restore_country_name = yes 
+                remove_country_modifier = drakkari_refugees
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+    # Reclaim the Farraki tribe
+	zandalar_reclaim_farraki = {
+        major = yes
+        
+        potential = {
+            # Sandfury
+			A73 = {
+                is_subject_of = A78 # Zandalar
+                has_country_modifier = farraki_refugees
+			}
+			
+        }
+        
+		allow = {
+            # Sandfury
+			A73 = {
+                is_subject_of = A78 # Zandalar
+                has_country_modifier = farraki_refugees
+			}
+			area_zulfarrak = {
+			    type = all
+				owned_by = A73 # Sandfury
+			}
+		}
+        
+		effect = {
+            country_event = { id = wwu_zandalar.37 }
+            
+			add_prestige = 25
+			
+            # Sandfury
+            A73 = {
+                restore_country_name = yes 
+                remove_country_modifier = farraki_refugees
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+    # 
+	zandalar_help_drakkari = {
+        major = yes
+        
+        potential = {
+		has_country_flag = zandalari_troll_drakkari
+        exists = A74
+		NOT = { has_country_flag = zandalari_troll_meeting_end_time }
+		NOT = {
+			            is_variable_equal = {
+                        which = zandalari_troll_drakkari_help
+                        value = 10
+                    }
+		}
+        }
+        
+		allow = {
+
+				custom_trigger_tooltip = {
+				tooltip = zandalari_help_meeting
+		NOT = {
+			            is_variable_equal = {
+                        which = zandalari_troll_drakkari_help
+                        value = 10
+                    }
+		}
+		}
+        exists = A74
+        NOT = { has_country_modifier = zandalari_troll_meeting_diplomat }
+		treasury = 100
+		adm_power = 15
+		dip_power = 15
+		mil_power = 15
+		}
+        
+		effect = {
+		
+		add_treasury = -100
+		add_adm_power = -15
+		add_dip_power = -15
+		add_mil_power = -15
+            add_country_modifier = {
+                name = zandalari_troll_meeting_diplomat
+                duration = 7
+            }
+			
+		A74 = {
+		add_treasury = 200
+		add_adm_power = 40
+		add_dip_power = 40
+		add_mil_power = 40
+		}
+		zandalari_help_drakkari_now = yes
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	zandalar_help_farraki = {
+        major = yes
+        
+        potential = {
+		has_country_flag = zandalari_troll_farraki
+        exists = A73
+		NOT = { has_country_flag = zandalari_troll_meeting_end_time }
+		NOT = {
+			            is_variable_equal = {
+                        which = zandalari_troll_farraki_help
+                        value = 10
+                    }
+		}
+        }
+        
+		allow = {
+
+				custom_trigger_tooltip = {
+				tooltip = zandalari_help_meeting
+		NOT = {
+			            is_variable_equal = {
+                        which = zandalari_troll_farraki_help
+                        value = 10
+                    }
+		}
+		}
+		        exists = A73
+        NOT = { has_country_modifier = zandalari_troll_meeting_diplomat }
+		treasury = 100
+		adm_power = 15
+		dip_power = 15
+		mil_power = 15
+		}
+        
+		effect = {
+		
+		add_treasury = -100
+		add_adm_power = -15
+		add_dip_power = -15
+		add_mil_power = -15
+            add_country_modifier = {
+                name = zandalari_troll_meeting_diplomat
+                duration = 7
+            }
+			
+		A73 = {
+		add_treasury = 200
+		add_adm_power = 40
+		add_dip_power = 40
+		add_mil_power = 40
+		}
+		zandalari_help_farraki_now = yes
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	zandalar_help_gurubashi = {
+        major = yes
+        
+        potential = {
+		has_country_flag = zandalari_troll_gurubashi
+        exists = A66
+		NOT = { has_country_flag = zandalari_troll_meeting_end_time }
+		NOT = {
+			            is_variable_equal = {
+                        which = zandalari_troll_gurubashi_help
+                        value = 10
+                    }
+		}
+        }
+        
+		allow = {
+
+				custom_trigger_tooltip = {
+				tooltip = zandalari_help_meeting
+		NOT = {
+			            is_variable_equal = {
+                        which = zandalari_troll_gurubashi_help
+                        value = 10
+                    }
+		}
+		}
+		        exists = A66
+        NOT = { has_country_modifier = zandalari_troll_meeting_diplomat }
+		treasury = 100
+		adm_power = 15
+		dip_power = 15
+		mil_power = 15
+		}
+        
+		effect = {
+		
+		add_treasury = -100
+		add_adm_power = -15
+		add_dip_power = -15
+		add_mil_power = -15
+            add_country_modifier = {
+                name = zandalari_troll_meeting_diplomat
+                duration = 7
+            }
+			
+		A66 = {
+		add_treasury = 200
+		add_adm_power = 40
+		add_dip_power = 40
+		add_mil_power = 40
+		}
+		zandalari_help_gurubashi_now = yes
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	zandalar_help_amani = {
+        major = yes
+        
+        potential = {
+		has_country_flag = zandalari_troll_amani
+        exists = A58
+		NOT = { has_country_flag = zandalari_troll_meeting_end_time }
+		NOT = {
+			            is_variable_equal = {
+                        which = zandalari_troll_amani_help
+                        value = 10
+                    }
+		}
+        }
+        
+		allow = {
+
+				custom_trigger_tooltip = {
+				tooltip = zandalari_help_meeting
+		NOT = {
+			            is_variable_equal = {
+                        which = zandalari_troll_amani_help
+                        value = 10
+                    }
+		}
+		}
+		        exists = A58
+        NOT = { has_country_modifier = zandalari_troll_meeting_diplomat }
+		treasury = 100
+		adm_power = 15
+		dip_power = 15
+		mil_power = 15
+		}
+        
+		effect = {
+		
+		add_treasury = -100
+		add_adm_power = -15
+		add_dip_power = -15
+		add_mil_power = -15
+            add_country_modifier = {
+                name = zandalari_troll_meeting_diplomat
+                duration = 7
+            }
+			
+		A58 = {
+		add_treasury = 200
+		add_adm_power = 40
+		add_dip_power = 40
+		add_mil_power = 40
+		}
+		zandalari_help_amani_now = yes
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	zandalar_mogu_prepare_to_war = {
+        major = yes
+        
+        potential = {
+		tag = A78
+		has_country_flag = zandalar_war_against_pandaria_preparation
+        }
+        
+		allow = {
+
+				custom_trigger_tooltip = {
+				tooltip = mogu_not_prepare_to_war
+				tag = A78
+		}
+		}
+        
+		effect = {
+		
+            country_event = { id = wwu_zandalar.59 }
+			set_country_flag = mogu_prepare_to_war_already_open
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	zandalar_thunder_king_gift = {
+        
+        potential = {
+		tag = A78
+		has_country_flag = zandalari_leishen_gift
+		has_country_flag = zandalari_no_war
+		NOT = { has_ruler_flag = is_immortal }
+        }
+        
+		allow = {
+					adm_power = 250
+					dip_power = 250
+					mil_power = 250
+		}
+        
+		effect = {
+		custom_tooltip = zandalar_thunder_gift_tool
+        add_adm_power = -250
+        add_dip_power = -250
+        add_mil_power = -250
+            set_ruler_flag = is_immortal
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+    

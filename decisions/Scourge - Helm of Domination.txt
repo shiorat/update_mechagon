@@ -1,0 +1,142 @@
+country_decisions = {
+	# Wear the Helm of Domination
+	helm_of_domination = {
+		potential = {
+            is_year = 605
+            # Exclusions
+			NOT = { has_country_modifier = helm_of_domination }
+			NOT = { has_global_flag = destroyed_helm_flag }
+            
+            # Requisites
+			controls = 1268 # Icecrown Citadel
+			
+			NOT = { has_country_flag = helm_of_domination_flag }
+		}
+		
+		allow = {
+            # Ownership
+			controls = 1268 # Icecrown Citadel
+            
+            # General
+			is_at_war = no
+            
+            # Cost
+            adm_power = 100
+			dip_power = 100
+			mil_power = 100
+		}
+		
+		effect = {
+            # Cost
+			add_adm_power = -100
+			add_dip_power = -100
+            add_mil_power = -100
+            
+            claim_helm_of_domination = yes
+			
+			set_country_flag = helm_of_domination_flag
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1000
+				has_country_modifier = is_evil
+			}
+			modifier = {
+				factor = 1000
+				culture_group = culture_group_scourge
+			}
+			modifier = {
+				factor = 10
+				mil = 6
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					stability = 0
+				}
+			}			
+			modifier = {
+				factor = 0
+				tag = B87
+			}
+			modifier = {
+				factor = 0
+				tag = B92
+			}
+			modifier = {
+				factor = 0
+				tag = P14
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					legitimacy_or_horde_unity = 70
+				}
+			}
+		}
+	}
+
+    # Destroy the Helm of Domination
+	destroy_the_helm = {
+		potential = {
+            is_year = 605
+            # Exclusions
+			NOT = { has_country_modifier = helm_of_domination }
+			NOT = { has_global_flag = destroyed_helm_flag }
+            
+            # Requisites
+			controls = 1268 # Icecrown Citadel
+		}
+		
+		allow = {
+            # Ownership
+			controls = 1268 # Icecrown Citadel
+            
+            # Cost
+            mil_power = 250
+		}
+		
+		effect = {
+            # Cost
+            add_mil_power = -250
+
+			destroy_helm_of_domination = yes
+            expose_shadowlands = yes
+		}		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				adm = 6
+			}
+			modifier = {
+				factor = 10
+				dip = 6
+			}
+			modifier = {
+				factor = 1000
+				tag = B87
+			}
+			modifier = {
+				factor = 1000
+				tag = B92
+			}
+			modifier = {
+				factor = 1000
+				tag = P14
+			}
+			modifier = {
+				factor = 10
+				stability = 3
+			}
+			modifier = {
+				factor = 10
+				legitimacy_or_horde_unity = 100
+			}
+		}
+	}
+}
+			
+			

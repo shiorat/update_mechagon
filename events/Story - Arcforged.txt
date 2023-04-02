@@ -1,0 +1,26 @@
+namespace = wwu_arcforged
+
+#-------------------------------------------
+# Arcforged
+#-------------------------------------------
+# Mechanization
+
+country_event = {
+	id = wwu_arcgorged.1
+	title = wwu_arcgorged.1.title
+	desc = wwu_arcgorged.1.desc
+	picture = ARTHAS_FALLS_eventPicture
+
+    is_triggered_only = yes
+    
+	option = {
+		name = wwu_arcgorged.1.a
+		
+        add_stability = -2
+        
+        2413 = {
+            cede_province = ROOT
+            add_core = ROOT
+        }
+	}
+}

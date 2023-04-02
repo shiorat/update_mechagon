@@ -1,0 +1,222 @@
+namespace = first_war
+
+#------------------------------------
+# The First War
+#------------------------------------
+country_event = {
+	id = first_war.1
+	title = first_war.1.title
+	desc = first_war.1.desc
+	picture = HORDE_BATTLE_CRY_eventPicture
+    
+	trigger = {
+        NOT = { has_global_flag = first_war_claims }
+		current_age = age_orcish_horde
+        tag = U03
+	}
+	
+    mean_time_to_happen = {
+		days = 1
+    }
+    
+    immediate = {
+        hidden_effect = {
+            set_global_flag = first_war_claims 
+        }
+    }
+    
+	option = {
+		name = first_war.1.option.a
+		
+		region_elwynn_forest = {
+			add_permanent_claim = ROOT
+		}
+    }
+}
+
+#------------------------------------
+# Instruments of Gul'dan
+#------------------------------------
+country_event = {
+	id = first_war.2
+	title = first_war.2.title
+	desc = first_war.2.desc
+	picture = HORDE_BATTLE_CRY_eventPicture
+    
+	trigger = {
+        NOT = { has_global_flag = setup_twilight_hammer }
+        NOT = { exists = A43 }
+        
+        tag = U03
+        current_age = age_orcish_horde
+	}
+	
+    immediate = {
+        hidden_effect = {
+            set_global_flag = setup_twilight_hammer
+        }
+    }
+    
+    mean_time_to_happen = {
+		days = 1
+    }
+    
+	option = {
+		name = first_war.2.option.a
+		
+        random_owned_province = {
+            limit = {
+				OR = {
+					region = region_blasted_lands
+					region = region_swamp_of_sorrows
+				}
+            }
+
+            add_core = A43
+            change_culture = culture_twilight_cultist
+            change_religion = twilight_cult
+        }
+    }
+}
+
+#------------------------------------
+# Victory of Orc Clans
+#------------------------------------
+# Fired via the Orcish Horde mission tree
+country_event = {
+	id = first_war.5
+	title = first_war.5.title
+	desc = first_war.5.desc
+	picture = HORDE_BATTLE_CRY_eventPicture
+
+    major = yes
+    is_triggered_only = yes
+	
+    mean_time_to_happen = {
+		days = 1
+    }
+    
+    immediate = {
+        hidden_effect = {
+            set_global_flag = tfw_orc_victory_path
+            set_global_flag = the_second_war
+            
+            991 = {
+                add_core = STW
+            }
+        }
+    }
+    
+    option = {
+		name = first_war.5.option.a
+		
+        add_country_modifier = {
+            name = tfw_orc_victory
+            duration = 3650
+        }
+        
+        # Give the Orcish Horde all of the Stormwind lands
+        custom_tooltip = TAKE_CONTROL_OF_STORMWIND_LANDS
+        
+        hidden_effect = {
+            white_peace = STW
+            
+            STW = {
+                every_owned_province = {
+                    limit = {
+                        OR = {
+                            region = region_redridge_mountains
+                            region = region_elwynn_forest
+                            region = region_deadwind_pass
+                            region = region_duskwood
+                            region = region_westfall
+                            region = region_swamp_of_sorrows
+                        }
+                    }
+                    
+                    cede_province = ROOT
+                    add_core = ROOT
+                }
+                
+                every_subject_country = {
+                    limit = {
+                        OR = {
+                            tag = DKS
+                            tag = RRG
+                            tag = WST
+                            tag = P59
+                        }
+                    }
+                    every_owned_province = {
+                        limit = {
+                            OR = {
+                                region = region_redridge_mountains
+                                region = region_elwynn_forest
+                                region = region_deadwind_pass
+                                region = region_duskwood
+                                region = region_westfall
+                                region = region_swamp_of_sorrows
+                            }
+                        }
+                        
+                        cede_province = ROOT
+                        add_core = ROOT
+                    }
+                }
+            }
+        }
+    }
+}
+
+#------------------------------------
+# Orcish Horde Quelled!
+#------------------------------------
+# Fired via the Stormwind mission tree
+country_event = {
+	id = first_war.6
+	title = first_war.6.title
+	desc = first_war.6.desc
+	picture = HORDE_BATTLE_CRY_eventPicture
+
+    major = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            set_global_flag = tfw_human_victory_path
+            set_global_flag = the_second_war
+        }
+    }
+    
+	option = {
+		name = first_war.6.option.a
+		
+        add_country_modifier = {
+            name = tfw_human_victory
+            duration = 3650
+        }
+        
+        # Give the Stormwind all of the Orcish Horde lands
+        custom_tooltip = TAKE_CONTROL_OF_ORCISH_HORDE_LANDS
+        
+        hidden_effect = {
+            3792 = {
+                add_permanent_claim = ROOT
+            }
+        
+            white_peace = U03
+            
+            U03 = {
+                every_owned_province = {
+                    limit = {
+                        NOT = { continent = continent_draenor }
+                        NOT = { continent = continent_outland }
+                    }
+                    
+                    cede_province = ROOT
+                    add_core = ROOT
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+country_decisions = {
+    initiate_guerilla_warfare = {
+		potential = {
+			is_troll_culture_group = yes
+            NOT = { has_country_modifier = initiate_guerilla_warfare }
+		}
+		
+		allow = {
+			mil_power = 100
+            NOT = { has_country_modifier = initiate_guerilla_warfare }
+		}
+		
+		effect = {
+			add_mil_power = -100
+            add_country_modifier = {
+                name = initiate_guerilla_warfare
+                duration = 3650
+            }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    sacrifice_prisoners = {
+		potential = {
+			is_troll_culture_group = yes
+            religion = hakkari
+            NOT = { has_country_modifier = sacrificed_prisoners }
+            is_at_war = yes
+		}
+		
+		allow = {
+            NOT = { has_country_modifier = sacrificed_prisoners }
+            mil_power = 100
+            is_at_war = yes
+		}
+		
+		effect = {
+            add_mil_power = -100
+
+            add_country_modifier = {
+                name = sacrificed_prisoners
+                duration = 1825
+            }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+	sacrifice_loa = {
+		potential = {
+		NOT = { tag = A78 }
+			has_any_loa = yes
+            NOT = { has_ruler_flag = sacrificed_loa }
+		}
+		allow = {
+			has_any_loa = yes
+			stability = 0
+		}
+		effect = {
+            hidden_effect = {
+                set_ruler_flag = sacrificed_loa
+            }
+            
+			gain_loa_effect = yes
+            kill_loa = yes
+            remove_loa_influence = yes
+            
+            add_stability = -1
+            
+            add_country_modifier = {
+                name = is_evil
+                duration = -1
+            }
+            
+            every_known_country = {
+                limit = {
+                    OR = {
+                        religion = voodoo
+                        religion = hakkari
+                    }
+                }
+                
+                add_opinion = {
+                    who = ROOT
+                    modifier = sacrificed_loa
+                }
+            }
+		}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

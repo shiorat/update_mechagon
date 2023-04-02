@@ -10,9 +10,7 @@ country_event = {
 	id = court_and_country_events.1
 	title = "court_and_country_events.1.t"
 	desc = "court_and_country_events.1.d"
-	picture = BAD_WITH_MONARCH_eventPicture
-	
-	major = yes
+	picture = BETRAYAL_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -44,12 +42,12 @@ country_event = {
 	}
 }
 
-# Refusal of Local Court to Agree to Ordonances and Taxes
+# Refusal of Local Court to Agree to Ordinances and Taxes
 country_event = {
 	id = court_and_country_events.2
 	title = "court_and_country_events.2.t"
 	desc = "court_and_country_events.2.d"
-	picture = BAD_WITH_MONARCH_eventPicture
+	picture = DEFIAS_BANDIT_eventPicture
 
 	is_triggered_only = yes
 	
@@ -93,7 +91,7 @@ country_event = {
 		add_absolutism = 5
 		event_target:local_court_location = {
 			spawn_rebels = {
-				type = particularist_rebels
+				type = anti_tax_rebels
 				size = 1.5
 			}
 		}
@@ -131,7 +129,7 @@ country_event = {
 	id = court_and_country_events.3
 	title = "court_and_country_events.3.t"
 	desc = "court_and_country_events.3.d"
-	picture = BORDER_TENSION_eventPicture
+	picture = DEMOLISHER_eventPicture
 
 
 	is_triggered_only = yes
@@ -320,7 +318,7 @@ country_event = {
 	id = court_and_country_events.4
 	title = "court_and_country_events.4.t"
 	desc = "court_and_country_events.4.d"
-	picture = STREET_SPEECH_eventPicture
+	picture = EDWIN_VANCLEEF_eventPicture
 
 
 	is_triggered_only = yes
@@ -332,7 +330,6 @@ country_event = {
 			OR = { #if none of these then city's aren't strong enough to object
 				development = 10
 				province_has_center_of_trade_of_level = 1
-				has_estate = estate_traders
 			}
 		}
 		NOT = {
@@ -354,7 +351,6 @@ country_event = {
 					OR = {
 						development = 10
 						province_has_center_of_trade_of_level = 1
-						has_estate = estate_traders
 					}
 				}
 				save_event_target_as = city_league_demand_rights_province
@@ -366,7 +362,6 @@ country_event = {
 					OR = {
 						development = 15
 						province_has_center_of_trade_of_level = 2
-						has_estate = estate_traders
 					}
 				}
 				save_event_target_as = city_league_demand_rights_province
@@ -480,7 +475,7 @@ country_event = {
 		event_target:city_league_demand_rights_province = {
 			set_province_flag = cnc_rights_demanded #Rights will only be demanded once by one Province
 			spawn_rebels = {
-				type = particularist_rebels
+				type = anti_tax_rebels
 				size = 2
 				win = yes
 			}
@@ -509,7 +504,7 @@ country_event = {
 	id = court_and_country_events.5
 	title = "court_and_country_events.5.t"
 	desc = "court_and_country_events.5.d"
-	picture = SIEGE_eventPicture
+	picture = EYE_FOR_AN_EYE_eventPicture
 
 
 	is_triggered_only = yes
@@ -558,10 +553,6 @@ country_event = {
 						}
 					}
 					OR = {
-						AND = {
-							owner = { has_estate = estate_nobility }
-							has_estate = estate_nobility
-						}
 						has_province_modifier = domain_of_spouses_family
 						has_province_modifier = angered_nobles
 					}
@@ -664,7 +655,7 @@ country_event = {
 	id = court_and_country_events.6
 	title = "court_and_country_events.6.t"
 	desc = "court_and_country_events.6.d"
-	picture = CONQUEST_eventPicture
+	picture = IRONFORGE_RIFLEMAN_eventPicture
 
 
 	is_triggered_only = yes
@@ -715,7 +706,7 @@ country_event = {
 	id = court_and_country_events.7
 	title = "court_and_country_events.7.t"
 	desc = "court_and_country_events.7.d"
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = LESSER_HEAL_eventPicture
 
 
 	is_triggered_only = yes
@@ -766,12 +757,10 @@ country_event = {
 	id = court_and_country_events.100
 	title = "court_and_country_events.100.t"
 	desc = "court_and_country_events.100.d"
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = STELLAR_DRIFT_eventPicture
 
 
 	is_triggered_only = yes
-	
-	major = yes
 	
 	option = {
 		name = "court_and_country_events.100.a"
