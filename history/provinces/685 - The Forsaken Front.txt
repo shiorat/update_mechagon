@@ -4,44 +4,25 @@ is_city = yes
 owner = A12
 controller = A12
 add_core = A12
+add_core = F52
 
 base_tax = 1
 base_production = 1
 base_manpower = 2
 
 culture = culture_gilnean
-religion = religion_church_of_the_light
+religion = holy_light
 
+hre = no
 trade_goods = grain
-hre = no 
-
-
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A12
-controller = A12
-add_core = A12
-
-base_tax = 1
-base_production = 1
-base_manpower = 2
-
-culture = culture_gilnean
-religion = religion_church_of_the_light
-
-trade_goods = grain
-hre = no 
-
-}
-617.1.1 = {
-	owner = A08
-	controller = A08
+ 
+# The Third War
+617.1.1 = { 
+    owner = A08
 	add_core = A08
-	remove_core = A12
-	add_core = F52
+    add_core = F52
+    
+	controller = P52
 }
 
 # The Frozen Throne
@@ -49,6 +30,7 @@ hre = no
 	owner = A25
 	controller = A25
 	add_core = A25
+	add_core = F52
     remove_core = A08
 }
 
@@ -57,6 +39,7 @@ hre = no
 	owner = F55
 	controller = F55
 	add_core = F55
+	add_core = F52
 	remove_core = A25
 	culture = culture_lordaeron
 }

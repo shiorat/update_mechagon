@@ -6,13 +6,14 @@ controller = V01
 add_core = V01
 
 base_tax = 4
-base_production = 4
-base_manpower = 4
+base_production = 3
+base_manpower = 3
 
-culture = culture_red
-religion = religion_sect_of_dragons
+culture = culture_red_dragonflight
+religion = dragon_aspects
 
-trade_goods = flying_mounts
 hre = no
+trade_goods = flying_mounts
+
 
 

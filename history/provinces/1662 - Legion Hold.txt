@@ -1,44 +1,34 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = A34
-controller = A34
-add_core = A34
+culture = culture_orc
+religion = shamanism
 
-base_tax = 5
-base_production = 5
-base_manpower = 5
-
-culture = culture_shadowmoon
-religion = religion_ancestral
-
-trade_goods = workshops
 hre = no
+trade_goods = unknown
+
+600.1.1 = {
+    is_city = yes
+
+    owner = A34
+    controller = A34
+    add_core = A34
+
+    base_tax = 5
+    base_production = 5
+    base_manpower = 5
+
+    culture = culture_orc
+    religion = shamanism
 
 
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A34
-controller = A34
-add_core = A34
-
-base_tax = 5
-base_production = 5
-base_manpower = 5
-
-culture = culture_shadowmoon
-religion = religion_ancestral
-
-trade_goods = workshops
-hre = no
-
-}
-
-592.1.1 = {
-    religion = religion_fel
+    trade_goods = workshops
 }
 
 # Fel Horde
@@ -53,10 +43,8 @@ hre = no
 # The Burning Legion
 622.1.1 = {
 	remove_core = B89
-
-	
-owner = B92
-add_core = B92
-controller = B92
+    owner = B92
+    add_core = B92
+    controller = B92
 }
 

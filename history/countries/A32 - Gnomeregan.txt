@@ -1,42 +1,40 @@
-discover_home_continent = yes
+
 # Gnomeregan
-government 			= republic
-add_government_reform = tinker_republic_reform
+government 			    = republic
+add_government_reform   = tinker_republic_reform
 mercantilism 		= 10
 technology_group 	= tech_gnome
-religion			= religion_tech
+religion			= technomancy
 primary_culture 	= culture_gnome
 capital 			= 3036
 religious_school = administrative_philosophy
 
 historical_friend = STW
 historical_friend = A29
-546.1.1 = { 
-	monarch = { 
-		name = "Sigga" 
-		dynasty = "Bellsprocket" 
-		adm = 3
-		dip = 4
-		mil = 3
-		female = yes
-	} 
-} 
 
-592.1.1 = {
+546.1.1 = {
 	monarch = { 
 		name = "Gelbin" 
 		dynasty = "Mekkatorque" 
 		adm = 6
 		dip = 4
 		mil = 3
+        birth_date = 530.1.1
  	} 
+    
+    set_ruler_flag = ruler_portrait_gelbin_mekkatorque
 }
 
-598.1.1 = {
-add_country_modifier = {
-    name = alliance_member
-    duration = -1
+591.1.1 = {
+    remove_country_modifier = member_of_alliance
 }
+
+592.1.1 = {
+    # Faction - Alliance
+    add_country_modifier = {
+        name = member_of_alliance
+        duration = -1
+	}
 }
 
 631.1.1 = {

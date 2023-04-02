@@ -1,0 +1,29 @@
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
+technology_group = tech_saberon
+primary_culture = culture_saberon
+religion = shamanism
+capital = 3789
+
+540.1.1 = {
+	monarch = {
+		name = "Aralas"
+		dynasty = "Blackfang"
+		birth_date = 513.1.1
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Laskee"
+		dynasty = "Blackfang"
+		birth_date = 557.1.1
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}

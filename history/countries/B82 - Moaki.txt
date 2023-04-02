@@ -1,30 +1,30 @@
-discover_home_continent = yes
-# Moaki
-government 			= native
-add_government_reform = native_tribe_reform
+government = tribal
+add_government_reform = tribal_federation_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 mercantilism 		= 10
 technology_group 	= tech_tuskarr
-religion			= religion_primitive
-primary_culture 	= culture_moa_ki
+religion			= primitive
+primary_culture 	= culture_tuskarr
 capital 			= 2037
 
-546.1.1 = { 
-monarch = { 
-     name = "Mumik" 
-     dynasty = "Moa'ki" 
-		adm = 3
+540.1.1 = {
+	monarch = {
+		name = "Tem'rak"
+		dynasty = "Fishtooth"
+		birth_date = 514.1.1
+		adm = 1
 		dip = 3
-		mil = 2
- 	} 
- } 
-
-592.1.1 = { 
-monarch = { 
-     name = "Ko'nani" 
-     dynasty = "Moa'ki" 
+		mil = 1
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Oreulu"
+		dynasty = "Fishtooth"
+		birth_date = 510.1.1
 		adm = 3
-		dip = 3
-		mil = 2 
- 	} 
- } 
-
+		dip = 4
+		mil = 5
+	}
+}

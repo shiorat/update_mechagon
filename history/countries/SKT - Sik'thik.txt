@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = mantid_swarm_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
+mercantilism 		= 10
+technology_group 	= tech_mantid
+religion			= yshaarj
+primary_culture 	= culture_mantid
+capital 			= 1866
+
+546.1.1 = { 
+	monarch = { 
+		name = "Ner" 
+		dynasty = "Onok" 
+		adm = 3
+		dip = 3
+		mil = 3
+        female = no
+	} 
+}
+

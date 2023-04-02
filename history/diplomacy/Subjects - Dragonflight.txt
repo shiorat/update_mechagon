@@ -1,0 +1,8 @@
+# Black Dragonflight over Twilight Dragonflight, in the Shattering onwards
+dependency = {
+	subject_type = "personal_union"
+	first = A99
+	second = B06
+	start_date = 631.1.1
+	end_date = 999.1.1
+}

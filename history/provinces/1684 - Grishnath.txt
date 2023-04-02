@@ -1,52 +1,43 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = A41
-controller = A41
-add_core = A41
+culture = culture_orc
+religion = shamanism
 
-base_tax = 4
-base_production = 4
-base_manpower = 4
-
-culture = culture_blackrock
-religion = religion_ancestral
-
-trade_goods = arcane
 hre = no
+trade_goods = unknown
+
+600.1.1 = {
+    is_city = yes
+
+    owner = A41
+    controller = A41
+    add_core = A41
+
+    base_tax = 4
+    base_production = 4
+    base_manpower = 4
+
+    culture = culture_orc
+    religion = fel
 
 
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A41
-controller = A41
-add_core = A41
-
-base_tax = 4
-base_production = 4
-base_manpower = 4
-
-culture = culture_blackrock
-religion = religion_ancestral
-
-trade_goods = arcane
-hre = no
-
-}
-592.1.1 = {
-religion = religion_fel
+    trade_goods = arcane
 }
 
 #Outland
 601.1.1 = {
-owner = F79
-controller = F79
-add_core = F79
-remove_core = A41
-religion = religion_terokk
-culture = culture_sethekk
+    owner = F79
+    controller = F79
+    add_core = F79
+    remove_core = A41
+    religion = shadow
+    culture = culture_fallen_arrakoa
 }
 

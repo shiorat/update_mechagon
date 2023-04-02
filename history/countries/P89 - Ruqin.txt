@@ -1,34 +1,23 @@
-discover_home_continent = yes
-# Ruqin Tribe
-government 			= tribal
-add_government_reform = warband_reform
+government = tribal
+add_government_reform = yaungol_tribe_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
 technology_group 	= tech_yaungol
-religion			= religion_fire
-primary_culture 	= culture_ruqin
+religion			= ordos
+primary_culture 	= culture_yaungol
 capital 			= 2037
 
-546.1.1 = { 
-monarch = { 
-     name = "Takmol" 
-     dynasty = "Ruqin" 
+500.1.1 = { 
+    monarch = { 
+        name = "Chatang" 
+        dynasty = "Ruqin" 
+        birth_date = 494.1.1
 		adm = 3
-		dip = 3
-		mil = 3
+		dip = 4
+		mil = 4
  	} 
- } 
-
-592.1.1 = { 
-monarch = { 
-     name = "Yaknor" 
-     dynasty = "Ruqin" 
-		adm = 3
-		dip = 3
-		mil = 3
- 	} 
- } 
+} 
 
 
-
- 
 

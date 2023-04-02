@@ -1,3 +1,35 @@
+has_changeable_base_form = {
+    # VAWSER: blocked for these reforms since they shouldn't be able to remove their base form.
+    NOT = { has_reform = alliance_reform }
+    NOT = { has_reform = horde_reform }
+    NOT = { has_reform = old_horde_reform }
+    NOT = { has_reform = gorian_horde_reform }
+    NOT = { has_reform = scourge_reform }
+    NOT = { has_reform = scourge_domain_reform }
+    NOT = { has_reform = primal_dominion_reform }
+    NOT = { has_reform = naga_domain_reform }
+    NOT = { has_reform = demonic_order_reform }
+    NOT = { has_reform = burning_legion_reform }
+    NOT = { has_reform = elemental_cult_reform }
+    NOT = { has_reform = cult_of_hakkar_reform }
+    NOT = { has_reform = dragonflight_brood_reform }
+    NOT = { has_reform = titan_facility_reform }
+    NOT = { has_reform = aqir_kingdom_reform }
+    NOT = { has_reform = nerubian_kingdom_reform }
+    NOT = { has_reform = mantid_kingdom_reform }
+    NOT = { has_reform = naga_empire_reform }
+    NOT = { has_reform = blood_matriarchy_reform }
+    NOT = { has_reform = junkyard_reform }
+    NOT = { has_reform = mantid_swarm_reform }
+    NOT = { has_reform = centaur_khanate_reform }
+    NOT = { has_reform = worgen_pack_reform }
+    NOT = { has_reform = satyr_sect_reform }
+    NOT = { has_reform = giant_tribe_reform }
+    NOT = { has_reform = saurok_pod_reform }
+    NOT = { has_reform = gnoll_horde_reform }
+}
+
+
 has_trader_reform = {
 	OR = {
 		has_reform = mercantile_republic_reform
@@ -24,7 +56,7 @@ can_be_hereditary = {
 
 #Change can_be_hereditary and set_correct_dynasty values accordingly whenever you change those
 has_wrong_dynasty = {
-	has_reform = wwu_hereditary_rule_reform
+	# has_reform = wwu_hereditary_rule_reform
 	OR = {
 		AND = {
 			tag = STW
@@ -60,3 +92,47 @@ has_wrong_dynasty = {
 		}
 	}
 }
+
+# Used to block the generic reforms for those with a unique set
+is_normal_monarchy = {
+    always = yes
+}
+
+is_normal_republic = {
+    NOT = { has_reform = pirate_republic_reform }
+}
+
+is_normal_theocracy = {
+    always = yes
+}
+
+is_normal_tribe = {
+    always = yes
+}
+
+# Used to define the pirate government
+is_pirate_government = {
+    has_reform = pirate_republic_reform
+}
+
+is_nomad_government = {
+    is_nomad = yes
+}
+
+is_orc_tribe = {
+    culture_group = culture_group_orc
+}
+
+has_unique_government_switch_reform = {
+    OR = {
+        has_reform = troll_kingdom_reform
+    }
+}
+
+is_native_government = {
+    OR = {
+        culture_group = culture_group_tauren
+        culture_group = culture_group_centaur
+    }
+}
+

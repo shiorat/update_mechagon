@@ -1,0 +1,23 @@
+is_city = yes
+owner = BOM
+controller = BOM
+add_core = BOM
+
+base_tax = 6
+base_production = 6
+base_manpower = 5
+
+culture = culture_saberon
+religion = shamanism
+
+hre = no
+trade_goods = fur
+
+# Outlandification
+600.1.1 = {
+    is_city = no
+    owner = ---
+    controller = ---
+    remove_core = BOM
+}
+

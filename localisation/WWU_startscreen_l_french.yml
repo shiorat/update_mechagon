@@ -1,0 +1,9 @@
+﻿l_french:
+ LEDGER_HISTORY: "Historique"
+ LEDGER_MECHANICS: "Mécanique"
+ string_screen_title: "[Root.GetName], [GetYear]"
+ string_start_tag_generic: "Certains diraient que le [Root.GovernmentName] de §Y[Root.GetName]§! est un pays avec un passé insignifiant. Bien que cela soit clairement plus jaloux que la vérité, notre passé n'est pas aussi important que l'avenir glorieux en réserve pour notre peuple."
+ string_start_mechanics: ""
+ string_screen_title_plural: "Le [Root.GetAdjective] [Root.GovernmentName], [GetYear]"
+ string_start_title_stormwind: "Royaume de Stormwind"
+ string_start_stormwind: "Royaume de Stormwind"

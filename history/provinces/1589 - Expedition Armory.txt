@@ -1,49 +1,42 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = A40
-controller = A40
-add_core = A40
+culture = culture_orc
+religion = shamanism
 
-base_tax = 2
-base_production = 2
-base_manpower = 2
-
-culture = culture_bleeding_hollow 
-religion = religion_ancestral
-
-trade_goods = army_supplies
 hre = no
+trade_goods = unknown
+
+600.1.1 = {
+    is_city = yes
+
+    owner = SOL
+    controller = SOL
+    add_core = SOL
+
+    base_tax = 2
+    base_production = 3
+    base_manpower = 3
+
+    culture = culture_dalaran 
+    religion = holy_light
 
 
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A40
-controller = A40
-add_core = A40
-
-base_tax = 2
-base_production = 2
-base_manpower = 2
-
-culture = culture_bleeding_hollow 
-religion = religion_ancestral
-
-trade_goods = army_supplies
-hre = no
-
-}
-592.1.1 = {
-religion = religion_fel
+    trade_goods = army_supplies
 }
 
 #Outland
-601.1.1 = {
-	add_core = F14
-	culture = culture_ghost
-	religion = religion_fel
+605.1.1 = {
+    owner = UNY
+    controller = UNY
+	add_core = UNY
+    
+	culture = culture_undead_human
 }
 

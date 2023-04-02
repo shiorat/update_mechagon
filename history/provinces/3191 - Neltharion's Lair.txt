@@ -3,12 +3,13 @@ owner = I05
 controller = I05
 add_core = I05
 
-base_tax = 6
-base_production = 5
-base_manpower = 4
+base_tax = 3
+base_production = 3
+base_manpower = 3
 
-culture = culture_understone
-religion = religion_earth
+culture = culture_drogbar
+religion = earth
 
-trade_goods = artifacts
 hre = no
+trade_goods = artifacts
+

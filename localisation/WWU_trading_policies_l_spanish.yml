@@ -1,0 +1,11 @@
+﻿l_spanish:
+ maximize_profit: "Maximizar el beneficio"
+ maximize_profit_desc: "Tu mercader trabajará incansablemente para maximizar las ganancias en este Nodo."
+ hostile_trading: "Comercio hostil"
+ hostile_trading_desc: "Vuestro Mercante recogerá inteligencia de países activos en el mismo Nodo."
+ improve_inland_routes: "Mejorar las rutas interiores"
+ improve_inland_routes_desc: "Su mercader reunirá conocimiento del terreno en este nodo que beneficiará a sus ejércitos."
+ establish_communities: "Establecer comunidades"
+ establish_communities_desc: "Su mercader se esforzará por mejorar las relaciones con otros países activos en el Nodo."
+ propagate_religion: "Propagar la religión"
+ propagate_religion_desc: "Vuestro piadoso Mercante trabajará para difundir la Única Verdadera Fe en este Nodo."

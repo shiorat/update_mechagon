@@ -1,34 +1,37 @@
-discover_home_continent = yes
-# Gnarlpine
-government 			= native
-add_government_reform = native_tribe_reform
+government = tribal
+add_government_reform = tribal_federation_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 mercantilism 		= 10
 technology_group 	= tech_furbolg
-religion			= religion_ancestral
-primary_culture 	= culture_gnarlpine
+religion			= shamanism
+primary_culture 	= culture_furbolg
 capital 			= 1071
 
-546.1.1 = { 
-monarch = { 
-     name = "Fericotias" 
-     dynasty = "Gnarlpine" 
-		adm = 3
-		dip = 3
+540.1.1 = {
+	monarch = {
+		name = "Wengram"
+		dynasty = "Nettlepaw"
+		birth_date = 493.1.1
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Grumkro"
+		dynasty = "Nettlepaw"
+		birth_date = 552.1.1
+		adm = 1
+		dip = 2
 		mil = 2
- 	} 
- } 
-
-600.1.1 = { 
-monarch = { 
-     name = "Ursal" 
-      dynasty = "Gnarlpine" 
-		adm = 3
-		dip = 3
-		mil = 3 
- 	}
+	}
 }
 
+
 622.1.1 = {
-religion = religion_fel
+    religion = fel
+	primary_culture = culture_corrupted_furbolg
 }
 

@@ -1,0 +1,1116 @@
+#--------------------------------------
+# Name
+#--------------------------------------
+wwu_kul_tiras_column_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+    
+	potential = {
+		tag = A14
+	}
+    
+	has_country_shield = yes
+
+    wwu_question_of_faith = {
+        icon = mission_titan_spirits
+        position = 1
+
+        required_missions = { }
+
+        trigger = {
+            NOT = { religious_unity = 0.45}
+            NOT = { stability = 0 }
+
+        }
+            effect = {
+                A14 = {
+                    country_event = { id = wwu_kul_tiras.200 days = 1}
+                }
+            }
+        }
+
+	
+	wwu_gilnean_diplomacy = {
+		icon = mission_titan_spirits
+        position = 5
+        
+		required_missions = { wwu_kul_tiras_security }
+        
+		trigger = {
+            OR = {
+                NOT = { exists = A12 } # Gilneas
+                has_opinion = {
+                    who = A12 # Gilneas
+                    value = 100
+                }
+            }
+		}
+        
+		effect = {
+			if = {
+                limit = {
+                    exists = A12
+                }
+                
+                create_alliance = A12
+                add_historical_friend = A12 # Gilneas
+                
+                # Gilneas
+                A12 = {
+                    add_historical_friend = ROOT
+                }
+            }
+            else = {
+                add_mil_power = 100
+            }
+		}
+	}
+    
+    wwu_stromgarde_diplomacy = {
+		icon = mission_titan_spirits
+        position = 6
+        
+		required_missions = { wwu_gilnean_diplomacy }
+        
+		trigger = {
+            OR = {
+                NOT = { exists = A16 } # Stromgarde
+                has_opinion = {
+                    who = A16 # Stromgarde
+                    value = 100
+                }
+            }
+		}
+        
+		effect = {
+			if = {
+                limit = {
+                    exists = A16
+                }
+                
+                create_alliance = A16
+                add_historical_friend = A16 # Stromgarde
+                
+                # Stromgarde
+                A16 = {
+                    add_historical_friend = ROOT
+                }
+            }
+            else = {
+                add_mil_power = 100
+            }
+		}
+	}
+    
+    wwu_fate_of_tol_barad = {
+		icon = mission_titan_spirits
+        position = 7
+        
+		required_missions = { wwu_stromgarde_diplomacy }
+        
+		trigger = {
+            OR = {
+                NOT = { exists = A16 } # Stromgarde
+                NOT = { exists = A12 } # Gilneas
+                
+                has_opinion = {
+                    who = A16 # Stromgarde
+                    value = 150
+                }
+                has_opinion = {
+                    who = A12 # Gilneas
+                    value = 150
+                }
+            }
+		}
+        
+		effect = {
+            hidden_effect = {
+                # Baradin Hold
+                2010 = {
+                    owner = {
+                        save_event_target_as = tol_barad_owner
+                    }
+                }
+            }
+            
+            if = {
+                limit = {
+                    event_target:tol_barad_owner = {
+                        OR = {
+                            tag = ROOT
+                            tag = A16 # Stromgarde
+                            tag = A12 # Gilneas
+                        }
+                    }
+                }
+                event_target:tol_barad_owner = {
+                    country_event = { id = wwu_kul_tiras.100 days = 3 }
+                }
+            }
+            else = {
+                country_event = { id = wwu_kul_tiras.101 days = 3 }
+            }
+		}
+	}
+    
+    wwu_gilnean_interest = {
+		icon = mission_titan_spirits
+        position = 8
+        
+		required_missions = { wwu_fate_of_tol_barad }
+        
+		trigger = {
+            OR = {
+                is_rival = A12 # Gilneas
+                has_opinion = {
+                    who = A12 # Gilneas
+                    value = 175
+                }
+            }
+		}
+        
+		effect = {
+            # Gilneas
+            A12 = {
+                country_event = { id = wwu_kul_tiras.103 days = 3 }
+            }
+		}
+	}
+    
+    wwu_restoration_of_old_ties = {
+		icon = mission_titan_spirits
+        position = 9
+        
+		required_missions = { wwu_gilnean_interest }
+        
+		trigger = {
+            custom_trigger_tooltip = {
+                tooltip = KUL_TIRAN_PRETENDER_TT
+                has_global_flag = kul_tiras_pretenders
+            }
+		}
+        
+		effect = {
+            if = {
+                limit = {
+                    # Gilneas
+                    A12 = {
+                        dynasty = ROOT
+                    }
+                }
+                
+                A12 = {
+                    country_event = { id = wwu_kul_tiras.104 days = 3 }
+                }
+            }
+            else = {
+                add_casus_belli = {
+                    target = A12 # Gilneas
+                    type = cb_restore_personal_union_mission
+                }
+            }
+		}
+	}
+    
+    wwu_tirasian_union = {
+		icon = mission_titan_spirits
+        position = 10
+        
+		required_missions = { wwu_restoration_of_old_ties }
+        
+		trigger = {
+            A12 = {
+                is_subject_of = ROOT
+                is_subject_of_type = personal_union
+            }
+		}
+        
+		effect = {
+            add_prestige = 100
+            add_legitimacy = 100
+            
+            add_opinion = {
+                who = A12
+                modifier = shared_dynasties
+            }
+            A12 = {
+                add_opinion = {
+                    who = ROOT
+                    modifier = shared_dynasties
+                }
+            }
+		}
+	}
+}
+
+wwu_kul_tiras_column_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+    
+	potential = {
+		tag = A14
+	}
+    
+	has_country_shield = yes
+	
+	wwu_standing_army_of_kul_tiras = {
+		icon = mission_titan_spirits
+        position = 1
+        
+		required_missions = { }
+        
+		trigger = {
+            army_size_percentage = 1.0
+		}
+        
+		effect = {
+			add_mil_power = 100
+            
+            area_brennadam = {
+                add_permanent_claim = ROOT
+            }
+            area_sagehold = {
+                add_permanent_claim = ROOT
+            }
+        }
+	}
+    
+    wwu_problems_of_stormsong_valley = {
+		icon = mission_titan_spirits
+        position = 2
+        
+		required_missions = { wwu_standing_army_of_kul_tiras }
+        
+		trigger = {
+            area_brennadam = {
+                type = all
+                
+                owned_by = ROOT
+            }
+            area_sagehold = {
+                type = all
+                
+                owned_by = ROOT
+            }
+		}
+		provinces_to_highlight = {
+            OR = {
+                area = area_brennadam
+                area = area_sagehold
+            }
+			NOT = { owned_by = ROOT }
+		}
+        
+		effect = {
+            add_adm_power = 100
+            
+			if = {
+                limit = {
+                    exists = FRE # Freehold
+                }
+                
+                # Freehold
+                FRE = {
+                    every_owned_province = {
+                        limit = {
+                            region = region_kul_tiras
+                        }
+                        
+                        add_permanent_claim = ROOT
+                    }
+                }
+            }
+        }
+	}
+    
+    wwu_deal_with_the_freehold = {
+		icon = mission_titan_spirits
+        position = 3
+        
+		required_missions = { wwu_problems_of_stormsong_valley }
+        
+		trigger = {
+            OR = {
+                NOT = { exists = FRE } # Freehold
+                FRE = {
+                    is_subject_of = ROOT
+                }
+            }
+		}
+		provinces_to_highlight = {
+            owned_by = FRE
+			NOT = { owned_by = ROOT }
+		}
+        
+		effect = {
+            if = {
+                limit = {
+                    FRE = {
+                        is_subject_of = ROOT
+                    }
+                }
+                
+                create_subject = {
+                    subject_type = march
+                    subject = FRE
+                }
+                
+                add_opinion = {
+                    who = FRE
+                    modifier = friendly_freehold
+                }
+                
+                add_country_modifier = {
+                    name = freehold_ports
+                    duration = 9125
+                }
+                
+                FRE = {
+                    define_ruler = {
+                        name = "Flynn"
+                        dynasty = "Fairwind"
+                        dip = 4
+                    }
+                    
+                    add_opinion = {
+                        who = ROOT
+                        modifier = friendly_freehold
+                    }
+                }
+            }
+            else = {
+                every_owned_province = {
+                    limit = {
+                        is_core = FRE
+                    }
+                    
+                    add_core = ROOT
+                }
+            
+                add_stability = 1
+                add_years_of_income = 3
+                
+                add_country_modifier = {
+                    name = domination_of_freehold
+                    duration = 9125
+                }
+            }
+        }
+	}
+    
+    wwu_kul_tiras_security = {
+		icon = mission_titan_spirits
+        position = 4
+        
+		required_missions = { wwu_deal_with_the_freehold }
+        
+		trigger = {
+            region_kul_tiras = {
+                type = all
+                owned_by = ROOT
+            }
+		}
+		provinces_to_highlight = {
+            region = region_kul_tiras
+			NOT = { owned_by = ROOT }
+		}
+        
+		effect = {
+            add_stability = 1
+            change_government_reform_progress = 50
+            
+            add_country_modifier = {
+                name = kul_tiras_security
+                duration = 9125
+            }
+            
+            region_tol_barad = {
+                limit = {
+                    has_port = yes
+                }
+                
+                add_claim = ROOT
+            }
+            
+            # Balor
+            4111 = {
+                add_permanent_claim = ROOT
+            }
+            
+            # Crestfall
+            4107 = {
+                add_permanent_claim = ROOT
+            }
+            
+            # Menethil Harbor
+            1055 = {
+                add_permanent_claim = ROOT
+            }
+            
+            # Southshore
+            991 = {
+                add_permanent_claim = ROOT
+            }
+            
+            # Faldir's Cove
+            506 = {
+                add_permanent_claim = ROOT
+            }
+        }
+	}
+    
+    wwu_continental_alliance = {
+		icon = mission_titan_spirits
+        position = 5
+        
+		required_missions = { wwu_kul_tiras_security }
+        
+		trigger = {
+            OR = {
+                alliance_with = A08 # Lordaeron
+                alliance_with = A12 # Gilneas
+                alliance_with = A16 # Stromgarde
+                alliance_with = A17 # Alterace
+            }
+		}
+        
+		effect = {
+            add_prestige = 10
+            
+            # Lordaeron
+            if = {
+                limit = {
+                    alliance_with = A08 
+                }
+                
+                add_opinion = {
+                    who = A08 
+                    modifier = continental_alliance
+                }
+                
+                A08 = {
+                    add_opinion = {
+                        who = ROOT
+                        modifier = continental_alliance
+                    }
+                }
+            }
+            
+            # Gilneas
+            if = {
+                limit = {
+                    alliance_with = A12 
+                }
+                
+                add_opinion = {
+                    who = A12 
+                    modifier = continental_alliance
+                }
+                
+                A12 = {
+                    add_opinion = {
+                        who = ROOT
+                        modifier = continental_alliance
+                    }
+                }
+            }
+            
+            # Stromgarde
+            if = {
+                limit = {
+                    alliance_with = A16 
+                }
+                
+                add_opinion = {
+                    who = A16 
+                    modifier = continental_alliance
+                }
+                
+                A16 = {
+                    add_opinion = {
+                        who = ROOT
+                        modifier = continental_alliance
+                    }
+                }
+            }
+            
+            # Alterac
+            if = {
+                limit = {
+                    alliance_with = A17 
+                }
+                
+                add_opinion = {
+                    who = A17 
+                    modifier = continental_alliance
+                }
+                
+                A17 = {
+                    add_opinion = {
+                        who = ROOT
+                        modifier = continental_alliance
+                    }
+                }
+            }
+        }
+	}
+    
+    wwu_dalaran_embassy = {
+		icon = mission_titan_spirits
+        position = 6
+        
+		required_missions = { wwu_continental_alliance }
+        
+		trigger = {
+            # Dalaran
+            A18 = {
+                has_opinion = {
+                    who = ROOT
+                    value = 100
+                }
+            }
+		}
+        
+		effect = {
+            add_opinion = {
+                who = A18 # Dalaran
+                modifier = dalaran_embassy
+            }
+            
+            # Dalaran
+            A18 = {
+                add_opinion = {
+                    who = ROOT
+                    modifier = kul_tiran_embassy
+                }
+            }
+            
+            custom_tooltip = JAINA_MAGE_TT
+            hidden_effect = {
+                set_global_flag = jaina_in_dalaran
+            }
+        }
+	}
+    
+    wwu_town_of_drisburg = {
+		icon = mission_titan_spirits
+        position = 7
+        
+		required_missions = { wwu_dalaran_embassy }
+        
+		trigger = {
+            owns = 3010 # Drisburg
+            owns = 168 # The Brineworks
+            
+            # Khaz Modan
+            A29 = {
+                has_opinion = {
+                    who = ROOT
+                    value = 120
+                }
+            }
+            
+            # Gnomeregan
+            A32 = {
+                has_opinion = {
+                    who = ROOT
+                    value = 120
+                }
+            }
+		}
+        
+		effect = {
+            add_country_modifier = {
+                name = dwarven_technology_kul_tiras
+                duration = -1
+            }
+            add_country_modifier = {
+                name = gnomish_technology_kul_tiras
+                duration = -1
+            }
+            
+            add_accepted_culture = culture_ironforge
+            add_accepted_culture = culture_gnome
+            
+            # Drisburg
+            3010 = {
+                change_culture = culture_ironforge
+            }
+            
+            # The Brineworks
+            168 = {
+                change_culture = culture_gnome
+            }
+        }
+	}
+    
+    wwu_member_of_the_alliance = {
+		icon = mission_titan_spirits
+        position = 8
+        
+		required_missions = { wwu_town_of_drisburg }
+        
+		trigger = {
+            any_country = {
+                has_country_modifier = head_of_alliance
+                has_opinion = {
+                    who = ROOT
+                    value = 120
+                }
+                alliance_with = ROOT
+            }
+		}
+        
+		effect = {
+            add_country_modifier = {
+                name = member_of_alliance
+                duration = -1
+            }
+            
+            add_adm_power = 100
+            add_dip_power = 100
+            add_mil_power = 100
+        }
+	}
+}
+
+wwu_kul_tiras_column_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+    
+	potential = {
+		tag = A14
+	}
+    
+	has_country_shield = yes
+	
+	wwu_acquire_menethil_harbor = {
+		icon = mission_titan_spirits
+        position = 5
+        
+		required_missions = { wwu_kul_tiras_security }
+        
+		trigger = {
+            custom_trigger_tooltip = {
+                tooltip = MENEHTIL_DEAL_EVENT_TT
+            }
+            
+            owns_core_province = 1055 # Menethil Harbor
+		}
+		provinces_to_highlight = {
+            province_id = 1055
+			NOT = { owned_by = ROOT }
+		}
+        
+		effect = {
+			add_prestige = 25
+            add_yearly_sailors = 1.0
+		}
+	}
+    
+    wwu_secure_balor = {
+		icon = mission_titan_spirits
+        position = 6
+        
+		required_missions = { wwu_acquire_menethil_harbor }
+        
+		trigger = {
+            custom_trigger_tooltip = {
+                tooltip = BALOR_DEAL_EVENT_TT
+            }
+            
+            owns_core_province = 4111 # Balor
+		}
+		provinces_to_highlight = {
+            province_id = 4111
+			NOT = { owned_by = ROOT }
+		}
+        
+		effect = {
+			add_prestige = 25
+            add_yearly_sailors = 1.0
+		}
+	}
+    
+    wwu_free_city_of_southshore = {
+		icon = mission_titan_spirits
+        position = 7
+        
+		required_missions = { wwu_secure_balor }
+        
+		trigger = {
+            custom_trigger_tooltip = {
+                tooltip = SOUTHSHORE_DEAL_EVENT_TT
+            }
+            
+            owns_core_province = 991 # Southshore
+		}
+		provinces_to_highlight = {
+            province_id = 991
+			NOT = { owned_by = ROOT }
+		}
+        
+		effect = {
+            add_dip_power = 250
+            
+			991 = {
+                add_permanent_province_modifier = {
+                    name = free_city_of_southshore
+                    duration = -1
+                }
+            }
+		}
+	}
+    
+    wwu_port_of_thandol_span = {
+		icon = mission_titan_spirits
+        position = 8
+        
+		required_missions = { wwu_free_city_of_southshore }
+        
+		trigger = {
+            custom_trigger_tooltip = {
+                tooltip = THANDOL_DEAL_EVENT_TT
+            }
+            
+            owns_core_province = 1933 # Thandol Span
+		}
+		provinces_to_highlight = {
+            province_id = 1933
+			NOT = { owned_by = ROOT }
+		}
+        
+		effect = {
+            add_mil_power = 250
+            
+			1933 = {
+                add_permanent_province_modifier = {
+                    name = port_of_thandol_span
+                    duration = -1
+                }
+            }
+		}
+	}
+}
+
+# wwu_kul_tiras_column_4 = {
+	# slot = 4
+	# generic = no
+	# ai = yes
+    
+	# potential = {
+		# tag = A14
+	# }
+    
+	# has_country_shield = yes
+	
+	# wwu_mission = {
+		# icon = mission_titan_spirits
+        # position = 1
+        
+		# required_missions = { }
+        
+		# trigger = {
+            
+		# }
+		# provinces_to_highlight = {
+            
+			# NOT = { owned_by = ROOT }
+		# }
+        
+		# effect = {
+			
+		# }
+	# }
+# }
+
+wwu_kul_tiras_column_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+    
+	potential = {
+		tag = A14
+	}
+    
+	has_country_shield = yes
+	
+	wwu_kultiran_explorers = {
+		icon = mission_titan_spirits
+        position = 1
+        
+		required_missions = { wwu_kul_tiras_security }
+        
+		trigger = {
+                num_of_colonists = 1
+            }    
+
+		effect = {
+			define_explorer = {
+                shock = 2
+                fire = 2
+                manuever = 5
+                siege = 2
+                name = "Brave Kul'tiran Sailor"
+                female = no
+                trait = accomplished_sailor_personality
+            }
+		}
+    }
+
+    wwu_gathering_of_the_ships = {
+        icon = mission_titan_spirits
+        position = 2
+
+        required_missions = { wwu_kultiran_explorers }
+
+        trigger = {
+            navy_size = 50
+            num_of_explorers = 1
+            num_of_admirals = 3
+            sailors = 2500
+        }
+
+        effect = {
+            add_navy_tradition = 25
+            add_country_modifier = {
+                name = "admirals_fleet_established"
+                duration = -1
+            }
+        }
+    }
+
+    wwu_first_colonial_venture = {
+        icon = mission_titan_spirits
+        position = 3
+
+        required_missions = { wwu_gathering_of_the_ships }
+
+        provinces_to_highlight = {
+            region = region_mechagon
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+                region_mechagon = {
+                    type = all
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+                region_kul_tiras = {
+                    type = all
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+            }
+
+        effect = {
+            region_paradise_isles = {
+                add_permanent_claim = ROOT
+            }
+            region_south_sea_islands = {
+                add_permanent_claim = ROOT
+            }
+            region_lost_isles = {
+                add_permanent_claim = ROOT
+            }
+            region_kezan = {
+                add_permanent_claim = ROOT
+            }
+
+            add_dip_power = 100
+            add_country_modifier = {
+                name = "tirasian_colonial_ambitions"
+                duration = -1
+            }
+        }
+    }
+
+    wwu_south_seas_expansion = {
+        icon = mission_titan_spirits
+        position = 4
+
+        required_missions = { wwu_first_colonial_venture }
+
+        provinces_to_highlight = {
+			OR = {
+				region = region_kezan
+				region = region_lost_isles
+				region = region_south_sea_islands
+			}
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            region_kezan = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+                }
+            region_lost_isles = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            region_south_sea_islands = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+
+        effect = {
+            area_tiragarde_shore = {
+                add_permanent_claim = ROOT
+            }
+            area_echo_isles = {
+                add_permanent_claim = ROOT
+            }
+            area_northwatch_hold = {
+                add_permanent_claim = ROOT
+            }
+            area_theramore_isle = {
+                add_permanent_claim = Root
+            }
+            area_alcaz_isle = {
+                add_permanent_claim = Root
+            }
+
+            add_dip_power = 75
+            add_mil_power = 75
+            add_country_modifier = {
+                name = operation_landfall
+                duration = 1825
+            }
+        }
+    }
+
+    wwu_tiragarde_outpost = {
+        icon = mission_titan_spirits
+        position = 5
+
+        required_missions = { wwu_south_seas_expansion }
+
+        provinces_to_highlight = {
+			OR = {
+				province_id = 3406 #Tiragarde Shore
+				province_id = 1382 #Tiragarde Keep
+			}
+			NOT = { owned_by = ROOT }
+        }
+
+        trigger = {
+            owns_core_province = 3406 # Tiragarde Shore
+            owns_core_province = 1382 # Tiragarde Keep
+
+            NOT = { exists = TIR }
+
+            1382 = {
+                base_tax = 4
+                base_production = 4
+                base_manpower = 6
+                has_fort_building_trigger = yes
+                }
+            }
+
+        effect = {
+            A14 = {
+                country_event = { id = wwu_kul_tiras.130 days = 1}
+            }
+
+            1382 = {
+                add_permanent_province_modifier = {
+                    name = tiragarde_regional_capital
+                    duration = -1
+                }
+            }
+        }
+    }
+
+    wwu_barrens_expansion = {
+        icon = mission_titan_spirits
+        position = 6
+
+        required_missions = { wwu_tiragarde_outpost }
+
+        provinces_to_highlight = {
+			OR = {
+				province_id = 1439 # Northwatch Hold
+				province_id = 2949 # Northwatch Port
+			}
+			NOT = { owned_by = ROOT }
+        }
+
+        trigger = {
+            owns_core_province = 1439
+            owns_core_province = 2949
+
+            NOT = { exists = G06 }
+
+            1439 = {
+                base_tax = 4
+                base_production = 4
+                base_manpower = 8
+                has_fort_building_trigger = yes
+            }
+        }
+
+        effect = {
+            A14 = {
+                country_event = { id = wwu_kul_tiras.131 days = 1}
+            }
+
+            1439 = {
+                add_permanent_province_modifier = {
+                    name = northwatch_regional_capital
+                    duration = -1
+                }
+            }
+        }
+    }
+
+    wwu_dustwallow_expansion = {
+        icon = mission_titan_spirits
+        position = 7
+
+        required_missions = { wwu_barrens_expansion }
+
+        provinces_to_highlight = {
+			OR = {
+				province_id = 3478 
+				province_id = 1456
+				province_id = 3477
+				province_id = 2951
+			}
+			NOT = { owned_by = ROOT }
+        }
+
+        trigger = {
+            owns_core_province = 3478
+            owns_core_province = 1456
+            owns_core_province = 3477
+            owns_core_province = 2951
+
+            NOT = { exists = A23 }
+
+            1456 = {
+                base_tax = 6
+                base_production = 6
+                base_manpower = 6
+                has_fort_building_trigger = yes
+            }
+        }
+
+        effect = {
+            A14 = {
+                country_event = { id = wwu_kul_tiras.132 days = 1}
+            }
+
+            1456 = {
+                add_permanent_province_modifier = {
+                    name = theramore_regional_capital
+                    duration = -1
+                }
+            }
+        }
+    }
+}

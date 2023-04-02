@@ -1,45 +1,40 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = A46
-controller = A46
-add_core = A46
-
-base_tax = 4
-base_production = 4
-base_manpower = 4
-
-culture = culture_frostwolf
-religion = religion_ancestral
+culture = culture_orc
+religion = shamanism
 
 hre = no
-trade_goods = artifacts
+trade_goods = unknown
+
+600.1.1 = {
+    is_city = yes
+
+    owner = F72
+    controller = F72
+    add_core = F72
+
+    base_tax = 4
+    base_production = 4
+    base_manpower = 4
+
+    culture = culture_orc
+    religion = shamanism
 
 
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A46
-controller = A46
-add_core = A46
-
-base_tax = 4
-base_production = 4
-base_manpower = 4
-
-culture = culture_frostwolf
-religion = religion_ancestral
-
-hre = no
-trade_goods = artifacts
-
+    trade_goods = fish
 }
+
 622.1.1 = {
     add_core = F83
     owner = F83
     controller = F83
-    culture = culture_warmaul
-    religion = religion_earth
+    culture = culture_ogre
+    religion = earth
 }

@@ -1,0 +1,81 @@
+#----------------------------
+# Third War
+#----------------------------
+# Forsaken - Blackthorn
+dependency = {
+	subject_type = "vassal"
+	first = P14
+	second = BTR
+	start_date = 619.1.1    # Third War
+	end_date = 622.1.1
+}
+
+# Forsaken - Shadowglen
+dependency = {
+	subject_type = "vassal"
+	first = P14
+	second = P55
+	start_date = 619.1.1
+	end_date = 620.7.1
+}
+
+# Forsaken - Crushridge
+dependency = {
+	subject_type = "vassal"
+	first = P14
+	second = P50
+	start_date = 619.1.1
+	end_date = 622.1.1
+}
+
+# Forsaken - Rothide
+dependency = {
+	subject_type = "vassal"
+	first = P14
+	second = B19
+	start_date = 619.1.1
+	end_date = 622.1.1
+}
+
+# Forsaken - Vile Fin
+dependency = {
+	subject_type = "vassal"
+	first = P14
+	second = B25
+	start_date = 619.1.1
+	end_date = 622.1.1
+}
+
+# Forsaken - Defilers
+dependency = {
+	subject_type = "vassal"
+	first = P14
+	second = DEF
+	start_date = 622.1.1
+	end_date = 640.1.1
+}
+
+#----------------------------
+# Wrath of the Lich King
+#----------------------------
+# Forsaken - Hand of Vengeance
+dependency = {
+	subject_type = "personal_union"
+	first = P14
+	second = A96
+	start_date = 626.1.1
+	end_date = 650.5.1
+}
+
+#----------------------------
+# Cataclysm
+#----------------------------
+# Forsaken - New Stromgarde
+dependency = {
+	subject_type = "vassal"
+	first = P14
+	second = H12
+	start_date = 631.1.1
+	end_date = 650.1.1   #temp
+}
+

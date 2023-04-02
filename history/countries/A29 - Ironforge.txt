@@ -1,37 +1,52 @@
-discover_home_continent = yes
+
 # Ironforge
 government 			= monarchy
 add_government_reform = feudalism_reform
-add_government_reform = wwu_hereditary_rule_reform
 mercantilism 		= 10
-technology_group 	= tech_dwarven
-religion			= religion_church_of_the_light
+technology_group 	= tech_dwarf
+religion			= holy_light
 primary_culture 	= culture_ironforge
 capital 			= 941
 
 historical_friend = A32
+
 546.1.1 = { 
-monarch = { 
-     name = "Magni" 
-     dynasty = "Bronzebeard" 
+    monarch = { 
+        name = "Magni" 
+        dynasty = "Bronzebeard" 
 		adm = 4
 		dip = 6
 		mil = 4
+        birth_date = 460.1.1
  	} 
- } 
+    
+    set_ruler_flag = ruler_portrait_magni_bronzebeard
+} 
+
+591.1.1 = {
+    remove_country_modifier = member_of_alliance
+}
+
+592.1.1 = {
+    # Faction - Alliance
+    add_country_modifier = {
+        name = member_of_alliance
+        duration = -1
+	}
+}
 
 598.1.1 = {
 	historical_friend = STW
 } 
 
 631.1.1 = { 
-	
 	monarch = { 
-		 name = "Council of Three Hammers"  
-			adm = 3
-			dip = 3
-			mil = 4 
-			regent = yes
+        name = "Council of Three Hammers"  
+        adm = 3
+        dip = 3
+        mil = 4 
+        regent = yes
+        birth_date = 550.1.1
 	}
 }
  

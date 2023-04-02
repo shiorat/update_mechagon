@@ -1,0 +1,194 @@
+graphical_culture = mecha_gnome_gfx
+
+color = { 83 130 163 }
+
+monarch_names = {
+	"Kerchunk" = 1
+	"Walton" = 1
+	"Grease" = 1
+	"Chance" = 1
+	"Milligan" = 1
+	"Piston" = 1
+	"Dashman" = 1
+	"Justin" = 1
+	"Tyler" = 1
+	"Jorrix" = 1
+	"Nico" = 1
+	"Ittlick" = 1
+	"Leethkogic" = 1
+	"Edinkak" = 1
+	"Itkish" = 1
+	"Ithkega" = 1
+	"Irkoc" = 1
+	"Krinklitla" = 1
+	"Terkirek" = 1
+	"Ittlizz" = 1
+	"Tinlizz" = 1
+	"Gutes" = 1
+	"Pikinlarn" = 1
+	"Pikidi" = 1
+	"Glimosh" = 1
+	"Eebu" = 1
+	"Mares" = 1
+	"Iclink" = 1
+	"Heerkozz" = 1
+	"Curkin" = 1
+	"Pattlenk" = 1
+	"Glankush" = 1
+	"Feerkish" = 1
+	"Krimkuk" = 1
+	"Callin" = 1
+	"Okeemkish" = 1
+	"Cithkec" = 1
+	"Glidizz" = 1
+	"Undos" = 1
+	"Oldick" = 1
+	"Hifinke" = 1
+	"Krorki" = 1
+	"Mukiblun" = 1
+	"Kreerlones" = 1
+	"Eesinceek" = 1
+	"Konleevonk" = 1
+	"Ciduklo" = 1
+	"Beetlas" = 1
+	"Kramkash" = 1
+	"Klurgotla" = 1
+	"Waren" = -1
+	"Christy" = -1
+	"Vera" = -1
+	"Niru" = -1
+	"Flux" = -1
+	"Izira" = -1
+	"Cola" = -1
+	"Lulana" = -1
+	"Klemku" = -1
+	"Thapuzz" = -1
+	"Fottluz" = -1
+	"Botik" = -1
+	"Jyttlozz" = -1
+	"Inkeys" = -1
+	"Leflinu" = -1
+	"Lutkil" = -1
+	"Eflullu" = -1
+	"Glilkeyl" = -1
+	"Nasuz" = -1
+	"Lilkene" = -1
+	"Jomos" = -1
+	"Klolbiz" = -1
+	"Nelonk" = -1
+	"Nulbesh" = -1
+	"Gnosliz" = -1
+	"Gnithull" = -1
+	"Salildeyz" = -1
+	"Fynnofluk" = -1
+	"Utkeenk" = -1
+	"Thedekle" = -1
+
+}
+
+leader_names = {
+	"Enforcer KX-T57"
+	"OOX-Avenger/MG"
+	"Nullifier"
+	"Jawbreaker"
+	"Killsaw"
+	"The Kleptoboss"
+	"Rustfeather"
+	"The Rusty Prince"
+	"Claw of Life"
+	"Symmetry"
+	"Gripcount"
+	"Sparkdwadle"
+	"Temperfield"
+	"Wigglelight"
+	"Gearcup"
+	"Fuzzchalk"
+	"Sparklecable"
+	"Wheelbranch"
+	"Oilcog"
+	"Copperblast"
+	"Buzzinkettle"
+	"Castneedle"
+	"Trickbox"
+	"Singlenozzle"
+	"Toggleshape"
+	"Clockmaster"
+	"Luckpipe"
+	"Flickertrick"
+	"Sharpnozzle"
+	"Quickguard"
+	"Fizzlechalk"
+	"Mekkalaugh"
+	"Bizzcount"
+	"Berrysprocket"
+	"Pullcheek"
+	"Portersignal"
+	"Railgauge"
+	"Wheelfield"
+	"Buzzinlocket"
+	"Railfizz"
+	"Clockpitch"
+	"Overcup"
+	"Lockbadge"
+	"Shortcoil"
+	"Overchalk"
+	"Fixwizzle"
+	"Slipbit"
+	"Thunderpocket"
+	"Pullspring"
+	"Grindchart"
+
+}
+
+ship_names = {
+	"5-un-5-hatter"
+	"Wind-5-hear"
+	"0-cean"
+	"Gleensh-0-re"
+	"Gnomeship"
+	"R-34-GN"
+	"Ruby"
+    "Pascal"
+    "Java"
+    "Mechanizator-III"
+    "Starship"
+    "Mechaship"
+    "Seajunk"
+    "65ghl"
+    "Hu65-7"
+    "Ki11er"
+
+}
+
+army_names = {
+	"Special squad of $PROVINCE$"
+}
+
+fleet_names = {
+	"Fleet of $PROVINCE$"
+}
+
+historical_idea_groups = {
+	wwu_innovation_ideas
+	wwu_influence_ideas
+	wwu_economic_ideas
+	wwu_expansion_ideas
+	wwu_trade_ideas
+	wwu_quality_ideas
+	wwu_offensive_ideas
+	wwu_imperialism_ideas	
+}
+
+historical_units = {
+	mechagnome_inf_a_1
+	mechagnome_cav_a_1
+	mechagnome_inf_a_2
+	mechagnome_cav_a_2
+	mechagnome_inf_a_3
+	mechagnome_cav_a_3
+	mechagnome_inf_a_4
+	mechagnome_cav_a_4
+	mechagnome_inf_a_5
+	mechagnome_cav_a_5
+}
+

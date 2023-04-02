@@ -1,18 +1,17 @@
-
 is_city = yes
-
-owner = P16
-controller = P16
-add_core = P16
+owner = VLR
+controller = VLR
+add_core = VLR
 
 base_tax = 1
 base_production = 1
 base_manpower = 1
 
-culture = culture_hyldnir
-religion = religion_titan
+culture = culture_frost_vrykul
+religion = titan_worship
 
-trade_goods = grain
 hre = no
+trade_goods = unknown
+
 
 

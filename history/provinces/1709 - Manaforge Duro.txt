@@ -1,58 +1,42 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = A54
-controller = A54
-add_core = A54
+culture = culture_orc
+religion = shamanism
 
-base_tax = 3
-base_production = 4
-base_manpower = 2
-
-culture = culture_shattrathi
-religion = religion_light_of_the_naaru
-
-trade_goods = arcane
 hre = no
+trade_goods = unknown
+
+600.1.1 = {
+    is_city = yes
+
+    owner = A54
+    controller = A54
+    add_core = A54
+
+    base_tax = 3
+    base_production = 4
+    base_manpower = 2
+
+    culture = culture_draenei
+    religion = light_of_the_naaru
 
 
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A54
-controller = A54
-add_core = A54
-
-base_tax = 3
-base_production = 4
-base_manpower = 2
-
-culture = culture_shattrathi
-religion = religion_light_of_the_naaru
-
-trade_goods = arcane
-hre = no
-
-}
-592.1.1 = {
-	add_core = A43
-	owner = A43
-	controller = A43
-	remove_core = A54
-	religion = religion_fel
-	culture = culture_twilights_hammer
+    trade_goods = arcane
 }
 
 617.1.1 = {
-    is_city = no
+    # Empty Province
 	remove_core = A43
-	
-owner = B92
-add_core = B92
-controller = B92
-
+    owner = B92
+    add_core = B92
+    controller = B92
 }
 
 622.1.1 = {
@@ -62,6 +46,6 @@ controller = B92
 	add_core =  A93
 	remove_core = A43
 	culture = culture_blood_elf
-	religion = religion_fel
+	religion = fel
 }
 

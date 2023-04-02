@@ -1,0 +1,12 @@
+﻿l_german:
+ wwu_silvermoon.1.title: "Führung von Silvermoon"
+ wwu_silvermoon.1.desc: "Die Reste von Quel'Thalas haben sich nach der Bedrohung durch die Gourge endlich beruhigt. Es ist Zeit, sich wieder zu erinnern und zu bestimmen, welche Regierungsform die Elfen von Silvermoon folgen sollten."
+ wwu_silvermoon.1.option.a: "Kael'thas und seine fel Ambitionen"
+ wwu_silvermoon.1.option.b: "Lor'themar und seine einstweilige Verfügung"
+ wwu_silvermoon.2.title: "Blutritter erheben sich!"
+ wwu_silvermoon.2.desc: "Borne aus der Ablehnung des Heiligen Lichts, die Blutritter, angeführt von ihrer Matriarchin Lady Liadrin, wollen ihre Heimat wieder zu seiner früheren Herrlichkeit. Dafür saugen sie Lichtenergie aus dem gefangenen Naaru M'uru, der unter dem Blutritter-Hauptquartier gefunden wurde."
+ wwu_silvermoon.2.option.a: "Wir werden nie gebrochen werden!"
+ wwu_silvermoon.3.title: "Sunwell wiederhergestellt"
+ wwu_silvermoon.3.desc: "Der Sunwell wurde restauriert, und für die meisten ist dies eine ausgezeichnete Nachricht. Aber für Lady Liadrin und die Blutritter hat es die Ursache ihrer Organisation untergraben. Ohne Veränderung können die Blutritter innerhalb der Blood Elf Gesellschaft zu Ausgestoßenen werden."
+ wwu_silvermoon.3.option.a: "Wir müssen eine neue Identität schmieden, um unser Volk nach vorne zu führen."
+ wwu_silvermoon.3.option.b: "Unser Zweck ist vollständig, wir werden uns auflösen"

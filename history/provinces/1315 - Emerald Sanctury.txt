@@ -5,41 +5,33 @@ owner = B96
 controller = B96
 add_core = B96
 
-base_tax = 2
+base_tax = 3
 base_production = 2
-base_manpower = 2
+base_manpower = 3
 
-culture = culture_jadefire
-religion = religion_fel
+culture = culture_satyr
+religion = fel
 
-trade_goods = ashenvale_lumber
 hre = no
-
-
-
-546.1.1 = {
-
-is_city = yes
-
-owner = B96
-controller = B96
-add_core = B96
-
-base_tax = 2
-base_production = 2
-base_manpower = 2
-
-culture = culture_jadefire
-religion = religion_fel
-
 trade_goods = ashenvale_lumber
-hre = no
 
+616.1.1 = {
+owner = CRA
+controller = CRA
+add_core = CRA
 }
-622.1.1 = {
-owner = H02
-controller = H02
-add_core = H02
-culture = culture_cenarion
-religion = religion_druidic
+
+618.1.1 = {
+    owner = B96
+    controller = B96
+    add_core = B96
+	remove_core = CRA
+}
+
+620.1.1 = {
+owner = EMC
+controller = EMC
+add_core = EMC
+culture = culture_night_elf
+religion = druidism
 }

@@ -22,7 +22,7 @@ corrupt_titan_protectors_of_history = {
 	is_blessing = yes
 
 	modifier = {
-		prestige = 1
+		prestige = 1.0
 	}
 	ai_will_do = {
 		factor = 1

@@ -1,15 +1,16 @@
-
+is_city = yes
 owner = MOG
 controller = MOG
 add_core = MOG
 
-base_tax = 7
-base_production = 7
-base_manpower = 7
+base_tax = 4
+base_production = 3
+base_manpower = 4
 
 culture = culture_highbourne
-religion = religion_arcane
+religion = arcane
 
-trade_goods = flying_mounts
 hre = no
+trade_goods = flying_mounts
+
 

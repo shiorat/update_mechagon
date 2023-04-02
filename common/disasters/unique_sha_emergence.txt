@@ -1,0 +1,98 @@
+sha_emergence = {
+	potential = {
+		NOT = { has_global_flag = sha_emergence_over }
+        is_emperor = yes
+		capital_scope = {
+			continent = continent_pandaria
+		}
+        religion = celestials
+	}
+
+	can_start = {
+        OR = {
+            AND = {
+                total_development = 200
+                is_at_war = yes
+            }
+            has_global_flag = yshaarj_active
+        }
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			total_development = 300
+		}
+		modifier = {
+			factor = 1
+			total_development = 400
+		}
+        modifier = {
+			factor = 1
+			total_development = 500
+		}
+        modifier = {
+			factor = 1
+			total_development = 750
+		}
+        modifier = {
+			factor = 1
+			total_development = 1000
+		}
+	}
+	
+	can_stop = {
+		is_at_war = no
+	}
+	
+	can_end = {
+        OR = {
+            # End after 25 years
+            had_global_flag = {
+                flag = sha_emergence
+                days = 9125
+            }
+            # End after 10 years if no reform center remains
+            AND = {
+                had_global_flag = {
+                    flag = sha_emergence
+                    days = 3650
+                }
+                NOT = {
+                    continent_pandaria = {
+                        is_reformation_center = yes
+                    }
+                }
+            }
+            # End if any country in Pandaria becomes Sha
+            continent_pandaria = {
+                owner = {
+                    religion = sha
+                }
+            }
+        }
+	}
+	
+	modifier = {
+        stability_cost_modifier = 1.0
+	}
+
+	on_start = wwu_sha_emergence.1
+	on_end = wwu_sha_emergence.100
+	
+	on_monthly = {
+        random_events = {
+            3000 = 0
+            100 = wwu_sha_emergence.10 # Doubt
+            100 = wwu_sha_emergence.11 # Despair
+            100 = wwu_sha_emergence.12 # Fear
+            100 = wwu_sha_emergence.13 # Hatred
+            100 = wwu_sha_emergence.14 # Anger
+            100 = wwu_sha_emergence.15 # Violence
+            100 = wwu_sha_emergence.16 # Pride
+        }
+	}
+}
+
+
+

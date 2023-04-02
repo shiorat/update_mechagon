@@ -1,21 +1,60 @@
-discover_home_continent = yes
+
 # AhnQiraj
-government 			= monarchy
-add_government_reform = ancient_kingdom_reform
+government              = theocracy
+add_government_reform   = aqir_kingdom_reform
+
 mercantilism 		= 10
-technology_group 	= tech_aqir
-religion			= religion_old_gods
+technology_group 	= tech_qiraji
+religion			= cthun
 primary_culture 	= culture_qiraji
 capital 			= 1520
 
+government_rank = 3
 
-500.1.1 = {
-    monarch = {
-        name = "Vek'nilash" 
-        dynasty = "Qiraji" 
-		adm = 2
-		dip = 1
-		mil = 4 
- 	}
+# Default Estate privileges
+set_estate_privilege = estate_nobility_scarab_swarms
+
+540.1.1 = {
+	monarch = {
+		name = "Vek'nilash"
+		dynasty = "the Enlightened"
+		birth_date = 135.1.1
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+    
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 3
+        CONCENTRATION = 2
+        MANA = 5
+        corruption = yes
+    }
+	set_ruler_flag = is_immortal
+	set_ruler_flag = mage_personality
+	add_heir_personality = immortal_personality
+	set_heir_flag = mage_personality
+	historical_friend = A43
+	historical_friend = A98
+    
+    add_country_modifier = {
+        name = slumber_of_the_qiraji
+        duration = -1
+    }
 }
 
+# Qiraji have awoken C'Thun
+622.1.1 = {
+    remove_country_modifier = slumber_of_the_qiraji
+    complete_mission = wwu_awaken_the_qiraji
+    
+    add_country_modifier = {
+        name = is_evil
+        duration = -1
+    }
+    add_country_modifier = {
+        name = seat_of_cthun
+        duration = -1
+    }
+}

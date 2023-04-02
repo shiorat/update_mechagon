@@ -1,0 +1,30 @@
+
+is_city = yes
+
+owner = BAL
+controller = BAL
+add_core = BAL
+
+base_tax = 3
+base_production = 3
+base_manpower = 4
+
+culture = culture_furbolg
+religion = druidism
+
+
+hre = no
+trade_goods = grain
+
+
+
+
+631.1.1 = {
+    religion = fel
+	culture = culture_corrupted_furbolg
+}
+
+632.1.1 = {
+    religion = druidism
+	culture	= culture_furbolg
+}

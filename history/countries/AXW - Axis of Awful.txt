@@ -1,0 +1,13 @@
+
+# Axis of Awful
+government 			= republic
+add_government_reform = despotic_republic_reform
+mercantilism 		= 10
+technology_group 	= tech_gnoll
+religion			= earth
+primary_culture 	= culture_gnoll
+add_accepted_culture    = culture_murloc
+add_accepted_culture    = culture_trogg
+add_accepted_culture    = culture_kobold
+capital 			= 516
+

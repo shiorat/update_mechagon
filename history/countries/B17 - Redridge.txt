@@ -1,21 +1,30 @@
-discover_home_continent = yes
-# Redridge
-government 			= tribal
-add_government_reform = primitive_clan_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
 technology_group 	= tech_gnoll
-religion			= religion_earth
-primary_culture 	= culture_redridge
+religion			= earth
+primary_culture 	= culture_gnoll
 capital 			= 772
 
-546.1.1 = { 
-	monarch = { 
-		name = "Mazz" 
-		dynasty = "Redridge" 
+540.1.1 = {
+	monarch = {
+		name = "Purti"
+		dynasty = "Muckbeak"
+		birth_date = 480.1.1
 		adm = 3
-		dip = 3
-		mil = 3
-                
-	} 
+		dip = 0
+		mil = 4
+	}
 }
-
+590.1.1 = {
+	monarch = {
+		name = "Baldog"
+		dynasty = "Muckbeak"
+		birth_date = 521.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}

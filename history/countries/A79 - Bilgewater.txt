@@ -1,42 +1,62 @@
-discover_home_continent = yes
+
 # Bilgewater
 government 			= republic
 add_government_reform = mercantile_republic_reform
 mercantilism 		= 10
 technology_group 	= tech_goblin
-religion			= religion_greed
-primary_culture 	= culture_bilgewater
-capital 			= 1099
+religion			= avarice
+primary_culture 	= culture_goblin
+capital 			= 4085
 religious_school = trade_philosophy
 
-546.1.1 = { 
-monarch = { 
-     name = "" 
-     dynasty = "Bilgewater" 
-		adm = 5
+540.1.1 = {
+	monarch = {
+		name = "Kyrkwix"
+		dynasty = "Silverbolt"
+		birth_date = 518.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+    
+    
+}
+
+546.1.1 = {
+    set_global_flag = trade_coalition_exists
+    
+    # Trade Coalition 
+    add_country_modifier = {
+        name = head_of_trade_coalition
+        duration = -1
+    }
+    add_country_modifier = {
+        name = member_of_trade_coalition
+        duration = -1
+    }
+}
+
+592.1.1 = { 
+    monarch = { 
+        name = "Jastor" 
+        dynasty = "Gallywix"
+        birth_date = 560.1.1
+		adm = 6
 		dip = 4
 		mil = 3
  	} 
- } 
-
-592.1.1 = { 
-monarch = { 
-     name = "Jastor" 
-     dynasty = "Gallywix" 
-		adm = 5
-		dip = 2
-		mil = 3
- 	} 
- } 
+    
+    set_ruler_flag = ruler_portrait_gallywix
+} 
 
 605.1.1 = {
-religion = religion_tech
+    religion = technomancy
 }
 
 631.1.1 = {
-add_country_modifier = {
-    name = horde_member
-    duration = -1
-}
+    add_country_modifier = {
+        name = member_of_horde
+        duration = -1
+    }
 }
 

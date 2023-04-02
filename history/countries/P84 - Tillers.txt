@@ -1,12 +1,13 @@
-discover_home_continent = yes
-# The Tillers
-government 			= tribal
-add_government_reform = tribal_federation_reform
+government = monarchy
+add_government_reform = pandaren_union_reform
+
 mercantilism 		= 10 
 technology_group 	= tech_pandaren
-religion			= religion_celestial
-primary_culture 	= culture_red_crane
-capital 			= 1795
+religion			= celestials
+primary_culture 	= culture_pandaren
+capital 			= 1796
+
+elector = yes
 
 546.1.1 = { 
 	monarch = { 

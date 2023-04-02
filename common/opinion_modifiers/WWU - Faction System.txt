@@ -1,0 +1,42 @@
+#----------------------------------------------
+# Factions
+#----------------------------------------------
+omod_member_of_alliance  = {
+	opinion = 25
+}
+
+omod_member_of_horde  = {
+	opinion = 25
+}
+
+omod_member_of_old_horde  = {
+	opinion = 25
+}
+
+omod_power_hungry = {
+    opinion = -20
+	min = -200
+    yearly_decay = 1
+}
+
+omod_member_of_trade_coalition = {
+	opinion = 25
+}
+
+omod_faction_demands = {
+    opinion = -25
+	min = -200
+    yearly_decay = 1
+}
+
+omod_faction_sent_nothing = {
+    opinion = -25
+	min = -200
+    yearly_decay = 1
+}
+
+omod_faction_sent_something = {
+    opinion = 25
+	max = 200
+    yearly_decay = -1
+}

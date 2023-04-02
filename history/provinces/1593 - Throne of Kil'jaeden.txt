@@ -1,49 +1,47 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = A40
-controller = A40
-add_core = A40
+culture = culture_orc
+religion = shamanism
 
-base_tax = 4
-base_production = 4
-base_manpower = 3
-
-culture = culture_bleeding_hollow 
-religion = religion_ancestral
-
-trade_goods = fel
 hre = no
+trade_goods = unknown
+
+600.1.1 = {
+    is_city = yes
+
+    owner = A40
+    controller = A40
+    add_core = A40
+
+    base_tax = 4
+    base_production = 4
+    base_manpower = 3
+
+    culture = culture_orc 
+    religion = fel
 
 
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A40
-controller = A40
-add_core = A40
-
-base_tax = 4
-base_production = 4
-base_manpower = 3
-
-culture = culture_bleeding_hollow 
-religion = religion_ancestral
-
-trade_goods = fel
-hre = no
-
-}
-592.1.1 = {
-	religion = religion_fel
+    trade_goods = fel
 }
 
-625.1.1 = { 
-	owner = A93
-	controller = A93
-	add_core = A93
+605.1.1 = {
+    owner = B92
+    controller = B92
+    add_core = B92
+    remove_core = A40
+
+    culture = culture_doomguard
+}
+
+#After the fall of Kael'thas
+626.1.1 = { 
 	culture = culture_felblood_elf
 }
 

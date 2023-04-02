@@ -1,0 +1,714 @@
+#---------------------------------------
+# Modifiers
+#---------------------------------------
+good_production_25_grain = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_wine = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_wool = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_cloth = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_fish = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_fur = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_salt = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_naval_supplies = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_copper = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_gold = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_iron = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_slaves = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_ivory = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_tea = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_chinaware = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_spices = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_coffee = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_cotton = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_sugar = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_tobacco = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_cocoa = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_silk = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_tropical_wood = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_dyes = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_ashenvale_lumber = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_lumber = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_kypari = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_oil = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_stone = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_dark_iron = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_saronite = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_mithril = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_thorium = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_fel_iron = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_khorium = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_adamantite = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_titanium = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_elementium = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_ghost_iron = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_gemstones = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_ale = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_runecloth = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_netherweave = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_fossils = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_artifacts = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_crypts = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_smugglers = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_pirates = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_workshops = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_arcane = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_fel = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_army_supplies = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_mounts = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_flying_mounts = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_warbeasts = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_apexis = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_glowcap = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_grain_silo = {
+    trade_goods_size_modifier = 0.25
+}
+good_production_25_moonwell = {
+    trade_goods_size_modifier = 0.25
+}
+
+good_production_50_grain = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_wine = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_wool = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_cloth = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_fish = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_fur = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_salt = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_naval_supplies = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_copper = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_gold = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_iron = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_slaves = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_ivory = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_tea = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_chinaware = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_spices = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_coffee = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_cotton = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_sugar = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_tobacco = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_cocoa = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_silk = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_tropical_wood = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_dyes = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_ashenvale_lumber = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_lumber = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_kypari = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_oil = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_stone = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_dark_iron = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_saronite = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_mithril = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_thorium = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_fel_iron = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_khorium = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_adamantite = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_titanium = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_elementium = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_ghost_iron = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_gemstones = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_ale = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_runecloth = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_netherweave = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_fossils = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_artifacts = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_crypts = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_smugglers = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_pirates = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_workshops = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_arcane = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_fel = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_army_supplies = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_mounts = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_flying_mounts = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_warbeasts = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_apexis = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_glowcap = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_grain_silo = {
+    trade_goods_size_modifier = 0.5
+}
+good_production_50_moonwell = {
+    trade_goods_size_modifier = 0.5
+}
+
+good_production_75_grain = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_wine = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_wool = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_cloth = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_fish = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_fur = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_salt = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_naval_supplies = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_copper = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_gold = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_iron = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_slaves = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_ivory = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_tea = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_chinaware = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_spices = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_coffee = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_cotton = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_sugar = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_tobacco = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_cocoa = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_silk = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_tropical_wood = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_dyes = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_ashenvale_lumber = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_lumber = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_kypari = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_oil = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_stone = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_dark_iron = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_saronite = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_mithril = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_thorium = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_fel_iron = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_khorium = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_adamantite = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_titanium = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_elementium = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_ghost_iron = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_gemstones = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_ale = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_runecloth = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_netherweave = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_fossils = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_artifacts = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_crypts = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_smugglers = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_pirates = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_workshops = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_arcane = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_fel = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_army_supplies = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_mounts = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_flying_mounts = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_warbeasts = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_apexis = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_glowcap = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_grain_silo = {
+    trade_goods_size_modifier = 0.75
+}
+good_production_75_moonwell = {
+    trade_goods_size_modifier = 0.75
+}
+
+good_production_100_grain = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_wine = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_wool = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_cloth = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_fish = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_fur = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_salt = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_naval_supplies = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_copper = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_gold = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_iron = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_slaves = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_ivory = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_tea = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_chinaware = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_spices = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_coffee = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_cotton = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_sugar = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_tobacco = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_cocoa = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_silk = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_tropical_wood = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_dyes = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_ashenvale_lumber = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_lumber = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_kypari = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_oil = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_stone = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_dark_iron = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_saronite = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_mithril = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_thorium = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_fel_iron = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_khorium = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_adamantite = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_titanium = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_elementium = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_ghost_iron = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_gemstones = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_ale = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_runecloth = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_netherweave = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_fossils = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_artifacts = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_crypts = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_smugglers = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_pirates = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_workshops = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_arcane = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_fel = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_army_supplies = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_mounts = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_flying_mounts = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_warbeasts = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_apexis = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_glowcap = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_grain_silo = {
+    trade_goods_size_modifier = 1.0
+}
+good_production_100_moonwell = {
+    trade_goods_size_modifier = 1.0
+}

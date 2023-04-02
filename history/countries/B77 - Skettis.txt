@@ -1,21 +1,44 @@
-discover_home_continent = yes
-# Skettis
-government 			= native
-add_government_reform = native_tribe_reform
+government = tribal
+add_government_reform = tribal_federation_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 mercantilism 		= 10
-technology_group 	= tech_arrakoa
-religion			= religion_terokk
-primary_culture 	= culture_sethekk
+technology_group 	= tech_fallen_arakkoa
+religion			= shadow
+primary_culture 	= culture_fallen_arrakoa
 capital 			= 1651
 
-617.1.1 = { 
-	monarch = { 
-		name = "" 
-		dynasty = "Terokk" 
-		adm = 4
-		dip = 5
-		mil = 4
-                
-	} 
+540.1.1 = {
+	monarch = {
+		name = "Pezakkum"
+		dynasty = "Bloodcaw"
+		birth_date = 502.1.1
+		adm = 5
+		dip = 0
+		mil = 0
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 1
+        FINESSE = 1
+        CONCENTRATION = 1
+        MANA = 2
+        shadow = yes
+    }
 }
-
+590.1.1 = {
+	monarch = {
+		name = "Shohhazgrash"
+		dynasty = "Bloodcaw"
+		birth_date = 545.1.1
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 1
+        FINESSE = 1
+        CONCENTRATION = 1
+        MANA = 2
+        shadow = yes
+    }
+}

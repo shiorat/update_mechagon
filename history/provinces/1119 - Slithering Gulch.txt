@@ -3,13 +3,14 @@ owner = SEK
 controller = SEK
 add_core = SEK
 
-base_tax = 7
-base_production = 5
-base_manpower = 8
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
 culture = culture_sethrak
-religion = religion_faithless
+religion = faithless
 
-trade_goods = mithril
 hre = no
+trade_goods = mithril
+add_building = wow_fort_1
 

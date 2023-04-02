@@ -42,6 +42,7 @@
 # warsubsidy
 # sellprov
 # imperial_relations_action
+# imperial_realm_war_action
 # religious_unity_action
 # grant_electorate
 # remove_electorate
@@ -59,7 +60,6 @@
 # sabotage_reputation
 # support_rebels
 # sow_discontent
-# study_technology
 # agitate_for_liberty
 # form_coalition
 # request_to_join_federation
@@ -69,8 +69,7 @@
 # designate_march
 # ask_for_march
 # sell_ships_action
-# counterespionage
-# abandon_union_action
+# abandon_union
 # takeondebt
 # influence_nation
 # claim_states
@@ -86,321 +85,234 @@
 # ask_for_tributary_state_action
 # knowledge_sharing
 
-enforce_peace = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
-		}
-        allow = {
-            always = no
+royal_marriage = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - royal_marriage"
         }
+    }
+    
+	condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
 	}
-}
-callaction = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
 		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
 		}
-        allow = {
-            always = no
-        }
+		allow = {
+			always = no
+		}
 	}
-}
-milaccess= {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
+    
+    condition = {
+		tooltip = MARWAR
 		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
 		}
-        allow = {
-            always = no
-        }
-	}
-}
-offermilaccess= {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
+		allow = {
+			NOT = { war_with = FROM }
 		}
-        allow = {
-            always = no
-        }
-	}
-}
-giftaction = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
-		}
-        allow = {
-            always = no
-        }
-	}
-}
-guaranteeaction = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
-		}
-        allow = {
-            always = no
-        }
-	}
-}
-sellprov = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
-		}
-        allow = {
-            always = no
-        }
 	}
 }
 
-tributary_state_action = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
-		}
-        allow = {
-            always = no
-        }
-	}
-}
-ask_for_tributary_state_action = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
-		}
-        allow = {
-            always = no
-        }
-	}
-}
-threaten_war = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
-		}
-        allow = {
-            always = no
-        }
-	}
-}
-improve_relation = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
-		}
-        allow = {
-            always = no
-        }
-	}
-}
 declarewar = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - declarewar"
+        }
+    
+        # Aggressive
+        if = {
+            limit = {
+                has_reform = dragonflight_brood_reform
+            }
+            
+            random_list = {
+                20 = { change_statists_vs_monarchists = -0.05 }
+                20 = { change_statists_vs_monarchists = -0.04 }
+                20 = { change_statists_vs_monarchists = -0.03 }
+                20 = { change_statists_vs_monarchists = -0.02 }
+                20 = { change_statists_vs_monarchists = -0.01 }
+            }
+        }
+    }
+    
+    condition = {
+        tooltip = PREVENT_WAR_DIP_TT
+        
+        potential = {
+            FROM = {
+                has_country_modifier = chi_prevent_war
+            }
 		}
         allow = {
             always = no
         }
-	}
-}
-fabricate_claim = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
 		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
 		}
-        allow = {
-            always = no
-        }
-	}
-}
-embargoaction = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
+		allow = {
+			always = no
 		}
-        allow = {
-            always = no
-        }
 	}
 }
-allianceaction = {
-	condition = {
-        tooltip = DIP_INCOMP_DRAGONKIN
-		
+
+requestpeace = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - requestpeace"
+        }
+    }
+}
+
+support_independence_action = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - support_independence_action"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
 		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+allianceaction = {  
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - allianceaction"
+        }
+    
+        # Diplomatic
+        if = {
+            limit = {
+                has_reform = dragonflight_brood_reform
+            }
+            
+            random_list = {
+                20 = { change_statists_vs_monarchists = 0.05 }
+                20 = { change_statists_vs_monarchists = 0.04 }
+                20 = { change_statists_vs_monarchists = 0.03 }
+                20 = { change_statists_vs_monarchists = 0.02 }
+                20 = { change_statists_vs_monarchists = 0.01 }
+            }
+        }
+    }
+    
+    condition = {
+        tooltip = DIP_INCOMP_WORGEN_FORSAKEN
+        
+        potential = {
+            has_global_flag = enabled_lore_diplomacy_mechanics
 			OR = {
 				AND = {
-					NOT = { has_global_flag = dragons_allowed_alliance }
-					culture_group = culture_group_dragonkin
-					FROM = { 
-						NOT = {
-							culture_group = culture_group_dragonkin
-							is_ancient = yes
-						}
-					}
-				}
-				AND = {
-					NOT = { has_global_flag = dragons_allowed_alliance }
-					NOT = {
-						culture_group = culture_group_dragonkin
-						is_ancient = yes
-					}
-					FROM = { 
-						culture_group = culture_group_dragonkin
-					}
-				}
+                    culture_group = culture_group_worgen
+                    FROM = {
+                        culture_group = culture_group_undead
+                    }
+                }
+                AND = {
+                    culture_group = culture_group_undead
+                    FROM = {
+                        culture_group = culture_group_worgen
+                    }
+                }
 			}
 		}
         allow = {
             always = no
         }
 	}
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
-		}
-        allow = {
-            always = no
-        }
-	}
+    
     condition = {
         tooltip = DIP_INCOMP_EVIL
         
         potential = {
+            has_global_flag = enabled_lore_diplomacy_mechanics
 			OR = {
 				AND = {
-					religion = religion_old_gods
+					OR = {
+						religion = cthun
+						religion = nzoth
+						religion = yogg_saron
+						religion = yshaarj
+						religion = twilight_cult
+						religion = nightmare
+					}
 					FROM = {
-						NOT = { religion_group = religion_group_the_void }
-						NOT = { is_lesser = yes}
+						NOT = { religion_group = shadow_group }
+						NOT = { is_uncivilized = yes }
 					}
 				}
 				AND = {
-					religion_group = religion_group_disorder
+					religion_group = disorder_group
 					FROM = {
-						NOT = { religion_group = religion_group_disorder }
-						NOT = { is_lesser = yes}
+						NOT = { religion_group = disorder_group }
+						NOT = { is_uncivilized = yes }
 					}
 				}
 				AND = {
-					NOT = { religion_group = religion_group_the_void }
+					NOT = { religion_group = shadow_group }
 					FROM = {
-						religion = religion_old_gods
+						OR = {
+							religion = cthun
+							religion = nzoth
+							religion = yogg_saron
+							religion = yshaarj
+							religion = twilight_cult
+							religion = nightmare
+						}
 					}
 				}
 				AND = {
-					NOT = { religion_group = religion_group_disorder }
+					NOT = { religion_group = disorder_group }
 					FROM = {
-						religion_group = religion_group_disorder
+						religion_group = disorder_group
+					}
+				}
+				AND = {
+					NOT = { religion_group = death_group }
+					FROM = {
+						religion_group = death_group
 					}
 				}
 			}
@@ -413,17 +325,21 @@ allianceaction = {
         tooltip = DIP_INCOMP_SCOURGE
         
         potential = {
+            has_global_flag = enabled_lore_diplomacy_mechanics
 			OR = {
 				AND = {
-					religion = religion_the_damned
+					religion = cult_of_the_damned
 					FROM = {
-						NOT = { religion_group = religion_group_the_void }
+						NOT = { religion_group = shadow_group }
+                        NOT = { religion_group = death_group }
 					}
 				}
 				AND = {
-					NOT = { religion_group = religion_group_the_void }
+                    NOT = { religion_group = shadow_group }
+                    NOT = { religion_group = death_group }
+                    
 					FROM = {
-						religion = religion_the_damned
+						religion = cult_of_the_damned
 					}
 				}
 			}
@@ -433,24 +349,27 @@ allianceaction = {
         }
 	}
     condition = {
-        tooltip = DIP_INCOMP_LESSER
+        tooltip = DIP_INCOMP_UNCIVILIZED
         
         potential = {
+            has_global_flag = enabled_lore_diplomacy_mechanics
+            
 			OR = {
 				AND = {
-					is_lesser = yes
+					is_uncivilized = yes
 					FROM = {
-						NOT = { is_lesser = yes }
+						NOT = { is_uncivilized = yes }
 					}
 				}
 				AND = {
-					NOT = { is_lesser = yes }
+					NOT = { is_uncivilized = yes }
 					NOT = { is_savage = yes }
 					NOT = { is_neighbor_of = FROM }
-					NOT = { religion_group = religion_group_the_void }
-					NOT = { religion_group = religion_group_disorder }
+					NOT = { religion_group = shadow_group }
+					NOT = { religion_group = death_group }
+					NOT = { religion_group = disorder_group }
 					FROM = {
-						is_lesser = yes
+						is_uncivilized = yes
 					}
 				}
 			}
@@ -463,29 +382,35 @@ allianceaction = {
         tooltip = DIP_INCOMP_FACTION
         
         potential = {
+            has_global_flag = enabled_lore_diplomacy_mechanics
+            
 			OR = {
 				AND = {
 					OR = {
-						has_country_modifier = alliance_head
-						is_subject_of_type = faction_alliance
+						has_country_modifier = head_of_alliance
+                        has_country_modifier = member_of_alliance
 					}
 					FROM = {
 						OR = {
-							has_country_modifier = horde_head
-							is_subject_of_type = faction_horde
+							has_country_modifier = head_of_horde
+                            has_country_modifier = member_of_horde
+                            has_country_modifier = head_of_old_horde
+                            has_country_modifier = member_of_old_horde
 						}
 					}
 				}
 				AND = {
 					OR = {
-						has_country_modifier = horde_head
-						is_subject_of_type = faction_horde
-					}
+                        has_country_modifier = head_of_horde
+                        has_country_modifier = member_of_horde
+                        has_country_modifier = head_of_old_horde
+                        has_country_modifier = member_of_old_horde
+                    }
 					FROM = {
 						OR = {
-							has_country_modifier = alliance_head
-							is_subject_of_type = faction_alliance
-						}
+                            has_country_modifier = head_of_alliance
+                            has_country_modifier = member_of_alliance
+                        }
 					}
 				}
 			}
@@ -498,13 +423,15 @@ allianceaction = {
         tooltip = DIP_INCOMP_HISTORICAL
         
         potential = {
+            has_global_flag = enabled_lore_diplomacy_mechanics
+            
 			OR = {
 				# Humans - Orcs
 				AND = {
 					culture_group = culture_group_human
 					FROM = { culture_group = culture_group_orc }
 					NOT = {
-						any_country = {
+						any_known_country = {
 							alliance_with = ROOT
 							alliance_with = FROM
 						}
@@ -514,7 +441,7 @@ allianceaction = {
 					culture_group = culture_group_orc
 					FROM = { culture_group = culture_group_human }
 					NOT = {
-						any_country = {
+						any_known_country = {
 							alliance_with = ROOT
 							alliance_with = FROM
 						}
@@ -528,16 +455,16 @@ allianceaction = {
 					}
 					FROM = { 
 						OR = {
-							culture_group = culture_group_forest_troll 
-							culture_group = culture_group_jungle_troll 
-							culture_group = culture_group_dark_troll 
-							culture_group = culture_group_ice_troll
-							culture_group = culture_group_sand_troll
-							culture_group = culture_group_zandalar_troll
+							primary_culture = culture_forest_troll 
+							primary_culture = culture_jungle_troll 
+							primary_culture = culture_dark_troll 
+							primary_culture = culture_frost_troll
+							primary_culture = culture_sand_troll
+							primary_culture = culture_zandalari_troll
 						}
 					}
 					NOT = {
-						any_country = {
+						any_known_country = {
 							alliance_with = ROOT
 							alliance_with = FROM
 						}
@@ -545,12 +472,12 @@ allianceaction = {
 				}
 				AND = {
 					OR = {
-						culture_group = culture_group_forest_troll 
-						culture_group = culture_group_jungle_troll 
-						culture_group = culture_group_dark_troll 
-						culture_group = culture_group_ice_troll
-						culture_group = culture_group_sand_troll
-						culture_group = culture_group_zandalar_troll
+						primary_culture = culture_forest_troll 
+						primary_culture = culture_jungle_troll 
+						primary_culture = culture_dark_troll 
+						primary_culture = culture_frost_troll
+						primary_culture = culture_sand_troll
+						primary_culture = culture_zandalari_troll
 					}
 					FROM = { 
 						OR = {
@@ -559,7 +486,7 @@ allianceaction = {
 						}
 					}
 					NOT = {
-						any_country = {
+						any_known_country = {
 							alliance_with = ROOT
 							alliance_with = FROM
 						}
@@ -572,7 +499,7 @@ allianceaction = {
 						culture_group = culture_group_undead
 					}
 					NOT = {
-						any_country = {
+						any_known_country = {
 							alliance_with = ROOT
 							alliance_with = FROM
 						}
@@ -584,7 +511,7 @@ allianceaction = {
 						culture_group = culture_group_worgen
 					}
 					NOT = {
-						any_country = {
+						any_known_country = {
 							alliance_with = ROOT
 							alliance_with = FROM
 						}
@@ -596,42 +523,64 @@ allianceaction = {
             always = no
         }
 	}
-}
-
-royal_marriage = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
 		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
-		}
-        allow = {
-            always = no
-        }
-	}
-	condition = {
-		tooltip = MARWAR
-		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
 		}
 		allow = {
-			NOT = { war_with = FROM }
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
 		}
 	}
 }
 
-
+embargoaction = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - embargoaction"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
 
 annexationaction = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - annexationaction"
+        }
+    }
+    
 	condition = {
 		tooltip = ANNEX_TOO_LOW
 		potential = {
 			FROM = {
-				vassal_of = ROOT
+				is_subject_of = ROOT
 			}
 		}
 		allow = {
@@ -643,25 +592,56 @@ annexationaction = {
 			}
 		}
 	}
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
+    
+    # Block early annexation by AI nations
+    condition = {
+		tooltip = AI_BLOCK_ANNEXATION
 		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
+            ai = yes
+			FROM = {
+				is_subject_of = ROOT
 			}
 		}
-        allow = {
-            always = no
-        }
+		allow = {
+			is_year = 600
+		}
 	}
-	
+    
+    # Block early annexation by AI nations
+    condition = {
+		tooltip = SCOURGE_CANNOT_ANNEX
+		potential = {
+            has_country_modifier = helm_of_domination
+            FROM = {
+                has_reform = scourge_domain_reform
+                is_subject_of = ROOT
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 integrationaction = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - integrationaction"
+        }
+    }
+    
 	condition = {
 		tooltip = INTEGRATETOOLOWDESC
 		potential = {
@@ -676,49 +656,51 @@ integrationaction = {
 			}
 		}
 	}
-	#condition = {
-	#	tooltip = INTEGRATEINVALID
-	#	potential = {
-	#		senior_union_with = FROM
-	#	}
-	#	allow = {
-	#		FROM = {
-	#			years_in_union_under = {
-	#				who = ROOT
-	#				years = 50
-	#			}
-	#		}
-	#	}
-	#}
+    
+    condition = {
+		tooltip = PUINTEGRATIONIMPOSSIBLE
+		potential = {
+			has_government_attribute = cannot_integrate_personal_unions
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_integrate_personal_unions }
+		}
+	}
+    
+    # Block early annexation by AI nations
+    condition = {
+		tooltip = AI_BLOCK_ANNEXATION
+		potential = {
+            ai = yes
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+		allow = {
+			is_year = 600
+		}
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 vassalaction = {
-	condition = {
-		tooltip = DIP_INCOMP_TOOMANYFACTIONMEMBER
-		potential = {
-			OR = {
-				faction_alliance = 6
-				faction_horde = 6
-			}
-		}
-		allow = {
-			always = no
-		}
-	}
-	
-	condition = {
-		tooltip = DIP_INCOMP_ORG
-		potential = {
-			OR = {
-				is_organization = yes
-				FROM = { is_organization = yes }
-			}
-		}
-		allow = {
-			always = no
-		}
-	}
-	
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - vassalaction"
+        }
+    }
+    
 	condition = {
 		tooltip = VASSALINVALID
 		potential = {
@@ -734,27 +716,986 @@ vassalaction = {
 			FROM = { is_at_war = no }
 		}
 	}
-	
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
 		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+guaranteeaction = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - guaranteeaction"
+        }
+        
+        # Diplomatic
+        if = {
+            limit = {
+                has_reform = dragonflight_brood_reform
+            }
+            
+            random_list = {
+                20 = { change_statists_vs_monarchists = 0.05 }
+                20 = { change_statists_vs_monarchists = 0.04 }
+                20 = { change_statists_vs_monarchists = 0.03 }
+                20 = { change_statists_vs_monarchists = 0.02 }
+                20 = { change_statists_vs_monarchists = 0.01 }
+            }
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+warningaction = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - warningaction"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+threaten_war = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - threaten_war"
+        }
+        
+        # Aggressive
+        if = {
+            limit = {
+                has_reform = dragonflight_brood_reform
+            }
+            
+            random_list = {
+                20 = { change_statists_vs_monarchists = -0.05 }
+                20 = { change_statists_vs_monarchists = -0.04 }
+                20 = { change_statists_vs_monarchists = -0.03 }
+                20 = { change_statists_vs_monarchists = -0.02 }
+                20 = { change_statists_vs_monarchists = -0.01 }
+            }
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+milaccess = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - milaccess"
+        }
+    }
+    
+}
+
+fleet_access = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - fleet_access"
+        }
+    }
+}
+
+offer_fleet_access = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - offer_fleet_access"
+        }
+    }
+}
+
+offermilaccess = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - offermilaccess"
+        }
+    }
+}
+
+insultaction = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - insultaction"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+giftaction = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - giftaction"
+        }
+        
+        # Diplomatic
+        if = {
+            limit = {
+                has_reform = dragonflight_brood_reform
+            }
+            
+            random_list = {
+                20 = { change_statists_vs_monarchists = 0.05 }
+                20 = { change_statists_vs_monarchists = 0.04 }
+                20 = { change_statists_vs_monarchists = 0.03 }
+                20 = { change_statists_vs_monarchists = 0.02 }
+                20 = { change_statists_vs_monarchists = 0.01 }
+            }
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+claimaction = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - claimaction"
+        }
+    }
+
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+callaction = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - callaction"
+        }
+    }
+}
+
+offerloan = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - claimaction"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+warsubsidy = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - claimaction"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+sellprov = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - sellprov"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+imperial_relations_action = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - imperial_relations_action"
+        }
+    }
+    
+    
+}
+
+imperial_realm_war_action = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - imperial_realm_war_action"
+        }
+    }
+}
+
+religious_unity_action = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - religious_unity_action"
+        }
+    }
+}
+
+grant_electorate = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - grant_electorate"
+        }
+    }
+}
+
+remove_electorate = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - remove_electorate"
+        }
+    }
+}
+
+grant_freecity = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - grant_freecity"
+        }
+    }
+}
+
+remove_freecity = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - remove_freecity"
+        }
+    }
+}
+
+demand_unlawful_territory_action = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - demand_unlawful_territory_action"
+        }
+    }
+}
+
+call_crusade_action = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - call_crusade_action"
+        }
+    }
+}
+
+excommunicate_action = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - excommunicate_action"
+        }
+    }
+}
+
+enforce_peace = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - enforce_peace"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+improve_relation = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - improve_relation"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+fabricate_claim = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - fabricate_claim"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+justify_trade_conflict = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - justify_trade_conflict"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+transfer_trade_power = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - transfer_trade_power"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+infiltrate_administration = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - infiltrate_administration"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+sabotage_reputation = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - sabotage_reputation"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+support_rebels = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - support_rebels"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+sow_discontent = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - sow_discontent"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+agitate_for_liberty = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - agitate_for_liberty"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+form_coalition = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - form_coalition"
+        }
+    }
+    
+    condition = {
+		tooltip = TOO_SMALL_TO_COALITION
+		potential = {
+            # Target of Coalition
+            FROM = {
+                NOT = { total_development = 200 }
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    
+	condition = {
+		tooltip = WWU_MINAGGRESSIVEEXPANSION
+		potential = {	
+		}
+		allow = {
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM # Target of Coalition
+					value = -50
 				}
 			}
 		}
-        allow = {
-            always = no
+	}
+
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+request_to_join_federation = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - request_to_join_federation"
         }
+    }
+    
+    condition = {
+		tooltip = DISABLED_MECHANIC
+		potential = {	
+            NOT = { has_global_flag = enabled_federations }
+		}
+		allow = {
+			always = no
+		}
+	}
+    
+    # Block federations for the 1st year so the AI doesn't auto-make them before the player can toggle the feature.
+    condition = {
+		tooltip = DISABLED_MECHANIC
+		potential = {	
+            NOT = {
+                had_global_flag = {
+                    flag = game_duration_timer
+                    days = 365
+                }
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    
+    condition = {
+		tooltip = THIER_FEDERATION_TOO_BIG
+		potential = {	
+            has_global_flag = enabled_federations
+            
+            # Limit size based on leader development
+            FROM = {
+                if = {
+                    limit = {
+                        is_federation_leader = yes
+                        total_development = 200
+                    }
+                    is_federation_leader = yes
+                    federation_size = 5
+                }
+                else_if = {
+                    limit = {
+                        is_federation_leader = yes
+                        total_development = 100
+                    }
+                    is_federation_leader = yes
+                    federation_size = 4
+                }
+                else = {
+                    is_federation_leader = yes
+                    federation_size = 3
+                }
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+invite_to_federation = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - invite_to_federation"
+        }
+    }
+    
+    condition = {
+		tooltip = DISABLED_MECHANIC
+		potential = {	
+            NOT = { has_global_flag = enabled_federations }
+		}
+		allow = {
+			always = no
+		}
+	}
+    
+    # Block federations for the 1st year so the AI doesn't auto-make them before the player can toggle the feature.
+    condition = {
+		tooltip = DISABLED_MECHANIC
+		potential = {	
+            NOT = {
+                had_global_flag = {
+                    flag = game_duration_timer
+                    days = 365
+                }
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    
+    condition = {
+		tooltip = OUR_FEDERATION_TOO_BIG
+		potential = {	
+            has_global_flag = enabled_federations
+            
+            # Limit size based on leader development
+            if = {
+                limit = {
+                    is_federation_leader = yes
+                    total_development = 200
+                }
+                is_federation_leader = yes
+                federation_size = 5
+            }
+            else_if = {
+                limit = {
+                    is_federation_leader = yes
+                    total_development = 100
+                }
+                is_federation_leader = yes
+                federation_size = 4
+            }
+            else = {
+                is_federation_leader = yes
+                federation_size = 3
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+support_heir = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - support_heir"
+        }
+    }
+}
+
+break_marriage = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - break_marriage"
+        }
+    }
+}
+
+designate_march = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - designate_march"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+ask_for_march = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - ask_for_march"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+sell_ships_action = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - sell_ships_action"
+        }
+    }
+
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
 	}
 }
 
 abandon_union_action = {
-	condition = {
-		tooltip = DIP_INCOMP_NOTAVAILABLE
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - abandon_union_action"
+        }
+    }
+    
+    condition = {
+		tooltip = EMPTYTOOLTIP
 		potential = {
 		}
 		allow = {
@@ -764,66 +1705,169 @@ abandon_union_action = {
 			}
 		}
 	}
+	condition = {
+		tooltip = PUABANDONINGIMPOSSIBLE
+		potential = {
+			has_government_attribute = cannot_abandon_personal_unions
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_abandon_personal_unions }
+		}
+	}
 }
 
-
-
-
-form_coalition = {
-	condition = {
-        tooltip = DIP_INCOMP_NOTAVAILABLE
-		
-		potential = {
-			OR = {
-				has_country_flag = complete_stasis
-				FROM = {
-					has_country_flag = complete_stasis
-				}
-			}
-		}
-        allow = {
-            always = no
+takeondebt = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - takeondebt"
         }
-	}
-	condition = {
-		tooltip = MINAGGRESSIVEEXPANSION
-		potential = {	
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
 		}
 		allow = {
-			has_opinion_modifier = {
-				modifier = aggressive_expansion
-				who = FROM
-				value = -50
-			}		
-			NOT = {
-				has_opinion_modifier = {
-					modifier = aggressive_expansion
-					who = FROM
-					value = -50
-				}
-			}
+			always = no
 		}
 	}
 }
 
-
-request_to_join_trade_league = {
-	condition = {
-		tooltip = NOT_RELEVANT_TRADE_REGION_FROM
+influence_nation = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - influence_nation"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
 		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
 		}
 		allow = {
-			home_trade_node = {
-				trade_share = {
-					country = from
-					share = 1
-				}
-			}
+			always = no
+		}
+	}
+}
+
+claim_states = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - claim_states"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+steer_trade = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - steer_trade"
+        }
+    }
+
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+stealmap = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - stealmap"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+spy_network = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - spy_network"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
 		}
 	}
 }
 
 invite_to_trade_league = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = invite_to_trade_league }
+            log = "DEBUG - [Root.GetName], [From.GetName] - request_to_join_trade_league"
+        }
+    }
+    
 	condition = {
 		tooltip = NOT_RELEVANT_TRADE_REGION
 		potential = {
@@ -837,6 +1881,221 @@ invite_to_trade_league = {
 					}
 				}
 			}
+		}
+	}
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {   
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+request_to_join_trade_league = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - request_to_join_trade_league"
+        }
+    }
+    
+	condition = {
+		tooltip = NOT_RELEVANT_TRADE_REGION_FROM
+		potential = {
+		}
+		allow = {
+			home_trade_node = {
+				trade_share = {
+					country = from
+					share = 1
+				}
+			}
+		}
+	}
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+sharemap = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - sharemap"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+intervene_in_war = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - intervene_in_war"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+break_alliance = {
+    effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - break_alliance"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+tributary_state_action = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - tributary_state_action"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+ask_for_tributary_state_action = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - ask_for_tributary_state_action"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+knowledge_sharing = {
+	effect = {
+        if = { 
+            limit = { has_global_flag = enable_diplomacy_logging }
+            log = "DEBUG - [Root.GetName], [From.GetName] - knowledge_sharing"
+        }
+    }
+    
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_THEM
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            FROM = {
+                has_country_modifier = enforced_isolation
+            }
+		}
+		allow = {
+			always = no
+		}
+	}
+    condition = {
+		tooltip = DIP_ENFORCED_ISOLATION_US
+		potential = {
+            has_global_flag = enabled_isolation_mechanics
+            has_country_modifier = enforced_isolation
+		}
+		allow = {
+			always = no
 		}
 	}
 }

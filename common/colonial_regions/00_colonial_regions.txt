@@ -1,411 +1,71 @@
-colonial_western_northrend = {
-	color = { 66 200 242 }
+# Dragon Isles
+colonial_dragon_isles = {
+	color = { 76 125 158 }
 
-	# 
+	# Random New World
 	tax_income = 0
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	
+	native_size = 5
+	native_ferocity = 5
+	native_hostileness = 5
+
 	trade_goods = {
-		saronite = 6
+		fur = 10
+		fish = 3
+		naval_supplies = 2
+		gold = 2
 	}
+
 	culture = {
-		culture_bloodpaw = 1
-		culture_frenzyheart = 1
-		culture_howling = 1
-		culture_rageclaw = 1
-		culture_snowfall = 1
+		culture_lost_dragonkin = 10
 	}
+
 	religion = {
-        religion_druidic = 1
-        religion_ancestral = 2
+		dragon_aspects = 10
 	}
-	
+
 	provinces = {
-		2336 1052 2335 2116 2341 919 2338 510 2122 2121 2332 983 2120 2123 2334 2331 1002 1019 866 2337 2344	
+		# Azure Span
+        2807 2808 2809 
+        2810 2811 2812
+        2805 2806 2822 
+        2823 2825 2824 2826 2827 2821
+        2820 2829 2830 2828
+        2801 2803 2802 2804
+        2813 2831 2814 2815 2816
+        2833 2834 2832 2835
+        2836 2837 2840 2839 2838 
+
+        # Forbidden Reach
+        2915 2916 2917 2918 
+        2913 2914 2912
+
+        # Ohn'ahran Plains
+        2847 2846
+        2848 2850 2849
+        2841 2842 2843
+        2845 2844 2856 2854
+        2859 2857 2862 2861
+        2858 2860 2851 2852
+        2853 2863 2895 2873
+
+        # Thaldrasszus
+        2899 2904 2900 2902 2909
+        2901 2818 2817 2819
+        2896 2897 2903 2898
+        2907 2906 2905 2908 
+        2910 2911 2919 
+
+        # Waking Shores
+        2883 2882 2881 2884 2885
+        2880 2879 2877 2876
+        2874 2875 2872 2878
+        2886 2887 2888 2891 
+        2889 2892 2894 2890 2871
+        2893 2869 2866 2867 2868
+        2855 2864 2865 2870
 	}
-	
-	
+
 	names = {
-		name = "colonial_western_northrend_name"
+		name = "COLONIAL_REGION_New_Root_GetName"
 	}
 }
-
-colonial_central_northrend = {
-	color = { 66 245 242 }
-
-	# 
-	tax_income = 0
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	
-	trade_goods = {
-		saronite = 6
-	}
-	culture = {
-		culture_bloodpaw = 1
-		culture_frenzyheart = 1
-		culture_howling = 1
-		culture_rageclaw = 1
-		culture_snowfall = 1
-	}
-	religion = {
-        religion_druidic = 1
-        religion_ancestral = 2
-	}
-	
-	provinces = {
-		796 2399 995 2398 781 529 509 2402 2493 2400 2401 2131 748 2403 545 935 679 2404 2491 1018 812 2130 1283 2397 1281 2128 2129
-	}
-	
-	
-	names = {
-		name = "colonial_central_northrend_name"
-	}
-}
-
-colonial_eastern_northrend = {
-	color = { 66 245 200 }
-
-	# 
-	tax_income = 0
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	
-	trade_goods = {
-		saronite = 6
-	}
-	culture = {
-		culture_bloodpaw = 1
-		culture_frenzyheart = 1
-		culture_howling = 1
-		culture_rageclaw = 1
-		culture_snowfall = 1
-	}
-	religion = {
-        religion_druidic = 1
-        religion_ancestral = 2
-	}
-	
-	provinces = {
-		583 2415 2412 1289 2455 918 2481 2480 2479 899 2109 865 2478 584 2462 564 696 2460 546 2105 2465 1290 2466 882 2463 600 635 2110 769 749 714 867 2468 2102
-	}
-	
-	
-	names = {
-		name = "colonial_eastern_northrend_name"
-	}
-}
-
-colonial_teldrassil = {
-	color = { 0 120 10 }
-
-	# 
-	tax_income = 0
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	
-	trade_goods = {
-		saronite = 6
-	}
-	culture = {
-		culture_bloodpaw = 1
-		culture_frenzyheart = 1
-		culture_howling = 1
-		culture_rageclaw = 1
-		culture_snowfall = 1
-	}
-	religion = {
-        religion_druidic = 1
-        religion_ancestral = 2
-	}
-	
-	provinces = {
-		1070 1073 1069 1072 1068 1067 1071 1065 3168 3169 3170# Teldrassil
-	}
-	
-	names = {
-		name = "colonial_teldrassil_name"
-	}
-}
-
-colonial_myst_isles = {
-	color = { 187 237 234 }
-
-	# 
-	tax_income = 0
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	
-	trade_goods = {
-		saronite = 6
-	}
-	culture = {
-		culture_bloodpaw = 1
-		culture_frenzyheart = 1
-		culture_howling = 1
-		culture_rageclaw = 1
-		culture_snowfall = 1
-	}
-	religion = {
-        religion_druidic = 1
-        religion_ancestral = 2
-	}
-	
-	provinces = {
-		1085 1084 1075 1074 1076 1078 1077 1081 1083 1082 1080 1079 2266 2267 2268 2269 2270 2271 2272 2273 2274 2275 # Bloodmyst Isle
-		1086 1088 1089 1095 1087 1093 1090 1091 1092 1094 2258 2259 2260 2261 2262 2263 2264 2265 # Azuremyst Isle
-	}
-	
-	names = {
-		name = "colonial_myst_isles_name"
-	}
-}
-
-colonial_central_kalimdor = {
-	color = { 189 150 32 }
-
-	# 
-	tax_income = 0
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	
-	trade_goods = {
-		saronite = 6
-	}
-	culture = {
-		culture_bloodpaw = 1
-		culture_frenzyheart = 1
-		culture_howling = 1
-		culture_rageclaw = 1
-		culture_snowfall = 1
-	}
-	religion = {
-        religion_druidic = 1
-        religion_ancestral = 2
-	}
-	
-	provinces = {
-		1426 1379 1378 1381 1380 1383 1382 1384 1385 2288 2289 2290 2291 2292 2293 2294 # Durotar
-		1370 1371 1420 1368 1421 1372 1373  1443  2282 2283 2285 1365 1409 1369 1422 # Northern Barrens
-		1440 1442 1441 1444 1446 1447 1464 2287  1374 1423 # Southern Barrens
-		1448 1465 1451 1450 1461 1452 1463 1453 1455 1454 1462 1456 1438 2201 2950 2951 2952 2953# Dustwallow Marsh
-	}
-	
-	names = {
-		name = "colonial_central_kalimdor_name"
-	}
-}
-
-colonial_ungoro = {
-	color = { 125 255 32 }
-
-	# 
-	tax_income = 0
-	native_size = 1
-	native_ferocity = 1
-	native_hostileness = 1
-	
-	trade_goods = {
-		saronite = 6
-	}
-	culture = {
-		culture_bloodpaw = 1
-		culture_frenzyheart = 1
-		culture_howling = 1
-		culture_rageclaw = 1
-		culture_snowfall = 1
-	}
-	religion = {
-        religion_druidic = 1
-        religion_ancestral = 2
-	}
-	
-	provinces = {
-		1526 1528 1529 1530 1539 1534 1527 1535 1540 1533 1531 1532 1537 1536 # Un'goro Crater
-	}
-	
-	names = {
-		name = "colonial_ungoro_name"
-	}
-}
-
-# colonial_azerothian = {
-	# color = { 74 77 255 }
-
-	
-	# tax_income = 0
-	# native_size = 1
-	# native_ferocity = 1
-	# native_hostileness = 1
-	
-	# trade_goods = {
-		# saronite = 6
-	# }
-	# culture = {
-		# culture_bloodpaw = 1
-		# culture_frenzyheart = 1
-		# culture_howling = 1
-		# culture_rageclaw = 1
-		# culture_snowfall = 1
-	# }
-	# religion = {
-        # religion_druidic = 1
-        # religion_ancestral = 2
-	# }
-	
-	# provinces = {
-		# 885 638 547 949 707 994 725 864 594 879 1995 2185 2160 2184 2183 2159 2157 2186 2155 2180 2156  2191  2181 2188 2158 2189  # Swamp of Sorrows
-		# 884 630 1050 807 1045 1033 1034 1043 1042 553 1035 1037 869 814 836 853 2176   2174 2173 2171 # Blasted Lands
-
-	# }
-	
-	# names = {
-		# name = "colonial_azerothian_name"
-	# }
-# }
-
-# 
-colonial_placeholder_1 = {
-	color = { 211 108 45 }
-	
-	provinces = {
-	}
-}
-
-colonial_placeholder_2 = {
-	color = { 152 148 183 }
-	
-	provinces = {
-	}
-}
-
-colonial_placeholder_3 = {
-	color = { 247 158 146 }
-	
-	provinces = {
-	}
-}
-
-colonial_placeholder_4 = {
-	color = { 20 107 142 }
-	
-	provinces = {
-	}
-}
-
-colonial_placeholder_5 = {
-	color = { 228 168 201 }
-	
-	provinces = {
-	}
-}
-
-colonial_placeholder_6 = {
-	color = { 13 81 174 }
-	
-	provinces = {
-	}
-}
-
-colonial_placeholder_7 = {
-	color = { 64 54 203 }
-	
-	provinces = {
-	}
-}
-
-colonial_placeholder_8 = {
-	color = { 171 41 160 }
-	
-	provinces = {
-	}
-}
-# colonial_placeholder_8 = {
-	# color = { 171 41 160 }
-	
-	# provinces = {
-	# }
-# }
-
-# colonial_placeholder_9 = {
-	# color = { 113 23 68 }
-	
-	# provinces = {
-	# }
-# }
-
-# colonial_placeholder_10 = {
-	# color = { 95 125 183 }
-	
-	# provinces = {
-	# }
-# }
-# colonial_placeholder_11 = {
-	# color = { 50 150 45 }
-	
-	# provinces = {
-	# }
-# }
-
-# colonial_placeholder_12 = {
-	# color = { 200 190 20 }
-	
-	# provinces = {
-	# }
-# }
-
-# colonial_placeholder_13 = {
-	# color = { 20 220 90 }
-	
-	# provinces = {
-	# }
-# }
-
-# colonial_placeholder_14 = {
-	# color = { 100 50 50 }
-	
-	# provinces = {
-	# }
-# }
-
-# colonial_placeholder_15 = {
-	# color = { 200 50 50 }
-	
-	# provinces = {
-	# }
-# }
-
-# colonial_placeholder_16 = {
-	# color = { 30 30 60 }
-	
-	# provinces = {
-	# }
-# }
-
-# colonial_placeholder_17 = {
-	# color = { 90 70 100 }
-	
-	# provinces = {
-	# }
-# }
-
-# colonial_placeholder_18 = {
-	# color = { 90 140 30 }
-	
-	# provinces = {
-	# }
-# }
-
-# colonial_placeholder_19 = {
-	# color = { 140 60 30 }
-	
-	# provinces = {
-	# }
-# }

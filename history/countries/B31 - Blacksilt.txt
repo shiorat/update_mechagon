@@ -1,10 +1,31 @@
-discover_home_continent = yes
-# Siltfin/Blacksilt
-government 			= tribal
-add_government_reform = primitive_clan_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
-technology_group 	= tech_depths
-religion			= religion_water
-primary_culture 	= culture_nerglish
+technology_group 	= tech_murloc
+religion			= deep_mother
+primary_culture 	= culture_murloc
 capital 			= 1082
 
+540.1.1 = {
+	monarch = {
+		name = "Lr'rg"
+		dynasty = "Blacksilt"
+		birth_date = 502.1.1
+		adm = 2
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Gllrg"
+		dynasty = "Blacksilt"
+		birth_date = 524.1.1
+		adm = 0
+		dip = 5
+		mil = 4
+	}
+}

@@ -1,32 +1,32 @@
-discover_home_continent = yes
-# Riverpaw
-government 			= tribal
-add_government_reform = primitive_clan_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
 technology_group 	= tech_gnoll
-religion			= religion_earth
-primary_culture 	= culture_riverpaw
+religion			= earth
+primary_culture 	= culture_gnoll
 capital 			= 533
 
-546.1.1 = { 
-	monarch = { 
-		name = "Brashclaw" 
-		dynasty = "Riverpaw" 
-		adm = 3
+
+540.1.1 = {
+	monarch = {
+		name = "Garlle"
+		dynasty = "Riverpaw"
+		birth_date = 451.1.1
+		adm = 4
 		dip = 3
-		mil = 3
-                
-	} 
+		mil = 1
+		female = yes
+	}
 }
-
-622.1.1 = { 
-	monarch = { 
-		name = "Hogger" 
-		dynasty = "Riverpaw" 
+590.1.1 = {
+	monarch = {
+		name = "Murng"
+		dynasty = "Riverpaw"
+		birth_date = 501.1.1
 		adm = 2
-		dip = 2
-		mil = 4
-                
-	} 
+		dip = 3
+		mil = 0
+	}
 }
-

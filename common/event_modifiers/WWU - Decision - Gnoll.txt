@@ -1,0 +1,26 @@
+#---------------------------------------
+# Modifiers
+#---------------------------------------
+# Decision: 
+curbed_infighting = {
+    global_unrest = -5
+    infantry_power = -0.05
+}
+
+# Decision: 
+divined_magic = {
+    idea_cost = -0.1
+    global_unrest = 2
+}
+
+# Decision: 
+weapons_trade = {
+    infantry_cost = -0.25
+    global_unrest = 1
+}
+
+# Decision: 
+challenged_alpha = {    
+    prestige = 0.5
+    leader_land_shock = 1
+}

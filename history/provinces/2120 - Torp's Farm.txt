@@ -1,26 +1,26 @@
-is_city = no
-native_size = 10
-native_ferocity = 10
-native_hostileness = 10
+is_city = yes
+owner = PLE
+controller = PLE
+add_core = PLE
 
 base_tax = 1
 base_production = 1
 base_manpower = 1
 
-culture = culture_gammoth
-religion = religion_earth
+culture = culture_tuskarr
+religion = primitive
 
-trade_goods = unknown
 hre = no
+trade_goods = unknown
 
-626.1.1 = { 
-    is_city = yes
+
+626.1.1 = {
     owner = P11
     controller = P11
     add_core = P11
     
     culture = culture_cultist
-    religion = religion_the_damned 
+    religion = cult_of_the_damned 
     
     base_tax = 3
     base_manpower = 2

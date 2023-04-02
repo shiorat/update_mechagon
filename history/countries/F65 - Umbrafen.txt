@@ -1,24 +1,33 @@
-discover_home_continent = yes
-# Umbrafen (Lost Ones)
-government 			= tribal
-add_government_reform = ancient_clan_reform
+government = tribal
+add_government_reform = draenei_clan_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
 
 mercantilism 		= 10
 technology_group 	= tech_draenei
-religion			= religion_shadow
+religion			= shadow
 primary_culture 	= culture_lost_one
 capital 			= 2049
 
-600.1.1 = { 
-monarch = { 
-     name = "Kataru" 
-     dynasty = "Umbrafen" 
-		adm = 2
-		dip = 3
-		mil = 3
- 	} 
- } 
-
+540.1.1 = {
+	monarch = {
+		name = "Iriellun"
+		dynasty = "Darkwhisper"
+		birth_date = 477.1.1
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Kataru"
+		dynasty = "Darkwhisper"
+		birth_date = 538.1.1
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
 
 
  

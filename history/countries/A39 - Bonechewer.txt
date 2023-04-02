@@ -1,14 +1,14 @@
-discover_home_continent = yes
-# Bonechewer
-government 			= tribal
-add_government_reform = warband_reform
+government = tribal
+add_government_reform = orc_clan_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
 technology_group 	= tech_orc
-religion			= religion_ancestral
-primary_culture 	= culture_bonechewer
-capital 			= 1645
+religion			= shamanism
+primary_culture 	= culture_orc
+capital 			= 3783
 
-
+# Draenor
 546.1.1 = { 
 	monarch = { 
 		name = "Hurkan" 
@@ -16,23 +16,43 @@ capital 			= 1645
 		adm = 2
 		dip = 3
 		mil = 3
-                
+        birth_date = 480.1.1
 	} 
 }
 
+# Fel Conversion
+560.1.1 = {
+    religion = fel
+}
+
+591.1.1 = {
+    remove_country_modifier = member_of_old_horde
+}
+
 592.1.1 = {
-    religion = religion_fel
-    
+    # Faction - Old Horde
+    add_country_modifier = {
+        name = member_of_old_horde
+        duration = -1
+    }
+
 	monarch = { 
 		name = "Tagar" 
 		dynasty = "Spinebreaker" 
 		adm = 3
 		dip = 3
 		mil = 4   
+        birth_date = 530.1.1
 	} 
 }
 
+# Outland
+600.1.1 = {
+    capital = 1645
+}
+
 617.1.1 = {
+    technology_group = tech_fel_orc
     primary_culture = culture_fel_orc
 }
 

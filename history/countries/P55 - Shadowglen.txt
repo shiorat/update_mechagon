@@ -1,31 +1,21 @@
-discover_home_continent = yes
+
 # Shadowglen
-government 			= tribal
-add_government_reform = tribal_despotism_reform
+government 			    = monarchy
+add_government_reform   = troll_kingdom_reform
 mercantilism 		= 10
-technology_group 	= tech_troll
-religion			= religion_loa
-primary_culture 	= culture_shadowglen
-capital 			= 2972
+technology_group 	= tech_forest_troll
+religion			= voodoo
+primary_culture 	= culture_forest_troll
+capital 			= 731
 historical_friend = A58
 
-546.1.1 = {  
-monarch = {  
-      name = "Krag'rogg"  
-     dynasty = "Shadowglen"  
- 		adm = 3 
-		dip = 3
-		mil = 3 
-  	}  
-  }  
+546.1.1 = {
+    monarch = {
+        name = "Krag'jin"
+        dynasty = "Shadowglen"
+        adm = 3
+        dip = 3
+        mil = 4 
+    }
+}
 
-
-592.1.1 = {  
-monarch = {  
-      name = "Zul'rogg"  
-     dynasty = "Shadowglen"  
- 		adm = 3 
-		dip = 3
-		mil = 3 
-  	}  
-  }  

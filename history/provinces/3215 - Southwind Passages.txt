@@ -1,15 +1,18 @@
-is_city = no
-native_size = 10
-native_ferocity = 10
-native_hostileness = 10
+
+is_city = yes
+
+owner = RGH
+controller = RGH
+add_core = RGH
 
 base_tax = 1
-base_production = 1
-base_manpower = 1
+base_production = 3
+base_manpower = 5
 
 culture = culture_silithid
-religion = religion_old_gods
+religion = cthun
 
-trade_goods = unknown
 hre = no
+trade_goods = fossils
+
 

@@ -1,26 +1,43 @@
-discover_home_continent = yes
+
 # Nordrassil/Sentinels
 government 				= theocracy
 add_government_reform = ancient_theocracy_reform
 mercantilism 			= 10
-technology_group 		= tech_darnassian
-religion				= religion_elune
-primary_culture 		= culture_sentinel
-add_accepted_culture 	= culture_cenarion
-# secondary_religion = religion_druidic
+technology_group 		= tech_night_elf
+religion				= elune
+primary_culture 		= culture_night_elf
+government_rank	= 3
+capital = 1310
 
-capital 				= 1310
 historical_friend = H02
 historical_friend = H03
-546.1.1 = { 
-	government_rank	= 3
+historical_friend = A95
+historical_friend = FRS
+historical_friend = SRS
+historical_friend = A94
+
+546.1.1 = {
 	monarch = { 
 		name = "Tyrande"  
 		dynasty = "Whisperwind" 	
-		adm = 5		
+		adm = 3		
 		dip = 2
-		mil = 7	
-          	 female = yes
-	}  
+		mil = 6	
+        female = yes
+        birth_date = 60.1.1
+	}
+    
+    set_ruler_flag = ruler_portrait_tyrande
+	set_ruler_flag = priest_personality
+    
+    setup_spellcaster_history = {
+        APTITUDE = 4
+        FINESSE = 4
+        CONCENTRATION = 5
+        MANA = 5
+        nature = yes
+    }
+    
+    set_ruler_flag = is_immortal
 } 
 

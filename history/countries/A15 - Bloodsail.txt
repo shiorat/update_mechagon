@@ -1,12 +1,23 @@
-discover_home_continent = yes
+
 # Bloodsail
-government = pirate
-add_government_reform = pirate_kingdom_reform
+government = republic
+add_government_reform = pirate_republic_reform
 mercantilism 		= 10
 technology_group 	= tech_human
-religion			= religion_shadow
+religion			= shadow
 primary_culture 	= culture_kul_tiran
-capital 			= 2472
+capital 			= 3209
+
+540.1.1 = {  
+    monarch = {  
+        name = "Jesse"  
+        dynasty = "Berrybuck"  
+ 		adm = 5
+		dip = 3
+		mil = 5
+        birth_date = 515.1.1
+  	}  
+}
 
 618.1.1 = {  
     monarch = {  
@@ -14,7 +25,8 @@ capital 			= 2472
         dynasty = "Falrevere"  
  		adm = 3 
 		dip = 4
-		mil = 4 
+		mil = 6
+        birth_date = 570.1.1
   	}  
 }  
 

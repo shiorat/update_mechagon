@@ -1,17 +1,18 @@
-
+is_city = yes
 owner = VLJ
 controller = VLJ
 add_core = VLJ
 
-base_tax = 9
-base_production = 7
-base_manpower = 11
-
-add_building = wow_fort_2
+base_tax = 8
+base_production = 8
+base_manpower = 8
 
 culture = culture_valarjar
-religion = religion_shadow
+religion = titan_worship
 
+hre = no
 trade_goods = artifacts
-hre = no 
+
+add_building = wow_fort_2
+ 
 

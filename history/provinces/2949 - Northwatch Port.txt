@@ -1,4 +1,4 @@
-is_city = no
+# Empty Province
 native_size = 10
 native_ferocity = 10
 native_hostileness = 10
@@ -7,23 +7,25 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-culture = culture_bristleback
-religion = religion_earth
+culture = culture_quillboar
+religion = earth
 
-trade_goods = unknown
 hre = no
+trade_goods = unknown
+
 
 
 617.1.1 = {
     is_city = yes
-	owner = A46
-	controller = A46
-	add_core = A46
+	owner = A23
+	controller = A23
+	add_core = A23
     
-	culture = culture_horde
-	religion = religion_ancestral
+	culture = culture_quillboar
+	religion = earth
     
-    trade_goods = fish
+
+	trade_goods = fish
 }
 
 # The Frozen Throne
@@ -31,10 +33,10 @@ hre = no
 	owner = G06
 	controller = G06
 	add_core = G06
-	remove_core = A48
+	remove_core = A23
     
 	culture = culture_lordaeron
-	religion = religion_church_of_the_light
+	religion = holy_light
 }
 
 # Damaged after being razed and rebuilt

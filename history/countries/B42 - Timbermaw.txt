@@ -1,20 +1,30 @@
-discover_home_continent = yes
-# Timbermaw
-government 			= native
-add_government_reform = native_tribe_reform
+government = tribal
+add_government_reform = tribal_federation_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 mercantilism 		= 10
 technology_group 	= tech_furbolg
-religion			= religion_ancestral
-primary_culture 	= culture_timbermaw
+religion			= shamanism
+primary_culture 	= culture_furbolg
 capital 			= 1322
 
-546.1.1 = { 
-monarch = { 
-     name = "Meilosh" 
-     dynasty = "Timbermaw"
-		adm = 1
-		dip = 3
-		mil = 1
- 	} 
- } 
-
+540.1.1 = {
+	monarch = {
+		name = "Garlak"
+		dynasty = "Nettlefur"
+		birth_date = 477.1.1
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Akkra"
+		dynasty = "Nettlefur"
+		birth_date = 514.1.1
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}

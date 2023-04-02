@@ -1,0 +1,22 @@
+is_city = yes
+owner = A54
+controller = A54
+add_core = A54
+
+base_tax = 8
+base_production = 8
+base_manpower = 8
+
+culture = culture_draenei
+religion = light_of_the_naaru
+
+hre = no
+trade_goods = runecloth
+
+# Outlandification
+600.1.1 = {
+    is_city = no
+    owner = ---
+    controller = ---
+    remove_core = A54
+}

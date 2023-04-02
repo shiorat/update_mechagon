@@ -5,14 +5,15 @@ owner = A73
 controller = A73
 add_core = A73
 
-base_tax = 6
-base_production = 6
-base_manpower = 6
+base_tax = 4
+base_production = 3
+base_manpower = 5
 
-culture = culture_sandfury
-religion = religion_loa
+culture = culture_sand_troll
+religion = voodoo
 
-trade_goods = artifacts
 hre = no
+trade_goods = artifacts
+
 
 center_of_trade = 1

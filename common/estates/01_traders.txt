@@ -20,7 +20,16 @@ estate_traders = {
     custom_name = {
         desc = estate_traders_plebs
         trigger = {
-            is_lesser = yes
+            is_uncivilized = yes
+        }
+    }
+    custom_name = {
+        desc = estate_traders_be
+        trigger = {
+            OR = { 
+                primary_culture = culture_blood_elf  
+                primary_culture = culture_high_elf
+            }
         }
     }
     custom_name = {
@@ -32,14 +41,14 @@ estate_traders = {
     
 	# ----- Conditions -----
 	trigger = {
-        is_nomad = no
+       has_traders_estate = yes
 	}
     
 	# ----- Country -----
 	# These scale with loyalty & power
 	country_modifier_happy = {
-        trade_steering = 0.2
-		global_trade_power = 0.2
+        trade_steering = 0.15
+		global_trade_power = 0.15
 		trade_efficiency = 0.1
 	}
 	country_modifier_neutral = {
@@ -48,8 +57,8 @@ estate_traders = {
 		trade_efficiency = 0.05
 	}	
 	country_modifier_angry = {
-        trade_steering = -0.2
-		global_trade_power = -0.2
+        trade_steering = -0.15
+		global_trade_power = -0.15
 		trade_efficiency = -0.1
 	}
     
@@ -148,18 +157,24 @@ estate_traders = {
 	# ----- Privileges -----
 	privileges = {
 		estate_traders_land_rights
+		estate_traders_free_enterprise
 		estate_traders_land_of_commerce
 		estate_traders_azerothian_navigators
 		estate_traders_patronage_of_the_arts
 		estate_traders_commercial_board_of_advice
 		estate_traders_settlement_charter
 		estate_traders_indebted_to_merchants
-		estate_traders_free_enterprise
 		estate_traders_exclusive_trade_rights
 		estate_traders_control_over_monetary_policy
 		estate_traders_private_caravans
 		estate_traders_enforced_interfaith_dialogue
 		estate_traders_statutory_rights
+        estate_traders_colonial_investment
+        estate_traders_naval_investment
+        estate_traders_exception
+        
+        # Unique
+        estate_traders_goblin_bankers
 	}
 
     # ----- Agendas -----

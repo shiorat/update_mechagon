@@ -1,44 +1,34 @@
-discover_home_continent = yes
-# Magram
-government 			= tribal
-add_government_reform = warband_reform
+government = tribal
+add_government_reform = centaur_khanate_reform
+add_government_reform = wwu_tribal_war_band_reform
+
 mercantilism 		= 10
 technology_group 	= tech_centaur
-religion			= religion_earth
-primary_culture	 	= culture_magram
-capital 			= 1390
+religion			= shamanism
+primary_culture	 	= culture_centaur
+capital 			= 3680
 
 historical_rival = B21
 historical_rival = B23
 historical_rival = B24
 
-546.1.1 = { 
-monarch = { 
-     name = "Magra" 
-     dynasty = "Magram" 
+540.1.1 = {
+	monarch = {
+		name = "Taurtarnka"
+		dynasty = "the Monstrous"
+		birth_date = 474.1.1
 		adm = 2
-		dip = 1
-		mil = 4
- 	} 
- } 
-
-592.1.1 = { 
-monarch = { 
-     name = "Jehn" 
-     dynasty = "Magram" 
+		dip = 2
+		mil = 5
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Taogromtau"
+		dynasty = "the Bonebreaker"
+		birth_date = 543.1.1
 		adm = 3
-		dip = 1
-		mil = 4
- 	} 
- } 
-
-631.1.1 = { 
-monarch = { 
-     name = "Kammah" 
-     dynasty = "Magram" 
-		adm = 3
-		dip = 1
-		mil = 4
- 	} 
- } 
-
+		dip = 5
+		mil = 1
+	}
+}

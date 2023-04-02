@@ -1,0 +1,1003 @@
+#-----------------------------------
+# List of artifacts:
+#-----------------------------------
+# apocalypse
+# twinblades_of_the_deceiver
+# thasdorah
+# aluneth
+# sheilun
+# ashbringer
+# xalatath
+# doomhammer
+# dreadblades
+# skull_of_manari
+# warswords_of_valarjar
+# scythe_of_elune
+# maw_of_the_damned
+# blades_of_the_fallen_prince
+# aldrachi_warblades
+# fangs_of_ashamane
+# claws_of_ursoc
+# ghanir
+# titanstrike
+# talonclaw
+# felomelorn
+# ebonchill
+# fu_zan
+# fists_of_the_heavens
+# silver_hand
+# truthguard
+# lights_wrath
+# tuure
+# kingslayers
+# fangs_of_the_devourer
+# fist_of_raden
+# sharasdal
+# ulthalesh
+# scepter_of_sargeras
+# stromkar
+# scale_of_the_earthwarder
+# underlight_angler
+# glaive_of_the_aspects
+# scimitar_of_sirocco
+# staff_of_ammunae
+# dustbringer
+# valanyr
+# puzzle_box_of_yogg_saron
+# twirling_longbow
+# spear_of_xuen
+# umbrella_of_chiji
+# amulet_of_rukhmar
+# dream_of_argus
+# grimoire_of_the_nameless_void
+# gronnsbane
+# gutreks_cleaver
+# headdress_of_the_first_shaman
+# warmaul_of_the_warmaul_chieftain
+# beakbreaker_of_terokk
+# zinrokh
+# fetish_of_hireek
+# bwonsamdi_voodoo_mask
+# rezan_idol
+# jagged_blade_of_the_drust
+# soul_coffer
+# fetish_of_the_tormented_mind
+# ritual_fetish
+# blade_of_northern_kings
+# brinebeards_shanker
+# crimson_captains_hat
+
+increment_dig = {
+    custom_tooltip = INCREMENT_DIG_TT
+    
+    hidden_effect = {
+        change_variable = {
+            which = excavation_progress
+            value = 1
+        }
+        
+        if = {
+            limit = { 
+                has_country_flag = excavation_progress_boost
+            }
+            
+            change_variable = {
+                which = excavation_progress
+                value = 1
+            }
+        }
+        
+        if = {
+            limit = { 
+                has_country_modifier = dwarf_administration
+            }
+            
+            change_variable = {
+                which = excavation_progress
+                value = 1
+            }
+        }
+        
+        if = {
+            limit = {
+                check_variable = {
+                    which = excavation_progress
+                    value = 5
+                }
+            }
+            set_variable = {
+                which = excavation_progress
+                value = 5
+            }
+        }
+    }
+}
+
+increment_dig_massively = {
+    custom_tooltip = INCREMENT_DIG_MASSIVELY_TT
+    
+    hidden_effect = {
+        change_variable = {
+            which = excavation_progress
+            value = 3
+        }
+        
+        if = {
+            limit = { 
+                has_country_flag = excavation_progress_boost
+            }
+            
+            change_variable = {
+                which = excavation_progress
+                value = 1
+            }
+        }
+        
+        if = {
+            limit = { 
+                has_country_modifier = dwarf_administration
+            }
+            
+            change_variable = {
+                which = excavation_progress
+                value = 1
+            }
+        }
+        
+        if = {
+            limit = {
+                check_variable = {
+                    which = excavation_progress
+                    value = 5
+                }
+            }
+            set_variable = {
+                which = excavation_progress
+                value = 5
+            }
+        }
+    }
+}
+
+decrement_dig = {
+    custom_tooltip = DECREMENT_DIG_TT
+    
+    hidden_effect = {
+        subtract_variable = {
+            which = excavation_progress
+            value = 1
+        }
+        
+        if = {
+            limit = {
+                NOT = { 
+                    check_variable = {
+                        which = excavation_progress
+                        value = 0
+                    }
+                }
+            }
+            set_variable = {
+                which = excavation_progress
+                value = 0
+            }
+        }
+    }
+}
+
+reset_dig = {
+    custom_tooltip = RESET_DIG_TT
+    
+    hidden_effect = {
+        set_variable = {
+            which = excavation_progress
+            value = 0
+        }
+    }
+}
+
+clear_dig_regions = {
+    clr_country_flag = dig_in_eastern_kingdoms
+    clr_country_flag = dig_in_kalimdor
+    clr_country_flag = dig_in_northrend
+    clr_country_flag = dig_in_pandaria
+    clr_country_flag = dig_in_draenor
+    clr_country_flag = dig_in_outland
+    clr_country_flag = dig_in_broken_isles
+    clr_country_flag = dig_in_zandalar
+    clr_country_flag = dig_in_kul_tiras
+    clr_country_flag = dig_in_south_sea
+    clr_country_flag = dig_in_dragon_isles
+}
+
+reward_artifact = {
+    random_list = {
+        1 = {
+            trigger = { 
+                # Karazhan
+                has_country_flag = dig_in_eastern_kingdoms
+                NOT = { has_global_flag = discovered_artifact_apocalypse }
+            }
+            country_event = { id = wwu_archaeology.10 }
+        }
+        1 = {
+            trigger = {
+                # Black Temple
+                has_country_flag = dig_in_outland
+                NOT = { has_global_flag = discovered_artifact_twinblades_of_the_deceiver }
+            }
+            country_event = { id = wwu_archaeology.11 }
+        }
+        1 = {
+            trigger = {
+                # Eversong Woods
+                has_country_flag = dig_in_eastern_kingdoms
+                NOT = { has_global_flag = discovered_artifact_thasdorah }
+            }
+            country_event = { id = wwu_archaeology.12 }
+        }
+        1 = {
+            trigger = {
+                # Azure Dragonshrine
+                has_country_flag = dig_in_northrend
+                NOT = { has_global_flag = discovered_artifact_aluneth }
+            }
+            country_event = { id = wwu_archaeology.13 }
+        }
+        1 = {
+            trigger = {
+                # Terrace of Endless Spring
+                has_country_flag = dig_in_pandaria
+                NOT = { has_global_flag = discovered_artifact_sheilun }
+            }
+            country_event = { id = wwu_archaeology.14 }
+        }
+        1 = {
+            trigger = {
+                # None
+                always = no
+                NOT = { has_global_flag = discovered_artifact_ashbringer }
+            }
+            country_event = { id = wwu_archaeology.15 }
+        }
+        1 = {
+            trigger = {
+                # Tirisfal Glades
+                has_country_flag = dig_in_eastern_kingdoms
+                NOT = { has_global_flag = discovered_artifact_xalatath }
+            }
+            country_event = { id = wwu_archaeology.16 }
+        }
+        1 = {
+            trigger = {
+                # None
+                always = no
+                NOT = { has_global_flag = discovered_artifact_doomhammer }
+            }
+            country_event = { id = wwu_archaeology.17 }
+        }
+        1 = {
+            trigger = {
+                # Booty Bay
+                has_country_flag = dig_in_eastern_kingdoms
+                NOT = { has_global_flag = discovered_artifact_dreadblades }
+            }
+            country_event = { id = wwu_archaeology.18 }
+        }
+        1 = {
+            trigger = {
+                # None
+                always = no
+                NOT = { has_global_flag = discovered_artifact_skull_of_manari }
+            }
+            country_event = { id = wwu_archaeology.19 }
+        }
+        1 = {
+            trigger = {
+                # Stormheim
+                has_country_flag = dig_in_broken_isles
+                NOT = { has_global_flag = discovered_artifact_warswords_of_valarjar }
+            }
+            country_event = { id = wwu_archaeology.20 }
+        }
+        1 = {
+            trigger = {
+                # Kalimdor
+                has_country_flag = dig_in_kalimdor
+                NOT = { has_global_flag = discovered_artifact_scythe_of_elune }
+            }
+            country_event = { id = wwu_archaeology.21 }
+        }
+        1 = {
+            trigger = {
+                # None
+                always = no
+                NOT = { has_global_flag = discovered_artifact_maw_of_the_damned }
+            }
+            country_event = { id = wwu_archaeology.22 }
+        }
+        1 = {
+            trigger = {
+                # None
+                always = no
+                NOT = { has_global_flag = discovered_artifact_blades_of_the_fallen_prince }
+            }
+            country_event = { id = wwu_archaeology.23 }
+        }
+        1 = {
+            trigger = {
+                # None
+                always = no
+                NOT = { has_global_flag = discovered_artifact_aldrachi_warblades }
+            }
+            country_event = { id = wwu_archaeology.24 }
+        }
+        1 = {
+            trigger = {
+                # Kalimdor
+                has_country_flag = dig_in_kalimdor
+                NOT = { has_global_flag = discovered_artifact_fangs_of_ashamane }
+            }
+            country_event = { id = wwu_archaeology.25 }
+        }
+        1 = {
+            trigger = {
+                # Kalimdor
+                has_country_flag = dig_in_kalimdor
+                NOT = { has_global_flag = discovered_artifact_claws_of_ursoc }
+            }
+            country_event = { id = wwu_archaeology.26 }
+        }
+        1 = {
+            trigger = {
+                # Kalimdor
+                has_country_flag = dig_in_kalimdor
+                NOT = { has_global_flag = discovered_artifact_ghanir }
+            }
+            country_event = { id = wwu_archaeology.27 }
+        }
+        1 = {
+            trigger = {
+                # Northrend
+                has_country_flag = dig_in_northrend
+                NOT = { has_global_flag = discovered_artifact_titanstrike }
+            }
+            country_event = { id = wwu_archaeology.28 }
+        }
+        1 = {
+            trigger = {
+                # Highmountain
+                has_country_flag = dig_in_broken_isles
+                NOT = { has_global_flag = discovered_artifact_talonclaw }
+            }
+            country_event = { id = wwu_archaeology.29 }
+        }
+        1 = {
+            trigger = {
+                # Quel'Thalas
+                has_country_flag = dig_in_eastern_kingdoms
+                NOT = { has_global_flag = discovered_artifact_felomelorn }
+            }
+            country_event = { id = wwu_archaeology.30 }
+        }
+        1 = {
+            trigger = {
+                # Broken Isles
+                has_country_flag = dig_in_broken_isles
+                NOT = { has_global_flag = discovered_artifact_ebonchill }
+            }
+            country_event = { id = wwu_archaeology.31 }
+        }
+        1 = {
+            trigger = {
+                # Pandaria
+                has_country_flag = dig_in_pandaria
+                NOT = { has_global_flag = discovered_artifact_fu_zan }
+            }
+            country_event = { id = wwu_archaeology.32 }
+        }
+        1 = {
+            trigger = {
+                # Uldum
+                has_country_flag = dig_in_kalimdor
+                NOT = { has_global_flag = discovered_artifact_fists_of_the_heavens }
+            }
+            country_event = { id = wwu_archaeology.33 }
+        }
+        1 = {
+            trigger = {
+                # Tirisfal Glades
+                has_country_flag = dig_in_eastern_kingdoms
+                NOT = { has_global_flag = discovered_artifact_silver_hand }
+            }
+            country_event = { id = wwu_archaeology.34 }
+        }
+        1 = {
+            trigger = { 
+                # Broken Isles
+                has_country_flag = dig_in_broken_isles
+                NOT = { has_global_flag = discovered_artifact_truthguard }
+            }
+        }
+        1 = {
+            trigger = {
+                # None
+                always = no
+                NOT = { has_global_flag = discovered_artifact_lights_wrath }
+            }
+            country_event = { id = wwu_archaeology.36 }
+        }
+        1 = {
+            trigger = {
+                # None
+                always = no
+                NOT = { has_global_flag = discovered_artifact_tuure }
+            }
+            country_event = { id = wwu_archaeology.37 }
+        }
+        1 = {
+            trigger = {
+                # Only after this year
+                is_year = 600
+                
+                # Elwynn Forest
+                has_country_flag = dig_in_eastern_kingdoms
+                NOT = { has_global_flag = discovered_artifact_kingslayers }
+            }
+            country_event = { id = wwu_archaeology.38 }
+        }
+        1 = {
+            trigger = {
+                # None
+                always = no
+                NOT = { has_global_flag = discovered_artifact_fangs_of_the_devourer }
+            }
+            country_event = { id = wwu_archaeology.39 }
+        }
+        1 = {
+            trigger = {
+                # Pandaria
+                has_country_flag = dig_in_pandaria
+                NOT = { has_global_flag = discovered_artifact_fist_of_raden }
+            }
+            country_event = { id = wwu_archaeology.40 }
+        }
+        1 = {
+            trigger = {
+                # Broken Isles
+                has_country_flag = dig_in_broken_isles
+                NOT = { has_global_flag = discovered_artifact_sharasdal }
+            }
+            country_event = { id = wwu_archaeology.41 }
+        }
+        1 = {
+            trigger = {
+                # Karazhan
+                has_country_flag = dig_in_eastern_kingdoms
+                NOT = { has_global_flag = discovered_artifact_ulthalesh }
+            }
+            country_event = { id = wwu_archaeology.42 }
+        }
+        1 = {
+            trigger = {
+                # Suramar
+                has_country_flag = dig_in_broken_isles
+                NOT = { has_global_flag = discovered_artifact_scepter_of_sargeras }
+            }
+            country_event = { id = wwu_archaeology.43 }
+        }
+        1 = {
+            trigger = {
+                # Tirisfal
+                has_country_flag = dig_in_eastern_kingdoms
+                NOT = { has_global_flag = discovered_artifact_stromkar }
+            }
+            country_event = { id = wwu_archaeology.44 }
+        }
+        1 = {
+            trigger = {
+                # Stormheim
+                has_country_flag = dig_in_broken_isles
+                NOT = { has_global_flag = discovered_artifact_scale_of_the_earthwarder }
+            }
+            country_event = { id = wwu_archaeology.45 }
+        }
+        1 = {
+            trigger = {
+                # Broken Isles
+                has_country_flag = dig_in_broken_isles
+                NOT = { has_global_flag = discovered_artifact_underlight_angler }
+            }
+            country_event = { id = wwu_archaeology.46 }
+        }
+        1 = {
+            trigger = {
+                # Kalimdor
+                has_country_flag = dig_in_kalimdor
+                NOT = { has_global_flag = discovered_artifact_glaive_of_the_aspects }
+            }
+            country_event = { id = wwu_archaeology.47 }
+        }
+        1 = {
+            trigger = {
+                # Kalimdor
+                has_country_flag = dig_in_kalimdor
+                NOT = { has_global_flag = discovered_artifact_scimitar_of_sirocco }
+            }
+            country_event = { id = wwu_archaeology.48 }
+        }
+        1 = {
+            trigger = {
+                # Kalimdor
+                has_country_flag = dig_in_kalimdor
+                NOT = { has_global_flag = discovered_artifact_staff_of_ammunae }
+            }
+            country_event = { id = wwu_archaeology.49 }
+        }
+        1 = {
+            trigger = {
+                # Northrend
+                has_country_flag = dig_in_northrend
+                NOT = { has_global_flag = discovered_artifact_dustbringer }
+            }
+            country_event = { id = wwu_archaeology.50 }
+        }
+        1 = {
+            trigger = {
+                # Northrend
+                has_country_flag = dig_in_northrend
+                NOT = { has_global_flag = discovered_artifact_valanyr }
+            }
+            country_event = { id = wwu_archaeology.51 }
+        }
+        1 = {
+            trigger = {
+                # Northrend
+                has_country_flag = dig_in_northrend
+                NOT = { has_global_flag = discovered_artifact_puzzle_box_of_yogg_saron }
+            }
+            country_event = { id = wwu_archaeology.52 }
+        }
+        1 = {
+            trigger = {
+                # Pandaria
+                has_country_flag = dig_in_pandaria
+                NOT = { has_global_flag = discovered_artifact_twirling_longbow }
+            }
+            country_event = { id = wwu_archaeology.53 }
+        }
+        1 = {
+            trigger = {
+                # Pandaria
+                has_country_flag = dig_in_pandaria
+                NOT = { has_global_flag = discovered_artifact_spear_of_xuen }
+            }
+            country_event = { id = wwu_archaeology.54 }
+        }
+        1 = {
+            trigger = {
+                # Pandaria
+                has_country_flag = dig_in_pandaria
+                NOT = { has_global_flag = discovered_artifact_umbrella_of_chiji }
+            }
+            country_event = { id = wwu_archaeology.55 }
+        }
+        1 = {
+            trigger = {
+                # Draenor
+                has_country_flag = dig_in_draenor
+                NOT = { has_global_flag = discovered_artifact_amulet_of_rukhmar }
+            }
+            country_event = { id = wwu_archaeology.56 }
+        }
+        1 = {
+            trigger = {
+                # Draenor
+                has_country_flag = dig_in_draenor
+                NOT = { has_global_flag = discovered_artifact_dream_of_argus }
+            }
+            country_event = { id = wwu_archaeology.57 }
+        }
+        1 = {
+            trigger = {
+                # Draenor
+                has_country_flag = dig_in_draenor
+                NOT = { has_global_flag = discovered_artifact_grimoire_of_the_nameless_void }
+            }
+            country_event = { id = wwu_archaeology.58 }
+        }
+        1 = {
+            trigger = {
+                # Draenor
+                has_country_flag = dig_in_draenor
+                NOT = { has_global_flag = discovered_artifact_gronnsbane }
+            }
+            country_event = { id = wwu_archaeology.59 }
+        }
+        1 = {
+            trigger = {
+                # Draenor
+                has_country_flag = dig_in_draenor
+                NOT = { has_global_flag = discovered_artifact_gutreks_cleaver }
+            }
+            country_event = { id = wwu_archaeology.60 }
+        }
+        1 = {
+            trigger = {
+                # Draenor
+                has_country_flag = dig_in_draenor
+                NOT = { has_global_flag = discovered_artifact_headdress_of_the_first_shaman }
+            }
+            country_event = { id = wwu_archaeology.61 }
+        }
+        1 = {
+            trigger = {
+                # Draenor
+                has_country_flag = dig_in_draenor
+                NOT = { has_global_flag = discovered_artifact_warmaul_of_the_warmaul_chieftain }
+            }
+            country_event = { id = wwu_archaeology.62 }
+        }
+        1 = {
+            trigger = {
+                # Outland
+                has_country_flag = dig_in_outland
+                NOT = { has_global_flag = discovered_artifact_beakbreaker_of_terokk }
+            }
+            country_event = { id = wwu_archaeology.63 }
+        }
+        1 = {
+            trigger = {
+                # Zandalar
+                has_country_flag = dig_in_zandalar
+                NOT = { has_global_flag = discovered_artifact_zinrokh }
+            }
+            country_event = { id = wwu_archaeology.64 }
+        }
+        1 = {
+            trigger = {
+                # Zandalar
+                has_country_flag = dig_in_zandalar
+                NOT = { has_global_flag = discovered_artifact_fetish_of_hireek }
+            }
+            country_event = { id = wwu_archaeology.65 }
+        }
+        1 = {
+            trigger = {
+                # Zandalar
+                has_country_flag = dig_in_zandalar
+                NOT = { has_global_flag = discovered_artifact_bwonsamdi_voodoo_mask }
+            }
+            country_event = { id = wwu_archaeology.66 }
+        }
+        1 = {
+            trigger = {
+                # Zandalar
+                has_country_flag = dig_in_zandalar
+                NOT = { has_global_flag = discovered_artifact_rezan_idol }
+            }
+            country_event = { id = wwu_archaeology.67 }
+        }
+        1 = {
+            trigger = {
+                # Kul Tiras
+                has_country_flag = dig_in_kul_tiras
+                NOT = { has_global_flag = discovered_artifact_jagged_blade_of_the_drust }
+            }
+            country_event = { id = wwu_archaeology.68 }
+        }
+        1 = {
+            trigger = {
+                # Kul Tiras
+                has_country_flag = dig_in_kul_tiras
+                NOT = { has_global_flag = discovered_artifact_soul_coffer }
+            }
+            country_event = { id = wwu_archaeology.69 }
+        }
+        1 = {
+            trigger = {
+                # Kul Tiras
+                has_country_flag = dig_in_kul_tiras
+                NOT = { has_global_flag = discovered_artifact_fetish_of_the_tormented_mind }
+            }
+            country_event = { id = wwu_archaeology.70 }
+        }
+        1 = {
+            trigger = {
+                # Kul Tiras
+                has_country_flag = dig_in_kul_tiras
+                NOT = { has_global_flag = discovered_artifact_ritual_fetish }
+            }
+            country_event = { id = wwu_archaeology.71 }
+        }
+        1 = {
+            trigger = {
+                # South Seas
+                has_country_flag = dig_in_south_sea
+                NOT = { has_global_flag = discovered_artifact_blade_of_northern_kings }
+            }
+            country_event = { id = wwu_archaeology.72 }
+        }
+        1 = {
+            trigger = {
+                # South Seas
+                has_country_flag = dig_in_south_sea
+                NOT = { has_global_flag = discovered_artifact_brinebeards_shanker }
+            }
+            country_event = { id = wwu_archaeology.73 }
+        }
+        1 = {
+            trigger = {
+                # South Seas
+                has_country_flag = dig_in_south_sea
+                NOT = { has_global_flag = discovered_artifact_crimson_captains_hat }
+            }
+            country_event = { id = wwu_archaeology.74 }
+        }
+
+        # Minor Reward
+        10 = {
+            country_event = { id = wwu_archaeology.400 }
+        }
+        17 = {
+            country_event = { id = wwu_archaeology.401 }
+        }
+        10 = {
+            country_event = { id = wwu_archaeology.402 }
+        }
+        5 = {
+            country_event = { id = wwu_archaeology.403 }
+        }
+        5 = {
+            country_event = { id = wwu_archaeology.404 }
+        }
+        10 = {
+            country_event = { id = wwu_archaeology.405 }
+        }
+    }
+}
+
+unlock_artifact = {
+    custom_tooltip = UNLOCK_ARTIFACT_$artifact$
+    
+    hidden_effect = {
+        set_country_flag = artifact_$artifact$
+        set_global_flag = discovered_artifact_$artifact$
+    }
+}
+
+remove_artifact = {
+    hidden_effect = {
+        clr_country_flag = artifact_$artifact$
+        clr_global_flag = discovered_artifact_$artifact$
+    }
+}
+
+make_primary_artifact = {
+    custom_tooltip = MAKE_PRIMARY_ARTIFACT_$artifact$
+    
+    hidden_effect = {
+        clear_current_primary_artifact = yes
+        set_country_flag = primary_artifact_$artifact$
+    }
+}
+
+steal_artifact = {
+    custom_tooltip = STEAL_ARTIFACT_$artifact$
+    
+    hidden_effect = {
+        set_country_flag = artifact_$artifact$
+        
+        event_target:artifact_heist_target = {
+            set_country_flag = artifact_$artifact$_stolen
+            clr_country_flag = artifact_$artifact$
+            clr_country_flag = primary_artifact_$artifact$
+        }
+    }
+}
+
+transfer_artifacts = {
+    transfer_artifact = { artifact = apocalypse }
+    transfer_artifact = { artifact = twinblades_of_the_deceiver }
+    transfer_artifact = { artifact = thasdorah }
+    transfer_artifact = { artifact = aluneth }
+    transfer_artifact = { artifact = sheilun }
+    transfer_artifact = { artifact = ashbringer }
+    transfer_artifact = { artifact = xalatath }
+    transfer_artifact = { artifact = doomhammer }
+    transfer_artifact = { artifact = dreadblades }
+    transfer_artifact = { artifact = skull_of_manari }
+    transfer_artifact = { artifact = warswords_of_valarjar }
+    transfer_artifact = { artifact = scythe_of_elune }
+    transfer_artifact = { artifact = maw_of_the_damned }
+    transfer_artifact = { artifact = blades_of_the_fallen_prince }
+    transfer_artifact = { artifact = aldrachi_warblades }
+    transfer_artifact = { artifact = fangs_of_ashamane }
+    transfer_artifact = { artifact = claws_of_ursoc }
+    transfer_artifact = { artifact = ghanir }
+    transfer_artifact = { artifact = titanstrike }
+    transfer_artifact = { artifact = talonclaw }
+    transfer_artifact = { artifact = felomelorn }
+    transfer_artifact = { artifact = ebonchill }
+    transfer_artifact = { artifact = fu_zan }
+    transfer_artifact = { artifact = fists_of_the_heavens }
+    transfer_artifact = { artifact = silver_hand }
+    transfer_artifact = { artifact = truthguard }
+    transfer_artifact = { artifact = lights_wrath }
+    transfer_artifact = { artifact = tuure }
+    transfer_artifact = { artifact = kingslayers }
+    transfer_artifact = { artifact = fangs_of_the_devourer }
+    transfer_artifact = { artifact = fist_of_raden }
+    transfer_artifact = { artifact = sharasdal }
+    transfer_artifact = { artifact = ulthalesh }
+    transfer_artifact = { artifact = scepter_of_sargeras }
+    transfer_artifact = { artifact = stromkar }
+    transfer_artifact = { artifact = scale_of_the_earthwarder }
+    transfer_artifact = { artifact = underlight_angler }
+    transfer_artifact = { artifact = glaive_of_the_aspects }
+    transfer_artifact = { artifact = scimitar_of_sirocco }
+    transfer_artifact = { artifact = staff_of_ammunae }
+    transfer_artifact = { artifact = dustbringer }
+    transfer_artifact = { artifact = valanyr }
+    transfer_artifact = { artifact = puzzle_box_of_yogg_saron }
+    transfer_artifact = { artifact = twirling_longbow }
+    transfer_artifact = { artifact = spear_of_xuen }
+    transfer_artifact = { artifact = umbrella_of_chiji }
+    transfer_artifact = { artifact = amulet_of_rukhmar }
+    transfer_artifact = { artifact = dream_of_argus }
+    transfer_artifact = { artifact = grimoire_of_the_nameless_void }
+    transfer_artifact = { artifact = gronnsbane }
+    transfer_artifact = { artifact = gutreks_cleaver }
+    transfer_artifact = { artifact = headdress_of_the_first_shaman }
+    transfer_artifact = { artifact = warmaul_of_the_warmaul_chieftain }
+    transfer_artifact = { artifact = beakbreaker_of_terokk }
+    transfer_artifact = { artifact = zinrokh }
+    transfer_artifact = { artifact = fetish_of_hireek }
+    transfer_artifact = { artifact = bwonsamdi_voodoo_mask }
+    transfer_artifact = { artifact = rezan_idol }
+    transfer_artifact = { artifact = jagged_blade_of_the_drust }
+    transfer_artifact = { artifact = soul_coffer }
+    transfer_artifact = { artifact = fetish_of_the_tormented_mind }
+    transfer_artifact = { artifact = ritual_fetish }
+    transfer_artifact = { artifact = blade_of_northern_kings }
+    transfer_artifact = { artifact = brinebeards_shanker }
+    transfer_artifact = { artifact = crimson_captains_hat }
+}
+
+transfer_artifact = {
+    hidden_effect = {
+        if = {
+            limit = {
+                FROM = {
+                    has_country_flag = artifact_$artifact$
+                }
+            }
+            set_country_flag = artifact_$artifact$
+            
+            FROM = {
+                clr_country_flag = artifact_$artifact$
+                clr_country_flag = primary_artifact_$artifact$
+            }
+        }
+    }
+}
+
+
+display_artifact_status = {
+    if = {
+        limit = {
+            any_country = {
+                has_country_flag = artifact_$artifact$
+            }
+        }
+        custom_tooltip = LOCATION_OF_$artifact$
+    }
+    else = {
+        custom_tooltip = NOT_DISCOVERED_$artifact$
+    }
+}
+
+save_artifact_location = {
+    if = {
+        limit = {
+            has_global_flag = discovered_artifact_$artifact$
+        }
+        every_country = {
+            limit = {
+                 has_country_flag = artifact_$artifact$
+            }
+			# Audax Validator "." Ignore_NEXT
+            save_event_target_as = current_artifact_owner
+        }
+    }
+    else = {
+        # Gaia represents no owner
+        GAI = {
+            save_event_target_as = current_artifact_owner
+        }
+    }
+}
+ 
+clear_current_primary_artifact = {
+    clr_country_flag = primary_artifact_apocalypse
+    clr_country_flag = primary_artifact_twinblades_of_the_deceiver
+    clr_country_flag = primary_artifact_thasdorah
+    clr_country_flag = primary_artifact_aluneth
+    clr_country_flag = primary_artifact_sheilun
+    clr_country_flag = primary_artifact_ashbringer
+    clr_country_flag = primary_artifact_xalatath
+    clr_country_flag = primary_artifact_doomhammer
+    clr_country_flag = primary_artifact_dreadblades
+    clr_country_flag = primary_artifact_skull_of_manari
+    clr_country_flag = primary_artifact_warswords_of_valarjar
+    clr_country_flag = primary_artifact_scythe_of_elune
+    clr_country_flag = primary_artifact_maw_of_the_damned
+    clr_country_flag = primary_artifact_blades_of_the_fallen_prince
+    clr_country_flag = primary_artifact_aldrachi_warblades
+    clr_country_flag = primary_artifact_fangs_of_ashamane
+    clr_country_flag = primary_artifact_claws_of_ursoc
+    clr_country_flag = primary_artifact_ghanir
+    clr_country_flag = primary_artifact_titanstrike
+    clr_country_flag = primary_artifact_talonclaw
+    clr_country_flag = primary_artifact_felomelorn
+    clr_country_flag = primary_artifact_ebonchill
+    clr_country_flag = primary_artifact_fu_zan
+    clr_country_flag = primary_artifact_fists_of_the_heavens
+    clr_country_flag = primary_artifact_silver_hand
+    clr_country_flag = primary_artifact_truthguard
+    clr_country_flag = primary_artifact_lights_wrath
+    clr_country_flag = primary_artifact_tuure
+    clr_country_flag = primary_artifact_kingslayers
+    clr_country_flag = primary_artifact_fangs_of_the_devourer
+    clr_country_flag = primary_artifact_fist_of_raden
+    clr_country_flag = primary_artifact_sharasdal
+    clr_country_flag = primary_artifact_ulthalesh
+    clr_country_flag = primary_artifact_scepter_of_sargeras
+    clr_country_flag = primary_artifact_stromkar
+    clr_country_flag = primary_artifact_scale_of_the_earthwarder
+    clr_country_flag = primary_artifact_underlight_angler
+    clr_country_flag = primary_artifact_glaive_of_the_aspects
+    clr_country_flag = primary_artifact_scimitar_of_sirocco
+    clr_country_flag = primary_artifact_staff_of_ammunae
+    clr_country_flag = primary_artifact_dustbringer
+    clr_country_flag = primary_artifact_valanyr
+    clr_country_flag = primary_artifact_puzzle_box_of_yogg_saron
+    clr_country_flag = primary_artifact_twirling_longbow
+    clr_country_flag = primary_artifact_spear_of_xuen
+    clr_country_flag = primary_artifact_umbrella_of_chiji
+    clr_country_flag = primary_artifact_amulet_of_rukhmar
+    clr_country_flag = primary_artifact_dream_of_argus
+    clr_country_flag = primary_artifact_grimoire_of_the_nameless_void
+    clr_country_flag = primary_artifact_gronnsbane
+    clr_country_flag = primary_artifact_gutreks_cleaver
+    clr_country_flag = primary_artifact_headdress_of_the_first_shaman
+    clr_country_flag = primary_artifact_warmaul_of_the_warmaul_chieftain
+    clr_country_flag = primary_artifact_beakbreaker_of_terokk
+    clr_country_flag = primary_artifact_zinrokh
+    clr_country_flag = primary_artifact_fetish_of_hireek
+    clr_country_flag = primary_artifact_bwonsamdi_voodoo_mask
+    clr_country_flag = primary_artifact_rezan_idol
+    clr_country_flag = primary_artifact_jagged_blade_of_the_drust
+    clr_country_flag = primary_artifact_soul_coffer
+    clr_country_flag = primary_artifact_fetish_of_the_tormented_mind
+    clr_country_flag = primary_artifact_ritual_fetish
+    clr_country_flag = primary_artifact_blade_of_northern_kings
+    clr_country_flag = primary_artifact_brinebeards_shanker
+    clr_country_flag = primary_artifact_crimson_captains_hat
+}
+
+reset_heist__raider = {
+    clr_country_flag = artifact_heist_active
+    
+    clr_country_flag = artifact_heist_setup_raider
+    clr_country_flag = heist_type_quick
+    clr_country_flag = heist_type_methodical
+}
+
+reset_heist__target = {
+    clr_country_flag = artifact_heist_setup_target
+    clr_country_flag = heist_defence_max
+    clr_country_flag = heist_defence_med
+    clr_country_flag = heist_defence_min
+    clr_country_flag = artifact_heist_target
+}

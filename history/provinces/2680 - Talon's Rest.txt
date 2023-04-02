@@ -1,4 +1,4 @@
-
+is_city = yes
 owner = VLK
 controller = VLK
 add_core = VLK
@@ -7,9 +7,10 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 
-culture = culture_storm
-religion = religion_sect_of_dragons
+culture = culture_storm_dragonflight
+religion = titan_worship
 
+hre = no
 trade_goods = fur
-hre = no 
+ 
 

@@ -9,90 +9,261 @@ monarchy = {
     reform_levels = {
         tier_monarchy_government_form = {
 			reforms = {
+                # Generic
                 autocracy_reform
                 feudalism_reform
-                ancient_kingdom_reform
-                horde_reform
-                alliance_reform
-                scourge_reform
+                
+                # Unique
                 admiralty_reform
-                kingdom_of_magic_reform
-                naga_domain_reform
+                alliance_reform
+                horde_reform
+                vrykul_kingdom_reform
+                ancient_kingdom_reform
+                scourge_reform
                 scourge_domain_reform
-                dragonflight_brood_reform
+                nighthold_reform
+                kingdom_of_magic_reform
+                convocation_of_silvermoon_reform
+                naga_domain_reform
+                troll_kingdom_reform
+                scarlet_monarchy_reform
+                gorian_empire_reform
+                gorian_horde_reform
+                zandalari_empire_reform
+				dragonflight_brood_reform
+                free_city_reform
+                pandaren_union_reform
+                celestial_order_reform
+                shado_pan_order_reform
+                nightfallen_reform
+                mechagon_reform
 			}
 		}
-        tier_monarchy_hereditary_vs_nobility = {
+        tier_monarchy_labor_organisation = {
 			reforms = {
-				wwu_enforce_privileges_reform
-				wwu_quash_noble_power_reform
-				wwu_enforce_trader_privileges_reform
-				wwu_azerothian_traders_reform
-				wwu_druidic_syncretism_reform
-				wwu_elvish_nobles_reform
-				wwu_strength_of_the_vrykul_reform
-				wwu_draenei_society_reform
-                wwu_hereditary_rule_reform
+				wwu_labor_tier_commission
+                wwu_labor_tier_guild_labor
+                wwu_labor_tier_serfdom
+                wwu_labor_tier_slavery
+                wwu_labor_tier_peasantry
+                wwu_labor_tier_born_of_the_sea
 			}
 		}
-		tier_monarchy_bureaucracy = {
+        tier_monarchy_military_organisation = {
 			reforms = {
-				wwu_centralize_reform
-				wwu_decentralize_reform
-				wwu_kalimdor_recruitment
-				wwu_august_celestials_reform
-                wwu_penal_colonies_reform
-                wwu_justified_conquest_reform
+				wwu_military_conscription
+                wwu_military_mercenary_camps
+                wwu_military_professionalism
+                wwu_military_elitism
+                wwu_military_knighthood
 			}
 		}
-		tier_monarchy_growth_of_administration = {
+        tier_monarchy_noble_rights = {
 			reforms = {
-				wwu_clergy_in_administration_reform
-				wwu_of_noble_bearing_reform
-				wwu_meritocratic_focus_reform
-				wwu_dwarven_culture_reform
-				wwu_formalized_hoof_reform
+				wwu_noble_rights_strong_nobility
+                wwu_noble_rights_curtailed_nobility
+                wwu_noble_rights_warlordism
+                wwu_noble_rights_strong_royal_court
 			}
 		}
-		tier_monarchy_deliberative_assembly = {
+        tier_monarchy_economic_organisation = {
 			reforms = {
-				wwu_parliamentary_reform
-				wwu_royal_decree_reform
-				wwu_aristocratic_court_reform
-				wwu_states_general_reform
-				wwu_general_estates_reform
+				wwu_economic_extensive_taxation
+                wwu_economic_trade_monopoly
+                wwu_economic_industrial_society
+                wwu_economic_war_economy
+                wwu_economic_local_developments
 			}
 		}
-		tier_monarchy_absolute_rule_vs_constitutional = {
+        tier_monarchy_trade_organisation = {
 			reforms = {
-				wwu_law_and_order_reform
-				wwu_regional_representation_reform
-                wwu_militarized_state_reform
+				wwu_trade_free_trade
+                wwu_trade_mercantilism
+                wwu_trade_protectionism
+                wwu_trade_criminal_exploitation
 			}
 		}
-		tier_monarchy_separation_of_power = {
+        tier_monarchy_naval_organisation = {
 			reforms = {
-				wwu_political_absolutism_reform
-				wwu_legislative_houses_reform
-				wwu_become_a_republic_reform
-				wwu_become_a_theocracy_reform
+				wwu_naval_grand_armada
+                wwu_naval_merchant_fleet
+                wwu_naval_naval_infrastructure
+                wwu_naval_coastal_dominance
+                wwu_naval_invasion_deterrence
+                wwu_naval_elitism
+			}
+		}
+        tier_monarchy_time_for_change = {
+			reforms = {
+                wwu_switch_consolidate_power
+                wwu_switch_delegate_power
+				wwu_switch_become_a_republic
+                wwu_switch_become_a_theocracy
+                wwu_switch_troll_kingdom_centralize_kingdom
+			}
+		}
+        tier_monarchy_expectations_of_the_monarch = {
+			reforms = {
+				wwu_ruler_expectation_head_of_the_kingdom
+                wwu_ruler_expectation_champion_of_the_people
+                wwu_ruler_expectation_servant_of_the_realm
+                wwu_ruler_expectation_purveyor_of_decadence
+			}
+		}
+        tier_monarchy_stance_on_magic = {
+			reforms = {
+				wwu_magic_free_magic
+                wwu_magic_controlled_magic
+                wwu_magic_regulated_magic
+                wwu_magic_magical_society
+                wwu_magic_dalaran_education
+			}
+		}
+        tier_monarchy_stance_on_religion = {
+			reforms = {
+				wwu_religion_lip_service
+                wwu_religion_state_religion
+                wwu_religion_tolerance_towards_all
+                wwu_religion_fanaticism
+			}
+		}
+        tier_monarchy_succession_law = {
+			reforms = {
+				wwu_succession_law_primogeniture
+                wwu_succession_law_seniority
+                wwu_succession_law_gavelkind
+                wwu_succession_law_heroism
+			}
+		}
+        tier_monarchy_administrative_organisation = {
+			reforms = {
+				wwu_administration_bureaucracy
+                wwu_administration_townships_and_cities
+                wwu_administration_feudalism
+                wwu_administration_state_autonomy
+			}
+		}
+        tier_monarchy_laws_and_enforcement = {
+			reforms = {
+				wwu_law_codified_law
+                wwu_law_county_law
+                wwu_law_militias
+                wwu_law_national_guard
+			}
+		}
+        tier_monarchy_cultural_attitude = {
+			reforms = {
+				wwu_culture_peaceful_existence
+                wwu_culture_warrior_culture
+                wwu_culture_tavern_life
+                wwu_culture_arts_and_sciences
+                wwu_culture_assimilation
+			}
+		}
+        tier_monarchy_royal_power = {
+			reforms = {
+				wwu_royal_power_strong_authority
+                wwu_royal_power_curtailed_authority
+                wwu_royal_power_figurehead
+                wwu_royal_power_war_footing
+			}
+		}
+        tier_monarchy_morality_and_idealism = {
+			reforms = {
+				wwu_idealism_glory
+                wwu_idealism_honor
+                wwu_idealism_victory
+                wwu_idealism_unity
+                wwu_idealism_bulwark_of_the_alliance
+			}
+		}
+        tier_monarchy_diplomatic_attitude = {
+			reforms = {
+				wwu_diplomacy_domination
+                wwu_diplomacy_ambassadorships
+                wwu_diplomacy_disinterest
+                wwu_diplomacy_intervention
+			}
+		}
+        tier_monarchy_assembly_and_absolutism = {
+			reforms = {
+				wwu_assembly_parliament
+                wwu_assembly_monarchical_constitution
+                wwu_assembly_checks_and_balances
+                wwu_assembly_absolute_rule
+			}
+		}
+        tier_monarchy_guilds_and_heroes = {
+			reforms = {
+				wwu_gah_heroic_guilds
+                wwu_gah_trade_factionalism
+                wwu_gah_political_factionalism
+                wwu_gah_criminal_organisations
+			}
+		}
+        tier_monarchy_territorial_ambitions = {
+			reforms = {
+				wwu_territory_exploitation
+                wwu_territory_equal_in_name
+                wwu_territory_efficient_administration
+                wwu_territory_future_statehood
+                wwu_territory_victors_of_the_second_war
+			}
+		}
+        tier_monarchy_strategic_ambitions = {
+			reforms = {
+				wwu_ambition_a_just_world
+                wwu_ambition_unification
+                wwu_ambition_one_faith
+                wwu_ambition_prestige
+			}
+		}
+        tier_monarchy_monarchal_investments = {
+			reforms = {
+				wwu_monarchal_investment_estates_and_workshops
+                wwu_monarchal_investment_parties_and_art
+                wwu_monarchal_investment_barracks_and_shipyards
+                wwu_monarchal_investment_exploration_and_excavation
+			}
+		}
+        tier_monarchy_realm_innovations = {
+			reforms = {
+				wwu_innovation_grand_road_network
+                wwu_innovation_technological_hubs
+                wwu_innovation_militarised_towns
+                wwu_innovation_leaders_of_legend
 			}
 		}
     }
     
     legacy_government = {
+	    # Generic
         autocracy_legacy
         feudalism_legacy
-        ancient_kingdom_legacy
-        horde_legacy
-        alliance_legacy
-        scourge_legacy
+        
+        # Unique
         admiralty_legacy
-        kingdom_of_magic_legacy
-        naga_domain_legacy
+        alliance_legacy
+        horde_legacy
+        vrykul_kingdom_legacy
+        ancient_kingdom_legacy
+        scourge_legacy
         scourge_domain_legacy
-        remnants_monarchy_legacy
-        dragonflight_brood_legacy
+        nighthold_legacy
+        kingdom_of_magic_legacy
+        convocation_of_silvermoon_legacy
+        naga_domain_legacy
+        troll_kingdom_legacy
+        scarlet_monarchy_legacy
+        gorian_empire_legacy
+        gorian_horde_legacy
+        zandalari_empire_legacy
+        free_city_legacy
+        pandaren_union_legacy
+        celestial_order_legacy
+        shado_pan_order_legacy
+        nightfallen_legacy
+        mechagon_legacy
     }
 }
 
@@ -107,93 +278,260 @@ republic = {
     reform_levels = {
         tier_republic_government_form = {
 			reforms = {
+                # Generic
                 noble_republic_reform
                 mercantile_republic_reform
                 despotic_republic_reform
-                ancient_republic_reform
+                
+                # Unique
                 magocracy_reform
-                free_city_reform
                 trading_city_reform
                 colonial_government_reform
+                troll_republic_reform
+                tinker_republic_reform
+                pirate_republic_reform
+                tortollan_enclave_reform
 			}
 		}
-        tier_republic_republican_virtues = {
+        tier_republic_labor_organisation = {
 			reforms = {
-				wwu_republican_authoritarianism_reform
-				wwu_nepotism_reform
-				wwu_republicanism_reform
+				wwu_labor_tier_commission
+                wwu_labor_tier_guild_labor
+                wwu_labor_tier_serfdom
+                wwu_labor_tier_slavery
+                wwu_labor_tier_peasantry
+                wwu_labor_tier_born_of_the_sea
 			}
 		}
-		tier_republic_frequency_of_elections = {
+        tier_republic_military_organisation = {
 			reforms = {
-				wwu_frequent_elections_reform
-				wwu_consolidation_of_power_reform
-				wwu_lottery_reform
+				wwu_military_conscription
+                wwu_military_mercenary_camps
+                wwu_military_professionalism
+                wwu_military_elitism
+                wwu_military_knighthood
 			}
 		}
-		tier_republic_regionalism = {
+        tier_republic_citizenship = {
 			reforms = {
-				wwu_provincial_governments_reform
-				wwu_administrative_divisions_reform
-				wwu_union_of_states_reform
-				wwu_penal_colonies_reform
-                wwu_justified_conquest_reform
+				wwu_citizenship_landowner_voting_block
+                wwu_citizenship_limited_citizenship
+                wwu_citizenship_suffrage
+                wwu_citizenship_absolute_freedom
+                
+                # Pirate
+                wwu_citizenship_crew_registry
+                wwu_citizenship_citizenship_by_force
+                wwu_citizenship_citizenship_for_loot
 			}
 		}
-		tier_republic_separation_of_power = {
+        tier_republic_economic_organisation = {
 			reforms = {
-				wwu_parliamentary_reform
-				wwu_presidential_reform
-                wwu_republican_diplomacy_reform
-                wwu_municipal_self_defense_reform
+				wwu_economic_extensive_taxation
+                wwu_economic_trade_monopoly
+                wwu_economic_industrial_society
+                wwu_economic_war_economy
 			}
 		}
-		tier_republic_consolidation_of_power = {
+        tier_republic_trade_organisation = {
 			reforms = {
-				wwu_broaden_executive_powers_reform
-				wwu_devolution_of_powers_reform
-                wwu_militarized_state_reform
+				wwu_trade_free_trade
+                wwu_trade_mercantilism
+                wwu_trade_protectionism
+                wwu_trade_criminal_exploitation
 			}
 		}
-		tier_republic_guiding_principle_of_administration = {
+        tier_republic_naval_organisation = {
 			reforms = {
-				wwu_political_principle_reform
-				wwu_moral_principle_reform
+				wwu_naval_grand_armada
+                wwu_naval_merchant_fleet
+                wwu_naval_naval_infrastructure
+                wwu_naval_coastal_dominance
+                wwu_naval_invasion_deterrence
+                wwu_naval_elitism
 			}
 		}
-		tier_republic_electorate = {
+        tier_republic_time_for_change = {
 			reforms = {
-				wwu_landholders_reform
-				wwu_citizenry_reform
+                wwu_switch_consolidate_power
+                wwu_switch_delegate_power
+				wwu_switch_become_a_monarchy
+                wwu_switch_become_a_theocracy
 			}
 		}
-		tier_republic_office_selection = {
+        tier_republic_election_cycle = {
 			reforms = {
-				wwu_appointment_by_committee_reform
-				wwu_bureaucratic_aparatus_reform
-				wwu_universal_suffrage_reform
+				wwu_election_cycle_short
+                wwu_election_cycle_long
+                wwu_election_cycle_term_limits
+                wwu_election_cycle_puppet_masters
+                
+                # Pirate
+                wwu_election_pirate_king
+                wwu_election_council_of_captains
+                wwu_election_violent_elections
 			}
 		}
-		tier_republic_question_of_dictatorship = {
+        tier_republic_stance_on_magic = {
 			reforms = {
-				wwu_become_a_monarchy_reform
-				wwu_become_a_theocracy_reform
-				wwu_strengthen_executive_powers_reform
-				wwu_reinforce_republican_values_reform
+				wwu_magic_free_magic
+                wwu_magic_controlled_magic
+                wwu_magic_regulated_magic
+                wwu_magic_magical_society
+                wwu_magic_dalaran_education
+			}
+		}
+        tier_republic_stance_on_religion = {
+			reforms = {
+				wwu_religion_lip_service
+                wwu_religion_state_religion
+                wwu_religion_tolerance_towards_all
+                wwu_religion_fanaticism
+			}
+		}
+        tier_republic_separation_of_powers = {
+			reforms = {
+				wwu_separation_of_powers_powerful_legislature
+                wwu_separation_of_powers_regional_assemblies
+                wwu_separation_of_powers_autonomous_institutions
+                wwu_separation_of_powers_limited_councils
+                
+                # Pirate
+                wwu_separation_of_powers_to_the_victor_the_spoils
+                wwu_separation_of_powers_council_of_pirates
+                wwu_separation_of_powers_port_republics
+			}
+		}
+        tier_republic_administrative_organisation = {
+			reforms = {
+				wwu_administration_bureaucracy
+                wwu_administration_townships_and_cities
+                wwu_administration_feudalism
+                wwu_administration_state_autonomy
+			}
+		}
+        tier_republic_laws_and_enforcement = {
+			reforms = {
+				wwu_law_codified_law
+                wwu_law_county_law
+                wwu_law_militias
+                wwu_law_national_guard
+			}
+		}
+        tier_republic_cultural_attitude = {
+			reforms = {
+				wwu_culture_peaceful_existence
+                wwu_culture_warrior_culture
+                wwu_culture_tavern_life
+                wwu_culture_arts_and_sciences
+                wwu_culture_assimilation
+			}
+		}
+        tier_republic_republican_institutions = {
+			reforms = {
+				wwu_republican_institution_alphabet_organisations
+                wwu_republican_institution_politicized_warfare
+                wwu_republican_institution_veto
+                wwu_republican_institution_sacred_constitution
+                
+                # Pirate
+                wwu_republican_institution_black_markets
+                wwu_republican_institution_captain_retirement
+                wwu_republican_institution_a_traitors_fate
+			}
+		}
+        tier_republic_morality_and_idealism = {
+			reforms = {
+				wwu_idealism_glory
+                wwu_idealism_honor
+                wwu_idealism_victory
+                wwu_idealism_unity
+                wwu_idealism_bulwark_of_the_alliance
+			}
+		}
+        tier_republic_diplomatic_attitude = {
+			reforms = {
+				wwu_diplomacy_domination
+                wwu_diplomacy_ambassadorships
+                wwu_diplomacy_disinterest
+                wwu_diplomacy_intervention
+			}
+		}
+        tier_republic_state_structure = {
+			reforms = {
+				wwu_state_structure_statehood
+                wwu_state_structure_regionalism
+                wwu_state_structure_united_cities
+                wwu_state_structure_confederation
+                
+                # Pirate
+                wwu_state_structure_united_ports
+                wwu_state_structure_pirate_confederation
+                wwu_state_structure_leashed_realms
+			}
+		}
+        tier_republic_guilds_and_heroes = {
+			reforms = {
+				wwu_gah_heroic_guilds
+                wwu_gah_trade_factionalism
+                wwu_gah_political_factionalism
+                wwu_gah_criminal_organisations
+			}
+		}
+        tier_republic_territorial_ambitions = {
+			reforms = {
+				wwu_territory_exploitation
+                wwu_territory_equal_in_name
+                wwu_territory_efficient_administration
+                wwu_territory_future_statehood
+                wwu_territory_victors_of_the_second_war
+			}
+		}
+        tier_republic_strategic_ambitions = {
+			reforms = {
+				wwu_ambition_a_just_world
+                wwu_ambition_unification
+                wwu_ambition_one_faith
+                wwu_ambition_prestige
+			}
+		}
+        tier_republic_republican_authority = {
+			reforms = {
+				wwu_republic_authority_master_of_edicts
+                wwu_republic_authority_chief_diplomat
+                wwu_republic_authority_head_of_the_army
+                wwu_republic_authority_speaker_of_the_senate
+                
+                # Pirate
+                wwu_republic_authority_lord_of_the_sea
+                wwu_republic_authority_corsair_master
+                wwu_republic_authority_swashbuckling_figurehead
+			}
+		}
+        tier_republic_realm_innovations = {
+			reforms = {
+				wwu_innovation_grand_road_network
+                wwu_innovation_technological_hubs
+                wwu_innovation_militarised_towns
+                wwu_innovation_leaders_of_legend
 			}
 		}
     }
 
     legacy_government = {
+        # Generic
         noble_republic_legacy
         mercantile_republic_legacy
         despotic_republic_legacy
-        ancient_republic_legacy
+        
+        # Unique
         magocracy_legacy
-        free_city_legacy
         trading_city_legacy
         colonial_government_legacy
-        remnants_republic_legacy
+        troll_republic_legacy
+        tinker_republic_legacy
+        pirate_republic_legacy
+        tortollan_enclave_legacy
     }
 }
 
@@ -208,88 +546,252 @@ theocracy = {
     reform_levels = {
         tier_theocracy_government_form = {
 			reforms = {
+                # Generic
                 theocracy_reform
                 monastic_order_reform
+                
+                # Unique
                 ancient_theocracy_reform
                 scarlet_crusade_reform
                 argent_crusade_reform
                 demonic_order_reform
                 druidic_circle_reform
                 elemental_cult_reform
+                shadow_cult_reform
+                cult_of_hakkar_reform
+                titan_facility_reform
+                tolvir_kingdom_reform
+                aqir_kingdom_reform
+                nerubian_kingdom_reform
+                mantid_kingdom_reform
+                naga_empire_reform
+                blood_matriarchy_reform
+                burning_legion_reform
+                soul_covenant_reform
+                cult_of_domination_reform
+                eternal_city_reform
 			}
 		}
-        tier_theocracy_internal_vs_external_mission = {
+        tier_theocracy_labor_organisation = {
 			reforms = {
-				wwu_internal_mission_reform
-				wwu_external_mission_reform
-				wwu_mission_to_civilize_reform
-				wwu_mission_to_kill_pirates_reform
+				wwu_labor_tier_commission
+                wwu_labor_tier_guild_labor
+                wwu_labor_tier_serfdom
+                wwu_labor_tier_slavery
+                wwu_labor_tier_peasantry
+                wwu_labor_tier_born_of_the_sea
 			}
 		}
-		tier_theocracy_divine_cause = {
+        tier_theocracy_military_organisation = {
 			reforms = {
-				wwu_safeguard_holy_sites_reform
-				wwu_combat_heresy_reform
-				wwu_expel_heathens_reform
-                wwu_justified_conquest_reform
+				wwu_military_conscription
+                wwu_military_mercenary_camps
+                wwu_military_professionalism
+                wwu_military_elitism
+                wwu_military_knighthood
 			}
 		}
-		tier_theocracy_clergy_in_administration = {
+        tier_theocracy_proselytism = {
 			reforms = {
-				wwu_subservient_administrators_reform
-				wwu_religious_administrators_reform
-				wwu_pious_merchants_reform
-				wwu_loyal_nobility_reform
-				wwu_monastic_breweries_reform
-				wwu_troll_warriors_reform
-				wwu_demonic_advisors_reform
+				wwu_proselytism_by_example
+                wwu_proselytism_by_force
+                wwu_proselytism_by_understanding
+                wwu_proselytism_by_dismissal
 			}
 		}
-		tier_theocracy_secularization = {
+        tier_theocracy_economic_organisation = {
 			reforms = {
-				wwu_maintain_religious_head_reform
-				wwu_partial_secularisation_reform
-                wwu_militarized_state_reform
-                wwu_become_a_monarchy_reform
-                wwu_become_a_republic_reform
+				wwu_economic_extensive_taxation
+                wwu_economic_trade_monopoly
+                wwu_economic_industrial_society
+                wwu_economic_war_economy
 			}
 		}
-		tier_theocracy_separation_of_power = {
+        tier_theocracy_trade_organisation = {
 			reforms = {
-				wwu_clerical_commission_reform
-				wwu_divine_guidance_reform
-				wwu_theocratic_democracy_reform
+				wwu_trade_free_trade
+                wwu_trade_mercantilism
+                wwu_trade_protectionism
+                wwu_trade_criminal_exploitation
 			}
 		}
-		tier_theocracy_nature_of_faith = {
+        tier_theocracy_naval_organisation = {
 			reforms = {
-				wwu_church_and_state_reform
-				wwu_religious_harmony_reform
-				wwu_god_and_man_reform
-				wwu_organising_our_religion_reform
+				wwu_naval_grand_armada
+                wwu_naval_merchant_fleet
+                wwu_naval_naval_infrastructure
+                wwu_naval_coastal_dominance
+                wwu_naval_invasion_deterrence
+                wwu_naval_elitism
 			}
 		}
-		tier_theocracy_faith_and_the_world = {
+        tier_theocracy_time_for_change = {
 			reforms = {
-				wwu_religion_in_one_country_reform
-				wwu_religious_permanent_revolution_reform
-				wwu_many_fingers_of_god_reform
-				wwu_priestly_autonomy_reform
-				wwu_proclaim_religious_head_reform
+                wwu_switch_consolidate_power
+                wwu_switch_delegate_power
+				wwu_switch_become_a_monarchy
+                wwu_switch_become_a_republic
+			}
+		}
+        tier_theocracy_holy_orders = {
+			reforms = {
+				wwu_holy_order_abbeys
+                wwu_holy_order_missions
+                wwu_holy_order_crusading_orders
+                wwu_holy_order_tiered_clergy
+			}
+		}
+        tier_theocracy_stance_on_magic = {
+			reforms = {
+				wwu_magic_free_magic
+                wwu_magic_controlled_magic
+                wwu_magic_regulated_magic
+                wwu_magic_magical_society
+                wwu_magic_dalaran_education
+			}
+		}
+        tier_theocracy_stance_on_religion = {
+			reforms = {
+				wwu_religion_lip_service
+                wwu_religion_state_religion
+                wwu_religion_tolerance_towards_all
+                wwu_religion_fanaticism
+			}
+		}
+        tier_theocracy_secularism = {
+			reforms = {
+				wwu_secularism_clerical_bureaucracy
+                wwu_secularism_secular_tolerances
+                wwu_secularism_church_and_state
+                wwu_secularism_gilded_civil_service
+			}
+		}
+        tier_theocracy_administrative_organisation = {
+			reforms = {
+				wwu_administration_bureaucracy
+                wwu_administration_townships_and_cities
+                wwu_administration_feudalism
+                wwu_administration_state_autonomy
+			}
+		}
+        tier_theocracy_laws_and_enforcement = {
+			reforms = {
+				wwu_law_codified_law
+                wwu_law_county_law
+                wwu_law_militias
+                wwu_law_national_guard
+			}
+		}
+        tier_theocracy_cultural_attitude = {
+			reforms = {
+				wwu_culture_peaceful_existence
+                wwu_culture_warrior_culture
+                wwu_culture_tavern_life
+                wwu_culture_arts_and_sciences
+                wwu_culture_assimilation
+			}
+		}
+        tier_theocracy_fanaticism = {
+			reforms = {
+				wwu_fanaticism_banned
+                wwu_fanaticism_tolerated
+                wwu_fanaticism_directed
+                wwu_fanaticism_embraced
+			}
+		}
+        tier_theocracy_morality_and_idealism = {
+			reforms = {
+				wwu_idealism_glory
+                wwu_idealism_honor
+                wwu_idealism_victory
+                wwu_idealism_unity
+                wwu_idealism_bulwark_of_the_alliance
+			}
+		}
+        tier_theocracy_diplomatic_attitude = {
+			reforms = {
+				wwu_diplomacy_domination
+                wwu_diplomacy_ambassadorships
+                wwu_diplomacy_disinterest
+                wwu_diplomacy_intervention
+			}
+		}
+        tier_theocracy_heathenism_and_heresy = {
+			reforms = {
+				wwu_hah_tolerated_heresy
+                wwu_hah_tolerated_heathenism
+                wwu_hah_religion_for_all
+                wwu_hah_persecution
+			}
+		}
+        tier_theocracy_guilds_and_heroes = {
+			reforms = {
+				wwu_gah_heroic_guilds
+                wwu_gah_trade_factionalism
+                wwu_gah_political_factionalism
+                wwu_gah_criminal_organisations
+			}
+		}
+        tier_theocracy_territorial_ambitions = {
+			reforms = {
+				wwu_territory_exploitation
+                wwu_territory_equal_in_name
+                wwu_territory_efficient_administration
+                wwu_territory_future_statehood
+                wwu_territory_victors_of_the_second_war
+			}
+		}
+        tier_theocracy_strategic_ambitions = {
+			reforms = {
+				wwu_ambition_a_just_world
+                wwu_ambition_unification
+                wwu_ambition_one_faith
+                wwu_ambition_prestige
+			}
+		}
+        tier_theocracy_external_mission = {
+			reforms = {
+				wwu_external_mission_world_crusade
+                wwu_external_mission_proclaim_religious_head
+                wwu_external_mission_mass_conversion
+                wwu_external_mission_heartland_of_the_faithful
+			}
+		}
+        tier_theocracy_realm_innovations = {
+			reforms = {
+				wwu_innovation_grand_road_network
+                wwu_innovation_technological_hubs
+                wwu_innovation_militarised_towns
+                wwu_innovation_leaders_of_legend
 			}
 		}
     }
     
     legacy_government = {
+        # Generic
         theocracy_legacy
         monastic_order_legacy
+        
+        # Unique
         ancient_theocracy_legacy
         scarlet_crusade_legacy
         argent_crusade_legacy
         demonic_order_legacy
         druidic_circle_legacy
-        remnants_theocracy_legacy
         elemental_cult_legacy
+        shadow_cult_legacy
+        cult_of_hakkar_legacy
+        dragonflight_brood_legacy
+        titan_facility_legacy
+        tolvir_kingdom_legacy
+        aqir_kingdom_legacy
+        nerubian_kingdom_legacy
+        mantid_kingdom_legacy
+        naga_empire_legacy
+        blood_matriarchy_legacy
+        soul_covenant_legacy
+        cult_of_domination_legacy
+        eternal_city_legacy
     }
 }
 
@@ -304,55 +806,189 @@ tribal = {
     reform_levels = {
         tier_tribal_government_form = {
 			reforms = {
-                warband_reform
+                # Generic
                 tribal_federation_reform
                 tribal_despotism_reform
+                
+                # Unique
+                orc_clan_reform
+                yaungol_tribe_reform
+                gnoll_horde_reform
+                saurok_pod_reform
+                giant_tribe_reform
+                draenei_clan_reform
                 ancient_clan_reform
-                primitive_clan_reform
                 expeditionary_force_reform
                 criminal_organization_reform
+                dwarven_clan_reform
+                satyr_sect_reform
+                centaur_khanate_reform
+                old_horde_reform
+                mantid_swarm_reform
+                tauren_tribe_reform
+                junkyard_reform
+                withered_reform
+                worgen_pack_reform
+                primal_dominion_reform
 			}
 		}
-        tier_tribal_cultural_values = {
+        tier_tribal_tribal_organisation = {
 			reforms = {
-				wwu_martial_society_reform
-				wwu_civil_society_reform
+                # Generic
+                wwu_tribal_established_hierarchy_reform
+                wwu_tribal_established_warband_reform
+                wwu_tribal_tribal_council_reform
+                
+                # Expeditionary
+                wwu_tribal_chain_of_command_reform
+                wwu_tribal_delegated_command_reform
+                
+                # Natives
+                wwu_tribal_war_band_reform
+                wwu_tribal_settle_down_reform
+                wwu_tribal_seasonal_travel_reform
 			}
 		}
-		tier_tribal_religious_values = {
-			reforms = {
-				wwu_religious_societies_reform
-				wwu_lip_service_reform
-			}
-		}
-		tier_tribal_modernization = {
-			reforms = {
-				wwu_centralize_tribal_power_reform
-				wwu_retain_tribal_hierarchy_reform
-			}
-		}
-		tier_tribal_reformation = {
-			reforms = {
-				wwu_become_a_monarchy_reform
-				wwu_become_a_republic_reform
-				wwu_become_a_theocracy_reform
-				wwu_become_a_warband_reform
-                wwu_barbaric_despoilers_reform
-				wwu_tribal_unity_reform
-                wwu_militarized_state_reform
-			}
-		}
+        tier_tribal_warriors = {
+            reforms = {
+                wwu_warriors_battlefield_tactics
+                wwu_warriors_raid_and_pillage
+                wwu_warriors_ambush_tactics
+                wwu_warriors_magical_affinity
+                
+                # Nomad
+                wwu_warriors_nomadic_warriors
+                
+                # Orc
+                wwu_warriors_unrelenting_savagery
+                
+                # Orc - Unique
+                wwu_warriors_war_songs
+                wwu_warriors_warg_kinship
+                wwu_warriors_cannibalistic_tendencies
+                wwu_warriors_dragon_tamers
+                wwu_warriors_spiritual_vigor
+                wwu_warriors_shattered_hands
+                wwu_warriors_bloodthirsty_warriors
+                wwu_warriors_dark_ritualists
+                wwu_warriors_blackrock_machinery
+                wwu_warriors_power_of_the_pale
+                wwu_warriors_blademasters
+            }
+        }
+        tier_tribal_paganism = {
+            reforms = {
+                wwu_paganism_ritualistic_practices
+                wwu_paganism_sacrificial_rites
+                wwu_paganism_respect_the_faith
+                wwu_paganism_mercenaries_of_faith
+                
+                # Nomad
+                wwu_paganism_many_gods_one_horde
+                
+                # Orc
+                wwu_paganism_elemental_communion
+                wwu_paganism_slaves_of_mannoroth
+                wwu_paganism_occult_shadows
+            }
+        }
+        tier_tribal_tribal_magic = {
+            reforms = {
+                wwu_tribal_magic_fetishes
+                wwu_tribal_magic_funeral_rites
+                wwu_tribal_magic_totemism
+                wwu_tribal_magic_constructs
+                
+                # Nomad
+                wwu_tribal_magic_wild_magic
+                
+                # Orc
+                wwu_tribal_magic_altar_of_storms
+                wwu_tribal_magic_temple_of_the_damned
+                wwu_tribal_magic_warlock_coven
+            }
+        }
+        tier_tribal_prisoners = {
+            reforms = {
+                wwu_prisoners_captive_ransom
+                wwu_prisoners_captive_enslavement
+                wwu_prisoners_captive_integration
+                wwu_prisoners_captive_execution
+                
+                # Nomad
+                wwu_prisoners_captive_conscription
+                
+                # Orc
+            }
+        }
+        tier_tribal_tribal_structure = {
+            reforms = {
+                wwu_tribal_structure_hierarchical
+                wwu_tribal_structure_clans
+                wwu_tribal_structure_religious_order
+                wwu_tribal_structure_tributaries
+                
+                # Nomad
+                wwu_tribal_structure_nomadic_kinship
+            }
+        }
+        tier_tribal_chieftains = {
+            reforms = {
+                wwu_chieftains_strongman
+                wwu_chieftains_tyrant
+                wwu_chieftains_tribal_vote
+                wwu_chieftains_tribal_succession
+                
+                # Nomad
+                wwu_chieftains_warrior_lords
+            }
+        }
+        tier_tribal_outsiders = {
+            reforms = {
+                wwu_outsiders_distrusted
+                wwu_outsiders_tolerated
+                wwu_outsiders_executed
+                wwu_outsiders_embraced
+                
+                # Nomad
+                wwu_outsiders_traded_with
+            }
+        }
+        tier_tribal_civilization = {
+            reforms = {
+                wwu_civilization_the_old_way
+                wwu_civilization_synthesis_of_experience
+                wwu_switch_become_a_monarchy
+                wwu_switch_become_a_republic
+                wwu_switch_become_a_theocracy
+            }
+        }
     }
     
     legacy_government = {
-        warband_legacy
+        # Generic
         tribal_federation_legacy
         tribal_despotism_legacy
+        
+        # Unique
+        orc_clan_legacy
+        yaungol_tribe_legacy
+        gnoll_horde_legacy
+        saurok_pod_legacy
+        giant_tribe_legacy
+        draenei_clan_legacy
         ancient_clan_legacy
-        primitive_clan_legacy
         expeditionary_force_legacy
         criminal_organization_legacy
-        remnants_tribe_legacy
+        dwarven_clan_legacy
+        satyr_sect_legacy
+        centaur_khanate_legacy
+        old_horde_legacy
+        mantid_swarm_legacy
+        tauren_tribe_legacy
+        withered_legacy
+        worgen_pack_legacy
+        primal_dominion_legacy
     }
 }
 
@@ -363,65 +999,16 @@ native = {
     color = { 194 127 209 }
     
 	basic_reform = native_mechanic
-
+    
     reform_levels = {
-        tier_native_government_form = {
-			reforms = {
+        tier_native_tribe_organization = {
+            reforms = {
                 native_tribe_reform
-                primitive_tribe_reform
-			}
-		}
+            }
+        }
     }
     
 	legacy_government = {
-		native_tribe_legacy
-        primitive_tribe_legacy
+		wwu_native_tribe_legacy
 	}
 }
-
-#--------------------------------------------
-# Pirate
-#--------------------------------------------
-pirate = {
-    color = { 10 10 10 }
-    
-    basic_reform = pirate_mechanic
-    
-    reform_levels = {
-        tier_pirate_government_form = {
-			reforms = {
-                pirate_kingdom_reform
-                pirate_republic_reform
-			}
-		}
-        tier_pirate_governance = {
-			reforms = {
-				wwu_council_of_captains_reform
-                wwu_articles_of_agreement_reform
-                wwu_smugglers_haven_reform
-			}
-		}
-		tier_pirate_principles = {
-			reforms = {
-				wwu_war_against_the_world_doctrine_reform
-				wwu_black_market_consortium_reform
-                wwu_justified_conquest_reform
-			}
-		}
-		tier_pirate_reformation = {
-			reforms = {
-                wwu_strengthen_pirate_unity_reform
-                wwu_militarized_state_reform
-				wwu_become_a_monarchy_reform
-				wwu_become_a_republic_reform
-				wwu_become_a_theocracy_reform
-			}
-		}
-    }
-    
-    legacy_government = {
-        pirate_kingdom_legacy
-        pirate_republic_legacy
-    }
-}
-

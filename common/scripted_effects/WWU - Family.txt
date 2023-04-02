@@ -23,7 +23,8 @@ divorce_consort_effect = {
 		random_country = {
 			limit = { has_given_consort_to = ROOT } 
 
-			hidden_effect = { country_event = { id = wwu_consort.205 days = 1 } } 
+			# Divorcing Consorts looks to be removed
+			# hidden_effect = { country_event = { id = wwu_consort.205 days = 1 } } 
 
 			tooltip = {
 				add_opinion = {
@@ -65,7 +66,8 @@ divorce_consort_effect = {
         if = {
             limit = { NOT = { any_country = { has_given_consort_to = ROOT } } }
             remove_consort = yes
-            country_event = { id = wwu_consort.206 }
+			# Divorcing Consorts looks to be removed
+            #country_event = { id = wwu_consort.206 }
         }
     }
 
@@ -90,6 +92,7 @@ save_origin_of_consort_effect = { #Used for all internal consorts.
 		}
 		random_owned_province = {
 			limit = { has_province_modifier = domain_of_spouses_family }
+			# Audax Validator "." Ignore_NEXT
 			save_event_target_as = origin_of_consort
 		}
 	}
@@ -101,6 +104,7 @@ save_origin_of_consort_effect = { #Used for all internal consorts.
 		}
 		random_owned_province = {
 			limit = { has_province_modifier = home_of_consort }
+			# Audax Validator "." Ignore_NEXT
 			save_event_target_as = origin_of_consort
 		}
 	}

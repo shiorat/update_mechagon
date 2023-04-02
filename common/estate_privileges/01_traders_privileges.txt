@@ -1,3 +1,27 @@
+estate_traders_exception = {
+	icon = privilege_three_flags
+    
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.05
+	influence = 0.05
+    
+	can_select = {
+	}
+	on_granted = {
+        custom_tooltip = EXCEPT_ESTATE_FROM_SIEZE_LAND_TT
+	}
+	penalties = {
+	}
+	benefits = {
+		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 estate_traders_land_rights = {
 	icon = privilege_blueprint
 	
@@ -17,7 +41,7 @@ estate_traders_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
+		factor = 25
 		modifier = {
 			factor = 1.4
 			num_of_territories = 5
@@ -73,7 +97,7 @@ estate_traders_land_of_commerce = {
 	
     # Costs
     max_absolutism = -10
-	land_share = 10
+	land_share = 5
 	loyalty = 0.0
 	influence = 0.1
     
@@ -84,10 +108,10 @@ estate_traders_land_of_commerce = {
 	penalties = {
 	}
 	benefits = {
-		country_diplomatic_power = 1
+		dip_tech_cost_modifier = -0.2
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 25
 		modifier = {
 			factor = 0
 			OR = {
@@ -133,11 +157,11 @@ estate_traders_azerothian_navigators = {
         
 	}
 	benefits = {
-		movement_speed = 0.1
+		movement_speed = 0.05
         global_colonial_growth = 10
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 10
 	}
 }
 
@@ -154,7 +178,7 @@ estate_traders_patronage_of_the_arts = {
 		global_tax_modifier = -0.05
 	}
 	benefits = {
-		prestige = 1
+		prestige = 0.5
 	}
 	on_granted = {
 		if = {
@@ -178,7 +202,7 @@ estate_traders_patronage_of_the_arts = {
 		}
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 10
 	}
 }
 
@@ -192,10 +216,10 @@ estate_traders_commercial_board_of_advice = {
 	influence = 0.05
     
 	penalties = {
-		stability_cost_modifier = 0.1
+		
 	}
 	benefits = {
-		dip_advisor_cost = -0.25
+		dip_advisor_cost = -0.2
 	}
 	ai_will_do = {
 		factor = 10
@@ -230,10 +254,10 @@ estate_traders_settlement_charter = {
 	}
 	benefits = {
 		global_colonial_growth = 10
-		colonist_placement_chance = 0.05
+		colonist_placement_chance = 0.03
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 10
 	}
 }
 
@@ -246,6 +270,9 @@ estate_traders_indebted_to_merchants = {
 	loyalty = 0.05
 	influence = 0.1
     
+    can_select = {
+        NOT = { has_estate_privilege = estate_traders_goblin_bankers }
+    }
 	on_granted = {
 		custom_tooltip = estate_traders_indebted_to_merchants_effect_tooltip
 		add_mercantilism = -1
@@ -435,7 +462,7 @@ estate_traders_private_caravans = {
 	penalties = {
 	}
 	benefits = {
-		caravan_power = 0.2
+		caravan_power = 0.1
 	}
 	ai_will_do = {
 		factor = 1
@@ -452,20 +479,19 @@ estate_traders_enforced_interfaith_dialogue = {
 	influence = 0.05
     
 	is_valid = {
+        NOT = { has_estate_privilege = estate_clergy_enforced_one_faith }
+	}
+	can_select = {
 		any_owned_province = {
 			NOT = { religion = root }
 		}
-		has_estate_privilege = estate_traders_enforced_interfaith_dialogue
-	}
-	can_select = {
-		NOT = { has_estate_privilege = estate_clergy_enforced_one_faith }
 	}
 	penalties = {
 		clergy_loyalty_modifier = -0.1
 	}
 	benefits = {
-		tolerance_heathen = 2
-		tolerance_heretic = 2
+		tolerance_heathen = 1
+		tolerance_heretic = 1
 	}
 	ai_will_do = {
 		factor = 0
@@ -499,4 +525,134 @@ estate_traders_statutory_rights = {
 		factor = 0
 	}
 	cooldown_years = 20
+}
+
+#-------------------------------------------
+# Unique
+#-------------------------------------------
+estate_traders_colonial_investment = {
+	icon = privilege_spoils_of_pandaria
+	
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.1
+	influence = 0.05
+    
+	is_valid = {
+		monthly_income = 10
+	}
+	can_select = {
+		monthly_income = 30
+	}
+	penalties = {
+		global_tax_income = -300
+	}
+	benefits = {
+        colonists = 2
+        range = 0.5
+        global_colonial_growth = 50
+	}
+    
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_traders_naval_investment = {
+	icon = privilege_craftsman
+	
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.1
+	influence = 0.05
+    
+	is_valid = {
+		monthly_income = 10
+	}
+	can_select = {
+		monthly_income = 30
+	}
+	penalties = {
+		naval_maintenance_modifier = 5.0
+	}
+	benefits = {
+        sailors_recovery_speed = 1.0
+        global_naval_engagement_modifier = 0.25
+        ship_durability = 0.1
+	}
+    
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+# Goblin Bankers
+estate_traders_goblin_bankers = {
+	icon = privilege_trading_post
+
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.05
+	influence = 0.1
+    
+    can_select = {
+        NOT = { has_estate_privilege = estate_traders_indebted_to_merchants }
+        OR = {
+            has_country_modifier = member_of_trade_coalition
+            any_known_country = {
+                has_country_modifier = member_of_trade_coalition
+                has_opinion = {
+                    who = ROOT
+                    value = 150
+                }
+            }
+            has_country_modifier = mission_loyal_goblin_traders
+        }
+    }
+	on_granted = {
+		custom_tooltip = estate_traders_goblin_bankers_effect_tooltip
+
+		tooltip = {
+			add_inflation = 0.5
+		}
+        
+		hidden_effect = {
+			add_loan = {
+				fixed_interest = 0.5
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 0.5
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 0.5
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 0.5
+				duration = 60
+				estate_loan = yes
+			}
+			add_loan = {
+				fixed_interest = 0.5
+				duration = 60
+				estate_loan = yes
+			}
+		}
+	}
+	penalties = {
+		
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
 }

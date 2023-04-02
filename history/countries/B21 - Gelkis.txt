@@ -1,44 +1,35 @@
-discover_home_continent = yes
-# Gelkis
-government 			= tribal
-add_government_reform = warband_reform
+government = tribal
+add_government_reform = centaur_khanate_reform
+add_government_reform = wwu_tribal_war_band_reform
+
 mercantilism 		= 10
 technology_group 	= tech_centaur
-religion			= religion_earth
-primary_culture 	= culture_gelkis
+religion			= shamanism
+primary_culture 	= culture_centaur
 capital 			= 1396
 
 historical_rival = B22
 historical_rival = B23
 historical_rival = B24
 
-546.1.1 = { 
-monarch = { 
-     name = "Gelk" 
-     dynasty = "Gelkis" 
-		adm = 2
+540.1.1 = {
+	monarch = {
+		name = "Thorthur"
+		dynasty = "the Smasher"
+		birth_date = 509.1.1
+		adm = 4
 		dip = 1
-		mil = 4
- 	} 
- } 
-
-592.1.1 = { 
-monarch = { 
-     name = "Shaka" 
-     dynasty = "Gelkis" 
-		adm = 3
-		dip = 1
-		mil = 4
- 	} 
- } 
-
-631.1.1 = { 
-monarch = { 
-     name = "Shodo" 
-     dynasty = "Gelkis" 
-		adm = 3
-		dip = 1
-		mil = 4
- 	} 
- } 
-
+		mil = 5
+		female = yes
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Jindorther"
+		dynasty = "the Wary"
+		birth_date = 561.1.1
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}

@@ -1,0 +1,8 @@
+﻿l_spanish:
+ wwu_bastion_of_the_faith.1.title: "Pérdida de la fe"
+ wwu_bastion_of_the_faith.1.desc: "Aunque [Root.Monarch.GetTitle] [Root.Monarch.GetName] se ha declarado bastión de la fe, su reciente pérdida ha puesto en tela de juicio la legitimidad de su reclamación, y como tales otros ahora ven a reclamar el título."
+ wwu_bastion_of_the_faith.1.option.a: "¡Maldita sea!"
+ wwu_bastion_of_the_faith.2.title: "Llamamiento a la acción"
+ wwu_bastion_of_the_faith.2.desc: "Como bastión de la fe, hemos sido llamados a la guerra por [From.GetName]. Si nos negamos a contestar la llamada, perderemos nuestro título."
+ wwu_bastion_of_the_faith.2.option.a: "Apoyamos [From.GetName]"
+ wwu_bastion_of_the_faith.2.option.b: "¿Quién?"

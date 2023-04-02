@@ -1,0 +1,31 @@
+
+is_city = yes
+
+owner = BAL
+controller = BAL
+add_core = BAL
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+culture = culture_furbolg
+religion = druidism
+
+hre = no
+trade_goods = grain
+
+
+617.1.1 = {
+  owner = DAR
+  controller = DAR
+  add_core = DAR
+  remove_core = BAL
+  
+  base_tax = 4
+  base_production = 4
+  base_manpower = 4
+  
+  culture = culture_zoram
+  religion = nzoth
+}

@@ -1,17 +1,18 @@
-is_city = no
+# Empty Province
 native_size = 10
 native_ferocity = 10
 native_hostileness = 10
 
 base_tax = 3
-base_production = 4
+base_production = 3
 base_manpower = 3
 
-culture = culture_ghost
-religion = religion_elune
+culture = culture_highbourne
+religion = elune
 
-trade_goods = unknown
 hre = no
+trade_goods = unknown
+
 
 add_building = wow_fort_1
 
@@ -21,9 +22,9 @@ add_building = wow_fort_1
 	controller = RGD
 	add_core = RGD
     
-	base_tax = 6
-	base_production = 7
-	base_manpower = 8
+	base_tax = 4
+	base_production = 4
+	base_manpower = 4
     
     trade_goods = army_supplies
 }

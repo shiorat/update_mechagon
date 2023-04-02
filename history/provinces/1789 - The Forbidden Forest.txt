@@ -5,43 +5,22 @@ owner = P83
 controller = P83
 add_core = P83
 
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 1
+base_production = 2
+base_manpower = 1
 
-culture = culture_riverblade
-religion = religion_loa
+culture = culture_saurok
+religion = voodoo
 
+hre = no
 trade_goods = tropical_wood
-#hre = yes
 
-
-
-546.1.1 = {
-
-is_city = yes
-
-owner = P83
-controller = P83
-add_core = P83
-
-base_tax = 3
-base_production = 3
-base_manpower = 2
-
-culture = culture_riverblade
-religion = religion_loa
-
-trade_goods = tropical_wood
-#hre = yes
-
-}
 632.1.1 = { 
     owner = A94
     controller = A94
     add_core = A94
-    culture = culture_sentinel
-    religion = religion_elune
+    culture = culture_night_elf
+    religion = elune
     capital = "Sentinel Basecamp"
 }
 

@@ -2,43 +2,45 @@ is_city = yes
 owner = B17
 controller = B17
 add_core = B17
-add_core = A04
+add_core = RRG
 
-base_tax = 2
+base_tax = 1
 base_production = 1
-base_manpower = 3
+base_manpower = 2
 
-culture = culture_redridge
-religion = religion_earth
+culture = culture_gnoll
+religion = earth
 
-trade_goods = army_supplies
 hre = no
+trade_goods = army_supplies
 
-597.1.1 = { 
+# Second War
+598.1.1 = {
+    owner = U03
+    controller = U03
+    add_core = U03
+    
+    culture = culture_fel_orc
+    religion = fel
+}
+
+# Rise of the Lich Kng
+605.1.1 = {
+	owner = B17
+    controller = B17
+    add_core = B17
+    
+    culture = culture_gnoll
+    religion = earth
+}
+
+# Rise of the Qiraji
+622.1.1 = { 
 	owner = P98
 	controller = P98
 	add_core = P98
     
-	culture = culture_blackrock
-	religion = religion_fel
-}
-
-# Beyond the Dark Portal
-600.1.1 = {
-    owner = B17
-    controller = B17
-    add_core = B17
-}
-
-# The Frozen Throne
-618.1.1 = {     
-	owner = A41
-	controller = A41
-	add_core = A41
-    
-	culture = culture_blackrock
-	religion = religion_fel
-    
-	base_manpower = 4
+	culture = culture_orc
+	religion = fel
 }
 

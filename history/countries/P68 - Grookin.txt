@@ -1,34 +1,28 @@
-discover_home_continent = yes
-# Grookin Tribe
-government 			= tribal
-add_government_reform = primitive_clan_reform
-mercantilism 		= 10 
-technology_group 	= tech_primitive
-religion			= religion_celestial
-primary_culture 	= culture_forest_hozen
-capital 			= 2037
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
 
-546.1.1 = { 
-	monarch = { 
-		name = "Zah Zah" 
-		dynasty = "Grookin" 
-		adm = 2
+mercantilism 		= 10 
+technology_group 	= tech_hozen
+religion			= celestials
+primary_culture 	= culture_forest_hozen
+capital 			= 1724
+
+500.1.1 = { 
+    monarch = { 
+        name = "Dokem" 
+        dynasty = "Yipsmash" 
+        birth_date = 492.1.1
+		adm = 3
 		dip = 2
-		mil = 3
-	} 
+		mil = 2
+ 	} 
 } 
+
 
 631.1.1 = {
-add_country_modifier = {
-    name = horde_member
-    duration = -1
+    add_country_modifier = {
+        name = member_of_horde
+        duration = -1
+    }
 }
-monarch = { 
-		name = "Kah Kah" 
-		dynasty = "Grookin" 
-		adm = 2
-		dip = 2
-		mil = 3
-} 
-}
-

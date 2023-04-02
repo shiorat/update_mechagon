@@ -1,0 +1,17 @@
+is_city = yes
+owner = DAG
+controller = DAG
+add_core = DAG
+
+base_tax = 4
+base_production = 3
+base_manpower = 4
+
+culture = culture_iron_dwarf
+religion = yogg_saron
+
+hre = no
+trade_goods = saronite
+
+
+

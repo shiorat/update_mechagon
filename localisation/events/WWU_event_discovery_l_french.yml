@@ -1,0 +1,6 @@
+﻿l_french:
+ wwu_discovery.1.title: "Compendium d'Azéroth"
+ wwu_discovery.1.desc: "Au fil des années, la connaissance collective d'Azéroth s'est développée. Nos cartes sont devenues plus complètes et les lacunes précédentes ont été comblées. Hélas, seules les terres lointaines au-delà des plaines de Kalimdor restent un mystère."
+ wwu_discovery.1.option.a: "Hurrah!"
+ wwu_discovery.2.desc: " "
+ WORLD_DISCOVERED: "Toutes les provinces autres que les îles Dragon seront maintenant révélées."

@@ -1,10 +1,46 @@
-discover_home_continent = yes
+
 #Fal'dorei
 government = republic
 add_government_reform = magocracy_reform
 
 mercantilism = 10
-technology_group = tech_nightborne
-religion = religion_arcane
+technology_group = tech_faldorei
+religion = arcane
 primary_culture = culture_faldorei
 capital = 2675
+
+540.1.1 = {
+	monarch = {
+		name = "Disderi"
+		dynasty = "Sanaar"
+		birth_date = 467.1.1
+		adm = 0
+		dip = 4
+		mil = 3
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 2
+        CONCENTRATION = 2
+        MANA = 5
+        arcane = yes
+    }
+}
+590.1.1 = {
+	monarch = {
+		name = "Medaah"
+		dynasty = "Sanaar"
+		birth_date = 525.1.1
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 4
+        FINESSE = 2
+        CONCENTRATION = 1
+        MANA = 3
+        arcane = yes
+    }
+}
+

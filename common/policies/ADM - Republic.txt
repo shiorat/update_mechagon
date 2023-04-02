@@ -5,10 +5,7 @@ frequent_elections = {
 	monarch_power = ADM
 
 	potential = {
-		OR = {
-            government = republic
-            government = pirate
-        }
+		government = republic
 	}
 	allow = {
         AND = {
@@ -42,10 +39,7 @@ expert_candidates = {
 	monarch_power = DIP
 
 	potential = {
-		OR = {
-            government = republic
-            government = pirate
-        }
+		government = republic
 	}
 	allow = {
         AND = {
@@ -60,12 +54,8 @@ expert_candidates = {
                 full_idea_group = wwu_assimilation_ideas
                 full_idea_group = wwu_society_ideas 
                 full_idea_group = wwu_propaganda_ideas
-                full_idea_group = wwu_naval_bombardment_ideas
-                full_idea_group = wwu_naval_skirmish_ideas
-                full_idea_group = wwu_naval_trade_ideas
-                full_idea_group = wwu_naval_organisation_ideas
-                full_idea_group = wwu_naval_leadership_ideas
-                full_idea_group = wwu_naval_tactics_ideas
+                full_idea_group = wwu_naval_ideas
+				full_idea_group = wwu_piracy_ideas
             }
         }
 	}
@@ -81,10 +71,7 @@ popular_candidates = {
 	monarch_power = MIL
 
 	potential = {
-		OR = {
-            government = republic
-            government = pirate
-        }
+		government = republic
 	}
 	allow = {
         AND = {
@@ -96,9 +83,6 @@ popular_candidates = {
                 full_idea_group = wwu_quantity_ideas
                 full_idea_group = wwu_professional_army_ideas  
                 full_idea_group = wwu_mercenary_army_ideas
-                full_idea_group = wwu_army_organisation_ideas
-                full_idea_group = wwu_army_leadership_ideas
-                full_idea_group = wwu_army_tactics_ideas
                 full_idea_group = wwu_armaments_ideas
                 full_idea_group = wwu_fortification_ideas
                 full_idea_group = wwu_militarization_ideas
@@ -110,7 +94,7 @@ popular_candidates = {
 	}
 	
 	# Modifier
-    reelection_cost = -0.15
+    reelection_cost = -0.1
     
 	ai_will_do = {
 		factor = 1

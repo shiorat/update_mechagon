@@ -1,0 +1,4 @@
+﻿l_spanish:
+ wwu_pretender.1.title: "El ascenso de un pretendiente"
+ wwu_pretender.1.desc: "¡Un pretendiente se ha levantado para disputar la sucesión de $HEIR$! Citando el pretexto de las \"extraordinarias injusticias\" de [Root.Monarch.Dynasty.GetName] gobiernan y lanzan protestas sobre la legitimidad de la nueva [Root.Monarch.Get Title], [Root.pretender.GetName] ha levantado un ejército para apoyar su reclamo de la corona y está marchando sobre la capital!"
+ wwu_pretender.1.option.a: "¡Dios está con HEIR$!"

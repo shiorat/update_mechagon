@@ -1,0 +1,31 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
+mercantilism 		= 10
+technology_group 	= tech_draenei
+religion			= light_of_the_naaru
+primary_culture 	= culture_draenei
+capital 			= 3755
+
+# Draenor
+546.1.1 = { 
+    monarch = { 
+        name = "Anshi" 
+        dynasty = "of Telaar" 
+		adm = 3
+		dip = 3
+		mil = 3
+        female = yes
+ 	} 
+    setup_spellcaster_history = {
+        APTITUDE = 1
+        FINESSE = 0
+        CONCENTRATION = 1
+        MANA = 1
+        holy = yes
+    }
+} 
+
+
+

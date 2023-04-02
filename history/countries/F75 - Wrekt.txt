@@ -1,24 +1,33 @@
-discover_home_continent = yes
-# Wrekt
-government 			= tribal
-add_government_reform = ancient_clan_reform
+government = tribal
+add_government_reform = draenei_clan_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
 
 mercantilism 		= 10
 technology_group 	= tech_draenei
-religion			= religion_shadow
+religion			= shadow
 primary_culture 	= culture_broken
-add_accepted_culture = culture_shattrathi
-add_accepted_culture = culture_karaborian
+add_accepted_culture = culture_draenei
 
 capital 			= 1643
 
-617.1.1 = { 
-	monarch = { 
-		name = "" 
-		dynasty = "Wrekt" 
-		adm = 2
+540.1.1 = {
+	monarch = {
+		name = "Azimi"
+		dynasty = "Shadowfury"
+		birth_date = 491.1.1
+		adm = 3
 		dip = 3
-		mil = 3                
-	} 
+		mil = 2
+	}
 }
-
+590.1.1 = {
+	monarch = {
+		name = "Nemadbun"
+		dynasty = "Shadowfury"
+		birth_date = 503.1.1
+		adm = 4
+		dip = 0
+		mil = 4
+		female = yes
+	}
+}

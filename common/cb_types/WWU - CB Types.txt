@@ -1,37 +1,39 @@
-cb_faction_revolution = {
-	exclusive = yes
-	independence = yes
+#--------------------------------------------
+# Triggered
+#--------------------------------------------
+cb_pirates = {
+	is_triggered_only = yes
+	months = 120
 
-	prerequisites = {
-		OR = {
-			is_subject_of_type = faction_alliance
-			is_subject_of_type = faction_horde
-		}
-		is_subject_of = FROM
-		total_development = 100
-		
-	}
-
-	war_goal = change_overlord
+	war_goal = blockade_ports
 }
 
-cb_continental = {
+cb_restore_personal_union_mission = {
 	valid_for_subject = no
 
-	prerequisites = {
-		num_of_colonists = 1
-		any_owned_province = {
-			has_port = yes
-		}
-		FROM = {
-			any_owned_province = {
-				NOT = { same_continent = ROOT }
-				has_port = yes
-			}
-		}
+	is_triggered_only = yes
+	months = 240
+    
+	war_goal = take_capital_personal_union
+}
+
+#--------------------------------------------
+# Preequisitie
+#--------------------------------------------
+cb_distant_conquest = {
+	valid_for_subject = no
+
+    prerequisites = {
+        has_idea = wwu_expansion_ideas_2
+		is_free_or_tributary_trigger = yes
+        FROM = {
+            NOT = {
+                capital_scope = { continent = ROOT }
+            }
+        }
 	}
-	
-	war_goal = continental_landing
+
+	war_goal = take_capital_justified
 }
 
 cb_scourge = {
@@ -40,31 +42,15 @@ cb_scourge = {
 	prerequisites = {
 		is_neighbor_of = FROM
 		FROM = {
-			NOT = { religion = religion_the_damned }
+			NOT = { religion = cult_of_the_damned }
 		}
-		religion = religion_the_damned
+		religion = cult_of_the_damned
 	}
 	
 	war_goal = superiority_horde
 }
 
-#cb_warband_raid = {
-#	valid_for_subject = no
-#
-#	prerequisites = {
-#        is_neighbor_of = FROM
-#		government = tribal
-#        FROM = {
-#            government = tribal
-#        }
-#	}
-#	
-#	war_goal = superiority_horde
-#}
-
 cb_silvermoon_land = {
-    valid_for_subject = yes
-    
     prerequisites = {   
         tag = A91
 		OR = {
@@ -90,7 +76,7 @@ cb_draenei_scum = {
 	valid_for_subject = no
 
 	prerequisites = {
-		capital_scope = { continent = continent_outland }
+		capital_scope = { continent = continent_draenor }
         culture_group = culture_group_orc
         OR = {
             has_country_flag = joined_nerzhul
@@ -98,7 +84,7 @@ cb_draenei_scum = {
             has_country_flag = accepted_the_demonsblood
         }
 		FROM = {
-			capital_scope = { continent = continent_outland }
+			capital_scope = { continent = continent_draenor }
             culture_group = culture_group_draenei
 		}
 	}
@@ -110,11 +96,11 @@ cb_orc_scum = {
 	valid_for_subject = no
 
 	prerequisites = {
-		capital_scope = { continent = continent_outland }
+		capital_scope = { continent = continent_draenor }
         culture_group = culture_group_orc
         has_country_flag = accepted_the_demonsblood
 		FROM = {
-			capital_scope = { continent = continent_outland }
+			capital_scope = { continent = continent_draenor }
             culture_group = culture_group_orc
             government = tribal
             NOT = { has_country_flag = accepted_the_demonsblood }
@@ -128,11 +114,11 @@ cb_the_dying_times = {
 	valid_for_subject = no
 
 	prerequisites = {
-		capital_scope = { continent = continent_outland }
+		capital_scope = { continent = continent_draenor }
         culture_group = culture_group_orc
         government = tribal
 		FROM = {
-			capital_scope = { continent = continent_outland }
+			capital_scope = { continent = continent_draenor }
             culture_group = culture_group_orc
             government = tribal
 		}
@@ -143,15 +129,19 @@ cb_the_dying_times = {
 }
 
 cb_azeroth_assault = {
-	valid_for_subject = yes
-
 	prerequisites = {
-        has_global_flag = the_first_war
+        OR = {
+            current_age = age_rise_of_the_horde
+            current_age = age_orcish_horde
+        }
         culture_group = culture_group_orc
-        religion = religion_fel
+        religion = fel
+        any_owned_province = {
+            continent = continent_eastern_kingdoms
+        }
+        
 		FROM = {
 			capital_scope = { continent = continent_eastern_kingdoms }
-            culture_group = culture_group_human
 		}
 	}
 	
@@ -177,9 +167,12 @@ cb_for_the_alliance = {
 	valid_for_subject = no
 
 	prerequisites = {
-		faction_alliance = 1
+		has_country_modifier = head_of_alliance
 		FROM = {
-			faction_horde = 1
+			OR = {
+                has_country_modifier = head_of_horde
+                has_country_modifier = head_of_old_horde
+            }
 		}
 	}
 	
@@ -190,9 +183,12 @@ cb_for_the_horde = {
 	valid_for_subject = no
 
 	prerequisites = {
-		faction_horde = 1
+		OR = {
+            has_country_modifier = head_of_horde
+            has_country_modifier = head_of_old_horde
+        }
 		FROM = {
-			faction_alliance = 1
+			has_country_modifier = head_of_alliance
 		}
 	}
 	
@@ -205,12 +201,12 @@ cb_titan_rivalry = {
 	prerequisites = {
 		OR = {
 			AND = {
-				religion = religion_titan
-				FROM = { religion = religion_titan_corrupt }
+				religion = titan_worship
+				FROM = { religion = corrupt_titan_worship }
 			}
 			AND = {
-				religion = religion_titan_corrupt
-				FROM = { religion = religion_titan }
+				religion = corrupt_titan_worship
+				FROM = { religion = titan_worship }
 			}
 		}
 	}
@@ -229,54 +225,368 @@ cb_legion_invasion = {
 	war_goal = legion_invasion_goal
 }
 
-cb_enslavement = {
-	valid_for_subject = no
-	
-	prerequisites = {
-		has_government_attribute = can_enslave
-		NOT = { enslavement = 1 }
-		FROM = {
-			is_neighbor_of = ROOT
-			NOT = { total_development = 75 }
-			NOT = { num_of_cities = 3 }
-		}
-	}
-	
-	war_goal = forced_enslavement_goal
-}
-
-cb_magical_enslavement = {
-	valid_for_subject = no
-	
-	prerequisites = {
-		OR = {
-			AND = {
-				NOT = { magical_enslavement = 1 }
-				OR = {
-					religion = religion_old_gods
-					religion = religion_fel
-				}
-				FROM = {
-					is_neighbor_of = ROOT
-					NOT = { total_development = 100 }
-					NOT = { num_of_cities = 5 }
-				}
-			}
-			AND = {
-				has_country_modifier = lich_kings_crown
-				FROM = {
-					culture_group = ROOT
-				}
-			}
-		}
-	}
-	
-	war_goal = forced_magical_enslavement_goal
-}
-
 cb_fury_of_dragons = {
 	valid_for_subject = no
 	is_triggered_only = yes
 	
 	war_goal = annex_country
 }
+
+cb_invasion = {
+	valid_for_subject = no
+	is_triggered_only = yes
+	
+	war_goal = take_capital_merciless
+}
+
+cb_justified_war = {
+	valid_for_subject = no
+
+    prerequisites = {
+		is_free_or_tributary_trigger = yes
+        FROM = {
+            capital_scope = { continent = ROOT }
+        }
+        # Nations that start isolated
+        capital_scope = {
+            OR = {
+                continent = continent_vashjir
+                continent = continent_nazjatar
+                continent = continent_south_seas
+                continent = continent_plunder_isle
+                continent = continent_kul_tiras
+            }
+        }
+	}
+
+	war_goal = take_capital_justified
+}
+
+cb_merciless_war = {
+	valid_for_subject = no
+
+	prerequisites = {
+        has_idea = wwu_imperialism_ideas_7
+		is_free_or_tributary_trigger = yes
+	}
+
+	war_goal = take_capital_merciless
+}
+
+cb_reclaim_mulgore = {
+	valid_for_subject = no
+
+    prerequisites = {
+        culture_group = culture_group_tauren
+        FROM = {
+            culture_group = culture_group_centaur
+            any_owned_province = {
+                region = region_mulgore
+            }
+        }
+	}
+
+	war_goal = take_capital_justified
+}
+
+cb_subjugate_lesser_trolls = {
+    valid_for_subject = no
+
+	prerequisites = {
+        culture_group = culture_group_troll
+        has_country_modifier = mission_amani_subjugation
+        provinces_on_capital_continent_of = FROM
+        
+        FROM = {
+            culture_group = culture_group_troll
+            is_subject = no
+        }
+	}
+
+	war_goal = take_capital_vassalize
+}
+
+cb_cleanse_evil = {
+    valid_for_subject = no
+
+	prerequisites = {
+        has_reform = wwu_ambition_a_just_world
+        is_considered_good = yes
+        
+        FROM = {
+            is_considered_evil = yes
+        }
+	}
+
+	war_goal = take_capital_ruthless
+}
+
+cb_cultural_unification = {
+    valid_for_subject = no
+
+	prerequisites = {
+        has_reform = wwu_ambition_unification
+        
+        FROM = {
+            culture_group = ROOT
+        }
+	}
+
+	war_goal = take_capital_unification
+}
+
+cb_religious_unification = {
+    valid_for_subject = no
+
+	prerequisites = {
+        has_reform = wwu_ambition_one_faith
+        
+        FROM = {
+            NOT = { religion_group = ROOT }
+        }
+	}
+
+	war_goal = take_capital_force_religion
+}
+
+cb_mantid_supremacy = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_country_modifier = mission_domination_of_pandaria
+		tag = P34
+	}
+
+	war_goal = take_capital_merciless
+}
+
+cb_claim_leadership_of_the_aspects = {
+    valid_for_subject = no
+
+	prerequisites = {
+		has_dlc = "Mandate of Heaven"
+		is_subject = no
+        
+		FROM = { 
+            is_emperor_of_china = yes 
+        }
+        
+		culture_group = culture_group_dragonkin
+		NOT = { truce_with = FROM }
+		is_revolutionary = no
+	}
+
+	war_goal = take_capital_take_mandate
+}
+
+cb_draconic_fury = {
+	valid_for_subject = no
+
+	prerequisites = {
+        OR = {
+            has_country_modifier = mission_galakrond_wc_b03
+            has_country_modifier = mission_galakrond_wc_wya
+        }
+		is_free_or_tributary_trigger = yes
+	}
+
+	war_goal = take_capital_ruthless
+}
+
+cb_usurp_warchief = {
+	valid_for_subject = no
+
+	prerequisites = {
+        FROM = {
+            OR = {
+                has_country_modifier = head_of_horde
+                has_country_modifier = head_of_old_horde
+            }
+        }
+        OR = {
+            has_country_modifier = member_of_horde
+            has_country_modifier = member_of_old_horde
+        }
+	}
+
+	war_goal = usurp_warchief
+}
+
+cb_infestation = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_country_flag = unlock_infestation_cb
+	}
+
+	war_goal = take_capital_merciless
+}
+
+cb_zandalari_great_war = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 12
+
+	war_goal = zandalar_civil_war
+}
+
+#Blue Scarf Rebellion
+cb_naga_invasion_on_zandalar = { 
+	valid_for_subject = no 
+	ai_peace_desire = -200 
+	
+	is_triggered_only = yes
+ 
+	war_goal = naga_invasion_on_zandalar
+} 
+cb_naga_invasion_on_nazmir = { 
+	valid_for_subject = no 
+	ai_peace_desire = -200 
+	
+	is_triggered_only = yes
+ 
+	war_goal = naga_invasion_on_nazmir
+} 
+
+cb_skeleton_troll_pirate = { 
+	valid_for_subject = no 
+	ai_peace_desire = -200 
+	
+	
+	is_triggered_only = yes
+ 
+	war_goal = skeleton_troll_pirate
+} 
+
+cb_zandalar_war_against_pandaria = { 
+	valid_for_subject = no 
+	ai_peace_desire = -200 
+	
+	
+	is_triggered_only = yes
+ 
+	war_goal = zandalar_war_against_pandaria
+} 
+
+# Elemental Invasion
+cb_elemental_invasion = {
+	valid_for_subject = no
+
+	prerequisites = {
+        NOT = {
+            is_in_war = {
+                casus_belli = cb_elemental_invasion
+            }
+        }
+        OR = {
+            technology_group = tech_elemental_fire
+            technology_group = tech_elemental_water
+            technology_group = tech_elemental_earth
+            technology_group = tech_elemental_wind
+        }
+		capital_scope = {
+            OR = {
+                continent = continent_skywall
+                continent = continent_deepholm
+                continent = continent_abyssal_maw
+                continent = continent_firelands
+            }
+        }
+	}
+
+	war_goal = take_capital_elemental_invasion
+}
+
+# Demonic Invasion
+cb_demonic_invasion = {
+	valid_for_subject = no
+
+	prerequisites = {
+        NOT = {
+            is_in_war = {
+                casus_belli = cb_demonic_invasion
+            }
+        }
+        
+        technology_group = tech_demon
+        
+		capital_scope = {
+            continent = continent_argus
+        }
+	}
+
+	war_goal = take_capital_demonic_invasion
+}
+
+# Mawsworn
+cb_mawsworn_invasion = {
+	valid_for_subject = no
+
+	prerequisites = {
+        NOT = {
+            is_in_war = {
+                casus_belli = cb_mawsworn_invasion
+            }
+        }
+        
+        technology_group = tech_mawsworn
+        
+        if = {
+            limit = {
+                NOT = { has_global_flag = shadowlands_exposed }
+            }
+            capital_scope = {
+                continent = continent_shadowlands
+            }
+        }
+        else = {
+            # Anywhere
+        }
+	}
+
+	war_goal = take_capital_mawsworn_invasion
+}
+
+# Scourge Rebellion
+cb_scourge_rebellion = {
+	valid_for_subject = no
+
+	prerequisites = {
+        has_country_modifier = scourge_serving_legion
+        tag = P11 # Scourge
+        FROM = {
+            tag = B92 # Burning Legion
+        }
+	}
+
+	war_goal = take_capital_scourge_rebellion
+}
+
+# From the Sea
+cb_from_the_sea = {
+	valid_for_subject = no
+
+	prerequisites = {
+        OR = {
+            culture_group = culture_group_murloc
+            culture_group = culture_group_naga
+        }
+        num_of_ports = 1
+        FROM = {
+            num_of_ports = 1
+        }
+        OR = {
+			is_neighbor_of = FROM
+			NOT = {
+				border_distance = {
+					who = FROM
+					distance = 400
+				}
+			}
+		}
+	}
+
+	war_goal = take_capital_justified
+}
+

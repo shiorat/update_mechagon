@@ -3,28 +3,30 @@ owner = A17
 controller = A17
 add_core = A17
 
-base_tax = 7
-base_production = 6
+base_tax = 4
+base_production = 4
 base_manpower = 4
 
 culture = culture_alterac
-religion = religion_church_of_the_light
+religion = holy_light
 
+hre = no
 trade_goods = gold
-hre = no 
+ 
+add_building = wow_fort_1
 
-# Beyond the Dark Portal
-600.1.1 = { 
-	owner = A41
-	controller = A41
-	add_core = A41
+# Rise of the Lich Kng
+605.1.1 = {
+	owner = A26
+	controller = A26
 	add_core = A26
     
-	culture = culture_blackrock
-	religion = religion_fel
-    
+    culture = culture_alterac
+    religion = shadow
+
 	capital = "Alterac Ruins" 
 }
+
 # The Frozen Throne
 618.1.1 = { 
 	owner = P12
@@ -32,7 +34,7 @@ hre = no
 	add_core = P12
 	remove_core = A41
     
-	religion = religion_the_damned
+	religion = cult_of_the_damned
 	culture = culture_cultist
 }
 
@@ -53,7 +55,7 @@ hre = no
 	add_core = P50
 	remove_core = P12
     
-	culture = culture_crushridge
+	culture = culture_ogre
 	
 }
 

@@ -1,10 +1,11 @@
-discover_home_continent = yes
+
 # Mantid Empire
-government 			= monarchy
-add_government_reform = ancient_kingdom_reform
+government              = theocracy
+add_government_reform   = mantid_kingdom_reform
+
 mercantilism 		= 10
 technology_group 	= tech_mantid
-religion			= religion_old_gods
+religion			= yshaarj
 primary_culture 	= culture_mantid
 capital 			= 1839
 
@@ -12,8 +13,8 @@ capital 			= 1839
 	monarch = { 
 		name = "Shek'zeer" 
 		dynasty = "the Merciless" 
-		adm = 5
-		dip = 3
+		adm = 2
+		dip = 1
 		mil = 4
         female = yes
 	} 

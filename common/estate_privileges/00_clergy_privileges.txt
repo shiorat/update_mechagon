@@ -1,3 +1,27 @@
+estate_clergy_exception = {
+	icon = privilege_three_flags
+    
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.05
+	influence = 0.05
+    
+	can_select = {
+	}
+	on_granted = {
+        custom_tooltip = EXCEPT_ESTATE_FROM_SIEZE_LAND_TT
+	}
+	penalties = {
+	}
+	benefits = {
+		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 estate_clergy_land_rights = {
 	icon = privilege_blueprint
     
@@ -17,7 +41,7 @@ estate_clergy_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
+		factor = 25
 		modifier = {
 			factor = 1.4
 			num_of_territories = 5
@@ -73,7 +97,7 @@ estate_clergy_clergy_in_administration = {
     
     # Costs
     max_absolutism = -10
-	land_share = 10
+	land_share = 5
 	loyalty = 0.0
 	influence = 0.1
     
@@ -84,10 +108,10 @@ estate_clergy_clergy_in_administration = {
 	penalties = {
 	}
 	benefits = {
-		country_admin_power = 1
+		adm_tech_cost_modifier = -0.2
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 25
 		modifier = {
 			factor = 0
 			OR = {
@@ -130,10 +154,10 @@ estate_clergy_independent_advisors = {
 	influence = 0.05
     
 	penalties = {
-		stability_cost_modifier = 0.1
+		
 	}
 	benefits = {
-		adm_advisor_cost = -0.25
+		adm_advisor_cost = -0.2
 	}
 	ai_will_do = {
 		factor = 10
@@ -169,7 +193,7 @@ estate_clergy_distant_outposts = {
 		native_assimilation = 0.5
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 10
 	}
 }
 
@@ -185,7 +209,7 @@ estate_clergy_expanded_bureaucracy = {
 	penalties = {
 	}
 	benefits = {
-        possible_policy = 1
+        free_adm_policy = 1
 	}
 	ai_will_do = {
 		factor = 10
@@ -233,7 +257,7 @@ estate_clergy_internal_development = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 }
 
@@ -247,19 +271,19 @@ estate_clergy_enforced_one_faith = {
 	influence = 0.1
     
 	is_valid = {
-		any_owned_province = {
-			NOT = { religion = root }
-		}
+        NOT = { has_estate_privilege = estate_traders_enforced_interfaith_dialogue }
 	}
 	can_select = {
-		NOT = { has_estate_privilege = estate_traders_enforced_interfaith_dialogue }
+		any_owned_province = {
+			NOT = { religion = ROOT }
+		}
 	}
 	penalties = {
 		tolerance_heathen = -2
 		tolerance_heretic = -2
 	}
 	benefits = {
-		global_missionary_strength = 0.03
+		global_missionary_strength = 0.01
 		tolerance_own = 1
 	}
 	cooldown_years = 20
@@ -314,7 +338,7 @@ estate_clergy_liberation_of_our_own = {
 		}
 		modifier = {
 			clergy_loyalty_modifier = 0.1
-			land_morale = 0.15
+			land_morale = 0.1
 		}
 	}
 	penalties = {
@@ -351,4 +375,265 @@ estate_clergy_statutory_rights = {
 		factor = 0
 	}
 	cooldown_years = 20
+}
+
+
+estate_clergy_splendiferous_investment = {
+	icon = privilege_blessed_hands
+
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.2
+	influence = 0.05
+    
+	is_valid = {
+		monthly_income = 10
+	}
+	can_select = {
+		monthly_income = 30
+	}
+	penalties = {
+		missionary_maintenance_cost = 5.0
+	}
+	benefits = {
+        missionaries = 2
+        global_missionary_strength = 0.05
+	}
+    
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+# Evangelism
+estate_clergy_evangelism = {
+	icon = privilege_cascade
+
+    # Costs
+    max_absolutism = -5
+	land_share = 3
+	loyalty = 0.05
+	influence = 0.1
+    
+	can_select = {
+	}
+	penalties = {
+	}
+	benefits = {
+        missionaries = 1
+        global_missionary_strength = 0.01
+	}
+    
+	ai_will_do = {
+		factor = 1
+        
+        modifier = {
+            factor = 0
+            
+            religious_unity = 0.5
+        }
+	}
+}
+
+# Eternal Damnation
+estate_clergy_eternal_damnation = {
+	icon = privilege_crown_of_heaven
+
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.05
+	influence = 0.05
+    
+	can_select = {
+	}
+	penalties = {
+        diplomatic_reputation = -1
+        relation_with_heretics = -100
+        relation_with_heathens = -100
+	}
+	benefits = {
+        enforce_religion_cost = -0.25
+        warscore_cost_vs_other_religion = -0.25
+	}
+    
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+# Enforced Conversion
+estate_clergy_enforced_conversion = {
+	icon = privilege_defend
+
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.0
+	influence = 0.0
+    
+	cooldown_years = 5
+    
+	can_select = {
+		any_owned_province = {
+            NOT = { religion = ROOT }
+        }
+	}
+	on_granted = {
+		random_owned_province = {
+            limit = {
+                NOT = { religion = ROOT }
+            }
+            
+            change_religion = ROOT
+        }
+	}
+	penalties = {
+		global_unrest = 2
+	}
+    
+	benefits = {
+	}
+    
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+# Laissez-faire Conversion
+estate_clergy_laissez_faire_conversion = {
+	icon = privilege_student_of_the_mind
+
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.1
+	influence = 0.1
+    
+	can_select = {
+		num_of_missionaries = 1
+	}
+	on_granted = {
+		custom_tooltip = AUTO_MISSIONARY_TT
+	}
+	penalties = {
+		missionary_maintenance_cost = 0.1
+	}
+    
+	benefits = {
+	}
+    
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+#-------------------------------------------
+# Unique
+#-------------------------------------------
+estate_clergy_arcane_supremacy = {
+	icon = privilege_body_and_soul
+
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.0
+	influence = 0.05
+    
+	is_valid = {
+		religion = arcane
+	}
+	can_select = {
+		religion = arcane
+	}
+	penalties = {
+		tolerance_heathen = -1
+        tolerance_heretic = -1
+	}
+	benefits = {
+        missionaries = 1
+        missionary_maintenance_cost = -0.05
+	}
+    
+	ai_will_do = {
+		factor = 1
+        
+        modifier = {
+            factor = 0
+            
+            religious_unity = 0.75
+        }
+	}
+}
+
+estate_clergy_ancient_diplomats = {
+	icon = privilege_reputation
+
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.0
+	influence = 0.05
+    
+	is_valid = {
+		religion = dragon_aspects
+	}
+	can_select = {
+		religion = dragon_aspects
+	}
+	penalties = {
+		global_missionary_strength = -0.02
+	}
+	benefits = {
+        diplomatic_reputation = 1
+        diplomatic_upkeep = 1
+	}
+    
+	ai_will_do = {
+		factor = 1
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { religious_unity = 0.5 }
+        }
+	}
+}
+
+# Necromantic Resurrection
+estate_clergy_necromantic_resurrection = {
+	icon = privilege_undead
+
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.05
+	influence = 0.1
+    
+	is_valid = {
+		OR = {
+            has_reform = scourge_reform
+            has_reform = scourge_domain_reform
+        }
+	}
+	can_select = {
+		OR = {
+            has_reform = scourge_reform
+            has_reform = scourge_domain_reform
+        }
+	}
+	on_granted = {
+        custom_tooltip = RAISE_THE_DEAD_TT
+        hidden_effect = {
+            clr_country_flag = automatic_raise_the_dead_option
+        }
+    }
+    penalties = {
+        ae_impact = 0.2
+    }
+    
+	ai_will_do = {
+		factor = 1
+	}
 }

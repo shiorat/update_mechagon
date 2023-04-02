@@ -1,32 +1,31 @@
-discover_home_continent = yes
-# Palemane
-government 			= tribal
-add_government_reform = primitive_clan_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_war_band_reform
+
 mercantilism 		= 10
 technology_group 	= tech_gnoll
-religion			= religion_earth
-primary_culture 	= culture_palemane
-capital 			= 2169
+religion			= earth
+primary_culture 	= culture_gnoll
+capital 			= 2296
 
-546.1.1 = { 
-	monarch = { 
-		name = "Whiteaxe" 
-		dynasty = "Palemane" 
+540.1.1 = {
+	monarch = {
+		name = "Grumwen"
+		dynasty = "Palemane"
+		birth_date = 463.1.1
 		adm = 3
-		dip = 3
-		mil = 3
-                
-	} 
+		dip = 4
+		mil = 5
+	}
 }
-
-600.1.1 = { 
-	monarch = { 
-		name = "Snagglespear" 
-		dynasty = "Palemane" 
-		adm = 3
-		dip = 3
-		mil = 3
-                
-	} 
+590.1.1 = {
+	monarch = {
+		name = "Tiak"
+		dynasty = "Palemane"
+		birth_date = 563.1.1
+		adm = 1
+		dip = 0
+		mil = 4
+		female = yes
+	}
 }
-

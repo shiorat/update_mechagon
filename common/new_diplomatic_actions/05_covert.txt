@@ -1,11 +1,91 @@
 #---------------------------------------
-# Bribe Administration
+# Assassinate Ruler
 #---------------------------------------
-bribe_adminstration = {
+assassinate_ruler = {
 	category = covert
 	
 	alert_index = 40
-	alert_tooltip = bribe_adminstration_tooltip
+	alert_tooltip = assassinate_ruler_tooltip
+	
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		has_estate = estate_criminal_syndicate
+	}
+	is_allowed = {
+		has_spy_network_in = {
+			who = FROM
+			value = 70
+		}
+		custom_trigger_tooltip = {
+			tooltip = DIP_ALREADY_HAS_PLOT
+			NOT = { has_country_flag = assassination_plot_active }
+		}
+		FROM = { 
+            has_regency = no
+            custom_trigger_tooltip = {
+                tooltip = RECENTLY_TARGET_OF_ASSASSINATE_RULER
+                NOT = { has_country_modifier = cooldown_assassinate_ruler }
+            }
+        }
+	}
+	on_accept = {
+        hidden_effect = {
+            if = { 
+                limit = { has_global_flag = enable_diplomacy_logging }
+                log = "DEBUG - [Root.GetName], [From.GetName] - assassinate_ruler"
+            }
+        }
+        
+		add_spy_network_in = {
+			who = FROM
+			value = -70
+		}
+        
+        FROM = {
+            hidden_effect = {
+                add_country_modifier = {
+                    name = cooldown_assassinate_ruler
+                    duration = 3650
+                    hidden = yes
+                }
+            }
+        }
+        
+        custom_tooltip = PLOT_STARTS_TT
+        
+        hidden_effect = {
+            set_country_flag = assassination_plot_active
+            
+			# Audax Validator "." Ignore_NEXT
+            save_event_target_as = plotter
+            FROM = {
+				# Audax Validator "." Ignore_NEXT
+                save_event_target_as = plot_victim
+            }
+            
+            country_event = { id = assassination.100 }
+        }
+	}
+	on_decline = { 
+	}
+	
+	ai_acceptance = { 
+	}
+
+	ai_will_do = {
+		is_enemy = FROM
+	}
+}
+
+#---------------------------------------
+# Bribe Administration
+#---------------------------------------
+bribe_administration = {
+	category = covert
+	
+	alert_index = 40
+	alert_tooltip = bribe_administration_tooltip
 	
 	require_acceptance = no # Whether the recipient gets an option to decline
 	
@@ -13,19 +93,44 @@ bribe_adminstration = {
 		has_estate = estate_mercantile_guild
 	}
 	is_allowed = {
-		years_of_income = 3
+		years_of_income = 1
 		FROM = { NOT = { has_country_modifier = bribed } }
+        FROM = { 
+            custom_trigger_tooltip = {
+                tooltip = RECENTLY_TARGET_OF_BRIBE_ADMINISTRATION
+                NOT = { has_country_modifier = cooldown_bribe_administration }
+            }
+        }
 	}
 	on_accept = {
-		add_years_of_income = -3
-		add_spy_network_from = {
-			who = FROM
-			value = 20
-		}
+        hidden_effect = {
+            if = { 
+                limit = { has_global_flag = enable_diplomacy_logging }
+                log = "DEBUG - [Root.GetName], [From.GetName] - bribe_administration"
+            }
+        }
+        
+		add_years_of_income = -1
 		add_country_modifier = { 
 			name = bribed
 			duration = 365
 		}
+        
+        hidden_effect = {
+            save_event_target_as = aggressor
+        }
+        
+        FROM = {
+            country_event = { id = wwu_diplomatic_actions.13 days = 1 }
+            
+            hidden_effect = {
+                add_country_modifier = {
+                    name = cooldown_bribe_administration
+                    duration = 3650
+                    hidden = yes
+                }
+            }
+        }
 	}
 	on_decline = 	{ 
 	}
@@ -52,119 +157,64 @@ form_raid = {
 	
 	is_visible = {
 		has_estate = estate_adventuring_guild
+        NOT = { has_country_modifier = is_evil }
+        FROM = {
+            has_country_modifier = is_evil
+        }
 	}
 	is_allowed = {
 		has_spy_network_in = {
 			who = FROM
 			value = 50
 		}
-		FROM = {
-			has_country_modifier = is_evil
-		}
+        custom_trigger_tooltip = {
+            tooltip = NO_ACTIVE_RAID
+            NOT = {
+                has_global_flag = active_raid
+            }
+        }
+		FROM = { 
+            custom_trigger_tooltip = {
+                tooltip = RECENTLY_TARGET_OF_CONDUCT_RAID
+                NOT = { has_country_modifier = cooldown_conduct_raid }
+            }
+        }
 	}
 	on_accept = {
+        hidden_effect = {
+            if = { 
+                limit = { has_global_flag = enable_diplomacy_logging }
+                log = "DEBUG - [Root.GetName], [From.GetName] - form_raid"
+            }
+        }
+        
+        hidden_effect = {
+            set_global_flag = active_raid
+            set_country_flag = raid_owner
+            
+            FROM = {
+                set_country_flag = raid_target
+            }
+        }
 		add_spy_network_in = {
 			who = FROM
 			value = -50
 		}
+        
+        hidden_effect = {
+            save_event_target_as = aggressor
+        }
+        
 		FROM = {
-			random_owned_province = {
-				spawn_rebels = {
-					type = adventurer_rebels
-					size = 3
-					friend = ROOT
-				}
-			}
-		}
-	}
-	on_decline = 	{ 
-	}
-	
-	ai_acceptance = { 
-	}
-
-	ai_will_do = {
-		is_enemy = FROM
-	}
-}
-
-#---------------------------------------
-# Assassinate Ruler
-#---------------------------------------
-assasinate_ruler = {
-	category = covert
-	
-	alert_index = 40
-	alert_tooltip = assasinate_ruler_tooltip
-	
-	require_acceptance = no # Whether the recipient gets an option to decline
-	
-	is_visible = {
-		has_estate = estate_criminal_syndicate
-	}
-	is_allowed = {
-		has_spy_network_in = {
-			who = FROM
-			value = 70
-		}
-		custom_trigger_tooltip = {
-			tooltip = DIP_ALREADY_HAS_PLOT
-			NOT = { any_country = {
-				ROOT = { has_country_flag = plotting_assassination_of@PREV }
-			} }
-		}
-		FROM = { has_regency = no }
-	}
-	on_accept = {
-		add_spy_network_in = {
-			who = FROM
-			value = -70
-		}
-		hidden_effect = {
-			set_country_flag = plotting_assassination_of@FROM
-			random_list = {
-				1 = {
-					set_country_flag = poison_plot
-				}
-				1 = {
-					set_country_flag = snake_plot
-				}
-				1 = {
-					set_country_flag = stab_plot
-				}
-				1 = {
-					set_country_flag = hunting_plot
-                    
-                    trigger = {
-                        FROM = {
-                            NOT = {
-                                OR = {
-                                    culture_group = culture_group_darnassian
-                                    ruler_has_personality = druid_personality
-                                }
-                            }
-                        }
-                    }
-				}
-				1 = {
-					set_country_flag = fall_plot
-                    
-                    trigger = {
-                        FROM = {
-                            NOT = {
-                                heir_age = 20
-                                OR = {
-                                    culture_group = culture_group_dragonkin
-                                    culture_group = culture_group_arrakoa
-                                    culture_group = culture_group_titan
-                                    culture_group = culture_group_harpy
-                                    culture_group = culture_group_ethereal
-                                }
-                            }
-                        }
-                    }
-				}
-			}
+			country_event = { id = wwu_diplomatic_actions.12 days = 1 }
+            
+            hidden_effect = {
+                add_country_modifier = {
+                    name = cooldown_conduct_raid
+                    duration = 3650
+                    hidden = yes
+                }
+            }
 		}
 	}
 	on_decline = 	{ 
@@ -198,16 +248,44 @@ recruit_manpower = {
 			value = 35
 		}
 		manpower = 5
+        FROM = {
+            custom_trigger_tooltip = {
+                tooltip = RECENTLY_TARGET_OF_RECRUIT_MANPOWER
+                NOT = { has_country_modifier = cooldown_recruit_manpower }
+            }
+        }
 	}
 	on_accept = {
+        hidden_effect = {
+            if = { 
+                limit = { has_global_flag = enable_diplomacy_logging }
+                log = "DEBUG - [Root.GetName], [From.GetName] - recruit_manpower"
+            }
+        }
+        
 		add_spy_network_in = {
 			who = FROM
 			value = -35
 		}
 		add_manpower = 5
-		FROM = { add_manpower = -5 }
+        
+        hidden_effect = {
+            save_event_target_as = aggressor
+        }
+        
+		FROM = { 
+            country_event = { id = wwu_diplomatic_actions.11 days = 1 }
+            
+            hidden_effect = {
+                add_country_modifier = {
+                    name = cooldown_recruit_manpower
+                    duration = 3650
+                    hidden = yes
+                }
+            }
+        }
 	}
-	on_decline = 	{ 
+	on_decline = { 
 	}
 	
 	ai_acceptance = { 
@@ -242,22 +320,46 @@ spread_religion = {
 			any_owned_province = {
 				NOT = { religion = ROOT }
 			}
+            custom_trigger_tooltip = {
+                tooltip = RECENTLY_TARGET_OF_SPREAD_RELIGION
+                NOT = { has_country_modifier = cooldown_spread_religion }
+            }
 		}
 	}
 	on_accept = {
+        hidden_effect = {
+            if = { 
+                limit = { has_global_flag = enable_diplomacy_logging }
+                log = "DEBUG - [Root.GetName], [From.GetName] - spread_religion"
+            }
+        }
+        
 		add_spy_network_in = {
 			who = FROM
 			value = -50
 		}
+        
+        hidden_effect = {
+			# Audax Validator "." Ignore_NEXT
+            save_event_target_as = aggressor
+        }
+        
 		FROM = {
 			random_owned_province = {
-				limit = { NOT = { religion = ROOT } }
-				change_religion = ROOT
+				limit = { 
+                    NOT = { religion = ROOT } 
+                }
+				
+                province_event = { id = wwu_diplomatic_actions.10 days = 1 }
 			}
-			random_owned_province = {
-				limit = { NOT = { religion = ROOT } }
-				change_religion = ROOT
-			}
+            
+            hidden_effect = {
+                add_country_modifier = {
+                    name = cooldown_spread_religion
+                    duration = 3650
+                    hidden = yes
+                }
+            }
 		}
 	}
 	on_decline = 	{ 
@@ -283,7 +385,7 @@ spread_fel = {
 	require_acceptance = no # Whether the recipient gets an option to decline
 	
 	is_visible = {
-        religion = religion_fel
+        religion = fel
 	}
 	is_allowed = {
         reform_desire = 0.25
@@ -297,17 +399,108 @@ spread_fel = {
 			any_owned_province = {
 				NOT = { religion = ROOT }
 			}
+            custom_trigger_tooltip = {
+                tooltip = RECENTLY_TARGET_OF_SPREAD_FEL
+                NOT = { has_country_modifier = cooldown_spread_fel }
+            }
 		}
 	}
 	on_accept = {
+        hidden_effect = {
+            if = { 
+                limit = { has_global_flag = enable_diplomacy_logging }
+                log = "DEBUG - [Root.GetName], [From.GetName] - spread_fel"
+            }
+        }
+        
 		add_spy_network_in = {
 			who = FROM
 			value = -50
 		}
 		FROM = {
 			random_owned_province = {
-				limit = { NOT = { religion = ROOT } }
-				province_event = { id = wwu_fel.1 }
+				limit = { 
+                    NOT = { religion = ROOT } 
+                }
+				province_event = { id = wwu_fel.1 days = 1 }
+			}
+            hidden_effect = {
+                add_country_modifier = {
+                    name = cooldown_spread_fel
+                    duration = 3650
+                    hidden = yes
+                }
+            }
+		}
+	}
+	on_decline = { 
+	}
+	
+	ai_acceptance = { 
+	}
+
+	ai_will_do = {
+		always = yes
+	}
+}
+
+#---------------------------------------
+# Claim Port
+#---------------------------------------
+claim_port = {
+	category = covert
+	
+	alert_index = 40
+	alert_tooltip = claim_port_tooltip
+	
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+        is_pirate = yes
+        any_owned_province = {
+            has_port = yes
+        }
+        FROM = {
+            any_owned_province = {
+                has_port = yes
+                NOT = { is_claim = ROOT }
+            }
+        }
+	}
+	is_allowed = {
+        any_owned_province = {
+            has_port = yes
+        }
+        FROM = {
+            any_owned_province = {
+                has_port = yes
+                NOT = { is_claim = ROOT }
+            }
+        }
+		has_spy_network_in = {
+			who = FROM
+			value = 50
+		}
+	}
+	on_accept = {
+        hidden_effect = {
+            if = { 
+                limit = { has_global_flag = enable_diplomacy_logging }
+                log = "DEBUG - [Root.GetName], [From.GetName] - claim_port"
+            }
+        }
+        
+		add_spy_network_in = {
+			who = FROM
+			value = -50
+		}
+		FROM = {
+			random_owned_province = {
+				limit = { 
+                    has_port = yes
+                    NOT = { is_claim = ROOT } 
+                }
+                add_claim = ROOT
 			}
 		}
 	}
@@ -319,5 +512,491 @@ spread_fel = {
 
 	ai_will_do = {
 		always = yes
+	}
+}
+
+#---------------------------------------
+# Steal Artifact
+#---------------------------------------
+steal_artifact = {
+	category = covert
+	
+	alert_index = 40
+	alert_tooltip = steal_artifact_tooltip
+	
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+        # Only allow 1 heist at any one time
+        NOT = {
+            any_country = {
+                has_country_flag = artifact_heist_active 
+            }
+        }
+        FROM = {
+            has_any_artifact = yes
+        }
+	}
+	is_allowed = {
+		has_spy_network_in = {
+			who = FROM
+			value = 80
+		}
+        FROM = {
+            has_any_artifact = yes
+        }
+	}
+	on_accept = {
+        hidden_effect = {
+            if = { 
+                limit = { has_global_flag = enable_diplomacy_logging }
+                log = "DEBUG - [Root.GetName], [From.GetName] - steal_artifact"
+            }
+        }
+        
+		add_spy_network_in = {
+			who = FROM
+			value = -80
+		}
+		hidden_effect = {
+            set_country_flag = artifact_heist_active
+            FROM = {
+                set_country_flag = artifact_heist_target
+            }
+        }
+	}
+	on_decline = { 
+	}
+	
+	ai_acceptance = { 
+	}
+
+	ai_will_do = {
+        # Only pirate/bandit AIs will use this
+		OR = {
+            is_bandit_type_nation = yes
+            is_pirate = yes
+        }
+	}
+}
+
+#---------------------------------------
+# Disrupt Alliance
+#---------------------------------------
+disrupt_alliance = {
+	category = covert
+	
+	alert_index = 40
+	alert_tooltip = disrupt_alliance_tooltip
+	
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+        has_idea = wwu_espionage_ideas_1
+        
+        # Target has more than 0 allies
+        FROM = {
+            num_of_allies = 1
+            
+            any_ally = {
+                NOT = { 
+                    has_opinion_modifier = {
+                        modifier = alliance_disrupted
+                        who = FROM
+                    }
+                }
+            }
+        }
+	}
+	is_allowed = {
+		has_spy_network_in = {
+			who = FROM
+			value = 100
+		}
+	}
+	on_accept = {
+        hidden_effect = {
+            if = { 
+                limit = { has_global_flag = enable_diplomacy_logging }
+                log = "DEBUG - [Root.GetName], [From.GetName] - disrupt_alliance"
+            }
+        }
+        
+		add_spy_network_in = {
+			who = FROM
+			value = -100
+		}
+        
+        hidden_effect = {
+            FROM = {
+				# Audax Validator "." Ignore_NEXT
+                save_event_target_as = disrupt_target
+                
+                random_ally = {
+                    limit = {
+                        NOT = { 
+                            has_opinion_modifier = {
+                                modifier = alliance_disrupted
+                                who = FROM
+                            }
+                        }
+                    }
+					# Audax Validator "." Ignore_NEXT
+                    save_event_target_as = disrupted_ally
+                }
+            }
+        }
+        
+        country_event = { id = wwu_diplomatic_actions.1 }
+	}
+	on_decline = { 
+	}
+	
+	ai_acceptance = { 
+	}
+
+	ai_will_do = {
+        always = no
+	}
+}
+
+#---------------------------------------
+# Provoke Rebels
+#---------------------------------------
+provoke_rebels = {
+	category = covert
+	
+	alert_index = 40
+	alert_tooltip = provoke_rebels_tooltip
+	
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+        is_neighbor_of = FROM
+	}
+	is_allowed = {
+		has_spy_network_in = {
+			who = FROM
+			value = 50
+		}
+	}
+	on_accept = {
+        hidden_effect = {
+            if = { 
+                limit = { has_global_flag = enable_diplomacy_logging }
+                log = "DEBUG - [Root.GetName], [From.GetName] - provoke_rebels"
+            }
+        }
+        
+		add_spy_network_in = {
+			who = FROM
+			value = -50
+		}
+        
+        if = {
+            limit = {
+                has_idea = wwu_espionage_ideas_4
+            }
+            if = {
+                limit = {
+                    DIP = 6
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = anti_tax_rebels
+                            size = 8
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 6 }
+                    DIP = 4
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = anti_tax_rebels
+                            size = 7
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 4 }
+                    DIP = 2
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = anti_tax_rebels
+                            size = 6
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 2 }
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = anti_tax_rebels
+                            size = 4
+                            win = yes
+                        }
+                    }
+                }
+            }
+        }
+        else = {
+            if = {
+                limit = {
+                    DIP = 6
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = anti_tax_rebels
+                            size = 6
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 6 }
+                    DIP = 4
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = anti_tax_rebels
+                            size = 5
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 4 }
+                    DIP = 2
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = anti_tax_rebels
+                            size = 4
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 2 }
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = anti_tax_rebels
+                            size = 2
+                            win = yes
+                        }
+                    }
+                }
+            }
+        }
+	}
+	on_decline = { 
+	}
+	
+	ai_acceptance = { 
+	}
+
+	ai_will_do = {
+        always = no
+	}
+}
+
+#---------------------------------------
+# Provoke Pretenders
+#---------------------------------------
+provoke_pretenders = {
+	category = covert
+	
+	alert_index = 40
+	alert_tooltip = provoke_pretenders_tooltip
+	
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+        is_neighbor_of = FROM
+        FROM = {
+            NOT = {
+                government = republic
+            }
+        }
+	}
+	is_allowed = {
+		has_spy_network_in = {
+			who = FROM
+			value = 75
+		}
+	}
+	on_accept = {
+        hidden_effect = {
+            if = { 
+                limit = { has_global_flag = enable_diplomacy_logging }
+                log = "DEBUG - [Root.GetName], [From.GetName] - provoke_pretenders"
+            }
+        }
+        
+		add_spy_network_in = {
+			who = FROM
+			value = -75
+		}
+        
+        if = {
+            limit = {
+                has_idea = wwu_espionage_ideas_4
+            }
+            if = {
+                limit = {
+                    DIP = 6
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = pretender_rebels
+                            size = 8
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 6 }
+                    DIP = 4
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = pretender_rebels
+                            size = 6
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 4 }
+                    DIP = 2
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = pretender_rebels
+                            size = 6
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 2 }
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = pretender_rebels
+                            size = 4
+                            win = yes
+                        }
+                    }
+                }
+            }
+        }
+        else = {
+            if = {
+                limit = {
+                    DIP = 6
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = pretender_rebels
+                            size = 6
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 6 }
+                    DIP = 4
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = pretender_rebels
+                            size = 5
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 4 }
+                    DIP = 2
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = pretender_rebels
+                            size = 4
+                            win = yes
+                        }
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { DIP = 2 }
+                }
+                FROM = {
+                    random_owned_province = {
+                        spawn_rebels = {
+                            type = pretender_rebels
+                            size = 2
+                            win = yes
+                        }
+                    }
+                }
+            }
+        }
+	}
+	on_decline = { 
+	}
+	
+	ai_acceptance = { 
+	}
+
+	ai_will_do = {
+        always = no
 	}
 }

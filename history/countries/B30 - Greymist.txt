@@ -1,32 +1,30 @@
-discover_home_continent = yes
-# Greymist
-government 			= native
-add_government_reform = primitive_tribe_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
-technology_group 	= tech_depths
-religion			= religion_water
-primary_culture 	= culture_nerglish
+technology_group 	= tech_murloc
+religion			= deep_mother
+primary_culture 	= culture_murloc
 capital 			= 2254
 
-546.1.1 = { 
-	monarch =
-	{ 
-		name = "Bmurglbrm" 
-		dynasty = "Greymist" 	
-		adm = 3
-		dip = 3	
-		mil = 3	
+540.1.1 = {
+	monarch = {
+		name = "Rggll"
+		dynasty = "Greymist"
+		birth_date = 458.1.1
+		adm = 2
+		dip = 5
+		mil = 4
 	}
 }
-
-626.1.1 = { 
-	monarch =
-	{ 
-		name = "Gurglbrm" 
-		dynasty = "Greymist" 	
-		adm = 3
-		dip = 3	
-		mil = 3	
+590.1.1 = {
+	monarch = {
+		name = "Krpur"
+		dynasty = "Greymist"
+		birth_date = 527.1.1
+		adm = 4
+		dip = 0
+		mil = 3
 	}
 }
-

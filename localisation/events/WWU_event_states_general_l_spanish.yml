@@ -1,0 +1,6 @@
+﻿l_spanish:
+ wwu_states_general.1.t: "[Root.GetAdjectiveCap] Abolida la asamblea"
+ wwu_states_general.1.d1: "Después de años de disputas, conflictos internos y legislación retrasada, todos han acordado que se debe hacer algo sobre el estado de la Asamblea.\n\nLa antigua Casa de [Root.Monarch.Dynasty.GetName], que durante años han estado esperando su tiempo, ha encabezado, en una maniobra magníficamente cronometrada, un proyecto de ley aboliendo la asamblea por completo, y reinstaurando [Root.Monarch.GetName] en el trono de [Root.GetName]."
+ wwu_states_general.1.d2: "Años de conflicto interno dentro de la Asamblea [Root.GetAdjetiveCap] han comenzado a cobrar su precio en el espíritu nacional de [Root.GetName]. La creciente opinión popular contra la Asamblea ha atraído a muchos opositores entre nuestros ciudadanos.\n\nPor fin, un contendiente se mantiene alto entre sus oponentes, derrocando la poca oposición que queda en la Asamblea, y restableciendo las gloriosas tradiciones de [Root.GetName]."
+ wwu_states_general.1.a: "¡Larga vida a [Root.Monarch.GetName]!"
+ wwu_states_general.1.b: "¡Viva el [Root.GovernmentName]!"

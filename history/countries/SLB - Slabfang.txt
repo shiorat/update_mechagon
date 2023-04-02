@@ -1,8 +1,9 @@
-#Slabfang
 government = tribal
-add_government_reform = primitive_clan_reform
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism = 10
 technology_group = tech_gnoll
-religion = religion_earth
-primary_culture = culture_riverpaw
+religion = earth
+primary_culture = culture_gnoll
 capital = 619

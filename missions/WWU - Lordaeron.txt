@@ -1,0 +1,383 @@
+#--------------------------------------
+# Lordaeron
+#--------------------------------------
+wwu_lordaeron_column_1 = { 
+	slot = 1
+	generic = no
+	ai = yes
+    has_country_shield = yes
+    
+	potential = {
+		tag = A08
+	} 
+    
+    wwu_ready_the_soldiers = { 
+		icon = mission_ancient_sword
+        position = 2
+		completed_by = 618.12.31
+        
+		required_missions = { wwu_uthers_investigations } 
+        
+		trigger = {
+            exists = P52
+            NOT = { army_size_percentage = 1.0 }
+		}
+		effect = { 
+			capital_scope = {
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+                infantry = ROOT
+            }
+		}
+	}
+}
+
+wwu_lordaeron_column_2 = { 
+	slot = 2
+	generic = no
+	ai = yes
+    has_country_shield = yes
+    
+	potential = {
+		tag = A08
+	}
+    
+    wwu_uthers_investigations = { 
+		icon = mission_crown_of_heavens
+        position = 1
+		completed_by = 616.12.31
+        
+		required_missions = {  } 
+        
+		trigger = {
+            custom_trigger_tooltip = {
+                tooltip = UNDEAD_PLAGUE_ACTIVE_TT
+                
+                has_global_flag = undead_plague_active
+            }
+            
+            stability = 1
+		}
+		effect = { 
+			add_country_modifier = {
+                name = mission_uthers_investigations
+                duration = 10950
+            }
+		}
+	}
+    
+    wwu_arthas_crusade = { 
+		icon = mission_brimstone
+        position = 3
+		completed_by = 618.12.31
+        
+		required_missions = { wwu_uthers_investigations } 
+        
+		trigger = {
+            exists = P12
+            exists = P52
+            army_size_percentage = 0.5
+		}
+		effect = { 
+			P12 = {
+                country_event = { id = wwu_scourge.37 }
+            }
+            
+            add_prestige = 50
+		}
+	}
+    
+    wwu_the_culling = { 
+		icon = mission_cannibalize
+		position = 4
+		completed_by = 618.12.31
+        
+		required_missions = { wwu_arthas_crusade } 
+                		
+		trigger = {
+            # Scourge of Lordaeron
+			P52 = {
+                num_of_cities = 15
+            }
+            OR = {
+                owns = 642 # Stratholme
+                
+                # Scourge of Lordaeron
+                P52 = {
+                    owns = 642 # Stratholme
+                }
+            }
+		}
+		provinces_to_highlight = {
+			province_id = 642 # Stratholme
+        }
+		effect = {
+            add_mil_power = 200
+        
+            # Stratholme
+			642 = {
+				set_base_tax = 1
+                set_base_production = 1
+                set_base_manpower = 1
+			}
+        }
+    }
+    
+    wwu_expedition_to_northrend = { 
+		icon = mission_frostmourne
+		position = 5
+		completed_by = 618.12.31
+        
+		required_missions = { wwu_the_culling } 
+                		
+		trigger = {
+            # Scourge of Lordaeron
+			P52 = {
+                num_of_cities = 20
+            }
+		}
+		effect = {  
+            if = {
+                limit = {
+                    NOT = { has_global_flag = valgarde_spawned }
+                }
+                country_event = { id = wwu_arthas_expedition.1 }
+                hidden_effect = {
+                    set_global_flag = valgarde_spawned
+                }
+            }
+            else = {
+                add_prestige = 5
+            }
+        }
+    }
+}
+
+wwu_lordaeron_column_3 = { 
+	slot = 3
+	generic = no
+	ai = yes
+    has_country_shield = yes
+    
+	potential = {
+		tag = A08
+	} 
+    
+    wwu_purge_the_infected = { 
+		icon = mission_fireball_1
+        position = 2
+		completed_by = 618.12.31
+        
+		required_missions = { wwu_uthers_investigations } 
+        
+		trigger = {
+            any_owned_province = { has_rebel_faction = cult_of_the_damned_rebels }
+		}
+		effect = { 
+            add_stability = -1
+            
+			disband_rebels = cult_of_the_damned_rebels
+		}
+	}
+}
+
+wwu_lordaeron_column_4 = { 
+	slot = 4
+	generic = no
+	ai = yes
+    has_country_shield = yes
+    
+	potential = {
+		tag = A08
+	} 
+    
+	wwu_ingratiate_vandermar = { 
+		icon = mission_ancient_tome
+        
+		required_missions = {  } 
+        
+		trigger = {
+            G50 = {
+                has_opinion = {
+                    who = ROOT
+                    value = 200
+                }
+            }
+		}
+		effect = { 
+			add_country_modifier = {
+                name = mission_vadermar_elites
+                duration = -1
+            }
+            region_tirisfal_glades = {
+                add_permanent_claim = ROOT
+            }
+		}
+	}
+    wwu_secure_tirisfal_glades = { 
+		icon = mission_faction_fight_2
+        
+		required_missions = { wwu_ingratiate_vandermar } 
+        
+		trigger = {
+            region_tirisfal_glades = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+        provinces_to_highlight = {
+            region = region_tirisfal_glades
+            NOT = { owned_by = ROOT }
+        }
+		effect = { 
+			add_country_modifier = {
+				name = "mission_western_security"
+				duration = -1
+			}
+            region_silverpine_forest = {
+                add_permanent_claim = ROOT
+            }
+            region_alterac_mountains = {
+                add_permanent_claim = ROOT
+            }
+			region_alterac_mountains = {
+                add_permanent_claim = A16     #Stromgarde also competes for region
+            }
+		}
+	}
+    wwu_passage_to_southshore = { 
+		icon = mission_storehouse
+        
+		required_missions = { wwu_secure_tirisfal_glades } 
+        
+		trigger = {
+            991 = {
+                owned_by = ROOT
+                is_in_capital_area = yes
+            }
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "mission_southshore_connection"
+				duration = -1
+			}
+            add_stability = 1
+		}
+	}
+    wwu_protect_stormwind = { 
+		icon = mission_unity
+        
+		required_missions = { wwu_passage_to_southshore } 
+        
+		trigger = {
+            alliance_with = STW
+            army_size_percentage = 1.0
+		}
+		effect = { 
+			add_country_modifier = {
+				name = "mission_stormwind_alliance"
+				duration = -1
+			}
+		}
+	}
+}
+
+wwu_lordaeron_column_5 = { 
+	slot = 5
+	generic = no
+	ai = yes
+    has_country_shield = yes
+    
+	potential = {
+		tag = A08
+	} 
+    
+	wwu_ingratiate_stratholme = { 
+		icon = mission_goblet
+        
+		required_missions = {  } 
+        
+		trigger = {
+            A10 = {
+                has_opinion = {
+                    who = ROOT
+                    value = 200
+                }
+            }
+		}
+		effect = { 
+			add_country_modifier = {
+                name = mission_stratholme_elites
+                duration = -1
+            }
+            region_eastern_plaguelands = {
+                add_permanent_claim = ROOT
+            }
+		}
+	}
+    wwu_secure_the_eastern_outposts = { 
+		icon = mission_troll_male
+        
+		required_missions = { wwu_ingratiate_stratholme } 
+        
+		trigger = {
+            region_eastern_plaguelands = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+        provinces_to_highlight = {
+            region = region_eastern_plaguelands
+            NOT = { owned_by = ROOT }
+        }
+		effect = { 
+			add_country_modifier = {
+				name = "mission_eastern_security"
+				duration = -1
+			}
+            region_zulaman = {
+                add_permanent_claim = ROOT
+            }
+		}
+	}
+    wwu_eliminate_the_trolls = { 
+		icon = mission_troll_hexxer
+        
+		required_missions = { wwu_secure_the_eastern_outposts } 
+        
+		trigger = {
+            NOT = { exists = A58 }
+            NOT = { exists = A59 }
+            NOT = { exists = A62 }
+            NOT = { exists = P55 }
+            NOT = { exists = A62 }
+            region_zulaman = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+        provinces_to_highlight = {
+            OR = {
+                region = region_zulaman
+                owned_by = A58
+                owned_by = A59
+                owned_by = A62
+                owned_by = P55
+            }
+            NOT = { owned_by = ROOT }
+        }
+		effect = { 
+			add_country_modifier = {
+				name = "mission_troll_conqueror"
+				duration = -1
+			}
+		}
+	}
+}

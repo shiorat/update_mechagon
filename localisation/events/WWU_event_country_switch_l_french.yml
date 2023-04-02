@@ -1,0 +1,12 @@
+﻿l_french:
+ wwu_country_switch.1.title: "Nouvelles traditions et ambitions"
+ wwu_country_switch.1.desc: "Notre État traverse une série de changements qui changent rapidement notre identité et nos idéaux. Si nous ne nous y opposons pas activement, nous verrons les ambitions et les traditions de notre pays changer en conséquence."
+ wwu_country_switch.1.option.a: "Oui, s'il vous plaît!"
+ wwu_country_switch.1.option.b: "Non, nous ne pouvons pas abandonner nos racines."
+ wwu_country_switch.2.title: "Nouvelles missions"
+ wwu_country_switch.2.desc: "Notre État traverse une série de changements qui changent rapidement notre identité et nos idéaux. À moins que nous ne nous y opposions activement, nous verrons les missions de notre pays changer en conséquence."
+ wwu_country_switch.2.option.a: "Oui, s'il vous plaît!"
+ wwu_country_switch.2.option.b: "Non, nous ne pouvons pas abandonner nos racines."
+ wwu_country_switch.3.title: "Découverte"
+ wwu_country_switch.3.desc: ""
+ wwu_country_switch.3.option.a: "Oui, s'il vous plaît!"

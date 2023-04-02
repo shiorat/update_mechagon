@@ -1,19 +1,44 @@
-discover_home_continent = yes
-#Bonespeakers
 government = tribal
 add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 mercantilism = 10
 technology_group = tech_vrykul
-religion = religion_titan
-primary_culture = culture_tideskorn
+religion = titan_worship
+primary_culture = culture_vrykul
 capital = 2684
 
-546.1.1 = { 
-	monarch = { 
-     		name = "Faljar" 
+540.1.1 = {
+	monarch = {
+		name = "Faljar"
 		dynasty = "Bonespeaker"
+		birth_date = 462.1.1
 		adm = 3
 		dip = 4
-		mil = 4 
-	}	 
-} 
+		mil = 4
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 1
+        FINESSE = 2
+        CONCENTRATION = 2
+        MANA = 5
+        runic = yes
+    }
+}
+590.1.1 = {
+	monarch = {
+		name = "Ingolf"
+		dynasty = "Bonespeaker"
+		birth_date = 540.1.1
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 2
+        FINESSE = 2
+        CONCENTRATION = 1
+        MANA = 5
+        runic = yes
+    }
+}

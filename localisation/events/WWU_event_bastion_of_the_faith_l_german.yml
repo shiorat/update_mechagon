@@ -1,0 +1,8 @@
+﻿l_german:
+ wwu_bastion_of_the_faith.1.title: "Glaubensverlust"
+ wwu_bastion_of_the_faith.1.desc: "Obwohl [Root.Monarch.GetTitle] [Root.Monarch.GetName] sich selbst zur Bastion des Glaubens erklärt hat, hat ihr neuer Verlust die Legitimität ihres Anspruchs in Frage gestellt und als solche andere jetzt winken, den Titel zu beanspruchen."
+ wwu_bastion_of_the_faith.1.option.a: "Flüche!"
+ wwu_bastion_of_the_faith.2.title: "Aufforderung zur Einreichung von Vorschlägen"
+ wwu_bastion_of_the_faith.2.desc: "Als Bastion des Glaubens sind wir von [From.GetName] in den Krieg gerufen worden. Wenn wir uns weigern, den Anruf zu beantworten, verlieren wir unseren Titel."
+ wwu_bastion_of_the_faith.2.option.a: "Wir unterstützen [From.GetName]"
+ wwu_bastion_of_the_faith.2.option.b: "Wer?"

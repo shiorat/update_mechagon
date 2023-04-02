@@ -1,14 +1,17 @@
-discover_home_continent = yes
+
 # Amani
-government 			= monarchy
-add_government_reform = warband_reform
+government 			    = monarchy
+add_government_reform   = troll_kingdom_reform
+
 mercantilism 		= 10
-technology_group 	= tech_troll
-religion			= religion_loa
-primary_culture 	= culture_amani
-capital 			= 806
+technology_group 	= tech_forest_troll
+religion			= voodoo
+primary_culture 	= culture_forest_troll
+capital 			= 2984
 
 historical_friend = P55
+historical_rival = A91
+historical_rival = A90
 
 546.1.1 = {  
     monarch = {  
@@ -17,9 +20,8 @@ historical_friend = P55
  		adm = 3 
 		dip = 3 
 		mil = 4 
-  	}  
+  	} 
 }  
-
 
 592.1.1 = {  
     monarch = {  
@@ -28,7 +30,14 @@ historical_friend = P55
  		adm = 4 
 		dip = 5 
 		mil = 5 
-  	}  
+  	} 
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 3
+        CONCENTRATION = 4
+        MANA = 5
+        voodoo = yes
+    }
 }  
   
 631.1.1 = {  

@@ -1,22 +1,33 @@
-discover_home_continent = yes
+
 # Deepholm
 government 			= theocracy
 add_government_reform = elemental_cult_reform
 
 mercantilism 		= 10
-technology_group 	= tech_elemental
-religion			= religion_earth
+technology_group 	= tech_elemental_earth
+religion			= earth
 primary_culture 	= culture_earth
-capital 			= 3157
+capital 			= 2700
 
 546.1.1 = { 
 	monarch = { 
-		 name = "Therazane" 
-		 dynasty = "the Stonemother" 
-			adm = 4
-			dip = 4
-			mil = 4
-			female = yes
- 	} 
+        name = "Therazane" 
+        dynasty = "the Stonemother" 
+        adm = 5
+        dip = 5
+        mil = 5
+        female = yes
+ 	}
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 3
+        CONCENTRATION = 3
+        MANA = 5
+        elemental_earth = yes
+    }
+    
+    set_ruler_flag = ruler_portrait_therazane
+    
+    set_ruler_flag = is_immortal
  } 
 

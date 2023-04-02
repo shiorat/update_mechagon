@@ -1,50 +1,36 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = A55
-controller = A55
-add_core = A55
+culture = culture_orc
+religion = shamanism
 
-base_tax = 8
-base_production = 8
-base_manpower = 8
-
-culture = culture_karaborian
-religion = religion_light_of_the_naaru
-
-trade_goods = arcane
 hre = no
+trade_goods = unknown
 
-center_of_trade = 1
+600.1.1 = {
+    is_city = yes
 
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A55
-controller = A55
-add_core = A55
-
-base_tax = 8
-base_production = 8
-base_manpower = 8
-
-culture = culture_karaborian
-religion = religion_light_of_the_naaru
-
-trade_goods = arcane
-hre = no
-
-center_of_trade = 1
-}
-592.1.1 = {
-   owner = B88
+    owner = B88
     controller = B88
     add_core = B88
-    remove_core = B88
-    culture = culture_horde
-    religion = religion_fel
+
+    base_tax = 8
+    base_production = 8
+    base_manpower = 8
+
+    culture = culture_orc
+    religion = fel
+
+
+    trade_goods = fel
+
+    center_of_trade = 1
 }
 
 #Outland
@@ -53,7 +39,12 @@ center_of_trade = 1
 	controller = B89
 	add_core =  B89
     culture = culture_fel_orc
-    religion = religion_fel
+    religion = fel
+}
+
+# Frozen Throne
+618.1.1 = {
+	add_permanent_claim =  B87
 }
 
 # Rise of the Qiraji
@@ -62,7 +53,7 @@ center_of_trade = 1
 	controller = B87
 	add_core =  B87
 	culture = culture_illidari
-	religion = religion_fel
+	religion = fel
 	remove_core = B89
 }
 
@@ -71,6 +62,6 @@ center_of_trade = 1
 	controller = A57
 	add_core =  A57
 	culture = culture_broken
-	religion = religion_ancestral
+	religion = shamanism
 }
 

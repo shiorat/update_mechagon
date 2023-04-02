@@ -1,30 +1,30 @@
-discover_home_continent = yes
-# Howling
-government 			= native
-add_government_reform = primitive_tribe_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 mercantilism 		= 10
-technology_group 	= tech_wolfvar
-religion			= religion_primitive
-primary_culture 	= culture_howling
-capital 		= 2037
+technology_group 	= tech_wolvar
+religion			= primitive
+primary_culture 	= culture_wolvar
+capital 		    = 2104
 
-546.1.1 = { 
-monarch = { 
-     name = "Howling" 
-     dynasty = "Howling"
+540.1.1 = {
+	monarch = {
+		name = "Jikik"
+		dynasty = "Copperfang"
+		birth_date = 461.1.1
 		adm = 1
-		dip = 3
-		mil = 1
- 	} 
- } 
-
-592.1.1 = { 
-monarch = { 
-     name = "Howling"
-     dynasty = "Howling" 
-		adm = 2
-		dip = 4
-		mil = 2 
- 	} 
- } 
-
+		dip = 2
+		mil = 0
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Tarlog"
+		dynasty = "Copperfang"
+		birth_date = 570.1.1
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}

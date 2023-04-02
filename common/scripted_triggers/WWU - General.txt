@@ -48,10 +48,12 @@ can_form_order_for_class = {
 }
 
 highest_development = {
-	NOT = { any_country = {
-		NOT = { tag = ROOT }
-		total_development = ROOT
-	} }
+	NOT = { 
+        any_country = {
+            NOT = { tag = ROOT }
+            total_development = ROOT
+        } 
+    }
 }
 
 potential_refuge = { # Determines which country allows your country's refugees when it's annexed. Used in remnant events. Order of AND blocks in OR indicates priority.
@@ -185,5 +187,48 @@ is_invader = {
 		is_underwater = yes
 		tag = B92
 		technology_group = tech_elemental
+	}
+}
+
+is_considered_evil = {
+    OR = {
+        religion = corrupt_titan_worship
+        religion = corrupt_dragon_aspect
+        religion = fel
+        religion = cult_of_the_damned
+        religion = shadow
+        religion = forgotten_shadow
+        religion = cthun
+        religion = nzoth
+        religion = yogg_saron
+        religion = yshaarj
+        religion = twilight_cult
+        religion = nightmare
+        religion = void
+        has_country_modifier = is_evil
+    }
+}
+
+is_considered_good = {
+    NOT = { religion = corrupt_titan_worship }
+    NOT = { religion = corrupt_dragon_aspect }
+    NOT = { religion = fel }
+    NOT = { religion = cult_of_the_damned }
+    NOT = { religion = shadow }
+    NOT = { religion = forgotten_shadow }
+    NOT = { religion = cthun }
+    NOT = { religion = nzoth }
+    NOT = { religion = yogg_saron }
+    NOT = { religion = yshaarj }
+    NOT = { religion = twilight_cult }
+    NOT = { religion = nightmare }
+    NOT = { religion = void }
+    NOT = { has_country_modifier = is_evil }
+}
+
+halved_parliament_bribes = {
+	OR = {
+		has_country_flag = halved_parliament_bribe_costs
+		has_government_attribute = halved_parliament_bribes
 	}
 }

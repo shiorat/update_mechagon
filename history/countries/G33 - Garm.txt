@@ -1,31 +1,31 @@
-discover_home_continent = yes
-# Garm
-government 			= tribal
-add_government_reform = primitive_clan_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
 technology_group 	= tech_magnataur
-religion			= religion_earth
-primary_culture 	= culture_garm
+religion			= earth
+primary_culture 	= culture_magnataur
 capital 			= 645
 
-546.1.1 = { 
-monarch = { 
-     name = "" 
-     dynasty = "Garm" 
-		adm = 2
+540.1.1 = {
+	monarch = {
+		name = "Grumpik"
+		dynasty = "Stonefist"
+		birth_date = 468.1.1
+		adm = 0
+		dip = 5
+		mil = 3
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Domlur"
+		dynasty = "Stonefist"
+		birth_date = 524.1.1
+		adm = 5
 		dip = 2
-		mil = 4
- 	} 
- }
-
-600.1.1 = { 
-monarch = { 
-     name = "Tormar" 
-     dynasty = "Frostgut" 
-		adm = 2
-		dip = 2
-		mil = 4
- 	} 
- }
-
+		mil = 2
+	}
+}
 

@@ -10,24 +10,24 @@ estate_religious_order = {
     
 	# ----- Conditions -----
     trigger = {
-        has_country_flag = has_estate_religious_order
+        has_religious_order_estate = yes
     }
 
 	# ----- Country -----
     country_modifier_happy = {
-        global_missionary_strength = 0.03
-        missionary_maintenance_cost = -0.25
-        warscore_cost_vs_other_religion = -0.25
+        global_missionary_strength = 0.02
+        missionary_maintenance_cost = -0.1
+        warscore_cost_vs_other_religion = -0.1
     }
     country_modifier_neutral = {
         global_missionary_strength = 0.01
-        missionary_maintenance_cost = -0.1
-        warscore_cost_vs_other_religion = -0.1
+        missionary_maintenance_cost = -0.05
+        warscore_cost_vs_other_religion = -0.05
     }    
     country_modifier_angry = {
-        global_missionary_strength = -0.03
-        missionary_maintenance_cost = 0.25
-        warscore_cost_vs_other_religion = 0.25
+        global_missionary_strength = -0.02
+        missionary_maintenance_cost = 0.1
+        warscore_cost_vs_other_religion = 0.1
     }
     
 	land_ownership_modifier = {
@@ -86,6 +86,7 @@ estate_religious_order = {
         estate_religious_order_proclaim_divinity
         estate_religious_order_appease_the_masses
         estate_religious_order_mass_conversion
+        estate_religious_order_exception
 	}
 
     # ----- Agendas -----

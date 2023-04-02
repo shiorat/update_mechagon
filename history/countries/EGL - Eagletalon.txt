@@ -1,0 +1,37 @@
+government = tribal
+add_government_reform = tauren_tribe_reform
+add_government_reform = wwu_tribal_seasonal_travel_reform
+
+mercantilism 		= 10
+technology_group 	= tech_tauren
+
+religion			= tauren_shamanism
+primary_culture 	= culture_tauren
+
+capital 			= 3429
+
+
+
+historical_rival = B20
+historical_rival = G05
+
+540.1.1 = {
+	monarch = {
+		name = "Ithham"
+		dynasty = "Eagletalon"
+		birth_date = 477.1.1
+		adm = 4
+		dip = 0
+		mil = 5
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Molhem"
+		dynasty = "Eagletalon"
+		birth_date = 566.1.1
+		adm = 3
+		dip = 0
+		mil = 2
+	}
+}

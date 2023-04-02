@@ -1,0 +1,16 @@
+is_city = yes
+
+owner = MC5
+controller = MC5
+add_core = MC5
+
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+culture = culture_maruuk_centaur
+religion = shamanism
+
+hre = no
+trade_goods = unknown
+

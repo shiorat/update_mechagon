@@ -1,0 +1,16 @@
+is_city = yes
+
+owner = FLA
+controller = FLA
+add_core = FLA
+
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+culture = culture_primalist_dragonflight
+religion = primalist
+
+hre = no
+trade_goods = unknown
+

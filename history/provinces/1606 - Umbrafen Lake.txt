@@ -1,47 +1,34 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = F62
-controller = F62
-add_core = F62
+culture = culture_orc
+religion = shamanism
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
-
-culture = culture_sporeling
-religion = religion_zangar
-
-trade_goods = glowcap
 hre = no
+trade_goods = unknown
 
-
-
-546.1.1 = {
-
-is_city = yes
-
-owner = F62
-controller = F62
-add_core = F62
-
-base_tax = 3
-base_production = 3
-base_manpower = 3
-
-culture = culture_sporeling
-religion = religion_zangar
-
-trade_goods = glowcap
-hre = no
-
-}
 600.1.1 = {
-    owner = F84
-    controller = F84
-    add_core = F84
-    culture = culture_broken
-    religion = religion_ancestral
+    is_city = yes
+
+    owner = F62
+    controller = F62
+    add_core = F62
+
+    base_tax = 3
+    base_production = 3
+    base_manpower = 3
+
+    culture = culture_sporeling
+    religion = zangar
+
+
+    trade_goods = glowcap
 }
 
 601.1.1 = {
@@ -50,7 +37,7 @@ hre = no
     add_core =  F71
     remove_core = F84
     culture = culture_sporeling
-    religion = religion_zangar
+    religion = zangar
 }
 
 

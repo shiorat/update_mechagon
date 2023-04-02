@@ -1,30 +1,30 @@
-discover_home_continent = yes
-# Redfang
-government 			= native
-add_government_reform = native_tribe_reform
+government = tribal
+add_government_reform = tribal_federation_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 mercantilism 		= 10
 technology_group 	= tech_furbolg
-religion			= religion_old_gods
-primary_culture 	= culture_redfang
-capital 			= 811
+religion			= yogg_saron
+primary_culture 	= culture_snow_furbolg
+capital 			= 2111
 
-546.1.1 = { 
-monarch = { 
-     name = "Garmgrold" 
-     dynasty = "Redfang" 
-		adm = 3
+540.1.1 = {
+	monarch = {
+		name = "Goreik"
+		dynasty = "Redhorn"
+		birth_date = 500.1.1
+		adm = 1
 		dip = 2
-		mil = 4
- 	} 
- } 
-
-592.1.1 = { 
-monarch = { 
-     name = "Grumbald" 
-     dynasty = "One-Eye" 
-		adm = 4
-		dip = 2
-		mil = 4 
- 	} 
- } 
-
+		mil = 1
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Rakek"
+		dynasty = "Redhorn"
+		birth_date = 507.1.1
+		adm = 5
+		dip = 4
+		mil = 0
+	}
+}

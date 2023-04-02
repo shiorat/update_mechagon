@@ -1,27 +1,37 @@
-discover_home_continent = yes
+
 # Neferset Tolvir
-government 			= monarchy
-add_government_reform = ancient_kingdom_reform
+government 			    = theocracy
+add_government_reform   = tolvir_kingdom_reform
 mercantilism 		= 10
-technology_group 	= tech_titan
-religion			= religion_titan
-primary_culture 	= culture_neferset
+technology_group 	= tech_tolvir
+religion			= titan_worship
+primary_culture 	= culture_tolvir
 capital 			= 1563
 
-
-546.1.1 = { 
-	monarch = { 
-		name = "Tekahn" 
-		dynasty = " " 
-		adm = 3
-		dip = 3
-		mil = 3 
-        birth_date = 100.1.1
-        #death_date = 700.1.1
-	} 
+540.1.1 = {
+	monarch = {
+		name = "Ammanesh"
+		dynasty = "Itahn"
+		birth_date = 506.1.1
+		adm = 0
+		dip = 5
+		mil = 2
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Navat"
+		dynasty = "Itahn"
+		birth_date = 523.1.1
+		adm = 1
+		dip = 5
+		mil = 2
+	}
 }
 
-631.1.1 = {
-  religion = religion_air
+
+630.1.1 = {
+    religion            = wind
+	primary_culture 	= culture_stone_tolvir
 }
 

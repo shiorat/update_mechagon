@@ -30,13 +30,16 @@
  desc_power_of_the_sunwell: "A source of unimaginable arcane energies, the Sunwell bestows our people with unfathomable power, as well as sating their thirst for magic."
  
  loss_of_the_sunwell: "Loss of the Sunwell"
- desc_loss_of_the_sunwell: "A source of unimaginable arcane energies, the Sunwell granted our people unfathomable power and satifised their thirst for magic. Without it, we are weakened, and our people lethargic."
+ desc_loss_of_the_sunwell: "A source of unimaginable arcane energies, the Sunwell granted our people unfathomable power and satisfied their thirst for magic. Without it, we are weakened, and our people lethargic."
+ 
+ power_of_the_nightwell: "Power of the Nightwell"
+ desc_power_of_the_nightwell: "A source of unimaginable arcane energies, the Nightwell bestows our people with unfathomable power, as well as sating their thirst for magic."
+ 
+ loss_of_the_nightwell: "Loss of the Nightwell"
+ desc_loss_of_the_nightwell: "A source of unimaginable arcane energies, the Nightwell granted our people unfathomable power and satisfied their thirst for magic. Without it, we are weakened, and our people lethargic."
  
  power_of_the_dragons: "Power of the Dragons"
  desc_power_of_the_dragons: "The dragonflights are amongst the most powerful entities on Azeroth, and others know to fear their presence."
- 
- fear_of_stromkar: "Fear of Strom'kar"
- fear_of_stromkar_desc: "Trolls fear Strom'kar, and will flee whenever it is sighted."
  
  matriarchal: "Matriarchal"
  matriarchal_desc: "As a matriarchal society, we only accept female rulers."
@@ -56,151 +59,154 @@
  first_war_orc: "First War Orc"
  first_war_human: "First War Human"
  first_war_orc_easy: "First War Orc"
- irst_war_orc_very_easy: "First War Orc"
+ first_war_orc_very_easy: "First War Orc"
  
- alliance_vs_horde: "Alliance vs. Horde"
- desc_alliance_vs_horde: ""
- 
- fel_empowerment: "Fel Empowerment"
- desc_fel_empowerment: "With the Burning Legion at full strength, all Fel nations benefit from this demonic unity."
- 
+ burning_legion_vanguard: " "
+
  # Estates
- clergy_dominance: "[Root.GetClergyName] in Control"
- desc_clergy_dominance: "The [Root.GetClergyName] have dominance over our government, and effectively control it in all but name."
- 
- traders_dominance: "[Country.GetTradersName] in Control"
- desc_traders_dominance: "The [Country.GetTradersName] have dominance over our government, and effectively control it in all but name."
- 
- nobility_dominance: "[Country.GetNobilityName] in Control"
- desc_nobility_dominance: "The [Country.GetNobilityName] have dominance over our government, and effectively control it in all but name."
- 
- peasants_dominance: "[Country.GetPeasantsName] in Control"
- desc_peasants_dominance: "The [Country.GetPeasantsName] have dominance over our government, and effectively control it in all but name."
- 
- tribals_dominance: "[Country.GetTribalsName] in Control"
- desc_tribals_dominance: "The [Country.GetTribalsName] have dominance over our government, and effectively control it in all but name."
- 
- adventuring_guild_dominance: "[Country.GetAdventuringGuildName] in Control"
- desc_adventuring_guild_dominance: "The [Country.GetAdventuringGuildName] have dominance over our government, and effectively control it in all but name."
- 
- mercantile_guild_dominance: "[Country.GetMercantileGuildName] in Control"
- desc_mercantile_guild_dominance: "The [Country.GetMercantileGuildName] have dominance over our government, and effectively control it in all but name."
- 
- warriors_guild_dominance: "[Country.GetWarriorsGuildName] in Control"
- desc_warriors_guild_dominance: "The [Country.GetWarriorsGuildName] have dominance over our government, and effectively control it in all but name."
- 
- religious_order_dominance: "[Country.GetReligiousOrderName] in Control"
- desc_religious_order_dominance: "The [Country.GetReligiousOrderName] have dominance over our government, and effectively control it in all but name."
- 
- criminal_syndicate_dominance: "[Country.GetCriminalSyndicateName] in Control"
- desc_criminal_syndicate_dominance: "The [Country.GetCriminalSyndicateName] have dominance over our government, and effectively control it in all but name."
+ estate_dominance: "Estate in Control"
+ desc_estate_dominance: "The Estates have dominance over our government, and effectively control it in all but name."
  
  # Hegemon
  fight_for_survival: "Fight for Survival"
- desc_fight_for_survival: "We must fight for every inch of land against such a hegemon. To lose is to be anniliated."
+ desc_fight_for_survival: "We must fight for every inch of land against such a hegemon. To lose is to be annihilated."
  
- # Syncretism
- syncretic_with_scarlet_light: "Scarlet Light Syncretism"
- desc_syncretic_with_scarlet_light: "We have syncretised our religion with the Scarlet Light."
+ # Nightfallen
+ withered_form: "Withered Form"
+ desc_withered_form: "Our people have been withered, as they lack arcane nourishment."
  
- syncretic_with_church_of_the_light: "Church of the Light Syncretism"
- desc_syncretic_with_church_of_the_light: "We have syncretised our religion with the Church of the Light."
+ # Robot Parts
+ technomancy: "Technomantic Civilization"
+ desc_technomancy: "Our technological efficiency will push us forward"
  
- syncretic_with_argent_light: "Argent Light Syncretism"
- desc_syncretic_with_argent_light: "We have syncretised our religion with the Argent Light."
+ # Living Vassals of the Scourge
+ living_vassals_of_the_scourge: "Living Vassals of the Scourge"
+ desc_living_vassals_of_the_scourge: "We are not the undead, but unwilling slaves of the Lich King. We will never submit, not while our people remain alive!"
  
- syncretic_with_light_of_the_naaru: "Light of the Naaru Syncretism"
- desc_syncretic_with_light_of_the_naaru: "We have syncretised our religion with the Light of the Naaru."
+ # Rebellious Living Vassals
+ rebellious_living_vassals: "Rebellious Vassals"
+ desc_rebellious_living_vassals: "Our vassals still clamor for their freedom from our icy rule. They are covertly harassing supply lines, burning down undead camps, and stealing supplies. We must take the steps to formally assimilate them into the Scourge, otherwise they are going to cause continued problems for our administration."
  
- syncretic_with_light_of_the_sunwell: "Light of the Sunwell Syncretism"
- desc_syncretic_with_light_of_the_sunwell: "We have syncretised our religion with the Light of the Sunwell."
+ fighting_against_power: "Fighting against Power"
+ desc_fighting_against_power: "It is our diplomatic stance to intervene against any would-be hegemonies."
  
- syncretic_with_druidic: "Druidic Syncretism"
- desc_syncretic_with_druidic: "We have syncretised our religion with the Druidic belief."
+ champion_of_the_people: "Champion of the People"
+ desc_champion_of_the_people: "Our ruler is a champion of their people, and leads them in war."
  
- syncretic_with_elune: "Elune Syncretism"
- desc_syncretic_with_elune: "We have syncretised our religion with the Elune belief."
+ war_footing: "War Footing"
+ desc_war_footing: "Our monarchy is on a war footing, and as such is prepared for war."
  
- syncretic_with_loa: "Loa Syncretism"
- desc_syncretic_with_loa: "We have syncretised our religion with the Loa."
+ unity_of_the_horde: "Unity of the Horde"
+ desc_unity_of_the_horde: "Our tribal horde is at war, and thus our people are united in purpose."
  
- syncretic_with_blood: "Bloodmancy Syncretism"
- desc_syncretic_with_blood: "We have syncretised our religion with the Bloodmancy."
+ # Light
+ bastions_of_holy_light_mod: "Bastions of Holy Light"
+ desc_bastions_of_holy_light_mod: "These cities and temples are the centers of our holy faith"
  
- syncretic_with_terokk: "Terokk Syncretism"
- desc_syncretic_with_terokk: "We have syncretised our religion with the Terokk belief."
+ bastions_of_scarlet_light_mod: "Bastions of Scarlet Light"
+ desc_bastions_of_scarlet_light_mod: "The Holy centers of our faith have fallen to ether the heathen or the heretics! TIme to make them ours!"
  
- syncretic_with_zangar: "Zangar Syncretism"
- desc_syncretic_with_zangar: "We have syncretised our religion with the Zangar belief."
+ bastions_of_argent_light_mod: "Bastions of Argent Light"
+ desc_bastions_of_argent_light_mod: "In the prime of humanity these locations were the center of our faith! Its time now to reclaim them and restore them to their former glory!"
  
- syncretic_with_primitive: "Primitive Syncretism"
- desc_syncretic_with_primitive: "We have syncretised our religion with the Primitive belief."
+ satyr_aggression: "Satyr Aggression"
+ desc_satyr_aggression: "Satyrs are not known for their diplomacy, and as such they have little time for those that attempt to engage in it."
  
- syncretic_with_arcane: "Arcane Syncretism"
- desc_syncretic_with_arcane: "We have syncretised our religion with the the Arcane."
+ burning_crusade: "The Burning Crusade"
+ desc_burning_crusade: "Most demons are servants of Sargeras, and as such they are focused on the annihilation of all non-Fel entities."
  
- syncretic_with_titan: "Titanic Syncretism"
- desc_syncretic_with_titan: "We have syncretised our religion with the Titanic belief."
+ true_heirs_of_arathor: "The True Heirs of Arathor"
+ desc_true_heirs_of_arathor: "We are the true heirs of Arathor and we restored their former glory into the world!"
  
- syncretic_with_titan_corrupt: "Corrupt Titanic Syncretism"
- desc_syncretic_with_titan_corrupt: "We have syncretised our religion with the Corrupt Titanic belief."
+ elwynn_ownership: "Elwynn Ownership"
+ desc_elwynn_ownership: "Having Elwynn under control will bring stability and prosperity into our realm... or war to everyone else!"
  
- syncretic_with_mystery_of_the_makers: "Mystery of the Makers Syncretism"
- desc_syncretic_with_mystery_of_the_makers: "We have syncretised our religion with the Mystery of the Makes."
+ dwarven_civil_war: "Dwarven Civil War"
+ desc_dwarven_civil_war: "Our ancestors began this bitter was that destroys our land"
  
- syncretic_with_sect_of_dragons: "Sect of Dragons Syncretism"
- desc_syncretic_with_sect_of_dragons: "We have syncretised our religion with the Sect of Dragons."
+ glory_of_wildhammer: "Glory of Wildhammer"
+ desc_glory_of_wildhammer: "Now that we defeated our rivals we will forge a new future for the dwarves"
  
- syncretic_with_celestial: "Celestial Syncretism"
- desc_syncretic_with_celestial: "We have syncretised our religion with the Celestials."
+ glory_of_ironforge: "Glory of Ironforge"
+ desc_glory_of_ironforge: "Now that we defeated our rivals we will forge a new future for the dwarves"
  
- syncretic_with_arkkorok: "Arkkorok Syncretism"
- desc_syncretic_with_arkkorok: "We have syncretised our religion with the Arkkorok belief."
+ glory_of_dark_iron: "Glory of Dark Iron"
+ desc_glory_of_dark_iron: "Now that we defeated our rivals we will forge a new future for the dwarves"
  
- syncretic_with_faithless: "Faithless Syncretism"
- desc_syncretic_with_faithless: "We have syncretised our religion with the Faithless."
+ dwarves_united: "Dwarves United"
+ desc_dwarves_united: "We finally united the three great dwarven clans and we forged a new future for our land... or brought the glory of an old one"
+
+ harmonious_dream: "Harmonious Dream"
+ desc_harmonious_dream: "Slumbering within the Emerald Dream focuses the mind, and permits accelerated learning."
  
- syncretic_with_rationalism: "Rationalism Syncretism"
- desc_syncretic_with_rationalism: "We have syncretised our religion with the Rationalism belief."
+ dream_vulnerability: "Dream Vulnerability"
+ desc_dream_vulnerability: "Whilst the majority of our population is slumbering within the Emerald Dream, our nation is vulnerable to external attack."
  
- syncretic_with_tech: "Technicism Syncretism"
- desc_syncretic_with_tech: "We have syncretised our religion with the Technicism belief."
+ scarlet_intolerance: "Scarlet Intolerance"
+ desc_scarlet_intolerance: ""
  
- syncretic_with_greed: "Greed Syncretism"
- desc_syncretic_with_greed: "We have syncretised our religion with the Greed belief."
+ argent_intolerance: "Argent Intolerance"
+ desc_argent_intolerance: ""
  
- syncretic_with_shadow: "Shadow Syncretism"
- desc_syncretic_with_shadow: "We have syncretised our religion with the Shadow."
+ corrupt_dragon_intolerance: "Corrupt Dragon Intolerance"
+ desc_corrupt_dragon_intolerance: ""
  
- syncretic_with_old_gods: "Old Gods Syncretism"
- desc_syncretic_with_old_gods: "We have syncretised our religion with the Old Gods."
+ fel_empowerment: "Fel Empowerment"
+ desc_fel_empowerment: "With more worshipping Fel, all Fel nations benefit from this demonic unity."
  
- syncretic_with_the_damned: "Damned Syncretism"
- desc_syncretic_with_the_damned: "We have syncretised our religion with the Damned."
+ presence_of_cthun: "Presence of C'Thun"
+ desc_presence_of_cthun: "C'Thun is actively spreading his corruption."
  
- syncretic_with_void: "Void Syncretism"
- desc_syncretic_with_void: "We have syncretised our religion with the Void."
+ presence_of_yogg_saron: "Presence of Yogg-Saron"
+ desc_presence_of_yogg_saron: "Yogg-Saron is actively spreading his corruption."
  
- syncretic_with_ancestral: "Ancestral Syncretism"
- desc_syncretic_with_ancestral: "We have syncretised our religion with the Ancestrals."
+ presence_of_nzoth: "Presence of N'Zoth"
+ desc_presence_of_nzoth: "N'Zoth is actively spreading his corruption."
  
- syncretic_with_fire: "Fire Syncretism"
- desc_syncretic_with_fire: "We have syncretised our religion with Fire belief."
+ presence_of_yshaarj: "Presence of Y'Shaarj"
+ desc_presence_of_yshaarj: "Y'Shaarj is actively spreading his corruption."
  
- syncretic_with_earth: "Earth Syncretism"
- desc_syncretic_with_earth: "We have syncretised our religion with Earth belief."
+ mindless_army: "Mindless Army"
+ desc_mindless_army: ""
  
- syncretic_with_air: "Air Syncretism"
- desc_syncretic_with_air: "We have syncretised our religion with Air belief."
+ immortal_republic: "Glacial Bureaucracy"
+ desc_immortal_republic: "Due to the immortal nature of our race, our elections occur far less often."
  
- syncretic_with_water: "Water Syncretism"
- desc_syncretic_with_water: "We have syncretised our religion with Water belief."
+ long_lived_republic: "Slow Bureaucracy"
+ desc_long_lived_republic: "Due to the long-lived nature of our race, our elections occur less often."
  
- syncretic_with_fel: "Fel Syncretism"
- desc_syncretic_with_fel: "We have syncretised our religion with Fel belief."
+ lanquished_crusade: "Lanquishing Crusade"
+ desc_lanquished_crusade: "Our demons ache for conflict, we must grant it soon!"
+
+ burning_crusade: "Burning Crusade"
+ desc_burning_crusade: "Our demons are sated by conflict."
+
+ #-----------------------------------------------
+ # Province Triggered Modifiers
+ #-----------------------------------------------
+ forge_of_the_burning_legion: "Forge of the Burning Legion"
+ desc_forge_of_the_burning_legion: ""
  
- syncretic_with_chaos: "Chaso Syncretism"
- desc_syncretic_with_chaos: "We have syncretised our religion with Chaos belief."
+ seat_of_the_lich_king: "Seat of the Lich King"
+ desc_seat_of_the_lich_king: ""
  
- syncretic_with_hakkari: "Hakkari"
- desc_syncretic_with_hakkari: "We have syncretised our religion with Hakkari belief."
+ riches_of_azjol_nerub: "Riches of Azjol-Nerub"
+ desc_riches_of_azjol_nerub: ""
+ 
+ power_of_the_nightwell: "Power of the Nightwell"
+ desc_power_of_the_nightwell: ""
+ 
+ power_of_the_sunwell: "Power of the Sunwell"
+ desc_power_of_the_sunwell: ""
+ 
+ bastion_of_light: "Bastion of Light"
+ desc_bastion_of_light: ""
+ 
+ bastion_of_mages: "Bastion of Mages"
+ desc_bastion_of_mages: ""
+ 
+ kypari_tree: "Kypari Tree"
+ desc_kypari_tree: ""
+ 
+ serpents_spine: "Serpent's Spine"
+ desc_serpents_spine: ""

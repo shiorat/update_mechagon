@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
+technology_group = tech_saberon
+primary_culture = culture_saberon
+religion = shamanism
+capital = 3823
+
+546.1.1 = {
+    monarch = {
+		name = "Shileo"
+		dynasty = "the Raging"
+		adm = 1
+		dip = 2
+		mil = 5
+	}
+}

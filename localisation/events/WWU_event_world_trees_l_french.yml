@@ -1,0 +1,9 @@
+﻿l_french:
+ world_tree.1.title: "Brûlure de Nordrassil"
+ world_tree.1.desc: "[Root.Monarch.GetName] de [Root.GetName] a ordonné [Root.Monarque.GetHer] son armée de mettre en flamme Nordrassil et ils ont sauvagement brûlé l'arbre du monde. En tant que seule progéniture de l'arbre mère, G'Hanir, Nordrassil était responsable de maintenir en vie les terres de Kalimdor et des royaumes de l'Est. Avec son disparu, le monde entier va mourir lentement, et devenir beaucoup plus sensible à la corruption de sources extérieures. Le puits d'Hyjal a également perdu sa stabilité et les forces maléfiques peuvent puiser dans son pouvoir à leurs fins malveillantes."
+ world_tree.1.option.a: "Tant mieux."
+ burn_nordrassil_tt: "Tous les pays de Kalimdor auront leurs opinions réduites de 20, pour chaque province qu'ils possèdent à Kalimdor, et toutes les religions druides réduira leurs opinions de 100."
+ world_tree.2.title: "Brûlure de Teldrassil"
+ world_tree.2.desc: "[Root.Monarch.GetName] de [Root.GetName] a ordonné [Root.Monarque.GetHer] son armée de mettre en flamme Teldrassil et ils ont sauvagement brûlé l'arbre du monde. En tant que plus grand arbre du monde, il abritait les elfes de la nuit et les wisps. Le lien de Druids avec le rêve d'Emeraude s'est affaibli."
+ world_tree.2.option.a: "Tant mieux."
+ burn_teldrassil_tt: "Tous les pays de Kalimdor auront leurs opinions réduites de 20, pour chaque province qu'ils possèdent à Teldrassil, et toutes les religions druides réduira leurs opinions de 100."

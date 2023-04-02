@@ -1,25 +1,52 @@
-discover_home_continent = yes
-
-government 			= monarchy
-add_government_reform = autocracy_reform
+#wwu_ruler_expectation_purveyor_of_decadence
+government 			    = monarchy
+add_government_reform   = zandalari_empire_reform
 mercantilism 		= 10
-technology_group 	= tech_troll
-religion			= religion_loa
-primary_culture 	= culture_zandalari
-capital 			= 2471
-
+technology_group 	= tech_zandalari_troll
+religion			= voodoo
+primary_culture 	= culture_zandalari_troll
+capital 			= 2469
+        change_estate_land_share = {
+            estate = estate_clergy
+            share = 15
+        }
+        
+        add_treasury = 400
 546.1.1 = {
 	monarch = {
 		name = "Rastakhan" 	 
-		dynasty = "Zandalar" 		
-		adm = 3	
-		dip = 5	
-		mil = 3	
-	} 
-
+		dynasty = "Zandalar"
+        birth_date = 400.1.1
+		adm = 4
+		dip = 6	
+		mil = 5
+	}
+    
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 3
+        CONCENTRATION = 3
+        MANA = 5
+        voodoo = yes
+    }
 } 
 
+620.1.1 = {
+	heir = {
+		name = "Talanji"
+        monarch_name = "Talanji"
+		dynasty = "Zandalar"
+        birth_date = 620.1.1
+        death_date = 999.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+        claim = 90
+    	female = yes
+	}
+}
+
 631.1.1 = {
-    religion = religion_loa
+    religion = voodoo
 }
 

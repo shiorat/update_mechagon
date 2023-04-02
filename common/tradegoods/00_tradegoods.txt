@@ -6,54 +6,41 @@
 grain = {
 	color = { 0.96 0.93 0.58 }
 	modifier = {
-		land_forcelimit_modifier = 0.10
+		land_forcelimit_modifier = 0.05
+		manpower_recovery_speed = 0.05
 	}
     province = {
-		land_forcelimit = 0.5
+		local_manpower_modifier  = 0.5
 	}
 	chance = {
 		factor = 20
+        
 		modifier = {
 			factor = 0
 			OR = {
+				has_climate = arctic
 				has_terrain = desert
 				has_terrain = glacier
 				has_terrain = coastline
-				has_climate = arctic
-			}
-		}
-		modifier = {
-			factor = 0.15
-			OR = {
-				has_terrain = mountain
+                has_terrain = mountain
 				has_terrain = coastal_desert
 				has_terrain = forest
 				has_terrain = woods
 				has_terrain = hills
 				has_terrain = jungle
-			}
-		}
-		modifier = {
-			factor = 0.25
-			OR = {
-				has_terrain = highlands
+                has_terrain = highlands
 				has_terrain = marsh
 			}
 		}
 		modifier = {
 			factor = 0.25
 			OR = {
+                has_terrain = drylands
+				has_terrain = savannah
+				has_terrain = steppe
 				has_climate = arid
 				has_climate = tropical
 				
-			}
-		}
-		modifier = {
-			factor = 0.6
-			OR = {
-				has_terrain = drylands
-				has_terrain = savannah
-				has_terrain = steppe
 			}
 		}
 		modifier = {
@@ -68,6 +55,39 @@ grain = {
 			factor = 1.5
 			has_terrain = farmlands
 		}
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Urban Terrain
+        modifier = {
+            factor = 0
+            has_terrain = urban
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -80,7 +100,8 @@ wine = {
 		local_unrest = -1
 	}
 	chance = {
-		factor = 5
+		factor = 10
+        
 		modifier = {
 			factor = 0
 			OR = {
@@ -99,20 +120,42 @@ wine = {
 			}
 		}
 		modifier = {
-			factor = 0.25
-			has_winter = normal_winter
-		}
-		modifier = {
 			factor = 1.25
 			has_terrain = farmlands
 		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_terrain = hills
-				has_terrain = highlands
-			}
-		}
+
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Urban Terrain
+        modifier = {
+            factor = 2
+            has_terrain = urban
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -122,10 +165,52 @@ wool = {
 		global_ship_cost = -0.05
 	}
     province = {
-		local_development_cost = -0.05
+		local_development_cost = -0.025
 	}
 	chance = {
-		factor = 0
+		factor = 5
+        
+        modifier = {
+			factor = 4
+            
+			OR = {
+				has_terrain = mountain
+                has_terrain = hills
+			}
+		}
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Urban Terrain
+        modifier = {
+            factor = 0
+            has_terrain = urban
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -135,10 +220,43 @@ cloth = {
 		merc_maintenance_modifier = -0.15
 	}
     province = {
-		local_development_cost = -0.1
+		local_development_cost = -0.025
 	}
 	chance = {
-		factor = 0
+		factor = 15
+        
+        modifier = {
+			factor = 0
+            
+			NOT = { development = 10 }
+		}
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -152,10 +270,23 @@ fish = {
 	}
 	chance = {
 		factor = 20
+        
+        modifier = {
+			factor = 0
+            
+			OR = {
+                continent = continent_skywall
+                continent = continent_deepholm
+                continent = continent_firelands
+                continent = continent_argus
+            }
+		}
+        
 		modifier = {
 			factor = 0
 			NOT = { has_port = yes }
 		}
+        
 		modifier = {
 			factor = 1.1
 			OR = {
@@ -163,10 +294,25 @@ fish = {
 				has_terrain = coastal_desert
 			}
 		}
+        
 		modifier = {
 			factor = 1.2
 			has_terrain = glacier
 		}
+        
+        # Unique Terrain
+        modifier = {
+            factor = 2
+            
+            has_terrain = underwater
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -180,6 +326,7 @@ fur = {
 	}
 	chance = {
 		factor = 15
+        
 		modifier = {
 			factor = 0
 			OR = {
@@ -204,14 +351,6 @@ fur = {
 			has_winter = mild_winter
 		}
 		modifier = {
-			factor = 0.5
-			NOT = { native_size = 1 }
-		}
-		modifier = {
-			factor = 2.0
-			native_size = 1
-		}
-		modifier = {
 			factor = 1.5
 			has_terrain = forest
 		}
@@ -224,6 +363,39 @@ fur = {
 			has_winter = severe_winter
 			NOT = { has_terrain = glacier }
 		}
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Urban Terrain
+        modifier = {
+            factor = 0
+            has_terrain = urban
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -237,6 +409,7 @@ salt = {
 	}
 	chance = {
 		factor = 5
+        
 		modifier = {
 			factor = 0
 			NOT = { has_terrain = desert }
@@ -254,19 +427,34 @@ salt = {
 				}
 			}
 		}
+
+        # Unique Terrain
+        modifier = {
+            factor = 2
+            
+            has_terrain = underwater
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
 naval_supplies = {
 	color = { 0.11 0.17 0.4 }
 	modifier = {
-		naval_forcelimit_modifier = 0.20
+		naval_forcelimit_modifier = 0.05
 	}
     province = {
 		naval_forcelimit = 0.5
 	}
 	chance = {
 		factor = 15
+        
 		modifier = {
 			factor = 0
 			OR = {
@@ -304,6 +492,33 @@ naval_supplies = {
 				has_terrain = jungle
 			}
 		}
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -319,6 +534,7 @@ copper = {
 	}
 	chance = {
 		factor = 15
+        
 		modifier = {
 			factor = 0
 			OR = {
@@ -336,13 +552,39 @@ copper = {
 				has_terrain = woods
 			}
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
 gold = {
 	color = { 1.0 0.84 0.19 }
+    
 	chance = {
 		factor = 5
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -352,17 +594,24 @@ iron = {
 		global_regiment_cost = -0.05
 	}
     province = {
-		local_build_time = -0.2
+		local_build_time = -0.1
 	}
 	chance = {
 		factor = 10
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
 
 #African Resources
 slaves = {
-	color = { 50 0 50 }
+	color = { 0.3 0.01 0.3 }
 	modifier = {
 		global_tariffs = 0.25
 	}
@@ -371,6 +620,24 @@ slaves = {
 	}
 	chance = {
 		factor = 15
+        
+        modifier = {
+            factor = 0
+            
+            OR = {
+                superregion = eastern_kingdom_superregion
+				superregion = kul_tiras_superregion
+                superregion = broken_isles_superregion
+                superregion = northrend_superregion
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -383,12 +650,34 @@ ivory = {
 		local_state_maintenance_modifier = -0.2
 	}
 	chance = {
-		factor = 0
+		factor = 1
+        
+        modifier = {
+            factor = 5
+            
+            has_port = yes
+            superregion = northrend_superregion
+        }
+        
+        modifier = {
+            factor = 5
+            
+            OR = {
+                superregion = outland_superregion
+                superregion = draenor_superregion
+                superregion = pandaria_superregion
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
-
-#Eastern Resources
 tea = {
 	color = { 0.07 0.33 0.09 }
 	modifier = {
@@ -397,6 +686,7 @@ tea = {
     province = {
 		garrison_growth = 0.25
 	}
+    
 	chance = {
 		factor = 15
 		
@@ -414,10 +704,24 @@ tea = {
 				has_winter = severe_winter
 			}
 		}
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { superregion = pandaria_superregion }
+        }
+        
 		modifier = {
 			factor = 1.2
 			has_terrain = farmlands
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -430,7 +734,20 @@ chinaware = {
 		local_autonomy = -0.1
 	}
 	chance = {
-		factor = 0
+		factor = 5
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { superregion = pandaria_superregion }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -440,15 +757,31 @@ spices = {
 		spy_offence = 0.10
 	}
     province = {
-		local_core_creation = 0.20
+		province_trade_power_value = 0.2
 	}
 	chance = {
-		factor = 0
+		factor = 10
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { 
+                OR = {
+                    superregion = zandalar_superregion
+                    superregion = plunder_isle_superregion
+                }
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
-
-#New World Resources
 coffee = {
 	color = { 0.22 0.15 0.09 }
 	modifier = {
@@ -458,7 +791,20 @@ coffee = {
 		local_institution_spread = 0.1
 	}
 	chance = {
-		factor = 0
+		factor = 10
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { region = region_kun_lai_summit }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -468,10 +814,28 @@ cotton = {
 		colonist_placement_chance = 0.05
 	}
     province = {
-		local_development_cost = -0.1
+		local_development_cost = -0.025
 	}
 	chance = {
-		factor = 0
+		factor = 20
+        
+        modifier = {
+            factor = 0
+            
+            NOT = {
+                OR = {
+                    region = region_north_barrens
+                    region = region_south_barrens
+                }
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -484,7 +848,20 @@ sugar = {
 		local_unrest = -1
 	}
 	chance = {
-		factor = 0
+		factor = 10
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { region = region_krasarang_wilds }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -497,7 +874,25 @@ tobacco = {
 		province_trade_power_modifier = 0.10
 	}
 	chance = {
-		factor = 0
+		factor = 10
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { 
+                OR = {
+                    superregion = zandalar_superregion
+                    superregion = plunder_isle_superregion
+                }
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -528,6 +923,25 @@ cocoa = {
 				has_winter = severe_winter
 			}
 		}
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { 
+                OR = {
+                    region = region_stranglethorn_vale
+                    superregion = zandalar_superregion
+                    superregion = plunder_isle_superregion
+                }
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -543,17 +957,43 @@ silk = {
 		factor = 10
 		
 		modifier = {
-			factor = 0
-			OR = {
-				has_terrain = glacier
-				has_climate = arid
-				has_climate = arctic
-				has_winter = mild_winter
-				has_winter = normal_winter
-				has_winter = severe_winter
-			}
-		}
-		
+            factor = 0
+            
+            NOT = { development = 10 }
+        }
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Urban Terrain
+        modifier = {
+            factor = 0
+            has_terrain = urban
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -568,10 +1008,12 @@ dyes = {
     
 	chance = {
 		factor = 15
+        
 		modifier = {
 			factor = 0
 			NOT = { has_terrain = jungle }
 		}
+        
 		modifier = {
 			factor = 0
 			OR = {
@@ -582,19 +1024,47 @@ dyes = {
 				has_winter = severe_winter
 			}
 		}
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
 tropical_wood = {
 	color = { 0.45 0.47 0.09 }
 	modifier = {
-		development_cost = -0.05
+		development_cost = -0.025
 	}
     province = {
-		local_build_cost = -0.2
+		local_build_cost = -0.1
 	}
 	chance = {
 		factor = 25
+        
 		modifier = {
 			factor = 0
 			OR = {
@@ -602,25 +1072,63 @@ tropical_wood = {
 				NOT = { has_climate = tropical }
 			}
 		}
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
 
 unknown = {
 	color = { 0.5 0.5 0.5 }
 }
 
-#WOOD
 ashenvale_lumber = {
 	color = { 0.96 0.93 0.58 }
 	modifier = {
 		defensiveness = 0.1
 	}
     province = {
-		local_build_cost = -0.2
+		local_build_cost = -0.1
 	}
 	chance = {
 		factor = 10
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { region = region_ashenvale }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -630,10 +1138,66 @@ lumber = {
 		war_exhaustion_cost = -0.1
 	}
     province = {
-		local_build_cost = -0.2
+		local_build_cost = -0.1
 	}
 	chance = {
 		factor = 10
+        
+        modifier = {
+			factor = 0
+            
+			OR = {
+                continent = continent_skywall
+                continent = continent_deepholm
+                continent = continent_firelands
+                continent = continent_abyssal_maw
+                continent = continent_argus
+            }
+		}
+        
+        modifier = {
+            factor = 0
+            
+            NOT = {
+                OR = { 
+                    has_terrain = woods
+                    has_terrain = forest
+                }
+            }
+        }
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Urban Terrain
+        modifier = {
+            factor = 0
+            has_terrain = urban
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -646,40 +1210,85 @@ kypari = {
 		local_defensiveness = 0.2
 	}
 	chance = {
-		factor = 3
+		factor = 10
+        
 		modifier = {
-			factor = 5
-			continent = continent_pandaria
+			factor = 0
+            
+			NOT = { region = region_dread_wastes }
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
-# tropical_wood - already present
 
 oil = {
 	color = { 0.93 0.98 0.98 }
 	modifier = {
-		development_cost = -0.05
+		development_cost = -0.025
 	}
     province = {
 		supply_limit_modifier = 0.1
 	}
 	chance = {
-		factor = 10
+		factor = 5
+        
+        modifier = {
+			factor = 0
+			
+            NOT = { has_port = yes }
+		}
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { 
+                OR = {
+                    region = region_stranglethorn_vale
+                    superregion = zandalar_superregion
+                    superregion = plunder_isle_superregion
+					superregion = kul_tiras_superregion
+                }
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
-#MINES, METALS, & ORES
 stone = {
 	color = { 0.72 0.49 0.44 }
 	modifier = {
-		development_cost = -0.05
+		production_efficiency = 0.05
 	}
     province = {
 		local_hostile_attrition = 1
 	}
 	chance = {
 		factor = 10
+        
+        # Urban Terrain
+        modifier = {
+            factor = 0
+            has_terrain = urban
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -693,6 +1302,19 @@ dark_iron = {
 	}
 	chance = {
 		factor = 10
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { region = region_burning_steppes }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -709,23 +1331,57 @@ saronite = {
 	}
 	chance = {
 		factor = 5
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { superregion = northrend_superregion }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
 mithril = {
 	color = { 0.54 0.40 0.31 }
 	modifier = {
-		land_forcelimit_modifier = 0.10
+		land_forcelimit_modifier = 0.05
 	}
     province = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
 		factor = 5
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { 
+                OR = {
+                    region = region_badlands
+                    region = region_burning_steppes
+                    region = region_eastern_plaguelands
+                    region = region_felwood
+                    region = region_searing_gorge
+                    region = region_thousand_needles
+                    region = region_tanaris
+                }
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
-# iron - already present
 
 thorium = {
 	color = { 0.93 0.98 0.98 }
@@ -737,27 +1393,59 @@ thorium = {
 	}
 	chance = {
 		factor = 5
+        
+        modifier = {
+            factor = 0
+            
+            NOT = { 
+                OR = {
+                    region = region_winterspring
+                    region = region_ungoro_crater
+                    region = region_swamp_of_sorrows
+                }
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
 fel_iron = {
 	color = { 0.11 0.17 0.4 }
 	modifier = {
-		land_forcelimit_modifier = 0.10
+		land_forcelimit_modifier = 0.05
 	}
     province = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 3
+		factor = 5
+        
 		modifier = {
-			factor = 5
-			continent = continent_outland
+			factor = 0
+			
+            NOT = { superregion = outland_superregion }
 		}
+        
+        modifier = {
+			factor = 2
+			
+            region = region_hellfire_peninsula
+		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
-# copper - already present
 
 khorium = {
 	color = { 0.85 0.46 0.15 }
@@ -767,12 +1455,31 @@ khorium = {
     province = {
 		local_tax_modifier = 0.1
 	}
+    
 	chance = {
-		factor = 3
+		factor = 5
+        
 		modifier = {
-			factor = 5
-			continent = continent_outland
+			factor = 0
+			
+            NOT = { superregion = outland_superregion }
 		}
+        
+        modifier = {
+			factor = 2
+			
+            OR = {
+                region = region_zangarmarsh
+                region = region_nagrand
+            }
+		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -785,11 +1492,20 @@ adamantite = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 3
+		factor = 5
+        
 		modifier = {
-			factor = 5
-			continent = continent_outland
+			factor = 0
+			
+            NOT = { superregion = outland_superregion }
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -802,11 +1518,20 @@ titanium = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 3
+		factor = 5
+        
 		modifier = {
-			factor = 5
-			continent = continent_eastern_kingdoms
+			factor = 0
+			
+            NOT = { superregion = northrend_superregion }
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -819,11 +1544,20 @@ elementium = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 3
+		factor = 1
+        
 		modifier = {
 			factor = 5
-			continent = continent_eastern_kingdoms
+			
+            region = region_twilight_highlands
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -836,11 +1570,20 @@ ghost_iron = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 3
+		factor = 5
+        
 		modifier = {
-			factor = 5
-			continent = continent_pandaria
+			factor = 0
+			
+            NOT = { superregion = pandaria_superregion }
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -854,10 +1597,49 @@ gemstones = {
 	}
 	chance = {
 		factor = 10
+        
+        modifier = {
+			factor = 0.5
+			
+            OR = {
+                superregion = northrend_superregion
+                superregion = eastern_kingdom_superregion
+				superregion = kul_tiras_superregion
+            }
+		}
+        modifier = {
+			factor = 0.75
+			
+            superregion = kalimdor_superregion
+		}
+        modifier = {
+			factor = 1.5
+			
+            OR = {
+                superregion = pandaria_superregion
+                superregion = broken_isles_superregion
+            }
+		}
+        modifier = {
+			factor = 3
+			
+            OR = {
+                superregion = zandalar_superregion
+                superregion = plunder_isle_superregion
+                #superregion = deepholm_superregion
+                superregion = vashjir_superregion
+                superregion = nazjatar_superregion
+            }
+		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
-# FOOD
 
 grain_silo = {
 	color = { 0.4 0.65 0.38 }
@@ -869,14 +1651,88 @@ grain_silo = {
 	}
 	chance = {
 		factor = 10
+        
+        modifier = {
+			factor = 0
+			
+            NOT = { development = 10 }
+		}
+        
+        modifier = {
+			factor = 0
+			OR = {
+				has_climate = arctic
+				has_terrain = desert
+				has_terrain = glacier
+				has_terrain = coastline
+                has_terrain = mountain
+				has_terrain = coastal_desert
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = hills
+				has_terrain = jungle
+                has_terrain = highlands
+				has_terrain = marsh
+			}
+		}
+		modifier = {
+			factor = 0.25
+			OR = {
+                has_terrain = drylands
+				has_terrain = savannah
+				has_terrain = steppe
+				has_climate = arid
+				has_climate = tropical
+				
+			}
+		}
+		modifier = {
+			factor = 0.35
+			has_winter = severe_winter
+		}
+		modifier = {
+			factor = 0.5
+			has_winter = normal_winter
+		}
+		modifier = {
+			factor = 1.5
+			has_terrain = farmlands
+		}
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Urban Terrain
+        modifier = {
+            factor = 0
+            has_terrain = urban
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
-# grain - rename to "Farms" in localization
-
-# wine - already present
-
-# fish - already present
 
 ale  = {
 	color = { 0.75 0.7 0.63 }
@@ -887,19 +1743,22 @@ ale  = {
 		local_unrest = -2
 	}
 	chance = {
-		factor = 10
+		factor = 1
+        
+        modifier = {
+            factor = 10
+            
+            has_terrain = urban
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
-#LEATHER/FURS:
-
-# fur - rename to "Hides" in localization
-
-#CLOTH
-
-# cloth - already present
-
-# silk - already present
 
 runecloth = {
 	color = { 0.18 0.57 0.8 }
@@ -910,7 +1769,40 @@ runecloth = {
 		local_unrest = -1
 	}
 	chance = {
-		factor = 10
+		factor = 5
+        
+        modifier = {
+			factor = 0
+            
+			NOT = { development = 10 }
+		}
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -923,11 +1815,48 @@ netherweave = {
 		local_unrest = -1
 	}
 	chance = {
-		factor = 10
+		factor = 5
+        
+        modifier = {
+			factor = 0
+            
+			NOT = { superregion = outland_superregion }
+		}
+        
+        modifier = {
+			factor = 0
+            
+			NOT = { development = 10 }
+		}
+        
+        # Ruined Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = desolate_waste
+                has_terrain = nethertouched
+                has_terrain = arcanetouched
+                has_terrain = feltouched
+            }
+        }
+        
+        # Unique Terrain
+        modifier = {
+            factor = 0
+            OR = {
+                has_terrain = underwater
+                has_terrain = underground
+            }
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
-#ARCHAEOLOGY/DIGSITES
 
 fossils = {
 	color = { 0.52 0.68 0.6 }
@@ -938,7 +1867,21 @@ fossils = {
 		province_trade_power_value = 0.1
 	}
 	chance = {
-		factor = 10
+		factor = 5
+        
+        # Urban
+        modifier = {
+            factor = 0
+            
+            has_terrain = urban
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -951,29 +1894,55 @@ artifacts = {
 		province_trade_power_value = 0.1
 	}
 	chance = {
-		factor = 10
+		factor = 5
+        
+        # Urban
+        modifier = {
+            factor = 0
+            
+            has_terrain = urban
+        }
+
+		modifier = {
+            factor = 5
+            
+            has_terrain = complex
+        }
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
 crypts = {
 	color = { 0.07 0.33 0.09 }
 	modifier = {
-		culture_conversion_cost = -0.1
+		land_forcelimit_modifier = 0.05
+		recover_army_morale_speed = 0.05
 	}
     province = {
-		province_trade_power_value = 0.1
+		local_manpower_modifier  = 0.5
 	}
 	chance = {
-		factor = 10
+		factor = 2
+        
 		modifier = {
-			factor = 2
+			factor = 5
 			culture_group = culture_group_undead
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
-
-#SPECIAL RESOURCES & OUTLAWS
 
 smugglers = {
 	color = { 0.33 0.56 0.38 }
@@ -985,40 +1954,103 @@ smugglers = {
 	}
 	chance = {
 		factor = 5
+        
+        modifier = {
+			factor = 0
+            
+			NOT = { has_port = yes }
+		}
+        
 		modifier = {
 			factor = 2
-			NOT = { development = 10 }
+			
+            OR = {
+                region = region_kul_tiras
+                region = region_westfall
+                region = region_stranglethorn_vale
+                region = region_dustwallow_marsh
+                region = region_thousand_needles
+                region = region_tanaris
+                region = region_uldum
+                region = region_kezan
+                region = region_grizzly_hills
+            }
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
 pirates = {
 	color = { 0.45 0.21 0.09 }
 	modifier = {
-		naval_forcelimit_modifier = 0.10
+		naval_forcelimit_modifier = 0.05
 	}
     province = {
 		local_ship_cost = -0.2
 	}
 	chance = {
 		factor = 5
+        
 		modifier = {
 			factor = 0
+            
 			NOT = { has_port = yes }
 		}
+        
+		modifier = {
+			factor = 2
+			
+            OR = {
+                region = region_kul_tiras
+                region = region_westfall
+                region = region_stranglethorn_vale
+                region = region_dustwallow_marsh
+                region = region_thousand_needles
+                region = region_tanaris
+                region = region_uldum
+                region = region_kezan
+                region = region_grizzly_hills
+            }
+		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
 workshops = {
 	color = { 0.33 0.56 0.38 }
 	modifier = {
-		land_forcelimit_modifier = 0.10
+		land_forcelimit_modifier = 0.05
 	}
     province = {
 		local_regiment_cost = -0.1
 	}
 	chance = {
-		factor = 10
+		factor = 5
+        
+        modifier = {
+			factor = 0
+            
+			NOT = { superregion = northrend_superregion }
+		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -1028,14 +2060,26 @@ arcane = {
 		all_power_cost = -0.05
 	}
     province = {
-		local_institution_spread = 0.2
+		local_institution_spread = 0.25
+		local_unrest = -5
+		local_defensiveness = 0.15
+		local_autonomy = 0.05
 	}
 	chance = {
-		factor = 10
+		factor = 20
+        
 		modifier = {
-			factor = 2
-			has_terrain = arcanetouched
+			factor = 0
+            
+			NOT = { has_terrain = arcanetouched }
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -1045,24 +2089,34 @@ fel = {
 		all_power_cost = -0.05
 	}
     province = {
-		local_institution_spread = 0.2
+		local_institution_spread = 0.25
+		local_unrest = 5
+		local_hostile_attrition = 5
+		local_hostile_movement_speed = 0.5
 	}
-	chance = {
-		factor = 10
+    
+    chance = {
+		factor = 20
+        
 		modifier = {
-			factor = 0.3
-			NOT = { has_terrain = feltouched }
+			factor = 0
+            
+			NOT = {
+                OR = { 
+                    has_terrain = feltouched
+                    has_terrain = nethertouched
+                }
+            }
 		}
-		modifier = {
-			factor = 1.2
-			has_terrain = nethertouched
-		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
-#SUPPLIES
-
-# naval_supplies - already present
 
 army_supplies = {
 	color = { 0.72 0.10 0.10 }
@@ -1074,37 +2128,86 @@ army_supplies = {
 	}
 	chance = {
 		factor = 10
+        
+        modifier = {
+			factor = 0.5
+            
+			development = 6
+		}
+        modifier = {
+			factor = 0.5
+            
+			development = 4
+		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
-#MOUNTS & WARBEASTS
-
 mounts = {
 	color = { 0.63 0.17 0.50 }
 	modifier = {
-		land_maintenance_modifier = -0.10
+		movement_speed = 0.05
 	}
     province = {
 		local_friendly_movement_speed = 0.25
 	}
 	chance = {
 		factor = 10
+        
+        modifier = {
+			factor = 0.5
+            
+			development = 6
+		}
+        modifier = {
+			factor = 0.5
+            
+			development = 4
+		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
 flying_mounts = {
 	color = { 0.45 0.47 0.09 }
 	modifier = {
-		land_maintenance_modifier = -0.10
+		movement_speed = 0.1
 	}
     province = {
 		local_friendly_movement_speed = 0.5
 	}
 	chance = {
 		factor = 10
+        
+        modifier = {
+			factor = 0.5
+            
+			development = 6
+		}
+        modifier = {
+			factor = 0.5
+            
+			development = 4
+		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-
 warbeasts = {
 	color = { 0.8 0.5 0.5 }
 	modifier = {
@@ -1115,23 +2218,50 @@ warbeasts = {
 	}
 	chance = {
 		factor = 10
+        
+        modifier = {
+			factor = 0.5
+            
+			development = 6
+		}
+        modifier = {
+			factor = 0.5
+            
+			development = 4
+		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
-# OTHER
+
 apexis = {
 	color = { 0.07 0.33 0.39 }
 	modifier = {
-		land_forcelimit_modifier = 0.10
+		land_forcelimit_modifier = 0.05
 	}
     province = {
 		regiment_recruit_speed = -0.25
 	}
 	chance = {
-		factor = 10
+		factor = 5
+        
 		modifier = {
 			factor = 0
-			NOT = { continent = continent_outland }
+            
+			NOT = { superregion = outland_superregion }
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -1144,11 +2274,19 @@ glowcap = {
 		regiment_recruit_speed = -0.25
 	}
 	chance = {
-		factor = 10
+		factor = 20
+        
 		modifier = {
 			factor = 0
-			NOT = { continent = continent_outland }
+			NOT = { region = region_zangarmarsh }
 		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
 	}
 }
 
@@ -1161,13 +2299,130 @@ moonwell = {
 		local_defensiveness = 0.15
 	}
 	chance = {
-		factor = 8
+		factor = 10
+        
 		modifier = {
 			factor = 0
-			owner = {
-				NOT = { culture_group = culture_group_darnassian }
-			}
+			
+            NOT = {
+                OR = {
+                    region = region_teldrassil
+                    region = region_moonglade
+                    region = region_darkshore
+                    region = region_ashenvale
+                    region = region_mount_hyjal
+                    region = region_azshara
+                    region = region_feralas
+                }
+            }
 		}
-		
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
+	}
+}
+
+mana_source = {
+	color = { 0.86 0.35 0.90 }
+	modifier = {
+		stability_cost_modifier = -0.15
+	}
+    province = {
+		global_unrest = -1
+	}
+	chance = {
+		factor = 10
+        
+		modifier = {
+			factor = 0
+			
+            NOT = {
+                region = region_suramar
+            }
+		}
+		modifier = {
+			factor = 2
+			
+            has_terrain = arcanetouched
+		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
+	}
+}
+
+arcwine = {
+	color = { 0.86 0.35 0.90 }
+	modifier = {
+		stability_cost_modifier = -0.10
+	}
+    province = {
+		local_tax_modifier = 0.1
+	}
+	chance = {
+		factor = 10
+        
+		modifier = {
+			factor = 0
+			
+            NOT = {
+                region = region_suramar
+            }
+		}
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
+	}
+}
+
+banana = {
+	color = { 0.98 0.95 0.05 }
+	modifier = {
+		global_unrest = -1
+	}
+    province = {
+		local_production_efficiency = 0.1
+	}
+	chance = {
+		factor = 1
+        
+        # Block Shadowlands
+        modifier = {
+            factor = 0
+            
+            continent = continent_shadowlands
+        }
+	}
+}
+
+anima = {
+	color = { 0.3 0.5 0.55 }
+	modifier = {
+		global_unrest = -1
+	}
+    province = {
+		local_development_cost = -0.1
+	}
+	chance = {
+		factor = 1
+        
+        # Block outside of Shadowlands
+        modifier = {
+            factor = 0
+            
+            NOT = { continent = continent_shadowlands }
+        }
 	}
 }

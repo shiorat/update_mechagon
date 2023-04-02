@@ -216,7 +216,9 @@ estate_peasants_build_tavern_in_y = {
 	can_select = {
 		any_owned_province = {
 			is_state_core = root
-			NOT = { has_building = wow_tavern }
+			NOT = { has_building = wow_tavern_1 }
+            NOT = { has_building = wow_tavern_2 }
+            NOT = { has_building = wow_tavern_3 }
 			num_free_building_slots = 1
 		}
 	}
@@ -228,7 +230,9 @@ estate_peasants_build_tavern_in_y = {
 				any_owned_province = {
 					is_state_core = root
 					base_tax = 10
-					NOT = { has_building = wow_tavern }
+                    NOT = { has_building = wow_tavern_1 }
+                    NOT = { has_building = wow_tavern_2 }
+                    NOT = { has_building = wow_tavern_3 }
                     num_free_building_slots = 1
 				}
 			}
@@ -238,7 +242,9 @@ estate_peasants_build_tavern_in_y = {
 			any_owned_province = {
 				is_state_core = root
 				base_tax = 20
-				NOT = { has_building = wow_tavern }
+                NOT = { has_building = wow_tavern_1 }
+                NOT = { has_building = wow_tavern_2 }
+                NOT = { has_building = wow_tavern_3 }
                     
 			}
 		}
@@ -253,7 +259,9 @@ estate_peasants_build_tavern_in_y = {
 		random_owned_province = {
 			limit = {
 				is_state_core = root
-				NOT = { has_building = wow_tavern }
+                NOT = { has_building = wow_tavern_1 }
+                NOT = { has_building = wow_tavern_2 }
+                NOT = { has_building = wow_tavern_3 }
                 num_free_building_slots = 1
 			}
 			save_event_target_as = agenda_province
@@ -262,7 +270,9 @@ estate_peasants_build_tavern_in_y = {
 			limit = {
 				is_state_core = root
 				base_tax = 10
-				NOT = { has_building = wow_tavern }
+                NOT = { has_building = wow_tavern_1 }
+                NOT = { has_building = wow_tavern_2 }
+                NOT = { has_building = wow_tavern_3 }
                 num_free_building_slots = 1
 			}
 			save_event_target_as = agenda_province
@@ -271,7 +281,9 @@ estate_peasants_build_tavern_in_y = {
 			limit = {
 				is_state_core = root
 				base_tax = 20
-				NOT = { has_building = wow_tavern }
+                NOT = { has_building = wow_tavern_1 }
+                NOT = { has_building = wow_tavern_2 }
+                NOT = { has_building = wow_tavern_3 }
                 num_free_building_slots = 1
 			}
 			save_event_target_as = agenda_province
@@ -287,7 +299,11 @@ estate_peasants_build_tavern_in_y = {
 	}
     task_requirements = {
 		event_target:agenda_province = {
-            has_building = wow_tavern
+            OR = {
+                has_building = wow_tavern_1
+                has_building = wow_tavern_2
+                has_building = wow_tavern_3
+            }
         }
     }
     task_completed_effect = {
@@ -360,61 +376,63 @@ estate_peasants_increase_autonomy_in_province_x = {
 				NOT = { has_province_modifier = autonomy_decreased }
 			}
 			save_event_target_as = agenda_province
-
-			if = {
-				limit = {
-					local_autonomy = 60
-				}
-				root = {
-					set_variable = {
-						which = estate_peasants_increase_autonomy_in_province_x_var
-						value = 5
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					local_autonomy = 45
-				}
-				root = {
-					set_variable = {
-						which = estate_peasants_increase_autonomy_in_province_x_var
-						value = 4
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					local_autonomy = 30
-				}
-				root = {
-					set_variable = {
-						which = estate_peasants_increase_autonomy_in_province_x_var
-						value = 3
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					local_autonomy = 15
-				}
-				root = {
-					set_variable = {
-						which = estate_peasants_increase_autonomy_in_province_x_var
-						value = 2
-					}
-				}
-			}
-			else = {
-				root = {
-					set_variable = {
-						which = estate_peasants_increase_autonomy_in_province_x_var
-						value = 1
-					}
-				}
-			}
-			choose_random_development_bonus_effect = yes
-		}
+            choose_random_development_bonus_effect = yes
+        }
+        event_target:agenda_province = {
+            if = {
+                limit = {
+                    local_autonomy = 60
+                }
+                root = {
+                    set_variable = {
+                        which = estate_peasants_increase_autonomy_in_province_x_var
+                        value = 5
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    local_autonomy = 45
+                }
+                root = {
+                    set_variable = {
+                        which = estate_peasants_increase_autonomy_in_province_x_var
+                        value = 4
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    local_autonomy = 30
+                }
+                root = {
+                    set_variable = {
+                        which = estate_peasants_increase_autonomy_in_province_x_var
+                        value = 3
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    local_autonomy = 15
+                }
+                root = {
+                    set_variable = {
+                        which = estate_peasants_increase_autonomy_in_province_x_var
+                        value = 2
+                    }
+                }
+            }
+            else = {
+                root = {
+                    set_variable = {
+                        which = estate_peasants_increase_autonomy_in_province_x_var
+                        value = 1
+                    }
+                }
+            }
+            choose_random_development_bonus_effect = yes
+        }
 	}
 	on_invalid = {
 		event_target:agenda_province = {
@@ -429,41 +447,59 @@ estate_peasants_increase_autonomy_in_province_x = {
 			OR = {
 				NOT = { owned_by = root }
 				religion_group = root
-				AND = {
-					root = {
-						check_variable = {
-							which = estate_peasants_increase_autonomy_in_province_x_var
-							value = 5
+				custom_trigger_tooltip = {
+					tooltip = estate_peasants_increase_autonomy_in_province_x_tooltip
+					hidden_trigger = {
+						if = {
+							limit = {
+								check_variable = {
+									which = estate_priests_increase_autonomy_in_province_x_var
+									value = 5
+								}
+							}
+							event_target:agenda_province = {
+								NOT = { local_autonomy = 50 }
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									which = estate_priests_increase_autonomy_in_province_x_var
+									value = 4
+								}
+							}
+							event_target:agenda_province = {
+								NOT = { local_autonomy = 35 }
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									which = estate_priests_increase_autonomy_in_province_x_var
+									value = 3
+								}
+							}
+							event_target:agenda_province = {
+								NOT = { local_autonomy = 20 }
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									which = estate_priests_increase_autonomy_in_province_x_var
+									value = 2
+								}
+							}
+							event_target:agenda_province = {
+								NOT = { local_autonomy = 5 }
+							}
+						}
+						else = {
+							hidden_trigger = {
+								always = no
+							}
 						}
 					}
-					NOT = { local_autonomy = 50 }
-				}
-				AND = {
-					root = {
-						check_variable = {
-							which = estate_peasants_increase_autonomy_in_province_x_var
-							value = 4
-						}
-					}
-					NOT = { local_autonomy = 35 }
-				}
-				AND = {
-					root = {
-						check_variable = {
-							which = estate_peasants_increase_autonomy_in_province_x_var
-							value = 3
-						}
-					}
-					NOT = { local_autonomy = 20 }
-				}
-				AND = {
-					root = {
-						check_variable = {
-							which = estate_peasants_increase_autonomy_in_province_x_var
-							value = 2
-						}
-					}
-					NOT = { local_autonomy = 5 }
 				}
 			}
 		}

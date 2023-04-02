@@ -1,0 +1,31 @@
+wwu_arcforge_column_1 = { 
+	slot = 1
+	generic = no
+	ai = yes
+    has_country_shield = yes
+    
+	potential = {
+		tag = ARF
+	} 
+    
+    wwu_ready_to_mechanization = { 
+		icon = mission_ancient_sword
+        position = 1
+		completed_by = 618.12.31
+    
+		trigger = {
+                {religion = technomancy}
+		AND
+		{absolutism = 50}
+		}
+		effect = {
+		 country_event = { 
+    			id = wwu_arcgorged.1
+    			days = 10
+				 }	
+		}
+	}
+}
+wwu_arcforge_column_2 = {}
+wwu_arcforge_column_3 = {}
+wwu_arcforge_column_4 = {}

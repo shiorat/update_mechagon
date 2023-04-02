@@ -1,0 +1,12 @@
+﻿l_french:
+ wwu_druidism.1.title: "Le druidisme se répand"
+ wwu_druidism.1.desc: "Bien que notre foi appartienne à Elune, beaucoup de nos terres pratiquent les traditions du druidisme. Cette foi est acceptée comme faisant partie de la société des elfes de nuit, mais parfois il y a ceux qui tombent trop profondément dans les idéaux du druidisme, et rejettent le pouvoir d'Elune."
+ wwu_druidism.1.option.a: "Oh, ma chère..."
+ wwu_druidism.2.title: "Archdruid [Root.Monarch.GetName]?"
+ wwu_druidism.2.desc: "Un groupe de druides ont fait connaissance de [Root.Monarch.GetName], et ont commencé à influencer leurs croyances. [Root.Monarch.GetName] souhaite maintenant embrasser pleinement le druidisme et tout ce qu'il implique. Bien que noble, un tel acte risquerait d'être instable de la part de ceux qui croient en la suprématie d'Elune."
+ wwu_druidism.2.option.a: "[Root.Monarch.GetName] sSalle adopter le druidisme"
+ wwu_druidism.2.option.b: "Convince [Root.Monarch.GetName] pour abandonner leur souhait"
+ DRUID_RULER_TT: "Devenir un §YDruidique§! règle dans un §YElune§! nation débloquera des décisions uniques."
+ wwu_druidism.3.title: "Le cauchemar émeraude"
+ wwu_druidism.3.desc: "Notre utilisation du rêve émeraude à nos propres fins a permis au cauchemar de se propager sans retenue. Notre gestion laxiste l'a provoquée à s'infiltrer dans notre monde, et elle a commencé à affecter nos terres."
+ wwu_druidism.3.option.a: "Des malédictions!"

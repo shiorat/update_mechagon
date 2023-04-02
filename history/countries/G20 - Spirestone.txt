@@ -1,20 +1,31 @@
-discover_home_continent = yes
-# Spirestone 
-government 			= tribal
+government = tribal
 add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10 
 technology_group 	= tech_ogre
-religion			= religion_primitive
-primary_culture 	= culture_spirestone
+religion			= arcane
+primary_culture 	= culture_ogre
 capital 			= 3054
 
-622.1.1 = { 
-monarch = { 
-     name = "Omokk" 
-     dynasty = "Spirestone" 
-		adm = 2
-		dip = 2
+540.1.1 = {
+	monarch = {
+		name = "Turok"
+		dynasty = "the Stout"
+		birth_date = 512.1.1
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Gogseb"
+		dynasty = "the Careful"
+		birth_date = 507.1.1
+		adm = 1
+		dip = 1
 		mil = 3
- 	}  
- } 
-
+		female = yes
+	}
+}

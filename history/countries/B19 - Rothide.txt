@@ -1,22 +1,33 @@
-discover_home_continent = yes
-# Rothide
-government 			= tribal
-add_government_reform = primitive_clan_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
 technology_group 	= tech_gnoll
-religion			= religion_earth
-primary_culture 	= culture_rothide
+religion			= earth
+primary_culture 	= culture_undead_gnoll
 capital 			= 2037
 
-546.1.1 = { 
-monarch = { 
-     name = "Snarlmane" 
-     dynasty = "Rothide" 
-		adm = 3
-		dip = 4
-		mil = 3
- 	} 
- } 
+540.1.1 = {
+	monarch = {
+		name = "Wendal"
+		dynasty = "Rothide"
+		birth_date = 512.1.1
+		adm = 1
+		dip = 5
+		mil = 5
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Krogarl"
+		dynasty = "Rothide"
+		birth_date = 506.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
 
-622.1.1 = { religion = religion_the_damned }
+622.1.1 = { religion = cult_of_the_damned }
 

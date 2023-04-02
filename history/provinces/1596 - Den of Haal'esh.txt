@@ -1,42 +1,41 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = A36
-controller = A36
-add_core = A36
+culture = culture_orc
+religion = shamanism
 
-base_tax = 3
-base_production = 3
-base_manpower = 4
-
-culture = culture_shattered_hand
-religion = religion_ancestral
-
-trade_goods = army_supplies
 hre = no
+trade_goods = unknown
+
+600.1.1 = {
+    is_city = yes
+
+    owner = B77
+    controller = B77
+    add_core = B77
+
+    base_tax = 3
+    base_production = 3
+    base_manpower = 4
+
+    culture = culture_fallen_arrakoa
+    religion = shadow
 
 
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A36
-controller = A36
-add_core = A36
-
-base_tax = 3
-base_production = 3
-base_manpower = 4
-
-culture = culture_shattered_hand
-religion = religion_ancestral
-
-trade_goods = army_supplies
-hre = no
-
-}
-592.1.1 = {
-	religion = religion_fel
+    trade_goods = army_supplies
 }
 
+631.1.1 = {
+    owner = B92
+    controller = B92
+    add_core = B92
+
+    culture = culture_fallen_arrakoa
+    religion = shadow
+}

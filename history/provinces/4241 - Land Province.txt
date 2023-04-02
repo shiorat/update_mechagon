@@ -1,0 +1,17 @@
+is_city = yes
+owner = SUR
+controller = SUR
+add_core = SUR
+
+base_tax = 2
+base_production = 4
+base_manpower = 1
+
+culture = culture_nightborne
+religion = arcane
+
+hre = no
+trade_goods = arcwine
+
+
+

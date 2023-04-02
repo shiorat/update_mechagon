@@ -1,20 +1,21 @@
-discover_home_continent = yes
-# Gormali Clan
-government 			= tribal
+government = tribal
 add_government_reform = ancient_clan_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10 
 technology_group 	= tech_mogu
-religion			= religion_titan_corrupt
-primary_culture 	= culture_gormali
+religion			= anima
+primary_culture 	= culture_mogu
 capital 			= 2071
 
-546.1.1 = { 
-	monarch = { 
-		name = "Gormal" 
-		dynasty = "Gormali" 
+500.1.1 = { 
+    monarch = { 
+        name = "Qonang" 
+        dynasty = "Zungfe" 
+        birth_date = 493.1.1
 		adm = 3
-		dip = 3
-		mil = 3
-	} 
+		dip = 2
+		mil = 5
+ 	} 
 } 
 

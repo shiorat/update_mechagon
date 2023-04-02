@@ -1,15 +1,21 @@
-discover_home_continent = yes
+
 # Cenarion Circle
 government 			= theocracy
 add_government_reform = druidic_circle_reform
 mercantilism 			= 10
-technology_group 		= tech_darnassian
-religion				= religion_druidic
-primary_culture 		= culture_cenarion
-add_accepted_culture 	= culture_sentinel
-capital 				= 2037
-historical_friend = H01
+technology_group 		= tech_night_elf
+religion				= druidism
+secondary_religion = elune
+primary_culture 		= culture_night_elf
+capital 				= 1326
+
+historical_friend = SRS
 historical_friend = H03
+historical_friend = A95
+historical_friend = FRS
+historical_friend = H01
+historical_friend = A94
+
 546.1.1 = { 
 	monarch = { 
 		name = "Malfurion" 
@@ -18,6 +24,18 @@ historical_friend = H03
 		dip = 6
 		mil = 6	
 	} 
+    
+    set_ruler_flag = ruler_portrait_malfurion
+	set_ruler_flag = druid_personality
+    
+    setup_spellcaster_history = {
+        APTITUDE = 4
+        FINESSE = 4
+        CONCENTRATION = 5
+        MANA = 5
+        nature = yes
+    }
+    
 	add_country_modifier = {
 		name = dreaming
 		duration = -1

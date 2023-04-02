@@ -9,10 +9,18 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-culture = culture_kalu_ak
-religion = religion_primitive
+culture = culture_tuskarr
+religion = primitive
 
-trade_goods = grain
 hre = no
+trade_goods = grain
 
 
+626.1.1 = { 
+	owner = B11
+	controller = B11
+	add_core = B11
+	add_core = B81
+	culture = culture_kvaldir
+	religion = corrupt_titan_worship 
+}

@@ -1,0 +1,8 @@
+# Highmountain - Rivermane
+dependency = {
+	subject_type = "vassal"
+	first = I01
+	second = I03
+	start_date = 546.1.1
+	end_date = 632.1.1
+}

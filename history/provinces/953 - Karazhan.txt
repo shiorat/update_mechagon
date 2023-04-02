@@ -5,51 +5,48 @@ owner = P59
 controller = P59
 add_core = P59
 
-base_tax = 7
-base_production = 7
-base_manpower = 7
+base_tax = 6
+base_production = 4
+base_manpower = 4
 
-culture = culture_azerothian
-religion = religion_arcane
+culture = culture_stormwindian
+religion = arcane
 
-trade_goods = arcane
 hre = no
+trade_goods = arcane
 
 center_of_trade = 1
 
+add_building = wow_fort_1
+
+# Rise of the Horde
 546.1.1 = {
+    owner = P59
+    controller = P59
+    add_core = P59
 
-is_city = yes
-
-owner = P59
-controller = P59
-add_core = P59
-
-base_tax = 7
-base_production = 7
-base_manpower = 7
-
-culture = culture_azerothian
-religion = religion_arcane
-
-trade_goods = arcane
-hre = no
-
-center_of_trade = 1
-}
-592.1.1 = { 
-	religion = religion_fel
+    culture = culture_stormwindian
+    religion = arcane
 }
 
-# Fall of Stormwind
-597.1.1 = { 
-    is_city = no
+# Second War
+598.1.1 = {
+    owner = U03
+    controller = U03
+    add_core = U03
+    
+    culture = culture_demonspawn
+    religion = fel
+}
 
-owner = B92
-add_core = B92
-controller = B92
+# Rise of the Lich Kng
+605.1.1 = {
+    owner = P59
+    controller = P59
+    add_core = P59
 
-    remove_core = P59
+    culture = culture_stormwindian
+    religion = arcane
 }
 
 # The Burning Crusade

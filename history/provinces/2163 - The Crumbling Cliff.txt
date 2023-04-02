@@ -4,39 +4,34 @@ is_city = yes
 owner = B16
 controller = B16
 add_core = B16
-add_core = A04
+add_core = RRG
 
 base_tax = 1
 base_production = 1
 base_manpower = 1
 
-culture = culture_shadowhide
-religion = religion_earth
-trade_goods = copper
+culture = culture_gnoll
+religion = earth
+
 hre = no
-
-
-
-546.1.1 = {
-
-is_city = yes
-
-owner = B16
-controller = B16
-add_core = B16
-add_core = A04
-
-base_tax = 1
-base_production = 1
-base_manpower = 1
-
-culture = culture_shadowhide
-religion = religion_earth
 trade_goods = copper
-hre = no
 
-}
-600.1.1 = { 
-	add_core = A04
+# Second War
+598.1.1 = {
+    owner = U03
+    controller = U03
+    add_core = U03
+    
+    culture = culture_fel_orc
+    religion = fel
 }
 
+# Rise of the Lich Kng
+605.1.1 = {
+	owner = B16
+    controller = B16
+    add_core = B16
+    
+    culture = culture_gnoll
+    religion = earth
+}

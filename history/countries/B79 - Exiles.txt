@@ -1,10 +1,46 @@
-discover_home_continent = yes
-# Exiles
-government 			= tribal
+government = tribal
 add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 mercantilism 		= 10
-technology_group 	= tech_arrakoa
-religion			= religion_terokk
-primary_culture 	= culture_exiles
+technology_group 	= tech_fallen_arakkoa
+religion			= shadow
+primary_culture 	= culture_fallen_arrakoa
 capital 			= 2037
+
+540.1.1 = {
+	monarch = {
+		name = "Kuope"
+		dynasty = "Murkfall"
+		birth_date = 461.1.1
+		adm = 0
+		dip = 4
+		mil = 2
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 1
+        FINESSE = 1
+        CONCENTRATION = 2
+        MANA = 0
+        shadow = yes
+    }
+}
+590.1.1 = {
+	monarch = {
+		name = "Arokshuh"
+		dynasty = "Murkfall"
+		birth_date = 533.1.1
+		adm = 0
+		dip = 3
+		mil = 2
+		female = yes
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 1
+        FINESSE = 1
+        CONCENTRATION = 1
+        MANA = 1
+        shadow = yes
+    }
+}
 

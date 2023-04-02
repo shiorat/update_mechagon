@@ -4,13 +4,19 @@ interaction = {
 	cooldown_months = 60
 
     trigger = {
-        crown_land_share = 0.1
+        crown_land_share = 10
         NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		hidden_trigger = { has_any_estates = yes }
     }
 	effect = {
-		add_years_of_estate_land_income = 1.5
+        if = { 
+            limit = { has_global_flag = enable_estate_interaction_logging }
+            log = "DEBUG - [Root.GetName] - sale_of_titles"
+        }
+        
+		add_years_of_estate_land_income = 2.0
+
 		custom_tooltip = ESTATES_SALE_OF_TITLES_DESC
 		give_estate_land_share_gigantic = { estate = all }
 		add_estate_loyalty = {
@@ -27,7 +33,7 @@ interaction = {
 		set_country_flag = recent_land_distribution
 	}
 	ai_will_do = {
-		factor = 25
+		factor = 50
 		modifier = {
 			factor = 0
 			OR = {
@@ -39,7 +45,7 @@ interaction = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.5
 			OR = {
 				NOT = { crown_land_share = 35 }
 				AND = {
@@ -82,7 +88,7 @@ interaction = {
 			num_of_loans = 20
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.5
 			NOT = {
 				estate_loyalty = {
 					estate = all
@@ -91,7 +97,7 @@ interaction = {
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			crown_land_share = 80
 		}
 		modifier = {
@@ -134,12 +140,17 @@ interaction = {
 	cooldown_months = 60
 
     trigger = {
+        has_agenda_estates = yes
         NOT = { has_any_active_estate_agenda = yes }
-		hidden_trigger = { has_any_estates = yes }
 		NOT = { has_government_attribute = blocked_call_diet }
     }
 
     effect = {
+        if = { 
+            limit = { has_global_flag = enable_estate_interaction_logging }
+            log = "DEBUG - [Root.GetName] - summon_the_council"
+        }
+        
         custom_tooltip = ESTATES_SUMMON_THE_COUNCIL_DESC
         hidden_effect = {
 	        country_event = { id = estate_system.2 }
@@ -222,52 +233,58 @@ interaction = {
         is_at_war = no
     }
     effect = {
+        if = { 
+            limit = { has_global_flag = enable_estate_interaction_logging }
+            log = "DEBUG - [Root.GetName] - seize_land"
+        }
+        
         custom_tooltip = ESTATES_SEIZE_LAND_DESC
-        take_estate_land_share_massive = { estate = all }
+        
+        seize_land_from_estate = { ESTATE = clergy      AMOUNT = -3     has_exception = yes }
+        seize_land_from_estate = { ESTATE = traders     AMOUNT = -3     has_exception = yes }
+        seize_land_from_estate = { ESTATE = nobility    AMOUNT = -3     has_exception = yes }
+        seize_land_from_estate = { ESTATE = peasants    AMOUNT = -5     has_exception = yes }
+        seize_land_from_estate = { ESTATE = tribals     AMOUNT = -5     has_exception = yes }
+        seize_land_from_estate = { ESTATE = slaves      AMOUNT = -5     has_exception = yes }
+        
+        seize_land_from_estate = { ESTATE = adventuring_guild   AMOUNT = -3     has_exception = yes }
+        seize_land_from_estate = { ESTATE = mercantile_guild    AMOUNT = -3     has_exception = yes }
+        seize_land_from_estate = { ESTATE = warriors_guild      AMOUNT = -3     has_exception = yes }
+        seize_land_from_estate = { ESTATE = religious_order     AMOUNT = -3     has_exception = yes }
+        seize_land_from_estate = { ESTATE = criminal_syndicate  AMOUNT = -3     has_exception = yes }
+        
+        seize_land_from_estate = { ESTATE = reliquary           AMOUNT = -5     has_exception = yes }
+        seize_land_from_estate = { ESTATE = explorers_league    AMOUNT = -5     has_exception = yes }
+        seize_land_from_estate = { ESTATE = invention           AMOUNT = -5     has_exception = yes }
+        
+        seize_land_from_estate = { ESTATE = legion          AMOUNT = -5 }
+        seize_land_from_estate = { ESTATE = abyssal_maw     AMOUNT = -5 }
+        seize_land_from_estate = { ESTATE = firelands       AMOUNT = -5 }
+        seize_land_from_estate = { ESTATE = deepholm        AMOUNT = -5 }
+        seize_land_from_estate = { ESTATE = skywall         AMOUNT = -5 }
+        seize_land_from_estate = { ESTATE = loa             AMOUNT = -5 }
+        seize_land_from_estate = { ESTATE = dragonflight    AMOUNT = -5 }
+        seize_land_from_estate = { ESTATE = underling       AMOUNT = -5 }
+        
 		custom_tooltip = SEPERATOR_TOOLTIP
 		
-		if = {
-			limit = {
-				has_country_flag = recent_land_seizure
-			}
-			clr_country_flag = recent_land_seizure
-		}
-		set_country_flag = recent_land_seizure
-
-        add_estate_loyalty = {
-            estate = all
-            loyalty = -20
-            short = yes
-        }
 		custom_tooltip = seize_land_rebels_tt
-		if = {
-			limit = {
-				NOT = {
-					estate_loyalty = {
-						estate = all
-						loyalty = 50
-					}
-				}
-				estate_loyalty = {
-					estate = all
-					loyalty = 30
-				}
-			}
-		}
-		else_if = { 
-			limit = {
-				NOT = {
-					estate_loyalty = {
-						estate = all
-						loyalty = 30
-					}
-				}
-			}
-			spawn_rebels_seize_land_switch = yes
-		}
+        
+		seize_land_effect = yes
+        
+        hidden_effect = {
+            if = {
+                limit = {
+                    has_country_flag = recent_land_seizure
+                }
+                clr_country_flag = recent_land_seizure
+            }
+            set_country_flag = recent_land_seizure
+        }
 	}
 	ai_will_do = {
-		factor = 25
+		factor = 100.0
+        
 		modifier = {
 			factor = 0
 			crown_land_share = 30
@@ -347,7 +364,7 @@ interaction = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0
 			NOT = {
 				estate_loyalty = {
 					estate = all
@@ -356,84 +373,64 @@ interaction = {
 			}
 		}
 		modifier = {
-			factor = 0.5
-			NOT = {
-				estate_loyalty = {
-					estate = all
-					loyalty = 40
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = {
-				estate_loyalty = {
-					estate = all
-					loyalty = 35 # Estate is almost disloyal
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = {
-				estate_loyalty = {
-					estate = all
-					loyalty = 30 # Estate is basically disloyal
-				}
-			}
-		}
-		modifier = {
 			factor = 0.75
 			NOT = { num_of_owned_areas = 2 }
+		}
+        modifier = {
+			factor = 0
+			NOT = { army_size_percentage = 0.8 }
 		}
 	}
 }
 
 interaction = {
-    key = establish_guild
+    key = building_management
     random_seed = random
-	cooldown_months = 1
+    cooldown_months = 1
 
     trigger = {
-        total_development = 100
-		treasury = 1000
-		has_any_disaster = no
+        ai = no
     }
 
     effect = {
-		add_treasury = -1000
-        custom_tooltip = establish_guild_tooltip
-        
-        hidden_effect = {
-            clr_country_flag = has_estate_adventuring_guild
-            clr_country_flag = has_estate_mercantile_guild
-            clr_country_flag = has_estate_warriors_guild
-            clr_country_flag = has_estate_religious_order
-            clr_country_flag = has_estate_criminal_syndicate
+        if = { 
+            limit = { has_global_flag = enable_estate_interaction_logging }
+            log = "DEBUG - [Root.GetName] - building_management"
         }
 
-		country_event = { 
-            id = estate_system.4 
-        }
+        country_event = { id = wwu_building_manager.1 }
     }
 	ai_will_do = {
-		factor = 0 # AI won't do agendas
+		factor = 0
 	}
 }
 
 interaction = {
     key = seek_advisor
     random_seed = random
-	cooldown_months = 12
-
+    cooldown_months = 12
+    
     trigger = {
-		has_any_disaster = no
+        prestige = 0
     }
 
     effect = {
-		country_event = { 
-            id = estate_system.10
+        if = { 
+            limit = { has_global_flag = enable_estate_interaction_logging }
+            log = "DEBUG - [Root.GetName] - seek_advisor"
         }
+        
+        add_prestige = -10
+        
+        add_estate_influence_modifier = {
+            estate = all
+            desc = EST_VAL_ESTATE_ADVISOR
+            duration = 7300
+            influence = 5
+            short = yes
+        }
+        
+		country_event = { id = estate_system.10 }
     }
 	ai_will_do = {
 		factor = 0

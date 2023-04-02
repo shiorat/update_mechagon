@@ -1,21 +1,44 @@
-discover_home_continent = yes
+    
 # Theramore Deserters
 government 			= republic
 add_government_reform = noble_republic_reform
 
 mercantilism 		= 10 
 technology_group 	= tech_human
-religion			= religion_church_of_the_light
+religion			= holy_light
 primary_culture 	= culture_kul_tiran
 capital = 2962
 
+540.1.1 = {
+	monarch = {
+		name = "Amina"
+		dynasty = "Jacken"
+		birth_date = 488.1.1
+		adm = 1
+		dip = 3
+		mil = 0
+		female = yes
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Bernie"
+		dynasty = "Jacken"
+		birth_date = 528.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+
 622.1.1 = { 
-monarch = { 
-     name = "Balos" 
-     dynasty = "Jacken" 
+    monarch = { 
+        name = "Balos" 
+        dynasty = "Jacken" 
 		adm = 1
 		dip = 1
 		mil = 4 
  	} 
- } 
+} 
 

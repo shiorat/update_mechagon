@@ -1,0 +1,31 @@
+
+# Flayer Point
+government 			= republic
+add_government_reform = despotic_republic_reform
+mercantilism 		= 10
+technology_group 	= tech_tauren
+religion			= tauren_shamanism
+primary_culture 	= culture_tauren
+capital 			= 3686
+
+540.1.1 = {
+	monarch = {
+		name = "Porgam"
+		dynasty = "Runehorn"
+		birth_date = 513.1.1
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Vanrne"
+		dynasty = "Runehorn"
+		birth_date = 510.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+

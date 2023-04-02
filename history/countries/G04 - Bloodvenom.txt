@@ -1,21 +1,43 @@
-discover_home_continent = yes
+
 # Bloodvenom 
 government 			= theocracy
 add_government_reform = elemental_cult_reform
 mercantilism 		= 10
-technology_group 	= tech_elemental
-religion			= religion_fel
+technology_group 	= tech_dryad
+religion			= fel
 primary_culture 	= culture_ooze
 capital 			= 2037
 
+540.1.1 = {
+	monarch = {
+		name = "Lyhia"
+		dynasty = "Bloodfury"
+		birth_date = 485.1.1
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Neteuc"
+		dynasty = "Bloodfury"
+		birth_date = 529.1.1
+		adm = 0
+		dip = 4
+		mil = 5
+	}
+}
+
 631.1.1 = { 
-monarch = { 
-     name = "Winna" 
-     dynasty = "Hazzard" 
+    monarch = { 
+        name = "Winna" 
+        dynasty = "Bloodfury" 
 		adm = 3
 		dip = 2
 		mil = 3
-     female = yes
+        female = yes
+        birth_date = 550.1.1
  	} 
 }  
 

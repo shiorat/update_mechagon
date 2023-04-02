@@ -1,0 +1,463 @@
+wwu_scourge_of_lordaeron_column_1 = { 
+	slot = 1
+	generic = no
+	ai = yes
+    has_country_shield = yes
+    
+	potential = {
+		tag = P52
+	} 
+    
+    wwu_remains_of_kelthuzad = { 
+		icon = mission_kelthuzad
+		position = 3
+		completed_by = 618.12.31
+        
+		required_missions = { wwu_crush_lordaeron } 
+                		
+		trigger = {
+            # Andorhal
+            688 = {
+                owned_by = ROOT
+            }
+		}
+		provinces_to_highlight = {
+            province_id = 688
+            NOT = { owned_by = ROOT }
+        }
+		effect = {
+			add_country_modifier = {
+                name = remains_of_kelthuzad
+                duration = -1
+            }
+            
+			SVH = {
+				country_event = { id = silver_hand.4 }
+			}
+			every_owned_province = {
+				limit = {
+					owned_by = SVH
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+    
+    wwu_foundations_of_deatholme = {
+		icon = mission_necropolis
+		position = 5
+		completed_by = 618.12.31
+        
+		required_missions = { wwu_into_the_realm_eternal } 
+        
+		trigger = {
+            # Thas'alah Roots
+			1039 = { 
+                owned_by = ROOT 
+            }
+		}
+		provinces_to_highlight = {
+            province_id = 1039
+        }
+		effect = {
+			1039 = {
+                owner = {
+                    country_event = { id = wwu_sunwell.2 }
+                }
+            }
+		}
+	}
+}
+
+wwu_scourge_of_lordaeron_column_2 = { 
+	slot = 2
+	generic = no
+	ai = yes
+    has_country_shield = yes
+    
+	potential = {
+		tag = P52
+	} 
+    
+    wwu_lordaeron_succession = { 
+		icon = mission_lordaeron_crown
+		position = 1
+		completed_by = 618.12.31
+        
+		required_missions = { } 
+        
+		trigger = {
+            if = {
+                limit = {
+                    exists = A08
+                }
+                exists = A08
+            }
+            else = {
+                region_tirisfal_glades = {
+                    owned_by = ROOT
+                }
+                region_eastern_plaguelands = {
+                    owned_by = ROOT
+                }
+                region_western_plaguelands = {
+                    owned_by = ROOT
+                }
+            }
+		}
+		effect = {
+            if = {
+                limit = {
+                    exists = A08
+                }
+                hidden_effect = {
+                    every_owned_province = {
+                        limit = {
+                            owned_by = A08
+                        }
+                        add_permanent_claim = ROOT
+                    }
+                }
+                
+                # Lordaeron
+                A08 = {
+                    country_event = { id = wwu_lordaeron_succession.1 }
+                }
+                
+                region_eastern_plaguelands = {
+                    add_permanent_claim = ROOT
+                }
+                region_western_plaguelands = {
+                    add_permanent_claim = ROOT
+                }
+                region_tirisfal_glades = {
+                    add_permanent_claim = ROOT
+                }
+                area_silverpine_fields = {
+                    add_permanent_claim = ROOT
+                }
+                area_silverpine_crossing = {
+                    add_permanent_claim = ROOT
+                }
+                area_durnholde_keep = {
+                    add_permanent_claim = ROOT
+                }
+                area_tarren_mill = {
+                    add_permanent_claim = ROOT
+                }
+                
+                # Show the Plaguewood ambient objects
+                hidden_effect = {
+                    show_ambient_object = big_orange_mushroom_01
+                    show_ambient_object = big_orange_mushroom_02
+                    show_ambient_object = big_orange_mushroom_03
+                    show_ambient_object = big_orange_mushroom_04
+                    show_ambient_object = big_orange_mushroom_05
+                    show_ambient_object = big_orange_mushroom_06
+                    
+                    show_ambient_object = big_purple_mushroom_01
+                    show_ambient_object = big_purple_mushroom_02
+                    show_ambient_object = big_purple_mushroom_03
+                    show_ambient_object = big_purple_mushroom_04
+                    show_ambient_object = big_purple_mushroom_05
+                    #show_ambient_object = big_purple_mushroom_06
+                }
+                
+            }
+            else = {
+                add_prestige = 25
+            }
+            
+            # Silver Hand
+            if = {
+                limit = {
+                    exists = SVH
+                }
+                
+                SVH = {
+                    country_event = { id = silver_hand.5 } # Boost Silver Hand
+                }
+            }
+            else_if = {
+                limit = {
+                    exists = A08
+                }
+                A08 = {
+                    country_event = { id = silver_hand.5 } # Spawn Silver Hand
+                }
+            }
+            else = {
+                random_country = {
+                    limit = {
+                        ai = yes
+                    }
+                    
+                    country_event = { id = silver_hand.5 } # Spawn Silver Hand
+                }
+            }
+            
+            
+		}
+	}
+    
+    wwu_crush_lordaeron = { 
+		icon = mission_alchemy
+		position = 2
+		completed_by = 618.12.31
+        
+		required_missions = { wwu_lordaeron_succession } 
+        
+		trigger = {
+            if = {
+                limit = {
+                    exists = A25
+                }
+                
+                NOT = { war_with = A25 }
+            }
+            else = {
+                stability = 3
+            }
+		}
+		effect = {
+            if = {
+                limit = {
+                    exists = A25
+                }
+                declare_war = A25
+                
+                A25 = {
+                    capital_scope = {
+                        province_event = { id = wwu_scourge.34 }
+                    }
+                }
+            }
+            else = {
+                add_prestige = 10
+            }
+		}
+	}
+    
+    wwu_into_the_realm_eternal = { 
+		icon = mission_arcane_book
+		position = 4
+		completed_by = 618.12.31
+        
+		required_missions = { 
+            wwu_remains_of_kelthuzad
+            wwu_destroy_the_silver_hand 
+        } 
+		
+		trigger = {
+			area_thalassian_pass = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+            area = area_thalassian_pass
+            NOT = { owned_by = ROOT }
+        }
+		effect = {
+            if = {
+                limit = {
+                    exists = A90
+                }
+                A90 = {
+                    country_event = { id = wwu_sunwell.1 }
+                }
+            }
+            
+			region_ghostlands = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+    
+    wwu_fall_of_silvermoon = { 
+		icon = mission_burning_city
+		position = 6
+		completed_by = 618.12.31
+        
+		required_missions = { 
+            wwu_foundations_of_deatholme
+            wwu_key_of_the_three_moons
+        } 
+		
+		trigger = {
+			area_silvermoon = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+            area = area_silvermoon
+            NOT = { owned_by = ROOT }
+        }
+		effect = {
+            if = {
+                limit = {
+                    exists = A90
+                }
+                A90 = {
+                    country_event = { id = wwu_sunwell.5 }
+                }
+            }
+            
+            country_event = { id = wwu_sunwell.6 }
+        
+			area_silvermoon = {
+				add_devastation = 100
+				change_culture = culture_scourge
+				change_religion = cult_of_the_damned
+			}
+
+			region_isle_of_quel_danas = {
+				add_permanent_claim = F21
+			}
+		}
+	}
+    
+    wwu_resurrect_kelthuzad_sunwell = { 
+		icon = mission_kelthuzad_lich
+		position = 7
+		completed_by = 618.12.31
+        
+		required_missions = { wwu_fall_of_silvermoon } 
+
+		trigger = {
+            # Sunwell
+			2991 = { 
+                owned_by = ROOT
+            }
+		}
+		provinces_to_highlight = {
+            province_id = 2991
+            NOT = { owned_by = ROOT }
+        }
+		effect = {
+            remove_country_modifier = remains_of_kelthuzad
+            
+            add_adm_power = 300
+            add_dip_power = 300
+            add_mil_power = 300
+            
+			P12 = {
+				country_event = { id = wwu_sunwell.7 }
+			}
+            
+			2991 = {
+				add_permanent_province_modifier = {
+					name = mission_province_desecration_of_the_sunwell
+					duration = -1
+				}
+			}
+            
+            
+            custom_tooltip = KELTHUZAD_RESURRECTED_TT
+            
+            hidden_effect = {
+                set_global_flag = kelthuzad_resurrected
+            }
+		}
+	}
+}
+
+wwu_scourge_of_lordaeron_column_3 = { 
+	slot = 3
+	generic = no
+	ai = yes
+    has_country_shield = yes
+    
+	potential = {
+		tag = P52
+	} 
+    
+    wwu_destroy_the_silver_hand = { 
+		icon = mission_paladin
+		position = 3
+		completed_by = 618.12.31
+        
+		required_missions = { wwu_crush_lordaeron } 
+                		
+		trigger = {
+			NOT = { exists = SVH }
+		}
+		provinces_to_highlight = {
+            owned_by = SVH
+        }
+		effect = {
+            add_prestige = 100
+            
+			area_thalassian_pass = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+    
+    wwu_key_of_the_three_moons = { 
+		icon = mission_keyofthreemoons
+		position = 5
+		completed_by = 618.12.31
+        
+		required_missions = { wwu_into_the_realm_eternal } 
+                		
+		trigger = {
+			area_sanctum_of_the_moon = {
+				owned_by = ROOT
+			}
+			area_andaroth = {
+				owned_by = ROOT
+			}
+			area_tranquillien = {
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = area_sanctum_of_the_moon
+				area = area_andaroth
+				area = area_tranquillien
+			}
+            NOT = { owned_by = ROOT }
+        }
+		effect = {
+            if = {
+                limit = { 
+                    exists = A90
+                }
+                A90 = {
+                    country_event = { id = wwu_sunwell.4 }
+                }
+            }
+            
+			region_eversong_woods = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+wwu_scourge_of_lordaeron_column_4 = { 
+	slot = 4
+	generic = no
+	ai = yes
+    has_country_shield = yes
+    
+	potential = {
+		tag = P52
+	} 
+    
+}
+
+wwu_scourge_of_lordaeron_column_5 = { 
+	slot = 5
+	generic = no
+	ai = yes
+    has_country_shield = yes
+    
+	potential = {
+		tag = P52
+	} 
+    
+}

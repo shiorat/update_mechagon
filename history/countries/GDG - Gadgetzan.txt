@@ -1,0 +1,44 @@
+
+# Gadgetzan
+government 			= republic
+add_government_reform = mercantile_republic_reform
+mercantilism 		= 10
+technology_group 	= tech_goblin
+religion			= technomancy
+primary_culture 	= culture_goblin
+capital 			= 1543
+religious_school = trade_philosophy
+
+540.1.1 = {
+    monarch = {
+		name = "Bixlay"
+		birth_date = 470.1.1
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+	heir = {
+		name = "Marin"
+		monarch_name = "Marin I"
+		dynasty = "Noggenfogger"
+		birth_date = 502.1.1
+		death_date = 645.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+		claim = 61
+		female = yes
+	}
+}
+
+630.1.1 = {
+    remove_country_modifier = member_of_trade_coalition
+}
+
+631.1.1 = {
+    # Trade Coalition 
+    add_country_modifier = {
+        name = member_of_trade_coalition
+        duration = -1
+    }
+}

@@ -1,22 +1,31 @@
-discover_home_continent = yes
-# Shadowhide
-government 			= tribal
-add_government_reform = primitive_clan_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
 technology_group 	= tech_gnoll
-religion			= religion_earth
-primary_culture 	= culture_shadowhide
+religion			= earth
+primary_culture 	= culture_gnoll
 capital 			= 2197
 
-
-546.1.1 = { 
-	monarch = { 
-		name = "Darkfang" 
-		dynasty = "Shadowhide" 
+540.1.1 = {
+	monarch = {
+		name = "Baldgrum"
+		dynasty = "Shadowhide"
+		birth_date = 519.1.1
 		adm = 3
-		dip = 3
-		mil = 3
-                
-	} 
+		dip = 5
+		mil = 5
+	}
 }
-
+590.1.1 = {
+	monarch = {
+		name = "Grazbald"
+		dynasty = "Shadowhide"
+		birth_date = 514.1.1
+		adm = 3
+		dip = 0
+		mil = 1
+		female = yes
+	}
+}

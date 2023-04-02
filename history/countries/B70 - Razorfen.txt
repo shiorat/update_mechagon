@@ -1,11 +1,11 @@
-discover_home_continent = yes
-# Razorfen
-government 			= native
-add_government_reform = primitive_tribe_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_war_band_reform
+
 mercantilism 		= 10
 technology_group 	= tech_quillboar
-religion			= religion_earth
-primary_culture 	= culture_razorfen
+religion			= earth
+primary_culture 	= culture_quillboar
 capital 			= 1449
 
 546.1.1 = { 
@@ -15,6 +15,7 @@ capital 			= 1449
 		adm = 2
 		dip = 1
 		mil = 4
+        birth_date = 452.1.1
  	} 
  } 
 
@@ -22,6 +23,7 @@ capital 			= 1449
 	monarch = { 
 		name = "Ramtusk" 
 		dynasty = "Razorfen" 
+        birth_date = 537.1.1
 		adm = 3
 		dip = 1
 		mil = 4
@@ -32,6 +34,7 @@ capital 			= 1449
 	monarch = { 
 		name = "Charga" 
 		dynasty = "Razorflank" 
+        birth_date = 567.1.1
 		adm = 3
 		dip = 3
 		mil = 3

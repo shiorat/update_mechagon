@@ -1,0 +1,21 @@
+
+# Bloodmoon
+government = tribal
+add_government_reform = worgen_pack_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+mercantilism 		= 10 
+technology_group 	= tech_worgen
+religion			= shadow
+primary_culture 	= culture_wolfcult
+capital 			= 695
+
+618.1.1 = { 
+	monarch = {
+		name = "Arugal" 
+		dynasty = "of Shadowfang Keep" 
+		adm = 3		
+		dip = 2
+		mil = 4
+	}
+}
+

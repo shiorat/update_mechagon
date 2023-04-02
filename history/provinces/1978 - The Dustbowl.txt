@@ -4,43 +4,25 @@ is_city = yes
 owner = B74
 controller = B74
 add_core = B74
+add_core = SDF
 
-base_tax = 2
-base_production = 2
-base_manpower = 2
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-culture = culture_stonevault
-religion = religion_titan_corrupt
+culture = culture_stone_earthen
+religion = titan_worship
 
-trade_goods = fossils
 hre = no
-
-
-
-546.1.1 = {
-
-is_city = yes
-
-owner = B74
-controller = B74
-add_core = B74
-
-base_tax = 2
-base_production = 2
-base_manpower = 2
-
-culture = culture_stonevault
-religion = religion_titan_corrupt
-
 trade_goods = fossils
-hre = no
 
-}
-600.1.1 = { 
-owner = F06
-controller = F06
-add_core = F06
-culture = culture_dustbelcher
-
+# Rise of the Lich Kng
+605.1.1 = {
+    owner = DUB
+    controller = DUB
+    add_core = DUB
+    
+    culture = culture_ogre
+    religion = primitive
 }
 

@@ -1,20 +1,30 @@
-discover_home_continent = yes
-# Nazzivian
-government 			= tribal
-add_government_reform = warband_reform
+government = tribal
+add_government_reform = satyr_sect_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
 technology_group 	= tech_satyr
-religion			= religion_fel
-primary_culture 	= culture_nazzivian
+religion			= fel
+primary_culture 	= culture_satyr
 capital 			= 1078
 
-546.1.1 = { 
-	monarch = { 
-		 name = "Tzerak" 
-		 dynasty = "Nazzivian" 
-		adm = 3
-		dip = 3
-		mil = 2
-	} 
-} 
-
+540.1.1 = {
+	monarch = {
+		name = "Xdakore"
+		dynasty = "Bloodwhisper"
+		birth_date = 473.1.1
+		adm = 5
+		dip = 0
+		mil = 3
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Vorzaak"
+		dynasty = "Bloodwhisper"
+		birth_date = 566.1.1
+		adm = 0
+		dip = 0
+		mil = 5
+	}
+}

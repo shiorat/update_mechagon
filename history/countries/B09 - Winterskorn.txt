@@ -1,25 +1,36 @@
-discover_home_continent = yes
+
 # Winterskorn
-government 			= tribal
-add_government_reform = ancient_clan_reform
+government 			= monarchy
+add_government_reform = vrykul_kingdom_reform
 mercantilism 		= 10
 technology_group 	= tech_vrykul
-religion			= religion_titan
-primary_culture 	= culture_winterskorn
+religion			= titan_worship
+primary_culture 	= culture_vrykul
 capital 		= 2376
 
-615.1.1 = {
-religion = religion_the_damned
+540.1.1 = {
+	monarch = {
+		name = "Thorsten"
+		dynasty = "Halgurdsson"
+		birth_date = 475.1.1
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Bjorn"
+		dynasty = "Halgurdsson"
+		birth_date = 520.1.1
+		adm = 2
+		dip = 4
+		mil = 0
+	}
 }
 
-626.1.1 = { 
-monarch = { 
-     name = "Bjorn" 
-	dynasty = "Halgurdsson"
-		adm = 3
-		dip = 2
-		mil = 3 
+615.1.1 = {
+    religion = cult_of_the_damned
+}
 
- 	}
- }
 

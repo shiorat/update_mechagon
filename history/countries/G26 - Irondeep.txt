@@ -1,30 +1,30 @@
-discover_home_continent = yes
-# Alterac Troggs
-government 			= tribal
-add_government_reform = primitive_clan_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 mercantilism 		= 10 
-technology_group 	= tech_primitive
-religion			= religion_earth
+technology_group 	= tech_trogg
+religion			= earth
 primary_culture 	= culture_trogg
 capital 			= 962
 
-546.1.1 = { 
-	monarch = { 
-		name = "Snog" 
-		dynasty = "Irondeep" 
-		adm = 2
-		dip = 1
-		mil = 3
-	} 
-} 
-
-617.1.1 = { 
-	monarch = { 
-		name = "Morloch" 
-		dynasty = "Irondeep" 
-		adm = 2
-		dip = 1
-		mil = 3
-	} 
-} 
-
+540.1.1 = {
+	monarch = {
+		name = "Ogglegar"
+		dynasty = "Irontooth"
+		birth_date = 452.1.1
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Gneshlak"
+		dynasty = "Irontooth"
+		birth_date = 561.1.1
+		adm = 1
+		dip = 0
+		mil = 4
+	}
+}

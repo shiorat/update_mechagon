@@ -1,12 +1,12 @@
-discover_home_continent = yes
-# Stormpike
-government 			= republic
-add_government_reform = noble_republic_reform
+government = tribal
+add_government_reform = dwarven_clan_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 government_rank 	= 1
 mercantilism 		= 10
-technology_group 	= tech_dwarven
-religion			= religion_church_of_the_light
-primary_culture 	= culture_ironforge
+technology_group 	= tech_hill_dwarf
+religion			= holy_light
+primary_culture 	= culture_wildhammer
 capital 			= 3060
 
 600.1.1 = { 
@@ -16,7 +16,6 @@ capital 			= 3060
 		adm = 3
 		dip = 1
 		mil = 5
-	} 
-	
+	}
 } 
 

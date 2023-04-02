@@ -1,21 +1,44 @@
-discover_home_continent = yes
-# Hellfire Arrakoa
-government 			= tribal
+government = tribal
 add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
 
 mercantilism 		= 10
-technology_group 	= tech_arrakoa
-religion			= religion_terokk
-primary_culture 	= culture_sethekk
+technology_group 	= tech_fallen_arakkoa
+religion			= shadow
+primary_culture 	= culture_fallen_arrakoa
 capital 			= 1596
 
-617.1.1 = { 
-	monarch = { 
-		name = "Avruu" 
-		dynasty = "Haal'eshi" 
+540.1.1 = {
+	monarch = {
+		name = "Ahduna"
+		dynasty = "Haal'eshi"
+		birth_date = 462.1.1
 		adm = 2
-		dip = 2
-		mil = 4                
-	} 
+		dip = 0
+		mil = 1
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 2
+        FINESSE = 2
+        CONCENTRATION = 1
+        MANA = 3
+        shadow = yes
+    }
 }
-
+590.1.1 = {
+	monarch = {
+		name = "Avruu"
+		dynasty = "Haal'eshi"
+		birth_date = 522.1.1
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 2
+        FINESSE = 2
+        CONCENTRATION = 1
+        MANA = 3
+        shadow = yes
+    }
+}

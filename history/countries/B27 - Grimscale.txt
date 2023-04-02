@@ -1,20 +1,30 @@
-discover_home_continent = yes
-# Grimscale
-government 			= tribal
-add_government_reform = primitive_clan_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10 
-technology_group 	= tech_depths
-religion			= religion_water
-primary_culture 	= culture_nerglish
+technology_group 	= tech_murloc
+religion			= deep_mother
+primary_culture 	= culture_murloc
 capital 			= 892
 
-618.1.1 = { 
-	monarch = { 
-		name = "Groggle" 
-		dynasty = "Grimscale" 
+540.1.1 = {
+	monarch = {
+		name = "Brgler"
+		dynasty = "Grimscale"
+		birth_date = 503.1.1
 		adm = 2
-		dip = 2
-		mil = 2
-	} 
-} 
-
+		dip = 0
+		mil = 4
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Murgl'rg"
+		dynasty = "Grimscale"
+		birth_date = 529.1.1
+		adm = 2
+		dip = 5
+		mil = 0
+	}
+}

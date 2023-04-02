@@ -1,15 +1,16 @@
-
+is_city = yes
 owner = I01
 controller = I01
 add_core = I01
 
 base_tax = 6
-base_production = 7
-base_manpower = 7
+base_production = 5
+base_manpower = 6
 
-culture = culture_highmountain
-religion = religion_ancestral
+culture = culture_highmountain_tauren
+religion = tauren_shamanism
 
-trade_goods = fur
 hre = no
+trade_goods = fur
+
 

@@ -1,22 +1,31 @@
-discover_home_continent = yes
-discover_home_continent = yes
-# Centaur Khanate
 government = tribal
-add_government_reform = warband_reform
-mercantilism = 10
-technology_group 	= tech_titan
-religion = religion_earth
-primary_culture = culture_earth
-capital = 1395
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
 
-546.1.1 = { 
-	monarch = { 
-		name = "Thogrod" 
-		dynasty = "Earthfoot" 
-		adm = 2
-		dip = 1
-		mil = 4
-        birth_date = 100.1.1
-        #death_date = 700.1.1
+mercantilism = 10
+technology_group 	= tech_centaur
+religion = earth
+primary_culture = culture_earth
+capital = 3667
+
+# Formable
+
+630.1.1 = {
+    monarch = {
+		name = "Aratas"
+        birth_date = 550.1.1
+		adm = 3
+		dip = 4
+		mil = 6	
+	} 
+}
+
+632.1.1 = {
+    monarch = {
+		name = "Warug"
+        birth_date = 550.1.1
+		adm = 4
+		dip = 5
+		mil = 4	
 	} 
 }

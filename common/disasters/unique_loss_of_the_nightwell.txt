@@ -1,0 +1,60 @@
+loss_of_the_nightwell_disaster = {
+	potential = {
+        has_dlc = "Res Publica"
+		primary_culture = culture_nightborne
+        NOT = { owns = 3182 }
+	}
+
+	can_start = {
+		NOT = { owns = 3182 }
+	}
+	
+	progress = {
+		modifier = {
+            factor = 1
+            
+            always = yes
+		}
+	}
+	
+	can_stop = {
+        owns = 3182
+	}
+	
+	can_end = {
+		OR = {
+            # No mana supplies
+            NOT = {
+                check_variable = {
+                    which = mana_supplies
+                    value = 1
+                }
+            }
+            # Own the Nighthold
+            AND = {
+                owns = 3182
+                3182 = { 
+                    has_province_modifier = power_of_the_nightwell
+                }
+            }
+		}
+	}
+	
+	modifier = {
+        global_unrest = 2
+	}
+
+	on_start = wwu_loss_of_the_nightwell.1  
+	on_end = wwu_loss_of_the_nightwell.100
+	
+	on_monthly = {
+		random_events = { 
+			1000 = 0
+			200 =  wwu_loss_of_the_nightwell.10
+			50 =  wwu_loss_of_the_nightwell.11
+			50 =  wwu_loss_of_the_nightwell.12
+		}
+	}
+}
+
+

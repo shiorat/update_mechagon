@@ -1,0 +1,26 @@
+
+is_city = yes
+
+owner = SET
+controller = SET
+add_core = SET
+
+base_tax = 3
+base_production = 3
+base_manpower = 4
+
+culture = culture_centaur
+religion = shamanism
+
+hre = no
+trade_goods = silk
+
+
+630.1.1 = {
+    owner = G06
+    controller = G06
+    add_core = G06
+
+    culture = culture_lordaeron
+    religion = holy_light
+}

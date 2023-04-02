@@ -1,30 +1,20 @@
-discover_home_continent = yes
-# Deadtalker
-government 			= tribal
-add_government_reform = tribal_federation_reform
+government = tribal
+add_government_reform = yaungol_tribe_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
 technology_group 	= tech_yaungol
-religion			= religion_shadow
-primary_culture 	= culture_deadtalker
+religion			= shadow
+primary_culture 	= culture_yaungol
 capital 			= 1877
 
-546.1.1 = { 
-monarch = { 
-     name = "Urol" 
-     dynasty = "Deadtalker" 
+500.1.1 = { 
+    monarch = { 
+        name = "Gongbui" 
+        dynasty = "Deadwind" 
+        birth_date = 493.1.1
 		adm = 3
 		dip = 3
-		mil = 3
+		mil = 5
  	} 
- } 
-
-592.1.1 = { 
-monarch = { 
-     name = "Uruk" 
-     dynasty = "Deadtalker" 
-		adm = 3
-		dip = 3
-		mil = 3
- 	} 
- } 
-
+} 

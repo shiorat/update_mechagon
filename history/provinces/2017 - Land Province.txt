@@ -1,0 +1,52 @@
+
+is_city = yes
+owner = P55
+controller = P55
+add_core = P55
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+culture = culture_forest_troll
+religion = voodoo
+
+hre = no
+trade_goods = army_supplies
+ 
+# First War
+592.1.1 = {
+    owner = A08
+    controller = A08
+    add_core = A08
+    
+    culture = culture_lordaeron
+    religion = holy_light
+}
+
+# The Rise of the Scourge
+605.1.1 = {
+	owner = A08
+	controller = A08
+	add_core = A08
+	add_core = F52
+	remove_core = P55
+}
+
+
+618.1.1 = { 
+    add_core = SVH
+    owner = SVH
+    controller = SVH 
+    remove_core = A08
+}
+
+# Rise of the Qiraji
+622.1.1 = {
+    add_core = A22
+    remove_core = SVH
+    religion = scarlet_light
+    owner = A22
+    controller = A22 
+}
+

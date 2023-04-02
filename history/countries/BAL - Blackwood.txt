@@ -1,0 +1,31 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
+mercantilism 		= 10
+technology_group 	= tech_furbolg
+religion			= druidism
+primary_culture 	= culture_furbolg
+capital 			= 2251
+
+540.1.1 = {
+	monarch = {
+		name = "Elder"
+		dynasty = "Brolg"
+		birth_date = 511.1.1
+		adm = 4
+		dip = 1
+		mil = 4
+	}
+}
+
+631.1.1 = {
+    religion = fel
+	primary_culture = culture_corrupted_furbolg
+}
+
+632.1.1 = {
+    religion = druidism
+	primary_culture	= culture_furbolg
+}
+

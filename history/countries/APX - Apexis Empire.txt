@@ -1,9 +1,9 @@
-discover_home_continent = yes
+
 #Apexis Empire
 government = theocracy
 add_government_reform = theocracy_reform
 mercantilism = 10
-technology_group = tech_arrakoa
-religion = religion_terokk
-primary_culture = culture_sethekk
+technology_group = tech_arakkoa
+religion = light_of_rukhmar
+primary_culture = culture_arrakoa
 capital = 2043

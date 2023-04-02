@@ -1,0 +1,14 @@
+#########################
+### The Frozen Throne ###
+#####################################################
+# Mind slaves of Dreadlord Detheroc.				#
+#####################################################
+# Dreadlords - Lordaeron Remnants
+dependency = {
+	subject_type = "vassal"
+	first = DDL
+	second = A25
+	start_date = 618.5.1
+	end_date = 620.1.1
+}
+

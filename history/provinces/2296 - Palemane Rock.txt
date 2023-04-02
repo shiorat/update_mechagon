@@ -1,0 +1,27 @@
+is_city = yes
+owner = CST
+controller = CST
+add_core = CST
+
+base_tax = 3
+base_production = 4
+base_manpower = 4
+
+culture = culture_tauren
+religion = tauren_shamanism
+
+hre = no
+trade_goods = unknown
+
+
+# Rise of the Qiraji
+622.1.1 = { 
+	owner = B18
+	controller = B18
+	add_core = B18
+	
+	culture = culture_gnoll
+    religion = earth
+}
+
+

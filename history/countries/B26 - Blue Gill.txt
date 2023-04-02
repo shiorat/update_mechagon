@@ -1,20 +1,30 @@
-discover_home_continent = yes
-# Blue Gill
-government 			= tribal
-add_government_reform = primitive_clan_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
-technology_group 	= tech_depths
-religion			= religion_water
-primary_culture 	= culture_nerglish
+technology_group 	= tech_murloc
+religion			= deep_mother
+primary_culture 	= culture_murloc
 capital 			= 3022
 
-546.1.1 = { 
-monarch = { 
-     name = "Murkeye" 
-     dynasty = "Bluegill" 
+540.1.1 = {
+	monarch = {
+		name = "Erbmu"
+		dynasty = "Bluegill"
+		birth_date = 497.1.1
 		adm = 3
-		dip = 4
-		mil = 3
- 	} 
- } 
-
+		dip = 0
+		mil = 5
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Bmumurgl"
+		dynasty = "Bluegill"
+		birth_date = 541.1.1
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}

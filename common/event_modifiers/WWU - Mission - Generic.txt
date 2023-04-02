@@ -1,0 +1,82 @@
+#----------------------------------------------
+# Missions
+#----------------------------------------------
+mission_prepared_army = {
+    army_tradition = 0.5
+}
+
+mission_prosperity_of_capital = {
+    local_monthly_devastation = -0.05
+}
+
+mission_expansionist_nation = {
+    governing_capacity_modifier = 0.05
+}
+
+mission_military_enthusiasm = {
+    land_morale = 0.05
+}
+
+mission_hegemonic_unity = {
+    core_creation = -0.05
+}
+
+mission_influential_diplomats = {
+    diplomatic_reputation = 1
+}
+
+mission_submissive_subjects = {
+    reduced_liberty_desire = 5
+}
+
+mission_naval_pride = {
+    navy_tradition = 0.5
+}
+
+mission_dominant_trade_hub = {
+    province_trade_power_modifier = 0.1
+}
+
+mission_trade_company_rush = {
+    global_trade_power = 0.05
+}
+
+mission_bolstering_economy = {
+    inflation_reduction = 0.02
+}
+
+mission_construction_spree = {
+    build_time = -0.1
+}
+
+mission_healthy_treasury = {
+    development_cost = -0.05
+}
+
+mission_mass_production = {
+    global_trade_goods_size_modifier = 0.05
+}
+
+mission_hegemonic_ambition = {
+    administrative_efficiency = 0.05
+}
+
+mission_prestigious_nation = {
+    prestige = 0.5
+}
+
+mission_mercantile_nation = {
+    trade_efficiency = 0.05
+}
+
+mission_absolute_nation = {
+    global_unrest = -1
+}
+
+mission_global_dominance = {
+    global_trade_goods_size_modifier = 0.05
+}
+
+mission_faiths_bastion = {
+    tolerance_own = 1
+}

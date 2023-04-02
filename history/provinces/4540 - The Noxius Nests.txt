@@ -1,0 +1,17 @@
+
+is_city = yes
+
+owner = CPH
+controller = CPH
+add_core = CPH
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = culture_silithid
+religion = cthun
+
+hre = no
+trade_goods = fossils
+

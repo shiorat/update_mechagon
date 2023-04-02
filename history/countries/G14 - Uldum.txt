@@ -1,23 +1,30 @@
-discover_home_continent = yes
-# Uldun
-government 			= monarchy
-add_government_reform = ancient_kingdom_reform
+
+# Uldum
+government 			    = theocracy
+add_government_reform   = tolvir_kingdom_reform
 mercantilism 		= 10
-technology_group 	= tech_titan
-religion			= religion_titan
-primary_culture 	= culture_tol_vir
+technology_group 	= tech_tolvir
+religion			= titan_worship
+primary_culture 	= culture_tolvir
 capital 			= 1558
 
-
-546.1.1 = { 
-	monarch = { 
-		name = "Rajh" 
-		dynasty = "of the Sun"
-		adm = 4
-		dip = 2
-		mil = 3  
-        birth_date = 100.1.1
-        #death_date = 700.1.1
-	} 
+540.1.1 = {
+	monarch = {
+		name = "Mensam"
+		dynasty = "Itvat"
+		birth_date = 489.1.1
+		adm = 3
+		dip = 1
+		mil = 0
+	}
 }
-
+590.1.1 = {
+	monarch = {
+		name = "Tebris"
+		dynasty = "Itvat"
+		birth_date = 509.1.1
+		adm = 0
+		dip = 4
+		mil = 2
+	}
+}

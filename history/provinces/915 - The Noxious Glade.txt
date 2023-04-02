@@ -1,51 +1,58 @@
+is_city = yes 
+owner = A62
+controller = A62
+add_core = A62
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = B12
-controller = B12
-add_core = B12
+culture = culture_forest_troll
+religion = voodoo
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
+hre = no
+trade_goods = unknown
 
-culture = culture_blackpaw
-religion = religion_earth
-trade_goods = lumber
-hre = no 
-
-
-
-546.1.1 = {
-
-is_city = yes
-
-owner = B12
-controller = B12
-add_core = B12
-
-base_tax = 3
-base_production = 3
-base_manpower = 3
-
-culture = culture_blackpaw
-religion = religion_earth
-trade_goods = lumber
-hre = no 
-
+# Second War
+598.1.1 = {
+    owner = A08
+    controller = A08
+    add_core = A08
+    
+    culture = culture_lordaeron
+    religion = holy_light
 }
-617.1.1 = {
-	add_core = P12
-	controller = P12
-	owner = P12
-	remove_core = B12
-	religion = religion_the_damned
+
+# Rise of the Lich King
+605.1.1 = { 
+	add_core = P62
+	owner = P62
+	controller = P62
 	culture = culture_lordaeron
+    religion = holy_light
 }
 
-# The Frozen Throne
-618.1.1 = {
-	culture = culture_cultist
-	base_manpower = 4
-} 
+# Rise of the Qiraji
+623.1.1 = { 
+	add_core = A22
+	add_core = SCE
+	remove_core = P62
+	owner = SCE
+	controller = SCE
+	religion = scarlet_light 
+}
+
+# Wrath of the Lich King
+626.1.1 = {
+	owner = P13
+	controller = P13
+	add_core = P13
+	remove_core = A08
+	remove_core = P62
+	culture = culture_death_knight
+	religion = forgotten_shadow
+	base_tax = 1
+	base_manpower = 1
+	base_production = 1
+}
 

@@ -1,52 +1,49 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = A51
-controller = A51
-add_core = A51
+culture = culture_orc
+religion = shamanism
 
-base_tax = 2
-base_production = 2
-base_manpower = 2
-
-culture = culture_boulderfist
-religion = religion_earth
-trade_goods = fur
 hre = no
+trade_goods = unknown
+
+600.1.1 = {
+    is_city = yes
+
+    owner = A51
+    controller = A51
+    add_core = A51
+
+    base_tax = 2
+    base_production = 2
+    base_manpower = 2
+
+    culture = culture_ogre
+    religion = primitive
 
 
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A51
-controller = A51
-add_core = A51
-
-base_tax = 2
-base_production = 2
-base_manpower = 2
-
-culture = culture_boulderfist
-religion = religion_earth
-trade_goods = fur
-hre = no
-
+    trade_goods = fur
 }
+
 601.1.1 = {
-owner = F50
-controller = F50
-add_core = F50
-remove_core = A51
+    owner = F50
+    controller = F50
+    add_core = F50
+    remove_core = A51
 }
 
 625.1.1 = {
-owner = F29
-controller = F29
-add_core = F29
-culture = culture_ironforge
-religion = religion_church_of_the_light
-capital = "Nesignwary Safari"
+    owner = F29
+    controller = F29
+    add_core = F29
+    culture = culture_ironforge
+    religion = holy_light
+    capital = "Nesignwary Safari"
 }
 

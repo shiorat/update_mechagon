@@ -1,20 +1,45 @@
-discover_home_continent = yes
-# Haldarr
-government 			= monarchy
-add_government_reform = warband_reform
+government = tribal
+add_government_reform = satyr_sect_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
 technology_group 	= tech_satyr
-religion			= religion_fel
-primary_culture 	= culture_haldarr
+religion			= fel
+primary_culture 	= culture_satyr
 capital 			= 2248
 
-546.1.1 = {
+540.1.1 = {
 	monarch = {
-		name = "Nekus"
-		dynasty = "Haldarr"
-		adm = 2
-		dip = 2
-		mil = 2
- 	}
+		name = "Rimanzor"
+		dynasty = "Swiftgore"
+		birth_date = 469.1.1
+		adm = 3
+		dip = 0
+		mil = 0
+		female = yes
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 1
+        FINESSE = 1
+        CONCENTRATION = 1
+        MANA = 5
+        fel = yes
+    }
 }
-
+590.1.1 = {
+	monarch = {
+		name = "Xaristha"
+		dynasty = "Swiftgore"
+		birth_date = 505.1.1
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 1
+        FINESSE = 1
+        CONCENTRATION = 1
+        MANA = 5
+        fel = yes
+    }
+}

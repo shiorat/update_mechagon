@@ -1,0 +1,34 @@
+# Arthas's Troll and Ogre Mercenaries
+# Winterfang - Icemaul
+alliance = {
+	first = A77
+	second = G30
+	start_date = 605.1.1
+	end_date = 618.1.1
+}
+
+# Amani-Shadowglen
+alliance = {
+	first = A58
+	second = P55
+	start_date = 592.1.1
+	end_date = 600.1.1
+}	
+
+# Boulderfist-Witherbark
+alliance = {
+	first = A51
+	second = A64
+	start_date = 600.1.1
+	end_date = 650.1.1
+}
+
+#############################################
+### Eastern Kingdoms Frost Troll alliance ###
+#############################################
+alliance = {
+	first = A76
+	second = A75
+	start_date = 546.1.1
+	end_date = 596.1.1
+}

@@ -1,0 +1,32 @@
+﻿l_english:
+ wwu_victory_or_defeat_desc: " "
+
+ # --- Missions ---
+ wwu_arcforge_column_1: ""
+ wwu_arcforge_column_2: ""
+ wwu_arcforge_column_3: ""
+ wwu_arcforge_column_4: ""
+ 
+ wwu_ready_to_mechanization_title: "Start Mechanization"
+ wwu_ready_to_mechanization_desc: ""
+ 
+ 
+ # --- Modifiers ---
+ #mission_counter_measures: "Counter Measures"
+ #desc_mission_secure_highlands: ""
+ 
+ #mission_advance: "Front Advance"
+ #desc_mission_reclaiming_ancient_capital: ""
+ 
+ #mission_defeating_trolls: "Defeating the Trolls"
+ #desc_mission_secure_wetlands: ""
+ 
+ #mission_annihilating_trolls: "Annihilating the Trolls"
+ #desc_mission_relations_ironforge: ""
+ 
+ #mission_wildhammer_clan: "Wildhammer Clan"
+ #desc_mission_stromgrade: ""
+ 
+ #mission_higlands: "Twilight Highlands"
+ #desc_mission_aerie_peak: ""
+ 

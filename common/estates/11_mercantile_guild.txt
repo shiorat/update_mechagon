@@ -10,24 +10,24 @@ estate_mercantile_guild = {
     
 	# ----- Conditions -----
     trigger = {
-        has_country_flag = has_estate_mercantile_guild
+        has_mercantile_guild_estate = yes
     }
 
 	# ----- Country -----
     country_modifier_happy = {
-        trade_efficiency = 0.25
-        trade_range_modifier = 0.25
-        trade_steering = 0.25
+        trade_efficiency = 0.1
+        trade_range_modifier = 0.15
+        trade_steering = 0.15
     }
     country_modifier_neutral = {
-        trade_efficiency = 0.1
-        trade_range_modifier = 0.1
-        trade_steering = 0.1
+        trade_efficiency = 0.05
+        trade_range_modifier = 0.05
+        trade_steering = 0.05
     }    
     country_modifier_angry = {
-        trade_efficiency = -0.25
-        trade_range_modifier = -0.25
-        trade_steering = -0.25
+        trade_efficiency = -0.1
+        trade_range_modifier = -0.15
+        trade_steering = -0.15
     }
     
 	land_ownership_modifier = {
@@ -86,6 +86,7 @@ estate_mercantile_guild = {
         estate_mercantile_guild_greased_palms
         estate_mercantile_guild_merchant_fleet
         estate_mercantile_guild_mercantilism
+        estate_mercantile_guild_exception
 	}
 
     # ----- Agendas -----

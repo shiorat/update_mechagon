@@ -1,24 +1,35 @@
-is_city = yes 
-owner = B25
-controller = B25
-add_core = B25
-add_core = A08
-add_core = A12
+
+is_city = yes
+owner = P55
+controller = P55
+add_core = P55
 
 base_tax = 1
-base_production = 3
-base_manpower = 2
+base_production = 1
+base_manpower = 1
 
-culture = culture_lordaeron              # Yes, under murloc occupation
-religion = religion_church_of_the_light  # so don't change this, please
+culture = culture_lordaeron 
+religion = holy_light 
 
+hre = no
 trade_goods = grain
-hre = no 
 
-592.1.1 = { 
-    owner = A12
-	controller = A12
-	remove_core = B25
+# First War
+592.1.1 = {
+    owner = A08
+    controller = A08
+    add_core = A08
+    
+    culture = culture_lordaeron
+    religion = holy_light
+}
+
+# The Rise of the Scourge
+605.1.1 = {
+	owner = A08
+	controller = A08
+	add_core = A08
+	remove_core = A12
 }
 
 # The Third War
@@ -51,8 +62,8 @@ hre = no
 	add_core = B19
 	remove_core = A25
     
-	culture = culture_rothide
-	religion = religion_the_damned
+	culture = culture_undead_gnoll
+	religion = cult_of_the_damned
     
 	capital = "The Decrepit Fields" 
 }
@@ -65,7 +76,7 @@ hre = no
 	remove_core = B19
     
 	culture = culture_lordaeron_worgen
-	religion = religion_church_of_the_light 
+	religion = holy_light 
 }
 
 # Mists of Pandaria
@@ -76,6 +87,6 @@ hre = no
 	remove_core = A11
     
 	culture = culture_forsaken
-	religion = religion_forgotten_shadow 
+	religion = forgotten_shadow 
 }
 

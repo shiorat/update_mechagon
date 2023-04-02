@@ -1,47 +1,54 @@
 
 is_city = yes
+owner = A10
+controller = A10
+add_core = A10
 
-owner = P55
-controller = P55
-add_core = P55
-
-base_tax = 3
-base_production = 3
-base_manpower = 3
-
-culture = culture_lordaeron
-religion = religion_church_of_the_light
-
-trade_goods = cloth
-hre = no 
-# The Frozen Throne
-
-
-546.1.1 = {
-
-is_city = yes
-
-owner = P55
-controller = P55
-add_core = P55
-
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 2
+base_production = 1
+base_manpower = 2
 
 culture = culture_lordaeron
-religion = religion_church_of_the_light
+religion = holy_light 
 
-trade_goods = cloth
-hre = no 
-# The Frozen Throne
+hre = no
+trade_goods = grain
+ 
+# First War
+592.1.1 = {
+    owner = A08
+    controller = A08
+    add_core = A08
+    
+    culture = culture_lordaeron
+    religion = holy_light
 }
+
+# Rise of the Lich King
+605.1.1 = { 
+	add_core = A08
+	owner = A08
+	controller = A08
+	culture = culture_lordaeron
+    religion = holy_light
+}
+ 
+# The Third War
+617.1.1 = { 
+	owner = P52
+	controller = P52
+	add_core = P52
+    
+	culture = culture_scourge
+	religion = cult_of_the_damned 
+}
+
 618.1.1 = { 
 	add_core = P52
 	owner = P52
 	controller = P52
 	culture = culture_scourge
-	religion = religion_the_damned
+	religion = cult_of_the_damned
 	remove_core = A08 
 	remove_core = P62
 }

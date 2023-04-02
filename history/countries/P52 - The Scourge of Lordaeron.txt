@@ -1,66 +1,133 @@
-discover_home_continent = yes
+
 # The Scourge of Lordaeron
 
 government 			= monarchy
 add_government_reform = scourge_domain_reform
 mercantilism 		= 10 
 technology_group 	= tech_scourge
-religion			= religion_the_damned
+religion			= cult_of_the_damned
 
 primary_culture = culture_scourge
 add_accepted_culture = culture_undead_troll
 capital = 642
 
-
 617.1.1 = { 
-	monarch =
-	{ 
+	monarch = {
 		name = "Mal'ganis" 
 		dynasty = "the Nathrezim" 	
-		adm = 3
-		dip = 4	
-		mil = 3	
-	}  
-    clear_scripted_personalities = yes
-    add_ruler_personality = immortal_personality
+		adm = 4
+		dip = 3
+		mil = 5	
+		culture = culture_dreadlord
+	}
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 4
+        CONCENTRATION = 5
+        MANA = 5
+        fel = yes
+    }
+    set_ruler_flag = is_immortal
+	set_ruler_flag = warlock_personality
+    add_ruler_modifier = {
+        name = spellcaster_capabilities
+        duration = -1
+    }
 } 
 
 618.1.1 = { 
-	monarch =
-	{ 
+	monarch = {
 		name = "Arthas" 
 		dynasty = "Menethil" 	
-		adm = 4
-		dip = 4	
-		mil = 5
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 588.1.1
 	}
-    clear_scripted_personalities = yes
-    add_ruler_personality = immortal_personality
+    
+    set_ruler_flag = ruler_portrait_arthas_menethil_undead
+    
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 3
+        CONCENTRATION = 2
+        MANA = 5
+        necromancy = yes
+    }
+	set_ruler_flag = is_immortal
+	set_ruler_flag = death_knight_personality
+	add_ruler_personality = ruthless_personality
+    add_ruler_modifier = {
+        name = spellcaster_capabilities
+        duration = -1
+    }
+    
+	add_country_modifier = {
+		name = frostmourne
+		duration = -1
+	}
+	add_country_modifier = {
+		name = sargeras_eye_damage_arthas
+		duration = -1
+	}
 } 
 
 622.1.1 = { 
-	monarch =
-	{ 
+	monarch = {
 		name = "Titus"  
 		dynasty = "Rivendare" 		
-		adm = 3		
-		dip = 2	
-		mil = 3	
+		adm = 5		
+		dip = 4	
+		mil = 4
+		culture = culture_death_knight
 	}
-    clear_scripted_personalities = yes
-    add_ruler_personality = immortal_personality
+    setup_spellcaster_history = {
+        APTITUDE = 2
+        FINESSE = 2
+        CONCENTRATION = 1
+        MANA = 3
+        necromancy = yes
+    }
+
+	define_general = {
+		name = "Ramstein the Gorger"
+		shock = 5
+		fire = 2
+		manuever = 1
+		siege = 2
+	}
+
+	define_general = {
+		name = "Horgus the Ravager"
+		shock = 2
+		fire = 2
+		manuever = 5
+		siege = 1
+	}
+	
+    set_ruler_flag = is_immortal
+	set_ruler_flag = death_knight_personality
+	remove_country_modifier = frostmourne
+	remove_country_modifier = sargeras_eye_damage_arthas
 } 
 
 631.1.1 = { 
-	monarch =
-	{ 
+	monarch = {
 		name = "Aurius"  
 		dynasty = "Rivendare" 		
-		adm = 3		
-		dip = 2	
-		mil = 3	
+		adm = 4
+		dip = 4	
+		mil = 4
+		culture = culture_death_knight
 	}
-    clear_scripted_personalities = yes
-    add_ruler_personality = immortal_personality
+    setup_spellcaster_history = {
+        APTITUDE = 1
+        FINESSE = 1
+        CONCENTRATION = 1
+        MANA = 2
+        necromancy = yes
+    }
+    set_ruler_flag = is_immortal
+	set_ruler_flag = death_knight_personality
 }
 

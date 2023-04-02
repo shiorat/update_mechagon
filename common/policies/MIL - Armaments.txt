@@ -1,7 +1,7 @@
 #---------------------------------------------------------
 # Armaments
 #---------------------------------------------------------
-integrated_sabotuers = {
+integrated_saboteurs = {
 	monarch_power = ADM
 
 	potential = {
@@ -30,7 +30,7 @@ integrated_sabotuers = {
 	}
 	
 	# Modifier
-    artillery_bonus_vs_fort = 1
+    artillery_levels_available_vs_fort = 1
     
 	ai_will_do = {
 		factor = 1
@@ -55,18 +55,14 @@ archery_training = {
                 full_idea_group = wwu_assimilation_ideas 
                 full_idea_group = wwu_society_ideas
                 full_idea_group = wwu_propaganda_ideas
-                full_idea_group = wwu_naval_bombardment_ideas
-                full_idea_group = wwu_naval_skirmish_ideas
-                full_idea_group = wwu_naval_trade_ideas
-                full_idea_group = wwu_naval_organisation_ideas
-                full_idea_group = wwu_naval_leadership_ideas
-                full_idea_group = wwu_naval_tactics_ideas
+                full_idea_group = wwu_naval_ideas
+				full_idea_group = wwu_piracy_ideas
             }
         }
 	}
 	
 	# Modifier
-    infantry_fire = 1
+    infantry_fire = 0.5
     
 	ai_will_do = {
 		factor = 1
@@ -88,9 +84,6 @@ cavalry_training = {
                 full_idea_group = wwu_quantity_ideas 
                 full_idea_group = wwu_professional_army_ideas 
                 full_idea_group = wwu_mercenary_army_ideas
-                full_idea_group = wwu_army_organisation_ideas
-                full_idea_group = wwu_army_leadership_ideas
-                full_idea_group = wwu_army_tactics_ideas
                 full_idea_group = wwu_fortification_ideas
                 full_idea_group = wwu_militarization_ideas
                 full_idea_group = wwu_subjugation_ideas
@@ -101,7 +94,7 @@ cavalry_training = {
 	}
 	
 	# Modifier
-    cavalry_shock = 1
+    cavalry_shock = 0.5
     
 	ai_will_do = {
 		factor = 1

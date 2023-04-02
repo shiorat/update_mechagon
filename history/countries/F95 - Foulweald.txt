@@ -1,36 +1,38 @@
-discover_home_continent = yes
-# Foulweald
-government 			= native
-add_government_reform = native_tribe_reform
+government = tribal
+add_government_reform = tribal_federation_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
 
 mercantilism 		= 10
 technology_group 	= tech_furbolg
-religion			= religion_druidic
-primary_culture 	= culture_foulweald
+religion			= druidism
+primary_culture 	= culture_furbolg
 capital 			= 2230
 
-546.1.1 = { 
-monarch = { 
-     name = "" 
-     dynasty = "Foulweald" 
-		adm = 3
-		dip = 3
-		mil = 2
- 	} 
- } 
-
-600.1.1 = { 
-monarch = { 
-     name = "Murgut" 
-      dynasty = "Foulweald" 
-		adm = 3
-		dip = 3
-		mil = 3 
- 	}
+540.1.1 = {
+	monarch = {
+		name = "Tiun"
+		dynasty = "Foulweald"
+		birth_date = 490.1.1
+		adm = 4
+		dip = 1
+		mil = 3
+		female = yes
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Gramur"
+		dynasty = "Foulweald"
+		birth_date = 539.1.1
+		adm = 0
+		dip = 4
+		mil = 1
+	}
 }
 
+
 618.1.1 = {
-religion = religion_fel
-government = tribal
+    religion = fel
+	primary_culture = culture_corrupted_furbolg
 }
 

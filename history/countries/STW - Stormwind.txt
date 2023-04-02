@@ -1,17 +1,13 @@
-discover_home_continent = yes
+
 # Stormwind
 government 			= monarchy
 add_government_reform = feudalism_reform
-add_government_reform = wwu_hereditary_rule_reform
 mercantilism 		= 10
 technology_group 	= tech_human 
-religion			= religion_church_of_the_light
-primary_culture 	= culture_azerothian
+religion			= holy_light
+primary_culture 	= culture_stormwindian
 capital 			= 1022
 religious_school = brotherhood_of_northshire
-
-historical_friend = A05
-
 
 546.1.1 = { 
 	monarch = { 
@@ -43,6 +39,8 @@ historical_friend = A05
 		dip = 3
 		mil = 4 
  	} 
+    
+    set_ruler_flag = ruler_portrait_llane_wrynn
 } 
 
 586.1.1 = {
@@ -67,13 +65,32 @@ historical_friend = A05
 		dip = 3
 		mil = 6 
  	} 
+    
+    set_ruler_flag = ruler_portrait_varian_wrynn
+    
  	capital = 991
-	# secondary_religion = religion_arcane
 	historical_friend = A29
-	
+
+    remove_country_modifier = member_of_alliance
+}
+
+598.1.1 = {
+    # Faction - Alliance
+    add_country_modifier = {
+        name = member_of_alliance
+        duration = -1
+	}
 }
 
 600.1.1 = { capital = 1022 }
+
+605.1.1 = {
+    # Faction - Alliance
+	add_country_modifier = {
+        name = head_of_alliance
+        duration = -1
+	}
+}
 
 612.1.2 = { 
 	heir = { 
@@ -91,7 +108,9 @@ historical_friend = A05
 
  
 622.2.1 = { 
-	exile_ruler_as = varian_wrynn
+	exile_ruler_as = {
+        name = varian_wrynn
+    }
 }
  
 626.1.1 = { 

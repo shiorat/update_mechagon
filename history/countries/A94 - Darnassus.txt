@@ -1,33 +1,49 @@
-discover_home_continent = yes
+
 # Darnassus
 government 			= theocracy
 add_government_reform = ancient_theocracy_reform
 mercantilism 		= 10
-technology_group 	= tech_darnassian
-religion			= religion_elune
-# secondary_religion = religion_druidic
-primary_culture 	= culture_sentinel
-add_accepted_culture = culture_cenarion
-capital 			= 1073
-
-
-622.1.1 = { 
-	government_rank	= 3
-	monarch =
-	{ 
-		name = "Tyrande" 
-			 
-		dynasty = "Whisperwind" 
-				
-		adm = 5		
-		dip = 2
-		mil = 7	
-           female = yes
-	} 
+technology_group 	= tech_night_elf
+religion			= elune
+primary_culture 	= culture_night_elf
 add_accepted_culture = culture_highbourne
-add_country_modifier = {
-    name = alliance_member
-    duration = -1
-} 
+capital 			= 1073
+government_rank	= 3
+
+historical_friend = H02
+historical_friend = H03
+historical_friend = A95
+historical_friend = FRS
+historical_friend = H01
+historical_friend = SRS
+
+540.1.1 = { 
+	monarch = {
+		name = "Tyrande" 
+		dynasty = "Whisperwind"
+        birth_date = 100.1.1
+		adm = 5
+		dip = 3
+		mil = 6	
+        female = yes
+	} 
+
+	set_ruler_flag = priest_personality
+    set_ruler_flag = ruler_portrait_tyrande
+    
+    setup_spellcaster_history = {
+        APTITUDE = 4
+        FINESSE = 4
+        CONCENTRATION = 5
+        MANA = 5
+        nature = yes
+    }
+    set_ruler_flag = is_immortal
 } 
 
+598.1.1 = {
+    add_country_modifier = {
+        name = member_of_alliance
+        duration = -1
+    } 
+}

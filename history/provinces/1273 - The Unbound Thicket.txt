@@ -9,10 +9,11 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 
-culture = culture_crystal_nymph
-religion = religion_arcane
+culture = culture_satyr
+religion = arcane
 
-trade_goods = arcane
 hre = no
+trade_goods = arcane
+
 
 

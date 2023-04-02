@@ -3,13 +3,14 @@ owner = NAZ
 controller = NAZ
 add_core = NAZ
 
-base_tax = 6
-base_production = 5
-base_manpower = 8
+base_tax = 5
+base_production = 4
+base_manpower = 6
 
-culture = culture_nazmir
-religion = religion_blood
+culture = culture_blood_troll
+religion = bloodmancy
 
-trade_goods = artifacts
 hre = no
+trade_goods = artifacts
+add_building = wow_fort_1
 

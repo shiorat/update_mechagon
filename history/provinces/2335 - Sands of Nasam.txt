@@ -1,16 +1,17 @@
-is_city = no
-native_size = 10
-native_ferocity = 10
-native_hostileness = 10
+is_city = yes
+owner = P08
+controller = P08
+add_core = P08
 
 base_tax = 1
 base_production = 1
 base_manpower = 1
 
-culture = culture_gammoth
-religion = religion_earth
+culture = culture_nazja
+religion = nzoth
 
-trade_goods = unknown
 hre = no
+trade_goods = unknown
+
 
 

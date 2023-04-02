@@ -1,10 +1,10 @@
-discover_home_continent = yes
-# Pearlfin Tribe
-government 			= tribal
+government = tribal
 add_government_reform = tribal_federation_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 mercantilism 		= 10 
-technology_group 	= tech_depths
-religion			= religion_celestial
+technology_group 	= tech_jinyu
+religion			= celestials
 primary_culture 	= culture_jinyu
 capital 			= 1718
 
@@ -19,9 +19,9 @@ capital 			= 1718
 } 
 
 631.1.1 = {
-add_country_modifier = {
-    name = alliance_member
-    duration = -1
-}
+    add_country_modifier = {
+        name = member_of_alliance
+        duration = -1
+    }
 }
 

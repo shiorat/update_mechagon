@@ -1,34 +1,53 @@
-discover_home_continent = yes
-# Dragonmaw
-government 			= tribal
-add_government_reform = warband_reform
+government = tribal
+add_government_reform = orc_clan_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
 technology_group 	= tech_orc
-religion			= religion_ancestral
-primary_culture 	= culture_dragonmaw
-capital 			= 1672
+religion			= shamanism
+primary_culture 	= culture_orc
+capital 			= 3827
 
-
-
-592.1.1 = { 
+# Draenor
+546.1.1 = {
 	monarch = { 
 		name = "Zuluhed" 
 		dynasty = "the Whacked" 
 		adm = 4
 		dip = 3
 		mil = 3
+        birth_date = 480.1.1
 	}
-    religion = religion_fel
 }
 
+# Fel Conversion
+560.1.1 = {
+    religion = fel
+}
+
+591.1.1 = {
+    remove_country_modifier = member_of_old_horde
+}
+
+592.1.1 = {
+    # Faction - Old Horde
+    add_country_modifier = {
+        name = member_of_old_horde
+        duration = -1
+    }
+}
+
+# Outland
 600.1.1 = { 
+    capital = 1672
+    
 	monarch = { 
 		name = "Nek'Rosh" 
 		dynasty = "Skullcrusher" 
 		adm = 3
 		dip = 4
-		mil = 3
-                
+		mil = 3   
+        birth_date = 560.1.1
 	} 
 }
 
@@ -38,19 +57,20 @@ capital 			= 1672
 		dynasty = "the Fel" 
 		adm = 3
 		dip = 3
-		mil = 4
-                
+		mil = 4    
+        birth_date = 580.1.1
 	} 
 }
 
 631.1.1 = {  
     monarch = {  
-    name = "Zaela"  
-    dynasty = "Dragonmaw"  
+        name = "Zaela"  
+        dynasty = "Dragonmaw"  
  		adm = 3 
 		dip = 4
 		mil = 4 
         female = yes
+        birth_date = 570.1.1
   	}  
 }  
 
@@ -60,8 +80,8 @@ capital 			= 1672
 		dynasty = "Angerfang" 
 		adm = 3
 		dip = 3
-		mil = 4
-                
+		mil = 4   
+        birth_date = 585.1.1
 	} 
 }
 

@@ -1,34 +1,70 @@
-discover_home_continent = yes
+
 # Kul Tiras
 government 			= monarchy
 add_government_reform = admiralty_reform
-mercantilism 		= 10
+mercantilism 		= 20
 technology_group 	= tech_human
-religion			= religion_water
-# secondary_religion  = religion_church_of_the_light
+religion			= tidemother
 primary_culture 	= culture_kul_tiran 
-capital 			= 824 
-
-
+capital 			= 570 
 
 546.1.1 = {
-	add_country_modifier = {
-		name = adventurers_allowed
-		duration = -1
-	}
 	monarch = { 
 		name = "Duncan" 
 		dynasty = "Proudmoore" 
 		adm = 2
 		dip = 6
 		mil = 3
-		birth_date = 531.1.11
+		birth_date = 515.1.11
  	}
-	add_ruler_personality = kind_hearted_personality
-	add_ruler_personality = navigator_personality
-	add_ruler_personality = entrepreneur_personality
+	heir = { 
+		name = "Walter" 
+		monarch_name = "Walter I"
+		dynasty = "Proudmoore" 
+		claim = 100
+		adm = 3
+		dip = 6
+		mil = 2
+		birth_date = 529.9.10
+		death_date = 575.1.1
+ 	}
 	
-} 
+}
+
+575.1.1 = {
+	monarch = { 
+		name = "Walter" 
+		dynasty = "Proudmoore" 
+		adm = 3
+		dip = 6
+		mil = 2
+		birth_date = 533.9.10
+ 	}
+	heir = { 
+		name = "Daelin" 
+		monarch_name = "Daelin I"
+		dynasty = "Proudmoore" 
+		claim = 100
+		adm = 4
+		dip = 4
+		mil = 6
+		birth_date = 543.9.10
+		death_date = 592.1.1
+
+		leader = {
+			name = "Daelin Proudmoore"
+			type = admiral
+			fire = 4
+			shock = 5
+			manuever = 4
+			siege = 3
+		}
+ 	}
+}
+
+591.1.1 = {
+    remove_country_modifier = member_of_alliance
+}
 
 592.1.1 = { 
 	monarch = { 
@@ -37,7 +73,7 @@ capital 			= 824
 		adm = 4
 		dip = 4
 		mil = 6
-		birth_date = 560.9.10
+		birth_date = 543.9.10
 		
 		leader = {
 			name = "Daelin Proudmoore"
@@ -48,10 +84,26 @@ capital 			= 824
 			siege = 3
 		}
  	}
+	queen = { 
+		name = "Katherine"
+		dynasty = "Proudmoore" 
+		adm = 3
+		dip = 4
+		mil = 5
+		birth_date = 573.9.10
+		death_date = 999.9.10
+		female = yes
+	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = navigator_personality
 	add_ruler_personality = zealot_personality
 	add_ruler_personality = conqueror_personality
+    
+    # Faction - Alliance
+    add_country_modifier = {
+        name = member_of_alliance
+        duration = -1
+    }
 } 
 
 592.1.1 = {
@@ -60,7 +112,7 @@ capital 			= 824
 		monarch_name = "Derek"
 		dynasty = "Proudmoore"
 		birth_date = 579.11.5
-		death_date = 599.2.3
+		death_date = 600.2.3
 		claim = 100
 		adm = 2
 		dip = 3
@@ -77,16 +129,13 @@ capital 			= 824
 	}
 }
 
-597.1.1 = {
-}
-
 600.1.1 = {
 	heir = {
 		name = "Tandred"
 		monarch_name = "Tandred"
 		dynasty = "Proudmoore"
 		birth_date = 593.9.10
-		death_date = 999.9.9 #???
+		death_date = 619.9.10
 		claim = 100
 		adm = 3
 		dip = 4
@@ -106,12 +155,80 @@ capital 			= 824
 
 619.1.1 = { 
 	monarch = { 
-		name = "Tandred"
+		name = "Katherine"
 		dynasty = "Proudmoore" 
 		adm = 3
 		dip = 4
-		mil = 3
+		mil = 5
+		birth_date = 573.9.10
+		female = yes
+		
+		leader = {
+			name = "Katherine Proudmoore"
+			type = admiral
+			fire = 3
+			shock = 2
+			manuever = 4
+			siege = 1
+		}
+	} 
+    
+    set_ruler_flag = ruler_portrait_katherine_proudmoore
+    
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = architectural_visionary_personality
+	
+	remove_country_modifier = member_of_alliance
+}
+
+635.6.6 = { 
+	monarch = {
+		name = "Priscilla"
+		dynasty = "Ashvane"
+		birth_date = 579.9.10
+		adm = 1
+		dip = 5
+		mil = 6
+	} 
+
+    set_ruler_flag = ruler_portrait_priscilla_ashvane
+    
+	set_country_flag = tandred_lost_at_sea
+}
+
+636.2.2 = { 
+	monarch = { 
+		name = "Jaina"
+		dynasty = "Proudmoore" 
+		adm = 5
+		dip = 1
+		mil = 4
+		birth_date = 589.1.1
+		female = yes
+		
+		leader = {
+			name = "Jaina Proudmoore"
+			type = admiral
+			fire = 4
+			shock = 4
+			manuever = 4
+			siege = 1
+		}
+	}
+    
+    set_ruler_flag = ruler_portrait_jaina_proudmoore
+    
+	heir = {
+		name = "Tandred"
+		monarch_name = "Tandred"
+		dynasty = "Proudmoore"
 		birth_date = 593.9.10
+		death_date = 999.1.1
+		claim = 100
+		adm = 3
+		dip = 4
+		mil = 3
 		
 		leader = {
 			name = "Tandred Proudmoore"
@@ -124,10 +241,10 @@ capital 			= 824
 	} 
 	clear_scripted_personalities = yes
 	add_ruler_personality = zealot_personality
-	add_ruler_personality = craven_personality
-	add_ruler_personality = architectural_visionary_personality
 	
-	# secondary_religion  = religion_druidic
-	remove_country_modifier = alliance_member
+	add_country_modifier = {
+        name = member_of_alliance
+        duration = -1
+    }
 } 
 

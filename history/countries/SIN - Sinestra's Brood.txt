@@ -1,0 +1,28 @@
+
+# Sinestra's Brood
+government 			    = monarchy
+add_government_reform   = dragonflight_brood_reform
+mercantilism 		= 10
+technology_group 	= tech_black_dragonflight
+religion			= corrupt_dragon_aspect
+primary_culture 	= culture_black_dragonflight
+capital 			= 561
+
+546.1.1 = {
+    monarch = {
+        name = "Sinestra"
+        dynasty = "the Blackqueen"
+		adm = 4
+		dip = 6
+		mil = 6
+        female = yes
+ 	}
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 2
+        CONCENTRATION = 2
+        MANA = 5
+        dragon = yes
+    }
+    set_ruler_flag = is_immortal
+}

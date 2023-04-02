@@ -1,0 +1,17 @@
+nether_magic = {
+    potential = {
+        capital_scope = {
+			OR = {
+                continent = continent_outland
+                continent = continent_draenor
+            }
+		}
+    }
+    
+	trigger = {
+		always = yes
+	}
+    
+    envoy_travel_time = -0.5
+}
+

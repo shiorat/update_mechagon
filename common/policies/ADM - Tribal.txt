@@ -7,8 +7,6 @@ tribal_legitimacy = {
 	potential = {
         OR = {
             government = monarchy
-            government = occult
-            government = mythical
             government = tribal
         }
 	}
@@ -59,18 +57,14 @@ tribal_counsel = {
                 full_idea_group = wwu_assimilation_ideas
                 full_idea_group = wwu_society_ideas 
                 full_idea_group = wwu_propaganda_ideas
-                full_idea_group = wwu_naval_bombardment_ideas
-                full_idea_group = wwu_naval_skirmish_ideas
-                full_idea_group = wwu_naval_trade_ideas
-                full_idea_group = wwu_naval_organisation_ideas
-                full_idea_group = wwu_naval_leadership_ideas
-                full_idea_group = wwu_naval_tactics_ideas
+                full_idea_group = wwu_naval_ideas
+				full_idea_group = wwu_piracy_ideas
             }
         }
 	}
 	
 	# Modifier
-    advisor_cost = -0.15
+    advisor_cost = -0.1
     
 	ai_will_do = {
 		factor = 1
@@ -92,9 +86,6 @@ enduring_enthusiasm = {
                 full_idea_group = wwu_quantity_ideas
                 full_idea_group = wwu_professional_army_ideas  
                 full_idea_group = wwu_mercenary_army_ideas
-                full_idea_group = wwu_army_organisation_ideas
-                full_idea_group = wwu_army_leadership_ideas
-                full_idea_group = wwu_army_tactics_ideas
                 full_idea_group = wwu_armaments_ideas
                 full_idea_group = wwu_fortification_ideas
                 full_idea_group = wwu_militarization_ideas

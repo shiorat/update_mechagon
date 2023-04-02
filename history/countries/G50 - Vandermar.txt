@@ -1,11 +1,10 @@
-discover_home_continent = yes
 # Stratholme
 government			= theocracy
 add_government_reform = monastic_order_reform
 government_rank		= 1
 mercantilism 		= 10
 technology_group 	= tech_human
-religion			= religion_church_of_the_light
+religion			= holy_light
 primary_culture 	= culture_lordaeron 
 capital 			= 727
 
@@ -16,10 +15,22 @@ capital 			= 727
 		adm = 3
 		dip = 3
 		mil = 3
+        birth_date = 510.1.1
 	}
 }
 
-618.1.1 = { # Fall of Stratholme
-	religion = religion_the_damned
+590.1.1 = {
+	monarch = {
+		name = "Jasmine"
+		dynasty = "Stonefield"
+		birth_date = 572.1.1
+		adm = 0
+		dip = 3
+		mil = 1
+	}
 }
 
+
+618.1.1 = {
+	religion = cult_of_the_damned
+}

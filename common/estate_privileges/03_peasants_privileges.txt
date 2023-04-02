@@ -1,3 +1,27 @@
+estate_peasants_exception = {
+	icon = privilege_three_flags
+    
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.05
+	influence = 0.05
+    
+	can_select = {
+	}
+	on_granted = {
+        custom_tooltip = EXCEPT_ESTATE_FROM_SIEZE_LAND_TT
+	}
+	penalties = {
+	}
+	benefits = {
+		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 estate_peasants_land_rights = {
 	icon = privilege_blueprint
 	
@@ -17,7 +41,8 @@ estate_peasants_land_rights = {
 		governing_capacity = 100
 	}
 	ai_will_do = {
-		factor = 5
+		factor = 25
+        
 		modifier = {
 			factor = 1.4
 			num_of_territories = 5
@@ -117,7 +142,7 @@ estate_peasants_increased_taxation = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 10
 	}
 }
 
@@ -166,19 +191,12 @@ estate_peasants_guaranteed_autonomy = {
 		}
 	}
 	penalties = {
+        stability_cost_modifier = 0.25
 	}
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 1000
-		modifier = {
-			factor = 0
-			NOT = {
-				any_owned_province = {
-					NOT = { religion_group = ROOT }
-				}
-			}
-		}
+		factor = 0
 	}
 }
 
@@ -197,7 +215,7 @@ estate_peasants_meritocratic_promotion = {
 		nobility_loyalty_modifier = -0.05
 	}
 	benefits = {
-		min_autonomy_in_territories = -0.2
+		min_autonomy_in_territories = -0.05
 	}
 	ai_will_do = {
 		factor = 0
@@ -256,7 +274,7 @@ estate_peasants_manpower = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 10
 	}
 }
 
@@ -285,21 +303,201 @@ estate_peasants_religious_tolerance = {
 		religious_unity = 0.25
 	}
 	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_peasants_bread_and_circuses = {
+	icon = privilege_reputation
+    
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.1
+	influence = 0.1
+    
+	penalties = {
+        
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_peasants_populism = {
+	icon = privilege_body_and_soul
+    
+    # Costs
+    max_absolutism = -5
+	land_share = 5
+	loyalty = 0.05
+	influence = 0.05
+    
+	penalties = {
+        
+	}
+	benefits = {
+        stability_cost_modifier = -0.33
+	}
+	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 10
-			num_of_owned_provinces_with = {
-				NOT = { religion_group = root }
-				is_state_core = root
-				value = 15
+        
+        modifier = {
+            factor = 0
+            
+            stability = -2
+        }
+	}
+}
+
+estate_peasants_war_propaganda = {
+	icon = privilege_preparation
+    
+    # Costs
+    max_absolutism = -5
+	land_share = 5
+	loyalty = 0.05
+	influence = 0.05
+    
+    on_granted = {
+        custom_tooltip = WAR_PROPAGANDA_TT
+    }
+	penalties = {
+        
+	}
+	benefits = {
+        
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+#-------------------------------------------
+# Unique
+#-------------------------------------------
+estate_peasants_titanic_engineering = {
+	icon = privilege_craftsman
+
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.0
+	influence = 0.05
+    
+	is_valid = {
+		OR = {
+            religion = titan_worship
+            religion = mystery_of_the_makers
+        }
+	}
+	can_select = {
+		OR = {
+            religion = titan_worship
+            religion = mystery_of_the_makers
+        }
+	}
+	penalties = {
+		build_cost = 0.1
+	}
+	benefits = {
+        build_time = -0.1
+	}
+    
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_peasants_serfdom_enforced = {
+	icon = privilege_clemency
+
+    # Costs
+    max_absolutism = 10
+	land_share = 0
+	loyalty = -0.1
+	influence = -0.05
+    
+	is_valid = {
+		has_estate_privilege = estate_peasants_serfdom_enforced
+	}
+	can_revoke = {
+		custom_trigger_tooltip = {
+			tooltip = estate_privilege_cannot_be_revoked
+			always = no
+		}
+	}
+	penalties = {
+		global_unrest = 1
+        reform_progress_growth = -0.25
+	}
+    
+    on_granted = {
+		custom_tooltip = estate_peasants_serfdom_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				add_province_modifier = {
+					name = estate_peasants_serfdom_enforced_mod
+					duration = -1
+				}
 			}
 		}
-		modifier = {
-			factor = 0.5
-			estate_influence = {
-				estate = estate_clergy
-				influence = 75
+	}
+	on_revoked = {
+		custom_tooltip = estate_peasants_serfdom_revoke_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_peasants_serfdom_enforced_mod
+				}
+				remove_province_modifier = estate_peasants_serfdom_enforced_mod
 			}
 		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_peasants_serfdom_revoke_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_peasants_serfdom_enforced_mod
+				}
+				remove_province_modifier = estate_peasants_serfdom_enforced_mod
+			}
+		}
+	}
+    
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_peasants_mercenary_recruitment = {
+	icon = privilege_challenge
+	
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.1
+	influence = 0.05
+    
+	is_valid = {
+		monthly_income = 10
+	}
+	can_select = {
+		monthly_income = 30
+	}
+	penalties = {
+		merc_maintenance_modifier = 5.0
+	}
+	benefits = {
+        mercenary_cost = -0.25
+        mercenary_manpower = 1.0
+        mercenary_discipline = 0.1
+	}
+    
+	ai_will_do = {
+		factor = 0
 	}
 }

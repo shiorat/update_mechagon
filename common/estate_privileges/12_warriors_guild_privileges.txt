@@ -1,3 +1,27 @@
+estate_warriors_guild_exception = {
+	icon = privilege_three_flags
+    
+    # Costs
+    max_absolutism = -5
+	land_share = 0
+	loyalty = 0.05
+	influence = 0.05
+    
+	can_select = {
+	}
+	on_granted = {
+        custom_tooltip = EXCEPT_ESTATE_FROM_SIEZE_LAND_TT
+	}
+	penalties = {
+	}
+	benefits = {
+		
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 estate_warriors_guild_land_rights = {
 	icon = privilege_blueprint
     
@@ -96,7 +120,7 @@ estate_warriors_guild_regular_drills = {
 	penalties = {
 	}
 	benefits = {
-        army_tradition = 1
+        army_tradition = 0.5
 	}
 	ai_will_do = {
 		factor = 10
@@ -114,7 +138,7 @@ estate_warriors_guild_loyal_warriors = {
 	penalties = {
 	}
 	benefits = {
-        infantry_cost = -0.15
+        infantry_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -133,7 +157,7 @@ estate_warriors_guild_deathmarch = {
         
 	}
 	benefits = {
-        movement_speed = 0.2
+        movement_speed = 0.1
 	}
 	ai_will_do = {
 		factor = 10

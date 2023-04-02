@@ -5,37 +5,33 @@ owner = P57
 controller = P57
 add_core = P57
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 2
 
 culture = culture_trogg
-religion = religion_earth
-trade_goods = army_supplies
+religion = earth
+
 hre = no
-
-
-
-546.1.1 = {
-
-is_city = yes
-
-owner = P57
-controller = P57
-add_core = P57
-
-base_tax = 4
-base_production = 4
-base_manpower = 3
-
-culture = culture_trogg
-religion = religion_earth
 trade_goods = army_supplies
-hre = no
 
+# Second War
+598.1.1 = {
+    owner = U03
+    controller = U03
+    add_core = U03
+    
+    culture = culture_fel_orc
+    religion = fel
 }
-600.1.1 = { owner = F06
-controller = F06
-add_core = F06
-remove_core = P57
-culture = culture_dustbelcher }
+
+# Rise of the Lich Kng
+605.1.1 = {
+    owner = DUB
+    controller = DUB
+    add_core = DUB
+    
+    culture = culture_ogre
+    religion = primitive
+}
+

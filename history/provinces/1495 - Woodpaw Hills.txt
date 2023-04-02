@@ -1,0 +1,18 @@
+
+is_city = yes
+
+owner = WDP
+controller = WDP
+add_core = WDP
+
+base_tax = 3
+base_production = 3
+base_manpower = 4
+
+culture = culture_gnoll
+religion = earth
+
+hre = no
+trade_goods = fur
+
+

@@ -1,13 +1,12 @@
-discover_home_continent = yes
-# Tolvir
-government 			= monarchy
-add_government_reform = ancient_kingdom_reform
-mercantilism 		= 10
-technology_group 	= tech_titan
-religion			= religion_titan
-primary_culture 	= culture_orsis
-capital 			= 1568
 
+# Tolvir
+government 			    = theocracy
+add_government_reform   = tolvir_kingdom_reform
+mercantilism 		= 10
+technology_group 	= tech_tolvir
+religion			= titan_worship
+primary_culture 	= culture_tolvir
+capital 			= 1568
 
 546.1.1 = { 
 	monarch = { 
@@ -17,7 +16,8 @@ capital 			= 1568
 		dip = 1
 		mil = 5
         birth_date = 100.1.1
-        #death_date = 700.1.1
-	} 
+	}
+    
+    set_ruler_flag = is_immortal
 }
 

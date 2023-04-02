@@ -1,0 +1,109 @@
+######################
+### Qiraji Vassals ###
+######################
+# Ahn'Qiraj - Silithid
+dependency = {
+	subject_type = "tributary_vassal"
+	first = A97
+	second = A98
+	start_date = 546.1.1
+	end_date = 640.1.1
+}
+
+# Ahn'Qiraj - Ashi Hive
+dependency = {
+	subject_type = "tributary_vassal"
+	first = A97
+	second = AIH
+	start_date = 546.1.1
+	end_date = 640.1.1
+}
+
+# Ahn'Qiraj - Centipaar Hive
+dependency = {
+	subject_type = "tributary_vassal"
+	first = A97
+	second = CPH
+	start_date = 546.1.1
+	end_date = 640.1.1
+}
+
+# Ahn'Qiraj - Gorishi Hive
+dependency = {
+	subject_type = "tributary_vassal"
+	first = A97
+	second = GRH
+	start_date = 546.1.1
+	end_date = 640.1.1
+}
+
+# Ahn'Qiraj - Zukk'ash Hive
+dependency = {
+	subject_type = "tributary_vassal"
+	first = A97
+	second = KKH
+	start_date = 546.1.1
+	end_date = 640.1.1
+}
+
+# Ahn'Qiraj - Regal Hive
+dependency = {
+	subject_type = "tributary_vassal"
+	first = A97
+	second = RGH
+	start_date = 546.1.1
+	end_date = 640.1.1
+}
+
+# Ahn'Qiraj - Swarming Pillar Hive
+dependency = {
+	subject_type = "tributary_vassal"
+	first = A97
+	second = SPH
+	start_date = 546.1.1
+	end_date = 640.1.1
+}
+
+# Ahn'Qiraj - Vekniss Hive
+dependency = {
+	subject_type = "tributary_vassal"
+	first = A97
+	second = VKH
+	start_date = 546.1.1
+	end_date = 640.1.1
+}
+
+# Ahn'Qiraj - Hive Zora
+dependency = {
+	subject_type = "tributary_vassal"
+	first = A97
+	second = ZOH
+	start_date = 546.1.1
+	end_date = 640.1.1
+}
+
+# Ahn'Qiraj - Hive Zara
+dependency = {
+	subject_type = "tributary_vassal"
+	first = A97
+	second = ZRH
+	start_date = 546.1.1
+	end_date = 640.1.1
+}
+
+# Ahn'Qiraj - Hazzali Hive
+dependency = {
+	subject_type = "tributary_vassal"
+	first = A97
+	second = ZZH
+	start_date = 546.1.1
+	end_date = 640.1.1
+}
+
+# Ahn'Qiraj - Protectors of Ahn Qiraj
+# vassal = {
+	# first = A97
+	# second = PAQ
+	# start_date = 546.1.1
+	# end_date = 640.1.1
+# }

@@ -1,42 +1,21 @@
-discover_home_continent = yes
+
 # Mossflayer
-# Amani
-government			= tribal
-add_government_reform = warband_reform
+government 			    = monarchy
+add_government_reform   = troll_kingdom_reform
+
 mercantilism 		= 10
-technology_group 	= tech_troll
-religion			= religion_loa
-primary_culture 	= culture_mossflayer
-capital 			= 743
+technology_group 	= tech_forest_troll
+religion			= voodoo
+primary_culture 	= culture_forest_troll
+capital 			= 2208
 
-546.1.1 = {
-monarch = {
-		name = "Zael'dar"  
-		dynasty = "Mossflayer"  
-		adm = 3
-		dip = 3
-		mil = 4 
-	}
-}
-
-592.1.1 = {
-monarch = {
-		name = "Vex'tul"
-		dynasty = "Mossflayer"
+546.1.1 = { 
+    monarch = { 
+        name = "Longoarrak" 
+        dynasty = "Tularrak" 
+        birth_date = 460.1.1
 		adm = 4
-		dip = 3
-		mil = 4 
-  	}
-}
-
-622.1.1 = {
-monarch = {
-		name = "Thresh'jin"  
-		dynasty = "Mossflayer"  
-		adm = 2
-		dip = 2 
-		mil = 4 
-	}
-}
-  
-
+		dip = 5
+		mil = 6
+ 	} 
+} 

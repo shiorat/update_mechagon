@@ -1,34 +1,34 @@
-discover_home_continent = yes
-# Mauraudine
-government 			= tribal
-add_government_reform = warband_reform
+government = tribal
+add_government_reform = centaur_khanate_reform
+add_government_reform = wwu_tribal_war_band_reform
+
 mercantilism 		= 10
 technology_group 	= tech_centaur
-religion			= religion_earth
-primary_culture 	= culture_mauraudine
+religion			= shamanism
+primary_culture 	= culture_centaur
 capital 			= 1395
 
 historical_rival = B21
 historical_rival = B22
 historical_rival = B24
 
-546.1.1 = { 
-monarch = { 
-     name = "Maraudos" 
-     dynasty = "Maraudine" 
-		adm = 2
-		dip = 1
-		mil = 4
- 	} 
- } 
-
-592.1.1 = { 
-monarch = { 
-     name = "Hratha" 
-     dynasty = "Maraudine" 
-		adm = 3
-		dip = 1
-		mil = 4
- 	} 
- } 
-
+540.1.1 = {
+	monarch = {
+		name = "Riduneari"
+		dynasty = "the Ripper"
+		birth_date = 497.1.1
+		adm = 0
+		dip = 2
+		mil = 0
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Kesthorgrog"
+		dynasty = "the Strong"
+		birth_date = 503.1.1
+		adm = 1
+		dip = 5
+		mil = 1
+	}
+}

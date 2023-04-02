@@ -1,218 +1,128 @@
-warrior = {
+# Classes
+can_be_warrior = {
 	OR = {
-		culture_group = culture_group_human
-		culture_group = culture_group_orc
-		culture_group = culture_group_jungle_troll
-		culture_group = culture_group_dwarven
-		culture_group = culture_group_gnomish
-		culture_group = culture_group_undead
-		culture_group = culture_group_darnassian
-		culture_group = culture_group_tauren
-		culture_group = culture_group_draenei
-		culture_group = culture_group_thalassian
-		culture_group = culture_group_goblin
-		culture_group = culture_group_worgen
-		culture_group = culture_group_pandaren
-		culture_group = culture_group_shalassian
-		culture_group = culture_group_zandalar_troll
-		culture_group = culture_group_vrykul
-		primary_culture = culture_void_elf
+		religion_group = death_group
+		religion_group = disorder_group
+		religion_group = elemental_group
+		religion_group = life_group
+		religion_group = light_group
+		religion_group = order_group
+		religion_group = philosophy_group
+		religion_group = shadow_group
 	}
 }
-rogue = {
+
+can_be_paladin = {
+	religion_group = light_group
+}
+
+can_be_priest = {
 	OR = {
-		culture_group = culture_group_human
-		culture_group = culture_group_orc
-		culture_group = culture_group_jungle_troll
-		culture_group = culture_group_gnomish
-		culture_group = culture_group_undead
-		culture_group = culture_group_darnassian
-		culture_group = culture_group_thalassian
-		culture_group = culture_group_goblin
-		culture_group = culture_group_worgen
-		culture_group = culture_group_shalassian
-		culture_group = culture_group_zandalar_troll
-		primary_culture = culture_void_elf
+		religion_group = death_group
+		religion_group = disorder_group
+		religion_group = elemental_group
+		religion_group = life_group
+		religion_group = light_group
+		religion_group = order_group
+		religion_group = philosophy_group
+		religion_group = shadow_group
 	}
 }
-paladin = {
-	religion_group = religion_group_the_light
+
+can_be_rogue = {
 	OR = {
-		culture_group = culture_group_human
-		culture_group = culture_group_dwarven
-		culture_group = culture_group_tauren
-		culture_group = culture_group_draenei
-		culture_group = culture_group_thalassian
-		culture_group = culture_group_zandalar_troll
-	}
-	NOT = {
-		primary_culture = culture_void_elf
+		religion_group = death_group
+		religion_group = disorder_group
+		religion_group = elemental_group
+		religion_group = life_group
+		religion_group = light_group
+		religion_group = order_group
+		religion_group = philosophy_group
+		religion_group = shadow_group
 	}
 }
-priest = {
+
+can_be_mage = {
 	OR = {
-		religion_group = religion_group_the_light
-		religion_group = religion_group_nature
+		religion_group = death_group
+		religion_group = disorder_group
+		religion_group = elemental_group
+		religion_group = life_group
+		religion_group = light_group
+		religion_group = order_group
+		religion_group = philosophy_group
+		religion_group = shadow_group
 	}
-	OR = {
-		culture_group = culture_group_human
-		culture_group = culture_group_jungle_troll
-		culture_group = culture_group_dwarven
-		culture_group = culture_group_undead
-		culture_group = culture_group_darnassian
-		culture_group = culture_group_tauren
-		culture_group = culture_group_draenei
-		culture_group = culture_group_goblin
-		culture_group = culture_group_worgen
-		culture_group = culture_group_shalassian
-		culture_group = culture_group_zandalar_troll
-		culture_group = culture_group_vrykul
-		primary_culture = culture_void_elf
-	}
+	NOT = { religion = fel }
 }
-hunter = {
-	OR = {
-		culture_group = culture_group_orc
-		culture_group = culture_group_jungle_troll
-		culture_group = culture_group_dwarven
-		culture_group = culture_group_darnassian
-		culture_group = culture_group_tauren
-		culture_group = culture_group_thalassian
-		culture_group = culture_group_worgen
-		culture_group = culture_group_shalassian
-		culture_group = culture_group_zandalar_troll
-		culture_group = culture_group_vrykul
-		primary_culture = culture_void_elf
-	}
+
+can_be_warlock = {
+	religion = fel
 }
-mage = {
+
+can_be_druid = {
 	OR = {
-		culture_group = culture_group_human
-		culture_group = culture_group_dwarven
-		culture_group = culture_group_gnomish
-		culture_group = culture_group_undead
-		culture_group = culture_group_thalassian
-		culture_group = culture_group_goblin
-		culture_group = culture_group_worgen
-		culture_group = culture_group_pandaren
-		culture_group = culture_group_shalassian
-		culture_group = culture_group_zandalar_troll
-		culture_group = culture_group_vrykul
-		primary_culture = culture_void_elf
+		religion_group = elemental_group
+		religion_group = life_group
+		religion = voodoo
+		religion = hakkari
+		religion = bloodmancy
+	}
+	NOT = { religion = elune }
+	NOT = { religion = celestials }
+}
+
+can_be_hunter = {
+	OR = {
+		religion_group = death_group
+		religion_group = disorder_group
+		religion_group = elemental_group
+		religion_group = life_group
+		religion_group = light_group
+		religion_group = order_group
+		religion_group = philosophy_group
+		religion_group = shadow_group
 	}
 }
-warlock = {
-	NOT = { religion_group = religion_group_the_light }
+
+can_be_shaman = {
 	OR = {
-		culture_group = culture_group_human
-		culture_group = culture_group_orc
-		culture_group = culture_group_jungle_troll
-		culture_group = culture_group_gnomish
-		culture_group = culture_group_undead
-		culture_group = culture_group_thalassian
-		culture_group = culture_group_goblin
-		culture_group = culture_group_shalassian
-		culture_group = culture_group_vrykul
-		primary_culture = culture_void_elf
+		religion_group = elemental_group
+		religion_group = life_group
+		religion = voodoo
+		religion = hakkari
+		religion = bloodmancy
+	}
+	NOT = { religion = elune }
+	NOT = { religion = celestials }
+}
+
+can_be_death_knight = {
+	OR = {
+		religion = cult_of_the_damned
+		culture_group = culture_group_scourge
+		primary_culture = culture_death_knight
 	}
 }
-druid = {
+
+can_be_monk = {
 	OR = {
-		culture_group = culture_group_jungle_troll
-		culture_group = culture_group_zandalar_troll
-		culture_group = culture_group_darnassian
-		culture_group = culture_group_tauren
-		culture_group = culture_group_worgen
-		culture_group = culture_group_dryad
-		culture_group = culture_group_drust
-		primary_culture = culture_kul_tiran
+		religion_group = death_group
+		religion_group = disorder_group
+		religion_group = elemental_group
+		religion_group = life_group
+		religion_group = light_group
+		religion_group = order_group
+		religion_group = philosophy_group
+		religion_group = shadow_group
 	}
 }
-shaman = {
-	religion_group = religion_group_nature
-	OR = {
-		culture_group = culture_group_orc
-		culture_group = culture_group_jungle_troll
-		culture_group = culture_group_undead
-		culture_group = culture_group_tauren
-		culture_group = culture_group_draenei
-		culture_group = culture_group_zandalar_troll
-		culture_group = culture_group_vrykul
-	}
-}
-death_knight = {
-	religion = religion_the_damned
-}
-monk = {
-	OR = {
-		culture_group = culture_group_human
-		culture_group = culture_group_orc
-		culture_group = culture_group_jungle_troll
-		culture_group = culture_group_dwarven
-		culture_group = culture_group_gnomish
-		culture_group = culture_group_undead
-		culture_group = culture_group_darnassian
-		culture_group = culture_group_tauren
-		culture_group = culture_group_draenei
-		culture_group = culture_group_thalassian
-		culture_group = culture_group_goblin
-		culture_group = culture_group_worgen
-		culture_group = culture_group_pandaren
-		culture_group = culture_group_shalassian
-	}
-}
-demon_hunter = {
+
+can_be_demon_hunter = {
 	OR = {
 		culture_group = culture_group_thalassian
 		culture_group = culture_group_darnassian
 	}
+	NOT = { religion = druidism }
 }
-########################################################################
-ruler_has_class = {
-	OR = {
-		ruler_has_personality = warrior_personality
-		ruler_has_personality = paladin_personality
-		ruler_has_personality = rogue_personality
-		ruler_has_personality = mage_personality
-		ruler_has_personality = warlock_personality
-		ruler_has_personality = priest_personality
-		ruler_has_personality = shaman_personality
-		ruler_has_personality = hunter_personality
-		ruler_has_personality = druid_personality
-		ruler_has_personality = death_knight_personality
-		ruler_has_personality = monk_personality
-		ruler_has_personality = demon_hunter_personality
-	}
-}
-heir_has_class = {
-	OR = {
-		heir_has_personality = warrior_personality
-		heir_has_personality = paladin_personality
-		heir_has_personality = rogue_personality
-		heir_has_personality = mage_personality
-		heir_has_personality = warlock_personality
-		heir_has_personality = priest_personality
-		heir_has_personality = shaman_personality
-		heir_has_personality = hunter_personality
-		heir_has_personality = druid_personality
-		heir_has_personality = death_knight_personality
-		heir_has_personality = monk_personality
-		heir_has_personality = demon_hunter_personality
-	}
-}
-consort_has_class = {
-	OR = {
-		consort_has_personality = warrior_personality
-		consort_has_personality = paladin_personality
-		consort_has_personality = rogue_personality
-		consort_has_personality = mage_personality
-		consort_has_personality = warlock_personality
-		consort_has_personality = priest_personality
-		consort_has_personality = shaman_personality
-		consort_has_personality = hunter_personality
-		consort_has_personality = druid_personality
-		consort_has_personality = death_knight_personality
-		consort_has_personality = monk_personality
-		consort_has_personality = demon_hunter_personality
-	}
-}
+

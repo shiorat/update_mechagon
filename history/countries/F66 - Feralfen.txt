@@ -1,24 +1,34 @@
-discover_home_continent = yes
-# Feralfen (Lost Ones)
-government 			= tribal
-add_government_reform = ancient_clan_reform
+government = tribal
+add_government_reform = draenei_clan_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
 
 mercantilism 		= 10
 technology_group 	= tech_draenei
-religion			= religion_ancestral
+religion			= shamanism
 primary_culture 	= culture_lost_one
 capital 			= 2062
 
-600.1.1 = { 
-monarch = { 
-     name = "Kuruti" 
-     dynasty = "Feralfen" 
-		adm = 3
-		dip = 3
+540.1.1 = {
+	monarch = {
+		name = "Minan"
+		dynasty = "Hatewhisper"
+		birth_date = 467.1.1
+		adm = 0
+		dip = 0
 		mil = 3
- 	} 
- } 
-
+		female = yes
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Kuruti"
+		dynasty = "Hatewhisper"
+		birth_date = 529.1.1
+		adm = 0
+		dip = 2
+		mil = 3
+	}
+}
 
 
  

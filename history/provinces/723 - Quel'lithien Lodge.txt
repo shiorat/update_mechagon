@@ -10,17 +10,38 @@ base_production = 2
 base_manpower = 3
 
 culture = culture_high_elf
-religion = religion_arcane 
+religion = arcane 
 
+hre = no
 trade_goods = fur
-hre = no 
+ 
+# First War
+592.1.1 = {
+    owner = A08
+    controller = A08
+    add_core = A08
+    
+    culture = culture_lordaeron
+    religion = holy_light
+}
+
+# The Third War
+617.1.1 = { 
+	owner = P52
+	controller = P52
+	add_core = P52
+    
+	culture = culture_scourge
+	religion = cult_of_the_damned 
+}
+
 
 # The Frozen Throne
 618.1.1 = { 
 	owner = F54
 	controller = F54
 	add_core = F54
-	religion = religion_church_of_the_light
+	religion = faithless
 }
 
 # Rise of the Qiraji
@@ -44,6 +65,6 @@ hre = no
 	add_core = B94
 	remove_core = F20 
 	culture = culture_wretched
-	religion = religion_shadow
+	religion = shadow
 }
 

@@ -1,49 +1,39 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = A34
-controller = A34
-add_core = A34
+culture = culture_orc
+religion = shamanism
 
-base_tax = 4
-base_production = 4
-base_manpower = 4
-
-culture = culture_shadowmoon
-religion = religion_ancestral
-
-trade_goods = flying_mounts
 hre = no
+trade_goods = unknown
+
+600.1.1 = {
+    is_city = yes
+
+    owner = A34
+    controller = A34
+    add_core = A34
+
+    base_tax = 4
+    base_production = 4
+    base_manpower = 4
+
+    culture = culture_orc
+    religion = shamanism
 
 
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A34
-controller = A34
-add_core = A34
-
-base_tax = 4
-base_production = 4
-base_manpower = 4
-
-culture = culture_shadowmoon
-religion = religion_ancestral
-
-trade_goods = flying_mounts
-hre = no
-
-}
-
-592.1.1 = {
-    religion = religion_fel
+    trade_goods = flying_mounts
 }
 
 # Outland
 617.1.1 = {
-    religion = religion_ancestral
+    religion = shamanism
 }
 
 

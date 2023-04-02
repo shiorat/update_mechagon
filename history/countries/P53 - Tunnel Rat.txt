@@ -1,20 +1,29 @@
-discover_home_continent = yes
-# Tunnel Rat
-government 			= tribal
-add_government_reform = primitive_clan_reform
+government = tribal
+add_government_reform = tribal_despotism_reform
+add_government_reform = wwu_tribal_established_hierarchy_reform
+
 mercantilism 		= 10 
 technology_group 	= tech_kobold
-religion			= religion_earth
-primary_culture 	= culture_tunnel_rat
+religion			= earth
+primary_culture 	= culture_kobold
 capital 			= 1048
 
-546.1.1 = { 
-	monarch = { 
-		name = "Gorgran" 
-		dynasty = "Tunnel Rat" 
-		adm = 1
-		dip = 1
-		mil = 2
-	} 
-} 
+546.1.1 = {
+    monarch = {
+        name = "Grizlak"
+        dynasty = "the Troggwhacker"
+        adm = 3
+        dip = 3
+        mil = 4 
+    }
+}
 
+631.1.1 = {
+    monarch = {
+        name = "Nazrim"
+        dynasty = "the Awful"
+        adm = 4
+        dip = 5
+        mil = 4
+    }
+}

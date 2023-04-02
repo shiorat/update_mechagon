@@ -1,0 +1,34 @@
+
+# Empty Province
+native_size = 50
+native_ferocity = 5
+native_hostileness = 5
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+
+culture = culture_night_elf
+religion = elune
+
+hre = no
+trade_goods = unknown
+
+
+600.1.1 = {
+	add_core = A52
+	owner = A52
+	controller = A52
+	culture = culture_ogre
+	religion = arcane
+}
+
+631.1.1 = {
+    owner = F57
+    controller = F57
+    add_core = F57
+    add_core = A94
+    add_core = F89
+    
+}
+

@@ -1,27 +1,26 @@
-is_city = no
-native_size = 10
-native_ferocity = 10
-native_hostileness = 10
+is_city = yes
+owner = B34
+controller = B34
+add_core = B34
 
 base_tax = 1
 base_production = 1
 base_manpower = 1
 
-culture = culture_lordaeron
-religion = religion_church_of_the_light
+culture = culture_murloc
+religion = deep_mother
 
-trade_goods = unknown
 hre = no
+trade_goods = unknown
 
-605.1.1 = {
-    is_city = yes
+610.1.1 = {
     owner = P11
     controller = P11
     add_core = P11
     remove_core = P32
     
     culture = culture_scourge
-    religion = religion_the_damned
+    religion = cult_of_the_damned
 
     trade_goods = grain
 }
@@ -32,8 +31,8 @@ hre = no
     add_core = B34
     remove_core = P11
     
-    culture = culture_nerglish
-    religion = religion_water
+    culture = culture_murloc
+    religion = deep_mother
     
     trade_goods = fish
     
@@ -48,7 +47,7 @@ hre = no
     remove_core = B34
     
     culture = culture_forsaken
-    religion = religion_forgotten_shadow
+    religion = forgotten_shadow
     
     capital = "Apothecary Camp"
 }

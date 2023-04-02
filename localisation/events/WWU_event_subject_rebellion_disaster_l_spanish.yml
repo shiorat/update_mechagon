@@ -1,0 +1,8 @@
+﻿l_spanish:
+ subject_rebellion.1.title: "Aspiraciones de Libertad"
+ subject_rebellion.1.desc: "Desde la antigüedad, las naciones más débiles han confiado en fuerzas sujetas para conducirlas a la victoria. Este sistema de sujeto y señor ha llevado a través de las edades para la gente $CULTURE$ perfectamente, hasta ahora.\n\nLa palabra de ideas rebeldes ha ido en aumento, pero pocos previeron que estallaría en acción significativa. Hoy hemos aprendido que muchos de nuestros sujetos planean declarar su independencia, sin que nosotros lo sepamos."
+ subject_rebellion.1.option.a: "¡Malditos gorgojos!"
+ subject_rebellion.2.title: "Aspiraciones de Libertad"
+ subject_rebellion.2.desc: "$OVERLORD$ nos ha dado una rara oportunidad. Se ha notado su decadente prestigio, y otros sujetos se han asociado con nosotros para promulgar un plan de independencia.\n\nDebemos decidir rápidamente nuestro curso de acción, las llamas de la rebelión nos devorarán también."
+ subject_rebellion.2.option.a: "¡Derribaremos $OVERLORD$!"
+ subject_rebellion.2.option.b: "$OVERLORD$, nuestro maestro..."

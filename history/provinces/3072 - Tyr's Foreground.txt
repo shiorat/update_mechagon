@@ -1,60 +1,49 @@
-
 is_city = yes
-
-owner = P55
-controller = P55
-add_core = P55
+owner = A10
+controller = A10
+add_core = A10
 
 base_tax = 1
 base_production = 1
 base_manpower = 1
 
 culture = culture_lordaeron
-religion = religion_church_of_the_light
+religion = holy_light 
 
-trade_goods = grain
-hre = no 
+hre = no
+trade_goods = unknown
 
-
-
-546.1.1 = {
-
-is_city = yes
-
-owner = P55
-controller = P55
-add_core = P55
-
-base_tax = 1
-base_production = 1
-base_manpower = 1
-
-culture = culture_lordaeron
-religion = religion_church_of_the_light
-
-trade_goods = grain
-hre = no 
-
+# First War
+592.1.1 = {
+    owner = A08
+    controller = A08
+    add_core = A08
+    
+    culture = culture_lordaeron
+    religion = holy_light
 }
+
+# Rise of the Lich King
+605.1.1 = { 
+	add_core = P62
+	owner = P62
+	controller = P62
+	culture = culture_lordaeron
+    religion = holy_light
+}
+
 617.1.1 = { 
 	add_claim = P52
 }
 
-# The Frozen Throne
-618.1.1 = { 
-	add_core = P62
-	remove_core = A08
-	owner = P62
-	controller = P62
-}
-
 # Rise of the Qiraji
-622.1.1 = { 
+623.1.1 = { 
+	add_core = SCE
 	add_core = A22
 	remove_core = P62
-	owner = A22
-	controller = A22
-	religion = religion_scarlet_light 
+	owner = SCE
+	controller = SCE
+	religion = scarlet_light 
 }
 
 # Cataclysm
@@ -64,16 +53,16 @@ hre = no
 	add_core = X01
 	remove_core = A08
 	remove_core = P62
-	religion = religion_fel
+	religion = fel
 	culture = culture_forsaken
 }
 
 # Mists of Pandaria
 632.1.1 = { 
-	owner = F19
-	controller = F19
-	add_core = F19
-	religion = religion_argent_light
+	owner = AGC
+	controller = AGC
+	add_core = AGC
+	religion = argent_light
 	culture = culture_lordaeron
 }
 

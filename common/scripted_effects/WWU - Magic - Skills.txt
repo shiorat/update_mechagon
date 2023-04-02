@@ -1,0 +1,1058 @@
+#------------------------
+# Skills
+#------------------------
+add_ruler_spellcasting = {
+    add_ruler_modifier = {
+        name = spellcaster_capabilities
+        duration = -1
+    }
+}
+
+add_magical_training_point = {
+    custom_tooltip = MAGIC_TRAINING_GAIN
+    
+    hidden_effect = {
+        change_variable = {
+            which = ruler_magic_training
+            value = 1
+        }
+    }
+}
+remove_magical_training_point = {
+    custom_tooltip = MAGIC_TRAINING_LOSS
+    
+    hidden_effect = {
+        change_variable = {
+            which = ruler_magic_training
+            value = -1
+        }
+    }
+}
+
+add_aptitude_point = {
+    custom_tooltip = MAGIC_APTITUDE_GAIN
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_aptitude
+                         value = 5
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_aptitude
+                value = 1
+            }   
+        }
+    }
+}
+remove_aptitude_point = {
+    custom_tooltip = MAGIC_APTITUDE_LOSS
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_aptitude
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_aptitude
+                value = -1
+            }   
+        }
+    }
+}
+remove_all_aptitude_points = {
+    custom_tooltip = MAGIC_APTITUDE_TOTAL_LOSS
+    
+    hidden_effect = {
+        set_variable = {
+            which = ruler_magic_aptitude
+            value = 0
+        } 
+    }
+}
+
+add_finesse_point = {
+    custom_tooltip = MAGIC_FINESSE_GAIN
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_finesse
+                         value = 5
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_finesse
+                value = 1
+            }   
+        }
+    }
+}
+remove_finesse_point = {
+    custom_tooltip = MAGIC_FINESSE_LOSS
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_finesse
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_finesse
+                value = -1
+            }   
+        }
+    }
+}
+remove_all_finesse_points = {
+    custom_tooltip = MAGIC_FINESSE_TOTAL_LOSS
+    
+    hidden_effect = {
+        set_variable = {
+            which = ruler_magic_finesse
+            value = 0
+        } 
+    }
+}
+
+add_concentration_point = {
+    custom_tooltip = MAGIC_CONCENTRATION_GAIN
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_concentration
+                         value = 5
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_concentration
+                value = 1
+            }   
+        }
+    }
+}
+remove_concentration_point = {
+    custom_tooltip = MAGIC_CONCENTRATION_LOSS
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_concentration
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_concentration
+                value = -1
+            }   
+        }
+    }
+}
+remove_all_concentration_points = {
+    custom_tooltip = MAGIC_CONCENTRATION_TOTAL_LOSS
+    
+    hidden_effect = {
+        set_variable = {
+            which = ruler_magic_concentration
+            value = 0
+        } 
+    }
+}
+
+setup_spellcaster_history = {
+    [[arcane]
+        set_variable = {
+            which = magic_school
+            value = 1
+        } 
+    ]
+    [[holy]
+        set_variable = {
+            which = magic_school
+            value = 2
+        } 
+    ]
+    [[chi]
+        set_variable = {
+            which = magic_school
+            value = 3
+        } 
+    ]
+    [[voodoo]
+        set_variable = {
+            which = magic_school
+            value = 4
+        } 
+    ]
+    [[nature]
+        set_variable = {
+            which = magic_school
+            value = 5
+        } 
+    ]
+    [[necromancy]
+        set_variable = {
+            which = magic_school
+            value = 6
+        } 
+    ]
+    [[shaman]
+        set_variable = {
+            which = magic_school
+            value = 7
+        } 
+    ]
+    [[fel]
+        set_variable = {
+            which = magic_school
+            value = 8
+        } 
+    ]
+    [[dragon]
+        set_variable = {
+            which = magic_school
+            value = 9
+        } 
+    ]
+    [[corruption]
+        set_variable = {
+            which = magic_school
+            value = 10
+        } 
+    ]
+    [[shadow]
+        set_variable = {
+            which = magic_school
+            value = 11
+        } 
+    ]
+    [[titan]
+        set_variable = {
+            which = magic_school
+            value = 12
+        } 
+    ]
+    [[runic]
+        set_variable = {
+            which = magic_school
+            value = 13
+        } 
+    ]
+    [[nightmare]
+        set_variable = {
+            which = magic_school
+            value = 14
+        } 
+    ]
+    [[elemental_earth]
+        set_variable = {
+            which = magic_school
+            value = 15
+        } 
+    ]
+    [[elemental_fire]
+        set_variable = {
+            which = magic_school
+            value = 16
+        } 
+    ]
+    [[elemental_water]
+        set_variable = {
+            which = magic_school
+            value = 17
+        } 
+    ]
+    [[elemental_air]
+        set_variable = {
+            which = magic_school
+            value = 18
+        } 
+    ]
+    
+    add_ruler_modifier = {
+        name = spellcaster_capabilities
+        duration = -1
+    }
+    
+    set_variable = {
+        which = mana_chance
+        value = 5
+    }  
+        
+    set_variable = {
+        which = ruler_magic_aptitude
+        value = $APTITUDE$
+    }
+    if = {
+        limit = {
+            check_variable = {
+                 which = ruler_magic_aptitude
+                 value = 5
+            }
+        }
+        set_variable = {
+            which = ruler_magic_aptitude
+            value = 5
+        }  
+    }
+    
+    set_variable = {
+        which = ruler_magic_finesse
+        value = $FINESSE$
+    }
+    if = {
+        limit = {
+            check_variable = {
+                 which = ruler_magic_finesse
+                 value = 5
+            }
+        }
+        set_variable = {
+            which = ruler_magic_finesse
+            value = 5
+        }  
+    }
+    
+    set_variable = {
+        which = ruler_magic_concentration
+        value = $CONCENTRATION$
+    }
+    if = {
+        limit = {
+            check_variable = {
+                 which = ruler_magic_concentration
+                 value = 5
+            }
+        }
+        set_variable = {
+            which = ruler_magic_concentration
+            value = 5
+        }  
+    }
+    
+    set_variable = {
+        which = ruler_magic_mana
+        value = $MANA$
+    }
+    if = {
+        limit = {
+            check_variable = {
+                 which = ruler_magic_mana
+                 value = 10
+            }
+        }
+        set_variable = {
+            which = ruler_magic_mana
+            value = 10
+        }  
+    }
+}
+
+presetup_transfer_spellcaster_history = {  
+    set_variable = {
+        which = old_magic_school
+        which = magic_school
+    }
+    
+    set_variable = {
+        which = old_ruler_magic_aptitude
+        which = ruler_magic_aptitude
+    }
+
+    set_variable = {
+        which = old_ruler_magic_finesse
+        which = ruler_magic_finesse
+    }
+
+    set_variable = {
+        which = old_ruler_magic_concentration
+        which = ruler_magic_concentration
+    }
+    
+    set_variable = {
+        which = old_ruler_magic_mana
+        which = ruler_magic_mana
+    }
+}
+
+transfer_spellcaster_history = {
+    add_ruler_modifier = {
+        name = spellcaster_capabilities
+        duration = -1
+    }
+    
+    set_variable = {
+        which = mana_chance
+        value = 5
+    }  
+        
+    set_variable = {
+        which = magic_school
+        which = old_magic_school
+    }
+    
+    set_variable = {
+        which = ruler_magic_aptitude
+        which = old_ruler_magic_aptitude
+    }
+
+    set_variable = {
+        which = ruler_magic_finesse
+        which = old_ruler_magic_finesse
+    }
+
+    set_variable = {
+        which = ruler_magic_concentration
+        which = old_ruler_magic_concentration
+    }
+    
+    set_variable = {
+        which = ruler_magic_mana
+        which = old_ruler_magic_mana
+    }
+}
+
+reset_spellcaster_skills = {
+    set_variable = {
+        which = ruler_magic_aptitude
+        value = 0
+    }
+    set_variable = {
+        which = ruler_magic_finesse
+        value = 0
+    }
+    set_variable = {
+        which = ruler_magic_concentration
+        value = 0
+    }
+    set_variable = {
+        which = ruler_magic_mana
+        value = 0
+    }
+}
+
+add_mana_1 = {
+    custom_tooltip = MANA_GAIN_1
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_mana
+                         value = 10
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = 1
+            }   
+        }
+    }
+}
+add_mana_2 = {
+    custom_tooltip = MANA_GAIN_2
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_mana
+                         value = 10
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = 2
+            }   
+        }
+    }
+}
+add_mana_3 = {
+    custom_tooltip = MANA_GAIN_3
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_mana
+                         value = 10
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = 3
+            }   
+        }
+    }
+}
+add_mana_4 = {
+    custom_tooltip = MANA_GAIN_4
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_mana
+                         value = 10
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = 4
+            }   
+        }
+    }
+}
+add_mana_5 = {
+    custom_tooltip = MANA_GAIN_5
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_mana
+                         value = 10
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = 5
+            }   
+        }
+    }
+}
+add_mana_6 = {
+    custom_tooltip = MANA_GAIN_6
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_mana
+                         value = 10
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = 6
+            }   
+        }
+    }
+}
+add_mana_7 = {
+    custom_tooltip = MANA_GAIN_7
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_mana
+                         value = 10
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = 7
+            }   
+        }
+    }
+}
+add_mana_8 = {
+    custom_tooltip = MANA_GAIN_8
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_mana
+                         value = 10
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = 8
+            }   
+        }
+    }
+}
+add_mana_9 = {
+    custom_tooltip = MANA_GAIN_9
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_mana
+                         value = 10
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = 9
+            }   
+        }
+    }
+}
+add_mana_10 = {
+    custom_tooltip = MANA_GAIN_10
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                         which = ruler_magic_mana
+                         value = 10
+                    }
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = 10
+            }   
+        }
+    }
+}
+
+lose_mana_1 = {
+    custom_tooltip = MANA_LOSS_1
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_mana
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = -1
+            }   
+        }
+    }
+}
+lose_mana_2 = {
+    custom_tooltip = MANA_LOSS_2
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_mana
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = -2
+            }   
+        }
+    }
+}
+lose_mana_3 = {
+    custom_tooltip = MANA_LOSS_3
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_mana
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = -3
+            }   
+        }
+    }
+}
+lose_mana_4 = {
+    custom_tooltip = MANA_LOSS_4
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_mana
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = -4
+            }   
+        }
+    }
+}
+lose_mana_5 = {
+    custom_tooltip = MANA_LOSS_5
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_mana
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = -5
+            }   
+        }
+    }
+}
+lose_mana_6 = {
+    custom_tooltip = MANA_LOSS_6
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_mana
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = -6
+            }   
+        }
+    }
+}
+lose_mana_7 = {
+    custom_tooltip = MANA_LOSS_7
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_mana
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = -7
+            }   
+        }
+    }
+}
+lose_mana_8 = {
+    custom_tooltip = MANA_LOSS_8
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_mana
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = -8
+            }   
+        }
+    }
+}
+lose_mana_9 = {
+    custom_tooltip = MANA_LOSS_9
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_mana
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = -9
+            }   
+        }
+    }
+}
+lose_mana_10 = {
+    custom_tooltip = MANA_LOSS_10
+    
+    hidden_effect = {
+        if = {
+            limit = {
+                check_variable = {
+                     which = ruler_magic_mana
+                     value = 0
+                }
+            }
+            change_variable = {
+                which = ruler_magic_mana
+                value = -10
+            }   
+        }
+    }
+}
+
+cataclysmic_effect = {
+    custom_tooltip = RISKY_EFFECT_TT
+    
+    hidden_effect = {
+        random_list = {
+            30 = { }
+            30 = { 
+                country_event = { id = wwu_magic.50 }
+            }
+            30 = { 
+                country_event = { id = wwu_magic.51 }
+            }
+            30 = { 
+                country_event = { id = wwu_magic.52 }
+            }
+        }
+    }
+}
+
+update_mana_regeneration = {
+    every_country = {
+        limit = {
+            has_ruler_modifier = spellcaster_capabilities
+        }
+        
+        # Idea Regeneration
+        if = {
+            limit = {
+                OR = {
+                    has_idea = dalaran_ideas_3
+                    has_idea = blue_dragonflight_ideas_7
+                    has_idea = tortollan_ideas_5
+                    has_idea = karazhan_ideas_7
+                    has_estate_privilege = estate_dragonflight_creatures_of_magic
+                }
+            }
+            
+            set_variable = {
+                which = mana_chance
+                value = 10
+            }
+    
+            random_list = {
+                90 = { }
+                10 = { add_mana_1 = yes }
+            }
+        }
+        # Default
+        else = {
+            set_variable = {
+                which = mana_chance
+                value = 5
+            }
+    
+            random_list = {
+                95 = { }
+                5 = { add_mana_1 = yes }
+            }
+        }
+    }
+}
+
+set_magic_school = {
+    [[arcane]
+        custom_tooltip = SET_MAGIC_SCHOOL_ARCANE
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 1
+            } 
+        }
+    ]
+    [[holy]
+        custom_tooltip = SET_MAGIC_SCHOOL_HOLY
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 2
+            } 
+        }
+    ]
+    [[chi]
+        custom_tooltip = SET_MAGIC_SCHOOL_CHI
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 3
+            } 
+        }
+    ]
+    [[voodoo]
+        custom_tooltip = SET_MAGIC_SCHOOL_VOODOO
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 4
+            } 
+        }
+    ]
+    [[nature]
+        custom_tooltip = SET_MAGIC_SCHOOL_NATURE
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 5
+            } 
+        }
+    ]
+    [[necromancy]
+        custom_tooltip = SET_MAGIC_SCHOOL_UNDEAD
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 6
+            } 
+        }
+    ]
+    [[shaman]
+        custom_tooltip = SET_MAGIC_SCHOOL_SHAMANISM
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 7
+            } 
+        }
+    ]
+    [[fel]
+        custom_tooltip = SET_MAGIC_SCHOOL_FEL
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 8
+            } 
+        }
+    ]
+    [[dragon]
+        custom_tooltip = SET_MAGIC_SCHOOL_DRACONIC
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 9
+            } 
+        }
+    ]
+    [[corruption]
+        custom_tooltip = SET_MAGIC_SCHOOL_CORRUPTION
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 10
+            } 
+        }
+    ]
+    [[shadow]
+        custom_tooltip = SET_MAGIC_SCHOOL_SHADOW
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 11
+            } 
+        }
+    ]
+    [[titan]
+        custom_tooltip = SET_MAGIC_SCHOOL_TITAN
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 12
+            } 
+        } 
+    ]
+    [[runic]
+        custom_tooltip = SET_MAGIC_SCHOOL_RUNIC
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 13
+            } 
+        }
+    ]
+    [[nightmare]
+        custom_tooltip = SET_MAGIC_SCHOOL_NIGHTMARE
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 14
+            } 
+        }
+    ]
+    [[elemental_earth]
+        custom_tooltip = SET_MAGIC_SCHOOL_EARTH
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 15
+            } 
+        }
+    ]
+    [[elemental_fire]
+        custom_tooltip = SET_MAGIC_SCHOOL_FIRE
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 16
+            } 
+        }
+    ]
+    [[elemental_water]
+        custom_tooltip = SET_MAGIC_SCHOOL_WATER
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 17
+            } 
+        }
+    ]
+    [[elemental_air]
+        custom_tooltip = SET_MAGIC_SCHOOL_WIND
+        hidden_effect = {
+            set_variable = {
+                which = magic_school
+                value = 18
+            } 
+        }
+    ]
+}

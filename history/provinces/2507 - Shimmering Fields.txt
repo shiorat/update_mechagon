@@ -4,15 +4,17 @@ is_city = yes
 owner = A29
 controller = A29
 add_core = A29
+add_core = RMC
 
-base_tax = 3
+base_tax = 2
 base_production = 3
-base_manpower = 3
+base_manpower = 1
 
 culture = culture_ironforge
-religion = religion_church_of_the_light
+religion = holy_light
 
-trade_goods = grain_silo
 hre = no
+trade_goods = grain_silo
+
 
 

@@ -13,61 +13,89 @@ estate_clergy = {
         }
     }
     custom_name = {
+        desc = estate_clergy_high_elf
+        trigger = {
+           primary_culture = culture_high_elf
+        }
+    }
+    custom_name = {
+        desc = estate_clergy_blood_elf
+        trigger = {
+           primary_culture = culture_blood_elf
+        }
+    }
+    custom_name = {
+        desc = estate_clergy_qiraji
+        trigger = {
+            OR = {
+                primary_culture = culture_qiraji
+                primary_culture = culture_silithid
+            }
+        }
+    }
+    custom_name = {
         desc = estate_clergy_light
         trigger = {
-            religion_group = religion_group_the_light
+            religion_group = light_group
+        }
+    }
+	custom_name = {
+        desc = estate_clergy_death
+        trigger = {
+            religion_group = death_group
         }
     }
     custom_name = {
         desc = estate_clergy_void
         trigger = {
-            religion_group = religion_group_the_void
+            religion_group = shadow_group
         }
     }
     custom_name = {
         desc = estate_clergy_disorder
         trigger = {
-            religion_group = religion_group_disorder
+            religion_group = disorder_group
         }
     }
     custom_name = {
         desc = estate_clergy_order
         trigger = {
-            religion_group = religion_group_order
+            religion_group = order_group
         }
     }
     custom_name = {
         desc = estate_clergy_druidic
         trigger = {
-            religion = religion_druidic
+            religion = druidism
         }
     }
     custom_name = {
         desc = estate_clergy_elemental
         trigger = {
-            religion_group = religion_group_elemental
+            religion_group = elemental_group
         }
     }
     
 	# ----- Conditions -----
 	trigger = {
-        is_nomad = no
+        has_clergy_estate = yes
 	}
 
 	# ----- Country -----
 	country_modifier_happy = {
-		governing_capacity_modifier = 0.15
+		governing_capacity_modifier = 0.2
         core_creation = -0.1
-		global_tax_modifier = 0.2
+		global_tax_modifier = 0.15
 	}
 	country_modifier_neutral = {
-		governing_capacity_modifier = 0.05
-		global_tax_modifier = 0.1
+		governing_capacity_modifier = 0.1
+        core_creation = -0.05
+		global_tax_modifier = 0.05
 	}	
 	country_modifier_angry = {
-        governing_capacity_modifier = -0.15
+        governing_capacity_modifier = -0.2
         core_creation = 0.1
-		global_tax_modifier = -0.2
+		global_tax_modifier = -0.15
 	}
 
 	land_ownership_modifier = {
@@ -116,15 +144,28 @@ estate_clergy = {
     # ----- Privileges -----
 	privileges = {
 		estate_clergy_land_rights
+		estate_clergy_administrative_oversight
 		estate_clergy_clergy_in_administration
 		estate_clergy_independent_advisors
-		estate_clergy_distant_outposts
 		estate_clergy_expanded_bureaucracy
-		estate_clergy_administrative_oversight
 		estate_clergy_internal_development
 		estate_clergy_enforced_one_faith
 		estate_clergy_liberation_of_our_own
+        estate_clergy_evangelism
+        estate_clergy_eternal_damnation
+        estate_clergy_enforced_conversion
+        estate_clergy_laissez_faire_conversion
+		estate_clergy_distant_outposts
 		estate_clergy_statutory_rights
+        estate_clergy_splendiferous_investment
+        estate_clergy_exception
+        
+        # Unique
+        estate_clergy_arcane_supremacy
+        estate_clergy_ancient_diplomats
+        
+        # Government
+        estate_clergy_necromantic_resurrection
 	}
 
     # ----- Agenda -----

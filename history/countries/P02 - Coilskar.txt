@@ -1,32 +1,36 @@
-discover_home_continent = yes
+
 # Coilskar
 government 			= monarchy
 add_government_reform = naga_domain_reform
 mercantilism 		= 10
 technology_group 	= tech_naga
-religion			= religion_old_gods
+religion			= nzoth
 primary_culture 	= culture_vashjari
-capital 			= 1609
+capital 			= 1668
 
 
-618.1.1 = { 
-	monarch = { 
-		name = "Neik'ja" 
-		dynasty = "Vashj" 
-		adm = 4
-		dip = 5
-		mil = 4
-		female = yes        
-	} 
-}
-
-626.1.1 = { 
-	monarch = { 
-		name = "Naj'entus" 
-		dynasty = "Coilskar" 
+618.1.1 = {
+	monarch = {
+		name = "S'theno"
+        birth_date = 544.1.1
 		adm = 3
-		dip = 3
-		mil = 4    
+		dip = 4
+		mil = 4
 	}
+    
+    clear_scripted_personalities = yes
+	set_ruler_flag = is_immortal
+	set_ruler_flag = mage_personality
+    
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 3
+        CONCENTRATION = 2
+        MANA = 5
+        corruption = yes
+    }
+    
+	add_historical_friend = A93
+	add_historical_friend = A57
+	add_historical_friend = B87
 }
-

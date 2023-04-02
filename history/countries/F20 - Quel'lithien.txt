@@ -1,20 +1,30 @@
-discover_home_continent = yes
+
 # QuelThalas
 government 			= republic
 add_government_reform = magocracy_reform
 mercantilism 		= 10
-technology_group 	= tech_thalassian
-religion			= religion_church_of_the_light
+technology_group 	= tech_high_elf
+religion			= holy_light
 primary_culture 	= culture_high_elf
-capital 			= 2037
+capital 			= 763
 
-618.1.1 = {
+540.1.1 = {
+	monarch = {
+		name = "Caelaeael"
+		dynasty = "Hawkspear"
+		birth_date = 521.1.1
+		adm = 0
+		dip = 4
+		mil = 5
+	}
+}
+590.1.1 = {
 	monarch = {
 		name = "Renthar"
 		dynasty = "Hawkspear"
-		adm = 3
-		dip = 3
-		mil = 3
+		birth_date = 535.1.1
+		adm = 5
+		dip = 1
+		mil = 4
 	}
 }
-

@@ -1,0 +1,32 @@
+
+government = monarchy
+add_government_reform = gorian_empire_reform
+mercantilism = 10
+technology_group = tech_ogre
+religion = arcane
+primary_culture = culture_ogre
+capital = 3748
+
+# Draenor
+546.1.1 = { 
+    monarch = { 
+		name = "Mar'gok" 
+		dynasty = "the Imperator"  
+		adm = 4
+		dip = 4
+		mil = 5
+ 	} 
+    
+    set_ruler_flag = ruler_portrait_margok
+    
+    setup_spellcaster_history = {
+        APTITUDE = 5
+        FINESSE = 3
+        CONCENTRATION = 3
+        MANA = 5
+        arcane = yes
+    }
+} 
+
+# Outland
+

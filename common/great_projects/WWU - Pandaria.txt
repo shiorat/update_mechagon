@@ -1,0 +1,2317 @@
+#--------------------------------------
+# Osul Mesa
+#--------------------------------------
+gp_osul_mesa = {
+    type = monument
+    
+	start = 1862
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_yaungol = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_yaungol = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_yaungol = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.125
+		}
+		country_modifiers = {
+            discipline = 0.0125
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.25
+		}
+		country_modifiers = {
+            discipline = 0.03
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.33
+		}
+		country_modifiers = {
+            discipline = 0.04
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.5
+		}
+		country_modifiers = {
+            discipline = 0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Mogu'shan Vaults
+#--------------------------------------
+gp_mogushan_vaults = {
+    type = monument
+    
+	start = 1902
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_titan = yes
+            is_available_to_earthen = yes
+            is_available_to_mogu = yes
+            is_available_to_pandaren = yes
+            is_available_to_jinyu = yes
+            is_available_to_saurok = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_titan = yes
+            is_available_to_earthen = yes
+            is_available_to_mogu = yes
+            is_available_to_pandaren = yes
+            is_available_to_jinyu = yes
+            is_available_to_saurok = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_titan = yes
+            is_available_to_earthen = yes
+            is_available_to_mogu = yes
+            is_available_to_pandaren = yes
+            is_available_to_jinyu = yes
+            is_available_to_saurok = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.125
+		}
+		country_modifiers = {
+            global_tax_income = 6
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.25
+		}
+		country_modifiers = {
+            global_tax_income = 12
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.33
+		}
+		country_modifiers = {
+            global_tax_income = 24
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.5
+		}
+		country_modifiers = {
+            global_tax_income = 36
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Mogu'shan Palace
+#--------------------------------------
+gp_mogushan_palace = {
+    type = monument
+    
+	start = 1807
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_titan = yes
+            is_available_to_earthen = yes
+            is_available_to_mogu = yes
+            is_available_to_pandaren = yes
+            is_available_to_jinyu = yes
+            is_available_to_saurok = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_titan = yes
+            is_available_to_earthen = yes
+            is_available_to_mogu = yes
+            is_available_to_pandaren = yes
+            is_available_to_jinyu = yes
+            is_available_to_saurok = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_titan = yes
+            is_available_to_earthen = yes
+            is_available_to_mogu = yes
+            is_available_to_pandaren = yes
+            is_available_to_jinyu = yes
+            is_available_to_saurok = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_tax_modifier = 0.125
+		}
+		country_modifiers = {
+            legitimacy = 0.25
+            republican_tradition = 0.25
+            devotion = 0.25
+            horde_unity = 0.25
+            meritocracy = 0.25
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_tax_modifier = 0.25
+		}
+		country_modifiers = {
+            legitimacy = 0.5
+            republican_tradition = 0.5
+            devotion = 0.5
+            horde_unity = 0.5
+            meritocracy = 0.5
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_tax_modifier = 0.33
+		}
+		country_modifiers = {
+            legitimacy = 0.75
+            republican_tradition = 0.75
+            devotion = 0.75
+            horde_unity = 0.75
+            meritocracy = 0.75
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_tax_modifier = 0.5
+		}
+		country_modifiers = {
+            legitimacy = 1
+            republican_tradition = 1
+            devotion = 1
+            horde_unity = 1
+            meritocracy = 1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Heart of Fear
+#--------------------------------------
+gp_heart_of_fear = {
+    type = monument
+    
+	start = 1839
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_mantid = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_mantid = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_mantid = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {   
+            local_hostile_attrition = 0.5
+            local_manpower_modifier = 0.125
+		}
+		country_modifiers = {
+            reinforce_cost_modifier = -0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {   
+            local_hostile_attrition = 1
+            local_manpower_modifier = 0.25
+		}
+		country_modifiers = {
+            reinforce_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {   
+            local_hostile_attrition = 2
+            local_manpower_modifier = 0.33
+		}
+		country_modifiers = {
+            reinforce_cost_modifier = -0.2
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {   
+            local_hostile_attrition = 3
+            local_manpower_modifier = 0.5
+		}
+		country_modifiers = {
+            reinforce_cost_modifier = -0.3
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Sra'vess
+#--------------------------------------
+gp_sravess = {
+    type = monument
+    
+	start = 1868
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_mantid = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_mantid = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_mantid = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_production_efficiency = 0.125
+		}
+		country_modifiers = {
+            production_efficiency = 0.025
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_production_efficiency = 0.25
+		}
+		country_modifiers = {
+            production_efficiency = 0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_production_efficiency = 0.33
+		}
+		country_modifiers = {
+            production_efficiency = 0.075
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_production_efficiency = 0.5
+		}
+		country_modifiers = {
+            production_efficiency = 0.1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Serpent's Spine
+#--------------------------------------
+gp_serpents_spine = {
+    type = monument
+    
+	start = 1895
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        always = yes # General
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		always = yes # General
+	}
+	can_upgrade_trigger = {
+		always = yes # General
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_defensiveness = 0.125
+            local_manpower_modifier = 0.125
+		}
+		country_modifiers = {
+            hostile_attrition = 0.5
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_defensiveness = 0.25
+            local_manpower_modifier = 0.25
+		}
+		country_modifiers = {
+            hostile_attrition = 1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_defensiveness = 0.33
+            local_manpower_modifier = 0.33
+		}
+		country_modifiers = {
+            hostile_attrition = 2
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_defensiveness = 0.5
+            local_manpower_modifier = 0.5
+		}
+		country_modifiers = {
+            hostile_attrition = 3
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Jade Serpent Statue
+#--------------------------------------
+gp_jade_serpent_statue = {
+    type = monument
+    
+	start = 1723
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_tax_modifier = 0.125
+		}
+		country_modifiers = {
+            improve_relation_modifier = 0.025
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_tax_modifier = 0.25
+		}
+		country_modifiers = {
+            improve_relation_modifier = 0.05
+            diplomatic_upkeep = 1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_tax_modifier = 0.33
+		}
+		country_modifiers = {
+            improve_relation_modifier = 0.075
+            diplomatic_upkeep = 1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_tax_modifier = 0.5
+		}
+		country_modifiers = {
+            improve_relation_modifier = 0.1
+            diplomatic_upkeep = 1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Shado-pan Monastery
+#--------------------------------------
+gp_shadopan_monastery = {
+    type = monument
+    
+	start = 1892
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_defensiveness = 0.125
+            local_manpower_modifier = 0.125
+		}
+		country_modifiers = {
+            infantry_power = 0.025
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_defensiveness = 0.25
+            local_manpower_modifier = 0.25
+		}
+		country_modifiers = {
+            infantry_power = 0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_defensiveness = 0.33
+            local_manpower_modifier = 0.33
+		}
+		country_modifiers = {
+            infantry_power = 0.075
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_defensiveness = 0.5
+            local_manpower_modifier = 0.5
+		}
+		country_modifiers = {
+            infantry_power = 0.1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Temple of the White Tiger
+#--------------------------------------
+gp_temple_of_the_white_tiger = {
+    type = monument
+    
+	start = 1901
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_defensiveness = 0.125
+            local_manpower_modifier = 0.125
+		}
+		country_modifiers = {
+            discipline = 0.015
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_defensiveness = 0.25
+            local_manpower_modifier = 0.25
+		}
+		country_modifiers = {
+            discipline = 0.03
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_defensiveness = 0.33
+            local_manpower_modifier = 0.33
+		}
+		country_modifiers = {
+            discipline = 0.04
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_defensiveness = 0.5
+            local_manpower_modifier = 0.5
+		}
+		country_modifiers = {
+            discipline = 0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Temple of the Jade Serpent
+#--------------------------------------
+gp_temple_of_the_jade_serpent = {
+    type = monument
+    
+	start = 1722
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_defensiveness = 0.125
+            local_manpower_modifier = 0.125
+		}
+		country_modifiers = {
+            ae_impact = -0.025
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_defensiveness = 0.25
+            local_manpower_modifier = 0.25
+		}
+		country_modifiers = {
+            ae_impact = -0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_defensiveness = 0.33
+            local_manpower_modifier = 0.33
+		}
+		country_modifiers = {
+            ae_impact = -0.075
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_defensiveness = 0.5
+            local_manpower_modifier = 0.5
+		}
+		country_modifiers = {
+            ae_impact = -0.1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Temple of the Red Crane
+#--------------------------------------
+gp_temple_of_the_red_crane = {
+    type = monument
+    
+	start = 1779
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_defensiveness = 0.125
+            local_manpower_modifier = 0.125
+		}
+		country_modifiers = {
+            movement_speed = 0.025
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_defensiveness = 0.25
+            local_manpower_modifier = 0.25
+		}
+		country_modifiers = {
+            movement_speed = 0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_defensiveness = 0.33
+            local_manpower_modifier = 0.33
+		}
+		country_modifiers = {
+            movement_speed = 0.075
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_defensiveness = 0.5
+            local_manpower_modifier = 0.5
+		}
+		country_modifiers = {
+            movement_speed = 0.1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+    }
+}
+
+#--------------------------------------
+# Niuzao Temple
+#--------------------------------------
+gp_niuzao_temple = {
+    type = monument
+    
+	start = 1867
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_celestials = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_defensiveness = 0.125
+            local_manpower_modifier = 0.125
+		}
+		country_modifiers = {
+            shock_damage = 0.025
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_defensiveness = 0.25
+            local_manpower_modifier = 0.25
+		}
+		country_modifiers = {
+            shock_damage = 0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_defensiveness = 0.33
+            local_manpower_modifier = 0.33
+		}
+		country_modifiers = {
+            shock_damage = 0.075
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_defensiveness = 0.5
+            local_manpower_modifier = 0.5
+		}
+		country_modifiers = {
+            shock_damage = 0.1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+    }
+}
+
+#--------------------------------------
+# Halfhill
+#--------------------------------------
+gp_halfhill = {
+    type = monument
+    
+	start = 1796
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_production_efficiency = 0.125
+		}
+		country_modifiers = {
+            global_trade_goods_size_modifier = 0.025
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_production_efficiency = 0.25
+		}
+		country_modifiers = {
+            global_trade_goods_size_modifier = 0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_production_efficiency = 0.33
+		}
+		country_modifiers = {
+            global_trade_goods_size_modifier = 0.075
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_production_efficiency = 0.5
+		}
+		country_modifiers = {
+            global_trade_goods_size_modifier = 0.1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Tian Monastery
+#--------------------------------------
+gp_tian_monastery = {
+    type = monument
+    
+	start = 1729
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_tax_modifier = 0.125
+            local_unrest = -0.5
+		}
+		country_modifiers = {
+            religious_unity = 0.025
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_tax_modifier = 0.25
+            local_unrest = -1
+		}
+		country_modifiers = {
+            religious_unity = 0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_tax_modifier = 0.33
+            local_unrest = -2
+		}
+		country_modifiers = {
+            religious_unity = 0.075
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_tax_modifier = 0.5
+            local_unrest = -3
+		}
+		country_modifiers = {
+            religious_unity = 0.1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Tavern in the Mists
+#--------------------------------------
+gp_tavern_in_the_mists = {
+    type = monument
+    
+	start = 1800
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        always = yes # General
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		always = yes # General
+	}
+	can_upgrade_trigger = {
+		always = yes # General
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            tax_income = 3
+		}
+		country_modifiers = {
+            trade_efficiency = 0.025
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            tax_income = 6
+		}
+		country_modifiers = {
+            merchants = 1
+            trade_efficiency = 0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            tax_income = 12
+		}
+		country_modifiers = {
+            merchants = 1
+            trade_efficiency = 0.075
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            tax_income = 18
+		}
+		country_modifiers = {
+            merchants = 1
+            trade_efficiency = 0.1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Golden Pagoda
+#--------------------------------------
+gp_golden_pagoda = {
+    type = monument
+    
+	start = 1810
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_pandaren = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_defensiveness = 0.125
+		}
+		country_modifiers = {
+            prestige = 0.25
+            stability_cost_modifier = -0.025
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_defensiveness = 0.25
+		}
+		country_modifiers = {
+            prestige = 0.5
+            stability_cost_modifier = -0.05
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_defensiveness = 0.33
+		}
+		country_modifiers = {
+            prestige = 0.75
+            stability_cost_modifier = -0.075
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_defensiveness = 0.5
+		}
+		country_modifiers = {
+            prestige = 1.0
+            stability_cost_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}
+
+#--------------------------------------
+# Throne of Thunder
+#--------------------------------------
+gp_throne_of_thunder = {
+    type = monument
+    
+	start = 1890
+
+	date = 100.01.01
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+    
+    build_cost = 0
+	time = {
+		months = 0
+	}
+
+	starting_tier = 0
+
+    # Construction
+	build_trigger = {
+        OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_mogu = yes
+        }
+	}
+	on_built = {
+		
+	}
+	on_destroyed = {
+		
+	}
+    
+    # Conditions
+	can_use_modifiers_trigger = {
+		is_state = yes
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_mogu = yes
+        }
+	}
+	can_upgrade_trigger = {
+		OR = {
+            has_monument_research_pandaria = yes
+            is_available_to_mogu = yes
+        }
+	}
+	keep_trigger = { always = yes }
+
+	# Tiers
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+            local_monthly_devastation = -0.025
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.125
+            local_defensiveness = 0.125
+		}
+		country_modifiers = {
+            infantry_shock = 0.25
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 32 # Tier 1 Time
+		}
+		cost_to_upgrade = {
+			factor = 300 # Tier 1 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.05
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.25
+            local_defensiveness = 0.25
+		}
+		country_modifiers = {
+            infantry_shock = 0.5
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 64 # Tier 2 Time
+		}
+		cost_to_upgrade = {
+			factor = 600 # Tier 2 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.075
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.33
+            local_defensiveness = 0.33
+		}
+		country_modifiers = {
+            infantry_shock = 0.75
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 120 # Tier 3 Time
+		}
+		cost_to_upgrade = {
+			factor = 1000 # Tier 3 Cost
+		}
+        province_modifiers = {
+            local_monthly_devastation = -0.1
+		}
+		area_modifier = {
+            local_manpower_modifier = 0.5
+            local_defensiveness = 0.5
+		}
+		country_modifiers = {
+            infantry_shock = 1.0
+		}
+		on_upgraded = {
+			owner = { add_prestige = 25 }
+		}
+	}
+}

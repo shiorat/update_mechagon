@@ -5,38 +5,34 @@ owner = P56
 controller = P56
 add_core = P56
 
-base_tax = 4
+base_tax = 1
 base_production = 4
-base_manpower = 4
+base_manpower = 2
 
 culture = culture_dark_iron
-religion = religion_arcane
+religion = arcane
 
-trade_goods = workshops
 hre = no
-
-
-
-546.1.1 = {
-
-is_city = yes
-
-owner = P56
-controller = P56
-add_core = P56
-
-base_tax = 4
-base_production = 4
-base_manpower = 4
-
-culture = culture_dark_iron
-religion = religion_arcane
-
 trade_goods = workshops
-hre = no
 
+# Second War
+598.1.1 = {
+    owner = U03
+    controller = U03
+    add_core = U03
+    
+    culture = culture_fel_orc
+    religion = fel
 }
-631.1.1 = { 
-religion = religion_arcane 
+
+# Rise of the Lich Kng
+605.1.1 = {
+	owner = P56
+	controller = P56
+	add_core = P56
+    
+    culture = culture_dark_iron
+    religion = arcane
 }
+
 

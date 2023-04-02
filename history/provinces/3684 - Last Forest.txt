@@ -1,0 +1,19 @@
+
+
+is_city = yes
+owner = GTL
+controller = GTL
+add_core = GTL
+
+base_tax = 4
+base_production = 3
+base_manpower = 5
+
+culture = culture_gnoll
+religion = earth
+
+hre = no
+trade_goods = lumber
+
+
+

@@ -1,44 +1,34 @@
-discover_home_continent = yes
-# Kolkar
-government 			= tribal
-add_government_reform = warband_reform
+government = tribal
+add_government_reform = centaur_khanate_reform
+add_government_reform = wwu_tribal_war_band_reform
+
 mercantilism 		= 10
 technology_group 	= tech_centaur
-religion			= religion_earth
-primary_culture 	= culture_kolkar
+religion			= shamanism
+primary_culture 	= culture_centaur
 capital 			= 1389
 
 historical_rival = B21
 historical_rival = B22
 historical_rival = B23
 	
-546.1.1 = { 
-monarch = { 
-     name = "Kolk" 
-     dynasty = "Kolkar" 
-		adm = 2
-		dip = 1
-		mil = 4
- 	} 
- } 
-
-592.1.1 = { 
-monarch = { 
-     name = "Dez'hepah" 
-     dynasty = "Kolkar" 
-		adm = 3
-		dip = 1
-		mil = 4
- 	} 
-} 
-
-631.1.1 = { 
-monarch = { 
-     name = "Leh'prah" 
-     dynasty = "Kolkar" 
-		adm = 3
-		dip = 1
-		mil = 4
- 	} 
- } 
-
+540.1.1 = {
+	monarch = {
+		name = "Arirog"
+		dynasty = "the Stabber"
+		birth_date = 470.1.1
+		adm = 4
+		dip = 0
+		mil = 3
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Dortemdine"
+		dynasty = "the Sturdy"
+		birth_date = 511.1.1
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}

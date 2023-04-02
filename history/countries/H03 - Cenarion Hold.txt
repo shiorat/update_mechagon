@@ -1,29 +1,38 @@
-discover_home_continent = yes
+
 government 				= theocracy
 add_government_reform = druidic_circle_reform
 mercantilism 			= 10
-technology_group 		= tech_darnassian
-religion				= religion_druidic
-primary_culture 		= culture_cenarion
-add_accepted_culture 	= culture_sentinel
+technology_group 		= tech_night_elf
+religion				= druidism
+primary_culture 		= culture_night_elf
 capital 				= 1513
-historical_friend = H01
+
 historical_friend = H02
+historical_friend = SRS
+historical_friend = A95
+historical_friend = FRS
+historical_friend = H01
+historical_friend = A94
+
 546.1.1 = {
 	monarch = {
 		name = "Fandral" 
 		dynasty = "Staghelm" 
-		adm = 3
+		adm = 1
 		dip = 3
 		mil = 4
  	}
-}
-
-622.1.1 = {
-add_country_modifier = {
-    name = neutral_member
-    duration = -1
-} 
+    
+    set_ruler_flag = ruler_portrait_fandral
+	set_ruler_flag = druid_personality
+    
+    setup_spellcaster_history = {
+        APTITUDE = 4
+        FINESSE = 3
+        CONCENTRATION = 3
+        MANA = 4
+        nature = yes
+    }
 }
 
 631.1.1 = {
@@ -34,5 +43,12 @@ add_country_modifier = {
 		dip = 2
 		mil = 5
  	}
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 3
+        CONCENTRATION = 4
+        MANA = 3
+        nature = yes
+    }
 }
 

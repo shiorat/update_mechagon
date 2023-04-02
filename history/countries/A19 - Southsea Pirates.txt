@@ -1,20 +1,23 @@
-discover_home_continent = yes
+
 # Southsea Pirates
-government 			= pirate
-add_government_reform = pirate_kingdom_reform
+government 			= republic
+add_government_reform = pirate_republic_reform
 mercantilism 		= 10
 technology_group 	= tech_human
-religion			= religion_church_of_the_light
+religion			= holy_light
 primary_culture 	= culture_kul_tiran
 capital 			= 2323
 
-618.1.1 = {  
-monarch = {  
-      name = "John"  
-     dynasty = "Longshore"  
- 		adm = 3 
-		dip = 4
-		mil = 4 
-  	}  
-  }  
+540.1.1 = { 
+	monarch = { 
+		name = "Imogen" 
+		dynasty = "Stoutmantle" 
+		adm = 5
+		dip = 2
+		mil = 3
+        female = yes
+        birth_date = 520.1.1
+	} 
+}  
+
 

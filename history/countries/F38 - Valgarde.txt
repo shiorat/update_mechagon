@@ -1,39 +1,62 @@
-discover_home_continent = yes
+
 # Lordaeron
 government 			= monarchy
 add_government_reform = autocracy_reform
-government_rank 	= 5
+government_rank 	= 3
 mercantilism 		= 10
 technology_group 	= tech_human
-religion			= religion_church_of_the_light
+religion			= holy_light
 primary_culture 	= culture_lordaeron
 add_accepted_culture = culture_ironforge
-capital 			= 882
+capital 			= 583
 
 617.1.1 = { 
-	monarch =
-	{ 
+	monarch = {
 		name = "Arthas" 
 		dynasty = "Menethil" 	
-		adm = 3
-		dip = 4	
+		adm = 4
+		dip = 2	
 		mil = 6
+        birth_date = 580.1.1
 	}
-add_country_modifier = {
-    name = alliance_member
-    duration = -1
-}   
+    
+    set_ruler_flag = ruler_portrait_arthas_menethil
+    
+	set_ruler_flag = is_immortal
+	set_ruler_flag = paladin_personality
+	add_ruler_personality = ruthless_personality
+    
+	leader = {
+		name = "Muradin Bronzebeard"
+		type = general
+		fire = 5
+		shock = 7
+		manuever = 5
+		siege = 3
+	}
+    
+	add_country_modifier = {
+        name = member_of_alliance
+        duration = -1
+    }
 } 
 
 618.1.1 = { 
+    clr_ruler_flag = is_immortal
+    clr_ruler_flag = ruler_portrait_arthas_menethil
+    
 	monarch = { 
 		name = "Luc" 
 		dynasty = "Valonforth" 
 		adm = 3
 		dip = 4
-		mil = 4
- 	} 
-	government = monarchy
+		mil = 5
+        birth_date = 576.1.1
+ 	}
+    
+	set_ruler_flag = warrior_personality
+	
+	capital = 882
 } 
 
 626.1.1 = { 
@@ -43,6 +66,7 @@ add_country_modifier = {
 		adm = 2
 		dip = 1
 		mil = 3
+        birth_date = 590.1.1
  	} 
 } 
  

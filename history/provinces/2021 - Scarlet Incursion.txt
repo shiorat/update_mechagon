@@ -1,0 +1,47 @@
+
+is_city = yes
+owner = RDP
+controller = RDP
+add_core = RDP
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = culture_gnoll
+religion = earth
+
+hre = no
+trade_goods = lumber
+
+# First War
+592.1.1 = {
+    owner = A08
+    controller = A08
+    add_core = A08
+    
+    culture = culture_lordaeron
+    religion = holy_light
+}
+
+# The Third War
+617.1.1 = { 
+    owner = P52
+	controller = P52
+	add_core = P52
+}
+
+618.1.1 = { 
+    owner = A09
+	controller = A09
+	add_core = A09
+}
+
+# Rise of the Qiraji
+622.1.1 = { 
+	owner = A22
+	controller = A22
+	add_core = A22
+    
+	religion = scarlet_light 
+}

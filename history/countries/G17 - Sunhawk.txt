@@ -1,20 +1,31 @@
-discover_home_continent = yes
+
 # Sunhawk
 government 			= theocracy
 add_government_reform = monastic_order_reform
 mercantilism 		= 10
-technology_group 	= tech_thalassian
-religion			= religion_fel
+technology_group 	= tech_blood_elf
+religion			= fel
 primary_culture 	= culture_blood_elf
 capital 			= 1080
 
-625.1.1 = {
+540.1.1 = {
+	monarch = {
+		name = "Rislor"
+		dynasty = "Hawkstrider"
+		birth_date = 519.1.1
+		adm = 3
+		dip = 2
+		mil = 0
+	}
+}
+590.1.1 = {
 	monarch = {
 		name = "Sironas"
-		dynasty = "the Cruel"
+		dynasty = "Hawkstrider"
+		birth_date = 518.1.1
 		adm = 3
-		dip = 4
-		mil = 3
+		dip = 5
+		mil = 5
 	}
 }
 

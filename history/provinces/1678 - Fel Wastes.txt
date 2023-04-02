@@ -1,58 +1,51 @@
+native_size = 10
+native_ferocity = 10
+native_hostileness = 10
+is_city = no
 
-is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
-owner = A45
-controller = A45
-add_core = A45
+culture = culture_orc
+religion = shamanism
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
-
-culture = culture_dragonmaw
-religion = religion_ancestral
-
-trade_goods = artifacts
 hre = no
+trade_goods = unknown
+
+600.1.1 = {
+    is_city = yes
+
+    owner = A45
+    controller = A45
+    add_core = A45
+
+    base_tax = 3
+    base_production = 3
+    base_manpower = 3
+
+    culture = culture_orc
+    religion = fel
 
 
-
-546.1.1 = {
-
-is_city = yes
-
-owner = A45
-controller = A45
-add_core = A45
-
-base_tax = 3
-base_production = 3
-base_manpower = 3
-
-culture = culture_dragonmaw
-religion = religion_ancestral
-
-trade_goods = artifacts
-hre = no
-
+    trade_goods = artifacts
 }
 
-592.1.1 = {
-    religion = religion_fel
-}
-
-#Outland
 601.1.1 = {
+    owner = F48
+    controller = F48
+    add_core = F48
     remove_core = A45
+    religion = fel
+}
 
-	add_core = B87
-	owner = B87
-	controller = B87
-
-	culture = culture_illidari
-	religion = religion_fel
-    
-	base_tax = 2
-	base_production = 2
+# The Frozen Throne
+619.1.1 = {
+    owner = B87
+    controller = B87
+    add_core = B87
+    remove_core = B89
+    culture = culture_illidari
+    religion = fel
 }
 

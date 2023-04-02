@@ -1,33 +1,23 @@
-discover_home_continent = yes
-# Glintrok Saurok
-government 			= tribal
-add_government_reform = tribal_despotism_reform
+government = tribal
+add_government_reform = saurok_pod_reform
+add_government_reform = wwu_tribal_established_warband_reform
+
 mercantilism 		= 10
-technology_group 	= tech_primitive
-religion			= religion_loa
-primary_culture 	= culture_glintrok
+technology_group 	= tech_saurok
+religion			= voodoo
+primary_culture 	= culture_saurok
 capital 			= 2037
 
-546.1.1 = { 
-monarch = { 
-     name = "Lizgron" 
-     dynasty = "Glintrok" 
-		adm = 3
-		dip = 2
-		mil = 3
+500.1.1 = { 
+    monarch = { 
+        name = "Gekshi" 
+        dynasty = "Glinktrok" 
+        birth_date = 491.1.1
+		adm = 5
+		dip = 1
+		mil = 5
  	} 
- } 
-
- 592.1.1 = { 
-monarch = { 
-     name = "Gekkan" 
-     dynasty = "Twitcheel" 
-		adm = 3
-		dip = 2
-		mil = 3
- 	} 
- } 
+} 
 
 
- 
 

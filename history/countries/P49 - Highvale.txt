@@ -1,23 +1,22 @@
-discover_home_continent = yes
+
 # Highvale 
 government 			= republic 
 add_government_reform = magocracy_reform
 mercantilism 		= 10 
-technology_group 	= tech_thalassian
-religion			= religion_church_of_the_light 
+technology_group 	= tech_high_elf
+religion			= holy_light 
 primary_culture 	= culture_high_elf 
 capital 			= 763 
 
-
 600.1.1 = { 
-add_country_modifier = {
-    name = alliance_member
-    duration = -1
-}
+    add_country_modifier = {
+        name = member_of_alliance
+        duration = -1
+    }
 }
 
 605.1.1 = {
-remove_country_modifier = alliance_member
+    remove_country_modifier = member_of_alliance
 }
 
 618.1.1 = { 
@@ -28,6 +27,7 @@ remove_country_modifier = alliance_member
 		dip = 3
 		mil = 2 
  	}
+    
 }
 
 622.1.1 = { 
@@ -39,9 +39,10 @@ remove_country_modifier = alliance_member
 		mil = 4
 		female = yes
 	}
-add_country_modifier = {
-    name = alliance_member
-    duration = -1
-}
+    
+    add_country_modifier = {
+        name = member_of_alliance
+        duration = -1
+    }
 }
 

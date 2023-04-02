@@ -1,0 +1,15 @@
+is_city = yes
+
+owner = SNW
+controller = SNW
+add_core = SNW
+
+base_tax = 3
+base_production = 2
+base_manpower = 3
+
+culture = culture_pandaren
+religion = celestials
+
+hre = yes
+trade_goods = naval_supplies

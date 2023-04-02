@@ -1,20 +1,31 @@
-discover_home_continent = yes
+
 # Firelands
 government 			= theocracy
 add_government_reform = elemental_cult_reform
 mercantilism 		= 10
-technology_group 	= tech_elemental
-religion			= religion_fire
+technology_group 	= tech_elemental_fire
+religion			= fire
 primary_culture 	= culture_fire
-capital 			= 2037
+capital 			= 2601
 
 546.1.1 = { 
-monarch = { 
-     name = "Ragnaros" 
-     dynasty = "the Firelord" 
-		adm = 4
-		dip = 4
-		mil = 5
- 	} 
- } 
+    monarch = { 
+        name = "Ragnaros" 
+        dynasty = "the Firelord" 
+		adm = 5
+		dip = 5
+		mil = 6
+ 	}
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 3
+        CONCENTRATION = 3
+        MANA = 5
+        elemental_fire = yes
+    }
+    
+    set_ruler_flag = ruler_portrait_ragnaros
+    
+    set_ruler_flag = is_immortal
+}
 

@@ -1,0 +1,38 @@
+government = tribal
+add_government_reform = tauren_tribe_reform
+add_government_reform = wwu_tribal_seasonal_travel_reform
+
+mercantilism 		= 10
+technology_group 	= tech_tauren
+
+religion			= tauren_shamanism
+primary_culture 	= culture_tauren
+
+capital 			= 1483
+
+
+
+historical_rival = B20
+historical_rival = G05
+
+540.1.1 = {
+	monarch = {
+		name = "Mulmul"
+		dynasty = "Darkmane"
+		birth_date = 480.1.1
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+590.1.1 = {
+	monarch = {
+		name = "Caioth"
+		dynasty = "Darkmane"
+		birth_date = 553.1.1
+		adm = 2
+		dip = 5
+		mil = 3
+		female = yes
+	}
+}

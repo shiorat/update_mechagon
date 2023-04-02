@@ -1,0 +1,9 @@
+﻿l_english:
+ #-----------------------------------------------
+ # Ruler Education
+ #-----------------------------------------------
+ wwu_ruler_education.1.title: "The Education of [Root.Monarch.GetName]"
+ wwu_ruler_education.1.desc: "The previous [Root.Monarch.GetTitle] has passed away, it is time for [Root.Monarch.GetName] to become the new [Root.Monarch.GetTitle]. Perhaps the skills of the former [Root.Monarch.GetTitle] have rubbed off on [Root.Monarch.GetHerHis]."
+ wwu_ruler_education.1.option.a: "I admired the former [Root.Monarch.GetTitle] a lot..."
+ wwu_ruler_education.1.option.b: "I will go my own way!"
+ 

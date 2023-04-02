@@ -6,14 +6,15 @@ owner = GD3
 controller = GD3
 add_core = GD3
 
-base_tax = 6
-base_production = 6
-base_manpower = 6
+base_tax = 3
+base_production = 3
+base_manpower = 3
 
-culture = culture_green
-religion = religion_sect_of_dragons
+culture = culture_green_dragonflight
+religion = dragon_aspects
 
+hre = no
 trade_goods = moonwell
-hre = yes
+
 
 

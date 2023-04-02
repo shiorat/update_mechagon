@@ -1,0 +1,31 @@
+
+# Haleh's Brood
+government 			= monarchy
+add_government_reform = dragonflight_brood_reform
+mercantilism 		= 10
+technology_group 	= tech_blue_dragonflight
+religion			= dragon_aspects
+primary_culture 	= culture_blue_dragonflight
+capital 			= 1332
+
+
+546.1.1 = {
+    monarch = {
+        name = "Haleh"
+        dynasty = "the Azure Matron"
+        adm = 4
+        dip = 3
+        mil = 4
+        female = yes
+    }
+	set_ruler_flag = is_immortal
+	set_ruler_flag = mage_personality
+    
+    setup_spellcaster_history = {
+        APTITUDE = 3
+        FINESSE = 3
+        CONCENTRATION = 3
+        MANA = 5
+        dragon = yes
+    }
+}
