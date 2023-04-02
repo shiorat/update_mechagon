@@ -1,4 +1,0 @@
-﻿l_german:
- wwu_pretender.1.title: "Aufstieg eines Vortäuschers"
- wwu_pretender.1.desc: "Ein Vortäuscher hat sich erhoben, um die Abfolge von $HEIR$ zu bestreiten! Unter Berufung auf den Vorwand der \"außergewöhnlichen Ungerechtigkeiten\" der [Root.Monarch.Dynasty.GetName]-Herrschaft und das Casting von Aspersionen auf die Legitimität der neuen [Root.Monarch.GetTitle], [Root.pretender.GetName] hat eine Armee erhoben, um seinen Anspruch auf die Krone zu unterstützen und marschiert auf der Hauptstadt!"
- wwu_pretender.1.option.a: "Gott ist mit $HEIR$!"

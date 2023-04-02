@@ -1,7 +1,0 @@
-government = monarchy
-add_government_reform = celestial_order_reform
-mercantilism 		= 10 
-technology_group 	= tech_pandaren
-religion			= celestials
-primary_culture 	= culture_pandaren
-capital 			= 1725

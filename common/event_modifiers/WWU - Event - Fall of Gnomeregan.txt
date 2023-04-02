@@ -1,8 +1,0 @@
-#---------------------------------------
-# Modifiers
-#---------------------------------------
-# Event: 
-gnome_massacre = {
-    global_manpower_modifier = -0.5
-    prestige = -0.5
-}

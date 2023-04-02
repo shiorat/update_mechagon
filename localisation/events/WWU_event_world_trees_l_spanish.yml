@@ -1,9 +1,0 @@
-﻿l_spanish:
- world_tree.1.title: "Quema de Nordrassil"
- world_tree.1.desc: "[Root.Monarch.GetName] de [Root.GetName] ordenó [Root.Monarch.GetHer] ejército para incendiar Nordrassil y quemaron ferozmente el árbol del mundo. Como la única prole de árbol madre, G'Hanir, Nordrassil fue responsable de mantener vivas las tierras de Kalimdor y los reinos orientales. Con su ausencia, el mundo entero morirá lentamente, y se volverá mucho más susceptible a la corrupción de fuentes externas. El pozo de Hyjal también perdió su estabilidad y las fuerzas del mal pueden aprovechar su poder para sus fines maliciosos."
- world_tree.1.option.a: "Bien."
- burn_nordrassil_tt: "Todos los países de Kalimdor tendrán sus opiniones reducidas en 20, por cada provincia que poseen en Kalimdor, y todas las religiones druidas reducirán su opinión en 100."
- world_tree.2.title: "Quema de Teldrassil"
- world_tree.2.desc: "[Root.Monarch.GetName] de [Root.GetName] ordenó [Root.Monarch.GetHer] ejército para incendiar Teldrassil y quemaron ferozmente el árbol del mundo. Como el árbol del mundo más grande del mundo, era el hogar de los duendes nocturnos y los wisps. Sin ella, el vínculo de Druiids con el Sueño Esmeralda se debilitó."
- world_tree.2.option.a: "Bien."
- burn_teldrassil_tt: "Todos los países de Kalimdor tendrán sus opiniones reducidas en 20, por cada provincia que poseen en Teldrassil, y todas las religiones druidas reducirán su opinión en 100."

@@ -1,4 +1,0 @@
-﻿l_french:
- wwu_pretender.1.title: "Lève-toi d'un prétendant"
- wwu_pretender.1.desc: "Un prétendant s'est levé pour contester la succession de $HEIR$! Citant le prétexte des « injustices extraordinaires » de [Root.Monarch.Dynasty.GetName] règle et jetant des asperions sur la légitimité du nouveau [Root.Monarch.GetTitle], [Root.pretender.GetName] a soulevé une armée pour soutenir sa revendication pour la couronne et marche sur la capitale!"
- wwu_pretender.1.option.a: "Dieu est avec $HEIR$!"

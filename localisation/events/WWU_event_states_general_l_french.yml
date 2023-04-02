@@ -1,6 +1,0 @@
-﻿l_french:
- wwu_states_general.1.t: "[Root.GetAdjectiveCap] Assemblée Supprimée"
- wwu_states_general.1.d1: "Après des années de querelles, de conflits internes et de retards législatifs, tous ont convenu qu'il fallait faire quelque chose sur l'état de l'Assemblée.\n\nL'ancienne Maison de [Root.Monarque.Dynastie.GetName], qui depuis des années ont soumissionné leur temps, a, dans une manœuvre superbement chronométrée, dirigé un projet de loi abolissant complètement l'assemblée, et réinstaurant [Root.Monarque.GetName] sur le trône de [Root.GetName]."
- wwu_states_general.1.d2: "Des années de conflits internes au sein de l'Assemblée [Root.GetAdjectiveCap] ont commencé à prendre leur péage sur l'esprit national de [Root.GetName]. La montée de l'opinion populaire contre l'Assemblée a attiré de nombreux opposants parmi nos citoyens.\n\nEnfin, un prétendant se tient grand au milieu de ses adversaires, renversant ce qu'il reste de peu d'opposition à l'Assemblée, et rétablissant les glorieuses traditions de [Root.GetName]."
- wwu_states_general.1.a: "Longue vie à [Root.Monarque.GetName]!"
- wwu_states_general.1.b: "Longue vie au [Root.GovernmentName]!"

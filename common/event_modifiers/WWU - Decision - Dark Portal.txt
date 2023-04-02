@@ -1,9 +1,0 @@
-#---------------------------------------
-# Modifiers
-#---------------------------------------
-# Decision: 
-motivated_for_assault = {   
-    country_military_power = 2
-	mil_tech_cost_modifier = -0.25
-    administrative_efficiency = 0.2
-}
